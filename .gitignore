@@ -1,0 +1,54 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+*/.idea/
+*.iws
+*.iml
+*.ipr
+.mvn
+
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+#### MAC OS ###
+.DS_Store
+
+### 项目配置 ###
+*/store*/
+application-local.yml
+.flattened-pom.xml
+
+### logs ###
+logs/
+*/logs/
+*.log*
+tmp/
+
+### 单独排除 codex 执行任务的日志. 这个很有参考价值
+!.codex/logs/
+!.codex/**/log*/
