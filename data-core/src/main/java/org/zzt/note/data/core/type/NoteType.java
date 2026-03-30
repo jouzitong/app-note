@@ -19,6 +19,11 @@ import org.arthena.framework.common.enums.IEnum;
 public enum NoteType implements IEnum {
 
     /**
+     * 空节点：仅作为占位或结构节点使用，不承载实际内容。
+     */
+    EMPTY(0, "Empty", "空节点，无内容"),
+
+    /**
      * Markdown 笔记：用于结构化长文、知识整理与文档沉淀。
      */
     MARKDOWN(1, "Markdown", "结构化长文笔记，适合知识沉淀与文档编写"),

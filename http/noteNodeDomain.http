@@ -37,7 +37,7 @@ Accept: application/json
 
 
 ### 3. Domain删除（delete）
-DELETE {{host}}/api/v1/noteNodes/domain/10
+DELETE {{host}}/api/v1/noteNodes/domain/11
 Accept: application/json
 
 ### 4. Domain查询（get）

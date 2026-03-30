@@ -15,7 +15,14 @@
             >
               ↩
             </button>
-            <button class="icon-btn" title="编辑" aria-label="编辑">✎</button>
+            <button
+              class="icon-btn"
+              title="编辑"
+              aria-label="编辑"
+              @click="openEditPage"
+            >
+              ✎
+            </button>
           </div>
         </div>
 
@@ -42,7 +49,12 @@
       <div class="content-layout">
         <div class="main-content">
           <div class="card">
-            <h2 class="section-title">子节点</h2>
+            <div class="section-head">
+              <h2 class="section-title">子节点</h2>
+              <button class="minor-btn" type="button" @click="handleAddChild">
+                新增
+              </button>
+            </div>
             <ul class="tree-list">
               <li
                 v-for="(item, index) in childNodes"
@@ -50,7 +62,25 @@
                 class="tree-item"
                 @click="openChildNode(item)"
               >
-                {{ index + 1 }}. {{ item.title }}
+                <span class="tree-item-title"
+                  >{{ index + 1 }}. {{ item.title }}</span
+                >
+                <span class="tree-item-actions">
+                  <button
+                    class="item-action-btn"
+                    type="button"
+                    @click.stop="handleEditChild(item)"
+                  >
+                    编辑
+                  </button>
+                  <button
+                    class="item-action-btn danger"
+                    type="button"
+                    @click.stop="handleDeleteChild(item)"
+                  >
+                    删除
+                  </button>
+                </span>
               </li>
               <li v-if="!childNodes.length" class="tree-item">暂无子节点</li>
             </ul>
@@ -236,6 +266,15 @@ export default {
         params: { id: String(childNode.id) },
       });
     },
+    handleAddChild() {
+      window.alert("新增功能暂未实现。");
+    },
+    handleEditChild() {
+      window.alert("子节点编辑功能暂未实现。");
+    },
+    handleDeleteChild() {
+      window.alert("子节点删除功能暂未实现。");
+    },
     goToParent() {
       if (this.paths.length >= 2) {
         const parent = this.paths[this.paths.length - 2];
@@ -248,6 +287,15 @@ export default {
         }
       }
       this.$router.back();
+    },
+    openEditPage() {
+      if (!this.noteNode.id) {
+        return;
+      }
+      this.$router.push({
+        name: "note-edit",
+        params: { id: String(this.noteNode.id) },
+      });
     },
   },
 };
@@ -383,6 +431,32 @@ export default {
   color: #111827;
 }
 
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.section-head .section-title {
+  margin-bottom: 0;
+}
+
+.minor-btn {
+  height: 30px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #374151;
+  padding: 0 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.minor-btn:hover {
+  border-color: #9ca3af;
+}
+
 .note-content {
   line-height: 1.9;
   font-size: 15px;
@@ -427,10 +501,45 @@ export default {
 .tree-item {
   text-align: left;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .tree-item:hover {
   color: #2563eb;
+}
+
+.tree-item-title {
+  min-width: 0;
+}
+
+.tree-item-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.item-action-btn {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #374151;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.item-action-btn:hover {
+  border-color: #9ca3af;
+}
+
+.item-action-btn.danger {
+  color: #b91c1c;
+  border-color: #fecaca;
 }
 
 .tree-item:last-child,
