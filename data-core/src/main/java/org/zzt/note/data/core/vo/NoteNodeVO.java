@@ -28,6 +28,8 @@ public class NoteNodeVO {
      */
     private List<NoteNodePathVO> paths;
 
+    private List<NoteNodePathVO> childNoteNodes;
+
     /**
      * 内容对象
      */

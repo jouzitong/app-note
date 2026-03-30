@@ -5,6 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.athena.framework.data.jpa.domain.dto.LogicalDeleteDTO;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author zhouzhitong
@@ -36,9 +39,9 @@ public class NoteNodeDTO extends LogicalDeleteDTO {
     private Integer sort = 0;
 
     /**
-     * 内容（JSON）
+     * 节点路径ID（JSON数组，主要用于路径查询）
      */
-    private String content;
+    private List<Long> pathIds = new ArrayList<>();
 
     private NoteNodeMetaDTO meta;
 

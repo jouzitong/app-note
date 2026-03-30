@@ -19,7 +19,7 @@ import org.zzt.note.data.core.entity.dto.NoteNodeDTO;
 public interface NoteNodeConvert extends IConvert<NoteNode, NoteNodeDTO> {
 
     @Override
-//    @Mapping(target = "meta.node", ignore = true)
+    @Mapping(target = "nodeContent", ignore = true)
     NoteNode toEntity(NoteNodeDTO d);
 
     @Override
@@ -29,12 +29,14 @@ public interface NoteNodeConvert extends IConvert<NoteNode, NoteNodeDTO> {
     @Override
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "meta.node", ignore = true)
+    @Mapping(target = "nodeContent", ignore = true)
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
     void editEntityFromDto(NoteNodeDTO dto, @MappingTarget NoteNode entity);
 
     @Override
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "meta.node", ignore = true)
+    @Mapping(target = "nodeContent", ignore = true)
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.SET_TO_NULL)
     void updateEntityFromDto(NoteNodeDTO dto, @MappingTarget NoteNode entity);
 

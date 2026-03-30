@@ -2,6 +2,7 @@ package org.zzt.note.data.core.entity;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
+import jakarta.persistence.Convert;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.Index;
@@ -12,6 +13,10 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import org.athena.framework.data.jpa.domain.LogicalDeleteEntity;
+import org.zzt.note.data.core.entity.converter.NoteNodePathIdsJsonConverter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -30,7 +35,7 @@ import org.athena.framework.data.jpa.domain.LogicalDeleteEntity;
                 @Index(name = "idx_note_node_parent_sort", columnList = "parent_id,sort")
         }
 )
-@ToString(callSuper = true, exclude = "meta")
+@ToString(callSuper = true, exclude = {"meta", "nodeContent"})
 public class NoteNode extends LogicalDeleteEntity {
 
     /**
@@ -58,16 +63,23 @@ public class NoteNode extends LogicalDeleteEntity {
     private Integer sort = 0;
 
     /**
-     * 内容（JSON）
+     * 节点路径ID（JSON数组，主要用于路径查询）
      */
-    @Column(columnDefinition = "TEXT")
-    private String content;
+    @Convert(converter = NoteNodePathIdsJsonConverter.class)
+    @Column(name = "path_ids", columnDefinition = "json")
+    private List<Long> pathIds = new ArrayList<>();
 
     /**
      * 节点附加信息（subject/icon/tags）
      */
     @OneToOne(mappedBy = "node", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private NoteNodeMeta meta;
+
+    /**
+     * 节点内容（独立表）
+     */
+    @OneToOne(mappedBy = "node", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
+    private NoteNodeContent nodeContent;
 
     public void setMeta(NoteNodeMeta meta) {
         if (this.meta != null && this.meta != meta) {
@@ -76,6 +88,16 @@ public class NoteNode extends LogicalDeleteEntity {
         this.meta = meta;
         if (meta != null && meta.getNode() != this) {
             meta.setNode(this);
+        }
+    }
+
+    public void setNodeContent(NoteNodeContent nodeContent) {
+        if (this.nodeContent != null && this.nodeContent != nodeContent) {
+            this.nodeContent.setNode(null);
+        }
+        this.nodeContent = nodeContent;
+        if (nodeContent != null && nodeContent.getNode() != this) {
+            nodeContent.setNode(this);
         }
     }
 
