@@ -1,15 +1,23 @@
 {
-  "id": "",
-  "title": "",
-  "createTime": "",
-  "updateTime": "",
-  "parentId": "",
-  "noteType": "",
-  "sort": 0,
+  "noteNode": {
+    "id": "",
+    "title": "",
+    "createTime": "",
+    "updateTime": "",
+    "parentId": "",
+    "noteType": "",
+    "sort": 0,
+    "meta": {
+      "subject": "",
+      "icon": "",
+      "tags": []
+    }
+  },
   "content": "",
-  "meta": {
-    "subject": "",
-    "icon": "",
-    "tags": []
-  }
+  "paths": [
+    {
+      "id": "",
+      "title": ""
+    }
+  ]
 }

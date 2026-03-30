@@ -12,4 +12,11 @@
     <artifactId>server-word</artifactId>
     <description>业务-单词</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.zzt.note</groupId>
+            <artifactId>data-core</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>

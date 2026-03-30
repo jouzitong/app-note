@@ -19,7 +19,7 @@ import org.zzt.note.data.core.entity.dto.NoteNodeDTO;
 public interface NoteNodeConvert extends IConvert<NoteNode, NoteNodeDTO> {
 
     @Override
-    @Mapping(target = "meta.node", ignore = true)
+//    @Mapping(target = "meta.node", ignore = true)
     NoteNode toEntity(NoteNodeDTO d);
 
     @Override
