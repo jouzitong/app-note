@@ -1,0 +1,71 @@
+@basePath = /api/v1/userWordProgresses
+
+### 1. 分页查询（无条件）
+GET {{host}}{{basePath}}?page=1&size=10
+Accept: application/json
+
+
+### 2. 分页查询（按字段过滤 + 排序）
+GET {{host}}{{basePath}}?page=1&size=10&queries=userId:10001:0&sorts=lastReviewedAt:DESC
+Accept: application/json
+
+
+### 3. 查询单个学习进度（将 1 替换成实际存在的 ID）
+GET {{host}}{{basePath}}/1
+Accept: application/json
+
+
+### 4. 创建学习进度（add）
+POST {{host}}{{basePath}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": 10001,
+  "wordCardId": 1,
+  "status": "NEW",
+  "metaInfo": {
+    "reviewCount": 0,
+    "correctCount": 0,
+    "wrongCount": 0
+  },
+  "lastReviewedAt": "2026-03-30T16:30:00"
+}
+
+
+### 5. 全量更新学习进度（update）
+PUT {{host}}{{basePath}}/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": 10001,
+  "wordCardId": 1,
+  "status": "LEARNING",
+  "metaInfo": {
+    "reviewCount": 3,
+    "correctCount": 2,
+    "wrongCount": 1
+  },
+  "lastReviewedAt": "2026-03-30T17:00:00"
+}
+
+
+### 6. 局部更新学习进度（edit）
+PATCH {{host}}{{basePath}}/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "status": "MASTERED"
+}
+
+
+### 7. 软删除（delete）
+DELETE {{host}}{{basePath}}/1
+Accept: application/json
+
+
+### 8. 物理删除（physicalDelete，默认不一定开放）
+DELETE {{host}}{{basePath}}/physical/1
+Accept: application/json
