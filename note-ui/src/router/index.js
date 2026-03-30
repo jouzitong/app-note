@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import NoteIndexView from "../views/notes/index.vue";
 import NoteEditView from "../views/notes/edit.vue";
-import WordCardView from "../view/test/word-card.vue";
+import WordCardView from "@/views/test/word-card.vue";
 
 Vue.use(VueRouter);
 
