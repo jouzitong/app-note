@@ -1,8 +1,8 @@
 const API_BASE_URL = process.env.VUE_APP_API_BASE_URL || "/api";
 const normalizedBase = API_BASE_URL.replace(/\/+$/, "");
 const BASE_PATH = normalizedBase.endsWith("/api")
-  ? `${normalizedBase}/v1/noteNodes`
-  : `${normalizedBase}/api/v1/noteNodes`;
+  ? `${normalizedBase}/v1/noteNodes/domain`
+  : `${normalizedBase}/api/v1/noteNodes/domain`;
 
 function toQueryString(params = {}) {
   const query = new URLSearchParams();
@@ -91,41 +91,41 @@ export async function listNoteNodesByParentId(parentId, options = {}) {
 
 export async function getNoteNodeById(id) {
   const res = await request(`${BASE_PATH}/${id}`);
-  return unwrap(res);
+  const body = unwrap(res);
+  return {
+    noteNode: body?.noteNode || null,
+    paths: Array.isArray(body?.paths) ? body.paths : [],
+    childNoteNodes: Array.isArray(body?.childNoteNodes)
+      ? body.childNoteNodes
+      : [],
+    content: body?.content ?? null,
+  };
 }
 
 export async function createNoteNode(payload) {
-  const res = await request(BASE_PATH, {
+  return request(BASE_PATH, {
     method: "POST",
-    body: JSON.stringify(payload),
+    body: JSON.stringify({
+      noteNode: payload.noteNode || payload,
+      pathIds: payload.pathIds || null,
+      content: payload.content || null,
+    }),
   });
-  return unwrap(res);
 }
 
 export async function updateNoteNode(id, payload) {
-  const res = await request(`${BASE_PATH}/${id}`, {
+  return request(`${BASE_PATH}/${id}`, {
     method: "PUT",
-    body: JSON.stringify(payload),
+    body: JSON.stringify({
+      noteNode: payload.noteNode || payload,
+      pathIds: payload.pathIds || null,
+      content: payload.content || null,
+    }),
   });
-  return unwrap(res);
-}
-
-export async function editNoteNode(id, payload) {
-  const res = await request(`${BASE_PATH}/${id}`, {
-    method: "PATCH",
-    body: JSON.stringify(payload),
-  });
-  return unwrap(res);
 }
 
 export async function deleteNoteNode(id) {
   return request(`${BASE_PATH}/${id}`, {
-    method: "DELETE",
-  });
-}
-
-export async function physicalDeleteNoteNode(id) {
-  return request(`${BASE_PATH}/physical/${id}`, {
     method: "DELETE",
   });
 }

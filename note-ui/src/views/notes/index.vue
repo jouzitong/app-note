@@ -2,12 +2,17 @@
   <div class="note-page">
     <div class="page">
       <div class="note-header">
-        <div class="breadcrumb">首页 / 笔记 / 日语学习 / N5核心词汇</div>
+        <div class="breadcrumb">{{ breadcrumbText }}</div>
 
         <div class="note-title-row">
           <h1 class="note-title">{{ noteNode.title }}</h1>
           <div class="note-actions">
-            <button class="icon-btn" title="返回上一级" aria-label="返回上一级">
+            <button
+              class="icon-btn"
+              title="返回上一级"
+              aria-label="返回上一级"
+              @click="goToParent"
+            >
               ↩
             </button>
             <button class="icon-btn" title="编辑" aria-label="编辑">✎</button>
@@ -40,12 +45,12 @@
             <h2 class="section-title">子节点</h2>
             <ul class="tree-list">
               <li
-                v-for="item in childNodes"
+                v-for="(item, index) in childNodes"
                 :key="item.id"
                 class="tree-item"
                 @click="openChildNode(item)"
               >
-                {{ item.sort }}. {{ item.title }}
+                {{ index + 1 }}. {{ item.title }}
               </li>
               <li v-if="!childNodes.length" class="tree-item">暂无子节点</li>
             </ul>
@@ -71,7 +76,7 @@
 </template>
 
 <script>
-import { getNoteNodeById, listNoteNodesByParentId } from "@/api/noteNodes";
+import { getNoteNodeById } from "@/api/noteNodes";
 import {
   createDefaultNoteNode,
   createMockNoteNode,
@@ -88,6 +93,8 @@ export default {
     return {
       noteNode: createDefaultNoteNode(),
       childNodes: [],
+      paths: [],
+      noteContent: null,
       loading: false,
       errorMessage: "",
     };
@@ -104,15 +111,46 @@ export default {
         .map((item) => item.name)
         .join(" / ");
     },
+    breadcrumbText() {
+      return this.paths
+        .map((item) => item.title)
+        .filter(Boolean)
+        .join(" / ");
+    },
     contentData() {
       const fallback = createMockNoteNode();
       const fallbackContent = JSON.parse(fallback.content);
 
-      const rawContent = this.noteNode.content;
+      const rawContent = this.noteContent ?? this.noteNode.content;
       if (rawContent && typeof rawContent === "object") {
+        if (
+          Array.isArray(rawContent.paragraphs) ||
+          Array.isArray(rawContent.bullets)
+        ) {
+          return {
+            paragraphs: rawContent.paragraphs || fallbackContent.paragraphs,
+            bullets: rawContent.bullets || fallbackContent.bullets,
+          };
+        }
+
+        if (typeof rawContent.desc === "string" && rawContent.desc.trim()) {
+          return {
+            paragraphs: [
+              rawContent.desc,
+              "该内容由 Domain 接口返回对象渲染。",
+              "你可以将 content 扩展为 paragraphs/bullets 结构实现更丰富展示。",
+            ],
+            bullets: [],
+          };
+        }
+
         return {
-          paragraphs: rawContent.paragraphs || fallbackContent.paragraphs,
-          bullets: rawContent.bullets || fallbackContent.bullets,
+          paragraphs: [
+            JSON.stringify(rawContent, null, 2),
+            "该内容由 Domain 接口返回对象渲染。",
+            "你可以将 content 扩展为 paragraphs/bullets 结构实现更丰富展示。",
+          ],
+          bullets: [],
         };
       }
 
@@ -153,48 +191,31 @@ export default {
         const noteId = this.resolveNoteId();
         if (noteId === null) {
           this.noteNode = createDefaultNoteNode();
-          const rootList = await listNoteNodesByParentId(null, {
-            page: 1,
-            size: 100,
-            sorts: "sort:ASC",
-          });
-          this.childNodes = rootList
-            .map((item) => normalizeNoteNode(item))
-            .sort((a, b) => (a.sort || 0) - (b.sort || 0))
-            .map((item) => ({
-              id: item.id,
-              title: item.title,
-              sort: item.sort || 0,
-            }))
-            .filter((item) => item.id && item.title);
+          this.paths = [];
+          this.noteContent = null;
+          this.childNodes = [];
+          this.errorMessage = "请通过 /note/{id} 访问指定节点。";
           return;
         }
 
-        const noteResponse = await getNoteNodeById(noteId);
-        const note =
-          noteResponse && noteResponse.noteNode
-            ? noteResponse.noteNode
-            : noteResponse;
+        const noteVO = await getNoteNodeById(noteId);
+        const note = noteVO?.noteNode || noteVO;
 
         this.noteNode = normalizeNoteNode(note || {});
-        const parentIdForQuery = this.noteNode.id ?? noteId;
-        const list = await listNoteNodesByParentId(parentIdForQuery, {
-          page: 1,
-          size: 100,
-          sorts: "sort:ASC",
-        });
-        this.childNodes = list
-          .map((item) => normalizeNoteNode(item))
-          .sort((a, b) => (a.sort || 0) - (b.sort || 0))
+        this.paths = Array.isArray(noteVO?.paths) ? noteVO.paths : [];
+        this.noteContent = noteVO?.content ?? this.noteNode.content;
+        this.childNodes = (noteVO?.childNoteNodes || [])
           .map((item) => ({
             id: item.id,
             title: item.title,
-            sort: item.sort || 0,
+            sort: 0,
           }))
           .filter((item) => item.id && item.title);
       } catch (error) {
         const mock = createMockNoteNode();
         this.noteNode = normalizeNoteNode(mock);
+        this.paths = [];
+        this.noteContent = mock.content;
         this.childNodes = [
           { id: 1, title: "これは私の本です", sort: 1 },
           { id: 2, title: "それは先生の本です", sort: 2 },
@@ -214,6 +235,19 @@ export default {
         name: "note",
         params: { id: String(childNode.id) },
       });
+    },
+    goToParent() {
+      if (this.paths.length >= 2) {
+        const parent = this.paths[this.paths.length - 2];
+        if (parent && parent.id) {
+          this.$router.push({
+            name: "note",
+            params: { id: String(parent.id) },
+          });
+          return;
+        }
+      }
+      this.$router.back();
     },
   },
 };
@@ -250,14 +284,12 @@ export default {
   font-size: 13px;
   color: #6b7280;
   margin-bottom: 12px;
+  text-align: left;
 }
 
 .note-title-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
+  position: relative;
+  min-height: 38px;
   margin-bottom: 12px;
 }
 
@@ -267,11 +299,18 @@ export default {
   line-height: 1.3;
   margin: 0;
   color: #111827;
+  text-align: center;
+  padding-right: 96px;
+  padding-left: 96px;
 }
 
 .note-actions {
   display: flex;
   gap: 10px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .icon-btn {
@@ -436,7 +475,16 @@ export default {
   }
 
   .note-actions {
+    position: static;
+    transform: none;
     gap: 8px;
+    justify-content: flex-end;
+    margin-top: 8px;
+  }
+
+  .note-title {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 </style>
