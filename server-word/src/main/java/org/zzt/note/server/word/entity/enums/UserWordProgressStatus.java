@@ -34,4 +34,14 @@ public enum UserWordProgressStatus implements IEnum {
         this.code = code;
         this.name = name;
     }
+
+    @Override
+    public int getCode() {
+        return code;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
 }

@@ -36,7 +36,7 @@ public class ExampleSentenceMetaInfo {
     /**
      * 词法/语法拆解
      */
-    private List<String> wordGrammarBreakdown = new ArrayList<>();
+    private List<WordGrammarBreakdownItem> wordGrammarBreakdown = new ArrayList<>();
 
     /**
      * 固定句型
@@ -52,5 +52,14 @@ public class ExampleSentenceMetaInfo {
 
         private String meaningZh;
     }
-}
 
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    public static class WordGrammarBreakdownItem {
+
+        private String word;
+
+        private String desc;
+    }
+}

@@ -1,97 +1,93 @@
 {
-  "version": "1.0",
-  "locale": "zh-CN",
-  "card": {
-    "id": "jp-n5-watashi-001",
-    "word": {
-      "text": "私",
-      "level": "N5"
-    },
-    "done": false,
-    "tags": [
-      { "name": "N5", "className": "tag-n5" },
-      { "name": "代词", "className": "tag-pos" },
-      { "name": "人称", "className": "tag-type" },
-      { "name": "核心词", "className": "tag-core" }
-    ],
-    "sections": {
-      "meaning": {
-        "collapsedByDefault": true,
-        "meta": {
-          "kana": "わたし",
-          "zh": "我",
-          "romaji": "wa-ta-shi"
-        },
-        "description": "表示“我”，常用第一人称代词，语气中性，适用于大多数场景。"
+  "id": "jp-n5-watashi-001",
+  "word": {
+    "text": "私",
+    "level": "N5"
+  },
+  "done": false,
+  "tags": [
+    { "name": "N5", "className": "tag-n5" },
+    { "name": "代词", "className": "tag-pos" },
+    { "name": "人称", "className": "tag-type" },
+    { "name": "核心词", "className": "tag-core" }
+  ],
+  "sections": {
+    "meaning": {
+      "collapsedByDefault": true,
+      "meta": {
+        "kana": "わたし",
+        "zh": "我",
+        "romaji": "wa-ta-shi"
       },
-      "examples": {
-        "collapsedByDefault": false,
-        "items": [
-          {
-            "id": "ex-1",
-            "sentence": "これは 私 の 本 です。",
-            "explain": {
-              "collapsedByDefault": true,
-              "reading": "これは わたし の ほん です",
-              "romaji": "kore wa watashi no hon desu",
-              "meaningZh": "这是我的书。",
-              "wordGrammarBreakdown": [
-                "これ：这（指示代词）",
-                "は：主题助词，提示“这是在说什么”",
-                "私（わたし）：我",
-                "の：所属助词，表示“我的”",
-                "本（ほん）：书",
-                "です：礼貌判断句尾，相当于“是”"
-              ],
-              "fixedPattern": {
-                "pattern": "これは A です。",
-                "meaningZh": "这是 A。"
-              }
-            }
-          },
-          {
-            "id": "ex-2",
-            "sentence": "私 は 学生 です。",
-            "explain": {
-              "collapsedByDefault": true,
-              "reading": "わたし は がくせい です",
-              "romaji": "watashi wa gakusei desu",
-              "meaningZh": "我是学生。",
-              "wordGrammarBreakdown": [
-                "私（わたし）：我",
-                "は：主题助词，提示主题“我”",
-                "学生（がくせい）：学生",
-                "です：礼貌判断句尾，相当于“是”"
-              ],
-              "fixedPattern": {
-                "pattern": "A は B です。",
-                "meaningZh": "A 是 B。"
-              }
+      "description": "表示“我”，常用第一人称代词，语气中性，适用于大多数场景。"
+    },
+    "examples": {
+      "collapsedByDefault": false,
+      "items": [
+        {
+          "id": "ex-1",
+          "sentence": "これは 私 の 本 です。",
+          "explain": {
+            "collapsedByDefault": true,
+            "reading": "これは わたし の ほん です",
+            "romaji": "kore wa watashi no hon desu",
+            "meaningZh": "这是我的书。",
+            "wordGrammarBreakdown": [
+              { "word": "これ", "desc": "这（指示代词）" },
+              { "word": "は", "desc": "主题助词，提示“这是在说什么”" },
+              { "word": "私（わたし）", "desc": "我" },
+              { "word": "の", "desc": "所属助词，表示“我的”" },
+              { "word": "本（ほん）", "desc": "书" },
+              { "word": "です", "desc": "礼貌判断句尾，相当于“是”" }
+            ],
+            "fixedPattern": {
+              "pattern": "これは A です。",
+              "meaningZh": "这是 A。"
             }
           }
-        ]
-      },
-      "synonyms": {
-        "items": [
-          { "text": "僕", "kana": "ぼく" },
-          { "text": "俺", "kana": "おれ" },
-          { "text": "自分", "kana": "じぶん" }
-        ]
-      },
-      "related": {
-        "items": [
-          { "text": "あなた", "kana": "" },
-          { "text": "彼", "kana": "かれ" },
-          { "text": "名前", "kana": "なまえ" }
-        ]
-      }
+        },
+        {
+          "id": "ex-2",
+          "sentence": "私 は 学生 です。",
+          "explain": {
+            "collapsedByDefault": true,
+            "reading": "わたし は がくせい です",
+            "romaji": "watashi wa gakusei desu",
+            "meaningZh": "我是学生。",
+            "wordGrammarBreakdown": [
+              { "word": "私（わたし）", "desc": "我" },
+              { "word": "は", "desc": "主题助词，提示主题“我”" },
+              { "word": "学生（がくせい）", "desc": "学生" },
+              { "word": "です", "desc": "礼貌判断句尾，相当于“是”" }
+            ],
+            "fixedPattern": {
+              "pattern": "A は B です。",
+              "meaningZh": "A 是 B。"
+            }
+          }
+        }
+      ]
     },
-    "actions": [
-      { "key": "done", "icon": "✓", "title": "完成" },
-      { "key": "hard", "icon": "⚠", "title": "易错" },
-      { "key": "favorite", "icon": "★", "title": "收藏" },
-      { "key": "audio", "icon": "🔊", "title": "发音" },
-      { "key": "next", "icon": "⏭", "title": "下一个" }
-    ]
-  }
+    "synonyms": {
+      "items": [
+        { "text": "僕", "kana": "ぼく" },
+        { "text": "俺", "kana": "おれ" },
+        { "text": "自分", "kana": "じぶん" }
+      ]
+    },
+    "related": {
+      "items": [
+        { "text": "あなた", "kana": "" },
+        { "text": "彼", "kana": "かれ" },
+        { "text": "名前", "kana": "なまえ" }
+      ]
+    }
+  },
+  "actions": [
+    { "key": "done", "icon": "✓", "title": "完成" },
+    { "key": "hard", "icon": "⚠", "title": "易错" },
+    { "key": "favorite", "icon": "★", "title": "收藏" },
+    { "key": "audio", "icon": "🔊", "title": "发音" },
+    { "key": "next", "icon": "⏭", "title": "下一个" }
+  ]
 }
