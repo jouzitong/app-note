@@ -6,9 +6,9 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "id": "jp-n5-watashi-001",
+  "id": "jp-n5-watashi-002",
   "word": {
-    "text": "私",
+    "text": "あなた",
     "level": "N5"
   },
   "done": false,
@@ -73,7 +73,6 @@ Accept: application/json
   ]
 }
 
-
 ### 2. Domain查询（get，第1条，index=0）
 ### 注意：该接口依赖 noteId 与 wordCard 的关系数据（word_card_note_node_rel）已存在
 GET {{host}}{{basePath}}/9/0
@@ -84,3 +83,8 @@ Accept: application/json
 GET {{host}}{{basePath}}/8/0
 Accept: application/json
 
+
+### 4. Domain删除（delete）
+### 删除 word_card 及其关联关系（note/tag/example 关联），不删除 example_sentence 数据
+DELETE {{host}}{{basePath}}/jp-n5-watashi-002
+Accept: application/json

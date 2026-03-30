@@ -24,4 +24,11 @@ public interface IWordCardDomainService {
      */
     WordCardVO get(Long noteId, int index);
 
+    /**
+     * 按卡片业务ID删除单词卡（会删除关联关系，不删除例句实体）
+     *
+     * @param cardId 卡片业务ID
+     */
+    void delete(String cardId);
+
 }

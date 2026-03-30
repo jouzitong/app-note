@@ -1,6 +1,7 @@
 package org.zzt.note.server.word.controller;
 
 import lombok.AllArgsConstructor;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -31,5 +32,10 @@ public class WordCardDomainController {
     @GetMapping("/{noteId}/{index}")
     public WordCardVO get(@PathVariable("noteId") Long noteId, @PathVariable("index") int index) {
         return wordCardDomainService.get(noteId, index);
+    }
+
+    @DeleteMapping("/{cardId}")
+    public void delete(@PathVariable("cardId") String cardId) {
+        wordCardDomainService.delete(cardId);
     }
 }

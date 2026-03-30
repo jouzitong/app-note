@@ -96,6 +96,25 @@ public class WordCardDomainServiceImpl implements IWordCardDomainService {
         return toVO(card);
     }
 
+    @Override
+    @Transactional
+    public void delete(String cardId) {
+        if (cardId == null || cardId.isBlank()) {
+            throw new IllegalArgumentException("cardId cannot be blank");
+        }
+
+        WordCard card = wordCardRepository.findByCardCode(cardId)
+                .orElseThrow(() -> new IllegalArgumentException("WordCard not found, cardCode=" + cardId));
+
+        wordCardNoteNodeRelRepository.deleteByWordCardId(card.getId());
+
+        card.getTags().clear();
+        card.getExamples().clear();
+        wordCardRepository.save(card);
+
+        wordCardRepository.delete(card);
+    }
+
     private String extractLocale(String cardCode) {
         if (cardCode == null || cardCode.isBlank()) {
             return "jp";

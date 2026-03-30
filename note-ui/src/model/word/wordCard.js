@@ -1,0 +1,321 @@
+/**
+ * @typedef {Object} WordInfo
+ * @property {string} text
+ * @property {string} level
+ */
+
+/**
+ * @typedef {Object} TagInfo
+ * @property {string} name
+ * @property {string} className
+ */
+
+/**
+ * @typedef {Object} MeaningMeta
+ * @property {string} kana
+ * @property {string} zh
+ * @property {string} romaji
+ */
+
+/**
+ * @typedef {Object} MeaningSection
+ * @property {boolean} collapsedByDefault
+ * @property {MeaningMeta} meta
+ * @property {string} description
+ */
+
+/**
+ * @typedef {Object} WordGrammarBreakdownItem
+ * @property {string} word
+ * @property {string} desc
+ */
+
+/**
+ * @typedef {Object} FixedPattern
+ * @property {string} pattern
+ * @property {string} meaningZh
+ */
+
+/**
+ * @typedef {Object} ExampleExplain
+ * @property {boolean} collapsedByDefault
+ * @property {string} reading
+ * @property {string} romaji
+ * @property {string} meaningZh
+ * @property {WordGrammarBreakdownItem[]} wordGrammarBreakdown
+ * @property {FixedPattern} fixedPattern
+ */
+
+/**
+ * @typedef {Object} ExampleItem
+ * @property {string} id
+ * @property {string} sentence
+ * @property {ExampleExplain} explain
+ */
+
+/**
+ * @typedef {Object} ExamplesSection
+ * @property {boolean} collapsedByDefault
+ * @property {ExampleItem[]} items
+ */
+
+/**
+ * @typedef {Object} VocabularyItem
+ * @property {string} text
+ * @property {string} kana
+ */
+
+/**
+ * @typedef {Object} VocabularySection
+ * @property {VocabularyItem[]} items
+ */
+
+/**
+ * @typedef {Object} Sections
+ * @property {MeaningSection} meaning
+ * @property {ExamplesSection} examples
+ * @property {VocabularySection} synonyms
+ * @property {VocabularySection} related
+ */
+
+/**
+ * @typedef {Object} ActionInfo
+ * @property {string} key
+ * @property {string} icon
+ * @property {string} title
+ */
+
+/**
+ * @typedef {Object} WordCardVO
+ * @property {string} id
+ * @property {WordInfo} word
+ * @property {boolean} done
+ * @property {TagInfo[]} tags
+ * @property {Sections} sections
+ * @property {ActionInfo[]} actions
+ */
+
+/**
+ * 与后端 WordCardVO 对齐的默认结构。
+ * @returns {WordCardVO}
+ */
+export function createDefaultWordCard() {
+  return {
+    id: "",
+    word: {
+      text: "",
+      level: "",
+    },
+    done: false,
+    tags: [],
+    sections: {
+      meaning: {
+        collapsedByDefault: true,
+        meta: {
+          kana: "",
+          zh: "",
+          romaji: "",
+        },
+        description: "",
+      },
+      examples: {
+        collapsedByDefault: false,
+        items: [],
+      },
+      synonyms: {
+        items: [],
+      },
+      related: {
+        items: [],
+      },
+    },
+    actions: [
+      { key: "done", icon: "✓", title: "完成" },
+      { key: "hard", icon: "⚠", title: "易错" },
+      { key: "favorite", icon: "★", title: "收藏" },
+      { key: "audio", icon: "🔊", title: "发音" },
+      { key: "next", icon: "⏭", title: "下一个" },
+    ],
+  };
+}
+
+/**
+ * 页面展示用示例数据（结构与 WordCardVO 对齐）。
+ * @returns {WordCardVO}
+ */
+export function createMockWordCard() {
+  return {
+    id: "jp-n5-watashi-001",
+    word: {
+      text: "私",
+      level: "N5",
+    },
+    done: false,
+    tags: [
+      { name: "N5", className: "tag-n5" },
+      { name: "代词", className: "tag-pos" },
+      { name: "人称", className: "tag-type" },
+      { name: "核心词", className: "tag-core" },
+    ],
+    sections: {
+      meaning: {
+        collapsedByDefault: true,
+        meta: {
+          kana: "わたし",
+          zh: "我",
+          romaji: "wa-ta-shi",
+        },
+        description: "表示“我”，常用第一人称代词，语气中性，适用于大多数场景。",
+      },
+      examples: {
+        collapsedByDefault: false,
+        items: [
+          {
+            id: "ex-1",
+            sentence: "これは 私 の 本 です。",
+            explain: {
+              collapsedByDefault: true,
+              reading: "これは わたし の ほん です",
+              romaji: "kore wa watashi no hon desu",
+              meaningZh: "这是我的书。",
+              wordGrammarBreakdown: [
+                { word: "これ", desc: "这（指示代词）" },
+                { word: "は", desc: "主题助词，提示“这是在说什么”" },
+                { word: "私（わたし）", desc: "我" },
+                { word: "の", desc: "所属助词，表示“我的”" },
+                { word: "本（ほん）", desc: "书" },
+                { word: "です", desc: "礼貌判断句尾，相当于“是”" },
+              ],
+              fixedPattern: {
+                pattern: "これは A です。",
+                meaningZh: "这是 A。",
+              },
+            },
+          },
+          {
+            id: "ex-2",
+            sentence: "私 は 学生 です。",
+            explain: {
+              collapsedByDefault: true,
+              reading: "わたし は がくせい です",
+              romaji: "watashi wa gakusei desu",
+              meaningZh: "我是学生。",
+              wordGrammarBreakdown: [
+                { word: "私（わたし）", desc: "我" },
+                { word: "は", desc: "主题助词，提示主题“我”" },
+                { word: "学生（がくせい）", desc: "学生" },
+                { word: "です", desc: "礼貌判断句尾，相当于“是”" },
+              ],
+              fixedPattern: {
+                pattern: "A は B です。",
+                meaningZh: "A 是 B。",
+              },
+            },
+          },
+        ],
+      },
+      synonyms: {
+        items: [
+          { text: "僕", kana: "ぼく" },
+          { text: "俺", kana: "おれ" },
+          { text: "自分", kana: "じぶん" },
+        ],
+      },
+      related: {
+        items: [
+          { text: "あなた", kana: "" },
+          { text: "彼", kana: "かれ" },
+          { text: "名前", kana: "なまえ" },
+        ],
+      },
+    },
+    actions: [
+      { key: "done", icon: "✓", title: "完成" },
+      { key: "hard", icon: "⚠", title: "易错" },
+      { key: "favorite", icon: "★", title: "收藏" },
+      { key: "audio", icon: "🔊", title: "发音" },
+      { key: "next", icon: "⏭", title: "下一个" },
+    ],
+  };
+}
+
+/**
+ * 将任意接口返回对象归一化为 WordCardVO。
+ * @param {Partial<WordCardVO>} source
+ * @returns {WordCardVO}
+ */
+export function normalizeWordCard(source = {}) {
+  const defaults = createDefaultWordCard();
+  const rawWord = source.word || {};
+  const rawSections = source.sections || {};
+  const rawMeaning = rawSections.meaning || {};
+  const rawMeaningMeta = rawMeaning.meta || {};
+  const rawExamples = rawSections.examples || {};
+  const rawSynonyms = rawSections.synonyms || {};
+  const rawRelated = rawSections.related || {};
+
+  return {
+    ...defaults,
+    ...source,
+    word: {
+      ...defaults.word,
+      ...rawWord,
+    },
+    tags: Array.isArray(source.tags) ? source.tags : defaults.tags,
+    sections: {
+      ...defaults.sections,
+      ...rawSections,
+      meaning: {
+        ...defaults.sections.meaning,
+        ...rawMeaning,
+        meta: {
+          ...defaults.sections.meaning.meta,
+          ...rawMeaningMeta,
+        },
+      },
+      examples: {
+        ...defaults.sections.examples,
+        ...rawExamples,
+        items: Array.isArray(rawExamples.items)
+          ? rawExamples.items.map((item, index) => {
+              const rawExplain = item?.explain || {};
+              return {
+                id: item?.id || `example-${index + 1}`,
+                sentence: item?.sentence || "",
+                explain: {
+                  collapsedByDefault:
+                    rawExplain.collapsedByDefault === undefined
+                      ? true
+                      : !!rawExplain.collapsedByDefault,
+                  reading: rawExplain.reading || "",
+                  romaji: rawExplain.romaji || "",
+                  meaningZh: rawExplain.meaningZh || "",
+                  wordGrammarBreakdown: Array.isArray(
+                    rawExplain.wordGrammarBreakdown
+                  )
+                    ? rawExplain.wordGrammarBreakdown
+                    : [],
+                  fixedPattern: {
+                    pattern: rawExplain.fixedPattern?.pattern || "",
+                    meaningZh: rawExplain.fixedPattern?.meaningZh || "",
+                  },
+                },
+              };
+            })
+          : [],
+      },
+      synonyms: {
+        ...defaults.sections.synonyms,
+        ...rawSynonyms,
+        items: Array.isArray(rawSynonyms.items) ? rawSynonyms.items : [],
+      },
+      related: {
+        ...defaults.sections.related,
+        ...rawRelated,
+        items: Array.isArray(rawRelated.items) ? rawRelated.items : [],
+      },
+    },
+    actions: Array.isArray(source.actions) ? source.actions : defaults.actions,
+    done: !!source.done,
+  };
+}
