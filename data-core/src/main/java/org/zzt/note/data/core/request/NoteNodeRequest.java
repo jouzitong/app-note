@@ -10,4 +10,10 @@ import org.athena.framework.data.jdbc.req.BaseRequest;
  */
 @Data
 public class NoteNodeRequest extends BaseRequest {
+
+    /**
+     * 节点ID
+     */
+    private Long id;
+
 }
