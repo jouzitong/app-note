@@ -21,7 +21,7 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
   {
-    path: "/note",
+    path: "/note/:id?",
     name: "note",
     component: NoteIndexView,
   },

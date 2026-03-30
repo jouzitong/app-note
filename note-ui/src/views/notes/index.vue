@@ -28,6 +28,10 @@
             ><span class="chip-icon">↕</span>{{ noteNode.sort }}</span
           >
         </div>
+        <div v-if="loading" class="note-status">正在加载节点数据...</div>
+        <div v-else-if="errorMessage" class="note-status error">
+          {{ errorMessage }}
+        </div>
       </div>
 
       <div class="content-layout">
@@ -36,13 +40,14 @@
             <h2 class="section-title">子节点</h2>
             <ul class="tree-list">
               <li
-                v-for="(item, index) in childNodeTitles"
-                :key="item"
+                v-for="item in childNodes"
+                :key="item.id"
                 class="tree-item"
-                :class="{ active: index === 0 }"
+                @click="openChildNode(item)"
               >
-                {{ index + 1 }}. {{ item }}
+                {{ item.sort }}. {{ item.title }}
               </li>
+              <li v-if="!childNodes.length" class="tree-item">暂无子节点</li>
             </ul>
           </div>
 
@@ -66,9 +71,11 @@
 </template>
 
 <script>
+import { getNoteNodeById, listNoteNodesByParentId } from "@/api/noteNodes";
 import {
   createDefaultNoteNode,
   createMockNoteNode,
+  normalizeNoteNode,
 } from "@/model/note/noteNode";
 import NoteMarkdownContent from "@/components/notes/NoteMarkdownContent.vue";
 
@@ -80,12 +87,9 @@ export default {
   data() {
     return {
       noteNode: createDefaultNoteNode(),
-      childNodeTitles: [
-        "これは私の本です",
-        "それは先生の本です",
-        "あれは日本語の本です",
-        "疑问词练习",
-      ],
+      childNodes: [],
+      loading: false,
+      errorMessage: "",
     };
   },
   computed: {
@@ -101,22 +105,116 @@ export default {
         .join(" / ");
     },
     contentData() {
-      try {
-        const parsed = JSON.parse(this.noteNode.content || "{}");
+      const fallback = createMockNoteNode();
+      const fallbackContent = JSON.parse(fallback.content);
+
+      const rawContent = this.noteNode.content;
+      if (rawContent && typeof rawContent === "object") {
         return {
-          paragraphs: parsed.paragraphs || [],
-          bullets: parsed.bullets || [],
+          paragraphs: rawContent.paragraphs || fallbackContent.paragraphs,
+          bullets: rawContent.bullets || fallbackContent.bullets,
+        };
+      }
+
+      try {
+        const parsed = JSON.parse(rawContent || "{}");
+        return {
+          paragraphs: parsed.paragraphs || fallbackContent.paragraphs,
+          bullets: parsed.bullets || fallbackContent.bullets,
         };
       } catch (error) {
-        return {
-          paragraphs: [],
-          bullets: [],
-        };
+        return fallbackContent;
       }
     },
   },
-  created() {
-    this.noteNode = createMockNoteNode();
+  async created() {
+    await this.loadPageData();
+  },
+  watch: {
+    "$route.fullPath"() {
+      this.loadPageData();
+    },
+  },
+  methods: {
+    resolveNoteId() {
+      const routeId = this.$route.params.id || this.$route.query.id;
+      if (routeId !== undefined && routeId !== null && routeId !== "") {
+        const parsed = Number(routeId);
+        if (!Number.isNaN(parsed)) {
+          return parsed;
+        }
+      }
+      return null;
+    },
+    async loadPageData() {
+      this.loading = true;
+      this.errorMessage = "";
+      try {
+        const noteId = this.resolveNoteId();
+        if (noteId === null) {
+          this.noteNode = createDefaultNoteNode();
+          const rootList = await listNoteNodesByParentId(null, {
+            page: 1,
+            size: 100,
+            sorts: "sort:ASC",
+          });
+          this.childNodes = rootList
+            .map((item) => normalizeNoteNode(item))
+            .sort((a, b) => (a.sort || 0) - (b.sort || 0))
+            .map((item) => ({
+              id: item.id,
+              title: item.title,
+              sort: item.sort || 0,
+            }))
+            .filter((item) => item.id && item.title);
+          return;
+        }
+
+        const noteResponse = await getNoteNodeById(noteId);
+        const note =
+          noteResponse && noteResponse.noteNode
+            ? noteResponse.noteNode
+            : noteResponse;
+
+        this.noteNode = normalizeNoteNode(note || {});
+        const parentIdForQuery = this.noteNode.id ?? noteId;
+        const list = await listNoteNodesByParentId(parentIdForQuery, {
+          page: 1,
+          size: 100,
+          sorts: "sort:ASC",
+        });
+        this.childNodes = list
+          .map((item) => normalizeNoteNode(item))
+          .sort((a, b) => (a.sort || 0) - (b.sort || 0))
+          .map((item) => ({
+            id: item.id,
+            title: item.title,
+            sort: item.sort || 0,
+          }))
+          .filter((item) => item.id && item.title);
+      } catch (error) {
+        const mock = createMockNoteNode();
+        this.noteNode = normalizeNoteNode(mock);
+        this.childNodes = [
+          { id: 1, title: "これは私の本です", sort: 1 },
+          { id: 2, title: "それは先生の本です", sort: 2 },
+          { id: 3, title: "あれは日本語の本です", sort: 3 },
+          { id: 4, title: "疑问词练习", sort: 4 },
+        ];
+        this.errorMessage = `接口请求失败，已使用示例数据：${error.message}`;
+      } finally {
+        this.loading = false;
+      }
+    },
+    openChildNode(childNode) {
+      if (!childNode || !childNode.id) {
+        return;
+      }
+      this.$router.push({
+        name: "note",
+        params: { id: String(childNode.id) },
+      });
+    },
   },
 };
 </script>
@@ -289,6 +387,11 @@ export default {
 
 .tree-item {
   text-align: left;
+  cursor: pointer;
+}
+
+.tree-item:hover {
+  color: #2563eb;
 }
 
 .tree-item:last-child,
@@ -299,6 +402,16 @@ export default {
 .tree-item.active {
   color: #2563eb;
   font-weight: 600;
+}
+
+.note-status {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.note-status.error {
+  color: #b91c1c;
 }
 
 @media (max-width: 900px) {

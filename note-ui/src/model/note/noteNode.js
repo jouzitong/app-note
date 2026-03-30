@@ -79,3 +79,23 @@ export function createMockNoteNode() {
     },
   };
 }
+
+/**
+ * 将任意接口返回对象归一化为 NoteNodeDTO 结构。
+ * @param {Partial<NoteNodeDTO>} source
+ * @returns {NoteNodeDTO}
+ */
+export function normalizeNoteNode(source = {}) {
+  const defaultNode = createDefaultNoteNode();
+  const rawMeta = source.meta || {};
+
+  return {
+    ...defaultNode,
+    ...source,
+    meta: {
+      ...defaultNode.meta,
+      ...rawMeta,
+      tags: Array.isArray(rawMeta.tags) ? rawMeta.tags : [],
+    },
+  };
+}
