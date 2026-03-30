@@ -1,0 +1,46 @@
+### 1. Domain新增（add）
+POST {{host}}/api/v1/noteNodes/domain
+Content-Type: application/json
+Accept: application/json
+
+{
+  "noteNode": {
+    "title": "代词（Domain新增）",
+    "noteType": "WORD_CARD",
+    "parentId": 4,
+    "sort": 20
+  },
+  "pathIds": [4],
+  "content": {
+    "desc": "domain add test"
+  }
+}
+
+
+### 2. Domain更新（update）
+PUT {{host}}/api/v1/noteNodes/domain/9
+Content-Type: application/json
+Accept: application/json
+
+{
+  "noteNode": {
+    "id": 9,
+    "title": "代词（Domain更新）",
+    "noteType": "WORD_CARD",
+    "parentId": 4,
+    "sort": 21
+  },
+  "pathIds": [4, 9],
+  "content": {
+    "desc": "domain update test"
+  }
+}
+
+
+### 3. Domain删除（delete）
+DELETE {{host}}/api/v1/noteNodes/domain/9
+Accept: application/json
+
+### 4. Domain查询（get）
+GET {{host}}/api/v1/noteNodes/domain/9
+Accept: application/json

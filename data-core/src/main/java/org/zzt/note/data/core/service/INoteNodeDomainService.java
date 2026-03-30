@@ -13,6 +13,10 @@ public interface INoteNodeDomainService {
 
     void add(NoteNodeAddDTO noteNodeAdd);
 
+    void update(NoteNodeAddDTO noteNodeAdd);
+
+    void delete(NoteNodeRequest request);
+
     NoteNodeVO get(NoteNodeRequest request);
 
 }

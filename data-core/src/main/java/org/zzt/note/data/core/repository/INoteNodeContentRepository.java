@@ -3,6 +3,7 @@ package org.zzt.note.data.core.repository;
 import org.athena.framework.data.jpa.repository.BaseRepository;
 import org.zzt.note.data.core.entity.NoteNodeContent;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -13,4 +14,6 @@ import java.util.Optional;
 public interface INoteNodeContentRepository extends BaseRepository<NoteNodeContent> {
 
     Optional<NoteNodeContent> findByNodeId(Long nodeId);
+
+    void deleteByNodeIdIn(List<Long> nodeIds);
 }

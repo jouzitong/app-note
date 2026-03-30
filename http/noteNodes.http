@@ -1,4 +1,3 @@
-@host = http://localhost:8080
 @basePath = /api/v1/noteNodes
 
 ### 1. 分页查询（无条件）
@@ -73,13 +72,3 @@ Accept: application/json
 ### 8. 物理删除（physicalDelete，默认不一定开放）
 DELETE {{host}}{{basePath}}/physical/1
 Accept: application/json
-
-
-### 9. Domain查询（get）
-POST {{host}}/api/v1/noteNodes/domain/get
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": 9
-}

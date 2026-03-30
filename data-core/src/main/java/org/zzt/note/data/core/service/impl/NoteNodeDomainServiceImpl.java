@@ -20,7 +20,9 @@ import org.zzt.note.data.core.vo.NoteNodePathVO;
 import org.zzt.note.data.core.vo.NoteNodeVO;
 
 import java.util.ArrayList;
+import java.util.ArrayDeque;
 import java.util.Collections;
+import java.util.Deque;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -108,6 +110,118 @@ public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
 
     @Override
     @Transactional
+    public void update(NoteNodeAddDTO noteNodeAdd) {
+        // 1) 更新必须携带节点ID
+        if (noteNodeAdd == null || noteNodeAdd.getNoteNode() == null || noteNodeAdd.getNoteNode().getId() == null) {
+            throw new IllegalArgumentException("noteNodeAdd.noteNode.id cannot be null");
+        }
+
+        Long nodeId = noteNodeAdd.getNoteNode().getId();
+        NoteNode existingNode = noteNodeRepository.findById(nodeId)
+                .orElseThrow(() -> new IllegalArgumentException("NoteNode not found, id=" + nodeId));
+
+        // 2) 主表字段更新（pathIds 优先取外层参数）
+        NoteNodeDTO dto = noteNodeAdd.getNoteNode();
+        if (noteNodeAdd.getPathIds() != null) {
+            dto.setPathIds(noteNodeAdd.getPathIds());
+        }
+        noteNodeConvert.updateEntityFromDto(dto, existingNode);
+        noteNodeRepository.save(existingNode);
+
+        // 3) 内容表做 upsert/清空
+        NoteNodeContent existingContent = noteNodeContentRepository.findByNodeId(nodeId).orElse(null);
+        if (noteNodeAdd.getContent() == null) {
+            if (existingContent != null) {
+                noteNodeContentRepository.delete(existingContent);
+            }
+        } else {
+            if (existingContent == null) {
+                existingContent = new NoteNodeContent();
+                existingContent.setNode(existingNode);
+            }
+            existingContent.setContent(toContentString(noteNodeAdd.getContent()));
+            noteNodeContentRepository.save(existingContent);
+        }
+
+        // 4) 当前节点及其子树路径重算，避免 parent 变化后 pathIds 脏数据
+        List<NoteNode> allNodes = noteNodeRepository.findAll();
+        Map<Long, NoteNode> nodeMap = allNodes.stream()
+                .collect(Collectors.toMap(NoteNode::getId, node -> node));
+        Set<Long> subtreeIds = collectSubtreeIds(nodeId, allNodes);
+        Map<Long, List<Long>> pathCache = new HashMap<>();
+        List<NoteNode> needUpdatePathNodes = new ArrayList<>();
+        for (Long subtreeId : subtreeIds) {
+            NoteNode subtreeNode = nodeMap.get(subtreeId);
+            if (subtreeNode == null) {
+                continue;
+            }
+            List<Long> newPathIds = buildPathIds(subtreeId, nodeMap, pathCache, new HashSet<>());
+            if (!newPathIds.equals(subtreeNode.getPathIds())) {
+                subtreeNode.setPathIds(newPathIds);
+                needUpdatePathNodes.add(subtreeNode);
+            }
+        }
+        if (!needUpdatePathNodes.isEmpty()) {
+            noteNodeRepository.saveAll(needUpdatePathNodes);
+        }
+    }
+
+    @Override
+    @Transactional
+    public void delete(NoteNodeRequest request) {
+        // 1) 删除必须指定节点ID
+        if (request == null || request.getId() == null) {
+            throw new IllegalArgumentException("request.id cannot be null");
+        }
+        Long rootId = request.getId();
+
+        // 2) 先加载当前可见节点，构造待删除子树
+        List<NoteNode> allNodes = noteNodeRepository.findAll();
+        if (CollectionUtils.isEmpty(allNodes)) {
+            return;
+        }
+        Map<Long, NoteNode> nodeMap = allNodes.stream()
+                .collect(Collectors.toMap(NoteNode::getId, node -> node));
+        if (!nodeMap.containsKey(rootId)) {
+            throw new IllegalArgumentException("NoteNode not found, id=" + rootId);
+        }
+        Set<Long> deleteIds = collectSubtreeIds(rootId, allNodes);
+
+        // 3) 先清理内容表，避免留下孤儿内容数据
+        noteNodeContentRepository.deleteByNodeIdIn(new ArrayList<>(deleteIds));
+
+        // 4) 删除主节点子树（逻辑删除）
+        List<NoteNode> toDeleteNodes = deleteIds.stream()
+                .map(nodeMap::get)
+                .filter(node -> node != null)
+                .collect(Collectors.toList());
+        noteNodeRepository.deleteAll(toDeleteNodes);
+
+        // 5) 清理其他节点 pathIds 中指向已删除节点的引用，避免路径脏数据
+        List<NoteNode> needCleanNodes = new ArrayList<>();
+        for (NoteNode node : allNodes) {
+            if (deleteIds.contains(node.getId())) {
+                continue;
+            }
+            List<Long> currentPathIds = node.getPathIds();
+            if (CollectionUtils.isEmpty(currentPathIds)) {
+                continue;
+            }
+            List<Long> cleanedPathIds = currentPathIds.stream()
+                    .filter(id -> !deleteIds.contains(id))
+                    .collect(Collectors.toList());
+            if (!cleanedPathIds.equals(currentPathIds)) {
+                node.setPathIds(cleanedPathIds);
+                needCleanNodes.add(node);
+            }
+        }
+        if (!needCleanNodes.isEmpty()) {
+            noteNodeRepository.saveAll(needCleanNodes);
+        }
+    }
+
+    @Override
+    @Transactional
     public NoteNodeVO get(NoteNodeRequest request) {
         // 1) 读取节点详情必须指定节点 ID
         if (request == null || request.getId() == null) {
@@ -134,6 +248,31 @@ public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
                 .orElse(null);
 
         return new NoteNodeVO(noteNodeDTO, paths, childNoteNodes, content);
+    }
+
+    /**
+     * 计算指定根节点的整棵子树ID（包含根节点自身）。
+     */
+    private Set<Long> collectSubtreeIds(Long rootId, List<NoteNode> allNodes) {
+        Map<Long, List<Long>> childrenMap = new HashMap<>();
+        for (NoteNode node : allNodes) {
+            if (node.getParentId() != null) {
+                childrenMap.computeIfAbsent(node.getParentId(), k -> new ArrayList<>()).add(node.getId());
+            }
+        }
+
+        Set<Long> subtreeIds = new HashSet<>();
+        Deque<Long> queue = new ArrayDeque<>();
+        queue.add(rootId);
+        while (!queue.isEmpty()) {
+            Long current = queue.poll();
+            if (!subtreeIds.add(current)) {
+                continue;
+            }
+            List<Long> children = childrenMap.getOrDefault(current, Collections.emptyList());
+            queue.addAll(children);
+        }
+        return subtreeIds;
     }
 
     /**
