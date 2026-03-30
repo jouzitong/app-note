@@ -19,8 +19,8 @@ import org.zzt.note.data.core.service.INoteNodeDomainService;
 import org.zzt.note.data.core.vo.NoteNodePathVO;
 import org.zzt.note.data.core.vo.NoteNodeVO;
 
-import java.util.ArrayList;
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Deque;
 import java.util.HashMap;
@@ -241,7 +241,7 @@ public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
         List<NoteNodePathVO> paths = buildPaths(noteNode.getPathIds());
         List<NoteNodePathVO> childNoteNodes = noteNodeRepository.findByParentIdOrderBySortAsc(noteNode.getId())
                 .stream()
-                .map(child -> new NoteNodePathVO(child.getId(), child.getTitle()))
+                .map(child -> new NoteNodePathVO(child.getId(), child.getTitle(), child.getNoteType()))
                 .collect(Collectors.toList());
 
         // 4) 内容优先按 JSON 解析，解析失败时保留原始字符串
@@ -363,7 +363,7 @@ public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
         for (Long pathId : pathIds) {
             NoteNode pathNode = pathNodeMap.get(pathId);
             if (pathNode != null) {
-                paths.add(new NoteNodePathVO(pathNode.getId(), pathNode.getTitle()));
+                paths.add(new NoteNodePathVO(pathNode.getId(), pathNode.getTitle(), pathNode.getNoteType()));
             }
         }
         return paths;

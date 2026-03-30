@@ -1,5 +1,12 @@
 <template>
   <div class="word-card" style="text-align: left">
+    <div class="learning-top">
+      <button class="back-to-catalog-btn" type="button">&lt; 学习进度</button>
+      <div class="learning-progress-track">
+        <span class="learning-progress-fill" />
+      </div>
+    </div>
+
     <div class="card" :class="{ 'is-done': wordCard.done }">
       <div class="header">
         <div class="word-row">
@@ -246,11 +253,60 @@ export default {
 .word-card {
   width: min(100%, 420px);
   text-align: left;
+  height: calc(100dvh - 16px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.learning-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #dbe4ff;
+  background: linear-gradient(135deg, #f8fbff, #eef4ff);
+  white-space: nowrap;
+}
+
+.back-to-catalog-btn {
+  flex: 0 0 auto;
+  border: none;
+  background: transparent;
+  color: #1d4ed8;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.learning-progress-track {
+  flex: 1;
+  min-width: 80px;
+  height: 7px;
+  border-radius: 999px;
+  background: #dbe4ff;
+  overflow: hidden;
+}
+
+.learning-progress-fill {
+  display: block;
+  width: 15%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
 }
 
 .card {
   width: 100%;
-  height: calc(100dvh - 16px);
+  height: auto;
+  flex: 1;
+  min-height: 0;
   margin: 0;
   background: #fff;
   border-radius: 14px;
@@ -539,6 +595,11 @@ export default {
 }
 
 @media (min-width: 640px) {
+  .word-card {
+    height: auto;
+    gap: 12px;
+  }
+
   .card {
     height: auto;
     min-height: 780px;

@@ -239,6 +239,7 @@ export default {
             id: item.id,
             title: item.title,
             sort: 0,
+            noteType: item.noteType,
           }))
           .filter((item) => item.id && item.title);
       } catch (error) {
@@ -247,10 +248,10 @@ export default {
         this.paths = [];
         this.noteContent = mock.content;
         this.childNodes = [
-          { id: 1, title: "これは私の本です", sort: 1 },
-          { id: 2, title: "それは先生の本です", sort: 2 },
-          { id: 3, title: "あれは日本語の本です", sort: 3 },
-          { id: 4, title: "疑问词练习", sort: 4 },
+          { id: 1, title: "これは私の本です", sort: 1, noteType: 1 },
+          { id: 2, title: "それは先生の本です", sort: 2, noteType: 2 },
+          { id: 3, title: "あれは日本語の本です", sort: 3, noteType: 1 },
+          { id: 4, title: "疑问词练习", sort: 4, noteType: 1 },
         ];
         this.errorMessage = `接口请求失败，已使用示例数据：${error.message}`;
       } finally {
@@ -259,6 +260,13 @@ export default {
     },
     openChildNode(childNode) {
       if (!childNode || !childNode.id) {
+        return;
+      }
+      if (Number(childNode.noteType) === 2) {
+        this.$router.push({
+          name: "word-card",
+          query: { noteId: String(childNode.id) },
+        });
         return;
       }
       this.$router.push({

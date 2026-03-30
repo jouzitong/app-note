@@ -3,6 +3,7 @@ package org.zzt.note.data.core.vo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.zzt.note.data.core.type.NoteType;
 
 /**
  *
@@ -17,5 +18,7 @@ public class NoteNodePathVO {
     private Long id;
 
     private String title;
+
+    private NoteType noteType;
 
 }
