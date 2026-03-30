@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import NoteIndexView from "../views/notes/index.vue";
 
 Vue.use(VueRouter);
 
@@ -18,6 +19,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+  },
+  {
+    path: "/note",
+    name: "note",
+    component: NoteIndexView,
   },
 ];
 

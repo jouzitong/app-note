@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.athena.framework.data.jpa.domain.dto.BaseDTO;
-import org.zzt.note.data.core.entity.NoteNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +21,7 @@ public class NoteNodeMetaDTO extends BaseDTO {
     /**
      * 所属笔记节点
      */
-    private NoteNode node;
+    private NoteNodeDTO node;
 
     /**
      * 图标

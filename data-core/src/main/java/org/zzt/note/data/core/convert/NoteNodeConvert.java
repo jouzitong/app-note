@@ -23,6 +23,10 @@ public interface NoteNodeConvert extends IConvert<NoteNode, NoteNodeDTO> {
     NoteNode toEntity(NoteNodeDTO d);
 
     @Override
+    @Mapping(target = "meta.node", ignore = true)
+    NoteNodeDTO toDTO(NoteNode noteNode);
+
+    @Override
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "meta.node", ignore = true)
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
