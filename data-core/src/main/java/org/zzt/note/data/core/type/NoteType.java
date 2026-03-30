@@ -1,5 +1,6 @@
 package org.zzt.note.data.core.type;
 
+import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.Getter;
 import org.arthena.framework.common.enums.IEnum;
 
@@ -39,6 +40,7 @@ public enum NoteType implements IEnum {
 
     ;
 
+    @JsonValue
     private final int code;
 
     private final String name;

@@ -8,3 +8,9 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
   jpa:
     show-sql: true
+
+lib:
+  web:
+    enumPackages:
+      - 'org.athena.framework'
+      - 'org.zzt.note'

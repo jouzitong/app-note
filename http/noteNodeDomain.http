@@ -6,11 +6,10 @@ Accept: application/json
 {
   "noteNode": {
     "title": "代词（Domain新增）",
-    "noteType": "WORD_CARD",
+    "noteType": 1,
     "parentId": 4,
     "sort": 20
   },
-  "pathIds": [4],
   "content": {
     "desc": "domain add test"
   }
@@ -38,7 +37,7 @@ Accept: application/json
 
 
 ### 3. Domain删除（delete）
-DELETE {{host}}/api/v1/noteNodes/domain/9
+DELETE {{host}}/api/v1/noteNodes/domain/10
 Accept: application/json
 
 ### 4. Domain查询（get）

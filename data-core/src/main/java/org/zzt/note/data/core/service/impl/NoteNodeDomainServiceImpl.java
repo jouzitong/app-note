@@ -90,16 +90,19 @@ public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
         }
 
         NoteNodeDTO noteNodeDTO = noteNodeAdd.getNoteNode();
-        // 2) pathIds 以外层参数为准，回填到主节点 DTO
-        if (noteNodeAdd.getPathIds() != null) {
-            noteNodeDTO.setPathIds(noteNodeAdd.getPathIds());
-        }
+        // 2) pathIds 由后端根据 parentId 计算，不信任前端传入值
+        noteNodeDTO.setPathIds(Collections.emptyList());
 
         // 3) 先保存节点主表（note_node）
         NoteNode noteNode = noteNodeConvert.toEntity(noteNodeDTO);
         NoteNode saved = noteNodeRepository.save(noteNode);
 
-        // 4) 若有正文内容，再写入独立内容表（note_node_content）
+        // 4) 基于 parentId 计算当前节点 pathIds 并回写
+        List<Long> computedPathIds = buildPathIdsForNewNode(saved);
+        saved.setPathIds(computedPathIds);
+        noteNodeRepository.save(saved);
+
+        // 5) 若有正文内容，再写入独立内容表（note_node_content）
         if (noteNodeAdd.getContent() != null) {
             NoteNodeContent nodeContent = new NoteNodeContent();
             nodeContent.setNode(saved);
@@ -248,6 +251,36 @@ public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
                 .orElse(null);
 
         return new NoteNodeVO(noteNodeDTO, paths, childNoteNodes, content);
+    }
+
+    /**
+     * 新增节点时，根据 parentId 计算 pathIds（根 -> 当前节点）。
+     */
+    private List<Long> buildPathIdsForNewNode(NoteNode node) {
+        if (node == null || node.getId() == null) {
+            return Collections.emptyList();
+        }
+
+        Long parentId = node.getParentId();
+        if (parentId == null) {
+            return new ArrayList<>(Collections.singletonList(node.getId()));
+        }
+
+        NoteNode parent = noteNodeRepository.findById(parentId)
+                .orElseThrow(() -> new IllegalArgumentException("Parent NoteNode not found, id=" + parentId));
+
+        List<Long> parentPathIds = parent.getPathIds();
+        if (CollectionUtils.isEmpty(parentPathIds)) {
+            // 兜底：历史数据父节点 pathIds 缺失时，现场重算父节点路径。
+            List<NoteNode> allNodes = noteNodeRepository.findAll();
+            Map<Long, NoteNode> nodeMap = allNodes.stream()
+                    .collect(Collectors.toMap(NoteNode::getId, n -> n));
+            parentPathIds = buildPathIds(parentId, nodeMap, new HashMap<>(), new HashSet<>());
+        }
+
+        List<Long> result = new ArrayList<>(parentPathIds);
+        result.add(node.getId());
+        return result;
     }
 
     /**
