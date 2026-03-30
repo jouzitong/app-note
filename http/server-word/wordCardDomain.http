@@ -1,0 +1,86 @@
+@basePath = /api/v1/wordCards/domain
+
+### 1. Domain新增（add）
+POST {{host}}{{basePath}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "jp-n5-watashi-001",
+  "word": {
+    "text": "私",
+    "level": "N5"
+  },
+  "done": false,
+  "tags": [
+    { "name": "N5", "className": "tag-n5" },
+    { "name": "代词", "className": "tag-pos" },
+    { "name": "人称", "className": "tag-type" },
+    { "name": "核心词", "className": "tag-core" }
+  ],
+  "sections": {
+    "meaning": {
+      "collapsedByDefault": true,
+      "meta": {
+        "kana": "わたし",
+        "zh": "我",
+        "romaji": "wa-ta-shi"
+      },
+      "description": "表示“我”，常用第一人称代词，语气中性，适用于大多数场景。"
+    },
+    "examples": {
+      "collapsedByDefault": false,
+      "items": [
+        {
+          "id": "ex-1",
+          "sentence": "これは 私 の 本 です。",
+          "explain": {
+            "collapsedByDefault": true,
+            "reading": "これは わたし の ほん です",
+            "romaji": "kore wa watashi no hon desu",
+            "meaningZh": "这是我的书。",
+            "wordGrammarBreakdown": [
+              { "word": "これ", "desc": "这（指示代词）" },
+              { "word": "は", "desc": "主题助词" }
+            ],
+            "fixedPattern": {
+              "pattern": "これは A です。",
+              "meaningZh": "这是 A。"
+            }
+          }
+        }
+      ]
+    },
+    "synonyms": {
+      "items": [
+        { "text": "僕", "kana": "ぼく" },
+        { "text": "俺", "kana": "おれ" }
+      ]
+    },
+    "related": {
+      "items": [
+        { "text": "あなた", "kana": "" },
+        { "text": "彼", "kana": "かれ" }
+      ]
+    }
+  },
+  "actions": [
+    { "key": "done", "icon": "✓", "title": "完成" },
+    { "key": "hard", "icon": "⚠", "title": "易错" },
+    { "key": "favorite", "icon": "★", "title": "收藏" },
+    { "key": "audio", "icon": "🔊", "title": "发音" },
+    { "key": "next", "icon": "⏭", "title": "下一个" }
+  ]
+}
+
+
+### 2. Domain查询（get，第1条，index=0）
+### 注意：该接口依赖 noteId 与 wordCard 的关系数据（word_card_note_node_rel）已存在
+GET {{host}}{{basePath}}/9/0
+Accept: application/json
+
+
+### 3. Domain查询（get，第2条，index=1）
+GET {{host}}{{basePath}}/8/0
+Accept: application/json
+

@@ -18,6 +18,8 @@ public interface IWordCardNoteNodeRelRepository extends BaseRepository<WordCardN
 
     List<WordCardNoteNodeRel> findByNoteNodeId(Long noteNodeId);
 
+    List<WordCardNoteNodeRel> findByNoteNodeIdOrderByWordCardIdAsc(Long noteNodeId);
+
     @Transactional
     void deleteByWordCardId(Long wordCardId);
 
