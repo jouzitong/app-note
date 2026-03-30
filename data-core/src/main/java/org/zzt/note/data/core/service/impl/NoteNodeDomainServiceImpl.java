@@ -2,7 +2,6 @@ package org.zzt.note.data.core.service.impl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jakarta.annotation.PostConstruct;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -22,11 +21,11 @@ import org.zzt.note.data.core.vo.NoteNodeVO;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -52,7 +51,7 @@ public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
      * 启动后为历史数据补全 pathIds：
      * pathIds 为空时，按 parentId 追溯，生成「根 -> 当前节点」的路径ID列表。
      */
-    @PostConstruct
+//    @PostConstruct
     @Transactional
     public void initPathIdsOnStartup() {
         List<NoteNode> allNodes = noteNodeRepository.findAll();
