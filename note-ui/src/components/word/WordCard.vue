@@ -1,7 +1,7 @@
 <template>
   <div class="word-card" style="text-align: left">
     <div class="learning-top">
-      <button class="back-to-catalog-btn" type="button">&lt; 学习进度</button>
+      <button class="back-to-catalog-btn" type="button">&lt; 进度 3/20</button>
       <div class="learning-progress-track">
         <span class="learning-progress-fill" />
       </div>
@@ -170,6 +170,7 @@ import {
   createMockWordCard,
   normalizeWordCard,
 } from "@/model/word/wordCard";
+import privateAudioSrc from "@/assets/私.mp3";
 
 export default {
   name: "WordCard",
@@ -188,10 +189,14 @@ export default {
       wordCard: createDefaultWordCard(),
       loading: false,
       errorMessage: "",
+      pronunciationAudio: null,
     };
   },
   async created() {
     await this.loadWordCard();
+  },
+  beforeDestroy() {
+    this.destroyPronunciationAudio();
   },
   watch: {
     noteId() {
@@ -231,7 +236,40 @@ export default {
     handleAction(action) {
       if (action?.key === "done") {
         this.wordCard.done = !this.wordCard.done;
+        return;
       }
+      if (action?.key === "audio") {
+        this.playPronunciation();
+      }
+    },
+    ensurePronunciationAudio() {
+      if (!this.pronunciationAudio) {
+        this.pronunciationAudio = new Audio(privateAudioSrc);
+      }
+      return this.pronunciationAudio;
+    },
+    playPronunciation() {
+      try {
+        const audio = this.ensurePronunciationAudio();
+        audio.pause();
+        audio.currentTime = 0;
+        const playPromise = audio.play();
+        if (playPromise && typeof playPromise.catch === "function") {
+          playPromise.catch((error) => {
+            this.errorMessage = `播放发音失败：${error.message}`;
+          });
+        }
+      } catch (error) {
+        this.errorMessage = `播放发音失败：${error.message}`;
+      }
+    },
+    destroyPronunciationAudio() {
+      if (!this.pronunciationAudio) {
+        return;
+      }
+      this.pronunciationAudio.pause();
+      this.pronunciationAudio.currentTime = 0;
+      this.pronunciationAudio = null;
     },
     formatVocabulary(item = {}) {
       const text = item.text || "";
