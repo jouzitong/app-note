@@ -1,10 +1,3 @@
-@basePath = /api/v1/imports/note-word
-
-### 导入：noteNodes + wordCards + relations
-POST {{host}}{{basePath}}
-Content-Type: application/json
-Accept: application/json
-
 {
   "meta": {
     "version": "1.0",
@@ -44,75 +37,20 @@ Accept: application/json
         }
       },
       {
-        "nodeKey": "jp-study-09-word-card",
-        "parentNodeKey": null,
+        "nodeKey": "node-jp-word-card",
+        "parentNodeKey": "node-root-jp",
         "noteNode": {
-          "title": "09 词汇体系（主题+频率）",
-          "noteType": "EMPTY",
-          "sort": 1,
-          "meta": {
-            "icon": "📚",
-            "subject": "日语",
-            "tags": []
-          }
-        },
-        "content": {
-          "paragraphs": [
-            "日语知识总览"
-          ],
-          "bullets": [
-            "词汇",
-            "语法",
-            "听力"
-          ]
-        }
-      },
-      {
-        "nodeKey": "jp-study-09-word-card-N5",
-        "parentNodeKey": null,
-        "noteNode": {
-          "title": "N5 核心词汇",
-          "noteType": "EMPTY",
-          "sort": 1,
-          "meta": {
-            "icon": "📚",
-            "subject": "日语",
-            "tags": []
-          }
-        },
-        "content": {
-          "paragraphs": [
-            "日语知识总览"
-          ],
-          "bullets": [
-            "词汇",
-            "语法",
-            "听力"
-          ]
-        }
-      },
-      {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
-        "parentNodeKey": null,
-        "noteNode": {
-          "title": "代词・指示词・疑问词",
+          "title": "日语单词卡",
           "noteType": "WORD_CARD",
-          "sort": 1,
+          "sort": 10,
           "meta": {
-            "icon": "📚",
+            "icon": "🧠",
             "subject": "日语",
             "tags": []
           }
         },
         "content": {
-          "paragraphs": [
-            "日语知识总览"
-          ],
-          "bullets": [
-            "词汇",
-            "语法",
-            "听力"
-          ]
+          "desc": "该节点用于挂载单词卡关系"
         }
       }
     ],
@@ -2364,222 +2302,222 @@ Accept: application/json
     ],
     "relations": [
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-001",
         "order": 1
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-002",
         "order": 2
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-003",
         "order": 3
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-004",
         "order": 4
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-005",
         "order": 5
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-006",
         "order": 6
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-007",
         "order": 7
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-008",
         "order": 8
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-009",
         "order": 9
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-010",
         "order": 10
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-011",
         "order": 11
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-012",
         "order": 12
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-013",
         "order": 13
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-014",
         "order": 14
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-015",
         "order": 15
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-016",
         "order": 16
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-017",
         "order": 17
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-018",
         "order": 18
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-019",
         "order": 19
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-020",
         "order": 20
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-021",
         "order": 21
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-022",
         "order": 22
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-023",
         "order": 23
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-024",
         "order": 24
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-025",
         "order": 25
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-026",
         "order": 26
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-027",
         "order": 27
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-028",
         "order": 28
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-029",
         "order": 29
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-030",
         "order": 30
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-031",
         "order": 31
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-032",
         "order": 32
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-033",
         "order": 33
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-034",
         "order": 34
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-035",
         "order": 35
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-036",
         "order": 36
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-037",
         "order": 37
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-038",
         "order": 38
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-039",
         "order": 39
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-040",
         "order": 40
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-041",
         "order": 41
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-042",
         "order": 42
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-043",
         "order": 43
       },
       {
-        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "nodeKey": "node-jp-word-card",
         "cardId": "jp-n5-pron-044",
         "order": 44
       }
