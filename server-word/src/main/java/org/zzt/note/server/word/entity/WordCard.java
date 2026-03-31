@@ -15,7 +15,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-import org.athena.framework.data.jpa.domain.LogicalDeleteEntity;
+import org.athena.framework.data.jpa.domain.AuditableEntity;
 import org.zzt.note.data.core.entity.NoteTag;
 import org.zzt.note.server.word.entity.converter.WordCardMetaInfoJsonConverter;
 import org.zzt.note.server.word.entity.meta.WordCardMetaInfo;
@@ -45,7 +45,7 @@ import java.util.List;
         }
 )
 @ToString(callSuper = true, exclude = {"tags", "examples"})
-public class WordCard extends LogicalDeleteEntity {
+public class WordCard extends AuditableEntity {
 
     /**
      * 业务唯一编码（card.id）

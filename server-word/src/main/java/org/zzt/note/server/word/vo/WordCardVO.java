@@ -135,6 +135,8 @@ public class WordCardVO {
 
         private String word;
 
+        private String kana;
+
         private String desc;
     }
 

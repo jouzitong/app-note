@@ -60,6 +60,8 @@ public class ExampleSentenceMetaInfo {
 
         private String word;
 
+        private String kana;
+
         private String desc;
     }
 }

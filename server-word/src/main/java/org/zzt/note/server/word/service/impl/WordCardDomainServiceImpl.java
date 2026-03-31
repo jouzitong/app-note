@@ -269,6 +269,7 @@ public class WordCardDomainServiceImpl implements IWordCardDomainService {
                     .map(item -> {
                         ExampleSentenceMetaInfo.WordGrammarBreakdownItem mapped = new ExampleSentenceMetaInfo.WordGrammarBreakdownItem();
                         mapped.setWord(item.getWord());
+                        mapped.setKana(item.getKana());
                         mapped.setDesc(item.getDesc());
                         return mapped;
                     })
@@ -383,7 +384,7 @@ public class WordCardDomainServiceImpl implements IWordCardDomainService {
             List<WordCardVO.WordGrammarBreakdownItem> breakdown = source.getWordGrammarBreakdown()
                     .stream()
                     .filter(Objects::nonNull)
-                    .map(item -> new WordCardVO.WordGrammarBreakdownItem(item.getWord(), item.getDesc()))
+                    .map(item -> new WordCardVO.WordGrammarBreakdownItem(item.getWord(), item.getKana(), item.getDesc()))
                     .collect(Collectors.toList());
             target.setWordGrammarBreakdown(breakdown);
         }

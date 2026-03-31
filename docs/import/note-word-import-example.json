@@ -44,7 +44,7 @@
           }
         },
         "content": {
-          "desc": "该节点用于挂载单词卡关系"
+          "desc": "该节点用于挂载单词卡"
         }
       }
     ],
@@ -63,7 +63,31 @@
             "meta": { "kana": "わたし", "zh": "我", "romaji": "watashi" },
             "description": "第一人称代词。"
           },
-          "examples": { "collapsedByDefault": false, "items": [] },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-watashi-1",
+                "sentence": "私は学生です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "わたしはがくせいです",
+                  "romaji": "watashi wa gakusei desu",
+                  "meaningZh": "我是学生。",
+                  "wordGrammarBreakdown": [
+                    { "word": "私", "kana": "わたし", "desc": "我" },
+                    { "word": "は", "kana": "", "desc": "主题助词" },
+                    { "word": "学生", "kana": "がくせい", "desc": "学生" },
+                    { "word": "です", "kana": "", "desc": "是（判断助动词）" }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
           "synonyms": { "items": [] },
           "related": { "items": [] }
         },
@@ -71,13 +95,6 @@
           { "key": "done", "icon": "✓", "title": "完成" },
           { "key": "audio", "icon": "🔊", "title": "发音" }
         ]
-      }
-    ],
-    "relations": [
-      {
-        "nodeKey": "node-jp-word-card",
-        "cardId": "jp-n5-watashi-001",
-        "order": 1
       }
     ]
   }

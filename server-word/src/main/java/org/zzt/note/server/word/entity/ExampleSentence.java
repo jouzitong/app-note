@@ -10,7 +10,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-import org.athena.framework.data.jpa.domain.LogicalDeleteEntity;
+import org.athena.framework.data.jpa.domain.AuditableEntity;
 import org.zzt.note.server.word.entity.converter.ExampleSentenceMetaInfoJsonConverter;
 import org.zzt.note.server.word.entity.meta.ExampleSentenceMetaInfo;
 
@@ -34,7 +34,7 @@ import org.zzt.note.server.word.entity.meta.ExampleSentenceMetaInfo;
         }
 )
 @ToString(callSuper = true)
-public class ExampleSentence extends LogicalDeleteEntity {
+public class ExampleSentence extends AuditableEntity {
 
     /**
      * 业务例句编码（如 ex-1）

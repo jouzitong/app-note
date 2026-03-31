@@ -43,6 +43,10 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class NoteWordImportServiceImpl implements INoteWordImportService {
 
+    private static final String NOTE_TYPE_EMPTY = "EMPTY";
+
+    private static final String NOTE_TYPE_WORD_CARD = "WORD_CARD";
+
     private final INoteNodeRepository noteNodeRepository;
 
     private final INoteNodeDomainService noteNodeDomainService;
@@ -90,13 +94,25 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
     private void validateRequest(List<NoteWordImportRequest.NoteNodeImportItem> noteNodes,
                                  List<WordCardVO> wordCards) {
         Set<String> nodeKeys = new HashSet<>();
-        for (NoteWordImportRequest.NoteNodeImportItem noteNodeItem : noteNodes) {
+        int lastNodeIndex = noteNodes.size() - 1;
+        for (int i = 0; i < noteNodes.size(); i++) {
+            NoteWordImportRequest.NoteNodeImportItem noteNodeItem = noteNodes.get(i);
             String nodeKey = normalizeKey(noteNodeItem == null ? null : noteNodeItem.getNodeKey());
             if (nodeKey == null) {
                 throw new IllegalArgumentException("noteNodes.nodeKey cannot be blank");
             }
             if (!nodeKeys.add(nodeKey)) {
                 throw new IllegalArgumentException("Duplicate nodeKey in payload: " + nodeKey);
+            }
+
+            String noteType = normalizeKey(noteNodeItem == null || noteNodeItem.getNoteNode() == null
+                    ? null
+                    : noteNodeItem.getNoteNode().getNoteType());
+            if (noteType != null && !NOTE_TYPE_EMPTY.equals(noteType) && !NOTE_TYPE_WORD_CARD.equals(noteType)) {
+                throw new IllegalArgumentException("noteNodes.noteType only supports EMPTY or WORD_CARD, nodeKey: " + nodeKey);
+            }
+            if (NOTE_TYPE_WORD_CARD.equals(noteType) && i != lastNodeIndex) {
+                throw new IllegalArgumentException("Only the last noteNode can use WORD_CARD, nodeKey: " + nodeKey);
             }
         }
 
@@ -109,9 +125,40 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
             if (!cardIds.add(cardId)) {
                 throw new IllegalArgumentException("Duplicate wordCards.id in payload: " + cardId);
             }
+            validateWordCardExamples(wordCard);
         }
         if (!CollectionUtils.isEmpty(wordCards) && CollectionUtils.isEmpty(noteNodes)) {
             throw new IllegalArgumentException("noteNodes cannot be empty when wordCards exist");
+        }
+        if (!CollectionUtils.isEmpty(wordCards)) {
+            NoteWordImportRequest.NoteNodeImportItem lastNode = noteNodes.get(lastNodeIndex);
+            String lastType = normalizeKey(lastNode == null || lastNode.getNoteNode() == null
+                    ? null
+                    : lastNode.getNoteNode().getNoteType());
+            if (!NOTE_TYPE_WORD_CARD.equals(lastType)) {
+                throw new IllegalArgumentException("The last noteNode.noteType must be WORD_CARD when wordCards exist");
+            }
+        }
+    }
+
+    private void validateWordCardExamples(WordCardVO wordCard) {
+        List<WordCardVO.ExampleItem> items = wordCard == null
+                || wordCard.getSections() == null
+                || wordCard.getSections().getExamples() == null
+                ? null
+                : wordCard.getSections().getExamples().getItems();
+
+        String cardId = normalizeKey(wordCard == null ? null : wordCard.getId());
+        if (CollectionUtils.isEmpty(items)) {
+            throw new IllegalArgumentException("wordCards.examples.items cannot be empty, cardId: " + cardId);
+        }
+
+        for (WordCardVO.ExampleItem item : items) {
+            String exampleId = normalizeKey(item == null ? null : item.getId());
+            String sentence = normalizeKey(item == null ? null : item.getSentence());
+            if (exampleId == null || sentence == null) {
+                throw new IllegalArgumentException("wordCards.examples item id/sentence cannot be blank, cardId: " + cardId);
+            }
         }
     }
 
@@ -331,6 +378,7 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
                     .map(item -> {
                         ExampleSentenceMetaInfo.WordGrammarBreakdownItem mapped = new ExampleSentenceMetaInfo.WordGrammarBreakdownItem();
                         mapped.setWord(item.getWord());
+                        mapped.setKana(item.getKana());
                         mapped.setDesc(item.getDesc());
                         return mapped;
                     })

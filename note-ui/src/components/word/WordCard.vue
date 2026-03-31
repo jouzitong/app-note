@@ -93,7 +93,7 @@
                         .wordGrammarBreakdown"
                       :key="`${example.id || index}-${itemIndex}`"
                     >
-                      {{ item.word }}：{{ item.desc }}
+                      {{ formatWordGrammarBreakdown(item) }}
                     </li>
                   </ul>
                   <div
@@ -283,6 +283,16 @@ export default {
         return "";
       }
       return kana ? `${text}（${kana}）` : text;
+    },
+    formatWordGrammarBreakdown(item = {}) {
+      const word = item.word || "";
+      const kana = item.kana || "";
+      const desc = item.desc || "";
+      if (!word) {
+        return desc;
+      }
+      const head = kana ? `${word}(${kana})` : word;
+      return desc ? `${head}: ${desc}` : head;
     },
   },
 };

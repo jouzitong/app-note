@@ -5,4 +5,316 @@ POST {{host}}{{basePath}}
 Content-Type: application/json
 Accept: application/json
 
-
+{
+  "meta": {
+    "version": "1.0",
+    "source": "JLPT_N5_高频优先学习版_完整版.adoc",
+    "importId": "20260331-jlptn5-pronoun-top4",
+    "createdAt": "2026-03-31T14:25:00+08:00",
+    "options": {
+      "dryRun": false,
+      "upsert": true,
+      "strict": true
+    }
+  },
+  "payload": {
+    "noteNodes": [
+      {
+        "nodeKey": "node-root-jp",
+        "parentNodeKey": null,
+        "noteNode": {
+          "title": "日语学习",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card",
+        "parentNodeKey": null,
+        "noteNode": {
+          "title": "09 词汇体系（主题+频率）",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5",
+        "parentNodeKey": null,
+        "noteNode": {
+          "title": "N5 核心词汇",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5-dzy",
+        "parentNodeKey": null,
+        "noteNode": {
+          "title": "代词・指示词・疑问词",
+          "noteType": "WORD_CARD",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": {
+          "paragraphs": [
+            "日语知识总览"
+          ],
+          "bullets": [
+            "词汇",
+            "语法",
+            "听力"
+          ]
+        }
+      }
+    ],
+    "wordCards": [
+      {
+        "id": "jlpt-n5-pronoun-watashi-001",
+        "word": { "text": "私", "level": "N5" },
+        "done": false,
+        "tags": [
+          { "name": "N5", "className": "tag-n5" },
+          { "name": "代词", "className": "tag-pos" }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": { "kana": "わたし", "zh": "我", "romaji": "watashi" },
+            "description": "第一人称代词。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-watashi-1",
+                "sentence": "私は学生です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "わたしはがくせいです",
+                  "romaji": "watashi wa gakusei desu",
+                  "meaningZh": "我是学生。",
+                  "wordGrammarBreakdown": [
+                    { "word": "私", "kana": "わたし", "desc": "我" },
+                    { "word": "は", "kana": "", "desc": "主题助词" },
+                    { "word": "学生", "kana": "がくせい", "desc": "学生" },
+                    { "word": "です", "kana": "", "desc": "是（判断助动词）" }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              { "text": "僕", "kana": "ぼく" }
+            ]
+          },
+          "related": {
+            "items": [
+              { "text": "私たち", "kana": "わたしたち" },
+              { "text": "あなた", "kana": "あなた" }
+            ]
+          }
+        },
+        "actions": [
+          { "key": "done", "icon": "✓", "title": "完成" },
+          { "key": "audio", "icon": "🔊", "title": "发音" }
+        ]
+      },
+      {
+        "id": "jlpt-n5-pronoun-watashitachi-002",
+        "word": { "text": "私たち", "level": "N5" },
+        "done": false,
+        "tags": [
+          { "name": "N5", "className": "tag-n5" },
+          { "name": "代词", "className": "tag-pos" }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": { "kana": "わたしたち", "zh": "我们", "romaji": "watashitachi" },
+            "description": "第一人称复数代词。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-watashitachi-1",
+                "sentence": "私たちは友達です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "わたしたちはともだちです",
+                  "romaji": "watashitachi wa tomodachi desu",
+                  "meaningZh": "我们是朋友。",
+                  "wordGrammarBreakdown": [
+                    { "word": "私たち", "kana": "わたしたち", "desc": "我们" },
+                    { "word": "は", "kana": "", "desc": "主题助词" },
+                    { "word": "友達", "kana": "ともだち", "desc": "朋友" },
+                    { "word": "です", "kana": "", "desc": "是（判断助动词）" }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              { "text": "僕たち", "kana": "ぼくたち" }
+            ]
+          },
+          "related": {
+            "items": [
+              { "text": "私", "kana": "わたし" },
+              { "text": "あなたたち", "kana": "あなたたち" }
+            ]
+          }
+        },
+        "actions": [
+          { "key": "done", "icon": "✓", "title": "完成" },
+          { "key": "audio", "icon": "🔊", "title": "发音" }
+        ]
+      },
+      {
+        "id": "jlpt-n5-pronoun-boku-003",
+        "word": { "text": "僕", "level": "N5" },
+        "done": false,
+        "tags": [
+          { "name": "N5", "className": "tag-n5" },
+          { "name": "代词", "className": "tag-pos" }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": { "kana": "ぼく", "zh": "我（男性常用）", "romaji": "boku" },
+            "description": "男性常用第一人称代词。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-boku-1",
+                "sentence": "僕は日本人です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "ぼくはにほんじんです",
+                  "romaji": "boku wa nihonjin desu",
+                  "meaningZh": "我是日本人。",
+                  "wordGrammarBreakdown": [
+                    { "word": "僕", "kana": "ぼく", "desc": "我（男性常用）" },
+                    { "word": "は", "kana": "", "desc": "主题助词" },
+                    { "word": "日本人", "kana": "にほんじん", "desc": "日本人" },
+                    { "word": "です", "kana": "", "desc": "是（判断助动词）" }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              { "text": "私", "kana": "わたし" }
+            ]
+          },
+          "related": {
+            "items": [
+              { "text": "私たち", "kana": "わたしたち" },
+              { "text": "あなた", "kana": "あなた" }
+            ]
+          }
+        },
+        "actions": [
+          { "key": "done", "icon": "✓", "title": "完成" },
+          { "key": "audio", "icon": "🔊", "title": "发音" }
+        ]
+      },
+      {
+        "id": "jlpt-n5-pronoun-anata-004",
+        "word": { "text": "あなた", "level": "N5" },
+        "done": false,
+        "tags": [
+          { "name": "N5", "className": "tag-n5" },
+          { "name": "代词", "className": "tag-pos" }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": { "kana": "あなた", "zh": "你", "romaji": "anata" },
+            "description": "第二人称代词。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-anata-1",
+                "sentence": "あなたは先生ですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "あなたはせんせいですか",
+                  "romaji": "anata wa sensei desu ka",
+                  "meaningZh": "你是老师吗？",
+                  "wordGrammarBreakdown": [
+                    { "word": "あなた", "kana": "", "desc": "你" },
+                    { "word": "は", "kana": "", "desc": "主题助词" },
+                    { "word": "先生", "kana": "せんせい", "desc": "老师" },
+                    { "word": "です", "kana": "", "desc": "是（判断助动词）" },
+                    { "word": "か", "kana": "", "desc": "疑问助词" }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B ですか",
+                    "meaningZh": "A 是 B 吗"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              { "text": "君", "kana": "きみ" }
+            ]
+          },
+          "related": {
+            "items": [
+              { "text": "私", "kana": "わたし" },
+              { "text": "あなたたち", "kana": "あなたたち" }
+            ]
+          }
+        },
+        "actions": [
+          { "key": "done", "icon": "✓", "title": "完成" },
+          { "key": "audio", "icon": "🔊", "title": "发音" }
+        ]
+      }
+    ]
+  }
+}
