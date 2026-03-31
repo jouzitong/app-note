@@ -1,0 +1,5 @@
+@basePath = /api/v1/ops/noteNodes
+
+### 运维删除节点（会按规则清理单词/例句/关系；checkCode 固定 root）
+POST {{host}}{{basePath}}/delete?noteNodeId=8&checkCode=root
+Accept: application/json

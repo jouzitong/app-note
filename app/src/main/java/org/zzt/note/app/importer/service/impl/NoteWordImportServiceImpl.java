@@ -27,7 +27,6 @@ import org.zzt.note.server.word.service.IWordCardDomainService;
 import org.zzt.note.server.word.vo.WordCardVO;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -72,28 +71,24 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
         List<WordCardVO> wordCards = payload.getWordCards() == null
                 ? List.of()
                 : payload.getWordCards();
-        List<NoteWordImportRequest.RelationImportItem> relations = payload.getRelations() == null
-                ? List.of()
-                : payload.getRelations();
 
-        validateRequest(noteNodes, wordCards, relations);
+        validateRequest(noteNodes, wordCards);
 
         NoteWordImportResult result = new NoteWordImportResult();
         result.setImportId(safeRequest.getMeta() == null ? null : safeRequest.getMeta().getImportId());
         result.getSummary().getNoteNodes().setTotal(noteNodes.size());
         result.getSummary().getWordCards().setTotal(wordCards.size());
-        result.getSummary().getRelations().setTotal(relations.size());
+        result.getSummary().getRelations().setTotal(wordCards.size());
 
         Map<String, Long> nodeKeyToId = importNoteNodes(noteNodes, result);
         Map<String, Long> cardIdToId = importWordCards(wordCards, result);
-        importRelations(relations, nodeKeyToId, cardIdToId, result);
+        importRelationsToLastNoteNode(noteNodes, nodeKeyToId, cardIdToId, result);
 
         return result;
     }
 
     private void validateRequest(List<NoteWordImportRequest.NoteNodeImportItem> noteNodes,
-                                 List<WordCardVO> wordCards,
-                                 List<NoteWordImportRequest.RelationImportItem> relations) {
+                                 List<WordCardVO> wordCards) {
         Set<String> nodeKeys = new HashSet<>();
         for (NoteWordImportRequest.NoteNodeImportItem noteNodeItem : noteNodes) {
             String nodeKey = normalizeKey(noteNodeItem == null ? null : noteNodeItem.getNodeKey());
@@ -115,13 +110,8 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
                 throw new IllegalArgumentException("Duplicate wordCards.id in payload: " + cardId);
             }
         }
-
-        for (NoteWordImportRequest.RelationImportItem relation : relations) {
-            String nodeKey = normalizeKey(relation == null ? null : relation.getNodeKey());
-            String cardId = normalizeKey(relation == null ? null : relation.getCardId());
-            if (nodeKey == null || cardId == null) {
-                throw new IllegalArgumentException("relations.nodeKey and relations.cardId cannot be blank");
-            }
+        if (!CollectionUtils.isEmpty(wordCards) && CollectionUtils.isEmpty(noteNodes)) {
+            throw new IllegalArgumentException("noteNodes cannot be empty when wordCards exist");
         }
     }
 
@@ -357,30 +347,33 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
         return target;
     }
 
-    private void importRelations(List<NoteWordImportRequest.RelationImportItem> relations,
-                                 Map<String, Long> nodeKeyToId,
-                                 Map<String, Long> cardIdToWordCardId,
-                                 NoteWordImportResult result) {
-        if (CollectionUtils.isEmpty(relations)) {
+    private void importRelationsToLastNoteNode(List<NoteWordImportRequest.NoteNodeImportItem> noteNodes,
+                                               Map<String, Long> nodeKeyToId,
+                                               Map<String, Long> cardIdToWordCardId,
+                                               NoteWordImportResult result) {
+        if (CollectionUtils.isEmpty(cardIdToWordCardId)) {
             return;
         }
 
-        List<NoteWordImportRequest.RelationImportItem> sortedRelations = relations.stream()
-                .sorted(Comparator.comparing(NoteWordImportRequest.RelationImportItem::getOrder,
-                        Comparator.nullsLast(Integer::compareTo)))
-                .collect(Collectors.toList());
+        if (CollectionUtils.isEmpty(noteNodes)) {
+            throw new IllegalArgumentException("noteNodes cannot be empty when wordCards exist");
+        }
 
-        for (NoteWordImportRequest.RelationImportItem relation : sortedRelations) {
-            String nodeKey = normalizeKey(relation.getNodeKey());
-            String cardId = normalizeKey(relation.getCardId());
-            Long noteNodeId = nodeKeyToId.get(nodeKey);
-            Long wordCardId = cardIdToWordCardId.get(cardId);
+        NoteWordImportRequest.NoteNodeImportItem lastNode = noteNodes.get(noteNodes.size() - 1);
+        String lastNodeKey = normalizeKey(lastNode == null ? null : lastNode.getNodeKey());
+        if (lastNodeKey == null) {
+            throw new IllegalArgumentException("Last noteNodes.nodeKey cannot be blank");
+        }
+        Long noteNodeId = nodeKeyToId.get(lastNodeKey);
+        if (noteNodeId == null) {
+            throw new IllegalArgumentException("Last noteNode not found in import context: " + lastNodeKey);
+        }
 
-            if (noteNodeId == null) {
-                throw new IllegalArgumentException("Relation nodeKey not found in import context: " + nodeKey);
-            }
+        for (Map.Entry<String, Long> entry : cardIdToWordCardId.entrySet()) {
+            String cardId = entry.getKey();
+            Long wordCardId = entry.getValue();
             if (wordCardId == null) {
-                throw new IllegalArgumentException("Relation cardId not found in import context: " + cardId);
+                throw new IllegalArgumentException("Word card not found in import context: " + cardId);
             }
 
             boolean exists = wordCardNoteNodeRelRepository.findByWordCardId(wordCardId)

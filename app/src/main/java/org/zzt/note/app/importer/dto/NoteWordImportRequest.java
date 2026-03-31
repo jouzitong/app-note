@@ -47,8 +47,6 @@ public class NoteWordImportRequest {
         private List<NoteNodeImportItem> noteNodes = new ArrayList<>();
 
         private List<WordCardVO> wordCards = new ArrayList<>();
-
-        private List<RelationImportItem> relations = new ArrayList<>();
     }
 
     @Data
@@ -63,13 +61,4 @@ public class NoteWordImportRequest {
         private Object content;
     }
 
-    @Data
-    public static class RelationImportItem {
-
-        private String nodeKey;
-
-        private String cardId;
-
-        private Integer order;
-    }
 }
