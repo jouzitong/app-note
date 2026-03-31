@@ -10,6 +10,7 @@ import jakarta.persistence.FetchType;
 import jakarta.persistence.Index;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -33,13 +34,23 @@ import java.util.List;
 @Table(
         name = "note_node",
         indexes = {
+                @Index(name = "idx_note_node_note_key", columnList = "note_key"),
                 @Index(name = "idx_note_node_parent_id", columnList = "parent_id"),
                 @Index(name = "idx_note_node_note_type", columnList = "note_type"),
                 @Index(name = "idx_note_node_parent_sort", columnList = "parent_id,sort")
+        },
+        uniqueConstraints = {
+                @UniqueConstraint(name = "uk_note_node_note_key", columnNames = {"note_key"})
         }
 )
 @ToString(callSuper = true, exclude = {"meta", "nodeContent"})
 public class NoteNode extends LogicalDeleteEntity {
+
+    /**
+     * 业务唯一键（导入/同步场景）
+     */
+    @Column(name = "note_key", length = 100)
+    private String noteKey;
 
     /**
      * 父节点ID（根节点为 null）

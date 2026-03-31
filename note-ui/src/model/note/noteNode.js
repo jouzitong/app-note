@@ -15,6 +15,7 @@
 /**
  * @typedef {Object} NoteNodeDTO
  * @property {number|null} id
+ * @property {string} noteKey
  * @property {number|null} parentId
  * @property {string} title
  * @property {string} noteType
@@ -30,6 +31,7 @@
 export function createDefaultNoteNode() {
   return {
     id: null,
+    noteKey: "",
     parentId: null,
     title: "",
     noteType: "",
@@ -51,6 +53,7 @@ export function createDefaultNoteNode() {
 export function createMockNoteNode() {
   return {
     id: 20260327001,
+    noteKey: "mock-jp-demo-20260327001",
     parentId: null,
     title: "これは私の本です",
     noteType: "VOCAB_NOTE",

@@ -4,6 +4,7 @@ import org.athena.framework.data.jpa.repository.BaseRepository;
 import org.zzt.note.data.core.entity.NoteNode;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  *
@@ -11,6 +12,8 @@ import java.util.List;
  * @since 2026/3/27
  */
 public interface INoteNodeRepository extends BaseRepository<NoteNode> {
+
+    Optional<NoteNode> findByNoteKey(String noteKey);
 
     List<NoteNode> findByIdIn(List<Long> ids);
 

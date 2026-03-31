@@ -19,6 +19,11 @@ import java.util.List;
 public class NoteNodeDTO extends LogicalDeleteDTO {
 
     /**
+     * 业务唯一键（导入/同步场景）
+     */
+    private String noteKey;
+
+    /**
      * 父节点ID（根节点为 null）
      */
     private Long parentId;
