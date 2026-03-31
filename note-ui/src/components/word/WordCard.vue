@@ -47,10 +47,27 @@
             </summary>
             <div class="content fold-content">
               <div class="meaning-meta">
-                假名：{{ wordCard.sections.meaning.meta.kana }} 中文：{{
-                  wordCard.sections.meaning.meta.zh
-                }}
-                发音：{{ wordCard.sections.meaning.meta.romaji }}
+                <div
+                  v-if="wordCard.sections.meaning.meta.kana"
+                  class="meaning-meta-item meaning-meta-kana"
+                >
+                  <span class="label">假名</span>
+                  <span>{{ wordCard.sections.meaning.meta.kana }}</span>
+                </div>
+                <div
+                  v-if="wordCard.sections.meaning.meta.zh"
+                  class="meaning-meta-item meaning-meta-zh"
+                >
+                  <span class="label">中文</span>
+                  <span>{{ wordCard.sections.meaning.meta.zh }}</span>
+                </div>
+                <div
+                  v-if="wordCard.sections.meaning.meta.romaji"
+                  class="meaning-meta-item meaning-meta-romaji"
+                >
+                  <span class="label">发音</span>
+                  <span>{{ wordCard.sections.meaning.meta.romaji }}</span>
+                </div>
               </div>
               {{ wordCard.sections.meaning.description }}
             </div>
@@ -79,12 +96,19 @@
                       <span>例句解释</span>
                     </div>
                   </summary>
-                  <div class="example-note">
-                    <strong>读音：</strong>{{ example.explain.reading }}
-                  </div>
-                  <div class="example-note">({{ example.explain.romaji }})</div>
-                  <div class="example-note">
-                    <strong>中文意思：</strong>{{ example.explain.meaningZh }}
+                  <div class="example-grid">
+                    <div v-if="example.explain.reading" class="example-kv">
+                      <span class="label">读音</span
+                      >{{ example.explain.reading }}
+                    </div>
+                    <div v-if="example.explain.romaji" class="example-kv">
+                      <span class="label">罗马音</span
+                      >{{ example.explain.romaji }}
+                    </div>
+                    <div v-if="example.explain.meaningZh" class="example-kv">
+                      <span class="label">中文</span
+                      >{{ example.explain.meaningZh }}
+                    </div>
                   </div>
                   <div class="example-subtitle">单词 & 语法拆解</div>
                   <ul class="example-list">
@@ -93,7 +117,14 @@
                         .wordGrammarBreakdown"
                       :key="`${example.id || index}-${itemIndex}`"
                     >
-                      {{ formatWordGrammarBreakdown(item) }}
+                      <span class="token token-pronoun">{{
+                        formatBreakdownHead(item)
+                      }}</span>
+                      <span
+                        v-if="formatBreakdownDesc(item)"
+                        class="token-desc"
+                        >{{ formatBreakdownDesc(item) }}</span
+                      >
                     </li>
                   </ul>
                   <div
@@ -104,9 +135,17 @@
                     "
                     class="example-note"
                   >
-                    <strong>固定句式：</strong
-                    >{{ example.explain.fixedPattern.pattern }} =
-                    {{ example.explain.fixedPattern.meaningZh }}
+                    <div class="example-pattern">
+                      <strong>固定句式：</strong
+                      >{{ example.explain.fixedPattern.pattern }}
+                      <span
+                        v-if="example.explain.fixedPattern.meaningZh"
+                        class="pattern-sep"
+                      >
+                        =
+                      </span>
+                      {{ example.explain.fixedPattern.meaningZh }}
+                    </div>
                   </div>
                 </details>
               </li>
@@ -284,15 +323,20 @@ export default {
       }
       return kana ? `${text}（${kana}）` : text;
     },
-    formatWordGrammarBreakdown(item = {}) {
+    formatBreakdownHead(item = {}) {
       const word = item.word || "";
       const kana = item.kana || "";
-      const desc = item.desc || "";
       if (!word) {
-        return desc;
+        return "";
       }
-      const head = kana || kana === word ? `${word}(${kana})` : word;
-      return desc ? `${head}: ${desc}` : head;
+      if (kana && kana !== word) {
+        return `${word}(${kana})`;
+      }
+      return word;
+    },
+    formatBreakdownDesc(item = {}) {
+      const desc = item.desc || "";
+      return desc;
     },
   },
 };
@@ -514,7 +558,8 @@ export default {
   transition: transform 0.2s ease;
 }
 
-.fold details[open] .fold-arrow {
+.fold details[open] .fold-arrow,
+.example-explain[open] .fold-arrow {
   transform: rotate(0deg);
 }
 
@@ -525,10 +570,55 @@ export default {
 
 .meaning-meta {
   margin-bottom: 8px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #111827;
-  line-height: 1.35;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.meaning-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #1f2937;
+}
+
+.meaning-meta-item .label {
+  font-weight: 700;
+}
+
+.meaning-meta-kana {
+  background: #eff6ff;
+  border-color: #dbeafe;
+  color: #1e3a8a;
+}
+
+.meaning-meta-kana .label {
+  color: #1d4ed8;
+}
+
+.meaning-meta-zh {
+  background: #ecfeff;
+  border-color: #cffafe;
+  color: #155e75;
+}
+
+.meaning-meta-zh .label {
+  color: #0e7490;
+}
+
+.meaning-meta-romaji {
+  background: #f5f3ff;
+  border-color: #e9d5ff;
+  color: #5b21b6;
+}
+
+.meaning-meta-romaji .label {
+  color: #7c3aed;
 }
 
 .example {
@@ -554,6 +644,26 @@ export default {
   line-height: 1.4;
 }
 
+.example-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.example-kv {
+  font-size: 12px;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.example-kv .label {
+  display: inline-block;
+  min-width: 72px;
+  font-weight: 700;
+  color: #111827;
+}
+
 .example-subtitle {
   margin-top: 8px;
   font-size: 12px;
@@ -571,6 +681,38 @@ export default {
 
 .example-list li {
   margin-bottom: 2px;
+}
+
+.token {
+  font-weight: 700;
+  padding: 0 4px;
+  border-radius: 4px;
+  margin-right: 4px;
+  display: inline-block;
+}
+
+.token-pronoun {
+  color: #1d4ed8;
+  background: #dbeafe;
+}
+
+.token-desc {
+  color: #374151;
+}
+
+.example-pattern {
+  margin-top: 8px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  font-size: 12px;
+  color: #1e3a8a;
+  line-height: 1.4;
+}
+
+.pattern-sep {
+  margin: 0 4px;
 }
 
 .example-explain {
