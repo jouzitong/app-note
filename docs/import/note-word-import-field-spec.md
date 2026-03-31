@@ -181,9 +181,9 @@
             "meaningZh": "我是学生。",
             "wordGrammarBreakdown": [
               { "word": "私", "kana": "わたし", "desc": "我" },
-              { "word": "は", "kana": "は", "desc": "主题助词" },
+              { "word": "は", "kana": "", "desc": "助词。提示主题。" },
               { "word": "学生", "kana": "がくせい", "desc": "学生" },
-              { "word": "です", "kana": "です", "desc": "是（判断助动词）" }
+              { "word": "です", "kana": "", "desc": "判断助动词。表示“是……”。" }
             ],
             "fixedPattern": {
               "pattern": "A は B です",
@@ -203,11 +203,7 @@
         { "text": "僕", "kana": "ぼく" }
       ]
     }
-  },
-  "actions": [
-    { "key": "done", "icon": "✓", "title": "完成" },
-    { "key": "audio", "icon": "🔊", "title": "发音" }
-  ]
+  }
 }
 ```
 
@@ -241,21 +237,21 @@
 - `sections` object 可选（建议必填）
   - 分区内容。
 
-- `actions` array 可选
-  - 卡片动作按钮。
-
-- `actions[*].key` string 可选
-- `actions[*].icon` string 可选
-- `actions[*].title` string 可选
+- `actions` array 可选（不建议使用）
+  - 历史字段，可被接收，但当前词卡导入场景建议不传，避免冗余。
 
 ### 7.3 `sections.meaning` 字段说明
 
 - `sections.meaning.collapsedByDefault` boolean 可选，默认 `true`
 - `sections.meaning.meta` object 可选
 - `sections.meaning.meta.kana` string 可选
+  - 可写单读音（如 `わたし`）或多读音并列（如 `よん／し`）。
 - `sections.meaning.meta.zh` string 可选
 - `sections.meaning.meta.romaji` string 可选
+  - 当 `meta.kana` 为多读音时，建议并列罗马音（如 `yon / shi`）。
 - `sections.meaning.description` string 可选
+  - 建议写“词义 + 发音场景说明”。
+  - 多读音词建议明确不同语境的读法（例如：数数常用读音、复合词常用读音、口语/正式语境差异）。
 
 ### 7.4 `sections.examples` 字段说明（强约束）
 
@@ -275,6 +271,7 @@
 - `sections.examples.items[*].explain.reading` string 可选
 - `sections.examples.items[*].explain.romaji` string 可选
 - `sections.examples.items[*].explain.meaningZh` string 建议必填
+  - 表示该条例句的完整中文意思（整句翻译），不应仅填写目标词词义。
 
 - `sections.examples.items[*].explain.wordGrammarBreakdown` array 可选
 - 语义：逐词/逐短语拆解例句，核心用于说明“这个日文片段怎么读、中文是什么意思”。
@@ -282,9 +279,10 @@
   - 日文原词或短语（建议与 `sentence` 中片段一致）。
 - `sections.examples.items[*].explain.wordGrammarBreakdown[*].kana` string 建议必填
   - 对应 `word` 的平假名读音。
-  - 规则：若 `word` 本身就是平假名且与读音完全一致，`kana` 置空字符串 `""`。
+  - 规则：助词/助动词可置空字符串 `""`；其余词建议填写读音。
 - `sections.examples.items[*].explain.wordGrammarBreakdown[*].desc` string 建议必填
-  - 中文释义（可包含词法说明），例如：`我`、`学生`、`是（判断助动词）`。
+  - 中文释义（可包含词法说明），例如：`我`、`学生`、`判断助动词。表示“是……”。`。
+  - 建议统一使用中文说明，不要直接回填日文原词。
 
 - `sections.examples.items[*].explain.fixedPattern` object 可选
 - `sections.examples.items[*].explain.fixedPattern.pattern` string 可选
@@ -298,6 +296,7 @@
 - `sections.synonyms.items[*].kana` string 可选
 - `sections.related.items[*].text` string 可选
 - `sections.related.items[*].kana` string 可选
+- 实践建议：`synonyms.items` 与 `related.items` 尽量不要长期为空，建议至少填充同类近义词或关联词（可先各 1 条起步）。
 
 ### 7.6 当前后端行为
 
@@ -329,6 +328,14 @@
 
 - `wordCards[*].sections.examples.items[*].explain.meaningZh` 建议提供，便于后续学习展示与检索。
 - `wordCards[*].word.text` 建议提供，避免卡片信息不完整。
+
+### 9.3 团队约定（推荐执行）
+
+- `meaningZh` 按“整句翻译”填写，不写成单词释义。
+- `wordGrammarBreakdown[*].desc` 使用中文说明；助词、助动词建议写语法功能说明。
+- 多读音词（如 `よん／し`）在 `sections.meaning.description` 写明常见使用场景。
+- 词卡导入默认不传 `actions` 字段。
+- `synonyms.items` 与 `related.items` 建议尽量非空。
 
 ## 10. 导入结果结构
 
