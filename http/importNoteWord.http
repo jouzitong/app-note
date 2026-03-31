@@ -1,0 +1,91 @@
+@basePath = /api/v1/imports/note-word
+
+### 导入：noteNodes + wordCards + relations
+POST {{host}}{{basePath}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "meta": {
+    "version": "1.0",
+    "source": "manual-seed",
+    "importId": "20260331-batch-001",
+    "createdAt": "2026-03-31T10:00:00+08:00",
+    "options": {
+      "dryRun": false,
+      "upsert": true,
+      "strict": true
+    }
+  },
+  "payload": {
+    "noteNodes": [
+      {
+        "nodeKey": "node-root-jp",
+        "parentNodeKey": null,
+        "noteNode": {
+          "title": "日语学习",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": {
+          "paragraphs": ["日语知识总览"],
+          "bullets": ["词汇", "语法", "听力"]
+        }
+      },
+      {
+        "nodeKey": "node-jp-word-card",
+        "parentNodeKey": "node-root-jp",
+        "noteNode": {
+          "title": "日语单词卡",
+          "noteType": "WORD_CARD",
+          "sort": 10,
+          "meta": {
+            "icon": "🧠",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": {
+          "desc": "该节点用于挂载单词卡关系"
+        }
+      }
+    ],
+    "wordCards": [
+      {
+        "id": "jp-n5-watashi-001",
+        "word": { "text": "私", "level": "N5" },
+        "done": false,
+        "tags": [
+          { "name": "N5", "className": "tag-n5" },
+          { "name": "代词", "className": "tag-pos" }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": { "kana": "わたし", "zh": "我", "romaji": "watashi" },
+            "description": "第一人称代词。"
+          },
+          "examples": { "collapsedByDefault": false, "items": [] },
+          "synonyms": { "items": [] },
+          "related": { "items": [] }
+        },
+        "actions": [
+          { "key": "done", "icon": "✓", "title": "完成" },
+          { "key": "audio", "icon": "🔊", "title": "发音" }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "nodeKey": "node-jp-word-card",
+        "cardId": "jp-n5-watashi-001",
+        "order": 1
+      }
+    ]
+  }
+}
