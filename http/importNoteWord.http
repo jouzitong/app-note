@@ -146,7 +146,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-001-1",
+                "sentence": "私は学生です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "我是学生。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "desc": "我"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -197,7 +218,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-002-1",
+                "sentence": "私たちは友だちです。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "我们是朋友。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "私たち",
+                      "desc": "我们"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -248,7 +290,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-003-1",
+                "sentence": "僕は毎日日本語を勉強します。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "我每天学习日语。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "僕",
+                      "desc": "我（男性常用）"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -299,7 +362,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-004-1",
+                "sentence": "あなたは先生ですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "你是老师吗？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "あなた",
+                      "desc": "你"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -350,7 +434,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-005-1",
+                "sentence": "あなたたちは何年生ですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "你们是几年级？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "あなたたち",
+                      "desc": "你们"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -401,7 +506,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-006-1",
+                "sentence": "彼は会社員です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "他是公司职员。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "desc": "他"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -452,7 +578,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-007-1",
+                "sentence": "彼女はとても親切です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "她非常亲切。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "彼女",
+                      "desc": "她；女朋友"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -503,7 +650,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-008-1",
+                "sentence": "皆さん、こんにちは。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "大家好。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "皆さん",
+                      "desc": "大家；各位"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -554,7 +722,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-009-1",
+                "sentence": "皆、元気ですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "大家都好吗？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "皆",
+                      "desc": "大家"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -605,7 +794,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-010-1",
+                "sentence": "人々は駅へ急ぎます。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "人们急忙去车站。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "人々",
+                      "desc": "人们"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -656,7 +866,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-011-1",
+                "sentence": "自分で宿題をします。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "自己做作业。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "自分",
+                      "desc": "自己"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -707,7 +938,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-012-1",
+                "sentence": "これは私の本です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "这是我的书。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "desc": "这个"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -758,7 +1010,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-013-1",
+                "sentence": "それはあなたのかばんですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "那是你的包吗？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "それ",
+                      "desc": "那个（近对方）"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -809,7 +1082,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-014-1",
+                "sentence": "あれは山です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "那是山。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "あれ",
+                      "desc": "那个（远）"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -860,7 +1154,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-015-1",
+                "sentence": "このペンは書きやすいです。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "这支笔很好写。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "この",
+                      "desc": "这个……"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -911,7 +1226,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-016-1",
+                "sentence": "その時計は高いです。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "那块表很贵。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "その",
+                      "desc": "那个……"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -962,7 +1298,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-017-1",
+                "sentence": "あの人は田中さんです。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "那个人是田中。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "あの",
+                      "desc": "那个……（远）"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1013,7 +1370,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-018-1",
+                "sentence": "ここで写真を撮ります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "在这里拍照。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "ここ",
+                      "desc": "这里"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1064,7 +1442,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-019-1",
+                "sentence": "そこに座ってください。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "请坐在那里。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "そこ",
+                      "desc": "那里"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1115,7 +1514,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-020-1",
+                "sentence": "あそこにコンビニがあります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "那边有便利店。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "あそこ",
+                      "desc": "那里（远）"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1166,7 +1586,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-021-1",
+                "sentence": "こちらは私の名刺です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "这是我的名片。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "こちら",
+                      "desc": "这边；这位"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1217,7 +1658,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-022-1",
+                "sentence": "そちらの天気はどうですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "你那边天气怎么样？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "そちら",
+                      "desc": "那边；那位"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1268,7 +1730,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-023-1",
+                "sentence": "あちらに行きましょう。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "我们去那边吧。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "あちら",
+                      "desc": "那边（远）；那位"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1319,7 +1802,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-024-1",
+                "sentence": "どれがあなたの傘ですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "哪一把是你的伞？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "どれ",
+                      "desc": "哪个"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1370,7 +1874,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-025-1",
+                "sentence": "どの本を買いましたか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "你买了哪本书？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "どの",
+                      "desc": "哪个……"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1421,7 +1946,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-026-1",
+                "sentence": "トイレはどこですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "洗手间在哪里？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "どこ",
+                      "desc": "哪里"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1472,7 +2018,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-027-1",
+                "sentence": "駅はどちらですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "车站在哪边？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "どちら",
+                      "desc": "哪边；哪位"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1523,7 +2090,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-028-1",
+                "sentence": "あの人は誰ですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "那个人是谁？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "誰",
+                      "desc": "谁"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1574,7 +2162,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-029-1",
+                "sentence": "失礼ですが、どなたですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "不好意思，请问您哪位？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "どなた",
+                      "desc": "哪位（礼貌）"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1625,7 +2234,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-030-1",
+                "sentence": "これは何ですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "这是什么？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "何",
+                      "desc": "什么"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1676,7 +2306,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-031-1",
+                "sentence": "日本へはいつ行きますか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "你什么时候去日本？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "いつ",
+                      "desc": "什么时候"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1727,7 +2378,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-032-1",
+                "sentence": "今日は気分がどうですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "你今天感觉怎么样？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "どう",
+                      "desc": "怎样；如何"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1778,7 +2450,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-033-1",
+                "sentence": "どうして遅れましたか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "你为什么迟到了？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "どうして",
+                      "desc": "为什么"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1829,7 +2522,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-034-1",
+                "sentence": "なぜ日本語を勉強しますか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "为什么学习日语？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "なぜ",
+                      "desc": "为什么"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1880,7 +2594,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-035-1",
+                "sentence": "どんな音楽が好きですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "你喜欢什么样的音乐？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "どんな",
+                      "desc": "什么样的"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1931,7 +2666,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-036-1",
+                "sentence": "こんな問題は簡単です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "这样的问题很简单。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "こんな",
+                      "desc": "这样的"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -1982,7 +2738,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-037-1",
+                "sentence": "そんなことはありません。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "没那回事。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "そんな",
+                      "desc": "那样的"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -2033,7 +2810,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-038-1",
+                "sentence": "あんな店は初めてです。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "那样的店我还是第一次见。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "あんな",
+                      "desc": "那样的（远）"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -2084,7 +2882,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-039-1",
+                "sentence": "このりんごはいくらですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "这个苹果多少钱？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "いくら",
+                      "desc": "多少钱；多少"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -2135,7 +2954,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-040-1",
+                "sentence": "りんごはいくつ買いましたか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "你买了几个苹果？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "いくつ",
+                      "desc": "几个；几岁"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -2186,7 +3026,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-041-1",
+                "sentence": "ここから駅までどのくらいかかりますか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "从这里到车站要多久？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "どのくらい",
+                      "desc": "多少；多久"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -2237,7 +3098,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-042-1",
+                "sentence": "それは本当ですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "那是真的吗？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "本当",
+                      "desc": "真的；真正"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -2288,7 +3170,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-043-1",
+                "sentence": "別の方法を考えましょう。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "我们想想别的方法吧。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "別",
+                      "desc": "别的；另外"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -2339,7 +3242,28 @@ Accept: application/json
           },
           "examples": {
             "collapsedByDefault": false,
-            "items": []
+            "items": [
+              {
+                "id": "ex-jp-n5-pron-044-1",
+                "sentence": "私たちは同じクラスです。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "",
+                  "romaji": "",
+                  "meaningZh": "我们是同一个班。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "同じ",
+                      "desc": "相同"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "",
+                    "meaningZh": ""
+                  }
+                }
+              }
+            ]
           },
           "synonyms": {
             "items": []
@@ -2586,3 +3510,4 @@ Accept: application/json
     ]
   }
 }
+

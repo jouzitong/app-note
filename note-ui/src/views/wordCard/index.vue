@@ -3,7 +3,8 @@
     <WordCard
       v-if="resolvedNoteId !== null"
       :note-id="resolvedNoteId"
-      :index="0"
+      :index="currentIndex"
+      @update:index="currentIndex = $event"
     />
     <div v-else class="note-id-missing">缺少 noteId 参数</div>
   </div>
@@ -17,6 +18,11 @@ export default {
   components: {
     WordCard,
   },
+  data() {
+    return {
+      currentIndex: 0,
+    };
+  },
   computed: {
     resolvedNoteId() {
       const routeNoteId = this.$route.params.noteId || this.$route.query.noteId;
@@ -28,6 +34,11 @@ export default {
         return null;
       }
       return routeNoteId;
+    },
+  },
+  watch: {
+    resolvedNoteId() {
+      this.currentIndex = 0;
     },
   },
 };

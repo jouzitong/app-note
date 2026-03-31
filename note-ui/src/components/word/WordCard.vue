@@ -238,6 +238,11 @@ export default {
         this.wordCard.done = !this.wordCard.done;
         return;
       }
+      if (action?.key === "next") {
+        const currentIndex = Number(this.index) || 0;
+        this.$emit("update:index", currentIndex + 1);
+        return;
+      }
       if (action?.key === "audio") {
         this.playPronunciation();
       }

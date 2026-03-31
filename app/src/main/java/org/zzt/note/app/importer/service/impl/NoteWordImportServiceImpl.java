@@ -18,6 +18,9 @@ import org.zzt.note.data.core.repository.INoteTagRepository;
 import org.zzt.note.data.core.service.INoteNodeDomainService;
 import org.zzt.note.server.word.entity.WordCard;
 import org.zzt.note.server.word.entity.WordCardNoteNodeRel;
+import org.zzt.note.server.word.entity.ExampleSentence;
+import org.zzt.note.server.word.entity.meta.ExampleSentenceMetaInfo;
+import org.zzt.note.server.word.repository.IExampleSentenceRepository;
 import org.zzt.note.server.word.repository.IWordCardNoteNodeRelRepository;
 import org.zzt.note.server.word.repository.IWordCardRepository;
 import org.zzt.note.server.word.service.IWordCardDomainService;
@@ -48,6 +51,8 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
     private final INoteTagRepository noteTagRepository;
 
     private final IWordCardRepository wordCardRepository;
+
+    private final IExampleSentenceRepository exampleSentenceRepository;
 
     private final IWordCardDomainService wordCardDomainService;
 
@@ -244,6 +249,7 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
             String cardId = normalizeKey(wordCard.getId());
             Optional<WordCard> existing = wordCardRepository.findByCardCode(cardId);
             if (existing.isPresent()) {
+                syncExistingWordCardExamples(existing.get(), wordCard);
                 cardIdToWordCardId.put(cardId, existing.get().getId());
                 result.getSummary().getWordCards().setReused(result.getSummary().getWordCards().getReused() + 1);
                 continue;
@@ -257,6 +263,98 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
             result.getSummary().getWordCards().setCreated(result.getSummary().getWordCards().getCreated() + 1);
         }
         return cardIdToWordCardId;
+    }
+
+    private void syncExistingWordCardExamples(WordCard existingCard, WordCardVO inputCard) {
+        if (existingCard == null || inputCard == null || inputCard.getSections() == null
+                || inputCard.getSections().getExamples() == null
+                || CollectionUtils.isEmpty(inputCard.getSections().getExamples().getItems())) {
+            return;
+        }
+
+        List<WordCardVO.ExampleItem> items = inputCard.getSections().getExamples().getItems()
+                .stream()
+                .filter(item -> item != null && normalizeKey(item.getId()) != null)
+                .collect(Collectors.toList());
+        if (CollectionUtils.isEmpty(items)) {
+            return;
+        }
+
+        Set<Long> linkedIds = existingCard.getExamples() == null
+                ? new HashSet<>()
+                : existingCard.getExamples().stream()
+                .map(ExampleSentence::getId)
+                .collect(Collectors.toSet());
+
+        List<String> codes = items.stream()
+                .map(WordCardVO.ExampleItem::getId)
+                .map(this::normalizeKey)
+                .collect(Collectors.toList());
+        Map<String, ExampleSentence> existingByCode = exampleSentenceRepository.findByExampleCodeIn(codes)
+                .stream()
+                .collect(Collectors.toMap(ExampleSentence::getExampleCode, item -> item, (a, b) -> a));
+
+        int weight = 100;
+        boolean changed = false;
+        for (WordCardVO.ExampleItem item : items) {
+            String code = normalizeKey(item.getId());
+            if (code == null) {
+                continue;
+            }
+
+            ExampleSentence example = existingByCode.get(code);
+            if (example == null) {
+                example = new ExampleSentence();
+                example.setExampleCode(code);
+                example.setSentence(item.getSentence());
+                example.setMetaInfo(toExampleMetaInfo(item.getExplain()));
+                example.setWeight(weight);
+                example = exampleSentenceRepository.save(example);
+                existingByCode.put(code, example);
+            }
+
+            if (!linkedIds.contains(example.getId())) {
+                existingCard.getExamples().add(example);
+                linkedIds.add(example.getId());
+                changed = true;
+            }
+            weight++;
+        }
+
+        if (changed) {
+            wordCardRepository.save(existingCard);
+        }
+    }
+
+    private ExampleSentenceMetaInfo toExampleMetaInfo(WordCardVO.ExampleExplain source) {
+        ExampleSentenceMetaInfo target = new ExampleSentenceMetaInfo();
+        if (source == null) {
+            return target;
+        }
+        target.setReading(source.getReading());
+        target.setRomaji(source.getRomaji());
+        target.setMeaningZh(source.getMeaningZh());
+
+        if (!CollectionUtils.isEmpty(source.getWordGrammarBreakdown())) {
+            List<ExampleSentenceMetaInfo.WordGrammarBreakdownItem> breakdown = source.getWordGrammarBreakdown().stream()
+                    .filter(item -> item != null && normalizeKey(item.getWord()) != null)
+                    .map(item -> {
+                        ExampleSentenceMetaInfo.WordGrammarBreakdownItem mapped = new ExampleSentenceMetaInfo.WordGrammarBreakdownItem();
+                        mapped.setWord(item.getWord());
+                        mapped.setDesc(item.getDesc());
+                        return mapped;
+                    })
+                    .collect(Collectors.toList());
+            target.setWordGrammarBreakdown(breakdown);
+        }
+
+        ExampleSentenceMetaInfo.FixedPattern fixedPattern = new ExampleSentenceMetaInfo.FixedPattern();
+        if (source.getFixedPattern() != null) {
+            fixedPattern.setPattern(source.getFixedPattern().getPattern());
+            fixedPattern.setMeaningZh(source.getFixedPattern().getMeaningZh());
+        }
+        target.setFixedPattern(fixedPattern);
+        return target;
     }
 
     private void importRelations(List<NoteWordImportRequest.RelationImportItem> relations,

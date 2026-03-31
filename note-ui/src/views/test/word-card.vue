@@ -1,6 +1,10 @@
 <template>
   <div class="word-card-page-demo">
-    <WordCard :note-id="8" :index="0" />
+    <WordCard
+      :note-id="8"
+      :index="currentIndex"
+      @update:index="currentIndex = $event"
+    />
   </div>
 </template>
 
@@ -11,6 +15,11 @@ export default {
   name: "WordCardTestView",
   components: {
     WordCard,
+  },
+  data() {
+    return {
+      currentIndex: 0,
+    };
   },
 };
 </script>
