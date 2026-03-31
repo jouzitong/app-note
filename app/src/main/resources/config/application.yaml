@@ -7,7 +7,7 @@ spring:
     password: root
     type: com.alibaba.druid.pool.DruidDataSource
   jpa:
-    show-sql: true
+    show-sql: false
 
 lib:
   web:

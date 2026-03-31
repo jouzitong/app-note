@@ -291,7 +291,7 @@ export default {
       if (!word) {
         return desc;
       }
-      const head = kana ? `${word}(${kana})` : word;
+      const head = kana || kana === word ? `${word}(${kana})` : word;
       return desc ? `${head}: ${desc}` : head;
     },
   },

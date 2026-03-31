@@ -213,6 +213,37 @@
             line-height: 1.4;
         }
 
+        .example-quick {
+            margin-top: 6px;
+            padding: 6px 8px;
+            border-radius: 8px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            font-size: 12px;
+            color: #1f2937;
+            line-height: 1.45;
+        }
+
+        .example-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4px;
+            margin-top: 6px;
+        }
+
+        .example-kv {
+            font-size: 12px;
+            color: #374151;
+            line-height: 1.4;
+        }
+
+        .example-kv .label {
+            display: inline-block;
+            min-width: 72px;
+            font-weight: 700;
+            color: #111827;
+        }
+
         .example-subtitle {
             margin-top: 8px;
             font-size: 12px;
@@ -230,6 +261,48 @@
 
         .example-list li {
             margin-bottom: 2px;
+        }
+
+        .token {
+            font-weight: 700;
+            padding: 0 4px;
+            border-radius: 4px;
+            margin-right: 4px;
+            display: inline-block;
+        }
+
+        .token-pronoun {
+            color: #1d4ed8;
+            background: #dbeafe;
+        }
+
+        .example-pattern {
+            margin-top: 8px;
+            padding: 6px 8px;
+            border-radius: 8px;
+            background: #eff6ff;
+            border: 1px solid #dbeafe;
+            font-size: 12px;
+            color: #1e3a8a;
+            line-height: 1.4;
+        }
+
+        .example-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-top: 6px;
+        }
+
+        .chip {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-size: 11px;
+            color: #334155;
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            line-height: 1.5;
         }
 
         .example-explain {
@@ -373,19 +446,29 @@
                                     <span>例句解释</span>
                                 </div>
                             </summary>
-                            <div class="example-note"><strong>读音：</strong>これは わたし の ほん です</div>
-                            <div class="example-note">(kore wa watashi no hon desu)</div>
-                            <div class="example-note"><strong>中文意思：</strong>这是我的书。</div>
+                            <div class="example-quick"><strong>一句话理解：</strong>先指出“这是什么”，再用「の」说明“是谁的”。</div>
+                            <div class="example-grid">
+                                <div class="example-kv"><span class="label">读音</span>これは わたし の ほん です</div>
+                                <div class="example-kv"><span class="label">罗马音</span>kore wa watashi no hon desu</div>
+                                <div class="example-kv"><span class="label">中文</span>这是我的书。</div>
+<!--                                <div class="example-kv"><span class="label">常见场景</span>自我介绍、确认物品归属</div>-->
+                            </div>
                             <div class="example-subtitle">单词 & 语法拆解</div>
                             <ul class="example-list">
-                                <li>これ：这（指示代词）</li>
-                                <li>は：主题助词，提示“这是在说什么”</li>
-                                <li>私（わたし）：我</li>
-                                <li>の：所属助词，表示“我的”</li>
-                                <li>本（ほん）：书</li>
-                                <li>です：礼貌判断句尾，相当于“是”</li>
+                                <li><span class="token token-pronoun">これ</span>这（指示代词）</li>
+                                <li><span class="token token-pronoun">は</span>主题助词，提示“这是在说什么”</li>
+                                <li><span class="token token-pronoun">私（わたし）</span>我</li>
+                                <li><span class="token token-pronoun">の</span>所属助词，表示“我的”</li>
+                                <li><span class="token token-pronoun">本（ほん）</span>书</li>
+                                <li><span class="token token-pronoun">です</span>礼貌判断句尾，相当于“是”</li>
                             </ul>
-                            <div class="example-note"><strong>固定句式：</strong>これは A です。= 这是 A。</div>
+                            <div class="example-pattern"><strong>句型骨架：</strong>これは A の B です。= 这是 A 的 B。</div>
+                            <div class="example-note"><strong>替换练习：</strong></div>
+                            <div class="example-chips">
+                                <span class="chip">A = 先生 / 友達 / 私</span>
+                                <span class="chip">B = かばん / ペン / ノート</span>
+                            </div>
+                            <div class="example-note"><strong>使用提醒：</strong>口语里一般不说「わたしの本です」的「わたし」重读，语气保持自然即可。</div>
                         </details>
                     </li>
 
@@ -400,17 +483,27 @@
                                     <span>例句解释</span>
                                 </div>
                             </summary>
-                            <div class="example-note"><strong>读音：</strong>わたし は がくせい です</div>
-                            <div class="example-note">(watashi wa gakusei desu)</div>
-                            <div class="example-note"><strong>中文意思：</strong>我是学生。</div>
+                            <div class="example-quick"><strong>一句话理解：</strong>用「A は B です」说明“我是什么身份”。</div>
+                            <div class="example-grid">
+                                <div class="example-kv"><span class="label">读音</span>わたし は がくせい です</div>
+                                <div class="example-kv"><span class="label">罗马音</span>watashi wa gakusei desu</div>
+                                <div class="example-kv"><span class="label">中文</span>我是学生。</div>
+                                <div class="example-kv"><span class="label">常见场景</span>初次见面、自我介绍</div>
+                            </div>
                             <div class="example-subtitle">单词 & 语法拆解</div>
                             <ul class="example-list">
-                                <li>私（わたし）：我</li>
-                                <li>は：主题助词，提示主题“我”</li>
-                                <li>学生（がくせい）：学生</li>
-                                <li>です：礼貌判断句尾，相当于“是”</li>
+                                <li><span class="token token-pronoun">私（わたし）</span>我</li>
+                                <li><span class="token token-pronoun">は</span>主题助词，提示主题“我”</li>
+                                <li><span class="token token-pronoun">学生（がくせい）</span>学生</li>
+                                <li><span class="token token-pronoun">です</span>礼貌判断句尾，相当于“是”</li>
                             </ul>
-                            <div class="example-note"><strong>固定句式：</strong>A は B です。= A 是 B。</div>
+                            <div class="example-pattern"><strong>句型骨架：</strong>A は B です。= A 是 B。</div>
+                            <div class="example-note"><strong>替换练习：</strong></div>
+                            <div class="example-chips">
+                                <span class="chip">A = わたし / かれ / せんせい</span>
+                                <span class="chip">B = 学生 / 会社員 / 日本人</span>
+                            </div>
+                            <div class="example-note"><strong>使用提醒：</strong>正式场景优先用「わたし」，避免直接用「ぼく / おれ」。</div>
                         </details>
                     </li>
                 </ol>
