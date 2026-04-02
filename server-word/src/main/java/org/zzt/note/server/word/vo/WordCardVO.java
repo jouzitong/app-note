@@ -28,6 +28,7 @@ public class WordCardVO {
 
     private Sections sections = new Sections();
 
+    @Deprecated
     private List<ActionInfo> actions = new ArrayList<>();
 
     @Data
