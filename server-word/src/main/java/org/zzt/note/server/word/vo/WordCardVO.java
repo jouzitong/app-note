@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +25,8 @@ public class WordCardVO {
 
     private Boolean done = false;
 
+    private ProgressInfo progress = new ProgressInfo();
+
     private List<TagInfo> tags = new ArrayList<>();
 
     private Sections sections = new Sections();
@@ -39,6 +42,28 @@ public class WordCardVO {
         private String text;
 
         private String level;
+    }
+
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class ProgressInfo {
+
+        private Boolean done = false;
+
+        private Boolean hard = false;
+
+        private Boolean favorite = false;
+
+        private String status = "NEW";
+
+        private Integer reviewCount = 0;
+
+        private Integer correctCount = 0;
+
+        private Integer wrongCount = 0;
+
+        private LocalDateTime lastReviewedAt;
     }
 
     @Data

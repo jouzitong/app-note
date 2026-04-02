@@ -17,4 +17,6 @@ public interface IUserWordProgressRepository extends BaseRepository<UserWordProg
     Optional<UserWordProgress> findByUserIdAndWordCard_Id(Long userId, Long wordCardId);
 
     List<UserWordProgress> findByUserId(Long userId);
+
+    List<UserWordProgress> findByUserIdAndWordCard_IdIn(Long userId, List<Long> wordCardIds);
 }

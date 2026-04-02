@@ -16,6 +16,16 @@ import lombok.Setter;
 public class UserWordProgressMetaInfo {
 
     /**
+     * 是否易错
+     */
+    private Boolean hard = false;
+
+    /**
+     * 是否收藏
+     */
+    private Boolean favorite = false;
+
+    /**
      * 复习次数
      */
     private Integer reviewCount = 0;

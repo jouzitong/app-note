@@ -2,16 +2,26 @@ package org.zzt.note.server.word.service.impl;
 
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
+import org.athena.framework.data.jdbc.vo.PageInfo;
+import org.athena.framework.data.jdbc.vo.PageResultVO;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import org.zzt.note.data.core.entity.NoteTag;
 import org.zzt.note.data.core.repository.INoteTagRepository;
 import org.zzt.note.server.word.entity.ExampleSentence;
+import org.zzt.note.server.word.entity.UserWordProgress;
 import org.zzt.note.server.word.entity.WordCard;
 import org.zzt.note.server.word.entity.WordCardNoteNodeRel;
+import org.zzt.note.server.word.entity.enums.UserWordProgressStatus;
 import org.zzt.note.server.word.entity.meta.ExampleSentenceMetaInfo;
+import org.zzt.note.server.word.entity.meta.UserWordProgressMetaInfo;
 import org.zzt.note.server.word.entity.meta.WordCardMetaInfo;
+import org.zzt.note.server.word.req.WordCardDomainPageRequest;
 import org.zzt.note.server.word.repository.IExampleSentenceRepository;
+import org.zzt.note.server.word.repository.IUserWordProgressRepository;
 import org.zzt.note.server.word.repository.IWordCardNoteNodeRelRepository;
 import org.zzt.note.server.word.repository.IWordCardRepository;
 import org.zzt.note.server.word.service.IWordCardDomainService;
@@ -47,6 +57,8 @@ public class WordCardDomainServiceImpl implements IWordCardDomainService {
 
     private final INoteTagRepository noteTagRepository;
 
+    private final IUserWordProgressRepository userWordProgressRepository;
+
     @Override
     @Transactional
     public void add(WordCardVO wordCard) {
@@ -76,7 +88,7 @@ public class WordCardDomainServiceImpl implements IWordCardDomainService {
 
     @Override
     @Transactional
-    public WordCardVO get(Long noteId, int index) {
+    public WordCardVO get(Long noteId, int index, Long userId) {
         if (noteId == null) {
             throw new IllegalArgumentException("noteId cannot be null");
         }
@@ -93,7 +105,41 @@ public class WordCardDomainServiceImpl implements IWordCardDomainService {
         WordCard card = wordCardRepository.findById(wordCardId)
                 .orElseThrow(() -> new IllegalArgumentException("WordCard not found, id=" + wordCardId));
 
-        return toVO(card);
+        UserWordProgress progress = resolveProgress(userId, wordCardId);
+        return toVO(card, progress);
+    }
+
+    @Override
+    @Transactional
+    public PageResultVO<WordCardVO> page(WordCardDomainPageRequest request) {
+        if (request == null) {
+            throw new IllegalArgumentException("request cannot be null");
+        }
+        if (request.getNoteId() == null) {
+            throw new IllegalArgumentException("request.noteId cannot be null");
+        }
+
+        int currentPage = request.page() == null ? 1 : request.page();
+        int size = request.size() == null ? 10 : request.size();
+        if (currentPage < 1) {
+            throw new IllegalArgumentException("request.page cannot be less than 1");
+        }
+        if (size < 1) {
+            throw new IllegalArgumentException("request.size cannot be less than 1");
+        }
+
+        Pageable pageable = PageRequest.of(currentPage - 1, size);
+        Page<WordCardNoteNodeRel> relationPage = wordCardNoteNodeRelRepository
+                .findByNoteNodeIdOrderByWordCardIdAsc(request.getNoteId(), pageable);
+
+        List<Long> wordCardIds = relationPage.getContent().stream()
+                .map(WordCardNoteNodeRel::getWordCardId)
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
+
+        List<WordCardVO> list = buildPageVOList(wordCardIds, request.getUserId());
+        PageInfo pageInfo = new PageInfo(relationPage.getTotalElements(), size, currentPage);
+        return PageResultVO.ok(list, pageInfo);
     }
 
     @Override
@@ -286,10 +332,47 @@ public class WordCardDomainServiceImpl implements IWordCardDomainService {
         return target;
     }
 
-    private WordCardVO toVO(WordCard card) {
+    private List<WordCardVO> buildPageVOList(List<Long> wordCardIds, Long userId) {
+        if (CollectionUtils.isEmpty(wordCardIds)) {
+            return List.of();
+        }
+        List<WordCard> cards = wordCardRepository.findByIdIn(wordCardIds);
+        Map<Long, WordCard> cardById = cards.stream()
+                .filter(Objects::nonNull)
+                .collect(Collectors.toMap(WordCard::getId, item -> item, (a, b) -> a, LinkedHashMap::new));
+
+        Map<Long, UserWordProgress> progressByWordCardId = resolveProgressMap(userId, wordCardIds);
+        List<WordCardVO> result = new ArrayList<>();
+        for (Long wordCardId : wordCardIds) {
+            WordCard card = cardById.get(wordCardId);
+            if (card == null) {
+                continue;
+            }
+            result.add(toVO(card, progressByWordCardId.get(wordCardId)));
+        }
+        return result;
+    }
+
+    private UserWordProgress resolveProgress(Long userId, Long wordCardId) {
+        if (userId == null || wordCardId == null) {
+            return null;
+        }
+        return userWordProgressRepository.findByUserIdAndWordCard_Id(userId, wordCardId).orElse(null);
+    }
+
+    private Map<Long, UserWordProgress> resolveProgressMap(Long userId, List<Long> wordCardIds) {
+        if (userId == null || CollectionUtils.isEmpty(wordCardIds)) {
+            return Map.of();
+        }
+        return userWordProgressRepository.findByUserIdAndWordCard_IdIn(userId, wordCardIds).stream()
+                .filter(Objects::nonNull)
+                .filter(progress -> progress.getWordCard() != null && progress.getWordCard().getId() != null)
+                .collect(Collectors.toMap(progress -> progress.getWordCard().getId(), item -> item, (a, b) -> a, LinkedHashMap::new));
+    }
+
+    private WordCardVO toVO(WordCard card, UserWordProgress progress) {
         WordCardVO vo = new WordCardVO();
         vo.setId(card.getCardCode());
-        vo.setDone(Boolean.FALSE);
 
         WordCardVO.WordInfo word = new WordCardVO.WordInfo();
         word.setText(card.getWordText());
@@ -299,7 +382,31 @@ public class WordCardDomainServiceImpl implements IWordCardDomainService {
         vo.setTags(toTagInfos(card.getTags()));
         vo.setSections(toSections(card));
         vo.setActions(defaultActions());
+        vo.setProgress(toProgressInfo(progress));
+        vo.setDone(Boolean.TRUE.equals(vo.getProgress().getDone()));
         return vo;
+    }
+
+    private WordCardVO.ProgressInfo toProgressInfo(UserWordProgress progress) {
+        WordCardVO.ProgressInfo info = new WordCardVO.ProgressInfo();
+        if (progress == null) {
+            return info;
+        }
+
+        UserWordProgressStatus status = progress.getStatus() == null ? UserWordProgressStatus.NEW : progress.getStatus();
+        info.setStatus(status.name());
+        info.setDone(UserWordProgressStatus.MASTERED.equals(status));
+        info.setLastReviewedAt(progress.getLastReviewedAt());
+
+        UserWordProgressMetaInfo metaInfo = progress.getMetaInfo();
+        if (metaInfo != null) {
+            info.setHard(Boolean.TRUE.equals(metaInfo.getHard()));
+            info.setFavorite(Boolean.TRUE.equals(metaInfo.getFavorite()));
+            info.setReviewCount(metaInfo.getReviewCount() == null ? 0 : metaInfo.getReviewCount());
+            info.setCorrectCount(metaInfo.getCorrectCount() == null ? 0 : metaInfo.getCorrectCount());
+            info.setWrongCount(metaInfo.getWrongCount() == null ? 0 : metaInfo.getWrongCount());
+        }
+        return info;
     }
 
     private WordCardVO.Sections toSections(WordCard card) {

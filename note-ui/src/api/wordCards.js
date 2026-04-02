@@ -48,3 +48,30 @@ export async function getWordCardByNoteAndIndex(noteId, index) {
   const response = await request(`${BASE_PATH}/${noteId}/${index}`);
   return unwrap(response);
 }
+
+export async function getWordCardPage({
+  noteId,
+  page = 1,
+  size = 10,
+  userId,
+} = {}) {
+  const params = new URLSearchParams();
+  if (noteId !== undefined && noteId !== null && `${noteId}` !== "") {
+    params.append("noteId", `${noteId}`);
+  }
+  if (page !== undefined && page !== null) {
+    params.append("page", `${page}`);
+  }
+  if (size !== undefined && size !== null) {
+    params.append("size", `${size}`);
+  }
+  if (userId !== undefined && userId !== null && `${userId}` !== "") {
+    params.append("userId", `${userId}`);
+  }
+
+  const queryString = params.toString();
+  const response = await request(
+    `${BASE_PATH}${queryString ? `?${queryString}` : ""}`
+  );
+  return unwrap(response);
+}

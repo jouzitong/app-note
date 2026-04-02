@@ -1,6 +1,8 @@
 package org.zzt.note.server.word.repository;
 
 import org.athena.framework.data.jpa.repository.BaseRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
 import org.zzt.note.server.word.entity.WordCardNoteNodeRel;
 
@@ -19,6 +21,8 @@ public interface IWordCardNoteNodeRelRepository extends BaseRepository<WordCardN
     List<WordCardNoteNodeRel> findByNoteNodeId(Long noteNodeId);
 
     List<WordCardNoteNodeRel> findByNoteNodeIdOrderByWordCardIdAsc(Long noteNodeId);
+
+    Page<WordCardNoteNodeRel> findByNoteNodeIdOrderByWordCardIdAsc(Long noteNodeId, Pageable pageable);
 
     @Transactional
     void deleteByWordCardId(Long wordCardId);

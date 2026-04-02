@@ -17,4 +17,6 @@ public interface IWordCardRepository extends BaseRepository<WordCard> {
     Optional<WordCard> findByCardCode(String cardCode);
 
     List<WordCard> findByCardCodeIn(List<String> cardCodes);
+
+    List<WordCard> findByIdIn(List<Long> ids);
 }
