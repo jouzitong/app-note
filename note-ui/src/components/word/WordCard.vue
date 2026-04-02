@@ -1,13 +1,18 @@
 <template>
   <div class="word-card" style="text-align: left">
     <div class="learning-top">
-      <button class="back-to-catalog-btn" type="button">&lt; 进度 3/20</button>
+      <button class="back-to-catalog-btn" type="button">
+        &lt; 进度 {{ progressText }}
+      </button>
       <div class="learning-progress-track">
-        <span class="learning-progress-fill" />
+        <span
+          class="learning-progress-fill"
+          :style="{ width: `${progressPercent}%` }"
+        />
       </div>
     </div>
 
-    <div class="card" :class="{ 'is-done': wordCard.done }">
+    <div class="card" :class="{ 'is-done': isDone }">
       <div class="header">
         <div class="word-row">
           <div class="word-main">
@@ -191,7 +196,12 @@
           v-for="action in wordCard.actions"
           :key="action.key"
           class="icon-btn"
-          :class="{ done: action.key === 'done' && wordCard.done }"
+          :class="{
+            done: action.key === 'done' && isDone,
+            hard: action.key === 'hard' && isHard,
+            favorite: action.key === 'favorite' && isFavorite,
+          }"
+          :disabled="action.key === 'done' && confirming"
           :title="action.title"
           @click="handleAction(action)"
         >
@@ -203,7 +213,7 @@
 </template>
 
 <script>
-import { getWordCardByNoteAndIndex } from "@/api/wordCards";
+import { confirmWordCardDone, getWordCardPage } from "@/api/wordCards";
 import {
   createDefaultWordCard,
   createMockWordCard,
@@ -222,14 +232,63 @@ export default {
       type: Number,
       default: 0,
     },
+    userId: {
+      type: [Number, String],
+      default: null,
+    },
   },
   data() {
     return {
       wordCard: createDefaultWordCard(),
+      pageInfo: null,
       loading: false,
       errorMessage: "",
       pronunciationAudio: null,
+      requestSeq: 0,
+      pageSize: 10,
+      confirming: false,
     };
+  },
+  computed: {
+    safeIndex() {
+      const idx = Number(this.index);
+      return Number.isFinite(idx) && idx >= 0 ? idx : 0;
+    },
+    currentPage() {
+      return Math.floor(this.safeIndex / this.pageSize) + 1;
+    },
+    indexInPage() {
+      return this.safeIndex - (this.currentPage - 1) * this.pageSize;
+    },
+    totalCards() {
+      const total = Number(this.pageInfo?.total);
+      return Number.isFinite(total) && total > 0 ? total : 0;
+    },
+    currentCardOrder() {
+      if (this.totalCards <= 0) {
+        return 0;
+      }
+      return Math.min(this.safeIndex + 1, this.totalCards);
+    },
+    progressText() {
+      return `${this.currentCardOrder}/${this.totalCards}`;
+    },
+    progressPercent() {
+      if (this.totalCards <= 0) {
+        return 0;
+      }
+      const percent = (this.currentCardOrder / this.totalCards) * 100;
+      return Math.max(0, Math.min(100, percent));
+    },
+    isDone() {
+      return !!this.wordCard?.progress?.done || !!this.wordCard?.done;
+    },
+    isHard() {
+      return !!this.wordCard?.progress?.hard;
+    },
+    isFavorite() {
+      return !!this.wordCard?.progress?.favorite;
+    },
   },
   async created() {
     await this.loadWordCard();
@@ -257,33 +316,87 @@ export default {
         return;
       }
 
+      const seq = ++this.requestSeq;
       this.loading = true;
       this.errorMessage = "";
       try {
-        const response = await getWordCardByNoteAndIndex(
-          this.noteId,
-          this.index
-        );
-        this.wordCard = normalizeWordCard(response || {});
+        const pageResult = await getWordCardPage({
+          noteId: this.noteId,
+          page: this.currentPage,
+          size: this.pageSize,
+          userId: this.userId,
+        });
+        if (seq !== this.requestSeq) {
+          return;
+        }
+        this.pageInfo = pageResult?.pageInfo || null;
+        const records = Array.isArray(pageResult?.records)
+          ? pageResult.records
+          : [];
+        const record = records[this.indexInPage] || records[0] || {};
+        this.wordCard = normalizeWordCard(record);
       } catch (error) {
+        if (seq !== this.requestSeq) {
+          return;
+        }
         this.wordCard = createMockWordCard();
+        this.pageInfo = {
+          total: 0,
+        };
         this.errorMessage = `接口请求失败，已回退示例数据：${error.message}`;
       } finally {
-        this.loading = false;
+        if (seq === this.requestSeq) {
+          this.loading = false;
+        }
       }
     },
     handleAction(action) {
       if (action?.key === "done") {
-        this.wordCard.done = !this.wordCard.done;
+        this.handleConfirm();
+        return;
+      }
+      if (action?.key === "hard") {
+        this.wordCard.progress.hard = !this.wordCard.progress.hard;
+        return;
+      }
+      if (action?.key === "favorite") {
+        this.wordCard.progress.favorite = !this.wordCard.progress.favorite;
         return;
       }
       if (action?.key === "next") {
-        const currentIndex = Number(this.index) || 0;
+        if (this.totalCards > 0 && this.safeIndex >= this.totalCards - 1) {
+          this.errorMessage = "已经是最后一张";
+          return;
+        }
+        const currentIndex = this.safeIndex;
         this.$emit("update:index", currentIndex + 1);
         return;
       }
       if (action?.key === "audio") {
         this.playPronunciation();
+      }
+    },
+    async handleConfirm() {
+      if (this.confirming) {
+        return;
+      }
+      if (!this.wordCard?.id) {
+        this.errorMessage = "缺少 cardId，无法确认完成";
+        return;
+      }
+
+      this.confirming = true;
+      this.errorMessage = "";
+      try {
+        const response = await confirmWordCardDone(
+          this.wordCard.id,
+          this.userId
+        );
+        this.wordCard = normalizeWordCard(response || this.wordCard);
+      } catch (error) {
+        this.errorMessage = `确认完成失败：${error.message}`;
+      } finally {
+        this.confirming = false;
       }
     },
     ensurePronunciationAudio() {
@@ -774,9 +887,26 @@ export default {
   border-color: #3b82f6;
 }
 
+.icon-btn.hard {
+  background: #fff7ed;
+  color: #c2410c;
+  border-color: #fed7aa;
+}
+
+.icon-btn.favorite {
+  background: #fefce8;
+  color: #a16207;
+  border-color: #fde68a;
+}
+
 .icon-btn:active {
   transform: scale(0.98);
   background: #eef3ff;
+}
+
+.icon-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
 }
 
 .status-text {

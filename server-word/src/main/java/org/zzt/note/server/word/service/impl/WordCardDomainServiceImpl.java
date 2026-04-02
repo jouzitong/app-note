@@ -27,6 +27,7 @@ import org.zzt.note.server.word.repository.IWordCardRepository;
 import org.zzt.note.server.word.service.IWordCardDomainService;
 import org.zzt.note.server.word.vo.WordCardVO;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
@@ -140,6 +141,35 @@ public class WordCardDomainServiceImpl implements IWordCardDomainService {
         List<WordCardVO> list = buildPageVOList(wordCardIds, request.getUserId());
         PageInfo pageInfo = new PageInfo(relationPage.getTotalElements(), size, currentPage);
         return PageResultVO.ok(list, pageInfo);
+    }
+
+    @Override
+    @Transactional
+    public WordCardVO confirm(String cardId, Long userId) {
+        if (cardId == null || cardId.isBlank()) {
+            throw new IllegalArgumentException("cardId cannot be blank");
+        }
+        if (userId == null) {
+            throw new IllegalArgumentException("userId cannot be null");
+        }
+
+        WordCard card = wordCardRepository.findByCardCode(cardId)
+                .orElseThrow(() -> new IllegalArgumentException("WordCard not found, cardCode=" + cardId));
+
+        UserWordProgress progress = resolveProgress(userId, card.getId());
+        if (progress == null) {
+            progress = new UserWordProgress();
+            progress.setUserId(userId);
+            progress.setWordCard(card);
+        }
+        if (progress.getMetaInfo() == null) {
+            progress.setMetaInfo(new UserWordProgressMetaInfo());
+        }
+        progress.setStatus(UserWordProgressStatus.MASTERED);
+        progress.setLastReviewedAt(LocalDateTime.now());
+
+        UserWordProgress savedProgress = userWordProgressRepository.save(progress);
+        return toVO(card, savedProgress);
     }
 
     @Override

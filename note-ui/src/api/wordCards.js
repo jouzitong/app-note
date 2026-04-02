@@ -49,6 +49,26 @@ export async function getWordCardByNoteAndIndex(noteId, index) {
   return unwrap(response);
 }
 
+export async function confirmWordCardDone(cardId, userId) {
+  if (cardId === undefined || cardId === null || `${cardId}` === "") {
+    throw new Error("cardId is required");
+  }
+  const params = new URLSearchParams();
+  if (userId !== undefined && userId !== null && `${userId}` !== "") {
+    params.append("userId", `${userId}`);
+  }
+  const queryString = params.toString();
+  const response = await request(
+    `${BASE_PATH}/${encodeURIComponent(cardId)}/confirm${
+      queryString ? `?${queryString}` : ""
+    }`,
+    {
+      method: "POST",
+    }
+  );
+  return unwrap(response);
+}
+
 export async function getWordCardPage({
   noteId,
   page = 1,
@@ -73,5 +93,10 @@ export async function getWordCardPage({
   const response = await request(
     `${BASE_PATH}${queryString ? `?${queryString}` : ""}`
   );
-  return unwrap(response);
+  const records = unwrap(response);
+  return {
+    records: Array.isArray(records) ? records : [],
+    pageInfo: response?.pageInfo || null,
+    raw: response,
+  };
 }

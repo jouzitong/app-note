@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.athena.framework.data.jdbc.vo.PageResultVO;
 import org.zzt.note.server.word.req.WordCardDomainPageRequest;
 import org.zzt.note.server.word.service.IWordCardDomainService;
+import org.zzt.note.server.word.utils.WordUserUtils;
 import org.zzt.note.server.word.vo.WordCardVO;
 
 /**
@@ -36,12 +37,21 @@ public class WordCardDomainController {
     public WordCardVO get(@PathVariable("noteId") Long noteId,
                           @PathVariable("index") int index,
                           @RequestParam(value = "userId", required = false) Long userId) {
-        return wordCardDomainService.get(noteId, index, userId);
+        return wordCardDomainService.get(noteId, index, WordUserUtils.resolveUserId(userId));
     }
 
     @GetMapping
     public PageResultVO<WordCardVO> page(WordCardDomainPageRequest request) {
+        if (request != null) {
+            request.setUserId(WordUserUtils.resolveUserId(request.getUserId()));
+        }
         return wordCardDomainService.page(request);
+    }
+
+    @PostMapping("/{cardId}/confirm")
+    public WordCardVO confirm(@PathVariable("cardId") String cardId,
+                              @RequestParam(value = "userId", required = false) Long userId) {
+        return wordCardDomainService.confirm(cardId, WordUserUtils.resolveUserId(userId));
     }
 
     @DeleteMapping("/{cardId}")

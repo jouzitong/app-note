@@ -86,10 +86,23 @@
  */
 
 /**
+ * @typedef {Object} ProgressInfo
+ * @property {boolean} done
+ * @property {boolean} hard
+ * @property {boolean} favorite
+ * @property {string} status
+ * @property {number} reviewCount
+ * @property {number} correctCount
+ * @property {number} wrongCount
+ * @property {string|null} lastReviewedAt
+ */
+
+/**
  * @typedef {Object} WordCardVO
  * @property {string} id
  * @property {WordInfo} word
  * @property {boolean} done
+ * @property {ProgressInfo} progress
  * @property {TagInfo[]} tags
  * @property {Sections} sections
  * @property {ActionInfo[]} actions
@@ -107,6 +120,16 @@ export function createDefaultWordCard() {
       level: "",
     },
     done: false,
+    progress: {
+      done: false,
+      hard: false,
+      favorite: false,
+      status: "NEW",
+      reviewCount: 0,
+      correctCount: 0,
+      wrongCount: 0,
+      lastReviewedAt: null,
+    },
     tags: [],
     sections: {
       meaning: {
@@ -151,6 +174,16 @@ export function createMockWordCard() {
       level: "N5",
     },
     done: false,
+    progress: {
+      done: false,
+      hard: false,
+      favorite: true,
+      status: "LEARNING",
+      reviewCount: 2,
+      correctCount: 1,
+      wrongCount: 1,
+      lastReviewedAt: null,
+    },
     tags: [
       { name: "N5", className: "tag-n5" },
       { name: "代词", className: "tag-pos" },
@@ -246,6 +279,7 @@ export function createMockWordCard() {
  */
 export function normalizeWordCard(source = {}) {
   const defaults = createDefaultWordCard();
+  const rawProgress = source.progress || {};
   const rawWord = source.word || {};
   const rawSections = source.sections || {};
   const rawMeaning = rawSections.meaning || {};
@@ -316,6 +350,27 @@ export function normalizeWordCard(source = {}) {
       },
     },
     actions: Array.isArray(source.actions) ? source.actions : defaults.actions,
-    done: !!source.done,
+    progress: {
+      ...defaults.progress,
+      ...rawProgress,
+      done: rawProgress.done === undefined ? !!source.done : !!rawProgress.done,
+      hard: !!rawProgress.hard,
+      favorite: !!rawProgress.favorite,
+      status: rawProgress.status || defaults.progress.status,
+      reviewCount:
+        typeof rawProgress.reviewCount === "number"
+          ? rawProgress.reviewCount
+          : defaults.progress.reviewCount,
+      correctCount:
+        typeof rawProgress.correctCount === "number"
+          ? rawProgress.correctCount
+          : defaults.progress.correctCount,
+      wrongCount:
+        typeof rawProgress.wrongCount === "number"
+          ? rawProgress.wrongCount
+          : defaults.progress.wrongCount,
+      lastReviewedAt: rawProgress.lastReviewedAt || null,
+    },
+    done: rawProgress.done === undefined ? !!source.done : !!rawProgress.done,
   };
 }

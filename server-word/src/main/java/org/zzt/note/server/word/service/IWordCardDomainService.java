@@ -47,6 +47,15 @@ public interface IWordCardDomainService {
     PageResultVO<WordCardVO> page(WordCardDomainPageRequest request);
 
     /**
+     * 确认当前用户已完成单词卡
+     *
+     * @param cardId 卡片业务ID
+     * @param userId 用户ID
+     * @return 更新后的单词卡片视图对象
+     */
+    WordCardVO confirm(String cardId, Long userId);
+
+    /**
      * 按卡片业务ID删除单词卡（会删除关联关系，不删除例句实体）
      *
      * @param cardId 卡片业务ID
