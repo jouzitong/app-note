@@ -263,9 +263,22 @@ export default {
         return;
       }
       if (Number(childNode.noteType) === 2) {
+        const parentId =
+          this.noteNode && this.noteNode.id
+            ? String(this.noteNode.id)
+            : this.$route.params.id || this.$route.query.id;
+        if (!parentId) {
+          this.errorMessage = "缺少父节点ID，无法进入单词卡页面";
+          return;
+        }
         this.$router.push({
           name: "word-card",
-          query: { noteId: String(childNode.id) },
+          params: { parentId: String(parentId) },
+          query: {
+            nodeId: String(childNode.id),
+            pageIndex: "1",
+            wordIndex: "0",
+          },
         });
         return;
       }

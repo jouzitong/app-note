@@ -1,7 +1,11 @@
 <template>
   <div class="word-card" style="text-align: left">
     <div class="learning-top">
-      <button class="back-to-catalog-btn" type="button">
+      <button
+        class="back-to-catalog-btn"
+        type="button"
+        @click="handleBackToCatalog"
+      >
         &lt; 进度 {{ progressText }}
       </button>
       <div class="learning-progress-track">
@@ -450,6 +454,9 @@ export default {
     formatBreakdownDesc(item = {}) {
       const desc = item.desc || "";
       return desc;
+    },
+    handleBackToCatalog() {
+      this.$emit("back");
     },
   },
 };

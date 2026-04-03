@@ -39,7 +39,7 @@ const routes = [
     component: WordCardView,
   },
   {
-    path: "/word-card/:noteId?",
+    path: "/note/:parentId/word-card",
     name: "word-card",
     component: WordCardIndexView,
   },

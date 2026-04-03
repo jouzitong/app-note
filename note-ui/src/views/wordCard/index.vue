@@ -1,12 +1,13 @@
 <template>
   <div class="word-card-page">
     <WordCard
-      v-if="resolvedNoteId !== null"
-      :note-id="resolvedNoteId"
+      v-if="resolvedNodeId !== null"
+      :note-id="resolvedNodeId"
       :index="currentIndex"
-      @update:index="currentIndex = $event"
+      @update:index="handleIndexUpdate"
+      @back="goToParentNote"
     />
-    <div v-else class="note-id-missing">缺少 noteId 参数</div>
+    <div v-else class="note-id-missing">缺少 nodeId 参数</div>
   </div>
 </template>
 
@@ -21,24 +22,75 @@ export default {
   data() {
     return {
       currentIndex: 0,
+      pageSize: 10,
     };
   },
   computed: {
-    resolvedNoteId() {
-      const routeNoteId = this.$route.params.noteId || this.$route.query.noteId;
-      if (
-        routeNoteId === undefined ||
-        routeNoteId === null ||
-        routeNoteId === ""
-      ) {
-        return null;
+    resolvedParentId() {
+      return this.parsePositiveInt(this.$route.params.parentId);
+    },
+    resolvedNodeId() {
+      return this.parsePositiveInt(this.$route.query.nodeId);
+    },
+    resolvedPageIndex() {
+      const pageIndex = this.parsePositiveInt(this.$route.query.pageIndex);
+      return pageIndex || 1;
+    },
+    resolvedWordIndex() {
+      const wordIndex = Number(this.$route.query.wordIndex);
+      if (Number.isInteger(wordIndex) && wordIndex >= 0) {
+        return wordIndex;
       }
-      return routeNoteId;
+      return (this.resolvedPageIndex - 1) * this.pageSize;
     },
   },
+  created() {
+    this.syncFromRoute();
+  },
   watch: {
-    resolvedNoteId() {
-      this.currentIndex = 0;
+    "$route.fullPath"() {
+      this.syncFromRoute();
+    },
+  },
+  methods: {
+    parsePositiveInt(value) {
+      if (value === undefined || value === null || value === "") {
+        return null;
+      }
+      const parsed = Number(value);
+      if (!Number.isInteger(parsed) || parsed <= 0) {
+        return null;
+      }
+      return parsed;
+    },
+    syncFromRoute() {
+      this.currentIndex = this.resolvedWordIndex;
+    },
+    handleIndexUpdate(nextIndex) {
+      this.currentIndex = nextIndex;
+      if (this.resolvedParentId === null || this.resolvedNodeId === null) {
+        return;
+      }
+      const pageIndex = Math.floor(nextIndex / this.pageSize) + 1;
+      this.$router.replace({
+        name: "word-card",
+        params: { parentId: String(this.resolvedParentId) },
+        query: {
+          nodeId: String(this.resolvedNodeId),
+          pageIndex: String(pageIndex),
+          wordIndex: String(nextIndex),
+        },
+      });
+    },
+    goToParentNote() {
+      if (this.resolvedParentId === null) {
+        this.$router.back();
+        return;
+      }
+      this.$router.push({
+        name: "note",
+        params: { id: String(this.resolvedParentId) },
+      });
     },
   },
 };
