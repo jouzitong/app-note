@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-001-1",
-                "sentence": "これは「する」です。",
+                "sentence": "私は毎日します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「する」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“做”。",
+                  "meaningZh": "我每天做。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "する",
                       "kana": "する",
                       "desc": "做"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天做。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-002-1",
-                "sentence": "これは「いる」です。",
+                "sentence": "教室に先生がいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“有（人/动物在）”。",
+                  "meaningZh": "这里有（人/动物在）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "いる",
                       "kana": "いる",
                       "desc": "有（人/动物在）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が あります/います",
+                    "meaningZh": "这里有（人/动物在）。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-003-1",
-                "sentence": "これは「ある」です。",
+                "sentence": "ここに本があります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ある」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“有（物）”。",
+                  "meaningZh": "这里有（物）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ある",
                       "kana": "ある",
                       "desc": "有（物）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が あります/います",
+                    "meaningZh": "这里有（物）。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-004-1",
-                "sentence": "これは「行く」です。",
+                "sentence": "毎朝学校へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“去”。",
+                  "meaningZh": "每天早上去学校。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "行く",
                       "kana": "いく",
                       "desc": "去"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A へ 行きます",
+                    "meaningZh": "每天早上去学校。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-005-1",
-                "sentence": "これは「来る」です。",
+                "sentence": "友達が家に来ます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“来”。",
+                  "meaningZh": "朋友来家里。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "来る",
                       "kana": "くる",
                       "desc": "来"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 来ます",
+                    "meaningZh": "朋友来家里。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-006-1",
-                "sentence": "これは「帰る」です。",
+                "sentence": "私は毎日帰ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かえる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“回去”。",
+                  "meaningZh": "我每天回去。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "帰る",
                       "kana": "かえる",
                       "desc": "回去"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天回去。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-007-1",
-                "sentence": "これは「見る」です。",
+                "sentence": "私は毎日見ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「みる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“看”。",
+                  "meaningZh": "我每天看。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "見る",
                       "kana": "みる",
                       "desc": "看"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天看。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-008-1",
-                "sentence": "これは「聞く」です。",
+                "sentence": "私は毎日聞きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“听；问”。",
+                  "meaningZh": "我每天听；问。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "聞く",
                       "kana": "きく",
                       "desc": "听；问"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天听；问。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-009-1",
-                "sentence": "これは「言う」です。",
+                "sentence": "私は毎日言います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“说”。",
+                  "meaningZh": "我每天说。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "言う",
                       "kana": "いう",
                       "desc": "说"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天说。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-010-1",
-                "sentence": "これは「話す」です。",
+                "sentence": "私は毎日話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はなす」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“说话”。",
+                  "meaningZh": "我每天说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "話す",
                       "kana": "はなす",
                       "desc": "说话"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天说话。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-011-1",
-                "sentence": "これは「食べる」です。",
+                "sentence": "私は毎日食べります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「たべる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“吃”。",
+                  "meaningZh": "我每天吃。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "食べる",
                       "kana": "たべる",
                       "desc": "吃"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天吃。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-012-1",
-                "sentence": "これは「飲む」です。",
+                "sentence": "私は毎日飲みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「のむ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“喝”。",
+                  "meaningZh": "我每天喝。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "飲む",
                       "kana": "のむ",
                       "desc": "喝"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天喝。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-013-1",
-                "sentence": "これは「買う」です。",
+                "sentence": "私は毎日買います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“买”。",
+                  "meaningZh": "我每天买。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "買う",
                       "kana": "かう",
                       "desc": "买"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天买。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-014-1",
-                "sentence": "これは「読む」です。",
+                "sentence": "私は毎日読みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「よむ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“读”。",
+                  "meaningZh": "我每天读。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "読む",
                       "kana": "よむ",
                       "desc": "读"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天读。"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-015-1",
-                "sentence": "これは「書く」です。",
+                "sentence": "私は毎日書きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“写”。",
+                  "meaningZh": "我每天写。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "書く",
                       "kana": "かく",
                       "desc": "写"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天写。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-016-1",
-                "sentence": "これは「寝る」です。",
+                "sentence": "私は毎日寝ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ねる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“睡觉”。",
+                  "meaningZh": "我每天睡觉。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "寝る",
                       "kana": "ねる",
                       "desc": "睡觉"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天睡觉。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-017-1",
-                "sentence": "これは「起きる」です。",
+                "sentence": "私は毎日起きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おきる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“起床”。",
+                  "meaningZh": "我每天起床。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "起きる",
                       "kana": "おきる",
                       "desc": "起床"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天起床。"
                   }
                 }
               }
@@ -1407,37 +1152,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-018-1",
-                "sentence": "これは「会う」です。",
+                "sentence": "私は毎日会います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“见面”。",
+                  "meaningZh": "我每天见面。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "会う",
                       "kana": "あう",
                       "desc": "见面"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天见面。"
                   }
                 }
               }
@@ -1483,37 +1213,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-019-1",
-                "sentence": "これは「待つ」です。",
+                "sentence": "私は毎日待ちます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“等”。",
+                  "meaningZh": "我每天等。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "待つ",
                       "kana": "まつ",
                       "desc": "等"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天等。"
                   }
                 }
               }
@@ -1559,37 +1274,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-020-1",
-                "sentence": "これは「分かる」です。",
+                "sentence": "私は毎日分かります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「わかる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“明白”。",
+                  "meaningZh": "我每天明白。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "分かる",
                       "kana": "わかる",
                       "desc": "明白"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天明白。"
                   }
                 }
               }
@@ -1635,37 +1335,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-021-1",
-                "sentence": "これは「知る」です。",
+                "sentence": "私は毎日知ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“知道”。",
+                  "meaningZh": "我每天知道。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "知る",
                       "kana": "しる",
                       "desc": "知道"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天知道。"
                   }
                 }
               }
@@ -1711,37 +1396,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-022-1",
-                "sentence": "これは「使う」です。",
+                "sentence": "私は毎日使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「つかう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“使用”。",
+                  "meaningZh": "我每天使用。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "使う",
                       "kana": "つかう",
                       "desc": "使用"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天使用。"
                   }
                 }
               }
@@ -1787,37 +1457,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-023-1",
-                "sentence": "これは「作る」です。",
+                "sentence": "私は毎日作ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「つくる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“制作”。",
+                  "meaningZh": "我每天制作。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "作る",
                       "kana": "つくる",
                       "desc": "制作"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天制作。"
                   }
                 }
               }
@@ -1863,37 +1518,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-024-1",
-                "sentence": "これは「出る」です。",
+                "sentence": "私は毎日出ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「でる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“出去；出现”。",
+                  "meaningZh": "我每天出去；出现。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "出る",
                       "kana": "でる",
                       "desc": "出去；出现"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天出去；出现。"
                   }
                 }
               }
@@ -1939,37 +1579,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-025-1",
-                "sentence": "これは「入る」です。",
+                "sentence": "私は毎日入ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はいる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“进入”。",
+                  "meaningZh": "我每天进入。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "入る",
                       "kana": "はいる",
                       "desc": "进入"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天进入。"
                   }
                 }
               }
@@ -2015,37 +1640,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-026-1",
-                "sentence": "これは「出す」です。",
+                "sentence": "私は毎日出します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「だす」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“拿出；提交；发出”。",
+                  "meaningZh": "我每天拿出；提交；发出。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "出す",
                       "kana": "だす",
                       "desc": "拿出；提交；发出"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天拿出；提交；发出。"
                   }
                 }
               }
@@ -2091,37 +1701,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-027-1",
-                "sentence": "これは「入れる」です。",
+                "sentence": "私は毎日入れます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いれる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“放入”。",
+                  "meaningZh": "我每天放入。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "入れる",
                       "kana": "いれる",
                       "desc": "放入"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天放入。"
                   }
                 }
               }
@@ -2167,37 +1762,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-028-1",
-                "sentence": "これは「立つ」です。",
+                "sentence": "私は毎日立ちます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「たつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“站立”。",
+                  "meaningZh": "我每天站立。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "立つ",
                       "kana": "たつ",
                       "desc": "站立"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天站立。"
                   }
                 }
               }
@@ -2243,37 +1823,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-029-1",
-                "sentence": "これは「座る」です。",
+                "sentence": "私は毎日座ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「すわる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“坐”。",
+                  "meaningZh": "我每天坐。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "座る",
                       "kana": "すわる",
                       "desc": "坐"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天坐。"
                   }
                 }
               }
@@ -2319,37 +1884,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-030-1",
-                "sentence": "これは「歩く」です。",
+                "sentence": "私は毎日歩きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あるく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“走路”。",
+                  "meaningZh": "我每天走路。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "歩く",
                       "kana": "あるく",
                       "desc": "走路"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天走路。"
                   }
                 }
               }
@@ -2395,37 +1945,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-031-1",
-                "sentence": "これは「走る」です。",
+                "sentence": "私は毎日走ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はしる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“跑”。",
+                  "meaningZh": "我每天跑。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "走る",
                       "kana": "はしる",
                       "desc": "跑"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天跑。"
                   }
                 }
               }
@@ -2471,37 +2006,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-032-1",
-                "sentence": "これは「休む」です。",
+                "sentence": "私は毎日休みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「やすむ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“休息；请假”。",
+                  "meaningZh": "我每天休息；请假。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "休む",
                       "kana": "やすむ",
                       "desc": "休息；请假"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天休息；请假。"
                   }
                 }
               }
@@ -2547,37 +2067,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-033-1",
-                "sentence": "これは「働く」です。",
+                "sentence": "私は毎日働きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はたらく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“工作”。",
+                  "meaningZh": "我每天工作。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "働く",
                       "kana": "はたらく",
                       "desc": "工作"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天工作。"
                   }
                 }
               }
@@ -2623,37 +2128,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-034-1",
-                "sentence": "これは「勉強する」です。",
+                "sentence": "私は毎日勉強すります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「べんきょうする」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“学习”。",
+                  "meaningZh": "我每天学习。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "勉強する",
                       "kana": "べんきょうする",
                       "desc": "学习"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天学习。"
                   }
                 }
               }
@@ -2699,37 +2189,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-035-1",
-                "sentence": "これは「教える」です。",
+                "sentence": "私は毎日教えます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おしえる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“教”。",
+                  "meaningZh": "我每天教。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "教える",
                       "kana": "おしえる",
                       "desc": "教"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天教。"
                   }
                 }
               }
@@ -2775,37 +2250,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-036-1",
-                "sentence": "これは「習う」です。",
+                "sentence": "私は毎日習います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ならう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“学习；跟人学”。",
+                  "meaningZh": "我每天学习；跟人学。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "習う",
                       "kana": "ならう",
                       "desc": "学习；跟人学"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天学习；跟人学。"
                   }
                 }
               }
@@ -2851,37 +2311,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-037-1",
-                "sentence": "これは「思う」です。",
+                "sentence": "私は毎日思います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おもう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“想；认为”。",
+                  "meaningZh": "我每天想；认为。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "思う",
                       "kana": "おもう",
                       "desc": "想；认为"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天想；认为。"
                   }
                 }
               }
@@ -2927,37 +2372,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-038-1",
-                "sentence": "これは「考える」です。",
+                "sentence": "私は毎日考えます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かんがえる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“考虑”。",
+                  "meaningZh": "我每天考虑。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "考える",
                       "kana": "かんがえる",
                       "desc": "考虑"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天考虑。"
                   }
                 }
               }
@@ -3003,37 +2433,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-039-1",
-                "sentence": "これは「覚える」です。",
+                "sentence": "私は毎日覚えます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おぼえる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“记住”。",
+                  "meaningZh": "我每天记住。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "覚える",
                       "kana": "おぼえる",
                       "desc": "记住"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天记住。"
                   }
                 }
               }
@@ -3079,37 +2494,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-040-1",
-                "sentence": "これは「忘れる」です。",
+                "sentence": "私は毎日忘れます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「わすれる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“忘记”。",
+                  "meaningZh": "我每天忘记。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "忘れる",
                       "kana": "わすれる",
                       "desc": "忘记"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天忘记。"
                   }
                 }
               }
@@ -3155,37 +2555,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-041-1",
-                "sentence": "これは「持つ」です。",
+                "sentence": "私は毎日持ちます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「もつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“拿；持有”。",
+                  "meaningZh": "我每天拿；持有。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "持つ",
                       "kana": "もつ",
                       "desc": "拿；持有"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天拿；持有。"
                   }
                 }
               }
@@ -3231,37 +2616,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-042-1",
-                "sentence": "これは「取る」です。",
+                "sentence": "私は毎日取ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「とる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“拿；取”。",
+                  "meaningZh": "我每天拿；取。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "取る",
                       "kana": "とる",
                       "desc": "拿；取"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天拿；取。"
                   }
                 }
               }
@@ -3307,37 +2677,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-043-1",
-                "sentence": "これは「置く」です。",
+                "sentence": "私は毎日置きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“放置”。",
+                  "meaningZh": "我每天放置。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "置く",
                       "kana": "おく",
                       "desc": "放置"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天放置。"
                   }
                 }
               }
@@ -3383,37 +2738,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-044-1",
-                "sentence": "これは「送る」です。",
+                "sentence": "私は毎日送ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おくる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“送；寄”。",
+                  "meaningZh": "我每天送；寄。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "送る",
                       "kana": "おくる",
                       "desc": "送；寄"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天送；寄。"
                   }
                 }
               }
@@ -3459,37 +2799,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-045-1",
-                "sentence": "これは「もらう」です。",
+                "sentence": "私は毎日もらいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「もらう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“得到”。",
+                  "meaningZh": "我每天得到。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "もらう",
                       "kana": "もらう",
                       "desc": "得到"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天得到。"
                   }
                 }
               }
@@ -3535,37 +2860,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-046-1",
-                "sentence": "これは「あげる」です。",
+                "sentence": "私は毎日あげります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あげる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“给”。",
+                  "meaningZh": "我每天给。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "あげる",
                       "kana": "あげる",
                       "desc": "给"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天给。"
                   }
                 }
               }
@@ -3611,37 +2921,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-047-1",
-                "sentence": "これは「くれる」です。",
+                "sentence": "私は毎日くれます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くれる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“给（给我方）”。",
+                  "meaningZh": "我每天给（给我方）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "くれる",
                       "kana": "くれる",
                       "desc": "给（给我方）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天给（给我方）。"
                   }
                 }
               }
@@ -3687,37 +2982,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-048-1",
-                "sentence": "これは「借りる」です。",
+                "sentence": "私は毎日借ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かりる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“借入”。",
+                  "meaningZh": "我每天借入。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "借りる",
                       "kana": "かりる",
                       "desc": "借入"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天借入。"
                   }
                 }
               }
@@ -3763,37 +3043,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-049-1",
-                "sentence": "これは「貸す」です。",
+                "sentence": "私は毎日貸します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かす」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“借出”。",
+                  "meaningZh": "我每天借出。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "貸す",
                       "kana": "かす",
                       "desc": "借出"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天借出。"
                   }
                 }
               }
@@ -3839,37 +3104,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-050-1",
-                "sentence": "これは「売る」です。",
+                "sentence": "私は毎日売ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「うる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“卖”。",
+                  "meaningZh": "我每天卖。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "売る",
                       "kana": "うる",
                       "desc": "卖"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天卖。"
                   }
                 }
               }
@@ -3915,37 +3165,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-051-1",
-                "sentence": "これは「払う」です。",
+                "sentence": "私は毎日払います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はらう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“支付”。",
+                  "meaningZh": "我每天支付。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "払う",
                       "kana": "はらう",
                       "desc": "支付"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天支付。"
                   }
                 }
               }
@@ -3991,37 +3226,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-052-1",
-                "sentence": "これは「切る」です。",
+                "sentence": "私は毎日切ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“切；剪”。",
+                  "meaningZh": "我每天切；剪。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "切る",
                       "kana": "きる",
                       "desc": "切；剪"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天切；剪。"
                   }
                 }
               }
@@ -4067,37 +3287,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-053-1",
-                "sentence": "これは「開ける」です。",
+                "sentence": "私は毎日開けます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あける」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“打开”。",
+                  "meaningZh": "我每天打开。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "開ける",
                       "kana": "あける",
                       "desc": "打开"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天打开。"
                   }
                 }
               }
@@ -4143,37 +3348,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-054-1",
-                "sentence": "これは「開く」です。",
+                "sentence": "私は毎日開きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“开着；打开（自动）”。",
+                  "meaningZh": "我每天开着；打开（自动）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "開く",
                       "kana": "あく",
                       "desc": "开着；打开（自动）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天开着；打开（自动）。"
                   }
                 }
               }
@@ -4219,37 +3409,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-055-1",
-                "sentence": "これは「閉める」です。",
+                "sentence": "私は毎日閉めます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しめる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“关闭”。",
+                  "meaningZh": "我每天关闭。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "閉める",
                       "kana": "しめる",
                       "desc": "关闭"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天关闭。"
                   }
                 }
               }
@@ -4295,37 +3470,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-056-1",
-                "sentence": "これは「閉まる」です。",
+                "sentence": "私は毎日閉まります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しまる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“关闭（自动）”。",
+                  "meaningZh": "我每天关闭（自动）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "閉まる",
                       "kana": "しまる",
                       "desc": "关闭（自动）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天关闭（自动）。"
                   }
                 }
               }
@@ -4371,37 +3531,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-057-1",
-                "sentence": "これは「消す」です。",
+                "sentence": "私は毎日消します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「けす」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“关掉；擦掉”。",
+                  "meaningZh": "我每天关掉；擦掉。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "消す",
                       "kana": "けす",
                       "desc": "关掉；擦掉"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天关掉；擦掉。"
                   }
                 }
               }
@@ -4447,37 +3592,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-058-1",
-                "sentence": "これは「つける」です。",
+                "sentence": "私は毎日つけます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「つける」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“打开；安装；附上”。",
+                  "meaningZh": "我每天打开；安装；附上。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "つける",
                       "kana": "つける",
                       "desc": "打开；安装；附上"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天打开；安装；附上。"
                   }
                 }
               }
@@ -4523,37 +3653,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-059-1",
-                "sentence": "これは「曲がる」です。",
+                "sentence": "私は毎日曲がります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まがる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“拐弯”。",
+                  "meaningZh": "我每天拐弯。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "曲がる",
                       "kana": "まがる",
                       "desc": "拐弯"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天拐弯。"
                   }
                 }
               }
@@ -4599,37 +3714,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-060-1",
-                "sentence": "これは「止まる」です。",
+                "sentence": "私は毎日止まります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「とまる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“停止”。",
+                  "meaningZh": "我每天停止。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "止まる",
                       "kana": "とまる",
                       "desc": "停止"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天停止。"
                   }
                 }
               }
@@ -4675,37 +3775,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-061-1",
-                "sentence": "これは「急ぐ」です。",
+                "sentence": "私は毎日急ぎます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いそぐ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“着急；赶快”。",
+                  "meaningZh": "我每天着急；赶快。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "急ぐ",
                       "kana": "いそぐ",
                       "desc": "着急；赶快"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天着急；赶快。"
                   }
                 }
               }
@@ -4751,37 +3836,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-062-1",
-                "sentence": "これは「乗る」です。",
+                "sentence": "私は毎日乗ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「のる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“乘坐”。",
+                  "meaningZh": "我每天乘坐。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "乗る",
                       "kana": "のる",
                       "desc": "乘坐"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天乘坐。"
                   }
                 }
               }
@@ -4827,37 +3897,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-063-1",
-                "sentence": "これは「降りる」です。",
+                "sentence": "私は毎日降ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おりる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“下车；下来”。",
+                  "meaningZh": "我每天下车；下来。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "降りる",
                       "kana": "おりる",
                       "desc": "下车；下来"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天下车；下来。"
                   }
                 }
               }
@@ -4903,37 +3958,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-064-1",
-                "sentence": "これは「乗り換える」です。",
+                "sentence": "私は毎日乗り換えます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「のりかえる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“换乘”。",
+                  "meaningZh": "我每天换乘。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "乗り換える",
                       "kana": "のりかえる",
                       "desc": "换乘"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天换乘。"
                   }
                 }
               }
@@ -4979,37 +4019,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-065-1",
-                "sentence": "これは「着く」です。",
+                "sentence": "私は毎日着きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「つく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“到达”。",
+                  "meaningZh": "我每天到达。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "着く",
                       "kana": "つく",
                       "desc": "到达"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天到达。"
                   }
                 }
               }
@@ -5055,37 +4080,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-066-1",
-                "sentence": "これは「散歩する」です。",
+                "sentence": "私は毎日散歩すります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「さんぽする」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“散步”。",
+                  "meaningZh": "我每天散步。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "散歩する",
                       "kana": "さんぽする",
                       "desc": "散步"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天散步。"
                   }
                 }
               }
@@ -5131,37 +4141,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-067-1",
-                "sentence": "これは「泳ぐ」です。",
+                "sentence": "私は毎日泳ぎます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「およぐ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“游泳”。",
+                  "meaningZh": "我每天游泳。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "泳ぐ",
                       "kana": "およぐ",
                       "desc": "游泳"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天游泳。"
                   }
                 }
               }
@@ -5207,37 +4202,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-068-1",
-                "sentence": "これは「遊ぶ」です。",
+                "sentence": "私は毎日遊びます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あそぶ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“玩”。",
+                  "meaningZh": "我每天玩。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "遊ぶ",
                       "kana": "あそぶ",
                       "desc": "玩"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天玩。"
                   }
                 }
               }
@@ -5283,37 +4263,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-069-1",
-                "sentence": "これは「歌う」です。",
+                "sentence": "私は毎日歌います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「うたう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“唱歌”。",
+                  "meaningZh": "我每天唱歌。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "歌う",
                       "kana": "うたう",
                       "desc": "唱歌"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天唱歌。"
                   }
                 }
               }
@@ -5359,37 +4324,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-070-1",
-                "sentence": "これは「弾く」です。",
+                "sentence": "私は毎日弾きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ひく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“弹（乐器）”。",
+                  "meaningZh": "我每天弹（乐器）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "弾く",
                       "kana": "ひく",
                       "desc": "弹（乐器）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天弹（乐器）。"
                   }
                 }
               }
@@ -5435,37 +4385,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-071-1",
-                "sentence": "これは「吸う」です。",
+                "sentence": "私は毎日吸います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「すう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“吸；抽烟”。",
+                  "meaningZh": "我每天吸；抽烟。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "吸う",
                       "kana": "すう",
                       "desc": "吸；抽烟"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天吸；抽烟。"
                   }
                 }
               }
@@ -5511,37 +4446,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-072-1",
-                "sentence": "これは「撮る」です。",
+                "sentence": "私は毎日撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「とる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“拍照”。",
+                  "meaningZh": "我每天拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "撮る",
                       "kana": "とる",
                       "desc": "拍照"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天拍照。"
                   }
                 }
               }
@@ -5587,37 +4507,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-073-1",
-                "sentence": "これは「取る」です。",
+                "sentence": "私は毎日取ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「とる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“拿取；取得”。",
+                  "meaningZh": "我每天拿取；取得。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "取る",
                       "kana": "とる",
                       "desc": "拿取；取得"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天拿取；取得。"
                   }
                 }
               }
@@ -5663,37 +4568,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-074-1",
-                "sentence": "これは「洗う」です。",
+                "sentence": "私は毎日洗います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あらう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“洗”。",
+                  "meaningZh": "我每天洗。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "洗う",
                       "kana": "あらう",
                       "desc": "洗"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天洗。"
                   }
                 }
               }
@@ -5739,37 +4629,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-075-1",
-                "sentence": "これは「掃除する」です。",
+                "sentence": "私は毎日掃除すります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「そうじする」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“打扫”。",
+                  "meaningZh": "我每天打扫。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "掃除する",
                       "kana": "そうじする",
                       "desc": "打扫"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天打扫。"
                   }
                 }
               }
@@ -5815,37 +4690,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-076-1",
-                "sentence": "これは「料理する」です。",
+                "sentence": "私は毎日料理すります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「りょうりする」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“做饭”。",
+                  "meaningZh": "我每天做饭。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "料理する",
                       "kana": "りょうりする",
                       "desc": "做饭"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天做饭。"
                   }
                 }
               }
@@ -5891,37 +4751,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-077-1",
-                "sentence": "これは「洗濯する」です。",
+                "sentence": "私は毎日洗濯すります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「せんたくする」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“洗衣服”。",
+                  "meaningZh": "我每天洗衣服。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "洗濯する",
                       "kana": "せんたくする",
                       "desc": "洗衣服"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天洗衣服。"
                   }
                 }
               }
@@ -5967,37 +4812,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-078-1",
-                "sentence": "これは「結婚する」です。",
+                "sentence": "私は毎日結婚すります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「けっこんする」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“结婚”。",
+                  "meaningZh": "我每天结婚。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "結婚する",
                       "kana": "けっこんする",
                       "desc": "结婚"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天结婚。"
                   }
                 }
               }
@@ -6043,37 +4873,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-079-1",
-                "sentence": "これは「始まる」です。",
+                "sentence": "私は毎日始まります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はじまる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“开始（自动）”。",
+                  "meaningZh": "我每天开始（自动）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "始まる",
                       "kana": "はじまる",
                       "desc": "开始（自动）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天开始（自动）。"
                   }
                 }
               }
@@ -6119,37 +4934,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-080-1",
-                "sentence": "これは「始める」です。",
+                "sentence": "私は毎日始めます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はじめる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“开始（他动）”。",
+                  "meaningZh": "我每天开始（他动）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "始める",
                       "kana": "はじめる",
                       "desc": "开始（他动）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天开始（他动）。"
                   }
                 }
               }
@@ -6195,37 +4995,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-081-1",
-                "sentence": "これは「終わる」です。",
+                "sentence": "私は毎日終わります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おわる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“结束”。",
+                  "meaningZh": "我每天结束。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "終わる",
                       "kana": "おわる",
                       "desc": "结束"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天结束。"
                   }
                 }
               }
@@ -6271,37 +5056,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-082-1",
-                "sentence": "これは「続ける」です。",
+                "sentence": "私は毎日続けます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「つづける」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“继续”。",
+                  "meaningZh": "我每天继续。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "続ける",
                       "kana": "つづける",
                       "desc": "继续"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天继续。"
                   }
                 }
               }
@@ -6347,37 +5117,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-083-1",
-                "sentence": "これは「住む」です。",
+                "sentence": "私は毎日住みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「すむ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“居住”。",
+                  "meaningZh": "我每天居住。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "住む",
                       "kana": "すむ",
                       "desc": "居住"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天居住。"
                   }
                 }
               }
@@ -6423,37 +5178,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-084-1",
-                "sentence": "これは「泊まる」です。",
+                "sentence": "私は毎日泊まります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「とまる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“住宿”。",
+                  "meaningZh": "我每天住宿。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "泊まる",
                       "kana": "とまる",
                       "desc": "住宿"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天住宿。"
                   }
                 }
               }
@@ -6499,37 +5239,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-085-1",
-                "sentence": "これは「困る」です。",
+                "sentence": "私は毎日困ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こまる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“为难”。",
+                  "meaningZh": "我每天为难。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "困る",
                       "kana": "こまる",
                       "desc": "为难"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天为难。"
                   }
                 }
               }
@@ -6575,37 +5300,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-086-1",
-                "sentence": "これは「要る」です。",
+                "sentence": "私は毎日要ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“需要”。",
+                  "meaningZh": "我每天需要。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "要る",
                       "kana": "いる",
                       "desc": "需要"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天需要。"
                   }
                 }
               }
@@ -6651,37 +5361,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-087-1",
-                "sentence": "これは「かかる」です。",
+                "sentence": "私は毎日かかります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かかる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“花费；用时”。",
+                  "meaningZh": "我每天花费；用时。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "かかる",
                       "kana": "かかる",
                       "desc": "花费；用时"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天花费；用时。"
                   }
                 }
               }
@@ -6727,37 +5422,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-088-1",
-                "sentence": "これは「着る」です。",
+                "sentence": "私は毎日着ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“穿（上衣）”。",
+                  "meaningZh": "我每天穿（上衣）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "着る",
                       "kana": "きる",
                       "desc": "穿（上衣）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天穿（上衣）。"
                   }
                 }
               }
@@ -6803,37 +5483,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-089-1",
-                "sentence": "これは「はく」です。",
+                "sentence": "私は毎日はきます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“穿（下装、鞋）”。",
+                  "meaningZh": "我每天穿（下装、鞋）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "はく",
                       "kana": "はく",
                       "desc": "穿（下装、鞋）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天穿（下装、鞋）。"
                   }
                 }
               }
@@ -6879,37 +5544,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-090-1",
-                "sentence": "これは「かぶる」です。",
+                "sentence": "私は毎日かぶります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かぶる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“戴（帽子）”。",
+                  "meaningZh": "我每天戴（帽子）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "かぶる",
                       "kana": "かぶる",
                       "desc": "戴（帽子）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天戴（帽子）。"
                   }
                 }
               }
@@ -6955,37 +5605,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-091-1",
-                "sentence": "これは「脱ぐ」です。",
+                "sentence": "私は毎日脱ぎます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ぬぐ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“脱”。",
+                  "meaningZh": "我每天脱。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "脱ぐ",
                       "kana": "ぬぐ",
                       "desc": "脱"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天脱。"
                   }
                 }
               }
@@ -7031,37 +5666,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-092-1",
-                "sentence": "これは「生まれる」です。",
+                "sentence": "私は毎日生まれます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「うまれる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“出生”。",
+                  "meaningZh": "我每天出生。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "生まれる",
                       "kana": "うまれる",
                       "desc": "出生"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天出生。"
                   }
                 }
               }
@@ -7107,37 +5727,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-093-1",
-                "sentence": "これは「死ぬ」です。",
+                "sentence": "私は毎日死にます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しぬ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“死”。",
+                  "meaningZh": "我每天死。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "死ぬ",
                       "kana": "しぬ",
                       "desc": "死"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天死。"
                   }
                 }
               }
@@ -7183,37 +5788,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-094-1",
-                "sentence": "これは「咲く」です。",
+                "sentence": "私は毎日咲きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「さく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“开花”。",
+                  "meaningZh": "我每天开花。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "咲く",
                       "kana": "さく",
                       "desc": "开花"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天开花。"
                   }
                 }
               }
@@ -7259,37 +5849,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-095-1",
-                "sentence": "これは「曇る」です。",
+                "sentence": "私は毎日曇ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くもる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“阴天”。",
+                  "meaningZh": "我每天阴天。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "曇る",
                       "kana": "くもる",
                       "desc": "阴天"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天阴天。"
                   }
                 }
               }
@@ -7335,37 +5910,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-096-1",
-                "sentence": "これは「晴れる」です。",
+                "sentence": "私は毎日晴れます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はれる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“放晴”。",
+                  "meaningZh": "我每天放晴。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "晴れる",
                       "kana": "はれる",
                       "desc": "放晴"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天放晴。"
                   }
                 }
               }
@@ -7411,37 +5971,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-097-1",
-                "sentence": "これは「降る」です。",
+                "sentence": "私は毎日降ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ふる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“下（雨、雪）”。",
+                  "meaningZh": "我每天下（雨、雪）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "降る",
                       "kana": "ふる",
                       "desc": "下（雨、雪）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天下（雨、雪）。"
                   }
                 }
               }
@@ -7487,37 +6032,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-098-1",
-                "sentence": "これは「曇る」です。",
+                "sentence": "私は毎日曇ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くもる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“变阴”。",
+                  "meaningZh": "我每天变阴。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "曇る",
                       "kana": "くもる",
                       "desc": "变阴"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天变阴。"
                   }
                 }
               }
@@ -7563,37 +6093,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-099-1",
-                "sentence": "これは「消える」です。",
+                "sentence": "私は毎日消えます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きえる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“消失；灯灭”。",
+                  "meaningZh": "我每天消失；灯灭。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "消える",
                       "kana": "きえる",
                       "desc": "消失；灯灭"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天消失；灯灭。"
                   }
                 }
               }
@@ -7639,37 +6154,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-100-1",
-                "sentence": "これは「答える」です。",
+                "sentence": "私は毎日答えます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こたえる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“回答”。",
+                  "meaningZh": "我每天回答。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "答える",
                       "kana": "こたえる",
                       "desc": "回答"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天回答。"
                   }
                 }
               }
@@ -7715,37 +6215,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-101-1",
-                "sentence": "これは「質問する」です。",
+                "sentence": "私は毎日質問すります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しつもんする」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“提问”。",
+                  "meaningZh": "我每天提问。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "質問する",
                       "kana": "しつもんする",
                       "desc": "提问"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天提问。"
                   }
                 }
               }
@@ -7791,37 +6276,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-102-1",
-                "sentence": "これは「手伝う」です。",
+                "sentence": "私は毎日手伝います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「てつだう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“帮忙”。",
+                  "meaningZh": "我每天帮忙。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "手伝う",
                       "kana": "てつだう",
                       "desc": "帮忙"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天帮忙。"
                   }
                 }
               }
@@ -7867,37 +6337,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-103-1",
-                "sentence": "これは「呼ぶ」です。",
+                "sentence": "私は毎日呼びます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「よぶ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“叫；邀请”。",
+                  "meaningZh": "我每天叫；邀请。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "呼ぶ",
                       "kana": "よぶ",
                       "desc": "叫；邀请"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天叫；邀请。"
                   }
                 }
               }
@@ -7943,37 +6398,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-104-1",
-                "sentence": "これは「押す」です。",
+                "sentence": "私は毎日押します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おす」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“按；推”。",
+                  "meaningZh": "我每天按；推。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "押す",
                       "kana": "おす",
                       "desc": "按；推"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天按；推。"
                   }
                 }
               }
@@ -8019,37 +6459,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-105-1",
-                "sentence": "これは「引く」です。",
+                "sentence": "私は毎日引きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ひく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“拉；弹”。",
+                  "meaningZh": "我每天拉；弹。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "引く",
                       "kana": "ひく",
                       "desc": "拉；弹"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天拉；弹。"
                   }
                 }
               }
@@ -8095,37 +6520,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-106-1",
-                "sentence": "これは「渡る」です。",
+                "sentence": "私は毎日渡ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「わたる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“过（桥、马路）”。",
+                  "meaningZh": "我每天过（桥、马路）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "渡る",
                       "kana": "わたる",
                       "desc": "过（桥、马路）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天过（桥、马路）。"
                   }
                 }
               }
@@ -8171,37 +6581,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-107-1",
-                "sentence": "これは「曲げる」です。",
+                "sentence": "私は毎日曲げります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まげる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“弄弯；拐”。",
+                  "meaningZh": "我每天弄弯；拐。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "曲げる",
                       "kana": "まげる",
                       "desc": "弄弯；拐"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天弄弯；拐。"
                   }
                 }
               }
@@ -8247,37 +6642,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-108-1",
-                "sentence": "これは「コピーする」です。",
+                "sentence": "私は毎日コピーすります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「コピーする」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“复印”。",
+                  "meaningZh": "我每天复印。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "コピーする",
                       "kana": "コピーする",
                       "desc": "复印"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天复印。"
                   }
                 }
               }
@@ -8323,37 +6703,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-109-1",
-                "sentence": "これは「練習する」です。",
+                "sentence": "私は毎日練習すります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「れんしゅうする」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“练习”。",
+                  "meaningZh": "我每天练习。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "練習する",
                       "kana": "れんしゅうする",
                       "desc": "练习"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天练习。"
                   }
                 }
               }
@@ -8399,37 +6764,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-110-1",
-                "sentence": "これは「予約する」です。",
+                "sentence": "私は毎日予約すります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「よやくする」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“预约”。",
+                  "meaningZh": "我每天预约。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "予約する",
                       "kana": "よやくする",
                       "desc": "预约"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天预约。"
                   }
                 }
               }
@@ -8475,37 +6825,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-111-1",
-                "sentence": "これは「案内する」です。",
+                "sentence": "私は毎日案内すります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あんないする」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“带路；介绍”。",
+                  "meaningZh": "我每天带路；介绍。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "案内する",
                       "kana": "あんないする",
                       "desc": "带路；介绍"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天带路；介绍。"
                   }
                 }
               }
@@ -8551,37 +6886,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-112-1",
-                "sentence": "これは「留学する」です。",
+                "sentence": "私は毎日留学すります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「りゅうがくする」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“留学”。",
+                  "meaningZh": "我每天留学。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "留学する",
                       "kana": "りゅうがくする",
                       "desc": "留学"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天留学。"
                   }
                 }
               }
@@ -8627,37 +6947,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-113-1",
-                "sentence": "これは「出かける」です。",
+                "sentence": "私は毎日出かけます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「でかける」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“出门”。",
+                  "meaningZh": "我每天出门。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "出かける",
                       "kana": "でかける",
                       "desc": "出门"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天出门。"
                   }
                 }
               }
@@ -8703,37 +7008,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-114-1",
-                "sentence": "これは「疲れる」です。",
+                "sentence": "私は毎日疲れます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「つかれる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“累”。",
+                  "meaningZh": "我每天累。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "疲れる",
                       "kana": "つかれる",
                       "desc": "累"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天累。"
                   }
                 }
               }
@@ -8779,37 +7069,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-115-1",
-                "sentence": "これは「太る」です。",
+                "sentence": "私は毎日太ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ふとる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“胖”。",
+                  "meaningZh": "我每天胖。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "太る",
                       "kana": "ふとる",
                       "desc": "胖"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天胖。"
                   }
                 }
               }
@@ -8855,37 +7130,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-116-1",
-                "sentence": "これは「痩せる」です。",
+                "sentence": "私は毎日痩せます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「やせる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“瘦”。",
+                  "meaningZh": "我每天瘦。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "痩せる",
                       "kana": "やせる",
                       "desc": "瘦"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天瘦。"
                   }
                 }
               }
@@ -8931,37 +7191,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-verb-117-1",
-                "sentence": "これは「入院する」です。",
+                "sentence": "私は毎日入院すります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「にゅういんする」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“住院”。",
+                  "meaningZh": "我每天住院。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "入院する",
                       "kana": "にゅういんする",
                       "desc": "住院"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 毎日 Vます",
+                    "meaningZh": "我每天住院。"
                   }
                 }
               }

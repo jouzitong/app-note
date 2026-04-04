@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-001-1",
-                "sentence": "これは「学校」です。",
+                "sentence": "毎日学校で勉強します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「がっこう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“学校”。",
+                  "meaningZh": "每天在学校学习。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "学校",
                       "kana": "がっこう",
                       "desc": "学校"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で 勉強する",
+                    "meaningZh": "每天在学校学习。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-002-1",
-                "sentence": "これは「大学」です。",
+                "sentence": "毎日大学で勉強します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「だいがく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“大学”。",
+                  "meaningZh": "每天在大学学习。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "大学",
                       "kana": "だいがく",
                       "desc": "大学"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で 勉強する",
+                    "meaningZh": "每天在大学学习。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-003-1",
-                "sentence": "これは「教室」です。",
+                "sentence": "毎日教室で勉強します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きょうしつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“教室”。",
+                  "meaningZh": "每天在教室学习。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "教室",
                       "kana": "きょうしつ",
                       "desc": "教室"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で 勉強する",
+                    "meaningZh": "每天在教室学习。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-004-1",
-                "sentence": "これは「授業」です。",
+                "sentence": "毎日授業を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「じゅぎょう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“上课；课程”。",
+                  "meaningZh": "每天学习上课；课程。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "授業",
                       "kana": "じゅぎょう",
                       "desc": "上课；课程"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习上课；课程。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-005-1",
-                "sentence": "これは「宿題」です。",
+                "sentence": "毎日宿題を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しゅくだい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“作业”。",
+                  "meaningZh": "每天学习作业。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "宿題",
                       "kana": "しゅくだい",
                       "desc": "作业"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习作业。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-006-1",
-                "sentence": "これは「試験」です。",
+                "sentence": "毎日試験を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しけん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“考试”。",
+                  "meaningZh": "每天学习考试。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "試験",
                       "kana": "しけん",
                       "desc": "考试"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习考试。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-007-1",
-                "sentence": "これは「テスト」です。",
+                "sentence": "毎日テストを勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「テスト」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“测试”。",
+                  "meaningZh": "每天学习测试。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "テスト",
                       "kana": "テスト",
                       "desc": "测试"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习测试。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-008-1",
-                "sentence": "これは「問題」です。",
+                "sentence": "毎日問題を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「もんだい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“问题；题目”。",
+                  "meaningZh": "每天学习问题；题目。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "問題",
                       "kana": "もんだい",
                       "desc": "问题；题目"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习问题；题目。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-009-1",
-                "sentence": "これは「答え」です。",
+                "sentence": "毎日答えを勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こたえ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“答案”。",
+                  "meaningZh": "每天学习答案。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "答え",
                       "kana": "こたえ",
                       "desc": "答案"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习答案。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-010-1",
-                "sentence": "これは「質問」です。",
+                "sentence": "毎日質問を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しつもん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“问题；提问”。",
+                  "meaningZh": "每天学习问题；提问。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "質問",
                       "kana": "しつもん",
                       "desc": "问题；提问"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习问题；提问。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-011-1",
-                "sentence": "これは「練習」です。",
+                "sentence": "毎日練習を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「れんしゅう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“练习”。",
+                  "meaningZh": "每天学习练习。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "練習",
                       "kana": "れんしゅう",
                       "desc": "练习"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习练习。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-012-1",
-                "sentence": "これは「勉強」です。",
+                "sentence": "毎日勉強を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「べんきょう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“学习”。",
+                  "meaningZh": "每天学习学习。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "勉強",
                       "kana": "べんきょう",
                       "desc": "学习"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习学习。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-013-1",
-                "sentence": "これは「字」です。",
+                "sentence": "毎日字を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「じ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“字”。",
+                  "meaningZh": "每天学习字。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "字",
                       "kana": "じ",
                       "desc": "字"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习字。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-014-1",
-                "sentence": "これは「漢字」です。",
+                "sentence": "毎日漢字を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かんじ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“汉字”。",
+                  "meaningZh": "每天学习汉字。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "漢字",
                       "kana": "かんじ",
                       "desc": "汉字"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习汉字。"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-015-1",
-                "sentence": "これは「平仮名」です。",
+                "sentence": "毎日平仮名を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ひらがな」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“平假名”。",
+                  "meaningZh": "每天学习平假名。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "平仮名",
                       "kana": "ひらがな",
                       "desc": "平假名"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习平假名。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-016-1",
-                "sentence": "これは「片仮名」です。",
+                "sentence": "毎日片仮名を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「カタカナ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“片假名”。",
+                  "meaningZh": "每天学习片假名。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "片仮名",
                       "kana": "カタカナ",
                       "desc": "片假名"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习片假名。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-017-1",
-                "sentence": "これは「言葉」です。",
+                "sentence": "毎日言葉を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ことば」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“词语；语言”。",
+                  "meaningZh": "每天学习词语；语言。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "言葉",
                       "kana": "ことば",
                       "desc": "词语；语言"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习词语；语言。"
                   }
                 }
               }
@@ -1407,37 +1152,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-018-1",
-                "sentence": "これは「文」です。",
+                "sentence": "毎日文を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ぶん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“句子；文章”。",
+                  "meaningZh": "每天学习句子；文章。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "文",
                       "kana": "ぶん",
                       "desc": "句子；文章"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习句子；文章。"
                   }
                 }
               }
@@ -1483,37 +1213,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-019-1",
-                "sentence": "これは「意味」です。",
+                "sentence": "毎日意味を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いみ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“意思”。",
+                  "meaningZh": "每天学习意思。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "意味",
                       "kana": "いみ",
                       "desc": "意思"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习意思。"
                   }
                 }
               }
@@ -1559,37 +1274,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-020-1",
-                "sentence": "これは「作文」です。",
+                "sentence": "毎日作文を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「さくぶん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“作文”。",
+                  "meaningZh": "每天学习作文。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "作文",
                       "kana": "さくぶん",
                       "desc": "作文"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习作文。"
                   }
                 }
               }
@@ -1635,37 +1335,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-021-1",
-                "sentence": "これは「本」です。",
+                "sentence": "毎日本を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ほん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“书”。",
+                  "meaningZh": "每天学习书。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "本",
                       "kana": "ほん",
                       "desc": "书"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习书。"
                   }
                 }
               }
@@ -1711,37 +1396,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-022-1",
-                "sentence": "これは「辞書」です。",
+                "sentence": "毎日辞書を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「じしょ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“词典”。",
+                  "meaningZh": "每天学习词典。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "辞書",
                       "kana": "じしょ",
                       "desc": "词典"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习词典。"
                   }
                 }
               }
@@ -1787,37 +1457,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-023-1",
-                "sentence": "これは「ノート」です。",
+                "sentence": "毎日ノートを勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ノート」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“笔记本”。",
+                  "meaningZh": "每天学习笔记本。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ノート",
                       "kana": "ノート",
                       "desc": "笔记本"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习笔记本。"
                   }
                 }
               }
@@ -1863,37 +1518,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-024-1",
-                "sentence": "これは「紙」です。",
+                "sentence": "毎日紙を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かみ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“纸”。",
+                  "meaningZh": "每天学习纸。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "紙",
                       "kana": "かみ",
                       "desc": "纸"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习纸。"
                   }
                 }
               }
@@ -1939,37 +1579,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-025-1",
-                "sentence": "これは「鉛筆」です。",
+                "sentence": "毎日鉛筆を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「えんぴつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“铅笔”。",
+                  "meaningZh": "每天学习铅笔。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "鉛筆",
                       "kana": "えんぴつ",
                       "desc": "铅笔"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习铅笔。"
                   }
                 }
               }
@@ -2015,37 +1640,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-026-1",
-                "sentence": "これは「ペン」です。",
+                "sentence": "毎日ペンを勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ペン」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“钢笔；笔”。",
+                  "meaningZh": "每天学习钢笔；笔。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ペン",
                       "kana": "ペン",
                       "desc": "钢笔；笔"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习钢笔；笔。"
                   }
                 }
               }
@@ -2091,37 +1701,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-027-1",
-                "sentence": "これは「ボールペン」です。",
+                "sentence": "毎日ボールペンを勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ボールペン」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“圆珠笔”。",
+                  "meaningZh": "每天学习圆珠笔。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ボールペン",
                       "kana": "ボールペン",
                       "desc": "圆珠笔"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习圆珠笔。"
                   }
                 }
               }
@@ -2167,37 +1762,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-028-1",
-                "sentence": "これは「万年筆」です。",
+                "sentence": "毎日万年筆を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まんねんひつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“钢笔”。",
+                  "meaningZh": "每天学习钢笔。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "万年筆",
                       "kana": "まんねんひつ",
                       "desc": "钢笔"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习钢笔。"
                   }
                 }
               }
@@ -2243,37 +1823,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-029-1",
-                "sentence": "これは「消しゴム」です。",
+                "sentence": "毎日消しゴムを勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「けしゴム」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“橡皮”。",
+                  "meaningZh": "每天学习橡皮。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "消しゴム",
                       "kana": "けしゴム",
                       "desc": "橡皮"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习橡皮。"
                   }
                 }
               }
@@ -2319,37 +1884,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-030-1",
-                "sentence": "これは「机」です。",
+                "sentence": "毎日机を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「つくえ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“桌子”。",
+                  "meaningZh": "每天学习桌子。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "机",
                       "kana": "つくえ",
                       "desc": "桌子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习桌子。"
                   }
                 }
               }
@@ -2395,37 +1945,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-031-1",
-                "sentence": "これは「椅子」です。",
+                "sentence": "毎日椅子を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いす」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“椅子”。",
+                  "meaningZh": "每天学习椅子。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "椅子",
                       "kana": "いす",
                       "desc": "椅子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习椅子。"
                   }
                 }
               }
@@ -2471,37 +2006,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-032-1",
-                "sentence": "これは「日本語」です。",
+                "sentence": "毎日日本語を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「にほんご」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“日语”。",
+                  "meaningZh": "每天学习日语。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "日本語",
                       "kana": "にほんご",
                       "desc": "日语"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习日语。"
                   }
                 }
               }
@@ -2547,37 +2067,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-033-1",
-                "sentence": "これは「英語」です。",
+                "sentence": "毎日英語を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「えいご」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“英语”。",
+                  "meaningZh": "每天学习英语。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "英語",
                       "kana": "えいご",
                       "desc": "英语"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习英语。"
                   }
                 }
               }
@@ -2623,37 +2128,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-034-1",
-                "sentence": "これは「中国語」です。",
+                "sentence": "毎日中国語を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ちゅうごくご」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“中文”。",
+                  "meaningZh": "每天学习中文。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "中国語",
                       "kana": "ちゅうごくご",
                       "desc": "中文"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习中文。"
                   }
                 }
               }
@@ -2699,37 +2189,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-035-1",
-                "sentence": "これは「名前」です。",
+                "sentence": "毎日名前を勉強しています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「なまえ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“名字”。",
+                  "meaningZh": "每天学习名字。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "名前",
                       "kana": "なまえ",
                       "desc": "名字"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 勉強する",
+                    "meaningZh": "每天学习名字。"
                   }
                 }
               }

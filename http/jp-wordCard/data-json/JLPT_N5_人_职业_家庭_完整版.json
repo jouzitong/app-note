@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-001-1",
-                "sentence": "これは「人」です。",
+                "sentence": "私の人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ひと」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“人”。",
+                  "meaningZh": "我的人住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "人",
                       "kana": "ひと",
                       "desc": "人"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的人住在东京。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-002-1",
-                "sentence": "これは「男」です。",
+                "sentence": "私の男は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おとこ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“男”。",
+                  "meaningZh": "我的男住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "男",
                       "kana": "おとこ",
                       "desc": "男"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的男住在东京。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-003-1",
-                "sentence": "これは「女」です。",
+                "sentence": "私の女は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おんな」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“女”。",
+                  "meaningZh": "我的女住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "女",
                       "kana": "おんな",
                       "desc": "女"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的女住在东京。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-004-1",
-                "sentence": "これは「男の人」です。",
+                "sentence": "私の男の人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おとこのひと」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“男人”。",
+                  "meaningZh": "我的男人住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "男の人",
                       "kana": "おとこのひと",
                       "desc": "男人"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的男人住在东京。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-005-1",
-                "sentence": "これは「女の人」です。",
+                "sentence": "私の女の人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おんなのひと」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“女人”。",
+                  "meaningZh": "我的女人住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "女の人",
                       "kana": "おんなのひと",
                       "desc": "女人"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的女人住在东京。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-006-1",
-                "sentence": "これは「男の子」です。",
+                "sentence": "私の男の子は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おとこのこ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“男孩”。",
+                  "meaningZh": "我的男孩住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "男の子",
                       "kana": "おとこのこ",
                       "desc": "男孩"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的男孩住在东京。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-007-1",
-                "sentence": "これは「女の子」です。",
+                "sentence": "私の女の子は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おんなのこ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“女孩”。",
+                  "meaningZh": "我的女孩住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "女の子",
                       "kana": "おんなのこ",
                       "desc": "女孩"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的女孩住在东京。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-008-1",
-                "sentence": "これは「子供」です。",
+                "sentence": "私の子供は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こども」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“孩子”。",
+                  "meaningZh": "我的孩子住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "子供",
                       "kana": "こども",
                       "desc": "孩子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的孩子住在东京。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-009-1",
-                "sentence": "これは「大人」です。",
+                "sentence": "私の大人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おとな」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“大人”。",
+                  "meaningZh": "我的大人住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "大人",
                       "kana": "おとな",
                       "desc": "大人"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的大人住在东京。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-010-1",
-                "sentence": "これは「赤ちゃん」です。",
+                "sentence": "私の赤ちゃんは東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あかちゃん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“婴儿”。",
+                  "meaningZh": "我的婴儿住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "赤ちゃん",
                       "kana": "あかちゃん",
                       "desc": "婴儿"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的婴儿住在东京。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-011-1",
-                "sentence": "これは「友達」です。",
+                "sentence": "私の友達は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ともだち」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“朋友”。",
+                  "meaningZh": "我的朋友住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "友達",
                       "kana": "ともだち",
                       "desc": "朋友"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的朋友住在东京。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-012-1",
-                "sentence": "これは「先生」です。",
+                "sentence": "彼は先生です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「せんせい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“老师”。",
+                  "meaningZh": "他是老师。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "先生",
                       "kana": "せんせい",
                       "desc": "老师"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 职业 です",
+                    "meaningZh": "他是老师。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-013-1",
-                "sentence": "これは「学生」です。",
+                "sentence": "彼は学生です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「がくせい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“学生”。",
+                  "meaningZh": "他是学生。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "学生",
                       "kana": "がくせい",
                       "desc": "学生"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 职业 です",
+                    "meaningZh": "他是学生。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-014-1",
-                "sentence": "これは「大学生」です。",
+                "sentence": "彼は大学生です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「だいがくせい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“大学生”。",
+                  "meaningZh": "他是大学生。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "大学生",
                       "kana": "だいがくせい",
                       "desc": "大学生"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 职业 です",
+                    "meaningZh": "他是大学生。"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-015-1",
-                "sentence": "これは「会社員」です。",
+                "sentence": "彼は会社員です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かいしゃいん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“公司职员”。",
+                  "meaningZh": "他是公司职员。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "会社員",
                       "kana": "かいしゃいん",
                       "desc": "公司职员"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 职业 です",
+                    "meaningZh": "他是公司职员。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-016-1",
-                "sentence": "これは「医者」です。",
+                "sentence": "彼は医者です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いしゃ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“医生”。",
+                  "meaningZh": "他是医生。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "医者",
                       "kana": "いしゃ",
                       "desc": "医生"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 职业 です",
+                    "meaningZh": "他是医生。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-017-1",
-                "sentence": "これは「看護師」です。",
+                "sentence": "私の看護師は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かんごし」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“护士”。",
+                  "meaningZh": "我的护士住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "看護師",
                       "kana": "かんごし",
                       "desc": "护士"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的护士住在东京。"
                   }
                 }
               }
@@ -1407,37 +1152,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-018-1",
-                "sentence": "これは「店員」です。",
+                "sentence": "彼は店員です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「てんいん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“店员”。",
+                  "meaningZh": "他是店员。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "店員",
                       "kana": "てんいん",
                       "desc": "店员"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 职业 です",
+                    "meaningZh": "他是店员。"
                   }
                 }
               }
@@ -1483,37 +1213,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-019-1",
-                "sentence": "これは「駅員」です。",
+                "sentence": "私の駅員は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「えきいん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“车站工作人员”。",
+                  "meaningZh": "我的车站工作人员住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "駅員",
                       "kana": "えきいん",
                       "desc": "车站工作人员"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的车站工作人员住在东京。"
                   }
                 }
               }
@@ -1559,37 +1274,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-020-1",
-                "sentence": "これは「警官」です。",
+                "sentence": "彼は警官です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「けいかん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“警察”。",
+                  "meaningZh": "他是警察。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "警官",
                       "kana": "けいかん",
                       "desc": "警察"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 职业 です",
+                    "meaningZh": "他是警察。"
                   }
                 }
               }
@@ -1635,37 +1335,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-021-1",
-                "sentence": "これは「外国人」です。",
+                "sentence": "私の外国人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「がいこくじん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“外国人”。",
+                  "meaningZh": "我的外国人住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "外国人",
                       "kana": "がいこくじん",
                       "desc": "外国人"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的外国人住在东京。"
                   }
                 }
               }
@@ -1711,37 +1396,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-022-1",
-                "sentence": "これは「父」です。",
+                "sentence": "私の父は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ちち」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“我父亲”。",
+                  "meaningZh": "我的我父亲住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "父",
                       "kana": "ちち",
                       "desc": "我父亲"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的我父亲住在东京。"
                   }
                 }
               }
@@ -1787,37 +1457,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-023-1",
-                "sentence": "これは「母」です。",
+                "sentence": "私の母は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はは」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“我母亲”。",
+                  "meaningZh": "我的我母亲住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "母",
                       "kana": "はは",
                       "desc": "我母亲"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的我母亲住在东京。"
                   }
                 }
               }
@@ -1863,37 +1518,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-024-1",
-                "sentence": "これは「両親」です。",
+                "sentence": "私の両親は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「りょうしん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“父母”。",
+                  "meaningZh": "我的父母住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "両親",
                       "kana": "りょうしん",
                       "desc": "父母"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的父母住在东京。"
                   }
                 }
               }
@@ -1939,37 +1579,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-025-1",
-                "sentence": "これは「親」です。",
+                "sentence": "私の親は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おや」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“父母”。",
+                  "meaningZh": "我的父母住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "親",
                       "kana": "おや",
                       "desc": "父母"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的父母住在东京。"
                   }
                 }
               }
@@ -2015,37 +1640,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-026-1",
-                "sentence": "これは「兄」です。",
+                "sentence": "私の兄は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あに」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“我哥哥”。",
+                  "meaningZh": "我的我哥哥住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "兄",
                       "kana": "あに",
                       "desc": "我哥哥"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的我哥哥住在东京。"
                   }
                 }
               }
@@ -2091,37 +1701,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-027-1",
-                "sentence": "これは「姉」です。",
+                "sentence": "私の姉は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あね」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“我姐姐”。",
+                  "meaningZh": "我的我姐姐住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "姉",
                       "kana": "あね",
                       "desc": "我姐姐"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的我姐姐住在东京。"
                   }
                 }
               }
@@ -2167,37 +1762,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-028-1",
-                "sentence": "これは「弟」です。",
+                "sentence": "私の弟は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おとうと」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“弟弟”。",
+                  "meaningZh": "我的弟弟住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "弟",
                       "kana": "おとうと",
                       "desc": "弟弟"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的弟弟住在东京。"
                   }
                 }
               }
@@ -2243,37 +1823,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-029-1",
-                "sentence": "これは「妹」です。",
+                "sentence": "私の妹は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いもうと」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“妹妹”。",
+                  "meaningZh": "我的妹妹住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "妹",
                       "kana": "いもうと",
                       "desc": "妹妹"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的妹妹住在东京。"
                   }
                 }
               }
@@ -2319,37 +1884,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-030-1",
-                "sentence": "これは「家族」です。",
+                "sentence": "私の家族は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かぞく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“家人”。",
+                  "meaningZh": "我的家人住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "家族",
                       "kana": "かぞく",
                       "desc": "家人"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的家人住在东京。"
                   }
                 }
               }
@@ -2395,37 +1945,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-031-1",
-                "sentence": "これは「夫」です。",
+                "sentence": "私の夫は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おっと」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“丈夫”。",
+                  "meaningZh": "我的丈夫住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "夫",
                       "kana": "おっと",
                       "desc": "丈夫"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的丈夫住在东京。"
                   }
                 }
               }
@@ -2471,37 +2006,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-032-1",
-                "sentence": "これは「妻」です。",
+                "sentence": "私の妻は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「つま」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“妻子”。",
+                  "meaningZh": "我的妻子住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "妻",
                       "kana": "つま",
                       "desc": "妻子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的妻子住在东京。"
                   }
                 }
               }
@@ -2547,37 +2067,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-033-1",
-                "sentence": "これは「奥さん」です。",
+                "sentence": "私の奥さんは東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おくさん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“太太”。",
+                  "meaningZh": "我的太太住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "奥さん",
                       "kana": "おくさん",
                       "desc": "太太"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的太太住在东京。"
                   }
                 }
               }
@@ -2623,37 +2128,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-034-1",
-                "sentence": "これは「主人」です。",
+                "sentence": "私の主人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しゅじん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“丈夫（自谦）”。",
+                  "meaningZh": "我的丈夫（自谦）住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "主人",
                       "kana": "しゅじん",
                       "desc": "丈夫（自谦）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的丈夫（自谦）住在东京。"
                   }
                 }
               }
@@ -2699,37 +2189,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-035-1",
-                "sentence": "これは「ご主人」です。",
+                "sentence": "私のご主人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ごしゅじん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“您丈夫”。",
+                  "meaningZh": "我的您丈夫住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ご主人",
                       "kana": "ごしゅじん",
                       "desc": "您丈夫"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的您丈夫住在东京。"
                   }
                 }
               }
@@ -2775,37 +2250,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-036-1",
-                "sentence": "これは「おじさん」です。",
+                "sentence": "私のおじさんは東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おじさん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“叔叔；大叔”。",
+                  "meaningZh": "我的叔叔；大叔住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "おじさん",
                       "kana": "おじさん",
                       "desc": "叔叔；大叔"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的叔叔；大叔住在东京。"
                   }
                 }
               }
@@ -2851,37 +2311,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-037-1",
-                "sentence": "これは「おばさん」です。",
+                "sentence": "私のおばさんは東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おばさん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“阿姨；大婶”。",
+                  "meaningZh": "我的阿姨；大婶住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "おばさん",
                       "kana": "おばさん",
                       "desc": "阿姨；大婶"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的阿姨；大婶住在东京。"
                   }
                 }
               }
@@ -2927,37 +2372,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-038-1",
-                "sentence": "これは「おじいさん」です。",
+                "sentence": "私のおじいさんは東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おじいさん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“爷爷；老爷爷”。",
+                  "meaningZh": "我的爷爷；老爷爷住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "おじいさん",
                       "kana": "おじいさん",
                       "desc": "爷爷；老爷爷"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的爷爷；老爷爷住在东京。"
                   }
                 }
               }
@@ -3003,37 +2433,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-039-1",
-                "sentence": "これは「おばあさん」です。",
+                "sentence": "私のおばあさんは東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おばあさん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“奶奶；老奶奶”。",
+                  "meaningZh": "我的奶奶；老奶奶住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "おばあさん",
                       "kana": "おばあさん",
                       "desc": "奶奶；老奶奶"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的奶奶；老奶奶住在东京。"
                   }
                 }
               }
@@ -3079,37 +2494,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-040-1",
-                "sentence": "これは「兄弟」です。",
+                "sentence": "私の兄弟は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きょうだい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“兄弟姐妹”。",
+                  "meaningZh": "我的兄弟姐妹住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "兄弟",
                       "kana": "きょうだい",
                       "desc": "兄弟姐妹"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的兄弟姐妹住在东京。"
                   }
                 }
               }
@@ -3155,37 +2555,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-people-041-1",
-                "sentence": "これは「姉妹」です。",
+                "sentence": "私の姉妹は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しまい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“姐妹”。",
+                  "meaningZh": "我的姐妹住在东京。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "姉妹",
                       "kana": "しまい",
                       "desc": "姐妹"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "私の A は B",
+                    "meaningZh": "我的姐妹住在东京。"
                   }
                 }
               }

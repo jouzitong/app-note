@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-001-1",
-                "sentence": "これは「今」です。",
+                "sentence": "今は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いま」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“现在”。",
+                  "meaningZh": "现在很忙。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "今",
                       "kana": "いま",
                       "desc": "现在"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "时间词 は 〜です",
+                    "meaningZh": "现在很忙。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-002-1",
-                "sentence": "これは「今日」です。",
+                "sentence": "今日は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きょう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“今天”。",
+                  "meaningZh": "今天很忙。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "今日",
                       "kana": "きょう",
                       "desc": "今天"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "时间词 は 〜です",
+                    "meaningZh": "今天很忙。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-003-1",
-                "sentence": "これは「昨日」です。",
+                "sentence": "昨日は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きのう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“昨天”。",
+                  "meaningZh": "昨天很忙。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "昨日",
                       "kana": "きのう",
                       "desc": "昨天"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "时间词 は 〜です",
+                    "meaningZh": "昨天很忙。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-004-1",
-                "sentence": "これは「明日」です。",
+                "sentence": "明日は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あした」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“明天”。",
+                  "meaningZh": "明天很忙。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "明日",
                       "kana": "あした",
                       "desc": "明天"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "时间词 は 〜です",
+                    "meaningZh": "明天很忙。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-005-1",
-                "sentence": "これは「今朝」です。",
+                "sentence": "今朝は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「けさ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“今天早上”。",
+                  "meaningZh": "今天早上很忙。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "今朝",
                       "kana": "けさ",
                       "desc": "今天早上"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "时间词 は 〜です",
+                    "meaningZh": "今天早上很忙。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-006-1",
-                "sentence": "これは「今晩」です。",
+                "sentence": "今晩は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こんばん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“今晚”。",
+                  "meaningZh": "今晚很忙。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "今晩",
                       "kana": "こんばん",
                       "desc": "今晚"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "时间词 は 〜です",
+                    "meaningZh": "今晚很忙。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-007-1",
-                "sentence": "これは「今夜」です。",
+                "sentence": "今夜は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こんや」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“今夜”。",
+                  "meaningZh": "今夜很忙。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "今夜",
                       "kana": "こんや",
                       "desc": "今夜"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "时间词 は 〜です",
+                    "meaningZh": "今夜很忙。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-008-1",
-                "sentence": "これは「毎日」です。",
+                "sentence": "試験は毎日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まいにち」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“每天”。",
+                  "meaningZh": "考试时间是每天。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "毎日",
                       "kana": "まいにち",
                       "desc": "每天"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是每天。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-009-1",
-                "sentence": "これは「毎朝」です。",
+                "sentence": "試験は毎朝です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まいあさ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“每天早上”。",
+                  "meaningZh": "考试时间是每天早上。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "毎朝",
                       "kana": "まいあさ",
                       "desc": "每天早上"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是每天早上。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-010-1",
-                "sentence": "これは「毎晩」です。",
+                "sentence": "試験は毎晩です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まいばん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“每天晚上”。",
+                  "meaningZh": "考试时间是每天晚上。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "毎晩",
                       "kana": "まいばん",
                       "desc": "每天晚上"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是每天晚上。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-011-1",
-                "sentence": "これは「毎週」です。",
+                "sentence": "試験は毎週です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まいしゅう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“每周”。",
+                  "meaningZh": "考试时间是每周。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "毎週",
                       "kana": "まいしゅう",
                       "desc": "每周"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是每周。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-012-1",
-                "sentence": "これは「毎月」です。",
+                "sentence": "試験は毎月です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まいつき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“每月”。",
+                  "meaningZh": "考试时间是每月。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "毎月",
                       "kana": "まいつき",
                       "desc": "每月"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是每月。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-013-1",
-                "sentence": "これは「毎年」です。",
+                "sentence": "試験は毎年です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まいとし」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“每年”。",
+                  "meaningZh": "考试时间是每年。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "毎年",
                       "kana": "まいとし",
                       "desc": "每年"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是每年。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-014-1",
-                "sentence": "これは「朝」です。",
+                "sentence": "試験は朝です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あさ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“早上”。",
+                  "meaningZh": "考试时间是早上。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "朝",
                       "kana": "あさ",
                       "desc": "早上"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是早上。"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-015-1",
-                "sentence": "これは「午前」です。",
+                "sentence": "試験は午前です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ごぜん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“上午”。",
+                  "meaningZh": "考试时间是上午。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "午前",
                       "kana": "ごぜん",
                       "desc": "上午"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是上午。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-016-1",
-                "sentence": "これは「昼」です。",
+                "sentence": "試験は昼です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ひる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“白天；中午”。",
+                  "meaningZh": "考试时间是白天；中午。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "昼",
                       "kana": "ひる",
                       "desc": "白天；中午"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是白天；中午。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-017-1",
-                "sentence": "これは「午後」です。",
+                "sentence": "試験は午後です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ごご」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“下午”。",
+                  "meaningZh": "考试时间是下午。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "午後",
                       "kana": "ごご",
                       "desc": "下午"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是下午。"
                   }
                 }
               }
@@ -1407,37 +1152,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-018-1",
-                "sentence": "これは「夕方」です。",
+                "sentence": "試験は夕方です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ゆうがた」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“傍晚”。",
+                  "meaningZh": "考试时间是傍晚。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "夕方",
                       "kana": "ゆうがた",
                       "desc": "傍晚"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是傍晚。"
                   }
                 }
               }
@@ -1483,37 +1213,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-019-1",
-                "sentence": "これは「夜」です。",
+                "sentence": "試験は夜です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「よる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“夜晚”。",
+                  "meaningZh": "考试时间是夜晚。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "夜",
                       "kana": "よる",
                       "desc": "夜晚"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是夜晚。"
                   }
                 }
               }
@@ -1559,37 +1274,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-020-1",
-                "sentence": "これは「晩」です。",
+                "sentence": "試験は晩です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ばん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“晚上”。",
+                  "meaningZh": "考试时间是晚上。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "晩",
                       "kana": "ばん",
                       "desc": "晚上"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是晚上。"
                   }
                 }
               }
@@ -1635,37 +1335,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-021-1",
-                "sentence": "これは「時間」です。",
+                "sentence": "試験は時間です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「じかん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“时间；小时”。",
+                  "meaningZh": "考试时间是时间；小时。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "時間",
                       "kana": "じかん",
                       "desc": "时间；小时"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是时间；小时。"
                   }
                 }
               }
@@ -1711,37 +1396,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-022-1",
-                "sentence": "これは「時」です。",
+                "sentence": "試験は時です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「じ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“点钟”。",
+                  "meaningZh": "考试时间是点钟。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "時",
                       "kana": "じ",
                       "desc": "点钟"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是点钟。"
                   }
                 }
               }
@@ -1787,37 +1457,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-023-1",
-                "sentence": "これは「分」です。",
+                "sentence": "試験は分です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ふん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“分钟”。",
+                  "meaningZh": "考试时间是分钟。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "分",
                       "kana": "ふん",
                       "desc": "分钟"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是分钟。"
                   }
                 }
               }
@@ -1863,37 +1518,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-024-1",
-                "sentence": "これは「秒」です。",
+                "sentence": "試験は秒です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「びょう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“秒”。",
+                  "meaningZh": "考试时间是秒。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "秒",
                       "kana": "びょう",
                       "desc": "秒"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是秒。"
                   }
                 }
               }
@@ -1939,37 +1579,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-025-1",
-                "sentence": "これは「週」です。",
+                "sentence": "試験は週です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しゅう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“周”。",
+                  "meaningZh": "考试时间是周。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "週",
                       "kana": "しゅう",
                       "desc": "周"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是周。"
                   }
                 }
               }
@@ -2015,37 +1640,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-026-1",
-                "sentence": "これは「月」です。",
+                "sentence": "試験は月です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「つき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“月”。",
+                  "meaningZh": "考试时间是月。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "月",
                       "kana": "つき",
                       "desc": "月"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是月。"
                   }
                 }
               }
@@ -2091,37 +1701,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-027-1",
-                "sentence": "これは「年」です。",
+                "sentence": "試験は年です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「とし」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“年”。",
+                  "meaningZh": "考试时间是年。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "年",
                       "kana": "とし",
                       "desc": "年"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是年。"
                   }
                 }
               }
@@ -2167,37 +1762,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-028-1",
-                "sentence": "これは「先週」です。",
+                "sentence": "試験は先週です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「せんしゅう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“上周”。",
+                  "meaningZh": "考试时间是上周。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "先週",
                       "kana": "せんしゅう",
                       "desc": "上周"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是上周。"
                   }
                 }
               }
@@ -2243,37 +1823,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-029-1",
-                "sentence": "これは「今週」です。",
+                "sentence": "試験は今週です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こんしゅう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“本周”。",
+                  "meaningZh": "考试时间是本周。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "今週",
                       "kana": "こんしゅう",
                       "desc": "本周"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是本周。"
                   }
                 }
               }
@@ -2319,37 +1884,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-030-1",
-                "sentence": "これは「来週」です。",
+                "sentence": "試験は来週です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「らいしゅう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“下周”。",
+                  "meaningZh": "考试时间是下周。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "来週",
                       "kana": "らいしゅう",
                       "desc": "下周"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是下周。"
                   }
                 }
               }
@@ -2395,37 +1945,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-031-1",
-                "sentence": "これは「先月」です。",
+                "sentence": "試験は先月です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「せんげつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“上个月”。",
+                  "meaningZh": "考试时间是上个月。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "先月",
                       "kana": "せんげつ",
                       "desc": "上个月"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是上个月。"
                   }
                 }
               }
@@ -2471,37 +2006,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-032-1",
-                "sentence": "これは「今月」です。",
+                "sentence": "試験は今月です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こんげつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“这个月”。",
+                  "meaningZh": "考试时间是这个月。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "今月",
                       "kana": "こんげつ",
                       "desc": "这个月"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是这个月。"
                   }
                 }
               }
@@ -2547,37 +2067,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-033-1",
-                "sentence": "これは「来月」です。",
+                "sentence": "試験は来月です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「らいげつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“下个月”。",
+                  "meaningZh": "考试时间是下个月。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "来月",
                       "kana": "らいげつ",
                       "desc": "下个月"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是下个月。"
                   }
                 }
               }
@@ -2623,37 +2128,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-034-1",
-                "sentence": "これは「去年」です。",
+                "sentence": "試験は去年です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きょねん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“去年”。",
+                  "meaningZh": "考试时间是去年。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "去年",
                       "kana": "きょねん",
                       "desc": "去年"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是去年。"
                   }
                 }
               }
@@ -2699,37 +2189,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-035-1",
-                "sentence": "これは「今年」です。",
+                "sentence": "試験は今年です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ことし」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“今年”。",
+                  "meaningZh": "考试时间是今年。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "今年",
                       "kana": "ことし",
                       "desc": "今年"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是今年。"
                   }
                 }
               }
@@ -2775,37 +2250,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-036-1",
-                "sentence": "これは「来年」です。",
+                "sentence": "試験は来年です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「らいねん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“明年”。",
+                  "meaningZh": "考试时间是明年。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "来年",
                       "kana": "らいねん",
                       "desc": "明年"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是明年。"
                   }
                 }
               }
@@ -2851,37 +2311,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-037-1",
-                "sentence": "これは「春」です。",
+                "sentence": "試験は春です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はる」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“春天”。",
+                  "meaningZh": "考试时间是春天。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "春",
                       "kana": "はる",
                       "desc": "春天"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是春天。"
                   }
                 }
               }
@@ -2927,37 +2372,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-038-1",
-                "sentence": "これは「夏」です。",
+                "sentence": "試験は夏です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「なつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“夏天”。",
+                  "meaningZh": "考试时间是夏天。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "夏",
                       "kana": "なつ",
                       "desc": "夏天"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是夏天。"
                   }
                 }
               }
@@ -3003,37 +2433,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-039-1",
-                "sentence": "これは「秋」です。",
+                "sentence": "試験は秋です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“秋天”。",
+                  "meaningZh": "考试时间是秋天。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "秋",
                       "kana": "あき",
                       "desc": "秋天"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是秋天。"
                   }
                 }
               }
@@ -3079,37 +2494,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-040-1",
-                "sentence": "これは「冬」です。",
+                "sentence": "試験は冬です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ふゆ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“冬天”。",
+                  "meaningZh": "考试时间是冬天。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "冬",
                       "kana": "ふゆ",
                       "desc": "冬天"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是冬天。"
                   }
                 }
               }
@@ -3155,37 +2555,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-041-1",
-                "sentence": "これは「休み」です。",
+                "sentence": "試験は休みです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「やすみ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“休息；假期”。",
+                  "meaningZh": "考试时间是休息；假期。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "休み",
                       "kana": "やすみ",
                       "desc": "休息；假期"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是休息；假期。"
                   }
                 }
               }
@@ -3231,37 +2616,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-042-1",
-                "sentence": "これは「誕生日」です。",
+                "sentence": "試験は誕生日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「たんじょうび」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“生日”。",
+                  "meaningZh": "考试时间是生日。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "誕生日",
                       "kana": "たんじょうび",
                       "desc": "生日"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是生日。"
                   }
                 }
               }
@@ -3307,37 +2677,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-043-1",
-                "sentence": "これは「月曜日」です。",
+                "sentence": "会議は月曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「げつようび」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“星期一”。",
+                  "meaningZh": "会议在星期一。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "月曜日",
                       "kana": "げつようび",
                       "desc": "星期一"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 曜日 です",
+                    "meaningZh": "会议在星期一。"
                   }
                 }
               }
@@ -3383,37 +2738,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-044-1",
-                "sentence": "これは「火曜日」です。",
+                "sentence": "会議は火曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かようび」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“星期二”。",
+                  "meaningZh": "会议在星期二。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "火曜日",
                       "kana": "かようび",
                       "desc": "星期二"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 曜日 です",
+                    "meaningZh": "会议在星期二。"
                   }
                 }
               }
@@ -3459,37 +2799,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-045-1",
-                "sentence": "これは「水曜日」です。",
+                "sentence": "会議は水曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「すいようび」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“星期三”。",
+                  "meaningZh": "会议在星期三。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "水曜日",
                       "kana": "すいようび",
                       "desc": "星期三"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 曜日 です",
+                    "meaningZh": "会议在星期三。"
                   }
                 }
               }
@@ -3535,37 +2860,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-046-1",
-                "sentence": "これは「木曜日」です。",
+                "sentence": "会議は木曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「もくようび」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“星期四”。",
+                  "meaningZh": "会议在星期四。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "木曜日",
                       "kana": "もくようび",
                       "desc": "星期四"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 曜日 です",
+                    "meaningZh": "会议在星期四。"
                   }
                 }
               }
@@ -3611,37 +2921,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-047-1",
-                "sentence": "これは「金曜日」です。",
+                "sentence": "会議は金曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きんようび」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“星期五”。",
+                  "meaningZh": "会议在星期五。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "金曜日",
                       "kana": "きんようび",
                       "desc": "星期五"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 曜日 です",
+                    "meaningZh": "会议在星期五。"
                   }
                 }
               }
@@ -3687,37 +2982,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-048-1",
-                "sentence": "これは「土曜日」です。",
+                "sentence": "会議は土曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「どようび」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“星期六”。",
+                  "meaningZh": "会议在星期六。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "土曜日",
                       "kana": "どようび",
                       "desc": "星期六"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 曜日 です",
+                    "meaningZh": "会议在星期六。"
                   }
                 }
               }
@@ -3763,37 +3043,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-049-1",
-                "sentence": "これは「日曜日」です。",
+                "sentence": "会議は日曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「にちようび」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“星期日”。",
+                  "meaningZh": "会议在星期日。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "日曜日",
                       "kana": "にちようび",
                       "desc": "星期日"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 曜日 です",
+                    "meaningZh": "会议在星期日。"
                   }
                 }
               }
@@ -3839,37 +3104,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-050-1",
-                "sentence": "これは「先」です。",
+                "sentence": "試験は先です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「さき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“前面；先；将来”。",
+                  "meaningZh": "考试时间是前面；先；将来。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "先",
                       "kana": "さき",
                       "desc": "前面；先；将来"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是前面；先；将来。"
                   }
                 }
               }
@@ -3915,37 +3165,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-051-1",
-                "sentence": "これは「前」です。",
+                "sentence": "試験は前です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まえ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“前；以前”。",
+                  "meaningZh": "考试时间是前；以前。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "前",
                       "kana": "まえ",
                       "desc": "前；以前"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是前；以前。"
                   }
                 }
               }
@@ -3991,37 +3226,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-052-1",
-                "sentence": "これは「後」です。",
+                "sentence": "試験は後です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あと」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“后；之后”。",
+                  "meaningZh": "考试时间是后；之后。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "後",
                       "kana": "あと",
                       "desc": "后；之后"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是后；之后。"
                   }
                 }
               }
@@ -4067,37 +3287,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-053-1",
-                "sentence": "これは「間」です。",
+                "sentence": "試験は間です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あいだ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“之间”。",
+                  "meaningZh": "考试时间是之间。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "間",
                       "kana": "あいだ",
                       "desc": "之间"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是之间。"
                   }
                 }
               }
@@ -4143,37 +3348,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-time-054-1",
-                "sentence": "これは「時」です。",
+                "sentence": "試験は時です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「とき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“时候”。",
+                  "meaningZh": "考试时间是时候。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "時",
                       "kana": "とき",
                       "desc": "时候"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 时间词 です",
+                    "meaningZh": "考试时间是时候。"
                   }
                 }
               }

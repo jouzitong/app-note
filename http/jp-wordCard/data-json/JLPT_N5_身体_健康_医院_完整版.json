@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-001-1",
-                "sentence": "これは「体」です。",
+                "sentence": "今日は体が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「からだ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“身体”。",
+                  "meaningZh": "今天身体疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "体",
                       "kana": "からだ",
                       "desc": "身体"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天身体疼。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-002-1",
-                "sentence": "これは「頭」です。",
+                "sentence": "今日は頭が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あたま」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“头”。",
+                  "meaningZh": "今天头疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "頭",
                       "kana": "あたま",
                       "desc": "头"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天头疼。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-003-1",
-                "sentence": "これは「顔」です。",
+                "sentence": "今日は顔が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かお」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“脸”。",
+                  "meaningZh": "今天脸疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "顔",
                       "kana": "かお",
                       "desc": "脸"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天脸疼。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-004-1",
-                "sentence": "これは「目」です。",
+                "sentence": "今日は目が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「め」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“眼睛”。",
+                  "meaningZh": "今天眼睛疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "目",
                       "kana": "め",
                       "desc": "眼睛"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天眼睛疼。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-005-1",
-                "sentence": "これは「耳」です。",
+                "sentence": "今日は耳が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「みみ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“耳朵”。",
+                  "meaningZh": "今天耳朵疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "耳",
                       "kana": "みみ",
                       "desc": "耳朵"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天耳朵疼。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-006-1",
-                "sentence": "これは「鼻」です。",
+                "sentence": "今日は鼻が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はな」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“鼻子”。",
+                  "meaningZh": "今天鼻子疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "鼻",
                       "kana": "はな",
                       "desc": "鼻子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天鼻子疼。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-007-1",
-                "sentence": "これは「口」です。",
+                "sentence": "今日は口が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くち」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“嘴”。",
+                  "meaningZh": "今天嘴疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "口",
                       "kana": "くち",
                       "desc": "嘴"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天嘴疼。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-008-1",
-                "sentence": "これは「歯」です。",
+                "sentence": "今日は歯が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「は」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“牙齿”。",
+                  "meaningZh": "今天牙齿疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "歯",
                       "kana": "は",
                       "desc": "牙齿"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天牙齿疼。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-009-1",
-                "sentence": "これは「首」です。",
+                "sentence": "今日は首が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くび」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“脖子”。",
+                  "meaningZh": "今天脖子疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "首",
                       "kana": "くび",
                       "desc": "脖子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天脖子疼。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-010-1",
-                "sentence": "これは「肩」です。",
+                "sentence": "今日は肩が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かた」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“肩膀”。",
+                  "meaningZh": "今天肩膀疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "肩",
                       "kana": "かた",
                       "desc": "肩膀"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天肩膀疼。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-011-1",
-                "sentence": "これは「胸」です。",
+                "sentence": "今日は胸が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「むね」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“胸”。",
+                  "meaningZh": "今天胸疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "胸",
                       "kana": "むね",
                       "desc": "胸"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天胸疼。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-012-1",
-                "sentence": "これは「手」です。",
+                "sentence": "今日は手が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「て」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“手”。",
+                  "meaningZh": "今天手疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "手",
                       "kana": "て",
                       "desc": "手"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天手疼。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-013-1",
-                "sentence": "これは「腕」です。",
+                "sentence": "今日は腕が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「うで」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“胳膊”。",
+                  "meaningZh": "今天胳膊疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "腕",
                       "kana": "うで",
                       "desc": "胳膊"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天胳膊疼。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-014-1",
-                "sentence": "これは「指」です。",
+                "sentence": "今日は指が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ゆび」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“手指”。",
+                  "meaningZh": "今天手指疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "指",
                       "kana": "ゆび",
                       "desc": "手指"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天手指疼。"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-015-1",
-                "sentence": "これは「足」です。",
+                "sentence": "今日は足が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あし」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“脚；腿”。",
+                  "meaningZh": "今天脚；腿疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "足",
                       "kana": "あし",
                       "desc": "脚；腿"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天脚；腿疼。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-016-1",
-                "sentence": "これは「お腹」です。",
+                "sentence": "今日はお腹が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おなか」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“肚子”。",
+                  "meaningZh": "今天肚子疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "お腹",
                       "kana": "おなか",
                       "desc": "肚子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天肚子疼。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-017-1",
-                "sentence": "これは「背」です。",
+                "sentence": "今日は背が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「せ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“后背；身高”。",
+                  "meaningZh": "今天后背；身高疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "背",
                       "kana": "せ",
                       "desc": "后背；身高"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天后背；身高疼。"
                   }
                 }
               }
@@ -1407,37 +1152,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-018-1",
-                "sentence": "これは「心」です。",
+                "sentence": "今日は心が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こころ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“心”。",
+                  "meaningZh": "今天心疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "心",
                       "kana": "こころ",
                       "desc": "心"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天心疼。"
                   }
                 }
               }
@@ -1483,37 +1213,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-019-1",
-                "sentence": "これは「病気」です。",
+                "sentence": "今日は病気が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「びょうき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“生病；疾病”。",
+                  "meaningZh": "今天生病；疾病疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "病気",
                       "kana": "びょうき",
                       "desc": "生病；疾病"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天生病；疾病疼。"
                   }
                 }
               }
@@ -1559,37 +1274,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-020-1",
-                "sentence": "これは「風邪」です。",
+                "sentence": "今日は風邪が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かぜ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“感冒”。",
+                  "meaningZh": "今天感冒疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "風邪",
                       "kana": "かぜ",
                       "desc": "感冒"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天感冒疼。"
                   }
                 }
               }
@@ -1635,37 +1335,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-021-1",
-                "sentence": "これは「熱」です。",
+                "sentence": "今日は熱が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ねつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“发烧”。",
+                  "meaningZh": "今天发烧疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "熱",
                       "kana": "ねつ",
                       "desc": "发烧"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天发烧疼。"
                   }
                 }
               }
@@ -1711,37 +1396,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-022-1",
-                "sentence": "これは「薬」です。",
+                "sentence": "食後に薬を飲みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くすり」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“药”。",
+                  "meaningZh": "饭后吃药。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "薬",
                       "kana": "くすり",
                       "desc": "药"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 飲む",
+                    "meaningZh": "饭后吃药。"
                   }
                 }
               }
@@ -1787,37 +1457,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-023-1",
-                "sentence": "これは「病院」です。",
+                "sentence": "風邪なので病院へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「びょういん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“医院”。",
+                  "meaningZh": "因为感冒去医院。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "病院",
                       "kana": "びょういん",
                       "desc": "医院"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A へ 行く",
+                    "meaningZh": "因为感冒去医院。"
                   }
                 }
               }
@@ -1863,37 +1518,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-024-1",
-                "sentence": "これは「医者」です。",
+                "sentence": "風邪なので医者へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いしゃ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“医生”。",
+                  "meaningZh": "因为感冒去医生。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "医者",
                       "kana": "いしゃ",
                       "desc": "医生"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A へ 行く",
+                    "meaningZh": "因为感冒去医生。"
                   }
                 }
               }
@@ -1939,37 +1579,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-025-1",
-                "sentence": "これは「歯医者」です。",
+                "sentence": "風邪なので歯医者へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はいしゃ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“牙医”。",
+                  "meaningZh": "因为感冒去牙医。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "歯医者",
                       "kana": "はいしゃ",
                       "desc": "牙医"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A へ 行く",
+                    "meaningZh": "因为感冒去牙医。"
                   }
                 }
               }
@@ -2015,37 +1640,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-026-1",
-                "sentence": "これは「痛い」です。",
+                "sentence": "今日は痛いが痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いたい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“痛”。",
+                  "meaningZh": "今天痛疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "痛い",
                       "kana": "いたい",
                       "desc": "痛"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天痛疼。"
                   }
                 }
               }
@@ -2091,37 +1701,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-health-027-1",
-                "sentence": "これは「元気」です。",
+                "sentence": "今日は元気が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「げんき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“健康；有精神”。",
+                  "meaningZh": "今天健康；有精神疼。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "元気",
                       "kana": "げんき",
                       "desc": "健康；有精神"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 痛いです",
+                    "meaningZh": "今天健康；有精神疼。"
                   }
                 }
               }

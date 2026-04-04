@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-001-1",
-                "sentence": "これは「家」です。",
+                "sentence": "週末は家で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いえ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“家”。",
+                  "meaningZh": "周末在家拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "家",
                       "kana": "いえ",
                       "desc": "家"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在家拍照。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-002-1",
-                "sentence": "これは「部屋」です。",
+                "sentence": "週末は部屋で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「へや」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“房间”。",
+                  "meaningZh": "周末在房间拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "部屋",
                       "kana": "へや",
                       "desc": "房间"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在房间拍照。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-003-1",
-                "sentence": "これは「玄関」です。",
+                "sentence": "週末は玄関で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「げんかん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“玄关”。",
+                  "meaningZh": "周末在玄关拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "玄関",
                       "kana": "げんかん",
                       "desc": "玄关"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在玄关拍照。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-004-1",
-                "sentence": "これは「台所」です。",
+                "sentence": "週末は台所で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「だいどころ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“厨房”。",
+                  "meaningZh": "周末在厨房拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "台所",
                       "kana": "だいどころ",
                       "desc": "厨房"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在厨房拍照。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-005-1",
-                "sentence": "これは「キッチン」です。",
+                "sentence": "週末はキッチンで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「キッチン」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“厨房”。",
+                  "meaningZh": "周末在厨房拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "キッチン",
                       "kana": "キッチン",
                       "desc": "厨房"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在厨房拍照。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-006-1",
-                "sentence": "これは「お風呂」です。",
+                "sentence": "週末はお風呂で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おふろ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“浴室；洗澡水”。",
+                  "meaningZh": "周末在浴室；洗澡水拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "お風呂",
                       "kana": "おふろ",
                       "desc": "浴室；洗澡水"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在浴室；洗澡水拍照。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-007-1",
-                "sentence": "これは「トイレ」です。",
+                "sentence": "週末はトイレで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「トイレ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“厕所”。",
+                  "meaningZh": "周末在厕所拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "トイレ",
                       "kana": "トイレ",
                       "desc": "厕所"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在厕所拍照。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-008-1",
-                "sentence": "これは「庭」です。",
+                "sentence": "週末は庭で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「にわ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“院子”。",
+                  "meaningZh": "周末在院子拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "庭",
                       "kana": "にわ",
                       "desc": "院子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在院子拍照。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-009-1",
-                "sentence": "これは「ドア」です。",
+                "sentence": "週末はドアで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ドア」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“门”。",
+                  "meaningZh": "周末在门拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ドア",
                       "kana": "ドア",
                       "desc": "门"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在门拍照。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-010-1",
-                "sentence": "これは「窓」です。",
+                "sentence": "週末は窓で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まど」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“窗户”。",
+                  "meaningZh": "周末在窗户拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "窓",
                       "kana": "まど",
                       "desc": "窗户"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在窗户拍照。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-011-1",
-                "sentence": "これは「階段」です。",
+                "sentence": "週末は階段で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かいだん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“楼梯”。",
+                  "meaningZh": "周末在楼梯拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "階段",
                       "kana": "かいだん",
                       "desc": "楼梯"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在楼梯拍照。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-012-1",
-                "sentence": "これは「エレベーター」です。",
+                "sentence": "週末はエレベーターで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「エレベーター」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“电梯”。",
+                  "meaningZh": "周末在电梯拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "エレベーター",
                       "kana": "エレベーター",
                       "desc": "电梯"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在电梯拍照。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-013-1",
-                "sentence": "これは「エスカレーター」です。",
+                "sentence": "週末はエスカレーターで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「エスカレーター」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“自动扶梯”。",
+                  "meaningZh": "周末在自动扶梯拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "エスカレーター",
                       "kana": "エスカレーター",
                       "desc": "自动扶梯"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在自动扶梯拍照。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-014-1",
-                "sentence": "これは「建物」です。",
+                "sentence": "週末は建物で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「たてもの」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“建筑物”。",
+                  "meaningZh": "周末在建筑物拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "建物",
                       "kana": "たてもの",
                       "desc": "建筑物"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在建筑物拍照。"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-015-1",
-                "sentence": "これは「店」です。",
+                "sentence": "週末は店で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「みせ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“店”。",
+                  "meaningZh": "周末在店拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "店",
                       "kana": "みせ",
                       "desc": "店"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在店拍照。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-016-1",
-                "sentence": "これは「会社」です。",
+                "sentence": "週末は会社で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かいしゃ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“公司”。",
+                  "meaningZh": "周末在公司拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "会社",
                       "kana": "かいしゃ",
                       "desc": "公司"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在公司拍照。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-017-1",
-                "sentence": "これは「銀行」です。",
+                "sentence": "週末は銀行で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ぎんこう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“银行”。",
+                  "meaningZh": "周末在银行拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "銀行",
                       "kana": "ぎんこう",
                       "desc": "银行"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在银行拍照。"
                   }
                 }
               }
@@ -1407,37 +1152,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-018-1",
-                "sentence": "これは「郵便局」です。",
+                "sentence": "週末は郵便局で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ゆうびんきょく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“邮局”。",
+                  "meaningZh": "周末在邮局拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "郵便局",
                       "kana": "ゆうびんきょく",
                       "desc": "邮局"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在邮局拍照。"
                   }
                 }
               }
@@ -1483,37 +1213,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-019-1",
-                "sentence": "これは「病院」です。",
+                "sentence": "週末は病院で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「びょういん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“医院”。",
+                  "meaningZh": "周末在医院拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "病院",
                       "kana": "びょういん",
                       "desc": "医院"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在医院拍照。"
                   }
                 }
               }
@@ -1559,37 +1274,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-020-1",
-                "sentence": "これは「図書館」です。",
+                "sentence": "週末は図書館で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「としょかん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“图书馆”。",
+                  "meaningZh": "周末在图书馆拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "図書館",
                       "kana": "としょかん",
                       "desc": "图书馆"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在图书馆拍照。"
                   }
                 }
               }
@@ -1635,37 +1335,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-021-1",
-                "sentence": "これは「公園」です。",
+                "sentence": "週末は公園で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こうえん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“公园”。",
+                  "meaningZh": "周末在公园拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "公園",
                       "kana": "こうえん",
                       "desc": "公园"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在公园拍照。"
                   }
                 }
               }
@@ -1711,37 +1396,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-022-1",
-                "sentence": "これは「ホテル」です。",
+                "sentence": "週末はホテルで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ホテル」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“宾馆”。",
+                  "meaningZh": "周末在宾馆拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ホテル",
                       "kana": "ホテル",
                       "desc": "宾馆"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在宾馆拍照。"
                   }
                 }
               }
@@ -1787,37 +1457,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-023-1",
-                "sentence": "これは「デパート」です。",
+                "sentence": "週末はデパートで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「デパート」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“百货商店”。",
+                  "meaningZh": "周末在百货商店拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "デパート",
                       "kana": "デパート",
                       "desc": "百货商店"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在百货商店拍照。"
                   }
                 }
               }
@@ -1863,37 +1518,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-024-1",
-                "sentence": "これは「スーパー」です。",
+                "sentence": "週末はスーパーで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「スーパー」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“超市”。",
+                  "meaningZh": "周末在超市拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "スーパー",
                       "kana": "スーパー",
                       "desc": "超市"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在超市拍照。"
                   }
                 }
               }
@@ -1939,37 +1579,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-025-1",
-                "sentence": "これは「コンビニ」です。",
+                "sentence": "週末はコンビニで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「コンビニ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“便利店”。",
+                  "meaningZh": "周末在便利店拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "コンビニ",
                       "kana": "コンビニ",
                       "desc": "便利店"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在便利店拍照。"
                   }
                 }
               }
@@ -2015,37 +1640,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-026-1",
-                "sentence": "これは「レストラン」です。",
+                "sentence": "週末はレストランで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「レストラン」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“餐厅”。",
+                  "meaningZh": "周末在餐厅拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "レストラン",
                       "kana": "レストラン",
                       "desc": "餐厅"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在餐厅拍照。"
                   }
                 }
               }
@@ -2091,37 +1701,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-027-1",
-                "sentence": "これは「喫茶店」です。",
+                "sentence": "週末は喫茶店で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きっさてん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“咖啡店”。",
+                  "meaningZh": "周末在咖啡店拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "喫茶店",
                       "kana": "きっさてん",
                       "desc": "咖啡店"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在咖啡店拍照。"
                   }
                 }
               }
@@ -2167,37 +1762,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-028-1",
-                "sentence": "これは「駅」です。",
+                "sentence": "週末は駅で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「えき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“车站”。",
+                  "meaningZh": "周末在车站拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "駅",
                       "kana": "えき",
                       "desc": "车站"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在车站拍照。"
                   }
                 }
               }
@@ -2243,37 +1823,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-029-1",
-                "sentence": "これは「空港」です。",
+                "sentence": "週末は空港で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くうこう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“机场”。",
+                  "meaningZh": "周末在机场拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "空港",
                       "kana": "くうこう",
                       "desc": "机场"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在机场拍照。"
                   }
                 }
               }
@@ -2319,37 +1884,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-030-1",
-                "sentence": "これは「町」です。",
+                "sentence": "週末は町で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まち」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“城镇；街道”。",
+                  "meaningZh": "周末在城镇；街道拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "町",
                       "kana": "まち",
                       "desc": "城镇；街道"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在城镇；街道拍照。"
                   }
                 }
               }
@@ -2395,37 +1945,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-031-1",
-                "sentence": "これは「村」です。",
+                "sentence": "週末は村で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「むら」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“村庄”。",
+                  "meaningZh": "周末在村庄拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "村",
                       "kana": "むら",
                       "desc": "村庄"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在村庄拍照。"
                   }
                 }
               }
@@ -2471,37 +2006,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-032-1",
-                "sentence": "これは「道」です。",
+                "sentence": "週末は道で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「みち」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“路”。",
+                  "meaningZh": "周末在路拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "道",
                       "kana": "みち",
                       "desc": "路"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在路拍照。"
                   }
                 }
               }
@@ -2547,37 +2067,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-033-1",
-                "sentence": "これは「角」です。",
+                "sentence": "週末は角で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かど」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“拐角”。",
+                  "meaningZh": "周末在拐角拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "角",
                       "kana": "かど",
                       "desc": "拐角"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在拐角拍照。"
                   }
                 }
               }
@@ -2623,37 +2128,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-034-1",
-                "sentence": "これは「隣」です。",
+                "sentence": "週末は隣で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「となり」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“旁边”。",
+                  "meaningZh": "周末在旁边拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "隣",
                       "kana": "となり",
                       "desc": "旁边"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在旁边拍照。"
                   }
                 }
               }
@@ -2699,37 +2189,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-035-1",
-                "sentence": "これは「近く」です。",
+                "sentence": "週末は近くで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ちかく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“附近”。",
+                  "meaningZh": "周末在附近拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "近く",
                       "kana": "ちかく",
                       "desc": "附近"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在附近拍照。"
                   }
                 }
               }
@@ -2775,37 +2250,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-036-1",
-                "sentence": "これは「右」です。",
+                "sentence": "週末は右で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「みぎ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“右”。",
+                  "meaningZh": "周末在右拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "右",
                       "kana": "みぎ",
                       "desc": "右"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在右拍照。"
                   }
                 }
               }
@@ -2851,37 +2311,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-037-1",
-                "sentence": "これは「左」です。",
+                "sentence": "週末は左で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ひだり」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“左”。",
+                  "meaningZh": "周末在左拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "左",
                       "kana": "ひだり",
                       "desc": "左"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在左拍照。"
                   }
                 }
               }
@@ -2927,37 +2372,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-038-1",
-                "sentence": "これは「上」です。",
+                "sentence": "週末は上で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「うえ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“上面”。",
+                  "meaningZh": "周末在上面拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "上",
                       "kana": "うえ",
                       "desc": "上面"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在上面拍照。"
                   }
                 }
               }
@@ -3003,37 +2433,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-039-1",
-                "sentence": "これは「下」です。",
+                "sentence": "週末は下で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「した」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“下面”。",
+                  "meaningZh": "周末在下面拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "下",
                       "kana": "した",
                       "desc": "下面"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在下面拍照。"
                   }
                 }
               }
@@ -3079,37 +2494,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-040-1",
-                "sentence": "これは「中」です。",
+                "sentence": "週末は中で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「なか」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“里面”。",
+                  "meaningZh": "周末在里面拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "中",
                       "kana": "なか",
                       "desc": "里面"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在里面拍照。"
                   }
                 }
               }
@@ -3155,37 +2555,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-041-1",
-                "sentence": "これは「外」です。",
+                "sentence": "週末は外で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「そと」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“外面”。",
+                  "meaningZh": "周末在外面拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "外",
                       "kana": "そと",
                       "desc": "外面"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在外面拍照。"
                   }
                 }
               }
@@ -3231,37 +2616,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-042-1",
-                "sentence": "これは「前」です。",
+                "sentence": "週末は前で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まえ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“前面”。",
+                  "meaningZh": "周末在前面拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "前",
                       "kana": "まえ",
                       "desc": "前面"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在前面拍照。"
                   }
                 }
               }
@@ -3307,37 +2677,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-043-1",
-                "sentence": "これは「後ろ」です。",
+                "sentence": "週末は後ろで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「うしろ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“后面”。",
+                  "meaningZh": "周末在后面拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "後ろ",
                       "kana": "うしろ",
                       "desc": "后面"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在后面拍照。"
                   }
                 }
               }
@@ -3383,37 +2738,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-044-1",
-                "sentence": "これは「横」です。",
+                "sentence": "週末は横で写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「よこ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“旁边；横向”。",
+                  "meaningZh": "周末在旁边；横向拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "横",
                       "kana": "よこ",
                       "desc": "旁边；横向"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在旁边；横向拍照。"
                   }
                 }
               }
@@ -3459,37 +2799,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-045-1",
-                "sentence": "これは「向こう」です。",
+                "sentence": "週末は向こうで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「むこう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“对面；那边”。",
+                  "meaningZh": "周末在对面；那边拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "向こう",
                       "kana": "むこう",
                       "desc": "对面；那边"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在对面；那边拍照。"
                   }
                 }
               }
@@ -3535,37 +2860,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-046-1",
-                "sentence": "これは「こちら」です。",
+                "sentence": "週末はこちらで写真を撮ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こちら」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“这边”。",
+                  "meaningZh": "周末在这边拍照。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "こちら",
                       "kana": "こちら",
                       "desc": "这边"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A で V",
+                    "meaningZh": "周末在这边拍照。"
                   }
                 }
               }

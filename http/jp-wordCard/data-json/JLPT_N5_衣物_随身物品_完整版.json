@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-001-1",
-                "sentence": "これは「服」です。",
+                "sentence": "今日は服を着ています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ふく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“衣服”。",
+                  "meaningZh": "今天穿着衣服。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "服",
                       "kana": "ふく",
                       "desc": "衣服"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 着る",
+                    "meaningZh": "今天穿着衣服。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-002-1",
-                "sentence": "これは「着物」です。",
+                "sentence": "今日は着物を着ています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きもの」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“和服”。",
+                  "meaningZh": "今天穿着和服。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "着物",
                       "kana": "きもの",
                       "desc": "和服"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 着る",
+                    "meaningZh": "今天穿着和服。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-003-1",
-                "sentence": "これは「シャツ」です。",
+                "sentence": "今日はシャツを着ています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「シャツ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“衬衫”。",
+                  "meaningZh": "今天穿着衬衫。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "シャツ",
                       "kana": "シャツ",
                       "desc": "衬衫"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 着る",
+                    "meaningZh": "今天穿着衬衫。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-004-1",
-                "sentence": "これは「セーター」です。",
+                "sentence": "今日はセーターを着ています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「セーター」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“毛衣”。",
+                  "meaningZh": "今天穿着毛衣。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "セーター",
                       "kana": "セーター",
                       "desc": "毛衣"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 着る",
+                    "meaningZh": "今天穿着毛衣。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-005-1",
-                "sentence": "これは「コート」です。",
+                "sentence": "今日はコートを着ています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「コート」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“大衣”。",
+                  "meaningZh": "今天穿着大衣。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "コート",
                       "kana": "コート",
                       "desc": "大衣"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 着る",
+                    "meaningZh": "今天穿着大衣。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-006-1",
-                "sentence": "これは「上着」です。",
+                "sentence": "毎日上着を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「うわぎ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“外套”。",
+                  "meaningZh": "每天都带着外套。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "上着",
                       "kana": "うわぎ",
                       "desc": "外套"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 持つ",
+                    "meaningZh": "每天都带着外套。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-007-1",
-                "sentence": "これは「ズボン」です。",
+                "sentence": "今日はズボンを着ています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ズボン」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“裤子”。",
+                  "meaningZh": "今天穿着裤子。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ズボン",
                       "kana": "ズボン",
                       "desc": "裤子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 着る",
+                    "meaningZh": "今天穿着裤子。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-008-1",
-                "sentence": "これは「スカート」です。",
+                "sentence": "毎日スカートを持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「スカート」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“裙子”。",
+                  "meaningZh": "每天都带着裙子。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "スカート",
                       "kana": "スカート",
                       "desc": "裙子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 持つ",
+                    "meaningZh": "每天都带着裙子。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-009-1",
-                "sentence": "これは「靴」です。",
+                "sentence": "毎日靴を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“鞋”。",
+                  "meaningZh": "每天都带着鞋。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "靴",
                       "kana": "くつ",
                       "desc": "鞋"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 持つ",
+                    "meaningZh": "每天都带着鞋。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-010-1",
-                "sentence": "これは「靴下」です。",
+                "sentence": "毎日靴下を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くつした」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“袜子”。",
+                  "meaningZh": "每天都带着袜子。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "靴下",
                       "kana": "くつした",
                       "desc": "袜子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 持つ",
+                    "meaningZh": "每天都带着袜子。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-011-1",
-                "sentence": "これは「帽子」です。",
+                "sentence": "毎日帽子を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ぼうし」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“帽子”。",
+                  "meaningZh": "每天都带着帽子。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "帽子",
                       "kana": "ぼうし",
                       "desc": "帽子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 持つ",
+                    "meaningZh": "每天都带着帽子。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-012-1",
-                "sentence": "これは「眼鏡」です。",
+                "sentence": "毎日眼鏡を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「めがね」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“眼镜”。",
+                  "meaningZh": "每天都带着眼镜。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "眼鏡",
                       "kana": "めがね",
                       "desc": "眼镜"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 持つ",
+                    "meaningZh": "每天都带着眼镜。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-013-1",
-                "sentence": "これは「時計」です。",
+                "sentence": "毎日時計を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「とけい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“手表；时钟”。",
+                  "meaningZh": "每天都带着手表；时钟。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "時計",
                       "kana": "とけい",
                       "desc": "手表；时钟"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 持つ",
+                    "meaningZh": "每天都带着手表；时钟。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-014-1",
-                "sentence": "これは「かばん」です。",
+                "sentence": "毎日かばんを持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かばん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“包”。",
+                  "meaningZh": "每天都带着包。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "かばん",
                       "kana": "かばん",
                       "desc": "包"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 持つ",
+                    "meaningZh": "每天都带着包。"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-015-1",
-                "sentence": "これは「傘」です。",
+                "sentence": "毎日傘を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かさ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“伞”。",
+                  "meaningZh": "每天都带着伞。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "傘",
                       "kana": "かさ",
                       "desc": "伞"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 持つ",
+                    "meaningZh": "每天都带着伞。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-016-1",
-                "sentence": "これは「ハンカチ」です。",
+                "sentence": "毎日ハンカチを持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ハンカチ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“手帕”。",
+                  "meaningZh": "每天都带着手帕。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ハンカチ",
                       "kana": "ハンカチ",
                       "desc": "手帕"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 持つ",
+                    "meaningZh": "每天都带着手帕。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-clothes-017-1",
-                "sentence": "これは「ポケット」です。",
+                "sentence": "毎日ポケットを持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ポケット」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“口袋”。",
+                  "meaningZh": "每天都带着口袋。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ポケット",
                       "kana": "ポケット",
                       "desc": "口袋"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 持つ",
+                    "meaningZh": "每天都带着口袋。"
                   }
                 }
               }

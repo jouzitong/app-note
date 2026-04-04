@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-001-1",
-                "sentence": "これは「いい」です。",
+                "sentence": "今日の天気はいいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“好”。",
+                  "meaningZh": "这个场景很好。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "いい",
                       "kana": "いい",
                       "desc": "好"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很好。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-002-1",
-                "sentence": "これは「悪い」です。",
+                "sentence": "この部屋は悪いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「わるい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“坏”。",
+                  "meaningZh": "这个场景很坏。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "悪い",
                       "kana": "わるい",
                       "desc": "坏"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很坏。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-003-1",
-                "sentence": "これは「大きい」です。",
+                "sentence": "この本は大きいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おおきい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“大”。",
+                  "meaningZh": "这个场景很大。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "大きい",
                       "kana": "おおきい",
                       "desc": "大"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很大。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-004-1",
-                "sentence": "これは「小さい」です。",
+                "sentence": "今日の天気は小さいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ちいさい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“小”。",
+                  "meaningZh": "这个场景很小。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "小さい",
                       "kana": "ちいさい",
                       "desc": "小"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很小。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-005-1",
-                "sentence": "これは「多い」です。",
+                "sentence": "この部屋は多いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おおい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“多”。",
+                  "meaningZh": "这个场景很多。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "多い",
                       "kana": "おおい",
                       "desc": "多"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很多。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-006-1",
-                "sentence": "これは「少ない」です。",
+                "sentence": "この本は少ないです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「すくない」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“少”。",
+                  "meaningZh": "这个场景很少。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "少ない",
                       "kana": "すくない",
                       "desc": "少"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很少。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-007-1",
-                "sentence": "これは「高い」です。",
+                "sentence": "今日の天気は高いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「たかい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“高；贵”。",
+                  "meaningZh": "这个场景很高；贵。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "高い",
                       "kana": "たかい",
                       "desc": "高；贵"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很高；贵。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-008-1",
-                "sentence": "これは「安い」です。",
+                "sentence": "この部屋は安いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「やすい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“便宜”。",
+                  "meaningZh": "这个场景很便宜。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "安い",
                       "kana": "やすい",
                       "desc": "便宜"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很便宜。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-009-1",
-                "sentence": "これは「新しい」です。",
+                "sentence": "この本は新しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あたらしい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“新”。",
+                  "meaningZh": "这个场景很新。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "新しい",
                       "kana": "あたらしい",
                       "desc": "新"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很新。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-010-1",
-                "sentence": "これは「古い」です。",
+                "sentence": "今日の天気は古いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ふるい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“旧”。",
+                  "meaningZh": "这个场景很旧。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "古い",
                       "kana": "ふるい",
                       "desc": "旧"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很旧。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-011-1",
-                "sentence": "これは「長い」です。",
+                "sentence": "この部屋は長いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ながい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“长”。",
+                  "meaningZh": "这个场景很长。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "長い",
                       "kana": "ながい",
                       "desc": "长"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很长。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-012-1",
-                "sentence": "これは「短い」です。",
+                "sentence": "この本は短いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「みじかい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“短”。",
+                  "meaningZh": "这个场景很短。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "短い",
                       "kana": "みじかい",
                       "desc": "短"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很短。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-013-1",
-                "sentence": "これは「早い」です。",
+                "sentence": "今日の天気は早いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はやい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“早”。",
+                  "meaningZh": "这个场景很早。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "早い",
                       "kana": "はやい",
                       "desc": "早"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很早。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-014-1",
-                "sentence": "これは「速い」です。",
+                "sentence": "この部屋は速いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はやい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“快”。",
+                  "meaningZh": "这个场景很快。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "速い",
                       "kana": "はやい",
                       "desc": "快"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很快。"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-015-1",
-                "sentence": "これは「遅い」です。",
+                "sentence": "この本は遅いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おそい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“慢；晚”。",
+                  "meaningZh": "这个场景很慢；晚。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "遅い",
                       "kana": "おそい",
                       "desc": "慢；晚"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很慢；晚。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-016-1",
-                "sentence": "これは「近い」です。",
+                "sentence": "今日の天気は近いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ちかい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“近”。",
+                  "meaningZh": "这个场景很近。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "近い",
                       "kana": "ちかい",
                       "desc": "近"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很近。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-017-1",
-                "sentence": "これは「遠い」です。",
+                "sentence": "この部屋は遠いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「とおい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“远”。",
+                  "meaningZh": "这个场景很远。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "遠い",
                       "kana": "とおい",
                       "desc": "远"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很远。"
                   }
                 }
               }
@@ -1407,37 +1152,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-018-1",
-                "sentence": "これは「暑い」です。",
+                "sentence": "この本は暑いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あつい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“热（天气）”。",
+                  "meaningZh": "这个场景很热（天气）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "暑い",
                       "kana": "あつい",
                       "desc": "热（天气）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很热（天气）。"
                   }
                 }
               }
@@ -1483,37 +1213,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-019-1",
-                "sentence": "これは「熱い」です。",
+                "sentence": "今日の天気は熱いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あつい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“热（物体）”。",
+                  "meaningZh": "这个场景很热（物体）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "熱い",
                       "kana": "あつい",
                       "desc": "热（物体）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很热（物体）。"
                   }
                 }
               }
@@ -1559,37 +1274,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-020-1",
-                "sentence": "これは「寒い」です。",
+                "sentence": "この部屋は寒いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「さむい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“冷（天气）”。",
+                  "meaningZh": "这个场景很冷（天气）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "寒い",
                       "kana": "さむい",
                       "desc": "冷（天气）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很冷（天气）。"
                   }
                 }
               }
@@ -1635,37 +1335,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-021-1",
-                "sentence": "これは「冷たい」です。",
+                "sentence": "この本は冷たいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「つめたい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“冰凉”。",
+                  "meaningZh": "这个场景很冰凉。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "冷たい",
                       "kana": "つめたい",
                       "desc": "冰凉"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很冰凉。"
                   }
                 }
               }
@@ -1711,37 +1396,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-022-1",
-                "sentence": "これは「温かい」です。",
+                "sentence": "今日の天気は温かいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あたたかい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“温暖”。",
+                  "meaningZh": "这个场景很温暖。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "温かい",
                       "kana": "あたたかい",
                       "desc": "温暖"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很温暖。"
                   }
                 }
               }
@@ -1787,37 +1457,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-023-1",
-                "sentence": "これは「難しい」です。",
+                "sentence": "この部屋は難しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「むずかしい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“难”。",
+                  "meaningZh": "这个场景很难。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "難しい",
                       "kana": "むずかしい",
                       "desc": "难"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很难。"
                   }
                 }
               }
@@ -1863,37 +1518,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-024-1",
-                "sentence": "これは「易しい」です。",
+                "sentence": "この本は易しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「やさしい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“容易”。",
+                  "meaningZh": "这个场景很容易。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "易しい",
                       "kana": "やさしい",
                       "desc": "容易"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很容易。"
                   }
                 }
               }
@@ -1939,37 +1579,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-025-1",
-                "sentence": "これは「優しい」です。",
+                "sentence": "今日の天気は優しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「やさしい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“温柔”。",
+                  "meaningZh": "这个场景很温柔。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "優しい",
                       "kana": "やさしい",
                       "desc": "温柔"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很温柔。"
                   }
                 }
               }
@@ -2015,37 +1640,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-026-1",
-                "sentence": "これは「忙しい」です。",
+                "sentence": "この部屋は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いそがしい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“忙”。",
+                  "meaningZh": "这个场景很忙。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "忙しい",
                       "kana": "いそがしい",
                       "desc": "忙"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很忙。"
                   }
                 }
               }
@@ -2091,37 +1701,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-027-1",
-                "sentence": "これは「楽しい」です。",
+                "sentence": "この本は楽しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「たのしい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“开心”。",
+                  "meaningZh": "这个场景很开心。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "楽しい",
                       "kana": "たのしい",
                       "desc": "开心"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很开心。"
                   }
                 }
               }
@@ -2167,37 +1762,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-028-1",
-                "sentence": "これは「面白い」です。",
+                "sentence": "今日の天気は面白いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おもしろい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“有趣”。",
+                  "meaningZh": "这个场景很有趣。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "面白い",
                       "kana": "おもしろい",
                       "desc": "有趣"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很有趣。"
                   }
                 }
               }
@@ -2243,37 +1823,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-029-1",
-                "sentence": "これは「つまらない」です。",
+                "sentence": "この部屋はつまらないです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「つまらない」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“无聊”。",
+                  "meaningZh": "这个场景很无聊。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "つまらない",
                       "kana": "つまらない",
                       "desc": "无聊"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很无聊。"
                   }
                 }
               }
@@ -2319,37 +1884,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-030-1",
-                "sentence": "これは「おいしい」です。",
+                "sentence": "この本はおいしいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おいしい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“好吃”。",
+                  "meaningZh": "这个场景很好吃。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "おいしい",
                       "kana": "おいしい",
                       "desc": "好吃"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很好吃。"
                   }
                 }
               }
@@ -2395,37 +1945,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-031-1",
-                "sentence": "これは「まずい」です。",
+                "sentence": "今日の天気はまずいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まずい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“难吃”。",
+                  "meaningZh": "这个场景很难吃。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "まずい",
                       "kana": "まずい",
                       "desc": "难吃"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很难吃。"
                   }
                 }
               }
@@ -2471,37 +2006,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-032-1",
-                "sentence": "これは「甘い」です。",
+                "sentence": "この部屋は甘いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あまい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“甜”。",
+                  "meaningZh": "这个场景很甜。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "甘い",
                       "kana": "あまい",
                       "desc": "甜"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很甜。"
                   }
                 }
               }
@@ -2547,37 +2067,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-033-1",
-                "sentence": "これは「辛い」です。",
+                "sentence": "この本は辛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「からい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“辣”。",
+                  "meaningZh": "这个场景很辣。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "辛い",
                       "kana": "からい",
                       "desc": "辣"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很辣。"
                   }
                 }
               }
@@ -2623,37 +2128,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-034-1",
-                "sentence": "これは「しょっぱい」です。",
+                "sentence": "今日の天気はしょっぱいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しょっぱい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“咸”。",
+                  "meaningZh": "这个场景很咸。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "しょっぱい",
                       "kana": "しょっぱい",
                       "desc": "咸"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很咸。"
                   }
                 }
               }
@@ -2699,37 +2189,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-035-1",
-                "sentence": "これは「苦い」です。",
+                "sentence": "この部屋は苦いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「にがい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“苦”。",
+                  "meaningZh": "这个场景很苦。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "苦い",
                       "kana": "にがい",
                       "desc": "苦"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很苦。"
                   }
                 }
               }
@@ -2775,37 +2250,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-036-1",
-                "sentence": "これは「丸い」です。",
+                "sentence": "この本は丸いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まるい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“圆”。",
+                  "meaningZh": "这个场景很圆。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "丸い",
                       "kana": "まるい",
                       "desc": "圆"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很圆。"
                   }
                 }
               }
@@ -2851,37 +2311,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-037-1",
-                "sentence": "これは「赤い」です。",
+                "sentence": "今日の天気は赤いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あかい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“红色的”。",
+                  "meaningZh": "这个场景很红色的。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "赤い",
                       "kana": "あかい",
                       "desc": "红色的"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很红色的。"
                   }
                 }
               }
@@ -2927,37 +2372,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-038-1",
-                "sentence": "これは「青い」です。",
+                "sentence": "この部屋は青いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あおい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“蓝色的；青色的”。",
+                  "meaningZh": "这个场景很蓝色的；青色的。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "青い",
                       "kana": "あおい",
                       "desc": "蓝色的；青色的"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很蓝色的；青色的。"
                   }
                 }
               }
@@ -3003,37 +2433,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-039-1",
-                "sentence": "これは「白い」です。",
+                "sentence": "この本は白いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しろい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“白色的”。",
+                  "meaningZh": "这个场景很白色的。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "白い",
                       "kana": "しろい",
                       "desc": "白色的"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很白色的。"
                   }
                 }
               }
@@ -3079,37 +2494,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-040-1",
-                "sentence": "これは「黒い」です。",
+                "sentence": "今日の天気は黒いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くろい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“黑色的”。",
+                  "meaningZh": "这个场景很黑色的。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "黒い",
                       "kana": "くろい",
                       "desc": "黑色的"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很黑色的。"
                   }
                 }
               }
@@ -3155,37 +2555,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-041-1",
-                "sentence": "これは「明るい」です。",
+                "sentence": "この部屋は明るいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あかるい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“明亮；开朗”。",
+                  "meaningZh": "这个场景很明亮；开朗。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "明るい",
                       "kana": "あかるい",
                       "desc": "明亮；开朗"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很明亮；开朗。"
                   }
                 }
               }
@@ -3231,37 +2616,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-042-1",
-                "sentence": "これは「暗い」です。",
+                "sentence": "この本は暗いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くらい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“昏暗；阴沉”。",
+                  "meaningZh": "这个场景很昏暗；阴沉。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "暗い",
                       "kana": "くらい",
                       "desc": "昏暗；阴沉"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很昏暗；阴沉。"
                   }
                 }
               }
@@ -3307,37 +2677,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-043-1",
-                "sentence": "これは「若い」です。",
+                "sentence": "今日の天気は若いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「わかい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“年轻”。",
+                  "meaningZh": "这个场景很年轻。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "若い",
                       "kana": "わかい",
                       "desc": "年轻"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很年轻。"
                   }
                 }
               }
@@ -3383,37 +2738,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-044-1",
-                "sentence": "これは「偉い」です。",
+                "sentence": "この部屋は偉いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「えらい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“了不起；地位高”。",
+                  "meaningZh": "这个场景很了不起；地位高。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "偉い",
                       "kana": "えらい",
                       "desc": "了不起；地位高"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很了不起；地位高。"
                   }
                 }
               }
@@ -3459,37 +2799,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-045-1",
-                "sentence": "これは「痛い」です。",
+                "sentence": "この本は痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いたい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“痛”。",
+                  "meaningZh": "这个场景很痛。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "痛い",
                       "kana": "いたい",
                       "desc": "痛"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很痛。"
                   }
                 }
               }
@@ -3535,37 +2860,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-046-1",
-                "sentence": "これは「眠い」です。",
+                "sentence": "今日の天気は眠いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ねむい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“困”。",
+                  "meaningZh": "这个场景很困。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "眠い",
                       "kana": "ねむい",
                       "desc": "困"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很困。"
                   }
                 }
               }
@@ -3611,37 +2921,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-047-1",
-                "sentence": "これは「欲しい」です。",
+                "sentence": "この部屋は欲しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ほしい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“想要”。",
+                  "meaningZh": "这个场景很想要。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "欲しい",
                       "kana": "ほしい",
                       "desc": "想要"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很想要。"
                   }
                 }
               }
@@ -3687,37 +2982,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-048-1",
-                "sentence": "これは「危ない」です。",
+                "sentence": "この本は危ないです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あぶない」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“危险”。",
+                  "meaningZh": "这个场景很危险。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "危ない",
                       "kana": "あぶない",
                       "desc": "危险"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很危险。"
                   }
                 }
               }
@@ -3763,37 +3043,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-iadj-049-1",
-                "sentence": "これは「少し」です。",
+                "sentence": "今日の天気は少しです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「すこし」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“一点儿（也常作副词）”。",
+                  "meaningZh": "这个场景很一点儿（也常作副词）。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "少し",
                       "kana": "すこし",
                       "desc": "一点儿（也常作副词）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は い形容词です",
+                    "meaningZh": "这个场景很一点儿（也常作副词）。"
                   }
                 }
               }

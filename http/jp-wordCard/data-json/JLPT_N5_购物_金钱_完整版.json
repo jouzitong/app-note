@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-001-1",
-                "sentence": "これは「買い物」です。",
+                "sentence": "昨日、店で買い物を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かいもの」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“购物”。",
+                  "meaningZh": "昨天在店里买了购物。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "買い物",
                       "kana": "かいもの",
                       "desc": "购物"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了购物。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-002-1",
-                "sentence": "これは「お金」です。",
+                "sentence": "昨日、店でお金を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おかね」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“钱”。",
+                  "meaningZh": "昨天在店里买了钱。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "お金",
                       "kana": "おかね",
                       "desc": "钱"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了钱。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-003-1",
-                "sentence": "これは「円」です。",
+                "sentence": "昨日、店で円を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「えん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“日元”。",
+                  "meaningZh": "昨天在店里买了日元。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "円",
                       "kana": "えん",
                       "desc": "日元"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了日元。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-004-1",
-                "sentence": "これは「財布」です。",
+                "sentence": "昨日、店で財布を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「さいふ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“钱包”。",
+                  "meaningZh": "昨天在店里买了钱包。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "財布",
                       "kana": "さいふ",
                       "desc": "钱包"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了钱包。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-005-1",
-                "sentence": "これは「値段」です。",
+                "sentence": "昨日、店で値段を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ねだん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“价格”。",
+                  "meaningZh": "昨天在店里买了价格。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "値段",
                       "kana": "ねだん",
                       "desc": "价格"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了价格。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-006-1",
-                "sentence": "これは「いくら」です。",
+                "sentence": "昨日、店でいくらを買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いくら」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“多少钱”。",
+                  "meaningZh": "昨天在店里买了多少钱。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "いくら",
                       "kana": "いくら",
                       "desc": "多少钱"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了多少钱。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-007-1",
-                "sentence": "これは「安い」です。",
+                "sentence": "昨日、店で安いを買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「やすい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“便宜”。",
+                  "meaningZh": "昨天在店里买了便宜。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "安い",
                       "kana": "やすい",
                       "desc": "便宜"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了便宜。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-008-1",
-                "sentence": "これは「高い」です。",
+                "sentence": "昨日、店で高いを買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「たかい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“贵”。",
+                  "meaningZh": "昨天在店里买了贵。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "高い",
                       "kana": "たかい",
                       "desc": "贵"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了贵。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-009-1",
-                "sentence": "これは「売り場」です。",
+                "sentence": "昨日、店で売り場を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「うりば」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“卖场”。",
+                  "meaningZh": "昨天在店里买了卖场。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "売り場",
                       "kana": "うりば",
                       "desc": "卖场"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了卖场。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-010-1",
-                "sentence": "これは「店員」です。",
+                "sentence": "昨日、店で店員を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「てんいん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“店员”。",
+                  "meaningZh": "昨天在店里买了店员。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "店員",
                       "kana": "てんいん",
                       "desc": "店员"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了店员。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-011-1",
-                "sentence": "これは「お釣り」です。",
+                "sentence": "昨日、店でお釣りを買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おつり」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“找零”。",
+                  "meaningZh": "昨天在店里买了找零。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "お釣り",
                       "kana": "おつり",
                       "desc": "找零"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了找零。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-012-1",
-                "sentence": "これは「レシート」です。",
+                "sentence": "昨日、店でレシートを買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「レシート」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“收据”。",
+                  "meaningZh": "昨天在店里买了收据。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "レシート",
                       "kana": "レシート",
                       "desc": "收据"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了收据。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-013-1",
-                "sentence": "これは「サービス」です。",
+                "sentence": "昨日、店でサービスを買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「サービス」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“服务；附送”。",
+                  "meaningZh": "昨天在店里买了服务；附送。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "サービス",
                       "kana": "サービス",
                       "desc": "服务；附送"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了服务；附送。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-014-1",
-                "sentence": "これは「品物」です。",
+                "sentence": "昨日、店で品物を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しなもの」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“物品”。",
+                  "meaningZh": "昨天在店里买了物品。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "品物",
                       "kana": "しなもの",
                       "desc": "物品"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了物品。"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-015-1",
-                "sentence": "これは「荷物」です。",
+                "sentence": "昨日、店で荷物を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「にもつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“行李；包裹”。",
+                  "meaningZh": "昨天在店里买了行李；包裹。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "荷物",
                       "kana": "にもつ",
                       "desc": "行李；包裹"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了行李；包裹。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-016-1",
-                "sentence": "これは「箱」です。",
+                "sentence": "昨日、店で箱を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はこ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“盒子”。",
+                  "meaningZh": "昨天在店里买了盒子。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "箱",
                       "kana": "はこ",
                       "desc": "盒子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了盒子。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-017-1",
-                "sentence": "これは「袋」です。",
+                "sentence": "昨日、店で袋を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ふくろ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“袋子”。",
+                  "meaningZh": "昨天在店里买了袋子。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "袋",
                       "kana": "ふくろ",
                       "desc": "袋子"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了袋子。"
                   }
                 }
               }
@@ -1407,37 +1152,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-018-1",
-                "sentence": "これは「封筒」です。",
+                "sentence": "昨日、店で封筒を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ふうとう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“信封”。",
+                  "meaningZh": "昨天在店里买了信封。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "封筒",
                       "kana": "ふうとう",
                       "desc": "信封"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了信封。"
                   }
                 }
               }
@@ -1483,37 +1213,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-shopping-019-1",
-                "sentence": "これは「切手」です。",
+                "sentence": "昨日、店で切手を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きって」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“邮票”。",
+                  "meaningZh": "昨天在店里买了邮票。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "切手",
                       "kana": "きって",
                       "desc": "邮票"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を 買う",
+                    "meaningZh": "昨天在店里买了邮票。"
                   }
                 }
               }

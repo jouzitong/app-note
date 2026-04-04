@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-001-1",
-                "sentence": "これは「は」です。",
+                "sentence": "私は学生です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「は」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“提示主题”。",
+                  "meaningZh": "我是学生。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "は",
                       "kana": "は",
                       "desc": "提示主题"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は B です",
+                    "meaningZh": "我是学生。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-002-1",
-                "sentence": "これは「が」です。",
+                "sentence": "猫がいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「が」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“提示主语”。",
+                  "meaningZh": "有一只猫。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "が",
                       "kana": "が",
                       "desc": "提示主语"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が います",
+                    "meaningZh": "有一只猫。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-003-1",
-                "sentence": "これは「を」です。",
+                "sentence": "水を飲みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「を」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“宾语标记”。",
+                  "meaningZh": "喝水。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "を",
                       "kana": "を",
                       "desc": "宾语标记"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A を Vます",
+                    "meaningZh": "喝水。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-004-1",
-                "sentence": "これは「に」です。",
+                "sentence": "七時に起きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「に」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“时间、对象、到达点”。",
+                  "meaningZh": "七点起床。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "に",
                       "kana": "に",
                       "desc": "时间、对象、到达点"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "时间 に V",
+                    "meaningZh": "七点起床。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-005-1",
-                "sentence": "これは「へ」です。",
+                "sentence": "学校へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「へ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“方向”。",
+                  "meaningZh": "去学校。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "へ",
                       "kana": "へ",
                       "desc": "方向"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "地点 へ 行く",
+                    "meaningZh": "去学校。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-006-1",
-                "sentence": "これは「で」です。",
+                "sentence": "図書館で勉強します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「で」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“动作场所、手段”。",
+                  "meaningZh": "在图书馆学习。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "で",
                       "kana": "で",
                       "desc": "动作场所、手段"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "地点 で V",
+                    "meaningZh": "在图书馆学习。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-007-1",
-                "sentence": "これは「と」です。",
+                "sentence": "友達と話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「と」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“和；引用”。",
+                  "meaningZh": "和朋友说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "と",
                       "kana": "と",
                       "desc": "和；引用"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A と V",
+                    "meaningZh": "和朋友说话。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-008-1",
-                "sentence": "これは「も」です。",
+                "sentence": "私も行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「も」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“也”。",
+                  "meaningZh": "我也去。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "も",
                       "kana": "も",
                       "desc": "也"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A も V",
+                    "meaningZh": "我也去。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-009-1",
-                "sentence": "これは「の」です。",
+                "sentence": "これは私の本です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「の」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“的；名词修饰”。",
+                  "meaningZh": "这是我的书。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "の",
                       "kana": "の",
                       "desc": "的；名词修饰"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A の B",
+                    "meaningZh": "这是我的书。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-010-1",
-                "sentence": "これは「から」です。",
+                "sentence": "九時から授業です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「から」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“从；因为”。",
+                  "meaningZh": "九点开始上课。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "から",
                       "kana": "から",
                       "desc": "从；因为"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A から",
+                    "meaningZh": "九点开始上课。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-011-1",
-                "sentence": "これは「まで」です。",
+                "sentence": "五時まで働きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まで」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“到”。",
+                  "meaningZh": "工作到五点。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "まで",
                       "kana": "まで",
                       "desc": "到"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A まで",
+                    "meaningZh": "工作到五点。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-012-1",
-                "sentence": "これは「より」です。",
+                "sentence": "電車よりバスが安いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「より」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“比；从”。",
+                  "meaningZh": "比起电车，公交更便宜。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "より",
                       "kana": "より",
                       "desc": "比；从"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A より B",
+                    "meaningZh": "比起电车，公交更便宜。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-013-1",
-                "sentence": "これは「や」です。",
+                "sentence": "机の上に本やノートがあります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「や」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“……和……等”。",
+                  "meaningZh": "桌上有书和笔记本等。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "や",
                       "kana": "や",
                       "desc": "……和……等"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A や B など",
+                    "meaningZh": "桌上有书和笔记本等。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-014-1",
-                "sentence": "これは「か」です。",
+                "sentence": "これはあなたのペンですか。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「か」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“疑问；或者”。",
+                  "meaningZh": "这是你的笔吗？",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "か",
                       "kana": "か",
                       "desc": "疑问；或者"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A ですか",
+                    "meaningZh": "这是你的笔吗？"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-015-1",
-                "sentence": "これは「ね」です。",
+                "sentence": "今日は寒いですね。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ね」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“语气助词：吧”。",
+                  "meaningZh": "今天很冷呢。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ね",
                       "kana": "ね",
                       "desc": "语气助词：吧"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "〜ですね",
+                    "meaningZh": "今天很冷呢。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-016-1",
-                "sentence": "これは「よ」です。",
+                "sentence": "その映画は面白いですよ。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「よ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“语气助词：哦”。",
+                  "meaningZh": "那部电影很有趣哦。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "よ",
                       "kana": "よ",
                       "desc": "语气助词：哦"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "〜ですよ",
+                    "meaningZh": "那部电影很有趣哦。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-017-1",
-                "sentence": "これは「まだ」です。",
+                "sentence": "宿題はまだ終わっていません。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まだ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“还；仍然”。",
+                  "meaningZh": "作业还没做完。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "まだ",
                       "kana": "まだ",
                       "desc": "还；仍然"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "まだ 〜ていません",
+                    "meaningZh": "作业还没做完。"
                   }
                 }
               }
@@ -1407,37 +1152,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-018-1",
-                "sentence": "これは「もう」です。",
+                "sentence": "宿題はもう終わりました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「もう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“已经；再”。",
+                  "meaningZh": "作业已经做完了。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "もう",
                       "kana": "もう",
                       "desc": "已经；再"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "もう 〜ました",
+                    "meaningZh": "作业已经做完了。"
                   }
                 }
               }
@@ -1483,37 +1213,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-019-1",
-                "sentence": "これは「でも」です。",
+                "sentence": "雨でも行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「でも」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“但是；即使；或者”。",
+                  "meaningZh": "即使下雨也去。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "でも",
                       "kana": "でも",
                       "desc": "但是；即使；或者"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A でも B",
+                    "meaningZh": "即使下雨也去。"
                   }
                 }
               }
@@ -1559,37 +1274,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-020-1",
-                "sentence": "これは「そして」です。",
+                "sentence": "朝ごはんを食べました。そして学校へ行きました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「そして」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“然后，而且”。",
+                  "meaningZh": "吃完早饭，然后去了学校。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "そして",
                       "kana": "そして",
                       "desc": "然后，而且"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A。そしてB",
+                    "meaningZh": "吃完早饭，然后去了学校。"
                   }
                 }
               }
@@ -1635,37 +1335,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-021-1",
-                "sentence": "これは「それから」です。",
+                "sentence": "宿題をします。それから寝ます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「それから」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“然后，之后”。",
+                  "meaningZh": "先做作业，然后睡觉。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "それから",
                       "kana": "それから",
                       "desc": "然后，之后"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A。それからB",
+                    "meaningZh": "先做作业，然后睡觉。"
                   }
                 }
               }
@@ -1711,37 +1396,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-022-1",
-                "sentence": "これは「だから」です。",
+                "sentence": "明日は試験です。だから今夜は勉強します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「だから」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“所以”。",
+                  "meaningZh": "明天考试，所以今晚学习。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "だから",
                       "kana": "だから",
                       "desc": "所以"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A。だからB",
+                    "meaningZh": "明天考试，所以今晚学习。"
                   }
                 }
               }
@@ -1787,37 +1457,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-023-1",
-                "sentence": "これは「でも」です。",
+                "sentence": "雨でも行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「でも」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“可是”。",
+                  "meaningZh": "即使下雨也去。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "でも",
                       "kana": "でも",
                       "desc": "可是"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A でも B",
+                    "meaningZh": "即使下雨也去。"
                   }
                 }
               }
@@ -1863,37 +1518,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-024-1",
-                "sentence": "これは「じゃあ」です。",
+                "sentence": "じゃあ、また明日。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「じゃあ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“那么”。",
+                  "meaningZh": "那么，明天见。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "じゃあ",
                       "kana": "じゃあ",
                       "desc": "那么"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "じゃあ、〜",
+                    "meaningZh": "那么，明天见。"
                   }
                 }
               }
@@ -1939,37 +1579,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-particle-025-1",
-                "sentence": "これは「では」です。",
+                "sentence": "では、始めましょう。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「では」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“那么；那么就”。",
+                  "meaningZh": "那么，开始吧。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "では",
                       "kana": "では",
                       "desc": "那么；那么就"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "では、〜",
+                    "meaningZh": "那么，开始吧。"
                   }
                 }
               }

@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-001-1",
-                "sentence": "これは「よく」です。",
+                "sentence": "彼はよく話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「よく」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“经常；很好地”。",
+                  "meaningZh": "他经常；很好地地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "よく",
                       "kana": "よく",
                       "desc": "经常；很好地"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他经常；很好地地说话。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-002-1",
-                "sentence": "これは「たくさん」です。",
+                "sentence": "彼はたくさん話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「たくさん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“很多”。",
+                  "meaningZh": "他很多地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "たくさん",
                       "kana": "たくさん",
                       "desc": "很多"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他很多地说话。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-003-1",
-                "sentence": "これは「とても」です。",
+                "sentence": "彼はとても話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「とても」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“非常”。",
+                  "meaningZh": "他非常地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "とても",
                       "kana": "とても",
                       "desc": "非常"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他非常地说话。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-004-1",
-                "sentence": "これは「ちょっと」です。",
+                "sentence": "彼はちょっと話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ちょっと」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“一点；稍微”。",
+                  "meaningZh": "他一点；稍微地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ちょっと",
                       "kana": "ちょっと",
                       "desc": "一点；稍微"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他一点；稍微地说话。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-005-1",
-                "sentence": "これは「少し」です。",
+                "sentence": "彼は少し話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「すこし」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“一点”。",
+                  "meaningZh": "他一点地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "少し",
                       "kana": "すこし",
                       "desc": "一点"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他一点地说话。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-006-1",
-                "sentence": "これは「あまり」です。",
+                "sentence": "彼はあまり話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あまり」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“不太……”。",
+                  "meaningZh": "他不太……地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "あまり",
                       "kana": "あまり",
                       "desc": "不太……"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他不太……地说话。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-007-1",
-                "sentence": "これは「ぜんぜん」です。",
+                "sentence": "彼はぜんぜん話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ぜんぜん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“完全（不）”。",
+                  "meaningZh": "他完全（不）地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ぜんぜん",
                       "kana": "ぜんぜん",
                       "desc": "完全（不）"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他完全（不）地说话。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-008-1",
-                "sentence": "これは「いつも」です。",
+                "sentence": "彼はいつも話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いつも」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“总是”。",
+                  "meaningZh": "他总是地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "いつも",
                       "kana": "いつも",
                       "desc": "总是"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他总是地说话。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-009-1",
-                "sentence": "これは「ときどき」です。",
+                "sentence": "彼はときどき話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ときどき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“有时”。",
+                  "meaningZh": "他有时地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ときどき",
                       "kana": "ときどき",
                       "desc": "有时"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他有时地说话。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-010-1",
-                "sentence": "これは「たいてい」です。",
+                "sentence": "彼はたいてい話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「たいてい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“大多；通常”。",
+                  "meaningZh": "他大多；通常地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "たいてい",
                       "kana": "たいてい",
                       "desc": "大多；通常"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他大多；通常地说话。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-011-1",
-                "sentence": "これは「しばしば」です。",
+                "sentence": "彼はしばしば話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しばしば」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“常常”。",
+                  "meaningZh": "他常常地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "しばしば",
                       "kana": "しばしば",
                       "desc": "常常"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他常常地说话。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-012-1",
-                "sentence": "これは「すぐ」です。",
+                "sentence": "彼はすぐ話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「すぐ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“马上”。",
+                  "meaningZh": "他马上地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "すぐ",
                       "kana": "すぐ",
                       "desc": "马上"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他马上地说话。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-013-1",
-                "sentence": "これは「もうすぐ」です。",
+                "sentence": "彼はもうすぐ話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「もうすぐ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“马上就”。",
+                  "meaningZh": "他马上就地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "もうすぐ",
                       "kana": "もうすぐ",
                       "desc": "马上就"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他马上就地说话。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-014-1",
-                "sentence": "これは「まだ」です。",
+                "sentence": "彼はまだ話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まだ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“还”。",
+                  "meaningZh": "他还地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "まだ",
                       "kana": "まだ",
                       "desc": "还"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他还地说话。"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-015-1",
-                "sentence": "これは「もう」です。",
+                "sentence": "彼はもう話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「もう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“已经”。",
+                  "meaningZh": "他已经地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "もう",
                       "kana": "もう",
                       "desc": "已经"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他已经地说话。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-016-1",
-                "sentence": "これは「また」です。",
+                "sentence": "彼はまた話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「また」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“又；再”。",
+                  "meaningZh": "他又；再地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "また",
                       "kana": "また",
                       "desc": "又；再"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他又；再地说话。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-017-1",
-                "sentence": "これは「あとで」です。",
+                "sentence": "彼はあとで話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あとで」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“之后”。",
+                  "meaningZh": "他之后地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "あとで",
                       "kana": "あとで",
                       "desc": "之后"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他之后地说话。"
                   }
                 }
               }
@@ -1407,37 +1152,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-018-1",
-                "sentence": "これは「さっき」です。",
+                "sentence": "彼はさっき話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「さっき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“刚才”。",
+                  "meaningZh": "他刚才地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "さっき",
                       "kana": "さっき",
                       "desc": "刚才"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他刚才地说话。"
                   }
                 }
               }
@@ -1483,37 +1213,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-019-1",
-                "sentence": "これは「いっしょに」です。",
+                "sentence": "彼はいっしょに話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いっしょに」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“一起”。",
+                  "meaningZh": "他一起地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "いっしょに",
                       "kana": "いっしょに",
                       "desc": "一起"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他一起地说话。"
                   }
                 }
               }
@@ -1559,37 +1274,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-020-1",
-                "sentence": "これは「ゆっくり」です。",
+                "sentence": "彼はゆっくり話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ゆっくり」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“慢慢地”。",
+                  "meaningZh": "他慢慢地地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ゆっくり",
                       "kana": "ゆっくり",
                       "desc": "慢慢地"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他慢慢地地说话。"
                   }
                 }
               }
@@ -1635,37 +1335,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-021-1",
-                "sentence": "これは「たぶん」です。",
+                "sentence": "彼はたぶん話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「たぶん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“大概”。",
+                  "meaningZh": "他大概地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "たぶん",
                       "kana": "たぶん",
                       "desc": "大概"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他大概地说话。"
                   }
                 }
               }
@@ -1711,37 +1396,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-022-1",
-                "sentence": "これは「もちろん」です。",
+                "sentence": "彼はもちろん話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「もちろん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“当然”。",
+                  "meaningZh": "他当然地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "もちろん",
                       "kana": "もちろん",
                       "desc": "当然"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他当然地说话。"
                   }
                 }
               }
@@ -1787,37 +1457,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-023-1",
-                "sentence": "これは「ぜひ」です。",
+                "sentence": "彼はぜひ話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ぜひ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“一定；务必”。",
+                  "meaningZh": "他一定；务必地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ぜひ",
                       "kana": "ぜひ",
                       "desc": "一定；务必"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他一定；务必地说话。"
                   }
                 }
               }
@@ -1863,37 +1518,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-024-1",
-                "sentence": "これは「なかなか」です。",
+                "sentence": "彼はなかなか話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「なかなか」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“相当；不轻易”。",
+                  "meaningZh": "他相当；不轻易地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "なかなか",
                       "kana": "なかなか",
                       "desc": "相当；不轻易"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他相当；不轻易地说话。"
                   }
                 }
               }
@@ -1939,37 +1579,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-025-1",
-                "sentence": "これは「こう」です。",
+                "sentence": "彼はこう話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“这样”。",
+                  "meaningZh": "他这样地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "こう",
                       "kana": "こう",
                       "desc": "这样"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他这样地说话。"
                   }
                 }
               }
@@ -2015,37 +1640,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-026-1",
-                "sentence": "これは「そう」です。",
+                "sentence": "彼はそう話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「そう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“那样”。",
+                  "meaningZh": "他那样地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "そう",
                       "kana": "そう",
                       "desc": "那样"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他那样地说话。"
                   }
                 }
               }
@@ -2091,37 +1701,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-027-1",
-                "sentence": "これは「ああ」です。",
+                "sentence": "彼はああ話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ああ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“那样”。",
+                  "meaningZh": "他那样地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ああ",
                       "kana": "ああ",
                       "desc": "那样"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他那样地说话。"
                   }
                 }
               }
@@ -2167,37 +1762,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-028-1",
-                "sentence": "これは「どうしても」です。",
+                "sentence": "彼はどうしても話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「どうしても」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“无论如何”。",
+                  "meaningZh": "他无论如何地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "どうしても",
                       "kana": "どうしても",
                       "desc": "无论如何"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他无论如何地说话。"
                   }
                 }
               }
@@ -2243,37 +1823,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-029-1",
-                "sentence": "これは「特に」です。",
+                "sentence": "彼は特に話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「とくに」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“特别”。",
+                  "meaningZh": "他特别地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "特に",
                       "kana": "とくに",
                       "desc": "特别"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他特别地说话。"
                   }
                 }
               }
@@ -2319,37 +1884,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-030-1",
-                "sentence": "これは「本当に」です。",
+                "sentence": "彼は本当に話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ほんとうに」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“真的”。",
+                  "meaningZh": "他真的地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "本当に",
                       "kana": "ほんとうに",
                       "desc": "真的"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他真的地说话。"
                   }
                 }
               }
@@ -2395,37 +1945,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-031-1",
-                "sentence": "これは「一番」です。",
+                "sentence": "彼は一番話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いちばん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“最”。",
+                  "meaningZh": "他最地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "一番",
                       "kana": "いちばん",
                       "desc": "最"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他最地说话。"
                   }
                 }
               }
@@ -2471,37 +2006,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-032-1",
-                "sentence": "これは「だいたい」です。",
+                "sentence": "彼はだいたい話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「だいたい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“大概”。",
+                  "meaningZh": "他大概地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "だいたい",
                       "kana": "だいたい",
                       "desc": "大概"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他大概地说话。"
                   }
                 }
               }
@@ -2547,37 +2067,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-adv-033-1",
-                "sentence": "これは「いろいろ」です。",
+                "sentence": "彼はいろいろ話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いろいろ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“各种各样”。",
+                  "meaningZh": "他各种各样地说话。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "いろいろ",
                       "kana": "いろいろ",
                       "desc": "各种各样"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 副词 V",
+                    "meaningZh": "他各种各样地说话。"
                   }
                 }
               }

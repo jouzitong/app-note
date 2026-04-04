@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-001-1",
-                "sentence": "これは「おはようございます」です。",
+                "sentence": "店員に「おはようございます」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おはようございます」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“早上好”。",
+                  "meaningZh": "我对店员说了“早上好”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "おはようございます",
                       "kana": "おはようございます",
                       "desc": "早上好"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“早上好”。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-002-1",
-                "sentence": "これは「こんにちは」です。",
+                "sentence": "店員に「こんにちは」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こんにちは」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“你好”。",
+                  "meaningZh": "我对店员说了“你好”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "こんにちは",
                       "kana": "こんにちは",
                       "desc": "你好"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“你好”。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-003-1",
-                "sentence": "これは「こんばんは」です。",
+                "sentence": "店員に「こんばんは」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「こんばんは」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“晚上好”。",
+                  "meaningZh": "我对店员说了“晚上好”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "こんばんは",
                       "kana": "こんばんは",
                       "desc": "晚上好"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“晚上好”。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-004-1",
-                "sentence": "これは「おやすみなさい」です。",
+                "sentence": "店員に「おやすみなさい」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おやすみなさい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“晚安”。",
+                  "meaningZh": "我对店员说了“晚安”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "おやすみなさい",
                       "kana": "おやすみなさい",
                       "desc": "晚安"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“晚安”。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-005-1",
-                "sentence": "これは「さようなら」です。",
+                "sentence": "店員に「さようなら」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「さようなら」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“再见”。",
+                  "meaningZh": "我对店员说了“再见”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "さようなら",
                       "kana": "さようなら",
                       "desc": "再见"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“再见”。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-006-1",
-                "sentence": "これは「じゃあ、また」です。",
+                "sentence": "店員に「じゃあ、また」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「じゃあ、また」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“那回头见”。",
+                  "meaningZh": "我对店员说了“那回头见”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "じゃあ、また",
                       "kana": "じゃあ、また",
                       "desc": "那回头见"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“那回头见”。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-007-1",
-                "sentence": "これは「ありがとうございます」です。",
+                "sentence": "店員に「ありがとうございます」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ありがとうございます」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“谢谢”。",
+                  "meaningZh": "我对店员说了“谢谢”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ありがとうございます",
                       "kana": "ありがとうございます",
                       "desc": "谢谢"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“谢谢”。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-008-1",
-                "sentence": "これは「どうもありがとうございます」です。",
+                "sentence": "店員に「どうもありがとうございます」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「どうもありがとうございます」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“非常感谢”。",
+                  "meaningZh": "我对店员说了“非常感谢”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "どうもありがとうございます",
                       "kana": "どうもありがとうございます",
                       "desc": "非常感谢"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“非常感谢”。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-009-1",
-                "sentence": "これは「どういたしまして」です。",
+                "sentence": "店員に「どういたしまして」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「どういたしまして」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“不客气”。",
+                  "meaningZh": "我对店员说了“不客气”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "どういたしまして",
                       "kana": "どういたしまして",
                       "desc": "不客气"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“不客气”。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-010-1",
-                "sentence": "これは「すみません」です。",
+                "sentence": "店員に「すみません」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「すみません」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“不好意思；对不起”。",
+                  "meaningZh": "我对店员说了“不好意思；对不起”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "すみません",
                       "kana": "すみません",
                       "desc": "不好意思；对不起"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“不好意思；对不起”。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-011-1",
-                "sentence": "これは「ごめんなさい」です。",
+                "sentence": "店員に「ごめんなさい」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ごめんなさい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“对不起”。",
+                  "meaningZh": "我对店员说了“对不起”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ごめんなさい",
                       "kana": "ごめんなさい",
                       "desc": "对不起"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“对不起”。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-012-1",
-                "sentence": "これは「お願いします」です。",
+                "sentence": "店員に「お願いします」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おねがいします」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“拜托了”。",
+                  "meaningZh": "我对店员说了“拜托了”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "お願いします",
                       "kana": "おねがいします",
                       "desc": "拜托了"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“拜托了”。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-013-1",
-                "sentence": "これは「はじめまして」です。",
+                "sentence": "店員に「はじめまして」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はじめまして」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“初次见面”。",
+                  "meaningZh": "我对店员说了“初次见面”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "はじめまして",
                       "kana": "はじめまして",
                       "desc": "初次见面"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“初次见面”。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-014-1",
-                "sentence": "これは「よろしくお願いします」です。",
+                "sentence": "店員に「よろしくお願いします」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「よろしくおねがいします」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“请多关照”。",
+                  "meaningZh": "我对店员说了“请多关照”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "よろしくお願いします",
                       "kana": "よろしくおねがいします",
                       "desc": "请多关照"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“请多关照”。"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-015-1",
-                "sentence": "これは「失礼します」です。",
+                "sentence": "店員に「失礼します」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しつれいします」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“失礼了；告辞了”。",
+                  "meaningZh": "我对店员说了“失礼了；告辞了”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "失礼します",
                       "kana": "しつれいします",
                       "desc": "失礼了；告辞了"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“失礼了；告辞了”。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-016-1",
-                "sentence": "これは「いただきます」です。",
+                "sentence": "店員に「いただきます」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いただきます」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“我开动了”。",
+                  "meaningZh": "我对店员说了“我开动了”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "いただきます",
                       "kana": "いただきます",
                       "desc": "我开动了"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“我开动了”。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-017-1",
-                "sentence": "これは「ごちそうさまでした」です。",
+                "sentence": "店員に「ごちそうさまでした」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ごちそうさまでした」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“我吃好了”。",
+                  "meaningZh": "我对店员说了“我吃好了”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ごちそうさまでした",
                       "kana": "ごちそうさまでした",
                       "desc": "我吃好了"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“我吃好了”。"
                   }
                 }
               }
@@ -1407,37 +1152,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-018-1",
-                "sentence": "これは「行ってきます」です。",
+                "sentence": "店員に「行ってきます」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いってきます」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“我出门了”。",
+                  "meaningZh": "我对店员说了“我出门了”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "行ってきます",
                       "kana": "いってきます",
                       "desc": "我出门了"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“我出门了”。"
                   }
                 }
               }
@@ -1483,37 +1213,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-019-1",
-                "sentence": "これは「行ってらっしゃい」です。",
+                "sentence": "店員に「行ってらっしゃい」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いってらっしゃい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“您走好”。",
+                  "meaningZh": "我对店员说了“您走好”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "行ってらっしゃい",
                       "kana": "いってらっしゃい",
                       "desc": "您走好"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“您走好”。"
                   }
                 }
               }
@@ -1559,37 +1274,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-020-1",
-                "sentence": "これは「ただいま」です。",
+                "sentence": "店員に「ただいま」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ただいま」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“我回来了”。",
+                  "meaningZh": "我对店员说了“我回来了”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "ただいま",
                       "kana": "ただいま",
                       "desc": "我回来了"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“我回来了”。"
                   }
                 }
               }
@@ -1635,37 +1335,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-021-1",
-                "sentence": "これは「お帰りなさい」です。",
+                "sentence": "店員に「お帰りなさい」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おかえりなさい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“欢迎回来”。",
+                  "meaningZh": "我对店员说了“欢迎回来”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "お帰りなさい",
                       "kana": "おかえりなさい",
                       "desc": "欢迎回来"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“欢迎回来”。"
                   }
                 }
               }
@@ -1711,37 +1396,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-022-1",
-                "sentence": "これは「分かりました」です。",
+                "sentence": "店員に「分かりました」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「わかりました」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“明白了”。",
+                  "meaningZh": "我对店员说了“明白了”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "分かりました",
                       "kana": "わかりました",
                       "desc": "明白了"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“明白了”。"
                   }
                 }
               }
@@ -1787,37 +1457,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-023-1",
-                "sentence": "これは「大丈夫です」です。",
+                "sentence": "店員に「大丈夫です」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「だいじょうぶです」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“没关系”。",
+                  "meaningZh": "我对店员说了“没关系”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "大丈夫です",
                       "kana": "だいじょうぶです",
                       "desc": "没关系"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“没关系”。"
                   }
                 }
               }
@@ -1863,37 +1518,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-024-1",
-                "sentence": "これは「結構です」です。",
+                "sentence": "店員に「結構です」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「けっこうです」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“不用了；很好”。",
+                  "meaningZh": "我对店员说了“不用了；很好”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "結構です",
                       "kana": "けっこうです",
                       "desc": "不用了；很好"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“不用了；很好”。"
                   }
                 }
               }
@@ -1939,37 +1579,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-025-1",
-                "sentence": "これは「本当ですか」です。",
+                "sentence": "店員に「本当ですか」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ほんとうですか」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“真的吗”。",
+                  "meaningZh": "我对店员说了“真的吗”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "本当ですか",
                       "kana": "ほんとうですか",
                       "desc": "真的吗"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“真的吗”。"
                   }
                 }
               }
@@ -2015,37 +1640,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-026-1",
-                "sentence": "これは「もちろん」です。",
+                "sentence": "店員に「もちろん」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「もちろん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“当然”。",
+                  "meaningZh": "我对店员说了“当然”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "もちろん",
                       "kana": "もちろん",
                       "desc": "当然"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“当然”。"
                   }
                 }
               }
@@ -2091,37 +1701,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-027-1",
-                "sentence": "これは「だめです」です。",
+                "sentence": "店員に「だめです」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「だめです」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“不行”。",
+                  "meaningZh": "我对店员说了“不行”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "だめです",
                       "kana": "だめです",
                       "desc": "不行"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“不行”。"
                   }
                 }
               }
@@ -2167,37 +1762,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-028-1",
-                "sentence": "これは「いいです」です。",
+                "sentence": "店員に「いいです」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いいです」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“可以；好”。",
+                  "meaningZh": "我对店员说了“可以；好”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "いいです",
                       "kana": "いいです",
                       "desc": "可以；好"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“可以；好”。"
                   }
                 }
               }
@@ -2243,37 +1823,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-029-1",
-                "sentence": "これは「まだです」です。",
+                "sentence": "店員に「まだです」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まだです」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“还没”。",
+                  "meaningZh": "我对店员说了“还没”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "まだです",
                       "kana": "まだです",
                       "desc": "还没"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“还没”。"
                   }
                 }
               }
@@ -2319,37 +1884,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-030-1",
-                "sentence": "これは「そうです」です。",
+                "sentence": "店員に「そうです」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「そうです」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“是的；是那样”。",
+                  "meaningZh": "我对店员说了“是的；是那样”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "そうです",
                       "kana": "そうです",
                       "desc": "是的；是那样"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“是的；是那样”。"
                   }
                 }
               }
@@ -2395,37 +1945,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-031-1",
-                "sentence": "これは「そうじゃありません」です。",
+                "sentence": "店員に「そうじゃありません」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「そうじゃありません」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“不是那样”。",
+                  "meaningZh": "我对店员说了“不是那样”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "そうじゃありません",
                       "kana": "そうじゃありません",
                       "desc": "不是那样"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“不是那样”。"
                   }
                 }
               }
@@ -2471,37 +2006,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-032-1",
-                "sentence": "これは「違います」です。",
+                "sentence": "店員に「違います」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ちがいます」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“不对；不是”。",
+                  "meaningZh": "我对店员说了“不对；不是”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "違います",
                       "kana": "ちがいます",
                       "desc": "不对；不是"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“不对；不是”。"
                   }
                 }
               }
@@ -2547,37 +2067,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-033-1",
-                "sentence": "これは「わかりません」です。",
+                "sentence": "店員に「わかりません」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「わかりません」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“不知道；不明白”。",
+                  "meaningZh": "我对店员说了“不知道；不明白”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "わかりません",
                       "kana": "わかりません",
                       "desc": "不知道；不明白"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“不知道；不明白”。"
                   }
                 }
               }
@@ -2623,37 +2128,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-034-1",
-                "sentence": "これは「知りません」です。",
+                "sentence": "店員に「知りません」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しりません」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“不知道”。",
+                  "meaningZh": "我对店员说了“不知道”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "知りません",
                       "kana": "しりません",
                       "desc": "不知道"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“不知道”。"
                   }
                 }
               }
@@ -2699,37 +2189,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-035-1",
-                "sentence": "これは「お願いします」です。",
+                "sentence": "店員に「お願いします」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おねがいします」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“请”。",
+                  "meaningZh": "我对店员说了“请”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "お願いします",
                       "kana": "おねがいします",
                       "desc": "请"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“请”。"
                   }
                 }
               }
@@ -2775,37 +2250,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-greet-036-1",
-                "sentence": "これは「どうぞ」です。",
+                "sentence": "店員に「どうぞ」と言いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「どうぞ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“请”。",
+                  "meaningZh": "我对店员说了“请”。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "どうぞ",
                       "kana": "どうぞ",
                       "desc": "请"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "会话固定表达",
+                    "meaningZh": "我对店员说了“请”。"
                   }
                 }
               }

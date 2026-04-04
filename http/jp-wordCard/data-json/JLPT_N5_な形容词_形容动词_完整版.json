@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-001-1",
-                "sentence": "これは「好き」です。",
+                "sentence": "私は音楽が好きです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「すき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“喜欢”。",
+                  "meaningZh": "我喜欢音乐。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "好き",
                       "kana": "すき",
                       "desc": "喜欢"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 好きです",
+                    "meaningZh": "我喜欢音乐。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-002-1",
-                "sentence": "これは「嫌い」です。",
+                "sentence": "私は納豆が嫌いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きらい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“讨厌”。",
+                  "meaningZh": "我讨厌纳豆。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "嫌い",
                       "kana": "きらい",
                       "desc": "讨厌"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 嫌いです",
+                    "meaningZh": "我讨厌纳豆。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-003-1",
-                "sentence": "これは「上手」です。",
+                "sentence": "彼は日本語が上手です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「じょうず」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“擅长”。",
+                  "meaningZh": "他日语很擅长。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "上手",
                       "kana": "じょうず",
                       "desc": "擅长"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 上手です",
+                    "meaningZh": "他日语很擅长。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-004-1",
-                "sentence": "これは「下手」です。",
+                "sentence": "彼は料理が下手です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「へた」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“不擅长”。",
+                  "meaningZh": "他不擅长做饭。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "下手",
                       "kana": "へた",
                       "desc": "不擅长"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 下手です",
+                    "meaningZh": "他不擅长做饭。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-005-1",
-                "sentence": "これは「有名」です。",
+                "sentence": "この町は有名です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ゆうめい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“有名”。",
+                  "meaningZh": "这个城市很有名。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "有名",
                       "kana": "ゆうめい",
                       "desc": "有名"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很有名。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-006-1",
-                "sentence": "これは「静か」です。",
+                "sentence": "この図書館は静かです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しずか」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“安静”。",
+                  "meaningZh": "这个图书馆很安静。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "静か",
                       "kana": "しずか",
                       "desc": "安静"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 静かです",
+                    "meaningZh": "这个图书馆很安静。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-007-1",
-                "sentence": "これは「にぎやか」です。",
+                "sentence": "駅前はにぎやかです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「にぎやか」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“热闹”。",
+                  "meaningZh": "车站前很热闹。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "にぎやか",
                       "kana": "にぎやか",
                       "desc": "热闹"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は にぎやかです",
+                    "meaningZh": "车站前很热闹。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-008-1",
-                "sentence": "これは「便利」です。",
+                "sentence": "この町は便利です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「べんり」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“方便”。",
+                  "meaningZh": "这个城市很方便。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "便利",
                       "kana": "べんり",
                       "desc": "方便"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很方便。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-009-1",
-                "sentence": "これは「不便」です。",
+                "sentence": "この町は不便です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ふべん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“不方便”。",
+                  "meaningZh": "这个城市很不方便。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "不便",
                       "kana": "ふべん",
                       "desc": "不方便"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很不方便。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-010-1",
-                "sentence": "これは「元気」です。",
+                "sentence": "今日は元気です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「げんき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“精神；健康”。",
+                  "meaningZh": "今天很有精神。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "元気",
                       "kana": "げんき",
                       "desc": "精神；健康"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 元気です",
+                    "meaningZh": "今天很有精神。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-011-1",
-                "sentence": "これは「大丈夫」です。",
+                "sentence": "この町は大丈夫です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「だいじょうぶ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“没关系；不要紧”。",
+                  "meaningZh": "这个城市很没关系；不要紧。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "大丈夫",
                       "kana": "だいじょうぶ",
                       "desc": "没关系；不要紧"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很没关系；不要紧。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-012-1",
-                "sentence": "これは「大切」です。",
+                "sentence": "この町は大切です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「たいせつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“重要；珍贵”。",
+                  "meaningZh": "这个城市很重要；珍贵。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "大切",
                       "kana": "たいせつ",
                       "desc": "重要；珍贵"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很重要；珍贵。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-013-1",
-                "sentence": "これは「簡単」です。",
+                "sentence": "この町は簡単です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かんたん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“简单”。",
+                  "meaningZh": "这个城市很简单。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "簡単",
                       "kana": "かんたん",
                       "desc": "简单"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很简单。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-014-1",
-                "sentence": "これは「親切」です。",
+                "sentence": "この町は親切です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しんせつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“亲切”。",
+                  "meaningZh": "这个城市很亲切。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "親切",
                       "kana": "しんせつ",
                       "desc": "亲切"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很亲切。"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-015-1",
-                "sentence": "これは「きれい」です。",
+                "sentence": "この町はきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きれい」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“漂亮；干净”。",
+                  "meaningZh": "这个城市很漂亮；干净。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "きれい",
                       "kana": "きれい",
                       "desc": "漂亮；干净"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很漂亮；干净。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-016-1",
-                "sentence": "これは「暇」です。",
+                "sentence": "今日は暇です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ひま」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“有空；闲”。",
+                  "meaningZh": "今天有空。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "暇",
                       "kana": "ひま",
                       "desc": "有空；闲"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は 暇です",
+                    "meaningZh": "今天有空。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-017-1",
-                "sentence": "これは「残念」です。",
+                "sentence": "この町は残念です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ざんねん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“遗憾”。",
+                  "meaningZh": "这个城市很遗憾。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "残念",
                       "kana": "ざんねん",
                       "desc": "遗憾"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很遗憾。"
                   }
                 }
               }
@@ -1407,37 +1152,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-018-1",
-                "sentence": "これは「必要」です。",
+                "sentence": "この町は必要です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ひつよう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“必要”。",
+                  "meaningZh": "这个城市很必要。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "必要",
                       "kana": "ひつよう",
                       "desc": "必要"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很必要。"
                   }
                 }
               }
@@ -1483,37 +1213,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-019-1",
-                "sentence": "これは「同じ」です。",
+                "sentence": "この町は同じです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「おなじ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“相同”。",
+                  "meaningZh": "这个城市很相同。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "同じ",
                       "kana": "おなじ",
                       "desc": "相同"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很相同。"
                   }
                 }
               }
@@ -1559,37 +1274,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-020-1",
-                "sentence": "これは「特別」です。",
+                "sentence": "この町は特別です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「とくべつ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“特别”。",
+                  "meaningZh": "这个城市很特别。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "特別",
                       "kana": "とくべつ",
                       "desc": "特别"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很特别。"
                   }
                 }
               }
@@ -1635,37 +1335,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-021-1",
-                "sentence": "これは「自由」です。",
+                "sentence": "この町は自由です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「じゆう」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“自由”。",
+                  "meaningZh": "这个城市很自由。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "自由",
                       "kana": "じゆう",
                       "desc": "自由"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很自由。"
                   }
                 }
               }
@@ -1711,37 +1396,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-022-1",
-                "sentence": "これは「下手」です。",
+                "sentence": "彼は料理が下手です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「へた」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“笨拙”。",
+                  "meaningZh": "他不擅长做饭。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "下手",
                       "kana": "へた",
                       "desc": "笨拙"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が 下手です",
+                    "meaningZh": "他不擅长做饭。"
                   }
                 }
               }
@@ -1787,37 +1457,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-023-1",
-                "sentence": "これは「変」です。",
+                "sentence": "この町は変です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「へん」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“奇怪”。",
+                  "meaningZh": "这个城市很奇怪。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "変",
                       "kana": "へん",
                       "desc": "奇怪"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很奇怪。"
                   }
                 }
               }
@@ -1863,37 +1518,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-024-1",
-                "sentence": "これは「まじめ」です。",
+                "sentence": "この町はまじめです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「まじめ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“认真”。",
+                  "meaningZh": "这个城市很认真。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "まじめ",
                       "kana": "まじめ",
                       "desc": "认真"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "这个城市很认真。"
                   }
                 }
               }

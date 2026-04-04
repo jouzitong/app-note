@@ -115,37 +115,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-001-1",
-                "sentence": "これは「天気」です。",
+                "sentence": "この季節は天気がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「てんき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“天气”。",
+                  "meaningZh": "这个季节的天气很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "天気",
                       "kana": "てんき",
                       "desc": "天气"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的天气很美。"
                   }
                 }
               }
@@ -191,37 +176,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-002-1",
-                "sentence": "これは「晴れ」です。",
+                "sentence": "この季節は晴れがきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はれ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“晴天”。",
+                  "meaningZh": "这个季节的晴天很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "晴れ",
                       "kana": "はれ",
                       "desc": "晴天"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的晴天很美。"
                   }
                 }
               }
@@ -267,37 +237,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-003-1",
-                "sentence": "これは「雨」です。",
+                "sentence": "この季節は雨がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あめ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“雨”。",
+                  "meaningZh": "这个季节的雨很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "雨",
                       "kana": "あめ",
                       "desc": "雨"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的雨很美。"
                   }
                 }
               }
@@ -343,37 +298,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-004-1",
-                "sentence": "これは「雪」です。",
+                "sentence": "この季節は雪がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ゆき」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“雪”。",
+                  "meaningZh": "这个季节的雪很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "雪",
                       "kana": "ゆき",
                       "desc": "雪"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的雪很美。"
                   }
                 }
               }
@@ -419,37 +359,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-005-1",
-                "sentence": "これは「風」です。",
+                "sentence": "この季節は風がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かぜ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“风”。",
+                  "meaningZh": "这个季节的风很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "風",
                       "kana": "かぜ",
                       "desc": "风"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的风很美。"
                   }
                 }
               }
@@ -495,37 +420,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-006-1",
-                "sentence": "これは「空」です。",
+                "sentence": "この季節は空がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「そら」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“天空”。",
+                  "meaningZh": "这个季节的天空很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "空",
                       "kana": "そら",
                       "desc": "天空"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的天空很美。"
                   }
                 }
               }
@@ -571,37 +481,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-007-1",
-                "sentence": "これは「雲」です。",
+                "sentence": "この季節は雲がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くも」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“云”。",
+                  "meaningZh": "这个季节的云很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "雲",
                       "kana": "くも",
                       "desc": "云"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的云很美。"
                   }
                 }
               }
@@ -647,37 +542,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-008-1",
-                "sentence": "これは「山」です。",
+                "sentence": "この季節は山がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「やま」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“山”。",
+                  "meaningZh": "这个季节的山很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "山",
                       "kana": "やま",
                       "desc": "山"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的山很美。"
                   }
                 }
               }
@@ -723,37 +603,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-009-1",
-                "sentence": "これは「川」です。",
+                "sentence": "この季節は川がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「かわ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“河”。",
+                  "meaningZh": "这个季节的河很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "川",
                       "kana": "かわ",
                       "desc": "河"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的河很美。"
                   }
                 }
               }
@@ -799,37 +664,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-010-1",
-                "sentence": "これは「海」です。",
+                "sentence": "この季節は海がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「うみ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“海”。",
+                  "meaningZh": "这个季节的海很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "海",
                       "kana": "うみ",
                       "desc": "海"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的海很美。"
                   }
                 }
               }
@@ -875,37 +725,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-011-1",
-                "sentence": "これは「木」です。",
+                "sentence": "この季節は木がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「き」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“树”。",
+                  "meaningZh": "这个季节的树很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "木",
                       "kana": "き",
                       "desc": "树"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的树很美。"
                   }
                 }
               }
@@ -951,37 +786,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-012-1",
-                "sentence": "これは「花」です。",
+                "sentence": "この季節は花がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「はな」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“花”。",
+                  "meaningZh": "这个季节的花很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "花",
                       "kana": "はな",
                       "desc": "花"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的花很美。"
                   }
                 }
               }
@@ -1027,37 +847,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-013-1",
-                "sentence": "これは「草」です。",
+                "sentence": "この季節は草がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くさ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“草”。",
+                  "meaningZh": "这个季节的草很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "草",
                       "kana": "くさ",
                       "desc": "草"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的草很美。"
                   }
                 }
               }
@@ -1103,37 +908,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-014-1",
-                "sentence": "これは「犬」です。",
+                "sentence": "この季節は犬がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いぬ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“狗”。",
+                  "meaningZh": "这个季节的狗很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "犬",
                       "kana": "いぬ",
                       "desc": "狗"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的狗很美。"
                   }
                 }
               }
@@ -1179,37 +969,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-015-1",
-                "sentence": "これは「猫」です。",
+                "sentence": "この季節は猫がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ねこ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“猫”。",
+                  "meaningZh": "这个季节的猫很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "猫",
                       "kana": "ねこ",
                       "desc": "猫"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的猫很美。"
                   }
                 }
               }
@@ -1255,37 +1030,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-016-1",
-                "sentence": "これは「鳥」です。",
+                "sentence": "この季節は鳥がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「とり」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“鸟”。",
+                  "meaningZh": "这个季节的鸟很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "鳥",
                       "kana": "とり",
                       "desc": "鸟"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的鸟很美。"
                   }
                 }
               }
@@ -1331,37 +1091,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-017-1",
-                "sentence": "これは「魚」です。",
+                "sentence": "この季節は魚がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「さかな」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“鱼”。",
+                  "meaningZh": "这个季节的鱼很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "魚",
                       "kana": "さかな",
                       "desc": "鱼"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的鱼很美。"
                   }
                 }
               }
@@ -1407,37 +1152,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-018-1",
-                "sentence": "これは「赤」です。",
+                "sentence": "この季節は赤がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あか」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“红色”。",
+                  "meaningZh": "这个季节的红色很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "赤",
                       "kana": "あか",
                       "desc": "红色"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的红色很美。"
                   }
                 }
               }
@@ -1483,37 +1213,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-019-1",
-                "sentence": "これは「青」です。",
+                "sentence": "この季節は青がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「あお」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“蓝色；青色”。",
+                  "meaningZh": "这个季节的蓝色；青色很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "青",
                       "kana": "あお",
                       "desc": "蓝色；青色"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的蓝色；青色很美。"
                   }
                 }
               }
@@ -1559,37 +1274,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-020-1",
-                "sentence": "これは「白」です。",
+                "sentence": "この季節は白がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「しろ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“白色”。",
+                  "meaningZh": "这个季节的白色很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "白",
                       "kana": "しろ",
                       "desc": "白色"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的白色很美。"
                   }
                 }
               }
@@ -1635,37 +1335,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-021-1",
-                "sentence": "これは「黒」です。",
+                "sentence": "この季節は黒がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「くろ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“黑色”。",
+                  "meaningZh": "这个季节的黑色很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "黒",
                       "kana": "くろ",
                       "desc": "黑色"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的黑色很美。"
                   }
                 }
               }
@@ -1711,37 +1396,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-022-1",
-                "sentence": "これは「黄色」です。",
+                "sentence": "この季節は黄色がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「きいろ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“黄色”。",
+                  "meaningZh": "这个季节的黄色很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "黄色",
                       "kana": "きいろ",
                       "desc": "黄色"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的黄色很美。"
                   }
                 }
               }
@@ -1787,37 +1457,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-023-1",
-                "sentence": "これは「茶色」です。",
+                "sentence": "この季節は茶色がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「ちゃいろ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“棕色”。",
+                  "meaningZh": "这个季节的棕色很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "茶色",
                       "kana": "ちゃいろ",
                       "desc": "棕色"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的棕色很美。"
                   }
                 }
               }
@@ -1863,37 +1518,22 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-nature-024-1",
-                "sentence": "これは「色」です。",
+                "sentence": "この季節は色がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "これは「いろ」です。",
+                  "reading": "",
                   "romaji": "",
-                  "meaningZh": "这是“颜色”。",
+                  "meaningZh": "这个季节的颜色很美。",
                   "wordGrammarBreakdown": [
-                    {
-                      "word": "これ",
-                      "kana": "これ",
-                      "desc": "这个"
-                    },
-                    {
-                      "word": "は",
-                      "kana": "",
-                      "desc": "助词。提示主题。"
-                    },
                     {
                       "word": "色",
                       "kana": "いろ",
                       "desc": "颜色"
-                    },
-                    {
-                      "word": "です",
-                      "kana": "",
-                      "desc": "判断助动词。表示“是……”。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "これは「A」です",
-                    "meaningZh": "这是“A”"
+                    "pattern": "A が きれいです",
+                    "meaningZh": "这个季节的颜色很美。"
                   }
                 }
               }
