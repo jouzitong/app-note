@@ -1,0 +1,5452 @@
+{
+  "meta": {
+    "version": "1.0",
+    "source": "JLPT_N5_高频优先学习版_完整版.adoc",
+    "importId": "20260331-jlptn5-number-full",
+    "createdAt": "2026-03-31T16:45:00+08:00",
+    "options": {
+      "dryRun": false,
+      "upsert": true,
+      "strict": true
+    }
+  },
+  "payload": {
+    "noteNodes": [
+      {
+        "nodeKey": "node-root-jp",
+        "parentNodeKey": null,
+        "noteNode": {
+          "title": "日语学习",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card",
+        "parentNodeKey": "node-root-jp",
+        "noteNode": {
+          "title": "09 词汇体系（主题+频率）",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5",
+        "parentNodeKey": "jp-study-09-word-card",
+        "noteNode": {
+          "title": "N5 核心词汇",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5-num",
+        "parentNodeKey": "jp-study-09-word-card-N5",
+        "noteNode": {
+          "title": "数字・数量・顺序",
+          "noteType": "WORD_CARD",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": {
+          "paragraphs": [
+            "数字・数量・顺序（完整版，47词）"
+          ],
+          "bullets": [
+            "N5",
+            "高频优先",
+            "含例句解释"
+          ]
+        }
+      }
+    ],
+    "wordCards": [
+      {
+        "id": "jlpt-n5-num-001",
+        "word": {
+          "text": "一",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "いち",
+              "zh": "一",
+              "romaji": "ichi"
+            },
+            "description": "数字。一。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-001-1",
+                "sentence": "りんごが一つあります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "りんごがひとつあります。",
+                  "romaji": "ringoga hitotsu arimasu .",
+                  "meaningZh": "有一个苹果。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "りんご",
+                      "kana": "りんご",
+                      "desc": "苹果"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "一つ",
+                      "kana": "ひとつ",
+                      "desc": "一个"
+                    },
+                    {
+                      "word": "あり",
+                      "kana": "あり",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "半",
+                "kana": "はん"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "三",
+                "kana": "さん"
+              },
+              {
+                "text": "四",
+                "kana": "よん"
+              },
+              {
+                "text": "五",
+                "kana": "ご"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-002",
+        "word": {
+          "text": "二",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "に",
+              "zh": "二",
+              "romaji": "ni"
+            },
+            "description": "数字。二。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-002-1",
+                "sentence": "ペンが二本あります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "ぺんがにほんあります。",
+                  "romaji": "pen ga nihon arimasu .",
+                  "meaningZh": "有两支笔。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "ペン",
+                      "kana": "ぺん",
+                      "desc": "笔"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "二",
+                      "kana": "に",
+                      "desc": "二"
+                    },
+                    {
+                      "word": "本",
+                      "kana": "ほん",
+                      "desc": "本；册"
+                    },
+                    {
+                      "word": "あり",
+                      "kana": "あり",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "一",
+                "kana": "いち"
+              },
+              {
+                "text": "三",
+                "kana": "さん"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "四",
+                "kana": "よん"
+              },
+              {
+                "text": "五",
+                "kana": "ご"
+              },
+              {
+                "text": "六",
+                "kana": "ろく"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-003",
+        "word": {
+          "text": "三",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "さん",
+              "zh": "三",
+              "romaji": "san"
+            },
+            "description": "数字。三。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-003-1",
+                "sentence": "三時に駅で会いましょう。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "さんじにえきであいましょう。",
+                  "romaji": "sanji ni eki de ai mashou .",
+                  "meaningZh": "我们三点在车站见吧。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "三",
+                      "kana": "さん",
+                      "desc": "三"
+                    },
+                    {
+                      "word": "時",
+                      "kana": "じ",
+                      "desc": "点钟"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "駅",
+                      "kana": "えき",
+                      "desc": "车站"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。表示动作场所或手段。"
+                    },
+                    {
+                      "word": "会い",
+                      "kana": "あい",
+                      "desc": "见面（连用形）"
+                    },
+                    {
+                      "word": "ましょ",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    },
+                    {
+                      "word": "う",
+                      "kana": "",
+                      "desc": "助动词。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "V ましょう",
+                    "meaningZh": "……吧"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "四",
+                "kana": "よん"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一",
+                "kana": "いち"
+              },
+              {
+                "text": "五",
+                "kana": "ご"
+              },
+              {
+                "text": "六",
+                "kana": "ろく"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-004",
+        "word": {
+          "text": "四",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "よん／し",
+              "zh": "四",
+              "romaji": "yon / shi"
+            },
+            "description": "数字。四。一般数数和读电话号码更常用「よん」；「し」多见于固定词或音读组合。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-004-1",
+                "sentence": "四階に図書館があります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "よんかいにとしょかんがあります。",
+                  "romaji": "yonkai ni toshokan gaarimasu .",
+                  "meaningZh": "四楼有图书馆。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "四",
+                      "kana": "よん",
+                      "desc": "四"
+                    },
+                    {
+                      "word": "階",
+                      "kana": "かい",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "図書館",
+                      "kana": "としょかん",
+                      "desc": "图书馆"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "あり",
+                      "kana": "あり",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "三",
+                "kana": "さん"
+              },
+              {
+                "text": "五",
+                "kana": "ご"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一",
+                "kana": "いち"
+              },
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "六",
+                "kana": "ろく"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-005",
+        "word": {
+          "text": "五",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ご",
+              "zh": "五",
+              "romaji": "go"
+            },
+            "description": "数字。五。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-005-1",
+                "sentence": "五分だけ待ってください。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "ごぶだけまってください。",
+                  "romaji": "gobu dake matsu tekudasai .",
+                  "meaningZh": "请只等五分钟。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "五",
+                      "kana": "ご",
+                      "desc": "五"
+                    },
+                    {
+                      "word": "分",
+                      "kana": "ふん",
+                      "desc": "分钟"
+                    },
+                    {
+                      "word": "だけ",
+                      "kana": "",
+                      "desc": "助词。表示限定“仅”。"
+                    },
+                    {
+                      "word": "待っ",
+                      "kana": "まっ",
+                      "desc": "等待（连用形）"
+                    },
+                    {
+                      "word": "て",
+                      "kana": "",
+                      "desc": "助词。"
+                    },
+                    {
+                      "word": "ください",
+                      "kana": "ください",
+                      "desc": "该词中文释义待补充。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "V てください",
+                    "meaningZh": "请……"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "四",
+                "kana": "よん"
+              },
+              {
+                "text": "六",
+                "kana": "ろく"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一",
+                "kana": "いち"
+              },
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "三",
+                "kana": "さん"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-006",
+        "word": {
+          "text": "六",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ろく",
+              "zh": "六",
+              "romaji": "roku"
+            },
+            "description": "数字。六。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-006-1",
+                "sentence": "六月は雨が多いです。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "ろくがつはあめがおおいです。",
+                  "romaji": "rokugatsu ha ame ga ooi desu .",
+                  "meaningZh": "六月雨很多。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "六月",
+                      "kana": "ろくがつ",
+                      "desc": "六月"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "雨",
+                      "kana": "あめ",
+                      "desc": "雨"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "多い",
+                      "kana": "おおい",
+                      "desc": "多"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "五",
+                "kana": "ご"
+              },
+              {
+                "text": "七",
+                "kana": "なな"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一",
+                "kana": "いち"
+              },
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "三",
+                "kana": "さん"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-007",
+        "word": {
+          "text": "七",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "なな／しち",
+              "zh": "七",
+              "romaji": "nana / shichi"
+            },
+            "description": "数字。七。单独数数更常用「なな」；「しち」多见于复合词或部分固定说法。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-007-1",
+                "sentence": "七時に起きます。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "しちじにおきます。",
+                  "romaji": "shichiji ni oki masu .",
+                  "meaningZh": "七点起床。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "七",
+                      "kana": "なな",
+                      "desc": "七"
+                    },
+                    {
+                      "word": "時",
+                      "kana": "じ",
+                      "desc": "点钟"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "起き",
+                      "kana": "おき",
+                      "desc": "起床（连用形）"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "六",
+                "kana": "ろく"
+              },
+              {
+                "text": "八",
+                "kana": "はち"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一",
+                "kana": "いち"
+              },
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "三",
+                "kana": "さん"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-008",
+        "word": {
+          "text": "八",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "はち",
+              "zh": "八",
+              "romaji": "hachi"
+            },
+            "description": "数字。八。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-008-1",
+                "sentence": "八ページを読んでください。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "はちぺーじをよんでください。",
+                  "romaji": "hachi peeji wo yonde kudasai .",
+                  "meaningZh": "请读第八页。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "八",
+                      "kana": "はち",
+                      "desc": "八"
+                    },
+                    {
+                      "word": "ページ",
+                      "kana": "ぺーじ",
+                      "desc": "页"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。标记宾语。"
+                    },
+                    {
+                      "word": "読ん",
+                      "kana": "よん",
+                      "desc": "读（连用形）"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。表示动作场所或手段。"
+                    },
+                    {
+                      "word": "ください",
+                      "kana": "ください",
+                      "desc": "该词中文释义待补充。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "V てください",
+                    "meaningZh": "请……"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "七",
+                "kana": "なな"
+              },
+              {
+                "text": "九",
+                "kana": "きゅう"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一",
+                "kana": "いち"
+              },
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "三",
+                "kana": "さん"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-009",
+        "word": {
+          "text": "九",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "きゅう／く",
+              "zh": "九",
+              "romaji": "kyuu / ku"
+            },
+            "description": "数字。九。一般更常用「きゅう」；「く」多见于部分固定搭配。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-009-1",
+                "sentence": "九番のバスに乗ります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "きゅうばんのばすにのります。",
+                  "romaji": "kyuu ban no basu ni nori masu .",
+                  "meaningZh": "我坐9路公交车。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "九",
+                      "kana": "きゅう",
+                      "desc": "九"
+                    },
+                    {
+                      "word": "番",
+                      "kana": "ばん",
+                      "desc": "号；番"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。表示所属或修饰。"
+                    },
+                    {
+                      "word": "バス",
+                      "kana": "ばす",
+                      "desc": "公交车"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "乗り",
+                      "kana": "のり",
+                      "desc": "乘坐（连用形）"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "八",
+                "kana": "はち"
+              },
+              {
+                "text": "十",
+                "kana": "じゅう"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一",
+                "kana": "いち"
+              },
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "三",
+                "kana": "さん"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-010",
+        "word": {
+          "text": "十",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "じゅう",
+              "zh": "十",
+              "romaji": "juu"
+            },
+            "description": "数字。十。作为基数或位值（如十、十二、二十）时读「じゅう」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-010-1",
+                "sentence": "彼は十歳です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "かれはじゅうさいです。",
+                  "romaji": "kareha juusai desu .",
+                  "meaningZh": "他十岁。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "十",
+                      "kana": "じゅう",
+                      "desc": "十"
+                    },
+                    {
+                      "word": "歳",
+                      "kana": "さい",
+                      "desc": "岁"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "九",
+                "kana": "きゅう"
+              },
+              {
+                "text": "百",
+                "kana": "ひゃく"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一",
+                "kana": "いち"
+              },
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "三",
+                "kana": "さん"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-011",
+        "word": {
+          "text": "百",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ひゃく",
+              "zh": "百",
+              "romaji": "hyaku"
+            },
+            "description": "数字。百。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-011-1",
+                "sentence": "この本は百ページあります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "このほんはひゃくぺーじあります。",
+                  "romaji": "kono hon ha hyaku peeji arimasu .",
+                  "meaningZh": "这本书有一百页。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "この",
+                      "kana": "この",
+                      "desc": "这"
+                    },
+                    {
+                      "word": "本",
+                      "kana": "ほん",
+                      "desc": "本；册"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "百",
+                      "kana": "ひゃく",
+                      "desc": "百"
+                    },
+                    {
+                      "word": "ページ",
+                      "kana": "ぺーじ",
+                      "desc": "页"
+                    },
+                    {
+                      "word": "あり",
+                      "kana": "あり",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "十",
+                "kana": "じゅう"
+              },
+              {
+                "text": "千",
+                "kana": "せん"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一",
+                "kana": "いち"
+              },
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "三",
+                "kana": "さん"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-012",
+        "word": {
+          "text": "千",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "せん",
+              "zh": "千",
+              "romaji": "sen"
+            },
+            "description": "数字。千。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-012-1",
+                "sentence": "この町には千人ぐらい住んでいます。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "このまちにはせんにんぐらいすんでいます。",
+                  "romaji": "kono machi niha sennin gurai sun deimasu .",
+                  "meaningZh": "这个镇大约住着一千人。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "この",
+                      "kana": "この",
+                      "desc": "这"
+                    },
+                    {
+                      "word": "町",
+                      "kana": "まち",
+                      "desc": "城镇"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "千",
+                      "kana": "せん",
+                      "desc": "千"
+                    },
+                    {
+                      "word": "人",
+                      "kana": "にん",
+                      "desc": "人"
+                    },
+                    {
+                      "word": "ぐらい",
+                      "kana": "",
+                      "desc": "助词。表示大约。"
+                    },
+                    {
+                      "word": "住ん",
+                      "kana": "すん",
+                      "desc": "居住（连用形）"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。表示动作场所或手段。"
+                    },
+                    {
+                      "word": "い",
+                      "kana": "い",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "百",
+                "kana": "ひゃく"
+              },
+              {
+                "text": "万",
+                "kana": "まん"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一",
+                "kana": "いち"
+              },
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "三",
+                "kana": "さん"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-013",
+        "word": {
+          "text": "万",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "まん",
+              "zh": "万",
+              "romaji": "man"
+            },
+            "description": "数字。万。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-013-1",
+                "sentence": "この車は百万円です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "このくるまはひゃくまんえんです。",
+                  "romaji": "kono kuruma ha hyakuman'en desu .",
+                  "meaningZh": "这辆车是一百万日元。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "この",
+                      "kana": "この",
+                      "desc": "这"
+                    },
+                    {
+                      "word": "車",
+                      "kana": "くるま",
+                      "desc": "车"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "百",
+                      "kana": "ひゃく",
+                      "desc": "百"
+                    },
+                    {
+                      "word": "万",
+                      "kana": "まん",
+                      "desc": "万"
+                    },
+                    {
+                      "word": "円",
+                      "kana": "えん",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "千",
+                "kana": "せん"
+              },
+              {
+                "text": "零",
+                "kana": "れい"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一",
+                "kana": "いち"
+              },
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "三",
+                "kana": "さん"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-014",
+        "word": {
+          "text": "零",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "れい／ゼロ",
+              "zh": "零",
+              "romaji": "rei / zero"
+            },
+            "description": "数字。零。正式或数学语境常用「れい」；口语和外来语语境常用「ゼロ」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-014-1",
+                "sentence": "テストは零点でした。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "てすとはれいてんでした。",
+                  "romaji": "tesuto ha reiten deshita .",
+                  "meaningZh": "考试是零分。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "テスト",
+                      "kana": "てすと",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "零",
+                      "kana": "れい",
+                      "desc": "零"
+                    },
+                    {
+                      "word": "点",
+                      "kana": "てん",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "でし",
+                      "kana": "",
+                      "desc": "判断助动词「です」的连用形式。"
+                    },
+                    {
+                      "word": "た",
+                      "kana": "",
+                      "desc": "助动词。表示过去。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "万",
+                "kana": "まん"
+              },
+              {
+                "text": "半",
+                "kana": "はん"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一",
+                "kana": "いち"
+              },
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "三",
+                "kana": "さん"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-015",
+        "word": {
+          "text": "半",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数字",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "はん",
+              "zh": "半",
+              "romaji": "han"
+            },
+            "description": "数字。半。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-015-1",
+                "sentence": "今は三時半です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "いまはさんじはんです。",
+                  "romaji": "ima ha sanji han desu .",
+                  "meaningZh": "现在是三点半。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "今",
+                      "kana": "いま",
+                      "desc": "现在"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "三",
+                      "kana": "さん",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "時半",
+                      "kana": "じはん",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "零",
+                "kana": "れい"
+              },
+              {
+                "text": "一",
+                "kana": "いち"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "二",
+                "kana": "に"
+              },
+              {
+                "text": "三",
+                "kana": "さん"
+              },
+              {
+                "text": "四",
+                "kana": "よん"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-016",
+        "word": {
+          "text": "一つ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ひとつ",
+              "zh": "一个",
+              "romaji": "hitotsu"
+            },
+            "description": "数量。一个。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-016-1",
+                "sentence": "りんごが一つあります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "りんごがひとつあります。",
+                  "romaji": "ringoga hitotsu arimasu .",
+                  "meaningZh": "有一个苹果。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "りんご",
+                      "kana": "りんご",
+                      "desc": "苹果"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "一つ",
+                      "kana": "ひとつ",
+                      "desc": "一个"
+                    },
+                    {
+                      "word": "あり",
+                      "kana": "あり",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "二つ",
+                "kana": "ふたつ"
+              },
+              {
+                "text": "十",
+                "kana": "とお"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "三つ",
+                "kana": "みっつ"
+              },
+              {
+                "text": "四つ",
+                "kana": "よっつ"
+              },
+              {
+                "text": "五つ",
+                "kana": "いつつ"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-017",
+        "word": {
+          "text": "二つ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ふたつ",
+              "zh": "两个",
+              "romaji": "futatsu"
+            },
+            "description": "数量。两个。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-017-1",
+                "sentence": "コップが二つあります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "こっぷがふたつあります。",
+                  "romaji": "koppu ga futatsu arimasu .",
+                  "meaningZh": "有两个杯子。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "コップ",
+                      "kana": "こっぷ",
+                      "desc": "杯子"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "二つ",
+                      "kana": "ふたつ",
+                      "desc": "两个"
+                    },
+                    {
+                      "word": "あり",
+                      "kana": "あり",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "一つ",
+                "kana": "ひとつ"
+              },
+              {
+                "text": "三つ",
+                "kana": "みっつ"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "四つ",
+                "kana": "よっつ"
+              },
+              {
+                "text": "五つ",
+                "kana": "いつつ"
+              },
+              {
+                "text": "六つ",
+                "kana": "むっつ"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-018",
+        "word": {
+          "text": "三つ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "みっつ",
+              "zh": "三个",
+              "romaji": "mittsu"
+            },
+            "description": "数量。三个。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-018-1",
+                "sentence": "質問が三つあります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "しつもんがみっつあります。",
+                  "romaji": "shitsumon ga mittsu arimasu .",
+                  "meaningZh": "有三个问题。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "質問",
+                      "kana": "しつもん",
+                      "desc": "问题"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "三つ",
+                      "kana": "みっつ",
+                      "desc": "三个"
+                    },
+                    {
+                      "word": "あり",
+                      "kana": "あり",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "二つ",
+                "kana": "ふたつ"
+              },
+              {
+                "text": "四つ",
+                "kana": "よっつ"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一つ",
+                "kana": "ひとつ"
+              },
+              {
+                "text": "五つ",
+                "kana": "いつつ"
+              },
+              {
+                "text": "六つ",
+                "kana": "むっつ"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-019",
+        "word": {
+          "text": "四つ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "よっつ",
+              "zh": "四个",
+              "romaji": "yottsu"
+            },
+            "description": "数量。四个。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-019-1",
+                "sentence": "箱が四つあります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "はこがよつあります。",
+                  "romaji": "hako ga yotsu arimasu .",
+                  "meaningZh": "有四个箱子。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "箱",
+                      "kana": "はこ",
+                      "desc": "箱子"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "四つ",
+                      "kana": "よっつ",
+                      "desc": "四个"
+                    },
+                    {
+                      "word": "あり",
+                      "kana": "あり",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "三つ",
+                "kana": "みっつ"
+              },
+              {
+                "text": "五つ",
+                "kana": "いつつ"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一つ",
+                "kana": "ひとつ"
+              },
+              {
+                "text": "二つ",
+                "kana": "ふたつ"
+              },
+              {
+                "text": "六つ",
+                "kana": "むっつ"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-020",
+        "word": {
+          "text": "五つ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "いつつ",
+              "zh": "五个",
+              "romaji": "itsutsu"
+            },
+            "description": "数量。五个。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-020-1",
+                "sentence": "卵を五つ買いました。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "たまごをいつつかいました。",
+                  "romaji": "tamago wo itsutsu kai mashita .",
+                  "meaningZh": "买了五个鸡蛋。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "卵",
+                      "kana": "たまご",
+                      "desc": "鸡蛋"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。标记宾语。"
+                    },
+                    {
+                      "word": "五つ",
+                      "kana": "いつつ",
+                      "desc": "五个"
+                    },
+                    {
+                      "word": "買い",
+                      "kana": "かい",
+                      "desc": "买（连用形）"
+                    },
+                    {
+                      "word": "まし",
+                      "kana": "",
+                      "desc": "助动词「ます」的连用形式。"
+                    },
+                    {
+                      "word": "た",
+                      "kana": "",
+                      "desc": "助动词。表示过去。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "四つ",
+                "kana": "よっつ"
+              },
+              {
+                "text": "六つ",
+                "kana": "むっつ"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一つ",
+                "kana": "ひとつ"
+              },
+              {
+                "text": "二つ",
+                "kana": "ふたつ"
+              },
+              {
+                "text": "三つ",
+                "kana": "みっつ"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-021",
+        "word": {
+          "text": "六つ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "むっつ",
+              "zh": "六个",
+              "romaji": "muttsu"
+            },
+            "description": "数量。六个。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-021-1",
+                "sentence": "机が六つあります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "つくえがむつあります。",
+                  "romaji": "tsukue ga mutsu arimasu .",
+                  "meaningZh": "有六张桌子。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "机",
+                      "kana": "つくえ",
+                      "desc": "桌子"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "六つ",
+                      "kana": "むっつ",
+                      "desc": "六个"
+                    },
+                    {
+                      "word": "あり",
+                      "kana": "あり",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "五つ",
+                "kana": "いつつ"
+              },
+              {
+                "text": "七つ",
+                "kana": "ななつ"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一つ",
+                "kana": "ひとつ"
+              },
+              {
+                "text": "二つ",
+                "kana": "ふたつ"
+              },
+              {
+                "text": "三つ",
+                "kana": "みっつ"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-022",
+        "word": {
+          "text": "七つ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ななつ",
+              "zh": "七个",
+              "romaji": "nanatsu"
+            },
+            "description": "数量。七个。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-022-1",
+                "sentence": "星が七つ見えます。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "ほしがななつみえます。",
+                  "romaji": "hoshi ga nanatsu mie masu .",
+                  "meaningZh": "看得见七颗星星。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "星",
+                      "kana": "ほし",
+                      "desc": "星星"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "七つ",
+                      "kana": "ななつ",
+                      "desc": "七个"
+                    },
+                    {
+                      "word": "見え",
+                      "kana": "みえ",
+                      "desc": "看得见（连用形）"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "六つ",
+                "kana": "むっつ"
+              },
+              {
+                "text": "八つ",
+                "kana": "やっつ"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一つ",
+                "kana": "ひとつ"
+              },
+              {
+                "text": "二つ",
+                "kana": "ふたつ"
+              },
+              {
+                "text": "三つ",
+                "kana": "みっつ"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-023",
+        "word": {
+          "text": "八つ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "やっつ",
+              "zh": "八个",
+              "romaji": "yattsu"
+            },
+            "description": "数量。八个。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-023-1",
+                "sentence": "今日は宿題が八つあります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "こんにちはしゅくだいがやつあります。",
+                  "romaji": "konnichiha shukudai ga yatsu arimasu .",
+                  "meaningZh": "今天有八项作业。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "宿題",
+                      "kana": "しゅくだい",
+                      "desc": "作业"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "八つ",
+                      "kana": "やっつ",
+                      "desc": "八个"
+                    },
+                    {
+                      "word": "あり",
+                      "kana": "あり",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "七つ",
+                "kana": "ななつ"
+              },
+              {
+                "text": "九つ",
+                "kana": "ここのつ"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一つ",
+                "kana": "ひとつ"
+              },
+              {
+                "text": "二つ",
+                "kana": "ふたつ"
+              },
+              {
+                "text": "三つ",
+                "kana": "みっつ"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-024",
+        "word": {
+          "text": "九つ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ここのつ",
+              "zh": "九个",
+              "romaji": "kokonotsu"
+            },
+            "description": "数量。九个。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-024-1",
+                "sentence": "九つの国を旅行しました。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "ここのつのくにをりょこうしました。",
+                  "romaji": "kokonotsu no kuni wo ryokou shimashita .",
+                  "meaningZh": "旅行过九个国家。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "九つ",
+                      "kana": "ここのつ",
+                      "desc": "九个"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。表示所属或修饰。"
+                    },
+                    {
+                      "word": "国",
+                      "kana": "くに",
+                      "desc": "国家"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。标记宾语。"
+                    },
+                    {
+                      "word": "旅行",
+                      "kana": "りょこう",
+                      "desc": "旅行"
+                    },
+                    {
+                      "word": "し",
+                      "kana": "し",
+                      "desc": "做（する连用形）"
+                    },
+                    {
+                      "word": "まし",
+                      "kana": "",
+                      "desc": "助动词「ます」的连用形式。"
+                    },
+                    {
+                      "word": "た",
+                      "kana": "",
+                      "desc": "助动词。表示过去。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "八つ",
+                "kana": "やっつ"
+              },
+              {
+                "text": "十",
+                "kana": "とお"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一つ",
+                "kana": "ひとつ"
+              },
+              {
+                "text": "二つ",
+                "kana": "ふたつ"
+              },
+              {
+                "text": "三つ",
+                "kana": "みっつ"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-025",
+        "word": {
+          "text": "十",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "とお",
+              "zh": "十个",
+              "romaji": "too"
+            },
+            "description": "数量。十个。用于日语固有数法计数（ひとつ、ふたつ……とお）时读「とお」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-025-1",
+                "sentence": "子どもが一つからとおまで数えました。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "こどもがひとつからとおまでかぞえました。",
+                  "romaji": "kodomo ga hitotsu karatoomade kazoe mashita .",
+                  "meaningZh": "孩子从一数到了十。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "子ども",
+                      "kana": "こども",
+                      "desc": "孩子"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "一つ",
+                      "kana": "ひとつ",
+                      "desc": "一个"
+                    },
+                    {
+                      "word": "から",
+                      "kana": "",
+                      "desc": "助词。表示起点。"
+                    },
+                    {
+                      "word": "とお",
+                      "kana": "とお",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "まで",
+                      "kana": "",
+                      "desc": "助词。表示终点。"
+                    },
+                    {
+                      "word": "数え",
+                      "kana": "かぞえ",
+                      "desc": "数（连用形）"
+                    },
+                    {
+                      "word": "まし",
+                      "kana": "",
+                      "desc": "助动词「ます」的连用形式。"
+                    },
+                    {
+                      "word": "た",
+                      "kana": "",
+                      "desc": "助动词。表示过去。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "九つ",
+                "kana": "ここのつ"
+              },
+              {
+                "text": "一つ",
+                "kana": "ひとつ"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "二つ",
+                "kana": "ふたつ"
+              },
+              {
+                "text": "三つ",
+                "kana": "みっつ"
+              },
+              {
+                "text": "四つ",
+                "kana": "よっつ"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-026",
+        "word": {
+          "text": "一人",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ひとり",
+              "zh": "一个人",
+              "romaji": "hitori"
+            },
+            "description": "数量。一个人。人数计数的不规则读法，读「ひとり」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-026-1",
+                "sentence": "教室に一人います。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "きょうしつにひとりいます。",
+                  "romaji": "kyoushitsu ni hitori imasu .",
+                  "meaningZh": "教室里有一个人。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "教室",
+                      "kana": "きょうしつ",
+                      "desc": "教室"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "一",
+                      "kana": "いち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "人",
+                      "kana": "にん",
+                      "desc": "人"
+                    },
+                    {
+                      "word": "い",
+                      "kana": "い",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "二人",
+                "kana": "ふたり"
+              },
+              {
+                "text": "何人",
+                "kana": "なんにん"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "三人",
+                "kana": "さんにん"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-027",
+        "word": {
+          "text": "二人",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ふたり",
+              "zh": "两个人",
+              "romaji": "futari"
+            },
+            "description": "数量。两个人。人数计数的不规则读法，读「ふたり」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-027-1",
+                "sentence": "私たちは二人で旅行します。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "わたしたちはふたりでりょこうします。",
+                  "romaji": "watashitachi ha futari de ryokou shimasu .",
+                  "meaningZh": "我们两个人去旅行。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "たち",
+                      "kana": "たち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "二",
+                      "kana": "に",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "人",
+                      "kana": "にん",
+                      "desc": "人"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。表示动作场所或手段。"
+                    },
+                    {
+                      "word": "旅行",
+                      "kana": "りょこう",
+                      "desc": "旅行"
+                    },
+                    {
+                      "word": "し",
+                      "kana": "し",
+                      "desc": "做（する连用形）"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "一人",
+                "kana": "ひとり"
+              },
+              {
+                "text": "三人",
+                "kana": "さんにん"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "何人",
+                "kana": "なんにん"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-028",
+        "word": {
+          "text": "三人",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "さんにん",
+              "zh": "三个人",
+              "romaji": "sannin"
+            },
+            "description": "数量。三个人。三人及以上通常按「数字 + にん」构成。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-028-1",
+                "sentence": "三人で写真を撮りました。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "さんにんでしゃしんをとりました。",
+                  "romaji": "sannin de shashin wo tori mashita .",
+                  "meaningZh": "三个人一起拍了照片。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "三",
+                      "kana": "さん",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "人",
+                      "kana": "にん",
+                      "desc": "人"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。表示动作场所或手段。"
+                    },
+                    {
+                      "word": "写真",
+                      "kana": "しゃしん",
+                      "desc": "照片"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。标记宾语。"
+                    },
+                    {
+                      "word": "撮り",
+                      "kana": "とり",
+                      "desc": "拍摄（连用形）"
+                    },
+                    {
+                      "word": "まし",
+                      "kana": "",
+                      "desc": "助动词「ます」的连用形式。"
+                    },
+                    {
+                      "word": "た",
+                      "kana": "",
+                      "desc": "助动词。表示过去。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "二人",
+                "kana": "ふたり"
+              },
+              {
+                "text": "何人",
+                "kana": "なんにん"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一人",
+                "kana": "ひとり"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-029",
+        "word": {
+          "text": "何人",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "数量",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "なんにん",
+              "zh": "几个人",
+              "romaji": "nannin"
+            },
+            "description": "数量。几个人。询问人数时通常读「なんにん」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-029-1",
+                "sentence": "パーティーには何人来ますか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "ぱーてぃーにはなんにんきますか。",
+                  "romaji": "paateii niha nannin kima suka .",
+                  "meaningZh": "聚会会来几个人？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "パーティー",
+                      "kana": "ぱーてぃー",
+                      "desc": "聚会"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "何",
+                      "kana": "なん",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "人",
+                      "kana": "にん",
+                      "desc": "人"
+                    },
+                    {
+                      "word": "来",
+                      "kana": "き",
+                      "desc": "来（连用形）"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    },
+                    {
+                      "word": "か",
+                      "kana": "",
+                      "desc": "助词。表示疑问。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "三人",
+                "kana": "さんにん"
+              },
+              {
+                "text": "一人",
+                "kana": "ひとり"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "二人",
+                "kana": "ふたり"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-030",
+        "word": {
+          "text": "一日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "日期",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ついたち",
+              "zh": "一日；1号",
+              "romaji": "tsuitachi"
+            },
+            "description": "日期。一日；1号。表示“每月1号”时读「ついたち」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-030-1",
+                "sentence": "誕生日は一日です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "たんじょうびはついたちです。",
+                  "romaji": "tanjoubi ha tsuitachi desu .",
+                  "meaningZh": "生日是1号。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "誕生",
+                      "kana": "たんじょう",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "び",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "一",
+                      "kana": "いち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "にち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "二日",
+                "kana": "ふつか"
+              },
+              {
+                "text": "何日",
+                "kana": "なんにち"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "三日",
+                "kana": "みっか"
+              },
+              {
+                "text": "四日",
+                "kana": "よっか"
+              },
+              {
+                "text": "五日",
+                "kana": "いつか"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-031",
+        "word": {
+          "text": "二日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "日期",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ふつか",
+              "zh": "2号；两天",
+              "romaji": "futsuka"
+            },
+            "description": "日期。2号；两天。表示日期或“持续两天”时读「ふつか」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-031-1",
+                "sentence": "日本に二日滞在しました。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "にっぽんにふつかたいざいしました。",
+                  "romaji": "nippon ni futsuka taizai shimashita .",
+                  "meaningZh": "在日本停留了两天。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "日本",
+                      "kana": "にっぽん",
+                      "desc": "日本"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "二",
+                      "kana": "に",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "にち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "滞在",
+                      "kana": "たいざい",
+                      "desc": "停留"
+                    },
+                    {
+                      "word": "し",
+                      "kana": "し",
+                      "desc": "做（する连用形）"
+                    },
+                    {
+                      "word": "まし",
+                      "kana": "",
+                      "desc": "助动词「ます」的连用形式。"
+                    },
+                    {
+                      "word": "た",
+                      "kana": "",
+                      "desc": "助动词。表示过去。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "一日",
+                "kana": "ついたち"
+              },
+              {
+                "text": "三日",
+                "kana": "みっか"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "四日",
+                "kana": "よっか"
+              },
+              {
+                "text": "五日",
+                "kana": "いつか"
+              },
+              {
+                "text": "六日",
+                "kana": "むいか"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-032",
+        "word": {
+          "text": "三日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "日期",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "みっか",
+              "zh": "3号；三天",
+              "romaji": "mikka"
+            },
+            "description": "日期。3号；三天。表示日期或“持续三天”时读「みっか」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-032-1",
+                "sentence": "三日でこの本を読みました。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "みっかでこのほんをよみました。",
+                  "romaji": "mikka dekono hon wo yomi mashita .",
+                  "meaningZh": "三天读完了这本书。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "三",
+                      "kana": "さん",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "にち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。表示动作场所或手段。"
+                    },
+                    {
+                      "word": "この",
+                      "kana": "この",
+                      "desc": "这"
+                    },
+                    {
+                      "word": "本",
+                      "kana": "ほん",
+                      "desc": "本；册"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。标记宾语。"
+                    },
+                    {
+                      "word": "読み",
+                      "kana": "よみ",
+                      "desc": "读（连用形）"
+                    },
+                    {
+                      "word": "まし",
+                      "kana": "",
+                      "desc": "助动词「ます」的连用形式。"
+                    },
+                    {
+                      "word": "た",
+                      "kana": "",
+                      "desc": "助动词。表示过去。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "二日",
+                "kana": "ふつか"
+              },
+              {
+                "text": "四日",
+                "kana": "よっか"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一日",
+                "kana": "ついたち"
+              },
+              {
+                "text": "五日",
+                "kana": "いつか"
+              },
+              {
+                "text": "六日",
+                "kana": "むいか"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-033",
+        "word": {
+          "text": "四日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "日期",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "よっか",
+              "zh": "4号；四天",
+              "romaji": "yokka"
+            },
+            "description": "日期。4号；四天。日期和天数都用特殊读法「よっか」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-033-1",
+                "sentence": "四日に東京へ行きます。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "よっかにとうきょうへいきます。",
+                  "romaji": "yokka ni toukyou he iki masu .",
+                  "meaningZh": "4号去东京。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "四",
+                      "kana": "よん",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "にち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。表示方向。"
+                    },
+                    {
+                      "word": "行き",
+                      "kana": "いき",
+                      "desc": "去（连用形）"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "三日",
+                "kana": "みっか"
+              },
+              {
+                "text": "五日",
+                "kana": "いつか"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一日",
+                "kana": "ついたち"
+              },
+              {
+                "text": "二日",
+                "kana": "ふつか"
+              },
+              {
+                "text": "六日",
+                "kana": "むいか"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-034",
+        "word": {
+          "text": "五日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "日期",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "いつか",
+              "zh": "5号；五天",
+              "romaji": "itsuka"
+            },
+            "description": "日期。5号；五天。日期和天数都读「いつか」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-034-1",
+                "sentence": "今日は五日です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "こんにちはいつかです。",
+                  "romaji": "konnichiha itsuka desu .",
+                  "meaningZh": "今天是5号。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "五",
+                      "kana": "ご",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "にち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "四日",
+                "kana": "よっか"
+              },
+              {
+                "text": "六日",
+                "kana": "むいか"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一日",
+                "kana": "ついたち"
+              },
+              {
+                "text": "二日",
+                "kana": "ふつか"
+              },
+              {
+                "text": "三日",
+                "kana": "みっか"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-035",
+        "word": {
+          "text": "六日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "日期",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "むいか",
+              "zh": "6号；六天",
+              "romaji": "muika"
+            },
+            "description": "日期。6号；六天。日期和天数都读「むいか」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-035-1",
+                "sentence": "六日までに提出してください。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "むいかまでにていしゅつしてください。",
+                  "romaji": "muika madeni teishutsu shitekudasai .",
+                  "meaningZh": "请在6号之前提交。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "六",
+                      "kana": "ろく",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "にち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "まで",
+                      "kana": "",
+                      "desc": "助词。表示终点。"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "提出",
+                      "kana": "ていしゅつ",
+                      "desc": "提交"
+                    },
+                    {
+                      "word": "し",
+                      "kana": "し",
+                      "desc": "做（する连用形）"
+                    },
+                    {
+                      "word": "て",
+                      "kana": "",
+                      "desc": "助词。"
+                    },
+                    {
+                      "word": "ください",
+                      "kana": "ください",
+                      "desc": "该词中文释义待补充。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "V てください",
+                    "meaningZh": "请……"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "五日",
+                "kana": "いつか"
+              },
+              {
+                "text": "七日",
+                "kana": "なのか"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一日",
+                "kana": "ついたち"
+              },
+              {
+                "text": "二日",
+                "kana": "ふつか"
+              },
+              {
+                "text": "三日",
+                "kana": "みっか"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-036",
+        "word": {
+          "text": "七日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "日期",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "なのか",
+              "zh": "7号；七天",
+              "romaji": "nanoka"
+            },
+            "description": "日期。7号；七天。日期和天数都读「なのか」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-036-1",
+                "sentence": "七日に試験があります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "なのかにしけんがあります。",
+                  "romaji": "nanoka ni shiken gaarimasu .",
+                  "meaningZh": "7号有考试。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "七",
+                      "kana": "なな",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "にち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "あり",
+                      "kana": "あり",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "六日",
+                "kana": "むいか"
+              },
+              {
+                "text": "八日",
+                "kana": "ようか"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一日",
+                "kana": "ついたち"
+              },
+              {
+                "text": "二日",
+                "kana": "ふつか"
+              },
+              {
+                "text": "三日",
+                "kana": "みっか"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-037",
+        "word": {
+          "text": "八日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "日期",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ようか",
+              "zh": "8号；八天",
+              "romaji": "youka"
+            },
+            "description": "日期。8号；八天。日期和天数都读「ようか」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-037-1",
+                "sentence": "八日に帰国します。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "ようかにきこくします。",
+                  "romaji": "youka ni kikoku shimasu .",
+                  "meaningZh": "8号回国。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "八",
+                      "kana": "はち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "にち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "帰国",
+                      "kana": "きこく",
+                      "desc": "回国"
+                    },
+                    {
+                      "word": "し",
+                      "kana": "し",
+                      "desc": "做（する连用形）"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "七日",
+                "kana": "なのか"
+              },
+              {
+                "text": "九日",
+                "kana": "ここのか"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一日",
+                "kana": "ついたち"
+              },
+              {
+                "text": "二日",
+                "kana": "ふつか"
+              },
+              {
+                "text": "三日",
+                "kana": "みっか"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-038",
+        "word": {
+          "text": "九日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "日期",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ここのか",
+              "zh": "9号；九天",
+              "romaji": "kokonoka"
+            },
+            "description": "日期。9号；九天。日期和天数都读「ここのか」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-038-1",
+                "sentence": "九日から授業が始まります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "ここのかからじゅぎょうがはじまります。",
+                  "romaji": "kokonoka kara jugyou ga hajimari masu .",
+                  "meaningZh": "课程从9号开始。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "九",
+                      "kana": "きゅう",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "にち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "から",
+                      "kana": "",
+                      "desc": "助词。表示起点。"
+                    },
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "始まり",
+                      "kana": "はじまり",
+                      "desc": "开始（连用形）"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "八日",
+                "kana": "ようか"
+              },
+              {
+                "text": "十日",
+                "kana": "とおか"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一日",
+                "kana": "ついたち"
+              },
+              {
+                "text": "二日",
+                "kana": "ふつか"
+              },
+              {
+                "text": "三日",
+                "kana": "みっか"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-039",
+        "word": {
+          "text": "十日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "日期",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "とおか",
+              "zh": "10号；十天",
+              "romaji": "tooka"
+            },
+            "description": "日期。10号；十天。日期和天数都读「とおか」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-039-1",
+                "sentence": "十日でレポートを書きました。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "とうかでれぽーとをかきました。",
+                  "romaji": "touka de repooto wo kaki mashita .",
+                  "meaningZh": "用了十天写完报告。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "十",
+                      "kana": "じゅう",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "にち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。表示动作场所或手段。"
+                    },
+                    {
+                      "word": "レポート",
+                      "kana": "れぽーと",
+                      "desc": "报告"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。标记宾语。"
+                    },
+                    {
+                      "word": "書き",
+                      "kana": "かき",
+                      "desc": "写（连用形）"
+                    },
+                    {
+                      "word": "まし",
+                      "kana": "",
+                      "desc": "助动词「ます」的连用形式。"
+                    },
+                    {
+                      "word": "た",
+                      "kana": "",
+                      "desc": "助动词。表示过去。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "九日",
+                "kana": "ここのか"
+              },
+              {
+                "text": "十四日",
+                "kana": "じゅうよっか"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一日",
+                "kana": "ついたち"
+              },
+              {
+                "text": "二日",
+                "kana": "ふつか"
+              },
+              {
+                "text": "三日",
+                "kana": "みっか"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-040",
+        "word": {
+          "text": "十四日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "日期",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "じゅうよっか",
+              "zh": "14号",
+              "romaji": "juuyokka"
+            },
+            "description": "日期。14号。属于日期专用读法，读「じゅうよっか」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-040-1",
+                "sentence": "会議は十四日に変更しました。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "かいぎはじゅうよんにちにへんこうしました。",
+                  "romaji": "kaigi ha juuyon nichi ni henkou shimashita .",
+                  "meaningZh": "会议改到14号了。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "会議",
+                      "kana": "かいぎ",
+                      "desc": "会议"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "十",
+                      "kana": "じゅう",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "四",
+                      "kana": "よん",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "にち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "変更",
+                      "kana": "へんこう",
+                      "desc": "变更"
+                    },
+                    {
+                      "word": "し",
+                      "kana": "し",
+                      "desc": "做（する连用形）"
+                    },
+                    {
+                      "word": "まし",
+                      "kana": "",
+                      "desc": "助动词「ます」的连用形式。"
+                    },
+                    {
+                      "word": "た",
+                      "kana": "",
+                      "desc": "助动词。表示过去。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "十日",
+                "kana": "とおか"
+              },
+              {
+                "text": "二十日",
+                "kana": "はつか"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一日",
+                "kana": "ついたち"
+              },
+              {
+                "text": "二日",
+                "kana": "ふつか"
+              },
+              {
+                "text": "三日",
+                "kana": "みっか"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-041",
+        "word": {
+          "text": "二十日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "日期",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "はつか",
+              "zh": "20号",
+              "romaji": "hatsuka"
+            },
+            "description": "日期。20号。属于日期专用不规则读法，读「はつか」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-041-1",
+                "sentence": "給料日は二十日です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "きゅうりょうびははつかです。",
+                  "romaji": "kyuuryoubi ha hatsuka desu .",
+                  "meaningZh": "发薪日是20号。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "給料",
+                      "kana": "きゅうりょう",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "び",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "二",
+                      "kana": "に",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "十",
+                      "kana": "じゅう",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "にち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "十四日",
+                "kana": "じゅうよっか"
+              },
+              {
+                "text": "何日",
+                "kana": "なんにち"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "一日",
+                "kana": "ついたち"
+              },
+              {
+                "text": "二日",
+                "kana": "ふつか"
+              },
+              {
+                "text": "三日",
+                "kana": "みっか"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-042",
+        "word": {
+          "text": "何日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "日期",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "なんにち",
+              "zh": "几号；几天",
+              "romaji": "nannichi"
+            },
+            "description": "日期。几号；几天。询问日期或天数时通常读「なんにち」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-042-1",
+                "sentence": "次の面接は何日ですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "つぎのめんせつはなんにちですか。",
+                  "romaji": "tsugino mensetsu ha nannichi desuka .",
+                  "meaningZh": "下一次面试是几号？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "次",
+                      "kana": "つぎ",
+                      "desc": "下一次"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。表示所属或修饰。"
+                    },
+                    {
+                      "word": "面接",
+                      "kana": "めんせつ",
+                      "desc": "面试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "何",
+                      "kana": "なん",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "日",
+                      "kana": "にち",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    },
+                    {
+                      "word": "か",
+                      "kana": "",
+                      "desc": "助词。表示疑问。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B ですか",
+                    "meaningZh": "A 是 B 吗？"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "二十日",
+                "kana": "はつか"
+              },
+              {
+                "text": "一日",
+                "kana": "ついたち"
+              }
+            ]
+          },
+          "related": {
+            "items": [
+              {
+                "text": "二日",
+                "kana": "ふつか"
+              },
+              {
+                "text": "三日",
+                "kana": "みっか"
+              },
+              {
+                "text": "四日",
+                "kana": "よっか"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-043",
+        "word": {
+          "text": "一番",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "顺序",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "いちばん",
+              "zh": "第一；最",
+              "romaji": "ichiban"
+            },
+            "description": "顺序。第一；最。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-043-1",
+                "sentence": "この店のラーメンが一番おいしいです。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "このみせのらーめんがいちばんおいしいです。",
+                  "romaji": "kono mise no raamen ga ichiban oishiidesu .",
+                  "meaningZh": "这家店的拉面最好吃。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "この",
+                      "kana": "この",
+                      "desc": "这"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "店"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。表示所属或修饰。"
+                    },
+                    {
+                      "word": "ラーメン",
+                      "kana": "らーめん",
+                      "desc": "拉面"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "一番",
+                      "kana": "いちばん",
+                      "desc": "第一；最"
+                    },
+                    {
+                      "word": "おいしい",
+                      "kana": "おいしい",
+                      "desc": "好吃"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "最初",
+                "kana": "さいしょ"
+              },
+              {
+                "text": "最後",
+                "kana": "さいご"
+              }
+            ]
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-044",
+        "word": {
+          "text": "最初",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "顺序",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "さいしょ",
+              "zh": "最初",
+              "romaji": "saisho"
+            },
+            "description": "顺序。最初。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-044-1",
+                "sentence": "最初に自己紹介をしてください。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "さいしょにじこしょうかいをしてください。",
+                  "romaji": "saisho ni jikoshoukai woshitekudasai .",
+                  "meaningZh": "请先做自我介绍。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "最初",
+                      "kana": "さいしょ",
+                      "desc": "最初"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "自己",
+                      "kana": "じこ",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "紹介",
+                      "kana": "しょうかい",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。标记宾语。"
+                    },
+                    {
+                      "word": "し",
+                      "kana": "し",
+                      "desc": "做（する连用形）"
+                    },
+                    {
+                      "word": "て",
+                      "kana": "",
+                      "desc": "助词。"
+                    },
+                    {
+                      "word": "ください",
+                      "kana": "ください",
+                      "desc": "该词中文释义待补充。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "V てください",
+                    "meaningZh": "请……"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "一番",
+                "kana": "いちばん"
+              },
+              {
+                "text": "最後",
+                "kana": "さいご"
+              }
+            ]
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-045",
+        "word": {
+          "text": "最後",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "顺序",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "さいご",
+              "zh": "最后",
+              "romaji": "saigo"
+            },
+            "description": "顺序。最后。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-045-1",
+                "sentence": "最後に質問を受けます。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "さいごにしつもんをうけます。",
+                  "romaji": "saigo ni shitsumon wo uke masu .",
+                  "meaningZh": "最后我会接受提问。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "最後",
+                      "kana": "さいご",
+                      "desc": "最后"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "質問",
+                      "kana": "しつもん",
+                      "desc": "问题"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。标记宾语。"
+                    },
+                    {
+                      "word": "受け",
+                      "kana": "うけ",
+                      "desc": "接受（连用形）"
+                    },
+                    {
+                      "word": "ます",
+                      "kana": "",
+                      "desc": "助动词。表示礼貌语气。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "最初",
+                "kana": "さいしょ"
+              },
+              {
+                "text": "一番",
+                "kana": "いちばん"
+              }
+            ]
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-046",
+        "word": {
+          "text": "番号",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "顺序",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ばんごう",
+              "zh": "号码",
+              "romaji": "bangou"
+            },
+            "description": "顺序。号码。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-046-1",
+                "sentence": "申込書に電話番号を書いてください。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "もうしこみしょにでんわばんごうをかいてください。",
+                  "romaji": "moushikomisho ni denwabangou wo kai tekudasai .",
+                  "meaningZh": "请在申请表上写电话号码。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "申込",
+                      "kana": "もうしこみ",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "書",
+                      "kana": "しょ",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间、对象或到达点。"
+                    },
+                    {
+                      "word": "電話",
+                      "kana": "でんわ",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "番号",
+                      "kana": "ばんごう",
+                      "desc": "号码"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。标记宾语。"
+                    },
+                    {
+                      "word": "書い",
+                      "kana": "かい",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "て",
+                      "kana": "",
+                      "desc": "助词。"
+                    },
+                    {
+                      "word": "ください",
+                      "kana": "ください",
+                      "desc": "该词中文释义待补充。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "V てください",
+                    "meaningZh": "请……"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "何番",
+                "kana": "なんばん"
+              }
+            ]
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-num-047",
+        "word": {
+          "text": "何番",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "数字・数量・顺序",
+            "className": "tag-topic"
+          },
+          {
+            "name": "顺序",
+            "className": "tag-pos"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "なんばん",
+              "zh": "几号；几番",
+              "romaji": "nanban"
+            },
+            "description": "顺序。几号；几番。询问编号或顺序时读「なんばん」。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-num-047-1",
+                "sentence": "この電車は何番ホームですか。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "このでんしゃはなんばんほーむですか。",
+                  "romaji": "kono densha ha nanban hoomu desuka .",
+                  "meaningZh": "这趟电车是几号站台？",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "この",
+                      "kana": "この",
+                      "desc": "这"
+                    },
+                    {
+                      "word": "電車",
+                      "kana": "でんしゃ",
+                      "desc": "电车"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "何",
+                      "kana": "なん",
+                      "desc": "该词中文释义待补充。"
+                    },
+                    {
+                      "word": "番",
+                      "kana": "ばん",
+                      "desc": "号；番"
+                    },
+                    {
+                      "word": "ホーム",
+                      "kana": "ほーむ",
+                      "desc": "站台"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    },
+                    {
+                      "word": "か",
+                      "kana": "",
+                      "desc": "助词。表示疑问。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B ですか",
+                    "meaningZh": "A 是 B 吗？"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": [
+              {
+                "text": "番号",
+                "kana": "ばんごう"
+              }
+            ]
+          },
+          "related": {
+            "items": []
+          }
+        }
+      }
+    ]
+  }
+}

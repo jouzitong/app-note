@@ -1,0 +1,25 @@
+@basePath = /api/v1/imports/note-word
+
+### 导入 JSON 文件（数字・数量・顺序）
+POST {{host}}{{basePath}}/json-file
+Accept: application/json
+Content-Type: multipart/form-data; boundary=NoteWordBoundary
+
+--NoteWordBoundary
+Content-Disposition: form-data; name="file"; filename="JLPT_N5_数字_数量_顺序_完整版.json"
+Content-Type: application/json
+
+< ./JLPT_N5_数字_数量_顺序_完整版.json
+--NoteWordBoundary--
+
+### 导入 JSON 文件（代词・指示词・疑问词）
+POST {{host}}{{basePath}}/json-file
+Accept: application/json
+Content-Type: multipart/form-data; boundary=NoteWordBoundary
+
+--NoteWordBoundary
+Content-Disposition: form-data; name="file"; filename="JLPT_N5_代词_指示词_疑问词_完整版.json"
+Content-Type: application/json
+
+< ./JLPT_N5_代词_指示词_疑问词_完整版.json
+--NoteWordBoundary--
