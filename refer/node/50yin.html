@@ -313,11 +313,31 @@
 
     <script>
     (function(){
+      if(!('speechSynthesis' in window)) return;
+
+      var selectedVoice = null;
+
+      function chooseVoice(){
+        var voices = window.speechSynthesis.getVoices() || [];
+        if(!voices.length) return;
+        var jaCandidates = voices.filter(function(v){ return v.lang && v.lang.toLowerCase().indexOf('ja') === 0; });
+        if(jaCandidates.length){
+          var exact = jaCandidates.find(function(v){ return /ja[-_]?jp/i.test(v.lang); });
+          selectedVoice = exact || jaCandidates[0];
+        } else {
+          selectedVoice = voices[0];
+        }
+      }
+
+      window.speechSynthesis.onvoiceschanged = chooseVoice;
+      chooseVoice();
+
       function speak(text){
-        if(!('speechSynthesis' in window)) return;
         try{ window.speechSynthesis.cancel(); }catch(e){}
+        if(!selectedVoice && window.speechSynthesis.getVoices && window.speechSynthesis.getVoices().length) chooseVoice();
         var u = new SpeechSynthesisUtterance(text);
-        u.lang = 'ja-JP';
+        u.lang = selectedVoice ? (selectedVoice.lang || 'ja-JP') : 'ja-JP';
+        if(selectedVoice) u.voice = selectedVoice;
         u.rate = 0.95;
         u.pitch = 1.0;
         window.speechSynthesis.speak(u);

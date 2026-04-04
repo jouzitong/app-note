@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>日语朗读测试</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            background: #f5f7fb;
+            color: #1f2937;
+        }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px 16px 32px;
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 8px;
+        }
+
+        .desc {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #6b7280;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .jp {
+            margin: 0 0 10px;
+            font-size: 22px;
+            line-height: 1.6;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .kana {
+            margin: 0 0 8px;
+            font-size: 14px;
+            color: #4b5563;
+        }
+
+        .cn {
+            margin: 0 0 14px;
+            font-size: 14px;
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            border: 0;
+            border-radius: 12px;
+            padding: 12px 16px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            background: #111827;
+            color: #ffffff;
+        }
+
+        .btn.secondary {
+            background: #e5e7eb;
+            color: #111827;
+        }
+
+        .toolbar {
+            position: sticky;
+            bottom: 12px;
+            margin-top: 20px;
+            padding-top: 8px;
+        }
+
+        .toolbar-inner {
+            display: flex;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 10px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .toolbar .btn {
+            flex: 1;
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 24px;
+            }
+
+            .jp {
+                font-size: 20px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <h1 class="title">日语朗读测试</h1>
+        <p class="desc">
+            适合 Safari 测试浏览器自带发音。点击每句下面的“朗读”按钮试试看。
+        </p>
+    </div>
+
+    <div class="list" id="sentenceList"></div>
+
+    <div class="toolbar">
+        <div class="toolbar-inner">
+            <button class="btn" onclick="speakAll()">全部朗读</button>
+            <button class="btn secondary" onclick="stopSpeak()">停止</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const sentences = [
+        {
+            jp: "おはようございます。",
+            kana: "おはようございます。",
+            cn: "早上好。"
+        },
+        {
+            jp: "これは私の本です。",
+            kana: "これは わたしの ほんです。",
+            cn: "这是我的书。"
+        },
+        {
+            jp: "今日はいい天気ですね。",
+            kana: "きょうは いい てんきですね。",
+            cn: "今天天气真不错啊。"
+        },
+        {
+            jp: "私は日本語を勉強しています。",
+            kana: "わたしは にほんごを べんきょうしています。",
+            cn: "我正在学习日语。"
+        },
+        {
+            jp: "ゆっくり話してください。",
+            kana: "ゆっくり はなしてください。",
+            cn: "请慢一点说。"
+        }
+    ];
+
+    const listEl = document.getElementById("sentenceList");
+
+    function renderList() {
+        listEl.innerHTML = sentences.map((item, index) => {
+            return `
+          <div class="card">
+            <p class="jp">${item.jp}</p>
+            <p class="kana">${item.kana}</p>
+            <p class="cn">${item.cn}</p>
+            <div class="actions">
+              <button class="btn" onclick="speakText(${index})">朗读</button>
+              <button class="btn secondary" onclick="repeatText(${index})">慢速朗读</button>
+            </div>
+          </div>
+        `;
+        }).join("");
+    }
+
+    function createUtterance(text, rate = 1) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "ja-JP";
+        utterance.rate = rate;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        const voices = speechSynthesis.getVoices();
+        const jaVoice = voices.find(v => v.lang === "ja-JP") || voices.find(v => v.lang && v.lang.startsWith("ja"));
+        if (jaVoice) {
+            utterance.voice = jaVoice;
+        }
+
+        return utterance;
+    }
+
+    function speakText(index) {
+        stopSpeak();
+        const utterance = createUtterance(sentences[index].jp, 1);
+        speechSynthesis.speak(utterance);
+    }
+
+    function repeatText(index) {
+        stopSpeak();
+        const utterance = createUtterance(sentences[index].jp, 0.75);
+        speechSynthesis.speak(utterance);
+    }
+
+    function speakAll() {
+        stopSpeak();
+        sentences.forEach((item, idx) => {
+            const utterance = createUtterance(item.jp, 0.9);
+            speechSynthesis.speak(utterance);
+        });
+    }
+
+    function stopSpeak() {
+        speechSynthesis.cancel();
+    }
+
+    renderList();
+
+    if (typeof speechSynthesis !== "undefined") {
+        speechSynthesis.onvoiceschanged = () => {};
+        speechSynthesis.getVoices();
+    }
+</script>
+</body>
+</html>

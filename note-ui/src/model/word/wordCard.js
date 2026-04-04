@@ -2,6 +2,8 @@
  * @typedef {Object} WordInfo
  * @property {string} text
  * @property {string} level
+ * @property {string} audioUrl TODO(后端待实现): 单词音频资源地址。当前前端先预留字段，
+ * 后续由后端返回可访问 URL（如 CDN/对象存储签名地址），返回后前端将优先使用该地址播放。
  */
 
 /**
@@ -50,6 +52,8 @@
  * @typedef {Object} ExampleItem
  * @property {string} id
  * @property {string} sentence
+ * @property {string} audioUrl TODO(后端待实现): 例句音频资源地址。当前前端先预留字段，
+ * 后续由后端返回可访问 URL，返回后前端将优先使用该地址播放。
  * @property {ExampleExplain} explain
  */
 
@@ -118,6 +122,8 @@ export function createDefaultWordCard() {
     word: {
       text: "",
       level: "",
+      // TODO(后端待实现): 由接口返回单词音频 URL，当前默认空字符串。
+      audioUrl: "",
     },
     done: false,
     progress: {
@@ -156,7 +162,7 @@ export function createDefaultWordCard() {
       { key: "done", icon: "✓", title: "完成" },
       { key: "hard", icon: "⚠", title: "易错" },
       { key: "favorite", icon: "★", title: "收藏" },
-      { key: "audio", icon: "🔊", title: "发音" },
+      { key: "audio", icon: "🔊", title: "整卡朗读" },
       { key: "next", icon: "⏭", title: "下一个" },
     ],
   };
@@ -206,6 +212,8 @@ export function createMockWordCard() {
           {
             id: "ex-1",
             sentence: "これは 私 の 本 です。",
+            // TODO(后端待实现): 由接口返回例句音频 URL，当前默认空字符串。
+            audioUrl: "",
             explain: {
               collapsedByDefault: true,
               reading: "これは わたし の ほん です",
@@ -228,6 +236,8 @@ export function createMockWordCard() {
           {
             id: "ex-2",
             sentence: "私 は 学生 です。",
+            // TODO(后端待实现): 由接口返回例句音频 URL，当前默认空字符串。
+            audioUrl: "",
             explain: {
               collapsedByDefault: true,
               reading: "わたし は がくせい です",
@@ -266,7 +276,7 @@ export function createMockWordCard() {
       { key: "done", icon: "✓", title: "完成" },
       { key: "hard", icon: "⚠", title: "易错" },
       { key: "favorite", icon: "★", title: "收藏" },
-      { key: "audio", icon: "🔊", title: "发音" },
+      { key: "audio", icon: "🔊", title: "整卡朗读" },
       { key: "next", icon: "⏭", title: "下一个" },
     ],
   };
@@ -294,6 +304,8 @@ export function normalizeWordCard(source = {}) {
     word: {
       ...defaults.word,
       ...rawWord,
+      // TODO(后端待实现): 接口正式支持前，audioUrl 可能缺失，前端统一兜底为空字符串。
+      audioUrl: rawWord.audioUrl || "",
     },
     tags: Array.isArray(source.tags) ? source.tags : defaults.tags,
     sections: {
@@ -316,6 +328,8 @@ export function normalizeWordCard(source = {}) {
               return {
                 id: item?.id || `example-${index + 1}`,
                 sentence: item?.sentence || "",
+                // TODO(后端待实现): 接口正式支持前，audioUrl 可能缺失，前端统一兜底为空字符串。
+                audioUrl: item?.audioUrl || "",
                 explain: {
                   collapsedByDefault:
                     rawExplain.collapsedByDefault === undefined

@@ -14,6 +14,25 @@
           :style="{ width: `${progressPercent}%` }"
         />
       </div>
+      <div class="learning-top-right">
+        <label class="playback-rate-label" for="playback-rate-select"
+          >速度</label
+        >
+        <select
+          id="playback-rate-select"
+          v-model.number="playbackRate"
+          class="playback-rate-select"
+          @change="savePlaybackRate"
+        >
+          <option
+            v-for="rate in playbackRateOptions"
+            :key="`rate-${rate}`"
+            :value="rate"
+          >
+            {{ rate.toFixed(2) }}x
+          </option>
+        </select>
+      </div>
     </div>
 
     <div class="card" :class="{ 'is-done': isDone }">
@@ -21,8 +40,21 @@
         <div class="word-row">
           <div class="word-main">
             <span class="done-indicator" aria-hidden="true">✓</span>
-            <div>
+            <div class="word-inline">
               <div class="word">{{ wordCard.word.text }}</div>
+              <button
+                class="inline-audio-btn"
+                type="button"
+                :disabled="!canPlayWordAudio()"
+                title="播放单词"
+                aria-label="播放单词"
+                @click="playWordAudio"
+              >
+                <i
+                  class="el-icon-video-play inline-audio-icon"
+                  aria-hidden="true"
+                />
+              </button>
             </div>
           </div>
         </div>
@@ -94,7 +126,22 @@
                 v-for="(example, index) in wordCard.sections.examples.items"
                 :key="example.id || `example-${index}`"
               >
-                <div class="sentence">{{ example.sentence }}</div>
+                <div class="sentence-row">
+                  <div class="sentence">{{ example.sentence }}</div>
+                  <button
+                    class="inline-audio-btn inline-audio-btn-example"
+                    type="button"
+                    :disabled="!canPlayExampleAudio(example)"
+                    title="播放例句"
+                    aria-label="播放例句"
+                    @click="playExampleAudio(example, index)"
+                  >
+                    <i
+                      class="el-icon-video-play inline-audio-icon"
+                      aria-hidden="true"
+                    />
+                  </button>
+                </div>
                 <details
                   class="example-explain"
                   :open="!example.explain.collapsedByDefault"
@@ -223,10 +270,13 @@ import {
   createMockWordCard,
   normalizeWordCard,
 } from "@/model/word/wordCard";
-import privateAudioSrc from "@/assets/私.mp3";
 
 export default {
   name: "WordCard",
+  // 临时前端配置：播放速度本地存储键。
+  // TODO(后端待实现): 若后续要云端同步用户配置，可由接口返回后替换本地读写。
+  playbackRateStorageKey: "note-ui.word-card.playback-rate",
+  playbackRateOptions: [0.5, 0.75, 1, 1.25, 1.5],
   props: {
     noteId: {
       type: [Number, String],
@@ -247,7 +297,9 @@ export default {
       pageInfo: null,
       loading: false,
       errorMessage: "",
-      pronunciationAudio: null,
+      playbackAudio: null,
+      playbackSeq: 0,
+      playbackRate: 1,
       requestSeq: 0,
       pageSize: 10,
       confirming: false,
@@ -293,12 +345,18 @@ export default {
     isFavorite() {
       return !!this.wordCard?.progress?.favorite;
     },
+    playbackRateOptions() {
+      return this.$options.playbackRateOptions || [1];
+    },
   },
   async created() {
+    this.initPlaybackRate();
+    this.warmupVoices();
     await this.loadWordCard();
   },
   beforeDestroy() {
-    this.destroyPronunciationAudio();
+    this.stopPlayback();
+    this.destroyPlaybackAudio();
   },
   watch: {
     noteId() {
@@ -310,6 +368,7 @@ export default {
   },
   methods: {
     async loadWordCard() {
+      this.stopPlayback();
       if (
         this.noteId === null ||
         this.noteId === undefined ||
@@ -377,7 +436,7 @@ export default {
         return;
       }
       if (action?.key === "audio") {
-        this.playPronunciation();
+        this.playWordAndExamplesAudio();
       }
     },
     async handleConfirm() {
@@ -403,34 +462,271 @@ export default {
         this.confirming = false;
       }
     },
-    ensurePronunciationAudio() {
-      if (!this.pronunciationAudio) {
-        this.pronunciationAudio = new Audio(privateAudioSrc);
-      }
-      return this.pronunciationAudio;
+    canPlayWordAudio() {
+      const wordText = this.wordCard?.word?.text || "";
+      const wordAudioUrl = this.wordCard?.word?.audioUrl || "";
+      return !!wordText || !!wordAudioUrl;
     },
-    playPronunciation() {
-      try {
-        const audio = this.ensurePronunciationAudio();
+    canPlayExampleAudio(example = {}) {
+      const sentenceText = example?.sentence || "";
+      const sentenceAudioUrl = example?.audioUrl || "";
+      return !!sentenceText || !!sentenceAudioUrl;
+    },
+    getWordAudioSource() {
+      const wordText = this.wordCard?.word?.text || "";
+      const wordAudioUrl = this.wordCard?.word?.audioUrl || "";
+      if (!wordText && !wordAudioUrl) {
+        return null;
+      }
+      return {
+        key: "word",
+        text: wordText,
+        url: wordAudioUrl,
+        rate: this.playbackRate,
+      };
+    },
+    getExampleAudioSource(example = {}, index = 0) {
+      const sentenceText = example?.sentence || "";
+      const sentenceAudioUrl = example?.audioUrl || "";
+      if (!sentenceText && !sentenceAudioUrl) {
+        return null;
+      }
+      return {
+        key: `example-${index}`,
+        text: sentenceText,
+        url: sentenceAudioUrl,
+        rate: this.playbackRate,
+      };
+    },
+    initPlaybackRate() {
+      const options = this.playbackRateOptions;
+      const storageKey = this.$options.playbackRateStorageKey;
+      if (
+        !storageKey ||
+        typeof window === "undefined" ||
+        !window.localStorage
+      ) {
+        this.playbackRate = options[0] || 1;
+        return;
+      }
+      const rawValue = window.localStorage.getItem(storageKey);
+      const parsedRate = Number(rawValue);
+      this.playbackRate = options.includes(parsedRate)
+        ? parsedRate
+        : options[0] || 1;
+    },
+    savePlaybackRate() {
+      const storageKey = this.$options.playbackRateStorageKey;
+      if (
+        !storageKey ||
+        typeof window === "undefined" ||
+        !window.localStorage
+      ) {
+        return;
+      }
+      window.localStorage.setItem(storageKey, String(this.playbackRate));
+    },
+    async playWordAudio() {
+      const source = this.getWordAudioSource();
+      if (!source) {
+        this.errorMessage = "当前单词没有可播放内容";
+        return;
+      }
+      await this.playAudioSequence([source]);
+    },
+    async playExampleAudio(example = {}, index = 0) {
+      const source = this.getExampleAudioSource(example, index);
+      if (!source) {
+        this.errorMessage = "当前例句没有可播放内容";
+        return;
+      }
+      await this.playAudioSequence([source]);
+    },
+    async playWordAndExamplesAudio() {
+      const queue = [];
+      const wordSource = this.getWordAudioSource();
+      if (!wordSource) {
+        this.errorMessage = "缺少单词发音，无法开始整卡朗读";
+        return;
+      }
+      // 整卡朗读固定从卡片单词发音开始，再顺序播放例句。
+      queue.push(wordSource);
+      const exampleItems = this.wordCard?.sections?.examples?.items || [];
+      exampleItems.forEach((example, index) => {
+        const source = this.getExampleAudioSource(example, index);
+        if (source) {
+          queue.push(source);
+        }
+      });
+      if (!queue.length) {
+        this.errorMessage = "当前卡片没有可播放内容";
+        return;
+      }
+      await this.playAudioSequence(queue);
+    },
+    async playAudioSequence(sources = []) {
+      if (!Array.isArray(sources) || !sources.length) {
+        return;
+      }
+
+      this.errorMessage = "";
+      this.stopPlayback();
+      const currentSeq = this.playbackSeq;
+      for (const source of sources) {
+        if (currentSeq !== this.playbackSeq) {
+          return;
+        }
+        try {
+          await this.playSingleSource(source, currentSeq);
+        } catch (error) {
+          if (currentSeq !== this.playbackSeq) {
+            return;
+          }
+          this.errorMessage = `播放发音失败：${error.message}`;
+          break;
+        }
+      }
+    },
+    async playSingleSource(source = {}, currentSeq) {
+      const url = source?.url || "";
+      const text = source?.text || "";
+      const rate = typeof source?.rate === "number" ? source.rate : 1;
+
+      if (url) {
+        try {
+          await this.playUrlAudio(url, rate, currentSeq);
+          return;
+        } catch (error) {
+          if (!text) {
+            throw error;
+          }
+        }
+      }
+      if (!text) {
+        throw new Error("缺少可播放文本");
+      }
+      await this.playSpeech(text, rate, currentSeq);
+    },
+    playUrlAudio(url, rate, currentSeq) {
+      return new Promise((resolve, reject) => {
+        if (currentSeq !== this.playbackSeq) {
+          resolve();
+          return;
+        }
+
+        const audio = this.ensurePlaybackAudio();
         audio.pause();
         audio.currentTime = 0;
+        audio.src = url;
+        audio.defaultPlaybackRate = rate;
+        audio.playbackRate = rate;
+        if (typeof audio.preservesPitch === "boolean") {
+          audio.preservesPitch = false;
+        }
+        if (typeof audio.webkitPreservesPitch === "boolean") {
+          audio.webkitPreservesPitch = false;
+        }
+        if (typeof audio.mozPreservesPitch === "boolean") {
+          audio.mozPreservesPitch = false;
+        }
+
+        const cleanup = () => {
+          audio.removeEventListener("ended", handleEnded);
+          audio.removeEventListener("error", handleError);
+        };
+        const handleEnded = () => {
+          cleanup();
+          resolve();
+        };
+        const handleError = () => {
+          cleanup();
+          reject(new Error("音频资源加载失败"));
+        };
+
+        audio.addEventListener("ended", handleEnded);
+        audio.addEventListener("error", handleError);
+
         const playPromise = audio.play();
         if (playPromise && typeof playPromise.catch === "function") {
           playPromise.catch((error) => {
-            this.errorMessage = `播放发音失败：${error.message}`;
+            cleanup();
+            reject(error);
           });
         }
-      } catch (error) {
-        this.errorMessage = `播放发音失败：${error.message}`;
-      }
+      });
     },
-    destroyPronunciationAudio() {
-      if (!this.pronunciationAudio) {
+    playSpeech(text, rate = 1, currentSeq) {
+      return new Promise((resolve, reject) => {
+        if (
+          typeof window === "undefined" ||
+          !window.speechSynthesis ||
+          typeof window.SpeechSynthesisUtterance !== "function"
+        ) {
+          reject(new Error("当前环境不支持语音合成"));
+          return;
+        }
+        if (currentSeq !== this.playbackSeq) {
+          resolve();
+          return;
+        }
+
+        const utterance = this.createUtterance(text, rate);
+        utterance.onend = () => resolve();
+        utterance.onerror = (event) =>
+          reject(new Error(event?.error || "语音合成失败"));
+        window.speechSynthesis.speak(utterance);
+      });
+    },
+    createUtterance(text, rate = 1) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "ja-JP";
+      utterance.rate = rate;
+      utterance.pitch = 1;
+      utterance.volume = 1;
+
+      if (typeof window !== "undefined" && window.speechSynthesis) {
+        const voices = window.speechSynthesis.getVoices();
+        const jaVoice =
+          voices.find((voice) => voice.lang === "ja-JP") ||
+          voices.find((voice) => voice.lang && voice.lang.startsWith("ja"));
+        if (jaVoice) {
+          utterance.voice = jaVoice;
+        }
+      }
+      return utterance;
+    },
+    warmupVoices() {
+      if (typeof window === "undefined" || !window.speechSynthesis) {
         return;
       }
-      this.pronunciationAudio.pause();
-      this.pronunciationAudio.currentTime = 0;
-      this.pronunciationAudio = null;
+      window.speechSynthesis.getVoices();
+    },
+    ensurePlaybackAudio() {
+      if (!this.playbackAudio) {
+        this.playbackAudio = new Audio();
+        this.playbackAudio.preload = "auto";
+      }
+      return this.playbackAudio;
+    },
+    stopPlayback() {
+      this.playbackSeq += 1;
+      if (typeof window !== "undefined" && window.speechSynthesis) {
+        window.speechSynthesis.cancel();
+      }
+      if (this.playbackAudio) {
+        this.playbackAudio.pause();
+        this.playbackAudio.currentTime = 0;
+      }
+    },
+    destroyPlaybackAudio() {
+      if (!this.playbackAudio) {
+        return;
+      }
+      this.playbackAudio.pause();
+      this.playbackAudio.currentTime = 0;
+      this.playbackAudio.removeAttribute("src");
+      this.playbackAudio.load();
+      this.playbackAudio = null;
     },
     formatVocabulary(item = {}) {
       const text = item.text || "";
@@ -519,6 +815,31 @@ export default {
   background: linear-gradient(90deg, #2563eb, #60a5fa);
 }
 
+.learning-top-right {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.playback-rate-label {
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.playback-rate-select {
+  height: 24px;
+  min-width: 72px;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  background: #fff;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 6px;
+}
+
 .card {
   width: 100%;
   height: auto;
@@ -543,11 +864,18 @@ export default {
 .word-row {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+  gap: 10px;
 }
 
 .word-main {
   display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.word-inline {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
 }
@@ -577,6 +905,35 @@ export default {
   font-size: clamp(28px, 8vw, 34px);
   font-weight: 700;
   color: #2563eb;
+}
+
+.inline-audio-btn {
+  flex: 0 0 auto;
+  border: 1px solid #bfdbfe;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-radius: 999px;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.inline-audio-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.inline-audio-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.inline-audio-icon::before {
+  content: "\25B6";
 }
 
 .tags {
@@ -750,11 +1107,24 @@ export default {
   margin-bottom: 3px;
 }
 
+.sentence-row {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: 100%;
+}
+
 .sentence {
   font-size: 14px;
   font-weight: 600;
   color: #111;
   line-height: 1.35;
+}
+
+.inline-audio-btn-example {
+  width: 24px;
+  height: 24px;
+  margin-top: 1px;
 }
 
 .example-note {
