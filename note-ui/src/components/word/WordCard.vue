@@ -270,6 +270,11 @@ import {
   createMockWordCard,
   normalizeWordCard,
 } from "@/model/word/wordCard";
+import {
+  AudioPlaybackManager,
+  loadPlaybackRate,
+  savePlaybackRate,
+} from "@/utils/audioPlayback";
 
 export default {
   name: "WordCard",
@@ -297,9 +302,8 @@ export default {
       pageInfo: null,
       loading: false,
       errorMessage: "",
-      playbackAudio: null,
-      playbackSeq: 0,
       playbackRate: 1,
+      audioPlaybackManager: null,
       requestSeq: 0,
       pageSize: 10,
       confirming: false,
@@ -351,12 +355,16 @@ export default {
   },
   async created() {
     this.initPlaybackRate();
-    this.warmupVoices();
+    this.audioPlaybackManager = new AudioPlaybackManager({ lang: "ja-JP" });
+    this.audioPlaybackManager.warmupVoices();
     await this.loadWordCard();
   },
   beforeDestroy() {
     this.stopPlayback();
-    this.destroyPlaybackAudio();
+    if (this.audioPlaybackManager) {
+      this.audioPlaybackManager.destroy();
+      this.audioPlaybackManager = null;
+    }
   },
   watch: {
     noteId() {
@@ -499,32 +507,13 @@ export default {
       };
     },
     initPlaybackRate() {
-      const options = this.playbackRateOptions;
-      const storageKey = this.$options.playbackRateStorageKey;
-      if (
-        !storageKey ||
-        typeof window === "undefined" ||
-        !window.localStorage
-      ) {
-        this.playbackRate = options[0] || 1;
-        return;
-      }
-      const rawValue = window.localStorage.getItem(storageKey);
-      const parsedRate = Number(rawValue);
-      this.playbackRate = options.includes(parsedRate)
-        ? parsedRate
-        : options[0] || 1;
+      this.playbackRate = loadPlaybackRate(
+        this.$options.playbackRateStorageKey,
+        this.playbackRateOptions
+      );
     },
     savePlaybackRate() {
-      const storageKey = this.$options.playbackRateStorageKey;
-      if (
-        !storageKey ||
-        typeof window === "undefined" ||
-        !window.localStorage
-      ) {
-        return;
-      }
-      window.localStorage.setItem(storageKey, String(this.playbackRate));
+      savePlaybackRate(this.$options.playbackRateStorageKey, this.playbackRate);
     },
     async playWordAudio() {
       const source = this.getWordAudioSource();
@@ -568,165 +557,22 @@ export default {
       if (!Array.isArray(sources) || !sources.length) {
         return;
       }
+      if (!this.audioPlaybackManager) {
+        this.errorMessage = "播放器初始化中，请稍后重试";
+        return;
+      }
 
       this.errorMessage = "";
-      this.stopPlayback();
-      const currentSeq = this.playbackSeq;
-      for (const source of sources) {
-        if (currentSeq !== this.playbackSeq) {
-          return;
-        }
-        try {
-          await this.playSingleSource(source, currentSeq);
-        } catch (error) {
-          if (currentSeq !== this.playbackSeq) {
-            return;
-          }
-          this.errorMessage = `播放发音失败：${error.message}`;
-          break;
-        }
+      try {
+        await this.audioPlaybackManager.playSequence(sources);
+      } catch (error) {
+        this.errorMessage = `播放发音失败：${error.message}`;
       }
-    },
-    async playSingleSource(source = {}, currentSeq) {
-      const url = source?.url || "";
-      const text = source?.text || "";
-      const rate = typeof source?.rate === "number" ? source.rate : 1;
-
-      if (url) {
-        try {
-          await this.playUrlAudio(url, rate, currentSeq);
-          return;
-        } catch (error) {
-          if (!text) {
-            throw error;
-          }
-        }
-      }
-      if (!text) {
-        throw new Error("缺少可播放文本");
-      }
-      await this.playSpeech(text, rate, currentSeq);
-    },
-    playUrlAudio(url, rate, currentSeq) {
-      return new Promise((resolve, reject) => {
-        if (currentSeq !== this.playbackSeq) {
-          resolve();
-          return;
-        }
-
-        const audio = this.ensurePlaybackAudio();
-        audio.pause();
-        audio.currentTime = 0;
-        audio.src = url;
-        audio.defaultPlaybackRate = rate;
-        audio.playbackRate = rate;
-        if (typeof audio.preservesPitch === "boolean") {
-          audio.preservesPitch = false;
-        }
-        if (typeof audio.webkitPreservesPitch === "boolean") {
-          audio.webkitPreservesPitch = false;
-        }
-        if (typeof audio.mozPreservesPitch === "boolean") {
-          audio.mozPreservesPitch = false;
-        }
-
-        const cleanup = () => {
-          audio.removeEventListener("ended", handleEnded);
-          audio.removeEventListener("error", handleError);
-        };
-        const handleEnded = () => {
-          cleanup();
-          resolve();
-        };
-        const handleError = () => {
-          cleanup();
-          reject(new Error("音频资源加载失败"));
-        };
-
-        audio.addEventListener("ended", handleEnded);
-        audio.addEventListener("error", handleError);
-
-        const playPromise = audio.play();
-        if (playPromise && typeof playPromise.catch === "function") {
-          playPromise.catch((error) => {
-            cleanup();
-            reject(error);
-          });
-        }
-      });
-    },
-    playSpeech(text, rate = 1, currentSeq) {
-      return new Promise((resolve, reject) => {
-        if (
-          typeof window === "undefined" ||
-          !window.speechSynthesis ||
-          typeof window.SpeechSynthesisUtterance !== "function"
-        ) {
-          reject(new Error("当前环境不支持语音合成"));
-          return;
-        }
-        if (currentSeq !== this.playbackSeq) {
-          resolve();
-          return;
-        }
-
-        const utterance = this.createUtterance(text, rate);
-        utterance.onend = () => resolve();
-        utterance.onerror = (event) =>
-          reject(new Error(event?.error || "语音合成失败"));
-        window.speechSynthesis.speak(utterance);
-      });
-    },
-    createUtterance(text, rate = 1) {
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = "ja-JP";
-      utterance.rate = rate;
-      utterance.pitch = 1;
-      utterance.volume = 1;
-
-      if (typeof window !== "undefined" && window.speechSynthesis) {
-        const voices = window.speechSynthesis.getVoices();
-        const jaVoice =
-          voices.find((voice) => voice.lang === "ja-JP") ||
-          voices.find((voice) => voice.lang && voice.lang.startsWith("ja"));
-        if (jaVoice) {
-          utterance.voice = jaVoice;
-        }
-      }
-      return utterance;
-    },
-    warmupVoices() {
-      if (typeof window === "undefined" || !window.speechSynthesis) {
-        return;
-      }
-      window.speechSynthesis.getVoices();
-    },
-    ensurePlaybackAudio() {
-      if (!this.playbackAudio) {
-        this.playbackAudio = new Audio();
-        this.playbackAudio.preload = "auto";
-      }
-      return this.playbackAudio;
     },
     stopPlayback() {
-      this.playbackSeq += 1;
-      if (typeof window !== "undefined" && window.speechSynthesis) {
-        window.speechSynthesis.cancel();
+      if (this.audioPlaybackManager) {
+        this.audioPlaybackManager.stop();
       }
-      if (this.playbackAudio) {
-        this.playbackAudio.pause();
-        this.playbackAudio.currentTime = 0;
-      }
-    },
-    destroyPlaybackAudio() {
-      if (!this.playbackAudio) {
-        return;
-      }
-      this.playbackAudio.pause();
-      this.playbackAudio.currentTime = 0;
-      this.playbackAudio.removeAttribute("src");
-      this.playbackAudio.load();
-      this.playbackAudio = null;
     },
     formatVocabulary(item = {}) {
       const text = item.text || "";
