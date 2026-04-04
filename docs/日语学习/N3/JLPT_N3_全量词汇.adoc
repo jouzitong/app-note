@@ -1,0 +1,1671 @@
+= JLPT N3 全量词汇表（基于公开词表聚合）
+:toc: left
+:toclevels: 2
+:sectnums:
+
+[NOTE]
+====
+说明：JLPT 官方不公布唯一固定词表。
+本文件基于公开 N3 词表（Jisho `#jlpt-n3 #words`）自动聚合、去重生成。
+释义为英文首义（来源词典原文），用于全量覆盖背诵。
+====
+
+== N3 全量词汇
+
+|===
+|日语 |假名 |释义（英文首义） |词性
+
+|不図 |不図 |suddenly; casually; accidentally; incidentally; unexpectedly; unintentionally |Adverb (fukushi)
+|可哀想 |可哀想 |poor; pitiable; pathetic; pitiful |Na-adjective (keiyodoshi), Noun
+|味方 |味方 |friend; ally; supporter |Noun, Noun which may take the genitive case particle 'no'
+|屯 |屯 |ton (esp. a metric ton, i.e. 1000 kg); tonne |Noun
+|御目出度う |御目出度う |congratulations!; well done!; best wishes!; all the best! |Other forms
+|怪我 |怪我 |injury; wound |Noun, Suru verb, Transitive verb, Intransitive verb
+|支払う |支払う |to pay |Godan verb with 'u' ending, Transitive verb
+|普段 |普段 |usual; normal; everyday; habitual; ordinary |Noun which may take the genitive case particle 'no', Noun
+|欧羅巴 |欧羅巴 |Europe |Noun
+|滅多に |滅多に |rarely; seldom |Adverb (fukushi)
+|無駄 |無駄 |futility; waste; uselessness; pointlessness; idleness |Noun, Na-adjective (keiyodoshi)
+|生憎 |生憎 |unfortunately; sorry, but ... |Na-adjective (keiyodoshi), Adverb (fukushi), Noun, Noun which may take the genitive case particle 'no'
+|真逆 |真逆 |by no means; never!; well, I never!; you don't say!; no way! |Adverb (fukushi)
+|真面目 |真面目 |serious; earnest; sober; grave |Na-adjective (keiyodoshi), Noun
+|矢張り |矢張り |as expected; sure enough; just as one thought |Adverb (fukushi)
+|素敵 |素敵 |lovely; wonderful; charming; enchanting; nice; great; splendid; marvellous (marvelous); fantastic; superb |Na-adjective (keiyodoshi)
+|缶 |缶 |can; tin |Noun, Counter
+|面倒 |面倒 |trouble; bother |Noun, Na-adjective (keiyodoshi)
+|馬鹿 |馬鹿 |idiot; moron; fool |Noun
+|ＯＵＴ |ＯＵＴ |out (of a ball; in tennis, etc.); outside the line |Noun
+|愛 |あい |love; affection; care |Noun, Noun, used as a suffix
+|愛情 |あいじょう |love; affection |Noun, Noun which may take the genitive case particle 'no'
+|愛する |あいする |to love |Suru verb - special class, Transitive verb
+|合図 |あいず |sign; signal; cue |Noun, Suru verb, Transitive verb, Intransitive verb
+|相手 |あいて |companion; partner; company |Noun
+|明かり |あかり |light; glow; gleam |Noun
+|空き |あき |space; room; gap; emptiness |Noun
+|明らか |あきらか |clear; obvious; evident; plain; definite |Na-adjective (keiyodoshi)
+|諦める |あきらめる |to give up; to abandon (hope, plans); to resign oneself (to) |Ichidan verb, Transitive verb
+|飽きる |あきる |to get tired of; to tire of; to lose interest in; to grow weary of; to get fed up with; to get sick of; to become bored with |Ichidan verb, Suffix, Intransitive verb
+|握手 |あくしゅ |handshake |Noun, Suru verb, Intransitive verb
+|悪魔 |あくま |devil; demon; fiend |Noun
+|預ける |あずける |to leave (in someone's keeping); to put (in someone's care); to place (in someone's custody); to entrust (someone) with; to deposit |Ichidan verb, Transitive verb
+|汗 |あせ |sweat; perspiration |Noun
+|値 |あたい |price; cost |Noun
+|与える |あたえる |to give (esp. to someone of lower status); to bestow; to grant; to confer; to present; to award |Ichidan verb, Transitive verb
+|辺り |あたり |(in the) neighbourhood; neighborhood; vicinity; nearby; surroundings |Noun, Noun, used as a suffix, Adverb (fukushi)
+|当たる |あたる |to be hit; to strike |Godan verb with 'ru' ending, Intransitive verb
+|彼方此方 |あちこち |here and there; various places; all around; all over; everywhere; throughout |Pronoun, Adverb (fukushi), Suru verb, Intransitive verb
+|扱う |あつかう |to deal with (a person); to treat; to handle; to take care of; to entertain |Godan verb with 'u' ending, Transitive verb
+|集まり |あつまり |gathering; meeting; assembly; collection; attendance |Noun
+|当てる |あてる |to hit |Ichidan verb, Transitive verb
+|跡 |あと |trace; tracks; mark; sign |Noun
+|穴 |あな |hole; opening; orifice; perforation |Noun
+|油 |あぶら |oil |Noun
+|誤り |あやまり |error; mistake; slip; bug |Noun
+|粗い |あらい |coarse; rough |I-adjective (keiyoushi)
+|嵐 |あらし |storm; tempest |Noun
+|新た |あらた |new; fresh; novel |Na-adjective (keiyodoshi)
+|凡ゆる |あらゆる |all; every |Pre-noun adjectival (rentaishi)
+|表す |あらわす |to represent; to signify; to stand for |Godan verb with 'su' ending, Transitive verb
+|現れ |あらわれ |embodiment; manifestation; materialization; materialisation; expression; indication |Noun
+|現れる |あらわれる |to appear; to come in sight; to become visible; to come out; to embody; to materialize; to materialise |Ichidan verb, Intransitive verb
+|有難う |ありがとう |thank you; thanks |Other forms
+|或いは |ある |or; either ... or |Conjunction
+|或る |ある |a certain ...; some ... |Pre-noun adjectival (rentaishi)
+|泡 |あわ |bubble; foam; froth; suds; lather; head (on beer) |Noun
+|合わせる |あわせる |to match (rhythm, speed, etc.) |Ichidan verb, Transitive verb
+|哀れ |あわれ |pity; sorrow; grief; misery; compassion; pathos |Noun
+|案 |あん |idea; plan; proposal; suggestion; (government) bill |Noun, Noun, used as a suffix
+|暗記 |あんき |memorization; memorisation; learning by heart |Noun, Suru verb, Transitive verb
+|安定 |あんてい |stability; steadiness; consistency; equilibrium; balance; composure |Noun, Suru verb, Intransitive verb
+|案内 |あんない |guidance; leading (the way); showing around |Noun, Suru verb, Transitive verb
+|あんなに |あんなに |to that extent; to that degree; so much; so |Adverb (fukushi)
+|胃 |い |stomach |Noun
+|委員 |いいん |committee member |Noun
+|意外 |いがい |unexpected; surprising |Na-adjective (keiyodoshi), Adverb taking the 'to' particle, Noun
+|息 |いき |breath; breathing |Noun
+|行き |いき |the way there; outbound leg; outbound trip; departing leg |Noun
+|勢い |いきおい |force; vigor; vigour; energy; spirit; life |Noun
+|いけない |いけない |bad; wrong; naughty |Expressions (phrases, clauses, etc.), I-adjective (keiyoushi)
+|医師 |いし |doctor; physician |Noun
+|意志 |いし |will; volition; intention; intent; determination |Noun
+|意思 |いし |intention; wish; purpose; mind (to do) |Noun
+|意識 |いしき |consciousness |Noun, Suru verb, Transitive verb, Intransitive verb
+|維持 |いじ |maintenance; preservation; improvement |Noun, Suru verb, Transitive verb
+|異常 |いじょう |abnormal; unusual; extraordinary; remarkable; uncommon |Na-adjective (keiyodoshi), Noun
+|泉 |いずみ |spring; fountain |Noun
+|何れ |いずれ |which; where; who |Pronoun
+|以前 |いぜん |before; prior to; ago |Noun, used as a suffix
+|板 |いた |board; plank |Noun
+|悪戯 |いたずら |mischief; prank; trick; practical joke |Noun, Suru verb, Transitive verb, Intransitive verb
+|頂きます |いただきます |thank you (for the meal just served); I receive (this meal) |Expressions (phrases, clauses, etc.)
+|頂く |いただく |to receive; to get; to accept; to take; to buy |Godan verb with 'ku' ending, Transitive verb
+|痛み |いたみ |pain; ache; soreness; grief; distress |Noun
+|至る |いたる |to arrive at (e.g. a decision); to reach (a stage); to attain |Godan verb with 'ru' ending, Intransitive verb
+|偉大 |いだい |great; grand; magnificent; outstanding; mighty |Na-adjective (keiyodoshi)
+|抱く |いだく |to hold in one's arms (e.g. a baby); to embrace; to hug |Godan verb with 'ku' ending, Transitive verb
+|位置 |いち |place; position; location |Noun, Suru verb, Intransitive verb
+|市 |いち |market; fair |Noun
+|一時 |いちじ |one o'clock |Noun
+|一度に |いちどに |all at once |Adverb (fukushi)
+|市場 |いちば |(town) market; (street) market; marketplace |Noun
+|一家 |いっか |a family; a household; a home; one's family; whole family |Noun
+|一種 |いっしゅ |a kind; a sort; a variety; a species |Noun
+|一瞬 |いっしゅん |instant; moment; for an instant |Noun, Adverb (fukushi)
+|一生 |いっしょう |whole life; a lifetime; all through life; one existence; a generation; an age; the whole world; the era |Noun, Noun which may take the genitive case particle 'no', Adverb (fukushi)
+|一層 |いっそう |even more; still more; all the more; more than ever |Adverb (fukushi)
+|一体 |いったい |(what) the heck; (why) in the world; (who) on earth; (where) the hell; (how) the hell |Adverb (fukushi)
+|一致 |いっち |agreement; accord; correspondence; consistency; coincidence; match |Noun, Suru verb, Intransitive verb
+|一般 |いっぱん |general; universal |Noun which may take the genitive case particle 'no', Noun
+|一方 |いっぽう |one (esp. of two); the other; one way; the other way; one direction; the other direction; one side; the other side; one party; the other party |Noun
+|何時か |いつか |sometime; someday; one day; some time or other; the other day; in due course; in time |Adverb (fukushi)
+|何時でも |いつでも |always; all the time; at all times |Adverb (fukushi)
+|何時までも |いつまでも |forever; eternally; for good; as long as one likes; indefinitely; endlessly; for a long time |Adverb (fukushi)
+|従兄弟 |いとこ |cousin (male) |Noun
+|移動 |いどう |movement; transfer; migration; removal; travel |Noun, Suru verb, Transitive verb, Intransitive verb
+|稲 |いね |rice plant (Oryza sativa) |Noun
+|居眠り |いねむり |nodding off (while sitting); dozing |Noun, Suru verb, Intransitive verb
+|命 |いのち |life; life force |Noun
+|違反 |いはん |violation; offense; offence; breach; transgression; infringement; contravention |Noun, Suru verb, Intransitive verb
+|衣服 |いふく |clothes |Noun
+|居間 |いま |living room (Western style); sitting room |Noun
+|今に |いまに |before long; even now |Adverb (fukushi)
+|今にも |いまにも |at any moment (now); at any minute; on the verge of (doing); just about to |Adverb (fukushi)
+|以来 |いらい |since; henceforth |Noun, used as a suffix
+|依頼 |いらい |request; commission; entrusting (with a matter) |Noun, Suru verb, Transitive verb
+|苛々 |いらいら |to get irritated; to get annoyed; to be on the edge; to fret; to lose patience |Suru verb, Noun, Adverb (fukushi), Adverb taking the 'to' particle, Intransitive verb
+|いらっしゃい |いらっしゃい |come; go; stay |Other forms
+|医療 |いりょう |medical treatment; medical care |Noun
+|岩 |いわ |rock; boulder |Noun
+|祝い |いわい |congratulation; congratulations; celebration; festival |Noun
+|祝う |いわう |to celebrate; to congratulate; to observe (a festival) |Godan verb with 'u' ending, Transitive verb
+|言わば |いわば |so to speak; so to call it; as it were |Adverb (fukushi)
+|所謂 |いわゆる |what is called; what you call; what they call; so-called |Pre-noun adjectival (rentaishi)
+|印刷 |いんさつ |printing |Noun, Suru verb, Transitive verb
+|印象 |いんしょう |impression |Noun
+|引退 |いんたい |retirement |Noun, Suru verb, Intransitive verb
+|引用 |いんよう |quotation; citation; reference |Noun, Suru verb, Transitive verb, Noun which may take the genitive case particle 'no'
+|伺う |うかがう |to call on someone; to call at a place; to pay a visit; to wait on someone |Godan verb with 'u' ending, Transitive verb
+|受け取る |うけとる |to receive; to get; to accept |Godan verb with 'ru' ending, Transitive verb
+|動かす |うごかす |to move; to shift; to stir; to budge; to change position |Godan verb with 'su' ending, Transitive verb
+|兎 |うさぎ |rabbit; hare; coney; cony; lagomorph (esp. leporids) |Noun
+|牛 |うし |cattle (Bos taurus); cow; bull; ox; calf |Noun
+|失う |うしなう |to lose |Godan verb with 'u' ending, Transitive verb
+|嘘 |うそ |lie; fib; falsehood; untruth |Noun, Noun which may take the genitive case particle 'no'
+|疑う |うたがう |to doubt; to distrust; to be suspicious of; to suspect |Godan verb with 'u' ending, Transitive verb
+|宇宙 |うちゅう |universe; cosmos; space |Noun
+|訴える |うったえる |to raise; to bring to (someone's attention) |Ichidan verb, Transitive verb
+|撃つ |うつ |to shoot (a gun, person, etc.); to fire |Godan verb with 'tsu' ending, Transitive verb
+|唸る |うなる |to groan; to moan |Godan verb with 'ru' ending, Intransitive verb
+|奪う |うばう |to take (by force); to take away; to snatch; to steal; to rob (someone) of; to dispossess of; to deprive of; to usurp |Godan verb with 'u' ending, Transitive verb
+|馬 |うま |horse |Noun
+|上手い |うまい |skillful; skilful; skilled; good; expert; clever (expression, trick, etc.); apt; appropriate |I-adjective (keiyoushi)
+|生まれ |うまれ |birth; birthplace |Noun
+|梅 |うめ |Japanese apricot (Prunus mume); Japanese plum; ume; Chinese plum |Noun
+|裏切る |うらぎる |to betray; to turn traitor (to); to double-cross; to go back on; to be unfaithful (to) |Godan verb with 'ru' ending, Transitive verb
+|得る |うる |to be able to ...; can ... |Nidan verb with 'u' ending (archaic), Suffix
+|嬉しい |うれしい |happy; glad; pleased; delighted; overjoyed |I-adjective (keiyoushi)
+|売れる |うれる |to sell (well) |Ichidan verb, Intransitive verb
+|噂 |うわさ |rumour; rumor; report; hearsay; gossip; common talk |Noun, Suru verb, Noun which may take the genitive case particle 'no'
+|運 |うん |fortune; luck; chance |Noun
+|運転 |うんてん |operation (of a machine); running; working |Noun, Suru verb, Transitive verb, Intransitive verb
+|運動 |うんどう |exercise; physical training; workout; sports; athletics |Noun, Suru verb, Intransitive verb
+|柄 |え |handle; grip |Noun
+|永遠 |えいえん |eternity; perpetuity; permanence; immortality |Noun, Noun which may take the genitive case particle 'no', Na-adjective (keiyodoshi)
+|影響 |えいきょう |influence; effect; impact |Noun, Suru verb, Intransitive verb
+|営業 |えいぎょう |business; trade; operations |Noun, Suru verb, Transitive verb
+|衛星 |えいせい |(natural) satellite; moon |Noun
+|栄養 |えいよう |nutrition; nourishment |Noun
+|笑顔 |えがお |smiling face; smile |Noun
+|描く |えがく |to draw; to paint; to sketch |Godan verb with 'ku' ending, Transitive verb
+|餌 |えさ |(animal) feed; fodder; pet food |Noun
+|得る |える |to get; to earn; to acquire; to procure; to gain; to secure; to attain; to obtain; to win |Ichidan verb, Transitive verb
+|円 |えん |yen (currency of Japan) |Noun
+|縁 |えん |fate; destiny (esp. as a mysterious force that binds two people together) |Noun
+|延期 |えんき |postponement; deferment; adjournment |Noun, Suru verb, Transitive verb
+|演技 |えんぎ |acting; performance |Noun, Suru verb, Intransitive verb
+|援助 |えんじょ |assistance; aid; support |Noun, Suru verb, Transitive verb
+|演説 |えんぜつ |speech; address |Noun, Suru verb, Intransitive verb
+|演奏 |えんそう |musical performance |Noun, Suru verb, Transitive verb
+|老い |おい |old age; old person; the old; the aged |Noun
+|追いつく |おいつく |to catch up (with); to draw level; to pull even; to reach |Godan verb with 'ku' ending, Intransitive verb
+|王 |おう |king; ruler; sovereign; monarch |Noun, Noun, used as a suffix
+|追う |おう |to chase; to run after; to pursue; to follow after |Godan verb with 'u' ending, Transitive verb
+|王様 |おうさま |king |Noun
+|王子 |おうじ |prince |Noun
+|応じる |おうじる |to respond; to satisfy; to accept; to comply with; to apply for |Ichidan verb, Intransitive verb
+|横断 |おうだん |crossing (a road, river, etc.); cutting through (e.g. of a river through a town); cutting across; intersecting (e.g. a railway track) |Noun, Suru verb, Intransitive verb
+|終える |おえる |to finish |Ichidan verb, Transitive verb, Auxiliary verb
+|大いに |おおいに |very; very much; greatly; considerably; highly; exceedingly; a great deal; a lot; to one's heart's content |Adverb (fukushi)
+|覆う |おおう |to cover; to hide; to conceal; to wrap; to disguise |Godan verb with 'u' ending, Transitive verb
+|大家 |おおや |landlord; landlady |Noun
+|丘 |おか |hill; height; knoll; rising ground |Noun
+|沖 |おき |open sea |Noun
+|奥 |おく |inner part; interior; back (of a drawer, one's throat, etc.); depths (e.g. of a forest); recesses (e.g. of a cave); heart; end (of a road, garden, etc.) |Noun
+|贈る |おくる |to give (as a gift); to present |Godan verb with 'ru' ending, Transitive verb
+|起こる |おこる |to occur; to happen |Godan verb with 'ru' ending, Intransitive verb
+|幼い |おさない |very young; little |I-adjective (keiyoushi)
+|収める |おさめる |to put (into); to put away (in); to put back (in); to keep (in); to store (in); to restore (to its place) |Ichidan verb, Transitive verb
+|お喋り |おしゃべり |chattering; talk; idle talk; chat; chitchat; gossip |Noun, Suru verb, Transitive verb
+|汚染 |おせん |pollution; contamination |Noun, Suru verb, Transitive verb, Intransitive verb
+|恐らく |おそらく |probably; (most) likely; in all likelihood; I suspect; I dare say; I'm afraid |Adverb (fukushi)
+|恐れる |おそれる |to fear; to be afraid of |Ichidan verb, Transitive verb
+|恐ろしい |おそろしい |terrible; dreadful; terrifying; frightening |I-adjective (keiyoushi)
+|お互い |おたがい |each other; one another |Noun, Noun which may take the genitive case particle 'no', Adverb (fukushi)
+|穏やか |おだやか |calm; quiet; gentle; peaceful; mild |Na-adjective (keiyodoshi)
+|男の人 |おとこのひと |man |Expressions (phrases, clauses, etc.), Noun
+|劣る |おとる |to be inferior to; to be less good at; to fall behind |Godan verb with 'ru' ending, Intransitive verb
+|鬼 |おに |ogre; demon; oni |Noun
+|お昼 |おひる |lunch |Noun
+|帯 |おび |obi (kimono sash) |Noun
+|溺れる |おぼれる |to struggle in the water; to sink below the surface and become unable to breathe; to (nearly) drown |Ichidan verb, Intransitive verb
+|お前 |おまえ |you |Pronoun
+|思い出 |おもいで |memories; recollections; reminiscence |Noun
+|主に |おもに |mainly; primarily; mostly; largely; chiefly |Adverb (fukushi)
+|思わず |おもわず |unconsciously; involuntarily; instinctively; reflexively; spontaneously; unintentionally; in spite of oneself |Adverb (fukushi)
+|泳ぎ |およぎ |swimming |Noun
+|凡そ |およそ |about; roughly; approximately |Adverb (fukushi)
+|及ぼす |およぼす |to exert (influence); to exercise; to cause (e.g. damage); to do (e.g. harm); to bring about (e.g. benefits); to extend; to have an effect (on) |Godan verb with 'su' ending, Transitive verb
+|居る |おる |to be (animate); to be; to exist |Godan verb with 'ru' ending, Intransitive verb
+|下ろす |おろす |to take down; to bring down; to lower (a hand, flag, shutter, etc.); to drop (an anchor, curtain, etc.); to let down (hair); to launch (a boat) |Godan verb with 'su' ending, Transitive verb
+|恩 |おん |favour; favor; obligation; debt of gratitude |Noun
+|温暖 |おんだん |warm; mild; temperate |Na-adjective (keiyodoshi), Noun
+|温度 |おんど |temperature |Noun
+|課 |か |lesson |Noun, Noun, used as a suffix
+|会 |かい |meeting; assembly; party; gathering; conference; athletic meet |Noun, Noun, used as a suffix
+|回 |かい |counter for occurrences |Counter
+|絵画 |かいが |painting; picture |Noun
+|海外 |かいがい |foreign; abroad; overseas |Noun, Noun which may take the genitive case particle 'no'
+|会計 |かいけい |accounting; finance; account; reckoning |Noun, Noun which may take the genitive case particle 'no', Suru verb
+|解決 |かいけつ |settlement; solution; resolution |Noun, Suru verb, Transitive verb, Intransitive verb
+|会合 |かいごう |meeting; assembly; gathering |Noun, Suru verb, Intransitive verb
+|開始 |かいし |start; commencement; beginning; initiation |Noun, Suru verb, Transitive verb, Intransitive verb
+|解釈 |かいしゃく |interpretation; explanation; reading; construction |Noun, Suru verb, Transitive verb
+|改善 |かいぜん |betterment; improvement |Noun, Suru verb, Transitive verb, Intransitive verb
+|快適 |かいてき |pleasant; agreeable; comfortable |Na-adjective (keiyodoshi), Noun
+|回復 |かいふく |restoration; recovery; rehabilitation; return; improvement |Noun, Suru verb, Transitive verb, Intransitive verb
+|飼う |かう |to keep (a pet or other animal); to have; to own; to raise; to rear; to feed |Godan verb with 'u' ending, Transitive verb
+|替える |かえる |to replace; to convert; to change |Ichidan verb, Transitive verb
+|香り |かおり |aroma; fragrance; scent; smell |Noun
+|抱える |かかえる |to hold in one's arms; to carry in one's arms; to carry under one's arm; to hold (one's head) in one's hands |Ichidan verb, Transitive verb
+|価格 |かかく |price; value; cost |Noun
+|係 |かかり |charge; duty; person in charge; official; clerk |Noun
+|罹る |かかる |to contract (a disease); to suffer from |Godan verb with 'ru' ending, Intransitive verb
+|化学 |かがく |chemistry |Noun
+|輝く |かがやく |to shine; to sparkle; to twinkle; to glitter; to glisten |Godan verb with 'ku' ending, Intransitive verb
+|限る |かぎる |to restrict; to limit; to confine |Godan verb with 'ru' ending, Transitive verb
+|覚悟 |かくご |readiness; (mental) preparedness |Noun, Suru verb, Transitive verb
+|確実 |かくじつ |certain; sure; definite; reliable; sound; solid; safe; secure |Na-adjective (keiyodoshi), Noun
+|隠す |かくす |to hide; to conceal |Godan verb with 'su' ending, Transitive verb
+|拡大 |かくだい |expansion; extension |Noun, Suru verb, Transitive verb, Intransitive verb
+|確認 |かくにん |confirmation; verification; validation; review; check; affirmation; identification |Noun, Suru verb, Transitive verb
+|隠れる |かくれる |to hide; to conceal oneself; to take cover |Ichidan verb, Intransitive verb
+|家具 |かぐ |furniture |Noun
+|欠ける |かける |to chip; to be chipped; to break (off); to be damaged |Ichidan verb, Intransitive verb
+|影 |かげ |shadow; silhouette; figure; shape |Noun
+|陰 |かげ |shade; shadow |Noun
+|加減 |かげん |degree; extent; amount; balance; state; condition |Noun, Noun, used as a suffix
+|過去 |かこ |the past; bygone days |Noun, Adverb (fukushi), Noun which may take the genitive case particle 'no'
+|籠 |かご |basket (shopping, etc.); hamper; cage |Noun
+|火災 |かさい |conflagration; fire |Noun
+|菓子 |かし |confectionery; sweets; candy; cake |Noun
+|賢い |かしこい |wise; clever; smart |I-adjective (keiyoushi)
+|歌手 |かしゅ |singer |Noun
+|家事 |かじ |housework; domestic chores |Noun
+|数 |かず |number; amount |Noun
+|稼ぐ |かせぐ |to earn (income); to make (money) |Godan verb with 'gu' ending, Transitive verb
+|数える |かぞえる |to count; to enumerate |Ichidan verb, Transitive verb
+|型 |かた |type; style; model; pattern |Noun, Noun, used as a suffix
+|肩 |かた |shoulder |Noun
+|方々 |かたがた |people; (all) persons; everyone; ladies and gentlemen |Noun
+|刀 |かたな |sword (esp. Japanese single-edged); katana |Noun
+|語る |かたる |to talk about; to speak of; to tell; to narrate |Godan verb with 'ru' ending, Transitive verb
+|価値 |かち |value; worth; merit |Noun
+|勝ち |かち |win; victory |Noun
+|活気 |かっき |energy; vigour; vigor; liveliness; spirit; life; animation |Noun
+|格好 |かっこう |shape; form; figure; posture; pose |Noun
+|活動 |かつどう |activity (of a person, organization, animal, volcano, etc.); action; operation |Noun, Suru verb, Intransitive verb
+|活用 |かつよう |practical use; application; making good use of; putting to good use; capitalizing on |Noun, Suru verb, Transitive verb
+|悲しむ |かなしむ |to be sad; to mourn for; to regret |Godan verb with 'mu' ending, Transitive verb
+|必ずしも |かならずしも |(not) always; (not) necessarily; (not) entirely; (not) all |Adverb (fukushi)
+|可也 |かなり |considerably; fairly; quite; rather; pretty |Adverb (fukushi), Noun which may take the genitive case particle 'no', Na-adjective (keiyodoshi)
+|金 |かね |money |Noun
+|可能 |かのう |possible; potential; practicable; feasible |Na-adjective (keiyodoshi), Noun
+|株 |かぶ |stock; share |Noun, Counter
+|被る |かぶる |to put on (one's head); to wear; to have on; to pull over (one's head); to crown (oneself) |Godan verb with 'ru' ending, Transitive verb
+|構う |かまう |to mind; to care about; to be concerned about; to have a regard for |Godan verb with 'u' ending
+|上 |かみ |upper reaches (of a river); upper stream |Noun
+|神 |かみ |god; deity; divinity; spirit; kami |Noun
+|雷 |かみなり |lightning; thunder; thunderbolt |Noun
+|髪の毛 |かみのけ |hair (on the head); (a) hair |Expressions (phrases, clauses, etc.), Noun
+|科目 |かもく |(school) subject; curriculum; course |Noun
+|かも知れない |かもしれない |may; might; perhaps; may be; possibly |Expressions (phrases, clauses, etc.)
+|火曜 |かよう |Tuesday |Noun
+|空 |から |emptiness; being empty |Noun, Noun which may take the genitive case particle 'no'
+|彼ら |かれら |they; them |Pronoun
+|皮 |かわ |skin; hide; pelt; fur |Noun
+|革 |かわ |leather |Noun
+|可愛らしい |かわいらしい |lovely; sweet; pretty; cute; adorable |I-adjective (keiyoushi)
+|勘 |かん |perception; intuition; the sixth sense |Noun
+|管 |かん |pipe; tube |Noun
+|感覚 |かんかく |sense; sensation; feeling; intuition |Noun, Suru verb, Transitive verb
+|考え |かんがえ |thinking; thought; view; opinion; concept |Noun
+|観客 |かんきゃく |spectator; audience |Noun
+|環境 |かんきょう |environment; surroundings; circumstances |Noun
+|歓迎 |かんげい |welcome; (warm) reception |Noun, Suru verb, Transitive verb
+|観光 |かんこう |sightseeing; tourism |Noun, Suru verb, Transitive verb
+|観察 |かんさつ |observation; survey; watching |Noun, Suru verb, Transitive verb
+|感謝 |かんしゃ |thanks; gratitude; appreciation; thankfulness |Noun, Suru verb, Transitive verb, Intransitive verb
+|感心 |かんしん |admiration; being impressed |Noun, Suru verb, Intransitive verb
+|関心 |かんしん |concern; interest |Noun
+|感じ |かんじ |feeling; sense; impression |Noun
+|患者 |かんじゃ |patient |Noun
+|勘定 |かんじょう |calculation; computation; counting; reckoning; count |Noun, Suru verb, Transitive verb
+|感情 |かんじょう |emotion; feeling; feelings; sentiment |Noun, Noun which may take the genitive case particle 'no'
+|感じる |かんじる |to feel; to sense; to experience |Ichidan verb, Transitive verb, Intransitive verb
+|関する |かんする |to concern; to be related |Suru verb - special class
+|完成 |かんせい |completion; perfection; accomplishment |Noun, Suru verb, Transitive verb, Intransitive verb
+|完全 |かんぜん |perfect; complete |Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no', Noun
+|監督 |かんとく |supervision; control; superintendence; direction |Noun, Suru verb, Transitive verb
+|感動 |かんどう |being deeply moved emotionally; excitement; passion; inspiration; deep emotion; strong impression |Noun, Suru verb, Intransitive verb
+|管理 |かんり |control; management (e.g. of a business) |Noun, Suru verb, Transitive verb
+|関連 |かんれん |relation; connection; relevance |Noun, Suru verb, Intransitive verb
+|害 |がい |injury; harm; evil influence; damage |Noun
+|外交 |がいこう |diplomacy |Noun
+|外出 |がいしゅつ |going out; outing; leaving (one's home, office, etc.) |Noun, Suru verb, Intransitive verb
+|画家 |がか |painter; artist |Noun
+|学 |がく |learning; scholarship; study; erudition; knowledge; education |Noun
+|額 |がく |(picture) frame; framed picture |Noun
+|学者 |がくしゃ |scholar; academic; scientist |Noun
+|学習 |がくしゅう |learning; study |Noun, Suru verb, Transitive verb
+|学問 |がくもん |study; scholarship; learning; education; knowledge |Noun, Suru verb, Intransitive verb
+|がっかり |がっかり |to be disappointed; to be dejected; to be downhearted; to be discouraged; to be disheartened; to lose heart; to feel let down |Suru verb, Adverb (fukushi)
+|学期 |がっき |school term; semester |Noun
+|我慢 |がまん |endurance; patience; perseverance; bearing (with something) |Noun, Suru verb, Transitive verb, Intransitive verb
+|柄 |がら |pattern; design |Noun, Noun, used as a suffix
+|記憶 |きおく |memory; recollection; remembrance |Noun, Suru verb, Transitive verb
+|気温 |きおん |(air) temperature |Noun
+|機械 |きかい |machine; mechanism |Noun
+|期間 |きかん |period; term; interval |Noun
+|機関 |きかん |engine |Noun
+|企業 |きぎょう |enterprise; business; company; corporation |Noun
+|効く |きく |to be effective; to take effect; to be good (for) |Godan verb with 'ku' ending, Intransitive verb
+|機嫌 |きげん |humour; humor; temper; mood; spirits |Noun
+|気候 |きこう |climate |Noun
+|岸 |きし |bank; coast; shore |Noun
+|記者 |きしゃ |reporter; journalist |Noun
+|生地 |きじ |cloth; fabric; material; texture |Noun
+|記事 |きじ |article; news story; report; account |Noun
+|傷 |きず |wound; injury; cut; gash; bruise; scratch; scrape; scar |Noun
+|期待 |きたい |expectation; anticipation; hope |Noun, Suru verb, Transitive verb, Intransitive verb
+|帰宅 |きたく |returning home; going home; coming home; getting home |Noun, Suru verb, Intransitive verb
+|貴重 |きちょう |precious; valuable |Na-adjective (keiyodoshi), Noun
+|きちんと |きちんと |properly; accurately; exactly; precisely; regularly |Adverb (fukushi), Suru verb
+|きつい |きつい |tough; hard; severe; demanding; harsh |I-adjective (keiyoushi)
+|気づく |きづく |to notice; to realize; to realise; to become aware (of); to perceive; to sense; to suspect |Godan verb with 'ku' ending, Intransitive verb
+|気に入る |きにいる |to like; to be pleased with; to be delighted with; to take a liking to; to suit one's fancy |Expressions (phrases, clauses, etc.), Godan verb with 'ru' ending
+|記入 |きにゅう |entry (in a form, register, diary, etc.); filling in; filling out |Noun, Suru verb, Transitive verb
+|記念 |きねん |commemoration; celebration; remembrance; memory; honoring the memory of |Noun, Suru verb, Transitive verb
+|機能 |きのう |function; facility; faculty; feature |Noun, Suru verb, Intransitive verb
+|気の毒 |きのどく |pitiful; unfortunate; poor; miserable; wretched |Na-adjective (keiyodoshi), Noun
+|寄付 |きふ |contribution; donation |Noun, Suru verb, Transitive verb
+|基本 |きほん |basics; fundamentals; basis; foundation |Noun, Noun which may take the genitive case particle 'no'
+|希望 |きぼう |hope; wish; aspiration |Noun, Suru verb, Transitive verb
+|決まり |きまり |rule; regulation |Noun, Noun which may take the genitive case particle 'no'
+|気味 |きみ |sensation; feeling |Noun
+|奇妙 |きみょう |strange; odd; peculiar; queer; curious |Na-adjective (keiyodoshi), Noun
+|九 |きゅう |nine; 9 |Numeric
+|旧 |きゅう |old; former; ex- |Prefix
+|球 |きゅう |sphere; globe; ball; bulb |Noun
+|級 |きゅう |(school) grade; year; class |Noun, Counter
+|休暇 |きゅうか |holiday; vacation; day off; time off; leave; furlough |Noun
+|休憩 |きゅうけい |rest; break; recess; intermission |Noun, Suru verb, Intransitive verb
+|急激 |きゅうげき |sudden; abrupt; rapid; sharp; drastic; radical |Na-adjective (keiyodoshi)
+|吸収 |きゅうしゅう |absorption; suction; attraction |Noun, Suru verb, Transitive verb
+|救助 |きゅうじょ |relief; aid; rescue |Noun, Suru verb, Transitive verb
+|急速 |きゅうそく |rapid (e.g. progress) |Na-adjective (keiyodoshi), Noun
+|急に |きゅうに |swiftly; rapidly; quickly; immediately; hastily; hurriedly |Adverb (fukushi)
+|給料 |きゅうりょう |salary; wages; pay |Noun
+|教科書 |きょうかしょ |textbook; coursebook; schoolbook |Noun
+|供給 |きょうきゅう |supply; provision |Noun, Suru verb, Transitive verb
+|競技 |きょうぎ |game; match; contest; competition; sport; (sporting) event |Noun, Suru verb, Intransitive verb
+|教師 |きょうし |teacher; instructor |Noun
+|教授 |きょうじゅ |professor |Noun
+|強調 |きょうちょう |emphasis; stress; highlighting; underlining; underscoring |Noun, Suru verb, Transitive verb
+|共通 |きょうつう |common; shared; mutual |Noun which may take the genitive case particle 'no', Na-adjective (keiyodoshi), Noun
+|共同 |きょうどう |cooperation; collaboration; association; partnership; (acting in) unison |Noun, Noun, used as a prefix, Suru verb, Intransitive verb, Noun which may take the genitive case particle 'no'
+|恐怖 |きょうふ |fear; dread; dismay; terror; horror; scare; panic |Noun, Suru verb, Transitive verb, Intransitive verb
+|協力 |きょうりょく |cooperation; collaboration; help; support |Noun, Suru verb, Intransitive verb
+|強力 |きょうりょく |powerful; strong |Na-adjective (keiyodoshi), Noun
+|許可 |きょか |permission; approval; authorization; license |Noun, Suru verb, Transitive verb
+|局 |きょく |bureau; department |Noun, Noun, used as a suffix
+|極 |きょく |pole |Noun
+|巨大 |きょだい |huge; gigantic; enormous |Na-adjective (keiyodoshi), Noun
+|器用 |きよう |skillful; skilful; adroit; dexterous; dextrous; deft; nimble; handy |Na-adjective (keiyodoshi), Noun
+|嫌う |きらう |to hate; to dislike; to loathe; to abhor |Godan verb with 'u' ending, Transitive verb
+|霧 |きり |fog; mist |Noun
+|切れ |きれ |piece; slice; strip; scrap |Noun
+|切れる |きれる |to break; to snap; to be cut; to split; to crack |Ichidan verb, Intransitive verb
+|記録 |きろく |record; document; minutes; log; recording; putting on record; keeping a record (of); writing down |Noun, Suru verb, Transitive verb
+|金 |きん |gold (metal) |Noun
+|禁煙 |きんえん |abstaining from smoking; quitting smoking |Noun, Suru verb, Intransitive verb
+|金額 |きんがく |amount of money; sum |Noun
+|金庫 |きんこ |safe; strongbox; cashbox; vault; strongroom |Noun
+|金銭 |きんせん |money; cash |Noun, Noun which may take the genitive case particle 'no'
+|金属 |きんぞく |metal |Noun
+|近代 |きんだい |present day; modern times; recent times |Noun
+|緊張 |きんちょう |tension; strain; nervousness; stress |Noun, Suru verb, Intransitive verb
+|筋肉 |きんにく |muscle |Noun
+|金融 |きんゆう |finance; financing; credit transacting; loaning of money; circulation of money |Noun
+|金曜 |きんよう |Friday |Noun
+|議員 |ぎいん |member of an assembly; member of the Diet; member of parliament; member of Congress |Noun
+|議会 |ぎかい |congress; parliament; diet; legislative assembly |Noun
+|技師 |ぎし |engineer; technician |Noun
+|義務 |ぎむ |duty; obligation; responsibility |Noun
+|疑問 |ぎもん |doubt; question; suspicion; dubiousness |Noun, Na-adjective (keiyodoshi)
+|逆 |ぎゃく |reverse; opposite |Noun which may take the genitive case particle 'no', Na-adjective (keiyodoshi), Noun
+|議論 |ぎろん |argument; discussion; dispute; controversy |Noun, Suru verb, Transitive verb
+|銀 |ぎん |silver (Ag) |Noun
+|句 |く |section (i.e. of text); sentence; passage; paragraph |Noun, Noun, used as a suffix
+|食う |くう |to eat |Godan verb with 'u' ending, Transitive verb
+|臭い |くさい |stinking; smelly |I-adjective (keiyoushi)
+|鎖 |くさり |chain; chains |Noun
+|腐る |くさる |to rot; to go bad; to decay; to spoil; to fester; to decompose; to turn sour (e.g. milk) |Godan verb with 'ru' ending, Intransitive verb
+|癖 |くせ |habit (usu. a bad one); tendency |Noun
+|下さる |くださる |to give; to confer; to bestow |Godan verb - -aru special class, Transitive verb
+|下り |くだり |down-train; train heading toward the ending point of its route |Noun
+|苦痛 |くつう |pain; agony; suffering; distress; torment |Noun
+|区別 |くべつ |distinction; differentiation; discrimination; difference |Noun, Suru verb, Transitive verb
+|組 |くみ |class (of students) |Noun, Noun, used as a suffix
+|組合 |くみあい |association; union; guild |Noun
+|組む |くむ |to cross (legs or arms); to link (arms) |Godan verb with 'mu' ending, Transitive verb, Intransitive verb
+|位 |くらい |throne; crown; (nobleman's) seat |Noun
+|暮らし |くらし |(way of) life; lifestyle; living; life circumstances; livelihood; day-to-day life |Noun, Noun, used as a suffix
+|暮らす |くらす |to live (on, by, etc.); to lead a life; to get along; to get by |Godan verb with 'su' ending, Intransitive verb
+|繰り返す |くりかえす |to repeat; to do over again |Godan verb with 'su' ending, Transitive verb, Intransitive verb
+|狂う |くるう |to go mad; to lose one's mind; to go crazy; to go insane |Godan verb with 'u' ending, Intransitive verb
+|苦しい |くるしい |painful; difficult; tough; hard |I-adjective (keiyoushi)
+|苦しむ |くるしむ |to suffer; to groan; to be worried |Godan verb with 'mu' ending, Intransitive verb
+|暮れ |くれ |sunset; sundown; nightfall; dusk |Noun, Adverb (fukushi), Noun which may take the genitive case particle 'no', Noun, used as a suffix
+|苦労 |くろう |trouble; hardship; difficulty; labour; labor; toil; pains |Noun, Suru verb, Transitive verb, Intransitive verb
+|加える |くわえる |to add; to add up; to sum up; to append; to annex |Ichidan verb, Transitive verb
+|詳しい |くわしい |detailed; full; minute |I-adjective (keiyoushi)
+|加わる |くわわる |to be added to; to be appended |Godan verb with 'ru' ending, Intransitive verb
+|訓 |くん |native Japanese reading of a Chinese character |Noun
+|訓練 |くんれん |training; drill; practice; discipline |Noun, Suru verb, Transitive verb
+|偶然 |ぐうぜん |coincidence; chance; accident; fortuity |Noun, Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no'
+|具体 |ぐたい |concreteness; embodiment |Noun
+|ぐっすり |ぐっすり |soundly (sleeping); fast (asleep) |Adverb (fukushi), Adverb taking the 'to' particle
+|軍 |ぐん |army; armed forces; troops |Noun
+|軍隊 |ぐんたい |armed forces; military; troops |Noun
+|敬意 |けいい |respect; honour; honor |Noun
+|経営 |けいえい |management; administration; operation; running (a business); conducting |Noun, Suru verb, Transitive verb
+|計画 |けいかく |plan; project; schedule; scheme; program; programme |Noun, Suru verb, Transitive verb
+|景気 |けいき |business conditions; the market; economic activity; economic climate |Noun
+|経験 |けいけん |experience |Noun, Suru verb, Transitive verb
+|傾向 |けいこう |tendency; trend; inclination |Noun
+|警告 |けいこく |warning; caution; admonition |Noun, Suru verb, Transitive verb
+|計算 |けいさん |calculation; computation; reckoning; counting; adding up; working out; figures |Noun, Suru verb, Transitive verb
+|刑事 |けいじ |(police) detective |Noun
+|掲示 |けいじ |notice; bulletin; post; posting; placard |Noun, Suru verb, Transitive verb
+|契約 |けいやく |contract; compact; agreement |Noun, Suru verb, Transitive verb
+|経由 |けいゆ |going through; going via; going by way of |Noun, Suru verb, Intransitive verb
+|化粧 |けしょう |make-up; makeup; cosmetics |Noun, Suru verb, Transitive verb, Intransitive verb
+|結果 |けっか |result; consequence; outcome; effect |Noun
+|欠陥 |けっかん |defect; fault; flaw; deformity; deficiency; shortage; gap |Noun
+|結局 |けっきょく |after all; in the end; ultimately; eventually |Adverb (fukushi)
+|決心 |けっしん |determination; resolution |Noun, Suru verb, Transitive verb
+|欠席 |けっせき |absence; non-attendance |Noun, Suru verb, Intransitive verb
+|決定 |けってい |decision; determination |Noun, Suru verb, Transitive verb, Intransitive verb
+|欠点 |けってん |fault; defect; flaw; weak point; weakness; shortcoming; drawback |Noun
+|結論 |けつろん |conclusion (of an argument, discussion, study, etc.) |Noun, Suru verb, Intransitive verb
+|煙 |けむり |smoke; fumes |Noun
+|券 |けん |ticket; coupon; bond; certificate |Noun, Noun, used as a suffix
+|県 |けん |prefecture (of Japan); county (of China, Taiwan, Norway, etc.); department (of France); province (of Italy, Spain, etc.) |Noun, Noun, used as a suffix
+|軒 |けん |counter for buildings (esp. houses) |Suffix, Counter
+|見解 |けんかい |opinion; point of view |Noun
+|健康 |けんこう |health |Noun
+|検査 |けんさ |inspection (e.g. customs, factory); examination; test; check; scan (e.g. MRI, PET); audit |Noun, Suru verb, Transitive verb
+|建設 |けんせつ |construction; establishment |Noun, Suru verb, Transitive verb
+|建築 |けんちく |construction; architecture (of buildings) |Noun, Suru verb, Transitive verb
+|検討 |けんとう |consideration; examination; investigation; study; scrutiny; discussion; analysis; review |Noun, Suru verb, Transitive verb
+|見当 |けんとう |estimate; guess; conjecture; aim |Noun
+|憲法 |けんぽう |constitution |Noun
+|権利 |けんり |right; privilege |Noun
+|下 |げ |lowness (of degree, value, etc.); inferiority |Noun
+|芸術 |げいじゅつ |art; the arts |Noun
+|劇 |げき |drama; play |Noun
+|劇場 |げきじょう |theatre; theater; playhouse |Noun
+|月曜 |げつよう |Monday |Noun
+|限界 |げんかい |limit; bound |Noun, Noun which may take the genitive case particle 'no'
+|現金 |げんきん |cash; ready money; money on hand; currency |Noun
+|言語 |げんご |language |Noun
+|現在 |げんざい |the present; present time; now |Noun, Adverb (fukushi), Noun which may take the genitive case particle 'no'
+|現象 |げんしょう |phenomenon |Noun
+|現実 |げんじつ |reality; actuality; hard fact |Noun
+|現状 |げんじょう |present condition; existing state; status quo; current state |Noun, Noun which may take the genitive case particle 'no'
+|現代 |げんだい |present age; present day; today |Noun, Noun which may take the genitive case particle 'no'
+|現場 |げんば |actual spot; scene (of a crime, accident, etc.) |Noun
+|恋 |こい |(romantic) love |Noun
+|濃い |こい |deep (colour); dark |I-adjective (keiyoushi)
+|恋人 |こいびと |lover; sweetheart; boyfriend; girlfriend |Noun
+|幸運 |こううん |good luck; fortune |Noun, Na-adjective (keiyodoshi)
+|講演 |こうえん |lecture; address; speech |Noun, Suru verb, Transitive verb, Intransitive verb
+|効果 |こうか |effect; effectiveness; efficacy; result |Noun, Noun which may take the genitive case particle 'no'
+|硬貨 |こうか |coin |Noun
+|高価 |こうか |highly priced; expensive; valuable; costly |Na-adjective (keiyodoshi), Noun
+|交換 |こうかん |exchange; interchange; switching; reciprocity; barter; substitution; replacement; clearing (of checks, cheques) |Noun, Suru verb, Transitive verb
+|航空 |こうくう |aviation; flying |Noun
+|光景 |こうけい |scene; spectacle; sight; view |Noun
+|貢献 |こうけん |contribution (furthering a goal or cause); services (to a cause) |Noun, Suru verb, Intransitive verb
+|攻撃 |こうげき |attack; assault; raid; onslaught; offensive |Noun, Suru verb, Transitive verb
+|広告 |こうこく |advertisement; advertising |Noun, Suru verb, Transitive verb
+|交際 |こうさい |company; friendship; association; society; acquaintance |Noun, Suru verb, Intransitive verb
+|後者 |こうしゃ |the latter; the second |Noun
+|構成 |こうせい |composition; construction; formation; makeup; structure; organization; organisation |Noun, Suru verb, Transitive verb
+|高速 |こうそく |high-speed; rapid; express |Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no', Noun
+|行動 |こうどう |action; conduct; behaviour; behavior; mobilization; mobilisation |Noun, Suru verb, Intransitive verb, Noun which may take the genitive case particle 'no'
+|幸福 |こうふく |happiness; well-being; joy; welfare; blessedness |Noun, Na-adjective (keiyodoshi)
+|公平 |こうへい |fairness; impartiality; justice; objectivity |Noun, Na-adjective (keiyodoshi)
+|候補 |こうほ |candidate; contender; prospect; pick; choice; list |Noun
+|考慮 |こうりょ |consideration; taking into account |Noun, Suru verb, Transitive verb
+|越える |こえる |to cross over; to cross; to pass through; to pass over (out of); to go beyond; to go past |Ichidan verb, Transitive verb
+|氷 |こおり |ice |Noun
+|凍る |こおる |to freeze; to become frozen; to freeze over |Godan verb with 'ru' ending, Intransitive verb
+|呼吸 |こきゅう |breathing; respiration |Noun, Suru verb, Transitive verb, Intransitive verb
+|国語 |こくご |national language |Noun
+|黒板 |こくばん |blackboard |Noun
+|克服 |こくふく |conquest (of a difficulty, illness, crisis, etc.); overcoming; surmounting; bringing under control |Noun, Suru verb, Transitive verb
+|腰 |こし |lower back; waist; hips; lumbar region |Noun
+|個人 |こじん |individual; private person; personal; private |Noun
+|越す |こす |to cross over (e.g. mountain); to go across |Godan verb with 'su' ending, Transitive verb
+|国会 |こっかい |National Diet; legislative assembly of Japan (1947-) |Noun
+|国境 |こっきょう |border (between countries); national border |Noun
+|骨折 |こっせつ |bone fracture |Noun, Suru verb, Transitive verb
+|小包 |こづつみ |parcel; package |Noun
+|事 |こと |thing; matter |Noun
+|異なる |ことなる |to differ; to be different; to disagree; to vary; to diverge |Godan verb with 'ru' ending, Intransitive verb
+|諺 |ことわざ |proverb; saying; aphorism; maxim |Noun
+|断る |ことわる |to refuse; to reject; to dismiss; to turn down; to decline |Godan verb with 'ru' ending, Transitive verb
+|粉 |こな |flour; meal; powder; dust |Noun
+|好み |このみ |liking; taste; fancy; fondness |Noun, Noun which may take the genitive case particle 'no'
+|好む |このむ |to like; to prefer |Godan verb with 'mu' ending, Transitive verb
+|小麦 |こむぎ |wheat |Noun
+|小屋 |こや |hut; cabin; shed; (animal) pen |Noun
+|これ等 |これら |these |Pronoun
+|頃 |ころ |(approximate) time; around; about; toward |Noun, Adverb (fukushi), Noun, used as a suffix
+|殺す |ころす |to kill; to slay; to murder; to slaughter |Godan verb with 'su' ending, Transitive verb
+|転ぶ |ころぶ |to fall down; to fall over |Godan verb with 'bu' ending, Intransitive verb
+|今回 |こんかい |this time; now |Noun, Adverb (fukushi)
+|今後 |こんご |from now on; hereafter |Noun, Adverb (fukushi)
+|混雑 |こんざつ |congestion; crush; crowding; jam |Noun, Suru verb, Intransitive verb
+|こんなに |こんなに |so; like this; in this way; this much; to this extent |Adverb (fukushi)
+|困難 |こんなん |difficulty; hardship; trouble; distress |Noun, Na-adjective (keiyodoshi)
+|今日は |こんにちは |hello; good day; good afternoon |Other forms
+|婚約 |こんやく |engagement; betrothal |Noun, Suru verb, Intransitive verb, Noun which may take the genitive case particle 'no'
+|混乱 |こんらん |disorder; chaos; confusion; mayhem |Noun, Suru verb, Intransitive verb
+|後 |ご |after |Noun, Noun, used as a suffix, Adverb (fukushi)
+|御 |ご |honorific/polite/humble prefix |Prefix
+|語 |ご |word; term |Noun, Noun, used as a suffix, Counter
+|豪華 |ごうか |extravagant; lavish; opulent; luxurious; magnificent; splendid; fancy; gorgeous |Na-adjective (keiyodoshi), Noun
+|合格 |ごうかく |passing (an exam); pass; success; passing grade |Noun, Suru verb, Intransitive verb
+|合計 |ごうけい |sum total; total amount |Noun, Suru verb, Transitive verb
+|強盗 |ごうとう |robber; mugger |Noun
+|誤解 |ごかい |misunderstanding |Noun, Suru verb, Transitive verb, Intransitive verb
+|語学 |ごがく |study of foreign languages |Noun
+|御免なさい |ごめんなさい |I'm sorry; my apologies; excuse me; pardon me |Expressions (phrases, clauses, etc.)
+|差 |さ |difference; variation |Noun, Noun, used as a suffix
+|際 |さい |occasion; time; circumstances; (in) case (of); when |Noun
+|最高 |さいこう |best; supreme; wonderful; finest |Noun which may take the genitive case particle 'no', Na-adjective (keiyodoshi), Noun
+|最終 |さいしゅう |last; final; closing |Noun which may take the genitive case particle 'no', Noun
+|最中 |さいちゅう |(in) the middle of; (in) the midst of; (in) the course of; (at) the height of |Noun
+|最低 |さいてい |least; lowest; minimum |Noun which may take the genitive case particle 'no', Na-adjective (keiyodoshi), Noun
+|才能 |さいのう |talent; ability |Noun
+|裁判 |さいばん |trial; judgement; judgment |Noun, Suru verb, Transitive verb, Noun which may take the genitive case particle 'no'
+|幸い |さいわい |happiness; blessedness; luck; fortune; felicity |Na-adjective (keiyodoshi), Noun
+|境 |さかい |border; boundary |Noun
+|逆らう |さからう |to go against; to oppose; to disobey; to defy |Godan verb with 'u' ending, Intransitive verb
+|盛り |さかり |height (e.g. of summer); peak (e.g. of cherry blossom season); (in) season; full bloom; full swing (of a party, etc.) |Noun, Noun, used as a suffix
+|作業 |さぎょう |work; operation; task |Noun, Suru verb, Intransitive verb
+|作品 |さくひん |work (e.g. book, film, painting, composition); piece; production; opus |Noun
+|作物 |さくもつ |crop; crops; (agricultural) produce; farm products |Noun
+|桜 |さくら |cherry tree; cherry blossom; sakura |Noun
+|酒 |さけ |alcohol; sake |Noun
+|叫ぶ |さけぶ |to shout; to cry (out); to scream; to shriek; to yell; to exclaim |Godan verb with 'bu' ending, Intransitive verb
+|避ける |さける |to avoid (physical contact with) |Ichidan verb, Transitive verb
+|支える |ささえる |to support; to prop; to sustain; to underlay; to hold up; to defend |Ichidan verb, Transitive verb
+|指す |さす |to point |Godan verb with 'su' ending, Transitive verb
+|誘う |さそう |to invite; to ask (someone to do); to call (for); to take (someone) along |Godan verb with 'u' ending, Transitive verb
+|作家 |さっか |author; writer; novelist; artist |Noun
+|作曲 |さっきょく |composition (of music); setting; writing music |Noun, Suru verb, Transitive verb, Intransitive verb
+|さっぱり |さっぱり |feeling refreshed; feeling relieved |Adverb (fukushi), Adverb taking the 'to' particle, Suru verb
+|札 |さつ |banknote; bill; note; paper money |Noun, Noun, used as a suffix
+|偖 |さて |well; now; then |Conjunction
+|砂漠 |さばく |desert |Noun
+|差別 |さべつ |distinction; differentiation; discrimination |Noun, Suru verb, Transitive verb
+|作法 |さほう |manners; etiquette; propriety |Noun
+|様々 |さまざま |various; varied; diverse; all sorts of |Na-adjective (keiyodoshi), Noun
+|覚ます |さます |to awaken; to arouse from sleep |Godan verb with 'su' ending, Transitive verb
+|覚める |さめる |to wake; to wake up |Ichidan verb, Intransitive verb
+|左右 |さゆう |left and right; right and left |Noun
+|皿 |さら |plate; dish; platter; disc |Noun
+|更に |さらに |furthermore; again; after all; more and more; moreover; even more |Adverb (fukushi), Conjunction
+|去る |さる |to leave; to go away |Godan verb with 'ru' ending, Intransitive verb
+|猿 |さる |monkey (esp. the Japanese macaque, Macaca fuscata); ape; non-human primate |Noun
+|騒ぎ |さわぎ |uproar; disturbance |Noun, Noun, used as a suffix
+|参加 |さんか |participation; joining; entry |Noun, Suru verb, Intransitive verb
+|参考 |さんこう |reference; consultation |Noun
+|賛成 |さんせい |approval; agreement; support; favour; favor |Noun, Suru verb, Intransitive verb, Noun which may take the genitive case particle 'no'
+|酸素 |さんそ |oxygen (O) |Noun
+|財産 |ざいさん |property; fortune; assets |Noun
+|座席 |ざせき |seat (esp. in public places or places with assigned seating); seating |Noun
+|ざっと |ざっと |roughly; approximately; round about; more or less |Adverb (fukushi)
+|氏 |し |Mr; Mrs; Ms; Miss |Suffix
+|詩 |し |poem; poetry; verse |Noun
+|幸せ |しあわせ |happiness; good fortune; luck; blessing |Noun, Na-adjective (keiyodoshi)
+|然も |しかも |moreover; furthermore |Conjunction
+|叱る |しかる |to scold; to chide; to rebuke; to reprimand |Godan verb with 'ru' ending, Transitive verb
+|式 |しき |way; style; fashion; method; system; form; type |Noun, Noun, used as a suffix
+|支給 |しきゅう |provision; supply; payment; allowance; grant |Noun, Suru verb, Transitive verb
+|頻りに |しきりに |frequently; repeatedly; often; incessantly; constantly |Adverb (fukushi)
+|刺激 |しげき |stimulus; stimulation; irritation (esp. of the body, e.g. skin, eyes) |Noun, Suru verb, Transitive verb
+|資源 |しげん |resources |Noun
+|支出 |ししゅつ |expenditure; disbursement; expenses |Noun, Suru verb, Transitive verb
+|詩人 |しじん |poet |Noun
+|沈む |しずむ |to sink; to go under; to submerge |Godan verb with 'mu' ending, Intransitive verb
+|自然 |しぜん |nature |Noun
+|思想 |しそう |thought; idea; ideology |Noun
+|舌 |した |tongue |Noun
+|従う |したがう |to obey (an order, law, etc.); to abide by (a rule, custom, etc.); to follow; to observe; to conform to; to yield to |Godan verb with 'u' ending, Intransitive verb
+|従って |したがって |therefore; consequently; accordingly |Conjunction
+|支度 |したく |preparation; arrangements |Noun, Suru verb, Transitive verb
+|親しい |したしい |close (e.g. friend); familiar; friendly; intimate |I-adjective (keiyoushi)
+|次第 |しだい |depending on |Suffix
+|質 |しつ |quality; value |Noun, Noun, used as a suffix
+|失業 |しつぎょう |unemployment |Noun
+|失望 |しつぼう |disappointment; despair |Noun, Suru verb, Intransitive verb
+|支店 |してん |branch office; branch store |Noun
+|品 |しな |article; item; thing; goods; stock |Noun
+|支配 |しはい |rule; domination; control |Noun, Suru verb, Transitive verb
+|支払い |しはらい |payment |Noun
+|芝居 |しばい |play; drama |Noun
+|屡々 |しばしば |often; again and again; frequently; repeatedly |Adverb (fukushi)
+|芝生 |しばふ |lawn; grass |Noun
+|資本 |しほん |funds; capital |Noun
+|死亡 |しぼう |death; dying; mortality |Noun, Suru verb, Intransitive verb
+|姉妹 |しまい |sisters |Noun
+|仕舞う |しまう |to finish; to stop; to end; to put an end to; to bring to a close |Godan verb with 'u' ending, Transitive verb
+|仕舞った |しまった |darn it!; darn!; oops!; oh dear!; oh no! |Notes
+|示す |しめす |to (take out and) show; to demonstrate; to tell; to exemplify; to make apparent |Godan verb with 'su' ending, Transitive verb
+|占める |しめる |to occupy; to hold |Ichidan verb, Transitive verb
+|下 |しも |lower reaches (of a river) |Noun
+|霜 |しも |frost |Noun
+|借金 |しゃっきん |debt; loan; liabilities; borrowing money |Noun, Suru verb, Transitive verb
+|喋る |しゃべる |to talk; to chat; to chatter |Godan verb with 'ru' ending, Transitive verb, Intransitive verb
+|州 |しゅう |state (of the US, Australia, India, Germany, etc.); province (e.g. of Canada); county (e.g. of the UK); region (e.g. of Italy); canton; oblast |Noun, Noun, used as a suffix
+|週 |しゅう |week |Noun, Noun, used as a suffix
+|周囲 |しゅうい |surroundings; environs |Noun, Noun which may take the genitive case particle 'no'
+|収穫 |しゅうかく |harvest; crop; ingathering |Noun, Suru verb, Transitive verb
+|週間 |しゅうかん |week |Noun
+|宗教 |しゅうきょう |religion; religious affiliation; belief; faith; creed |Noun
+|就職 |しゅうしょく |finding employment; getting a job |Noun, Suru verb, Intransitive verb
+|修正 |しゅうせい |amendment; correction; revision; modification; alteration; retouching; update; fix |Noun, Suru verb, Transitive verb
+|集団 |しゅうだん |group; mass |Noun
+|集中 |しゅうちゅう |concentration (on a task); focusing one's attention |Noun, Suru verb, Transitive verb, Intransitive verb
+|収入 |しゅうにゅう |income; earnings; revenue; proceeds; takings; receipts |Noun
+|修理 |しゅうり |repair; mending; fixing; servicing |Noun, Suru verb, Transitive verb
+|主義 |しゅぎ |doctrine; rule; principle; -ism |Noun
+|宿泊 |しゅくはく |accommodation; lodging |Noun, Suru verb, Intransitive verb
+|首相 |しゅしょう |prime minister; chancellor (Germany, Austria, etc.); premier |Noun
+|手術 |しゅじゅつ |surgery; operation; procedure |Noun, Suru verb, Transitive verb
+|手段 |しゅだん |means; way; measure |Noun
+|主張 |しゅちょう |claim; insistence; assertion; advocacy; emphasis; contention; opinion; tenet |Noun, Suru verb, Transitive verb
+|出身 |しゅっしん |one's origin (e.g. city, country, parentage, school) |Noun
+|出席 |しゅっせき |attendance; presence; appearance |Noun, Suru verb, Intransitive verb
+|出発 |しゅっぱつ |departure; leaving; setting off |Noun, Suru verb, Intransitive verb
+|出版 |しゅっぱん |publication |Noun, Suru verb, Transitive verb
+|首都 |しゅと |capital (city); metropolis |Noun
+|主婦 |しゅふ |housewife; mistress (of the house); homemaker |Noun
+|主要 |しゅよう |chief; main; principal; major |Na-adjective (keiyodoshi), Noun
+|種類 |しゅるい |variety; kind; type; category |Noun
+|瞬間 |しゅんかん |moment; instant; second |Noun
+|小 |しょう |smallness; small item |Noun, Noun, used as a prefix
+|章 |しょう |chapter; section |Noun
+|賞 |しょう |prize; award |Noun, Noun, used as a suffix
+|障害 |しょうがい |obstacle; impediment; hindrance; barrier; difficulty |Noun, Suru verb, Transitive verb
+|奨学金 |しょうがくきん |scholarship; stipend; bursary; grant-in-aid |Noun
+|正午 |しょうご |noon; midday |Noun, Adverb (fukushi)
+|少々 |しょうしょう |a little; a bit; a small amount; a few; a pinch; some |Adverb (fukushi), Noun
+|正直 |しょうじき |honest; frank; candid; straightforward |Na-adjective (keiyodoshi), Noun
+|少女 |しょうじょ |girl (usu. between 7 and 17); young lady |Noun
+|症状 |しょうじょう |symptoms; condition (of a patient) |Noun
+|生じる |しょうじる |to produce; to yield; to cause |Ichidan verb, Transitive verb
+|招待 |しょうたい |invitation |Noun, Suru verb, Transitive verb
+|承知 |しょうち |knowledge; awareness |Noun, Suru verb, Transitive verb
+|衝突 |しょうとつ |collision; crash; impact; running into |Noun, Suru verb, Intransitive verb
+|商人 |しょうにん |merchant; trader; tradesman; dealer; shopkeeper |Noun
+|承認 |しょうにん |recognition; acknowledgement; acknowledgment; approval; consent; agreement |Noun, Suru verb, Transitive verb
+|少年 |しょうねん |boy |Noun
+|商売 |しょうばい |trade; business; commerce |Noun, Suru verb, Intransitive verb
+|消費 |しょうひ |consumption; expenditure; spending |Noun, Suru verb, Transitive verb
+|商品 |しょうひん |commodity; article of commerce; goods; stock; merchandise |Noun
+|消防 |しょうぼう |fire fighting |Noun
+|証明 |しょうめい |proof; testimony; demonstration; verification; certification |Noun, Suru verb, Transitive verb
+|職 |しょく |job; work; employment; occupation; position |Noun, Noun, used as a suffix
+|職業 |しょくぎょう |occupation; profession; job; vocation; trade; calling; business |Noun
+|食事 |しょくじ |meal (e.g. lunch, dinner) |Noun, Suru verb, Intransitive verb
+|食卓 |しょくたく |dining table |Noun, Noun which may take the genitive case particle 'no'
+|食品 |しょくひん |food; food products; foodstuffs |Noun
+|植物 |しょくぶつ |plant; vegetation |Noun
+|食物 |しょくもつ |food; foodstuff |Noun
+|食欲 |しょくよく |appetite (for food) |Noun
+|食料 |しょくりょう |food |Noun
+|食糧 |しょくりょう |food (esp. staple food such as rice or wheat); provisions; rations; food supply |Noun
+|書斎 |しょさい |study; library; den; home office; reading room |Noun
+|署名 |しょめい |signature; autograph |Noun, Suru verb, Intransitive verb
+|書物 |しょもつ |book; volume |Noun
+|処理 |しょり |processing; dealing with; treatment; disposition; disposal |Noun, Suru verb, Transitive verb
+|書類 |しょるい |document; papers |Noun
+|使用 |しよう |use; application; employment; utilization; utilisation |Noun, Suru verb, Transitive verb
+|知らせ |しらせ |news; word; tidings; notice; notification; information |Noun
+|尻 |しり |buttocks; behind; rump; bottom; hips |Noun
+|印 |しるし |mark; sign |Noun
+|城 |しろ |castle |Noun
+|進学 |しんがく |advancing to the next stage of education; going on to (high school, college, etc.) |Noun, Suru verb, Intransitive verb
+|神経 |しんけい |nerve |Noun
+|真剣 |しんけん |serious; earnest |Na-adjective (keiyodoshi)
+|信仰 |しんこう |(religious) faith; belief; creed |Noun, Suru verb, Transitive verb
+|深刻 |しんこく |serious; severe; grave; acute |Na-adjective (keiyodoshi), Noun
+|信号 |しんごう |signal; signalling; signaling |Noun, Suru verb, Intransitive verb
+|診察 |しんさつ |medical examination; checkup; consultation |Noun, Suru verb, Transitive verb
+|信じる |しんじる |to believe; to believe in; to place trust in; to confide in; to have faith in |Ichidan verb, Transitive verb
+|親戚 |しんせき |relative; relation; kin |Noun
+|新鮮 |しんせん |fresh |Na-adjective (keiyodoshi)
+|心臓 |しんぞう |heart |Noun
+|慎重 |しんちょう |careful; cautious; prudent; discreet; deliberate |Na-adjective (keiyodoshi), Noun
+|身長 |しんちょう |height (of a person); stature |Noun
+|心配 |しんぱい |worry; concern; anxiety; uneasiness; fear |Noun, Suru verb, Transitive verb, Na-adjective (keiyodoshi)
+|審判 |しんぱん |judgement; judgment; decision; verdict; sentence |Noun, Suru verb, Transitive verb
+|進歩 |しんぽ |progress; advance; improvement; development |Noun, Suru verb, Intransitive verb
+|親友 |しんゆう |close friend; bosom friend; buddy; crony; chum |Noun
+|信用 |しんよう |confidence; trust; faith; reputation |Noun, Suru verb, Transitive verb
+|信頼 |しんらい |trust (in); confidence; faith; reliance |Noun, Suru verb, Transitive verb
+|心理 |しんり |state of mind; mentality; psychology |Noun
+|直に |じかに |directly; in person; firsthand |Adverb (fukushi)
+|時期 |じき |time; season; period; phase; stage |Noun, Adverb (fukushi)
+|事件 |じけん |event; affair; incident; case; plot; trouble; scandal |Noun
+|時刻 |じこく |time; (the) hour |Noun
+|自殺 |じさつ |suicide |Noun, Suru verb, Intransitive verb
+|自身 |じしん |(one's) self; oneself; yourself; himself; herself |Noun, Noun, used as a suffix
+|事実 |じじつ |fact; truth; reality |Adverb (fukushi), Noun
+|事態 |じたい |situation; (present) state of affairs; circumstances |Noun
+|実験 |じっけん |experiment; experimentation |Noun, Suru verb, Transitive verb
+|実行 |じっこう |execution (e.g. of a plan); carrying out; (putting into) practice; action; implementation; fulfillment; realization |Noun, Suru verb, Transitive verb
+|実際 |じっさい |reality; actuality; truth; fact; actual conditions |Noun, Noun which may take the genitive case particle 'no'
+|実施 |じっし |enforcement; implementation; putting into practice; carrying out; operation; working (e.g. working parameters); enactment |Noun, Suru verb, Transitive verb
+|凝乎と |じっと |motionlessly (e.g. stand, wait); (be) still |Adverb (fukushi), Suru verb
+|実現 |じつげん |implementation (e.g. of a system); materialization; materialisation; realization; realisation; actualization; actualisation |Noun, Suru verb, Transitive verb, Intransitive verb
+|実は |じつは |as a matter of fact; by the way; to tell you the truth; to be honest; frankly |Expressions (phrases, clauses, etc.), Adverb (fukushi)
+|自動 |じどう |automatic |Noun which may take the genitive case particle 'no', Noun
+|自慢 |じまん |pride; boast |Noun, Suru verb, Transitive verb, Noun which may take the genitive case particle 'no'
+|事務 |じむ |office work; clerical work; administration; business; affairs |Noun
+|邪魔 |じゃま |hindrance; obstacle; nuisance; disturbance; interruption; interference |Noun, Na-adjective (keiyodoshi), Suru verb, Transitive verb
+|銃 |じゅう |gun; firearm; small arms (e.g. rifle, pistol, etc) |Noun
+|重視 |じゅうし |regarding as important; attaching importance to; taking a serious view of; putting emphasis on |Noun, Suru verb, Transitive verb
+|渋滞 |じゅうたい |(traffic) congestion; traffic jam; gridlock |Noun, Suru verb, Intransitive verb
+|住宅 |じゅうたく |residence; housing; residential building |Noun
+|重大 |じゅうだい |serious; important; significant; grave; weighty |Na-adjective (keiyodoshi), Noun
+|住民 |じゅうみん |inhabitant; resident; citizen; population |Noun
+|重要 |じゅうよう |important; essential; significant; major; key; principal |Na-adjective (keiyodoshi)
+|需要 |じゅよう |demand; request |Noun
+|順 |じゅん |order; turn; sorting |Noun, Noun, used as a suffix
+|順調 |じゅんちょう |favourable; favorable; doing well; OK; all right |Na-adjective (keiyodoshi), Noun
+|順番 |じゅんばん |order; turn |Noun
+|準備 |じゅんび |preparation; arrangements; getting ready; provision; setup; reserving |Noun, Suru verb, Transitive verb
+|上 |じょう |from the standpoint of; from the viewpoint of; with respect to; in terms of; as a matter of; in view of; so far as ... is concerned |Suffix
+|乗客 |じょうきゃく |passenger |Noun
+|状況 |じょうきょう |state of affairs; situation; conditions; circumstances |Noun
+|条件 |じょうけん |condition; term; requirement; qualification; prerequisite |Noun
+|常識 |じょうしき |common sense; good sense; common knowledge; general knowledge; common practice; accepted practice; social etiquette |Noun
+|状態 |じょうたい |state; condition; situation; appearance; circumstances |Noun
+|上達 |じょうたつ |improvement (e.g. in skill, ability); advance; progress |Noun, Suru verb, Intransitive verb
+|冗談 |じょうだん |joke; jest; funny story |Noun
+|上等 |じょうとう |superior; first-class; excellent; top quality |Noun which may take the genitive case particle 'no', Na-adjective (keiyodoshi), Noun
+|情報 |じょうほう |information; news; report; intelligence |Noun
+|女王 |じょおう |queen |Noun
+|女子 |じょし |woman; girl |Noun
+|助手 |じょしゅ |assistant; helper |Noun
+|徐々 |じょじょ |slow; gradual; steady |'taru' adjective, Adverb taking the 'to' particle
+|女優 |じょゆう |actress; female actor |Noun
+|人工 |じんこう |artificial; man-made; human work; human skill; artificiality |Noun, Noun which may take the genitive case particle 'no'
+|人種 |じんしゅ |race (of people) |Noun
+|人生 |じんせい |(one's) life |Noun
+|人物 |じんぶつ |person; character; figure; personage; man; woman |Noun
+|人類 |じんるい |mankind; humanity |Noun
+|州 |す |sandbank; sandbar |Noun
+|巣 |す |nest; rookery; breeding place; hive |Noun
+|水準 |すいじゅん |level; standard |Noun
+|推薦 |すいせん |recommendation; referral; endorsement |Noun, Suru verb, Transitive verb, Noun which may take the genitive case particle 'no'
+|睡眠 |すいみん |sleep |Noun, Noun which may take the genitive case particle 'no'
+|数 |すう |several; a few; a number of |Prefix
+|数字 |すうじ |numeral; digit; numeric character |Noun
+|末 |すえ |end; tip; top |Noun
+|姿 |すがた |figure; form; shape |Noun
+|空く |すく |to become less crowded; to thin out; to get empty |Godan verb with 'ku' ending, Intransitive verb
+|救う |すくう |to rescue (someone); to save; to help (out of a difficulty); to relieve (from) |Godan verb with 'u' ending, Transitive verb
+|優れる |すぐれる |to be better (than); to be superior; to surpass; to excel; to be excellent |Ichidan verb, Intransitive verb
+|少しも |すこしも |(not) at all; (not) a bit; (not) in the least; (not) in the slightest |Adverb (fukushi)
+|過ごす |すごす |to spend (time); to pass; to lead (a life); to live |Godan verb with 'su' ending, Transitive verb
+|筋 |すじ |muscle; tendon; sinew |Noun
+|勧める |すすめる |to recommend (someone to do); to advise; to encourage; to urge |Ichidan verb, Transitive verb
+|進める |すすめる |to advance; to move forward; to put (a clock, watch) forward |Ichidan verb, Transitive verb
+|既に |すでに |already |Adverb (fukushi)
+|即ち |すなわち |that is (to say); namely; i.e. |Conjunction
+|素晴らしい |すばらしい |wonderful; splendid; magnificent |I-adjective (keiyoushi)
+|全て |すべて |everything; all; the whole |Noun, Noun which may take the genitive case particle 'no'
+|済ませる |すませる |to finish; to make an end of; to get through with; to let end |Ichidan verb, Transitive verb
+|済みません |すみません |excuse me; pardon me; I'm sorry; I beg your pardon |Expressions (phrases, clauses, etc.)
+|鋭い |するどい |sharp (knife, claws, etc.); pointed |I-adjective (keiyoushi)
+|図 |ず |drawing; picture; diagram; figure; illustration; chart; graph; map |Noun, Noun, used as a suffix
+|随分 |ずいぶん |very; extremely; surprisingly; fairly; quite; considerably; awfully; terribly |Adverb (fukushi), Adverb taking the 'to' particle
+|ずっと |ずっと |continuously; the whole time; all the way; throughout |Adverb (fukushi)
+|頭痛 |ずつう |headache |Noun
+|性 |せい |nature (of a person) |Noun
+|所為 |せい |consequence; outcome; result; blame; fault |Noun
+|正 |せい |(logical) true; regular |Noun, Noun which may take the genitive case particle 'no'
+|背 |せい |height; stature |Noun
+|性格 |せいかく |character (of a person); personality; disposition; nature |Noun
+|正確 |せいかく |accurate; correct; precise; exact |Na-adjective (keiyodoshi), Noun
+|世紀 |せいき |century |Noun
+|請求 |せいきゅう |claim; demand; charge; application; request; billing (for a service) |Noun, Suru verb, Transitive verb
+|清潔 |せいけつ |clean; hygienic; sanitary |Na-adjective (keiyodoshi), Noun
+|制限 |せいげん |restriction; restraint; limitation; limit |Noun, Suru verb, Transitive verb
+|成功 |せいこう |success; achievement |Noun, Suru verb, Intransitive verb
+|正式 |せいしき |formal; official; regular; proper; legal; due (formalities) |Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no', Noun
+|精神 |せいしん |mind; spirit; soul; heart; ethos |Noun
+|成績 |せいせき |results; record; grades; marks |Noun
+|精々 |せいぜい |at the most; at best |Adverb (fukushi)
+|製造 |せいぞう |manufacture; production |Noun, Suru verb, Transitive verb, Noun which may take the genitive case particle 'no'
+|成長 |せいちょう |growth; development; growing up; becoming an adult |Noun, Suru verb, Intransitive verb
+|制度 |せいど |system; institution; organization; organisation |Noun, Noun which may take the genitive case particle 'no'
+|青年 |せいねん |youth; young man |Noun
+|製品 |せいひん |manufactured goods; finished goods; product |Noun
+|政府 |せいふ |government; administration; ministry |Noun
+|生物 |せいぶつ |living thing; organism; creature; life |Noun
+|生命 |せいめい |life; existence |Noun
+|整理 |せいり |sorting; arrangement; organization; putting in order; adjustment; regulation |Noun, Suru verb, Transitive verb
+|咳 |せき |cough; coughing; tussis |Noun
+|石炭 |せきたん |coal |Noun
+|責任 |せきにん |duty; responsibility (incl. supervision of staff) |Noun
+|石油 |せきゆ |oil; petroleum |Noun
+|世間 |せけん |world; society; people; the public |Noun
+|積極的 |せっきょくてき |positive; assertive; active; proactive; aggressive |Na-adjective (keiyodoshi)
+|設計 |せっけい |plan; design; layout |Noun, Suru verb, Transitive verb
+|説 |せつ |theory; doctrine |Noun, Noun, used as a suffix
+|設備 |せつび |equipment; facilities; installation; accommodations; conveniences; arrangements |Noun, Suru verb, Transitive verb
+|節約 |せつやく |economising; saving |Noun, Suru verb, Transitive verb
+|責める |せめる |to condemn; to blame; to criticize; to criticise; to reproach; to accuse |Ichidan verb, Transitive verb
+|世話 |せわ |care; looking after; help; assistance; aid |Noun, Suru verb, Transitive verb
+|専攻 |せんこう |major subject; special study |Noun, Suru verb, Transitive verb, Noun which may take the genitive case particle 'no'
+|選手 |せんしゅ |player (of a sport); athlete; team member |Noun
+|先日 |せんじつ |the other day; a few days ago |Noun, Adverb (fukushi)
+|選択 |せんたく |choice; selection; option |Noun, Suru verb, Transitive verb
+|税 |ぜい |tax |Noun, Suffix
+|税金 |ぜいきん |tax; duty |Noun
+|贅沢 |ぜいたく |luxury; extravagance |Noun, Na-adjective (keiyodoshi)
+|絶対 |ぜったい |absolutely; definitely; unconditionally |Adverb (fukushi)
+|是非 |ぜひ |certainly; without fail |Adverb (fukushi)
+|善 |ぜん |good; goodness; right; virtue |Noun
+|全員 |ぜんいん |all members; all hands; everyone; everybody; whole crew |Noun, Adverb (fukushi)
+|全国 |ぜんこく |the whole country |Noun
+|前者 |ぜんしゃ |the former; the first |Noun
+|前進 |ぜんしん |advance; moving forward; progress |Noun, Suru verb, Intransitive verb
+|全然 |ぜんぜん |(not) at all; (not) in the slightest |Adverb (fukushi)
+|全体 |ぜんたい |whole; entirety |Noun, Noun which may take the genitive case particle 'no', Adverb (fukushi)
+|其れでも |そ |but (still); and yet; nevertheless; even so; notwithstanding |Conjunction
+|其れとも |そ |or; or else |Conjunction
+|騒音 |そうおん |noise; din |Noun
+|操作 |そうさ |operation; management; handling |Noun, Suru verb, Transitive verb
+|想像 |そうぞう |imagination; supposition; guess |Noun, Suru verb, Transitive verb
+|相続 |そうぞく |succession |Noun, Suru verb, Transitive verb
+|相談 |そうだん |consultation; discussion; discussing; asking (someone) for advice |Noun, Suru verb, Transitive verb
+|装置 |そうち |equipment; device; installation; apparatus |Noun, Suru verb, Transitive verb
+|相当 |そうとう |corresponding to (in meaning, function, etc.); being equivalent to |Noun, Suru verb, Intransitive verb, Noun which may take the genitive case particle 'no'
+|速度 |そくど |speed; velocity; pace; rate |Noun
+|底 |そこ |bottom; sole |Noun
+|其処で |そこで |so; accordingly; now; then; thereupon; therefore |Conjunction
+|組織 |そしき |organization; organisation; formation |Noun, Suru verb, Transitive verb, Intransitive verb
+|育つ |そだつ |to be raised (e.g. child); to be brought up; to grow (up) |Godan verb with 'tsu' ending, Intransitive verb
+|そっくり |そっくり |all; altogether; entirely; completely |Adverb (fukushi)
+|率土 |そっと |ends of the earth; outer reaches; borderland |Noun
+|袖 |そで |sleeve |Noun
+|備える |そなえる |to furnish with; to equip with; to provide; to install |Ichidan verb, Transitive verb
+|その内 |そのうち |before very long; soon; someday; one of these days; sooner or later |Expressions (phrases, clauses, etc.), Adverb (fukushi)
+|其のまま |そののまま |without change; as is |Adverb (fukushi), Noun which may take the genitive case particle 'no', Noun
+|粗末 |そまつ |crude; rough; plain; humble; shabby; poor-quality; low-quality |Na-adjective (keiyodoshi), Noun
+|其れ其れ |それぞれ |each; respectively |Adverb (fukushi), Noun, Noun which may take the genitive case particle 'no'
+|損 |そん |loss; damage; harm; unprofitable |Noun, Na-adjective (keiyodoshi), Suru verb, Intransitive verb
+|損害 |そんがい |damage; injury; loss |Noun, Suru verb, Transitive verb
+|尊敬 |そんけい |respect; esteem; reverence; honour; honor |Noun, Suru verb, Transitive verb
+|存在 |そんざい |existence; being; presence |Noun, Suru verb, Intransitive verb
+|尊重 |そんちょう |respect; esteem; regard |Noun, Suru verb, Transitive verb
+|象 |ぞう |elephant (Elephantidae spp.) |Noun
+|増加 |ぞうか |increase; rise; growth; addition; increment |Noun, Suru verb, Transitive verb, Intransitive verb
+|他 |た |other (esp. people and abstract matters) |Adverb (fukushi), Noun, Noun which may take the genitive case particle 'no'
+|田 |た |rice field |Noun
+|体育 |たいいく |physical education; PE; gym (class) |Noun
+|体温 |たいおん |body temperature |Noun
+|大会 |たいかい |mass meeting; convention; rally; conference; assembly; gathering |Noun
+|大気 |たいき |atmosphere; air |Noun
+|退屈 |たいくつ |tedious; boring; dull; uninteresting; tiresome; monotonous |Na-adjective (keiyodoshi), Noun
+|滞在 |たいざい |stay; sojourn |Noun, Suru verb, Intransitive verb
+|大使 |たいし |ambassador |Noun, Noun which may take the genitive case particle 'no'
+|大した |たいした |considerable; great; important; significant; a big deal |Pre-noun adjectival (rentaishi)
+|対象 |たいしょう |target; object (of worship, study, etc.); subject (of taxation, etc.); coverage |Noun, Noun which may take the genitive case particle 'no'
+|対する |たいする |to face (each other); to be facing |Suru verb - special class
+|大戦 |たいせん |great war; great battle |Noun
+|態度 |たいど |attitude; manner; behaviour; demeanour; bearing |Noun
+|大半 |たいはん |majority; more than half; most (of) |Noun, Noun which may take the genitive case particle 'no'
+|逮捕 |たいほ |arrest; apprehension; capture |Noun, Suru verb, Transitive verb
+|太陽 |たいよう |Sun |Noun
+|平ら |たいら |flat; level; even; smooth |Na-adjective (keiyodoshi)
+|大陸 |たいりく |continent |Noun, Noun which may take the genitive case particle 'no'
+|宝 |たから |treasure |Noun
+|互い |たがい |each other; one another |Noun, Noun which may take the genitive case particle 'no'
+|宅 |たく |house; home |Noun, Noun, used as a suffix
+|確かめる |たしかめる |to make sure; to check; to ascertain; to confirm; to verify |Ichidan verb, Transitive verb
+|多少 |たしょう |a little; some; somewhat; slightly; to some degree; to some extent |Adverb (fukushi), Noun which may take the genitive case particle 'no'
+|助ける |たすける |to save; to rescue; to spare |Ichidan verb, Transitive verb
+|戦う |たたかう |to make war (on); to wage war (against); to go to war (with); to fight (with); to do battle (against) |Godan verb with 'u' ending, Intransitive verb
+|叩く |たたく |to strike; to hit; to beat; to knock; to pound; to bang; to slap; to spank; to tap; to pat; to clap (one's hands); to play (the drums) |Godan verb with 'ku' ending, Transitive verb
+|只 |ただ |ordinary; common; usual |Noun which may take the genitive case particle 'no', Noun
+|直ちに |ただちに |at once; immediately; right away; without delay |Adverb (fukushi)
+|立ち上がる |たちあがる |to stand up; to get up; to rise (to one's feet) |Godan verb with 'ru' ending, Intransitive verb
+|立場 |たちば |position; situation |Noun
+|達する |たっする |to reach; to get to; to arrive at |Suru verb - special class, Transitive verb
+|たった |たった |only; merely; but; no more than |Noun or verb acting prenominally, Adverb (fukushi)
+|たっぷり |たっぷり |plentifully; amply; abundantly; copiously; generously; fully; a lot |Adverb (fukushi), Adverb taking the 'to' particle, Na-adjective (keiyodoshi), Suffix
+|経つ |たつ |to pass (of time); to elapse |Godan verb with 'tsu' ending, Intransitive verb
+|例え |たとえ |example |Noun
+|谷 |たに |valley; ravine; gorge; canyon |Noun
+|他人 |たにん |another person; other people; others |Noun
+|種 |たね |seed (e.g. of a plant); pip; kernel; stone (e.g. of a peach) |Noun
+|束 |たば |bundle; bunch; sheaf |Noun, Noun, used as a suffix, Counter
+|度 |たび |time (three times, each time, etc.); times |Noun, Noun, used as a suffix, Counter
+|旅 |たび |travel; trip; journey |Noun
+|度々 |たびたび |often; again and again; over and over again; repeatedly; frequently |Adverb (fukushi)
+|玉 |たま |ball; sphere; globe; orb |Noun
+|偶々 |たまたま |by chance; by accident; accidentally; happen to (be, do); unexpectedly; casually |Adverb (fukushi)
+|堪らない |たまらない |intolerable; unbearable; unendurable |Expressions (phrases, clauses, etc.), I-adjective (keiyoushi)
+|試し |ためし |trial; test |Noun
+|試す |ためす |to try (out); to have a try (at); to test; to put to the test |Godan verb with 'su' ending, Transitive verb
+|便り |たより |news; tidings; information; correspondence; letter |Noun, Noun, used as a suffix, Suru verb, Transitive verb
+|頼る |たよる |to rely on; to depend on; to count on; to turn to (for help) |Godan verb with 'ru' ending, Intransitive verb, Transitive verb
+|単位 |たんい |unit (e.g. meters, grams, etc.); denomination |Noun
+|単語 |たんご |word; vocabulary |Noun
+|単純 |たんじゅん |simple; plain; uncomplicated; straightforward; simple-minded; naive |Na-adjective (keiyodoshi), Noun
+|誕生 |たんじょう |birth (of a person); nativity |Noun, Suru verb, Intransitive verb
+|担当 |たんとう |being in charge (of an area of responsibility); being responsible (for a work role, etc.) |Noun, Suru verb, Transitive verb
+|単なる |たんなる |mere; simple; sheer |Pre-noun adjectival (rentaishi)
+|単に |たんに |simply; merely; only; solely |Adverb (fukushi)
+|台 |だい |stand; rest; base; pedestal; platform; table; holder; support; rack |Noun, Noun, used as a suffix
+|題 |だい |title; subject; theme; topic |Noun
+|代金 |だいきん |price; cost; charge; payment; bill; fee |Noun
+|大臣 |だいじん |cabinet minister |Noun
+|大統領 |だいとうりょう |president (of a country) |Noun
+|代表 |だいひょう |representation; representative; delegate; delegation |Noun, Suru verb, Transitive verb
+|大部分 |だいぶぶん |most part; greater part; majority |Noun
+|代理 |だいり |representation; agency; proxy |Noun, Suru verb, Transitive verb, Noun which may take the genitive case particle 'no'
+|だが |だが |but; however; (and) yet; nevertheless; still; for all that |Conjunction
+|だけど |だけど |but; however; although |Conjunction
+|だって |だって |after all; because |Conjunction
+|黙る |だまる |to be silent; to say nothing |Godan verb with 'ru' ending, Intransitive verb
+|駄目 |だめ |no good; not serving its purpose; useless; broken |Na-adjective (keiyodoshi), Noun
+|段 |だん |step; stair; rung; (flight of) steps |Noun, Counter
+|男子 |だんし |boy |Noun
+|団体 |だんたい |group; party; team |Noun
+|地 |ち |earth; ground; land; soil |Noun, Noun, used as a suffix
+|地位 |ちい |(social) position; status; standing |Noun
+|地域 |ちいき |area; region; district; locality |Noun
+|知恵 |ちえ |wisdom; wit; sagacity; sense; intelligence |Noun
+|地下 |ちか |underground; below the ground |Noun, Noun which may take the genitive case particle 'no'
+|近頃 |ちかごろ |lately; recently; nowadays |Adverb (fukushi), Noun, Noun which may take the genitive case particle 'no'
+|違い |ちがい |difference; distinction; discrepancy |Noun
+|違いない |ちがいない |sure; no mistaking it; for certain; without doubt |Expressions (phrases, clauses, etc.), I-adjective (keiyoushi)
+|地球 |ちきゅう |Earth; the globe |Noun
+|地区 |ちく |district; area; zone; quarter; section; region |Noun
+|遅刻 |ちこく |lateness; tardiness; arriving late |Noun, Suru verb, Intransitive verb
+|知識 |ちしき |knowledge; information |Noun
+|知事 |ちじ |prefectural governor |Noun
+|父親 |ちちおや |father |Noun
+|知能 |ちのう |intelligence; intellect; brains |Noun
+|地平線 |ちへいせん |horizon (related to land) |Noun
+|地方 |ちほう |district; region; area; locality |Noun
+|茶 |ちゃ |tea |Noun
+|ちゃんと |ちゃんと |diligently; seriously; earnestly; reliably; steadily; legitimately |Adverb (fukushi), Suru verb
+|中 |ちゅう |medium (size); average (grade, level, etc.); middle |Noun
+|注 |ちゅう |annotation; explanatory note; comment |Noun, Suru verb, Transitive verb
+|中央 |ちゅうおう |centre; center; middle; heart |Noun, Noun which may take the genitive case particle 'no'
+|中学 |ちゅうがく |junior high school; middle school; lower secondary school |Noun
+|中古 |ちゅうこ |used; second-hand; old |Noun which may take the genitive case particle 'no'
+|中止 |ちゅうし |interruption; discontinuance; suspension; stoppage |Noun, Suru verb, Transitive verb
+|駐車 |ちゅうしゃ |parking (a vehicle) |Noun, Suru verb, Intransitive verb
+|昼食 |ちゅうしょく |lunch; midday meal |Noun
+|中心 |ちゅうしん |center; centre; middle; heart; core; focus; pivot; emphasis; balance |Noun, Noun which may take the genitive case particle 'no'
+|注目 |ちゅうもく |notice; attention; observation |Noun, Suru verb, Transitive verb, Intransitive verb
+|注文 |ちゅうもん |order (for an item) |Noun, Suru verb, Transitive verb
+|長期 |ちょうき |long-term |Noun which may take the genitive case particle 'no', Noun
+|調査 |ちょうさ |investigation; examination; inquiry; enquiry; survey |Noun, Suru verb, Transitive verb
+|調子 |ちょうし |tune; tone; key; pitch; time; rhythm |Noun
+|頂上 |ちょうじょう |top; summit; peak |Noun, Noun which may take the genitive case particle 'no'
+|頂戴 |ちょうだい |receiving; getting; accepting; being given |Noun, Suru verb, Transitive verb
+|貯金 |ちょきん |putting money aside; savings; deposit (e.g. in a bank) |Noun, Suru verb, Transitive verb
+|直接 |ちょくせつ |direct; immediate; personal; firsthand |Na-adjective (keiyodoshi), Noun, Noun which may take the genitive case particle 'no', Adverb (fukushi)
+|著者 |ちょしゃ |author (usu. of a particular book); writer |Noun
+|対 |つい |pair; couple; set |Noun
+|遂に |ついに |finally; in the end; at last |Adverb (fukushi)
+|通過 |つうか |passing through (a tunnel, station, town, etc.); passing by (e.g. of a typhoon); transit |Noun, Suru verb, Intransitive verb
+|通学 |つうがく |commuting to school; school commute |Noun, Suru verb, Intransitive verb
+|通行 |つうこう |passage (of people or vehicles); passing (through); traffic |Noun, Suru verb, Intransitive verb
+|通信 |つうしん |correspondence; communication; transmission; news; signal; telecommunications |Noun, Suru verb, Transitive verb, Intransitive verb
+|通じる |つうじる |to be open (to traffic); to lead to; to communicate (with) |Ichidan verb, Intransitive verb
+|捕まる |つかまる |to be caught; to be arrested |Godan verb with 'ru' ending, Intransitive verb
+|掴む |つかむ |to seize; to catch; to grasp; to grip; to grab; to clutch; to hold; to catch hold of; to lay one's hands on |Godan verb with 'mu' ending, Transitive verb
+|疲れ |つかれ |tiredness; fatigue |Noun
+|月 |つき |Moon |Noun
+|付き合い |つきあい |association; socializing; socialising; fellowship |Noun
+|次々 |つぎつぎ |in succession; one by one |Adverb (fukushi), Adverb taking the 'to' particle, Noun
+|就く |つく |to take (seat, position, course, office, etc.); to assume; to be hired; to be employed |Godan verb with 'ku' ending, Intransitive verb
+|注ぐ |つぐ |to pour (into a vessel); to fill (a cup, bowl, etc.) with; to dish out (food or drink) |Godan verb with 'gu' ending, Transitive verb
+|土 |つち |earth; soil; dirt; clay; mud |Noun
+|包み |つつみ |bundle; package; parcel |Noun
+|続き |つづき |continuation; rest (of the story, work, etc.); next installment; sequel |Noun
+|勤め |つとめ |service; duty; business; responsibility; task |Noun
+|繋ぐ |つなぐ |to connect; to link together |Godan verb with 'gu' ending, Transitive verb
+|常に |つねに |always; constantly; at all times; habitually |Adverb (fukushi)
+|角 |つの |horn; antler |Noun
+|翼 |つばさ |wing |Noun
+|詰まり |つまり |that is to say; that is; in other words; I mean; that (this, it) means |Adverb (fukushi)
+|罪 |つみ |crime; sin; wrongdoing; indiscretion |Noun, Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no'
+|梅雨 |つゆ |(East Asian) rainy season (in Japan, usu. from early June to mid-July) |Noun
+|辛い |つらい |painful; bitter; heart-breaking; difficult (emotionally) |I-adjective (keiyoushi)
+|釣り |つり |fishing; angling |Noun
+|連れ |つれ |companion; company |Noun
+|提案 |ていあん |proposal; proposition; suggestion |Noun, Suru verb, Transitive verb
+|定期 |ていき |fixed period; fixed term |Noun
+|抵抗 |ていこう |resistance; opposition; standing up to |Noun, Suru verb, Intransitive verb
+|提出 |ていしゅつ |presentation (of documents); submission (of an application, report, etc.); production (e.g. of evidence); introduction (e.g. of a bill); filing; turning in |Noun, Suru verb, Transitive verb
+|程度 |ていど |degree; amount; grade; standard; of the order of (following a number); about; approximately |Noun, Adverb (fukushi), Noun, used as a suffix
+|停留所 |ていりゅうじょ |stop (bus, tram, etc.); station; stopping place |Noun
+|敵 |てき |opponent; rival; adversary |Noun
+|適する |てきする |to fit; to suit |Suru verb - special class, Intransitive verb
+|適切 |てきせつ |appropriate; suitable; fitting; apt; proper; right; pertinent; relevant |Na-adjective (keiyodoshi), Noun
+|適度 |てきど |moderate (degree); proper (amount); temperate; suitable |Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no', Noun
+|適用 |てきよう |application (of a rule, law, method, etc.) |Noun, Suru verb, Transitive verb
+|手品 |てじな |magic (illusion); conjuring; magic trick; conjuring trick; sleight of hand |Noun
+|徹底 |てってい |thoroughness; completeness; consistency |Noun, Suru verb, Transitive verb, Intransitive verb
+|鉄 |てつ |iron (Fe) |Noun
+|哲学 |てつがく |philosophy |Noun
+|鉄道 |てつどう |railroad; railway; rail transport |Noun
+|徹夜 |てつや |staying up all night |Noun, Suru verb, Intransitive verb, Noun which may take the genitive case particle 'no'
+|手間 |てま |time; labour; labor |Noun
+|典型 |てんけい |type; pattern; model; epitome; exemplar; archetype; perfect example |Noun
+|天候 |てんこう |weather |Noun
+|出会い |であい |meeting; rendezvous; encounter |Noun
+|出会う |であう |to meet (by chance); to come across; to run across; to encounter; to happen upon |Godan verb with 'u' ending, Intransitive verb
+|出来事 |できごと |occurrence; happening; incident; event |Noun
+|出来るだけ |できるだけ |as much as one can; as much as possible; if at all possible |Expressions (phrases, clauses, etc.), Adverb (fukushi), Noun which may take the genitive case particle 'no'
+|ですから |ですから |so; therefore; accordingly; consequently; on those grounds; that is why; for that reason |Conjunction
+|電子 |でんし |electron |Noun
+|伝統 |でんとう |tradition; convention |Noun
+|と |と |if; when |Particle, Conjunction
+|問い |とい |question; query |Noun
+|党 |とう |party (political) |Noun, Noun, used as a suffix
+|塔 |とう |tower; steeple; spire |Noun, Noun, used as a suffix
+|答案 |とうあん |examination paper; examination script; answer sheet |Noun
+|当時 |とうじ |at that time; in those days |Noun, Adverb (fukushi)
+|到着 |とうちゃく |arrival |Noun, Suru verb, Intransitive verb
+|投票 |とうひょう |voting; ballot; poll; vote |Noun, Suru verb, Intransitive verb
+|通す |とおす |to stick through; to force through |Godan verb with 'su' ending, Transitive verb
+|通り |とおり |street; road; avenue; thoroughfare |Noun
+|通り過ぎる |とおりすぎる |to go past; to pass; to pass by |Ichidan verb, Intransitive verb
+|時 |とき |time; hour; moment |Noun
+|解く |とく |to untie; to unfasten; to unwrap; to undo; to unbind; to unpack |Godan verb with 'ku' ending, Transitive verb
+|得意 |とくい |satisfaction; pride; triumph; elation |Noun, Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no'
+|特徴 |とくちょう |feature; trait; characteristic; peculiarity; distinction |Noun
+|解ける |とける |to be solved; to be worked out |Ichidan verb, Intransitive verb
+|所が |ところが |even so; however; still; whereupon; even though; nevertheless; on the contrary; as a matter of fact; despite |Conjunction
+|所で |ところで |by the way; incidentally; well; now |Conjunction
+|登山 |とざん |mountain climbing; mountaineering; ascent of a mountain |Noun, Suru verb, Intransitive verb
+|都市 |とし |town; city; municipal; urban |Noun, Noun which may take the genitive case particle 'no'
+|年月 |としつき |months and years |Noun
+|図書 |としょ |books |Noun
+|年寄り |としより |old person; elderly person; senior citizen |Noun, Noun which may take the genitive case particle 'no'
+|閉じる |とじる |to close (e.g. book, eyes, meeting, etc.); to shut |Ichidan verb, Transitive verb, Intransitive verb
+|途端 |とたん |just (now, at the moment, etc.); just as; in the act of; as soon as; at the moment that |Noun, Adverb (fukushi)
+|土地 |とち |plot of land; lot; soil |Noun
+|突然 |とつぜん |abrupt; sudden; unexpected |Noun which may take the genitive case particle 'no', Na-adjective (keiyodoshi), Adverb (fukushi)
+|届く |とどく |to reach; to touch; to get to; to carry (of sound) |Godan verb with 'ku' ending, Intransitive verb
+|兎に角 |とにかく |anyway; anyhow; at any rate; in any case; at least; just |Adverb (fukushi)
+|飛ばす |とばす |to let fly; to make fly; to send flying; to blow off (e.g. in the wind); to launch; to fire; to hurl; to shoot |Godan verb with 'su' ending, Transitive verb
+|飛び出す |とびだす |to jump out; to leap out; to fly out; to run out; to rush out; to bolt out |Godan verb with 'su' ending, Intransitive verb
+|友 |とも |friend; companion; comrade; pal |Noun
+|共に |ともに |together; jointly |Adverb (fukushi)
+|虎 |とら |tiger (Panthera tigris) |Noun
+|取り上げる |とりあげる |to pick up |Ichidan verb, Transitive verb
+|取れる |とれる |to come off (of a button, handle, lid, etc.) |Ichidan verb, Intransitive verb
+|とんでもない |とんでもない |unthinkable; unexpected; absurd; outrageous; preposterous; terrible |I-adjective (keiyoushi)
+|度 |ど |degree (angle, temperature, scale, etc.) |Noun, Noun, used as a suffix
+|同一 |どういつ |identical; same; one and the same; equal |Noun which may take the genitive case particle 'no', Na-adjective (keiyodoshi)
+|銅貨 |どうか |copper coin |Noun
+|動詞 |どうし |verb |Noun
+|如何しても |どうしても |by all means; at any cost; no matter what; at any rate; surely |Expressions (phrases, clauses, etc.), Adverb (fukushi)
+|同時 |どうじ |same time |Noun
+|道徳 |どうとく |morals; morality |Noun
+|同様 |どうよう |same; similar; (just) like; equal |Noun which may take the genitive case particle 'no', Na-adjective (keiyodoshi), Noun, Noun, used as a suffix
+|同僚 |どうりょう |coworker; co-worker; colleague; associate |Noun
+|道路 |どうろ |road; highway |Noun
+|毒 |どく |poison; toxicant |Noun
+|読書 |どくしょ |reading (books) |Noun, Suru verb, Intransitive verb
+|独身 |どくしん |unmarried; single |Noun which may take the genitive case particle 'no', Noun
+|独特 |どくとく |peculiarity; uniqueness; characteristic |Noun, Noun which may take the genitive case particle 'no', Na-adjective (keiyodoshi)
+|独立 |どくりつ |independence; self-reliance; supporting oneself; being on one's own |Noun, Suru verb, Intransitive verb
+|何処か |どこか |somewhere |Noun, Adverb (fukushi)
+|土曜 |どよう |Saturday |Noun
+|努力 |どりょく |effort; exertion; endeavour; endeavor; hard work; striving |Noun, Suru verb, Intransitive verb
+|泥 |どろ |mud; (wet) dirt |Noun
+|どんな |どんな |what kind of; what sort of; what |Pre-noun adjectival (rentaishi)
+|どんなに |どんなに |how; how much; to what extent |Adverb (fukushi)
+|名 |な |name; given name |Noun
+|内容 |ないよう |contents; content; substance; matter; detail; import |Noun
+|直 |なお |straight |Na-adjective (keiyodoshi)
+|仲 |なか |relation; relationship |Noun
+|中々 |なかなか |very; considerably; easily; readily; fairly; quite; highly; rather |Adverb (fukushi), Na-adjective (keiyodoshi)
+|半ば |なかば |middle; halfway; midway |Noun, Noun, used as a suffix
+|仲間 |なかま |companion; fellow; friend; mate; comrade; partner; colleague; coworker; associate |Noun
+|流す |ながす |to drain; to pour; to run; to let flow; to flush; to shed (blood, tears); to spill |Godan verb with 'su' ending, Transitive verb
+|眺め |ながめ |scene; view; prospect; outlook |Noun
+|眺める |ながめる |to look at; to gaze at; to watch; to stare at |Ichidan verb, Transitive verb
+|流れる |ながれる |to stream; to flow (liquid, time, etc.); to run (ink) |Ichidan verb, Intransitive verb
+|無し |なし |without |Noun, Noun, used as a suffix
+|何故なら |なぜなら |because; the reason is; if you want to know why |Conjunction
+|謎 |なぞ |riddle; puzzle; enigma; mystery |Noun
+|納得 |なっとく |consent; agreement; acceptance |Noun, Suru verb, Transitive verb, Intransitive verb
+|何か |なにか |something; some; any |Pronoun
+|何も |なにも |(not) anything; (nothing) at all; (not) any; nothing |Expressions (phrases, clauses, etc.)
+|鍋 |なべ |pan; pot; saucepan |Noun
+|生 |なま |raw; uncooked; fresh |Noun which may take the genitive case particle 'no', Noun
+|怠ける |なまける |to be lazy; to be idle; to slack |Ichidan verb, Intransitive verb
+|波 |なみ |wave; billow; ripple; breaker; swell |Noun
+|涙 |なみだ |tear; tears; lachrymal secretion |Noun
+|悩む |なやむ |to be worried; to be troubled |Godan verb with 'mu' ending, Intransitive verb
+|縄 |なわ |rope; cord |Noun
+|何で |なんで |why?; what for? |Adverb (fukushi)
+|何でも |なんでも |any; anything; whatever; whatever one likes; everything; all |Expressions (phrases, clauses, etc.)
+|何とか |なんとか |something; something or other; so-and-so |Expressions (phrases, clauses, etc.)
+|似合う |にあう |to suit; to match; to become; to be like |Godan verb with 'u' ending, Intransitive verb
+|匂い |におい |smell; scent; odour; odor; stench |Noun
+|苦手 |にがて |poor (at); weak (in); not very good (at) |Na-adjective (keiyodoshi), Noun
+|日 |にち |Sunday |Noun
+|日曜 |にちよう |Sunday |Noun
+|日光 |にっこう |sunlight; sunshine; sunbeams |Noun
+|にっこり |にっこり |sweetly (smiling); broadly (grinning) |Adverb (fukushi), Adverb taking the 'to' particle, Suru verb
+|日中 |にっちゅう |daytime; during the day |Noun, Adverb (fukushi)
+|日本 |にほん |Japan |Noun
+|入場 |にゅうじょう |entrance; entering; admission; admittance |Noun, Suru verb, Intransitive verb
+|人気 |にんき |popularity; public favor |Noun, Noun which may take the genitive case particle 'no'
+|人間 |にんげん |human being; human; person; man; mankind; humankind |Noun
+|抜く |ぬく |to pull out; to draw out; to extract; to unplug; to weed |Godan verb with 'ku' ending, Transitive verb
+|抜ける |ぬける |to come out; to fall out; to be omitted; to be missing; to escape; to come loose |Ichidan verb, Intransitive verb
+|布 |ぬの |cloth; fabric; material; textile |Noun
+|根 |ね |root (of a plant) |Noun
+|願い |ねがい |desire; wish; hope |Noun
+|願う |ねがう |to desire; to wish; to hope |Godan verb with 'u' ending, Transitive verb
+|熱心 |ねっしん |zealous; enthusiastic; ardent; fervent; keen; eager |Na-adjective (keiyodoshi), Noun
+|熱帯 |ねったい |tropics |Noun
+|熱中 |ねっちゅう |being enthusiastic about; being wild about; being absorbed in; being engrossed in; being devoted to |Noun, Suru verb, Intransitive verb
+|年間 |ねんかん |(period of) a year |Noun, Adverb (fukushi)
+|年中 |ねんじゅう |whole year; all year round; throughout the year |Noun
+|年代 |ねんだい |age; era; period; date |Noun
+|年齢 |ねんれい |age; years |Noun
+|野 |の |field; plain |Noun
+|能 |のう |talent; gift; function |Noun
+|農家 |のうか |farmer; farming family |Noun
+|農業 |のうぎょう |agriculture; farming |Noun
+|農民 |のうみん |farmer; peasant |Noun, Noun which may take the genitive case particle 'no'
+|能力 |のうりょく |ability; faculty |Noun
+|軒 |のき |eaves |Noun
+|残す |のこす |to leave (behind) |Godan verb with 'su' ending, Transitive verb
+|残り |のこり |remainder; remnant; the rest; what is left; balance; leftovers |Noun, Noun which may take the genitive case particle 'no'
+|乗せる |のせる |to place on (something) |Ichidan verb, Transitive verb
+|除く |のぞく |to remove; to get rid of; to take away; to eliminate |Godan verb with 'ku' ending, Transitive verb
+|望み |のぞみ |wish; desire; hope |Noun
+|望む |のぞむ |to desire; to want; to wish for; to hope for |Godan verb with 'mu' ending, Transitive verb
+|後 |のち |later; afterwards |Noun, Adverb (fukushi), Noun which may take the genitive case particle 'no'
+|喉 |のど |throat |Noun
+|伸ばす |のばす |to grow long (e.g. hair, nails) |Godan verb with 'su' ending, Transitive verb
+|伸びる |のびる |to stretch; to extend; to lengthen; to grow (of hair, height, grass, etc.) |Ichidan verb, Intransitive verb
+|述べる |のべる |to state; to express; to say; to tell; to mention |Ichidan verb, Transitive verb
+|のんびり |のんびり |at leisure; in a relaxed manner; in a carefree manner; quietly; peacefully |Adverb (fukushi), Adverb taking the 'to' particle
+|はあ |はあ |yes; indeed; well |Other forms
+|灰 |はい |ash; ashes |Noun
+|配達 |はいたつ |delivery |Noun, Suru verb, Transitive verb
+|俳優 |はいゆう |actor; actress; player; performer |Noun
+|墓 |はか |grave; gravesite; tomb |Noun
+|博士 |はかせ |expert; learned person |Noun
+|計る |はかる |to measure; to weigh; to survey; to time (sound, gauge, estimate) |Godan verb with 'ru' ending, Transitive verb
+|吐く |はく |to vomit; to throw up; to spit up |Godan verb with 'ku' ending, Transitive verb
+|履く |はく |to put on (lower-body clothing, e.g. pants, skirt, footwear); to wear |Godan verb with 'ku' ending, Transitive verb
+|拍手 |はくしゅ |clapping hands; applause |Noun, Suru verb, Intransitive verb
+|博物館 |はくぶつかん |museum |Noun
+|激しい |はげしい |violent; furious; tempestuous |I-adjective (keiyoushi)
+|鋏 |はさみ |scissors; shears; clippers |Noun
+|破産 |はさん |bankruptcy; insolvency |Noun, Suru verb, Intransitive verb
+|端 |はし |end (e.g. of street); tip; point; edge; margin |Noun
+|始まり |はじまり |origin; beginning; start |Noun
+|外す |はずす |to remove; to take off; to detach; to unfasten; to undo |Godan verb with 'su' ending, Transitive verb
+|旗 |はた |flag |Noun
+|働き |はたらき |work; labor; labour |Noun
+|肌 |はだ |skin |Noun
+|裸 |はだか |nakedness; nudity |Noun, Noun which may take the genitive case particle 'no'
+|発見 |はっけん |discovery; detection; finding |Noun, Suru verb, Transitive verb
+|発行 |はっこう |publication (of a newspaper, magazine, book, etc.); issue |Noun, Suru verb, Transitive verb
+|発車 |はっしゃ |departure (of a train, car, etc.); starting; leaving |Noun, Suru verb, Intransitive verb
+|発達 |はったつ |development; growth |Noun, Suru verb, Intransitive verb
+|発展 |はってん |development; growth; expansion; extension; flourishing |Noun, Suru verb, Intransitive verb
+|発表 |はっぴょう |announcement; publication; presenting; statement; communique; making known; breaking (news story); expressing (one's opinion); releasing; unveiling |Noun, Suru verb, Transitive verb
+|発明 |はつめい |invention |Noun, Suru verb, Transitive verb
+|話し合う |はなしあう |to discuss; to talk together |Godan verb with 'u' ending, Transitive verb
+|放す |はなす |to release; to let go; to free; to set free; to let loose; to turn loose |Godan verb with 'su' ending, Transitive verb
+|離す |はなす |to separate; to part; to divide; to keep apart |Godan verb with 'su' ending, Transitive verb
+|離れる |はなれる |to be separated; to be apart; to be distant |Ichidan verb, Intransitive verb
+|羽 |はね |feather; plume; down |Noun
+|母親 |ははおや |mother |Noun
+|幅 |はば |width; breadth |Noun
+|省く |はぶく |to omit; to leave out; to exclude; to eliminate |Godan verb with 'ku' ending, Transitive verb
+|原 |はら |field; plain; prairie; tundra; moor; wilderness |Noun
+|腹 |はら |abdomen; belly; stomach |Noun
+|針 |はり |needle; pin |Noun
+|範囲 |はんい |extent; scope; sphere; range; span |Noun
+|反抗 |はんこう |opposition; resistance; insubordination; defiance; hostility; rebellion |Noun, Suru verb, Intransitive verb
+|犯罪 |はんざい |crime; offence; offense |Noun
+|判断 |はんだん |judgment; judgement; decision; conclusion; adjudication |Noun, Suru verb, Transitive verb
+|犯人 |はんにん |offender; criminal; culprit |Noun
+|販売 |はんばい |sale; sales; selling; marketing |Noun, Suru verb, Transitive verb
+|場 |ば |place; spot; space |Noun
+|莫大 |ばくだい |vast; huge; immense; enormous; colossal |Na-adjective (keiyodoshi)
+|爆発 |ばくはつ |explosion; detonation; blast; blowing up; eruption |Noun, Suru verb, Intransitive verb
+|罰する |ばっする |to punish; to penalize; to penalise |Suru verb - special class, Transitive verb
+|ばったり |ばったり |with a clash; with a thud; with a bang; with a flop; plump |Adverb (fukushi), Adverb taking the 'to' particle
+|場面 |ばめん |scene; setting; place (where something happens); scenario; case |Noun
+|番 |ばん |number (in a series) |Noun, Noun, used as a suffix
+|灯 |ひ |light; lamp |Noun
+|比較 |ひかく |comparison |Noun, Suru verb, Transitive verb
+|被害 |ひがい |(suffering) damage; injury; harm |Noun
+|轢く |ひく |to run over (with a vehicle); to knock down |Godan verb with 'ku' ending, Transitive verb
+|悲劇 |ひげき |tragedy; tragic drama; tragic play |Noun
+|飛行 |ひこう |flight; flying; aviation |Noun, Suru verb, Intransitive verb
+|膝 |ひざ |knee |Noun
+|非常 |ひじょう |emergency |Noun
+|額 |ひたい |forehead; brow |Noun
+|必死 |ひっし |frantic; frenetic; desperate |Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no'
+|引っ張る |ひっぱる |to pull; to draw; to pull tight |Godan verb with 'ru' ending, Transitive verb
+|日付 |ひづけ |date; dating |Noun
+|否定 |ひてい |denial; negation; repudiation; disavowal |Noun, Suru verb, Transitive verb
+|一言 |ひとこと |single word; a few words; brief comment |Noun, Suru verb, Transitive verb, Intransitive verb
+|人ごみ |ひとごみ |crowd of people |Noun
+|等しい |ひとしい |equal; identical; the same |I-adjective (keiyoushi)
+|一人一人 |ひとりひとり |each (person); individually; one by one; one at a time; in turn |Adverb (fukushi), Noun
+|批判 |ひはん |criticism; judgement; judgment; comment |Noun, Suru verb, Transitive verb
+|批評 |ひひょう |criticism; critique; review; commentary |Noun, Suru verb, Transitive verb
+|秘密 |ひみつ |secret; secrecy; confidentiality; privacy |Noun, Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no'
+|紐 |ひも |string; cord |Noun
+|表 |ひょう |table; chart; list |Noun, Noun, used as a suffix
+|評価 |ひょうか |valuation; appraisal; evaluation; assessment; estimation; rating; judging |Noun, Suru verb, Transitive verb
+|表現 |ひょうげん |expression; representation; description |Noun, Suru verb, Transitive verb
+|表情 |ひょうじょう |facial expression; countenance |Noun
+|評判 |ひょうばん |reputation; (public) estimation; popularity |Noun, Noun which may take the genitive case particle 'no'
+|表面 |ひょうめん |surface; face |Noun, Noun which may take the genitive case particle 'no'
+|費用 |ひよう |cost; expense |Noun
+|広がる |ひろがる |to spread (out); to extend; to stretch; to reach to; to get around; to fill (e.g. a space) |Godan verb with 'ru' ending, Intransitive verb
+|品 |ひん |elegance; grace; refinement; class; dignity |Noun
+|美人 |びじん |beautiful woman; (a) beauty; belle; good-looker |Noun
+|吃驚 |びっくり |to be surprised; to be amazed; to be frightened; to be astonished; to get startled; to jump |Suru verb, Intransitive verb, Adverb (fukushi)
+|微妙 |びみょう |subtle; delicate; fine |Na-adjective (keiyodoshi), Noun
+|秒 |びょう |second (unit of time) |Noun
+|平等 |びょうどう |equality; impartiality; evenness |Noun, Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no'
+|便 |びん |flight (e.g. airline flight); trip (e.g. train trip); service |Noun, Noun, used as a suffix
+|瓶 |びん |bottle; jar; decanter; flagon; phial; vial |Noun
+|ぴったり |ぴったり |tightly; closely |Adverb (fukushi), Adverb taking the 'to' particle, Suru verb
+|不 |ふ |un-; non- |Prefix
+|不安 |ふあん |anxiety; uneasiness; worry; apprehension; fear; insecurity; suspense |Noun, Na-adjective (keiyodoshi)
+|風景 |ふうけい |scenery; scene; landscape; view; sight |Noun, Noun which may take the genitive case particle 'no'
+|夫婦 |ふうふ |married couple; husband and wife; man and wife |Noun
+|笛 |ふえ |flute; fife; pipe; recorder; flageolet; shakuhachi; clarinet |Noun
+|服装 |ふくそう |attire; dress; clothes; clothing; costume; garb |Noun
+|含む |ふくむ |to contain; to comprise; to have; to hold; to include; to embrace |Godan verb with 'mu' ending, Transitive verb
+|袋 |ふくろ |bag; sack; pouch |Noun
+|不幸 |ふこう |unhappiness; sorrow; misfortune; disaster; accident |Noun, Na-adjective (keiyodoshi)
+|節 |ふし |joint; knuckle |Noun
+|不思議 |ふしぎ |wonderful; marvelous; strange; incredible; amazing; curious; miraculous; mysterious |Na-adjective (keiyodoshi), Noun
+|不自由 |ふじゆう |discomfort; inconvenience |Noun, Na-adjective (keiyodoshi), Suru verb, Intransitive verb
+|夫人 |ふじん |wife; Mrs; Madam |Noun, Noun, used as a suffix
+|婦人 |ふじん |woman; lady; adult female |Noun
+|不正 |ふせい |injustice; unfairness; wrongdoing; iniquity; impropriety; irregularity; dishonesty; illegality; fraud |Noun, Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no'
+|防ぐ |ふせぐ |to defend against; to protect against |Godan verb with 'gu' ending, Transitive verb
+|不足 |ふそく |insufficiency; deficiency; shortage; lack; scarcity; deficit |Noun, Suru verb, Intransitive verb, Na-adjective (keiyodoshi)
+|双子 |ふたご |twins; twin |Noun
+|再び |ふたたび |again; once more; a second time |Adverb (fukushi)
+|縁 |ふち |rim; brim; edge; brink |Noun
+|筆 |ふで |writing brush; paintbrush; pen |Noun
+|不平 |ふへい |discontent; dissatisfaction; complaint; grievance |Noun, Noun which may take the genitive case particle 'no', Na-adjective (keiyodoshi)
+|不満 |ふまん |dissatisfaction; discontent; displeasure; complaint; unhappiness |Noun, Na-adjective (keiyodoshi)
+|不利 |ふり |disadvantage; handicap; unfavorable position |Noun, Na-adjective (keiyodoshi)
+|振る |ふる |to wave; to shake; to swing |Godan verb with 'ru' ending, Transitive verb
+|震える |ふるえる |to shiver; to shake; to quake; to tremble; to quaver; to quiver |Ichidan verb, Intransitive verb
+|故郷 |ふるさと |hometown; birthplace; native place; one's old home |Noun
+|触れる |ふれる |to touch; to feel |Ichidan verb, Intransitive verb
+|雰囲気 |ふんいき |atmosphere; mood; ambience; ambiance; aura; feel |Noun
+|分 |ぶ |one-tenth; one percent (one-tenth of a wari); 3 mm (one-tenth of a sun); 2.4 mm (one-tenth of a mon, a traditional unit used to measure shoe sizes); 0.1 degree (one-tenth of a do, used to measure body temperature on any temperature scale) |Numeric
+|無 |ぶ |un-; non- |Prefix
+|武器 |ぶき |weapon; arms; ordnance |Noun
+|無事 |ぶじ |safety; security; peace; quiet |Noun, Na-adjective (keiyodoshi)
+|舞台 |ぶたい |stage (of a theatre, concert hall, etc.) |Noun
+|物価 |ぶっか |prices of commodities; prices (in general); cost-of-living |Noun
+|物質 |ぶっしつ |material; substance |Noun
+|打つ |ぶつ |to hit (someone); to strike; to beat |Godan verb with 'tsu' ending, Transitive verb
+|物理 |ぶつり |laws of nature; physical laws |Noun
+|部分 |ぶぶん |portion; section; part |Noun
+|分 |ぶん |part; portion; share |Noun, Noun, used as a suffix
+|文 |ぶん |sentence |Noun
+|分析 |ぶんせき |analysis |Noun, Suru verb, Transitive verb
+|文明 |ぶんめい |civilization; civilisation; culture |Noun
+|分野 |ぶんや |field; sphere; realm; division; branch |Noun
+|塀 |へい |wall |Noun
+|平均 |へいきん |average; mean |Noun, Suru verb, Transitive verb
+|平和 |へいわ |peace; harmony |Noun, Na-adjective (keiyodoshi)
+|減らす |へらす |to abate; to decrease; to diminish; to shorten |Godan verb with 'su' ending, Transitive verb
+|減る |へる |to decrease (in size or number); to diminish; to abate |Godan verb with 'ru' ending, Intransitive verb
+|変化 |へんか |change; variation; alteration; mutation; transition; transformation |Noun, Suru verb, Intransitive verb
+|変更 |へんこう |change; modification; alteration; revision; amendment |Noun, Suru verb, Transitive verb
+|別に |べつに |(not) particularly; (not) especially; (not) specially |Adverb (fukushi)
+|弁当 |べんとう |bento; Japanese box lunch |Noun
+|方 |ほう |direction; way; side; area (in a particular direction) |Noun
+|法 |ほう |law; act; principle |Noun, Noun, used as a suffix
+|方向 |ほうこう |direction; orientation; bearing; way |Noun
+|報告 |ほうこく |report; information |Noun, Suru verb, Transitive verb
+|宝石 |ほうせき |gem; jewel; precious stone |Noun
+|放送 |ほうそう |broadcasting; broadcast; program; announcement |Noun, Suru verb, Transitive verb
+|豊富 |ほうふ |abundant; plentiful; rich; ample |Na-adjective (keiyodoshi), Noun
+|方法 |ほうほう |method; way; manner; process; procedure; means; measure |Noun
+|方々 |ほうぼう |here and there; this way and that way; everywhere; all over |Adverb (fukushi), Noun
+|訪問 |ほうもん |call; visit |Noun, Suru verb, Transitive verb, Noun which may take the genitive case particle 'no'
+|吠える |ほえる |to bark; to howl; to bay; to roar; to yelp; to yap |Ichidan verb, Intransitive verb
+|頬 |ほお |cheek (of the face) |Noun
+|埃 |ほこり |dust |Noun
+|誇り |ほこり |pride; boast; credit (to) |Noun
+|保証 |ほしょう |guarantee; security; assurance; pledge |Noun, Suru verb, Transitive verb
+|保存 |ほぞん |preservation; conservation; storage; maintenance |Noun, Suru verb, Transitive verb
+|仏 |ほとけ |Buddha; Shakyamuni |Noun
+|程 |ほど |extent; degree; measure |Noun, Adverb (fukushi)
+|歩道 |ほどう |footpath; walkway; sidewalk; pavement |Noun
+|骨 |ほね |bone |Noun
+|炎 |ほのお |flame; blaze |Noun
+|微笑む |ほほえむ |to smile |Godan verb with 'mu' ending, Intransitive verb
+|略 |ほぼ |almost; roughly; approximately; about; around |Adverb (fukushi)
+|堀 |ほり |moat; fosse |Noun
+|本人 |ほんにん |the person in question; the person themselves; said person |Noun
+|本物 |ほんもの |genuine article; real thing; real deal |Noun, Noun which may take the genitive case particle 'no'
+|棒 |ぼう |pole; rod; stick; baton |Noun
+|冒険 |ぼうけん |adventure; venture |Noun, Suru verb, Intransitive verb
+|ぼんやり |ぼんやり |dimly; faintly; indistinctly; vaguely |Adverb (fukushi), Adverb taking the 'to' particle, Suru verb
+|間 |ま |time; pause |Noun
+|まあ |まあ |just (e.g. "just wait here"); come now; now, now |Adverb (fukushi)
+|迷子 |まいご |lost child; lost person; stray child; missing child |Noun
+|任せる |まかせる |to leave (a matter, decision, etc. to someone); to entrust (to someone); to entrust (someone) with |Ichidan verb, Transitive verb
+|負け |まけ |defeat; loss; losing (a game) |Noun
+|誠に |まことに |really; truly; very; extremely; exceedingly; sincerely |Adverb (fukushi)
+|孫 |まご |grandchild |Noun
+|正に |まさに |exactly; just; precisely; really; truly; surely; certainly; without doubt |Adverb (fukushi)
+|増す |ます |to increase; to grow |Godan verb with 'su' ending, Intransitive verb, Transitive verb
+|益々 |ますます |increasingly; more and more; decreasingly (when declining); less and less |Adverb (fukushi)
+|先ず |まず |first (of all); firstly; to begin with; before anything else |Adverb (fukushi)
+|貧しい |まずしい |poor; needy |I-adjective (keiyoushi)
+|間違い |まちがい |mistake; error; blunder |Noun
+|真っ赤 |まっか |bright red; deep red; flushed (of face) |Na-adjective (keiyodoshi), Noun
+|全く |まったく |really; truly; entirely; completely; wholly; perfectly |Adverb (fukushi), Noun which may take the genitive case particle 'no'
+|松 |まつ |pine tree (Pinus spp.) |Noun
+|祭り |まつり |festival; feast; matsuri |Noun
+|学ぶ |まなぶ |to learn; to study; to take lessons in |Godan verb with 'bu' ending, Transitive verb
+|真似 |まね |imitating; copying; mimicry |Noun, Suru verb, Transitive verb, Intransitive verb
+|招く |まねく |to invite; to ask |Godan verb with 'ku' ending, Transitive verb
+|豆 |まめ |legume (esp. edible legumes or their seeds, e.g. beans, peas, pulses); bean; pea |Noun
+|守る |まもる |to protect; to guard; to defend |Godan verb with 'ru' ending, Transitive verb
+|丸 |まる |circle |Noun
+|丸で |まるで |as if; as though; just like; much as; exactly like; as it were |Adverb (fukushi)
+|回す |まわす |to turn; to rotate; to spin; to twist; to gyrate |Godan verb with 'su' ending, Transitive verb
+|回り |まわり |rotation |Noun
+|万一 |まんいち |(unlikely event of) emergency; the worst(-case scenario); 10000 to 1 |Noun
+|満足 |まんぞく |satisfaction; contentment; gratification |Noun, Na-adjective (keiyodoshi), Suru verb, Transitive verb, Intransitive verb
+|実 |み |fruit; nut |Noun
+|身 |み |one's body; one's person |Noun
+|見送り |みおくり |seeing (someone) off; send-off |Noun
+|見事 |みごと |splendid; magnificent; excellent; fine; superb; beautiful; admirable |Na-adjective (keiyodoshi), Adverb (fukushi)
+|満ちる |みちる |to fill; to become full (of); to be filled (with); to brim (with) |Ichidan verb, Intransitive verb
+|密 |みつ |dense; thick; crowded |Na-adjective (keiyodoshi), Noun
+|認める |みとめる |to recognize; to recognise; to observe; to notice |Ichidan verb, Transitive verb
+|見舞い |みまい |visit (to someone affected by illness or misfortune); call; inquiry (about someone's health); expression of sympathy |Noun
+|土産 |みやげ |local specialty or souvenir bought as a gift while travelling |Noun
+|都 |みやこ |capital (esp. Kyoto, Japan's former capital); seat of government |Noun
+|未来 |みらい |(distant) future |Noun
+|魅力 |みりょく |charm; fascination; glamour; glamor; attraction; appeal |Noun
+|無 |む |nothing; naught; nought; nil; zero |Noun
+|向い |むかい |facing; opposite; across the street; other side |Noun, Noun which may take the genitive case particle 'no'
+|迎え |むかえ |meeting; greeting; welcome |Noun
+|向く |むく |to turn toward; to look (up, down, etc.) |Godan verb with 'ku' ending, Transitive verb, Intransitive verb
+|向ける |むける |to turn (towards); to face; to point; to aim; to direct to |Ichidan verb, Transitive verb
+|無視 |むし |disregarding; ignoring |Noun, Suru verb, Transitive verb
+|虫歯 |むしば |tooth decay; decayed tooth; dental cavity; dental caries |Noun
+|寧ろ |むしろ |rather; better; instead; if anything |Adverb (fukushi)
+|結ぶ |むすぶ |to tie; to bind; to link |Godan verb with 'bu' ending, Transitive verb
+|夢中 |むちゅう |absorbed in; immersed in; crazy about; obsessed with; devoted to |Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no', Noun
+|胸 |むね |chest; breast |Noun
+|無料 |むりょう |free (of charge); gratuitous |Noun which may take the genitive case particle 'no', Noun
+|芽 |め |sprout; shoot; bud |Noun
+|明確 |めいかく |clear; precise; definite; distinct |Na-adjective (keiyodoshi)
+|命じる |めいじる |to order; to command |Ichidan verb, Transitive verb
+|名人 |めいじん |master; expert |Noun
+|命令 |めいれい |order; command; decree; directive |Noun, Suru verb, Transitive verb
+|迷惑 |めいわく |trouble; bother; annoyance; nuisance; inconvenience |Noun, Na-adjective (keiyodoshi)
+|飯 |めし |cooked rice |Noun
+|綿 |めん |cotton |Noun
+|面 |めん |face |Noun
+|免許 |めんきょ |license; licence; permission; permit; certificate |Noun, Suru verb, Transitive verb
+|申し込む |もうしこむ |to apply for; to make an application; to propose (marriage); to offer (mediation); to make an overture (of peace); to challenge; to lodge (objections); to request (an interview); to subscribe for; to book; to reserve |Godan verb with 'mu' ending, Transitive verb
+|申し訳 |もうしわけ |apology; excuse |Noun, Suru verb
+|燃える |もえる |to burn; to get fired up |Ichidan verb, Intransitive verb
+|目的 |もくてき |purpose; goal; aim; objective; intention; motive |Noun
+|目標 |もくひょう |goal; target; aim; objective |Noun
+|木曜 |もくよう |Thursday |Noun
+|若しも |もしも |if; in case; supposing |Adverb (fukushi)
+|文字 |もじ |letter (of an alphabet); character |Noun
+|持ち上げる |もちあげる |to elevate; to raise; to lift up |Ichidan verb, Transitive verb
+|用いる |もちいる |to use; to make use of; to utilize; to utilise |Ichidan verb, Transitive verb
+|勿論 |もちろん |of course; certainly; naturally |Adverb (fukushi)
+|尤も |もっとも |but then; although; though |Conjunction
+|最も |もっとも |most; extremely |Adverb (fukushi)
+|元 |もと |origin; source; beginning |Noun
+|元 |もと |former; ex-; past; one-time |Noun which may take the genitive case particle 'no', Noun, used as a prefix
+|基づく |もとづく |to be based (on); to be founded (on); to be grounded (on); to be in accordance (with) |Godan verb with 'ku' ending, Intransitive verb
+|求める |もとめる |to want; to wish for |Ichidan verb, Transitive verb
+|戻す |もどす |to put back; to return; to give back; to restore (to a previous state, e.g. defrosting, reconstituting, reconciling); to turn back (e.g. clock hand) |Godan verb with 'su' ending, Transitive verb
+|者 |もの |person |Noun
+|物音 |ものおと |noise; sound |Noun
+|物語 |ものがたり |story; tale; narrative; account; fable; legend |Noun
+|物事 |ものごと |things; everything |Noun
+|模様 |もよう |pattern; figure; design |Noun
+|貰う |もらう |to receive; to take; to accept |Godan verb with 'u' ending, Transitive verb
+|文句 |もんく |complaint; grumbling; objection |Noun
+|軈て |やがて |before long; soon; shortly |Adverb (fukushi)
+|役 |やく |role; assignment; responsibility; duty; function; job; service |Noun
+|約 |やく |approximately; about |Adverb (fukushi)
+|訳 |やく |translation; version (e.g. "English version") |Noun, Noun, used as a suffix
+|役割 |やくわり |part; assigning (allotment of) parts; role; duties |Noun
+|家賃 |やちん |rent |Noun
+|厄介 |やっかい |trouble; burden; nuisance; bother; worry |Na-adjective (keiyodoshi), Noun
+|雇う |やとう |to employ; to hire; to take on |Godan verb with 'u' ending, Transitive verb
+|宿 |やど |lodging; inn; hotel |Noun
+|屋根 |やね |roof |Noun
+|破る |やぶる |to tear; to rip; to break; to destroy |Godan verb with 'ru' ending, Transitive verb
+|辞める |やめる |to resign; to retire; to quit; to leave (one's job, etc.) |Ichidan verb, Transitive verb
+|稍 |やや |a little; partially; somewhat; slightly; semi-; -ish; on the ... side; a short time; a while |Adverb (fukushi), Noun or verb acting prenominally
+|唯一 |ゆいいつ |only; sole; unique |Noun which may take the genitive case particle 'no', Noun, Adverb (fukushi)
+|勇気 |ゆうき |courage; bravery; valour; valor; nerve; boldness |Noun
+|有効 |ゆうこう |valid; effective |Na-adjective (keiyodoshi), Noun
+|優秀 |ゆうしゅう |superior; excellent; brilliant; outstanding |Na-adjective (keiyodoshi), Noun
+|優勝 |ゆうしょう |overall victory; championship; winning the title |Noun, Suru verb, Intransitive verb
+|友情 |ゆうじょう |friendship; fellowship; camaraderie |Noun
+|友人 |ゆうじん |friend |Noun
+|有能 |ゆうのう |able; capable; competent; talented; efficient |Na-adjective (keiyodoshi), Noun
+|郵便 |ゆうびん |mail service; postal service; mail; post |Noun
+|有利 |ゆうり |advantageous; favourable; better; stronger |Na-adjective (keiyodoshi), Noun
+|床 |ゆか |floor |Noun
+|愉快 |ゆかい |pleasant; delightful; enjoyable; joyful; cheerful; amusing; happy |Na-adjective (keiyodoshi), Noun
+|輸出 |ゆしゅつ |export; exportation |Noun, Suru verb, Transitive verb
+|譲る |ゆずる |to hand over; to transfer; to turn over; to assign; to convey; to bequeath |Godan verb with 'ru' ending, Transitive verb
+|豊か |ゆたか |abundant; plentiful; rich; ample |Na-adjective (keiyodoshi), Suffix
+|輸入 |ゆにゅう |import; importation; introduction |Noun, Suru verb, Transitive verb
+|許す |ゆるす |to permit; to allow; to approve; to consent to |Godan verb with 'su' ending, Transitive verb
+|夜明け |よあけ |dawn; daybreak |Noun
+|様 |よう |appearing ...; looking ... |Noun, used as a suffix, Noun
+|酔う |よう |to get drunk; to become intoxicated |Godan verb with 'u' ending, Intransitive verb
+|容易 |ようい |easy; simple; plain |Na-adjective (keiyodoshi), Noun
+|陽気 |ようき |cheerful; jovial; merry; lively |Na-adjective (keiyodoshi), Noun
+|要求 |ようきゅう |demand; firm request; requisition; requirement; desire |Noun, Suru verb, Transitive verb
+|用心 |ようじん |care; precaution; guarding; caution |Noun, Suru verb, Transitive verb, Intransitive verb
+|様子 |ようす |state (of affairs); situation; circumstances |Noun
+|要するに |ようするに |in short; in a word; to sum up; to put it simply; to make a long story short; after all |Expressions (phrases, clauses, etc.), Adverb (fukushi)
+|要点 |ようてん |gist; main point |Noun
+|曜日 |ようび |day of the week |Noun
+|予期 |よき |expectation; anticipation; forecast |Noun, Suru verb, Transitive verb
+|横切る |よこぎる |to cross (e.g. road); to traverse |Godan verb with 'ru' ending, Transitive verb
+|予算 |よさん |estimate (of costs); budget |Noun, Suru verb
+|止す |よす |to stop (doing); to cease; to desist; to drop; to lay off; to give up; to quit |Godan verb with 'su' ending, Transitive verb
+|予測 |よそく |prediction; estimation |Noun, Suru verb, Transitive verb
+|夜中 |よなか |middle of the night; dead of night |Noun, Adverb (fukushi)
+|世の中 |よのなか |society; the world; the times |Expressions (phrases, clauses, etc.), Noun
+|余分 |よぶん |extra; excess; surplus |Na-adjective (keiyodoshi), Noun
+|予報 |よほう |forecast; prediction |Noun, Suru verb, Transitive verb
+|予防 |よぼう |prevention; protection (against); precaution |Noun, Suru verb, Transitive verb
+|嫁 |よめ |bride |Noun
+|喜び |よろこび |joy; delight; rapture; pleasure; gratification; rejoicing; congratulations; felicitations |Noun
+|宜しい |よろしい |good; OK; all right; fine; very well; will do; may; can |I-adjective (keiyoushi)
+|宜しく |よろしく |well; properly; suitably |Expressions (phrases, clauses, etc.), Adverb (fukushi)
+|来 |らい |next (year, spring, etc.); coming |Prefix
+|楽 |らく |comfort; ease; relief; (at) peace; relaxation |Noun, Na-adjective (keiyodoshi)
+|利益 |りえき |profit; gains |Noun
+|理解 |りかい |understanding; comprehension; appreciation |Noun, Suru verb, Transitive verb
+|陸 |りく |land; shore |Noun
+|利口 |りこう |clever; intelligent; bright; smart; wise; sensible; shrewd |Na-adjective (keiyodoshi), Noun
+|離婚 |りこん |divorce |Noun, Suru verb, Intransitive verb
+|理想 |りそう |ideal; ideals |Noun, Noun which may take the genitive case particle 'no'
+|率 |りつ |rate; ratio; proportion; percentage |Noun, Noun, used as a suffix
+|留学 |りゅうがく |studying abroad |Noun, Suru verb, Intransitive verb
+|流行 |りゅうこう |fashion; trend; vogue; craze; fad; popularity |Noun, Suru verb, Intransitive verb, Noun which may take the genitive case particle 'no'
+|量 |りょう |quantity; amount; volume; capacity; portion (of food) |Noun, Noun, used as a suffix
+|両替 |りょうがえ |change; money exchange |Noun, Suru verb, Transitive verb
+|料金 |りょうきん |fee; charge; fare |Noun
+|例 |れい |example; instance; illustration; case |Noun
+|礼 |れい |thanks; gratitude |Noun
+|礼儀 |れいぎ |manners; courtesy; etiquette |Noun
+|冷静 |れいせい |calmness; composure; coolness; serenity; presence of mind |Noun, Na-adjective (keiyodoshi)
+|列車 |れっしゃ |train; railway train |Noun
+|列 |れつ |row; line; file; column; queue; rank; procession |Noun
+|連想 |れんそう |association (of ideas); being reminded (of something); suggestion |Noun, Suru verb, Transitive verb
+|連続 |れんぞく |continuation; succession; series; sequence |Noun, Suru verb, Transitive verb, Intransitive verb
+|老人 |ろうじん |old person; senior citizen; the aged; the elderly |Noun
+|労働 |ろうどう |labor; labour; work |Noun, Suru verb, Intransitive verb
+|論じる |ろんじる |to discuss; to talk about; to deal with (a topic) |Ichidan verb, Transitive verb
+|論争 |ろんそう |dispute; controversy; debate; argument; taking issue |Noun, Suru verb, Intransitive verb
+|論文 |ろんぶん |thesis; essay; treatise; paper; article |Noun
+|輪 |わ |ring; circle; loop |Noun
+|別れ |わかれ |parting; separation; farewell |Noun
+|我儘 |わがまま |selfish; egoist |Na-adjective (keiyodoshi), Noun
+|脇 |わき |armpit; under one's arm; side; flank |Noun
+|分ける |わける |to divide (into); to split (into); to part; to separate; to divide up; to classify; to sort out; to divide out |Ichidan verb, Transitive verb
+|態と |わざと |on purpose; deliberately; intentionally |Adverb (fukushi)
+|僅か |わずか |a little; a few; small; slight; trifling; meagre; meager; narrow (margin) |Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no'
+|綿 |わた |cotton plant (Gossypium spp.) |Noun
+|話題 |わだい |topic; subject |Noun
+|笑い |わらい |laugh; laughter |Noun
+|割る |わる |to divide |Godan verb with 'ru' ending, Transitive verb
+|悪口 |わるぐち |(verbal) abuse; speaking ill of people; bad-mouthing; name-calling; slander; abusive language; insulting remarks |Noun
+|我々 |われわれ |we |Pronoun
+|湾 |わん |bay; gulf; inlet |Noun, Noun, used as a suffix
+|アイスクリーム |アイスクリーム |ice cream |Noun
+|アイロン |アイロン |iron (for pressing clothes) |Noun
+|アルバム |アルバム |album |Noun
+|インク |インク |ink |Noun
+|ウイスキー |ウイスキー |whisky; whiskey |Noun
+|エネルギー |エネルギー |energy |Noun
+|エンジン |エンジン |engine |Noun
+|オフィス |オフィス |office |Noun
+|オーバー |オーバー |overcoat |Noun
+|カー |カー |car |Noun
+|カード |カード |card (information, filing, etc.) |Noun
+|キャプテン |キャプテン |captain |Noun
+|キャンプ |キャンプ |camp; camping |Noun, Suru verb, Intransitive verb
+|クラシック |クラシック |classical music |Noun
+|クリスマス |クリスマス |Christmas |Noun
+|クリーム |クリーム |cream |Noun
+|グラス |グラス |glass (drinking vessel) |Noun
+|グランド |グランド |grand; large |Noun or verb acting prenominally
+|グループ |グループ |group (usu. of people) |Noun
+|ケチ |ケチ |stinginess; miserliness; penny-pinching; miser; pinchpenny; skinflint; cheapskate; tightwad; niggard |Noun, Na-adjective (keiyodoshi)
+|ケース |ケース |case (container) |Noun
+|ゲーム |ゲーム |game |Noun
+|コーチ |コーチ |coach |Noun, Suru verb, Transitive verb
+|コード |コード |code; program |Noun
+|ゴミ |ゴミ |rubbish; trash; garbage; refuse; litter |Noun
+|ゴール |ゴール |goal (in soccer, hockey, etc.); basket (in basketball) |Noun, Suru verb, Intransitive verb
+|サイン |サイン |autograph; signature |Noun, Suru verb, Transitive verb, Intransitive verb
+|サービス |サービス |service; help; assistance; care; concern |Noun, Suru verb, Intransitive verb
+|ジェット機 |ジェットき |jet aeroplane; jet airplane |Noun
+|ジュース |ジュース |juice |Noun
+|ジーンズ |ジーンズ |jeans |Noun
+|スイッチ |スイッチ |switch |Noun
+|スキー |スキー |skiing |Noun
+|スケート |スケート |skating (esp. ice); skate; skates |Noun, Suru verb
+|スタイル |スタイル |(one's) figure; build; physique; shape |Noun
+|スタンド |スタンド |stands; bleachers |Noun
+|スター |スター |star (actor, athlete, etc.); celebrity |Noun
+|スピーチ |スピーチ |speech |Noun
+|スープ |スープ |(Western) soup |Noun
+|セット |セット |set (of things); combo |Noun
+|センター |センター |centre; center |Noun
+|ソファ |ソファ |sofa; couch |Noun
+|タイプライター |タイプライター |typewriter |Noun
+|タオル |タオル |towel |Noun
+|ダイヤ |ダイヤ |diamond |Noun
+|ダンス |ダンス |dance; dancing |Noun, Suru verb, Intransitive verb
+|チャンス |チャンス |chance; opportunity |Noun
+|チーズ |チーズ |cheese |Noun
+|チーム |チーム |team |Noun
+|テント |テント |tent |Noun
+|デモ |デモ |demonstration; protest |Noun
+|デート |デート |date (with someone); (social) outing (for two); date night |Noun, Suru verb, Intransitive verb
+|ト |ト |7th (in a sequence denoted by the iroha system); g; vii |Noun
+|トップ |トップ |top |Noun
+|トラック |トラック |truck; lorry |Noun
+|トランプ |トランプ |(Western) playing cards |Noun
+|トンネル |トンネル |tunnel |Noun
+|ドライブ |ドライブ |drive; trip by car; driving |Noun
+|ドラマ |ドラマ |(non-documentary) television series; TV drama; teledrama; play |Noun
+|ドレス |ドレス |dress |Noun
+|ネズミ |ネズミ |mouse; rat |Noun
+|ノック |ノック |knock; knocking |Noun, Suru verb, Transitive verb
+|ノー |ノー |no |Prefix
+|ハイキング |ハイキング |hiking |Noun, Suru verb, Transitive verb, Intransitive verb
+|ハンサム |ハンサム |handsome |Na-adjective (keiyodoshi)
+|バイオリン |バイオリン |violin |Noun
+|バッグ |バッグ |bag |Noun
+|バン |バン |bun (hairstyle) |Noun
+|パイプ |パイプ |pipe; tube |Noun
+|パイロット |パイロット |pilot |Noun
+|パス |パス |passing (an examination, inspection, etc.) |Noun, Suru verb, Transitive verb, Intransitive verb
+|パスポート |パスポート |passport |Noun
+|パーセント |パーセント |percent; per cent; percentage |Noun
+|ビデオ |ビデオ |video (esp. a televised image) |Noun
+|ビール |ビール |beer |Noun
+|ピクニック |ピクニック |picnic |Noun
+|ピン |ピン |pin (e.g. hairpin, safety pin) |Noun
+|プラス |プラス |plus; addition |Noun, Suru verb, Transitive verb, Conjunction, Prefix, Suffix
+|プラン |プラン |plan; scheme |Noun
+|プロ |プロ |professional; pro |Noun, Noun which may take the genitive case particle 'no'
+|ベルト |ベルト |belt (worn around the waist) |Noun
+|ベンチ |ベンチ |bench |Noun
+|ペンキ |ペンキ |paint |Noun
+|ホーム |ホーム |platform |Noun
+|ボーイ |ボーイ |boy |Noun
+|ボート |ボート |boat |Noun
+|ボール |ボール |ball |Noun
+|マイク |マイク |mike; mic; microphone |Noun
+|マスター |マスター |to master (a skill) |Suru verb, Transitive verb
+|ママ |ママ |mom; mommy; mum; mummy; mother; mama; mamma |Noun
+|マーケット |マーケット |market |Noun
+|ミス |ミス |mistake; error; blunder |Noun, Suru verb, Intransitive verb, Transitive verb
+|ミルク |ミルク |milk |Noun
+|メモ |メモ |note; memo; memorandum |Noun, Suru verb, Transitive verb
+|メンバー |メンバー |member; participant; attendee; lineup (sport) |Noun
+|ユーモア |ユーモア |humor; humour; joke |Noun
+|ヨット |ヨット |yacht (esp. a sailing boat with one mast); sailing boat; sailboat |Noun
+|ライター |ライター |lighter |Noun
+|ラケット |ラケット |racket; paddle (in table-tennis) |Noun
+|ロケット |ロケット |rocket |Noun
+|ワイン |ワイン |wine |Noun
+|===
+
+== 统计
+
+- 词条总数（去重后）：1647
+- 抓取页数：89
+- 数据源：Jisho `#jlpt-n3 #words`
