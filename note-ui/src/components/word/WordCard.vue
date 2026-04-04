@@ -406,6 +406,7 @@ export default {
           : [];
         const record = records[this.indexInPage] || records[0] || {};
         this.wordCard = normalizeWordCard(record);
+        this.tryAutoPlayWord();
       } catch (error) {
         if (seq !== this.requestSeq) {
           return;
@@ -515,13 +516,15 @@ export default {
     savePlaybackRate() {
       savePlaybackRate(this.$options.playbackRateStorageKey, this.playbackRate);
     },
-    async playWordAudio() {
+    async playWordAudio({ silent = false } = {}) {
       const source = this.getWordAudioSource();
       if (!source) {
-        this.errorMessage = "当前单词没有可播放内容";
+        if (!silent) {
+          this.errorMessage = "当前单词没有可播放内容";
+        }
         return;
       }
-      await this.playAudioSequence([source]);
+      await this.playAudioSequence([source], { silent });
     },
     async playExampleAudio(example = {}, index = 0) {
       const source = this.getExampleAudioSource(example, index);
@@ -553,12 +556,14 @@ export default {
       }
       await this.playAudioSequence(queue);
     },
-    async playAudioSequence(sources = []) {
+    async playAudioSequence(sources = [], { silent = false } = {}) {
       if (!Array.isArray(sources) || !sources.length) {
         return;
       }
       if (!this.audioPlaybackManager) {
-        this.errorMessage = "播放器初始化中，请稍后重试";
+        if (!silent) {
+          this.errorMessage = "播放器初始化中，请稍后重试";
+        }
         return;
       }
 
@@ -566,8 +571,13 @@ export default {
       try {
         await this.audioPlaybackManager.playSequence(sources);
       } catch (error) {
-        this.errorMessage = `播放发音失败：${error.message}`;
+        if (!silent) {
+          this.errorMessage = `播放发音失败：${error.message}`;
+        }
       }
+    },
+    tryAutoPlayWord() {
+      this.playWordAudio({ silent: true });
     },
     stopPlayback() {
       if (this.audioPlaybackManager) {
