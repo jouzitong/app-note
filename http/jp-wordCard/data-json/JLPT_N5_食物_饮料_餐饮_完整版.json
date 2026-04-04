@@ -1,0 +1,3660 @@
+{
+  "meta": {
+    "version": "1.0",
+    "source": "JLPT_N5_高频优先学习版_完整版.adoc",
+    "importId": "20260404-jlptn5-food-full",
+    "createdAt": "2026-04-04T21:03:51+08:00",
+    "options": {
+      "dryRun": false,
+      "upsert": true,
+      "strict": true
+    }
+  },
+  "payload": {
+    "noteNodes": [
+      {
+        "nodeKey": "node-root-jp",
+        "parentNodeKey": null,
+        "noteNode": {
+          "title": "日语学习",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card",
+        "parentNodeKey": "node-root-jp",
+        "noteNode": {
+          "title": "09 词汇体系（主题+频率）",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5",
+        "parentNodeKey": "jp-study-09-word-card",
+        "noteNode": {
+          "title": "N5 核心词汇",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5-food",
+        "parentNodeKey": "jp-study-09-word-card-N5",
+        "noteNode": {
+          "title": "食物・饮料・餐饮",
+          "noteType": "WORD_CARD",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": {
+          "paragraphs": [
+            "食物・饮料・餐饮（完整版，47词）"
+          ],
+          "bullets": [
+            "N5",
+            "高频优先",
+            "含例句解释"
+          ]
+        }
+      }
+    ],
+    "wordCards": [
+      {
+        "id": "jlpt-n5-food-001",
+        "word": {
+          "text": "ご飯",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ごはん",
+              "zh": "米饭；饭",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。米饭；饭。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-001-1",
+                "sentence": "これは「ご飯」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ごはん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“米饭；饭”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "ご飯",
+                      "kana": "ごはん",
+                      "desc": "米饭；饭"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-002",
+        "word": {
+          "text": "朝ご飯",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "あさごはん",
+              "zh": "早饭",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。早饭。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-002-1",
+                "sentence": "これは「朝ご飯」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「あさごはん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“早饭”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "朝ご飯",
+                      "kana": "あさごはん",
+                      "desc": "早饭"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-003",
+        "word": {
+          "text": "昼ご飯",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ひるごはん",
+              "zh": "午饭",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。午饭。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-003-1",
+                "sentence": "これは「昼ご飯」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ひるごはん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“午饭”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "昼ご飯",
+                      "kana": "ひるごはん",
+                      "desc": "午饭"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-004",
+        "word": {
+          "text": "晩ご飯",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ばんごはん",
+              "zh": "晚饭",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。晚饭。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-004-1",
+                "sentence": "これは「晩ご飯」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ばんごはん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“晚饭”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "晩ご飯",
+                      "kana": "ばんごはん",
+                      "desc": "晚饭"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-005",
+        "word": {
+          "text": "食べ物",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "たべもの",
+              "zh": "食物",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。食物。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-005-1",
+                "sentence": "これは「食べ物」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「たべもの」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“食物”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "食べ物",
+                      "kana": "たべもの",
+                      "desc": "食物"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-006",
+        "word": {
+          "text": "飲み物",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "のみもの",
+              "zh": "饮料",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。饮料。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-006-1",
+                "sentence": "これは「飲み物」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「のみもの」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“饮料”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "飲み物",
+                      "kana": "のみもの",
+                      "desc": "饮料"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-007",
+        "word": {
+          "text": "水",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "みず",
+              "zh": "水",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。水。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-007-1",
+                "sentence": "これは「水」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「みず」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“水”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "水",
+                      "kana": "みず",
+                      "desc": "水"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-008",
+        "word": {
+          "text": "お湯",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おゆ",
+              "zh": "热水",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。热水。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-008-1",
+                "sentence": "これは「お湯」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おゆ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“热水”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "お湯",
+                      "kana": "おゆ",
+                      "desc": "热水"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-009",
+        "word": {
+          "text": "お茶",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おちゃ",
+              "zh": "茶",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。茶。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-009-1",
+                "sentence": "これは「お茶」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おちゃ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“茶”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "お茶",
+                      "kana": "おちゃ",
+                      "desc": "茶"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-010",
+        "word": {
+          "text": "紅茶",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "こうちゃ",
+              "zh": "红茶",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。红茶。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-010-1",
+                "sentence": "これは「紅茶」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「こうちゃ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“红茶”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "紅茶",
+                      "kana": "こうちゃ",
+                      "desc": "红茶"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-011",
+        "word": {
+          "text": "牛乳",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ぎゅうにゅう",
+              "zh": "牛奶",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。牛奶。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-011-1",
+                "sentence": "これは「牛乳」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ぎゅうにゅう」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“牛奶”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "牛乳",
+                      "kana": "ぎゅうにゅう",
+                      "desc": "牛奶"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-012",
+        "word": {
+          "text": "コーヒー",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "コーヒー",
+              "zh": "咖啡",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。咖啡。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-012-1",
+                "sentence": "これは「コーヒー」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「コーヒー」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“咖啡”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "コーヒー",
+                      "kana": "コーヒー",
+                      "desc": "咖啡"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-013",
+        "word": {
+          "text": "ジュース",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ジュース",
+              "zh": "果汁",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。果汁。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-013-1",
+                "sentence": "これは「ジュース」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ジュース」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“果汁”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "ジュース",
+                      "kana": "ジュース",
+                      "desc": "果汁"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-014",
+        "word": {
+          "text": "ビール",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ビール",
+              "zh": "啤酒",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。啤酒。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-014-1",
+                "sentence": "これは「ビール」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ビール」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“啤酒”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "ビール",
+                      "kana": "ビール",
+                      "desc": "啤酒"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-015",
+        "word": {
+          "text": "酒",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "さけ",
+              "zh": "酒",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。酒。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-015-1",
+                "sentence": "これは「酒」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「さけ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“酒”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "酒",
+                      "kana": "さけ",
+                      "desc": "酒"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-016",
+        "word": {
+          "text": "パン",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "パン",
+              "zh": "面包",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。面包。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-016-1",
+                "sentence": "これは「パン」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「パン」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“面包”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "パン",
+                      "kana": "パン",
+                      "desc": "面包"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-017",
+        "word": {
+          "text": "卵",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "たまご",
+              "zh": "鸡蛋",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。鸡蛋。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-017-1",
+                "sentence": "これは「卵」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「たまご」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“鸡蛋”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "卵",
+                      "kana": "たまご",
+                      "desc": "鸡蛋"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-018",
+        "word": {
+          "text": "肉",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "にく",
+              "zh": "肉",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。肉。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-018-1",
+                "sentence": "これは「肉」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「にく」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“肉”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "肉",
+                      "kana": "にく",
+                      "desc": "肉"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-019",
+        "word": {
+          "text": "牛肉",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ぎゅうにく",
+              "zh": "牛肉",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。牛肉。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-019-1",
+                "sentence": "これは「牛肉」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ぎゅうにく」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“牛肉”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "牛肉",
+                      "kana": "ぎゅうにく",
+                      "desc": "牛肉"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-020",
+        "word": {
+          "text": "豚肉",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ぶたにく",
+              "zh": "猪肉",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。猪肉。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-020-1",
+                "sentence": "これは「豚肉」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ぶたにく」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“猪肉”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "豚肉",
+                      "kana": "ぶたにく",
+                      "desc": "猪肉"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-021",
+        "word": {
+          "text": "鶏肉",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "とりにく",
+              "zh": "鸡肉",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。鸡肉。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-021-1",
+                "sentence": "これは「鶏肉」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「とりにく」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“鸡肉”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "鶏肉",
+                      "kana": "とりにく",
+                      "desc": "鸡肉"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-022",
+        "word": {
+          "text": "魚",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "さかな",
+              "zh": "鱼",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。鱼。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-022-1",
+                "sentence": "これは「魚」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「さかな」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“鱼”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "魚",
+                      "kana": "さかな",
+                      "desc": "鱼"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-023",
+        "word": {
+          "text": "野菜",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "やさい",
+              "zh": "蔬菜",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。蔬菜。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-023-1",
+                "sentence": "これは「野菜」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「やさい」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“蔬菜”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "野菜",
+                      "kana": "やさい",
+                      "desc": "蔬菜"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-024",
+        "word": {
+          "text": "果物",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "くだもの",
+              "zh": "水果",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。水果。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-024-1",
+                "sentence": "これは「果物」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「くだもの」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“水果”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "果物",
+                      "kana": "くだもの",
+                      "desc": "水果"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-025",
+        "word": {
+          "text": "りんご",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "りんご",
+              "zh": "苹果",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。苹果。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-025-1",
+                "sentence": "これは「りんご」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「りんご」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“苹果”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "りんご",
+                      "kana": "りんご",
+                      "desc": "苹果"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-026",
+        "word": {
+          "text": "みかん",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "みかん",
+              "zh": "橘子",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。橘子。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-026-1",
+                "sentence": "これは「みかん」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「みかん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“橘子”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "みかん",
+                      "kana": "みかん",
+                      "desc": "橘子"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-027",
+        "word": {
+          "text": "バナナ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "バナナ",
+              "zh": "香蕉",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。香蕉。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-027-1",
+                "sentence": "これは「バナナ」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「バナナ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“香蕉”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "バナナ",
+                      "kana": "バナナ",
+                      "desc": "香蕉"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-028",
+        "word": {
+          "text": "いちご",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "いちご",
+              "zh": "草莓",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。草莓。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-028-1",
+                "sentence": "これは「いちご」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「いちご」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“草莓”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "いちご",
+                      "kana": "いちご",
+                      "desc": "草莓"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-029",
+        "word": {
+          "text": "ぶどう",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ぶどう",
+              "zh": "葡萄",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。葡萄。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-029-1",
+                "sentence": "これは「ぶどう」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ぶどう」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“葡萄”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "ぶどう",
+                      "kana": "ぶどう",
+                      "desc": "葡萄"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-030",
+        "word": {
+          "text": "米",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "こめ",
+              "zh": "米",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。米。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-030-1",
+                "sentence": "これは「米」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「こめ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“米”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "米",
+                      "kana": "こめ",
+                      "desc": "米"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-031",
+        "word": {
+          "text": "塩",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "しお",
+              "zh": "盐",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。盐。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-031-1",
+                "sentence": "これは「塩」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「しお」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“盐”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "塩",
+                      "kana": "しお",
+                      "desc": "盐"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-032",
+        "word": {
+          "text": "砂糖",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "さとう",
+              "zh": "糖",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。糖。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-032-1",
+                "sentence": "これは「砂糖」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「さとう」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“糖”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "砂糖",
+                      "kana": "さとう",
+                      "desc": "糖"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-033",
+        "word": {
+          "text": "醤油",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "しょうゆ",
+              "zh": "酱油",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。酱油。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-033-1",
+                "sentence": "これは「醤油」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「しょうゆ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“酱油”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "醤油",
+                      "kana": "しょうゆ",
+                      "desc": "酱油"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-034",
+        "word": {
+          "text": "料理",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "りょうり",
+              "zh": "菜；料理",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。菜；料理。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-034-1",
+                "sentence": "これは「料理」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「りょうり」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“菜；料理”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "料理",
+                      "kana": "りょうり",
+                      "desc": "菜；料理"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-035",
+        "word": {
+          "text": "カレー",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "カレー",
+              "zh": "咖喱",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。咖喱。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-035-1",
+                "sentence": "これは「カレー」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「カレー」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“咖喱”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "カレー",
+                      "kana": "カレー",
+                      "desc": "咖喱"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-036",
+        "word": {
+          "text": "ラーメン",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ラーメン",
+              "zh": "拉面",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。拉面。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-036-1",
+                "sentence": "これは「ラーメン」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ラーメン」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“拉面”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "ラーメン",
+                      "kana": "ラーメン",
+                      "desc": "拉面"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-037",
+        "word": {
+          "text": "うどん",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "うどん",
+              "zh": "乌冬面",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。乌冬面。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-037-1",
+                "sentence": "これは「うどん」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「うどん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“乌冬面”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "うどん",
+                      "kana": "うどん",
+                      "desc": "乌冬面"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-038",
+        "word": {
+          "text": "そば",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "そば",
+              "zh": "荞麦面",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。荞麦面。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-038-1",
+                "sentence": "これは「そば」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「そば」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“荞麦面”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "そば",
+                      "kana": "そば",
+                      "desc": "荞麦面"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-039",
+        "word": {
+          "text": "寿司",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "すし",
+              "zh": "寿司",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。寿司。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-039-1",
+                "sentence": "これは「寿司」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「すし」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“寿司”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "寿司",
+                      "kana": "すし",
+                      "desc": "寿司"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-040",
+        "word": {
+          "text": "刺身",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "さしみ",
+              "zh": "生鱼片",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。生鱼片。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-040-1",
+                "sentence": "これは「刺身」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「さしみ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“生鱼片”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "刺身",
+                      "kana": "さしみ",
+                      "desc": "生鱼片"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-041",
+        "word": {
+          "text": "スプーン",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "スプーン",
+              "zh": "勺子",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。勺子。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-041-1",
+                "sentence": "これは「スプーン」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「スプーン」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“勺子”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "スプーン",
+                      "kana": "スプーン",
+                      "desc": "勺子"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-042",
+        "word": {
+          "text": "フォーク",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "フォーク",
+              "zh": "叉子",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。叉子。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-042-1",
+                "sentence": "これは「フォーク」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「フォーク」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“叉子”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "フォーク",
+                      "kana": "フォーク",
+                      "desc": "叉子"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-043",
+        "word": {
+          "text": "ナイフ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ナイフ",
+              "zh": "刀",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。刀。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-043-1",
+                "sentence": "これは「ナイフ」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ナイフ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“刀”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "ナイフ",
+                      "kana": "ナイフ",
+                      "desc": "刀"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-044",
+        "word": {
+          "text": "箸",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "はし",
+              "zh": "筷子",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。筷子。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-044-1",
+                "sentence": "これは「箸」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「はし」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“筷子”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "箸",
+                      "kana": "はし",
+                      "desc": "筷子"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-045",
+        "word": {
+          "text": "皿",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "さら",
+              "zh": "盘子",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。盘子。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-045-1",
+                "sentence": "これは「皿」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「さら」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“盘子”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "皿",
+                      "kana": "さら",
+                      "desc": "盘子"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-046",
+        "word": {
+          "text": "コップ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "コップ",
+              "zh": "杯子",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。杯子。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-046-1",
+                "sentence": "これは「コップ」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「コップ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“杯子”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "コップ",
+                      "kana": "コップ",
+                      "desc": "杯子"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-food-047",
+        "word": {
+          "text": "茶碗",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "食物・饮料・餐饮",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ちゃわん",
+              "zh": "饭碗",
+              "romaji": ""
+            },
+            "description": "食物・饮料・餐饮词汇。饭碗。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-food-047-1",
+                "sentence": "これは「茶碗」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ちゃわん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“饭碗”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "茶碗",
+                      "kana": "ちゃわん",
+                      "desc": "饭碗"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      }
+    ]
+  }
+}

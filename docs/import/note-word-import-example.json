@@ -88,13 +88,17 @@
               }
             ]
           },
-          "synonyms": { "items": [] },
-          "related": { "items": [] }
-        },
-        "actions": [
-          { "key": "done", "icon": "✓", "title": "完成" },
-          { "key": "audio", "icon": "🔊", "title": "发音" }
-        ]
+          "synonyms": {
+            "items": [
+              { "text": "わたくし", "kana": "わたくし" }
+            ]
+          },
+          "related": {
+            "items": [
+              { "text": "僕", "kana": "ぼく" }
+            ]
+          }
+        }
       }
     ]
   }

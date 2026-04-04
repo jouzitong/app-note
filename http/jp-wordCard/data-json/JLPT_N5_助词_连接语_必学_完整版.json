@@ -1,0 +1,1988 @@
+{
+  "meta": {
+    "version": "1.0",
+    "source": "JLPT_N5_高频优先学习版_完整版.adoc",
+    "importId": "20260404-jlptn5-particle-full",
+    "createdAt": "2026-04-04T21:03:51+08:00",
+    "options": {
+      "dryRun": false,
+      "upsert": true,
+      "strict": true
+    }
+  },
+  "payload": {
+    "noteNodes": [
+      {
+        "nodeKey": "node-root-jp",
+        "parentNodeKey": null,
+        "noteNode": {
+          "title": "日语学习",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card",
+        "parentNodeKey": "node-root-jp",
+        "noteNode": {
+          "title": "09 词汇体系（主题+频率）",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5",
+        "parentNodeKey": "jp-study-09-word-card",
+        "noteNode": {
+          "title": "N5 核心词汇",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5-particle",
+        "parentNodeKey": "jp-study-09-word-card-N5",
+        "noteNode": {
+          "title": "助词・连接语（必学）",
+          "noteType": "WORD_CARD",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": {
+          "paragraphs": [
+            "助词・连接语（必学）（完整版，25词）"
+          ],
+          "bullets": [
+            "N5",
+            "高频优先",
+            "含例句解释"
+          ]
+        }
+      }
+    ],
+    "wordCards": [
+      {
+        "id": "jlpt-n5-particle-001",
+        "word": {
+          "text": "は",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "は",
+              "zh": "提示主题",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。提示主题。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-001-1",
+                "sentence": "これは「は」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「は」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“提示主题”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "は",
+                      "desc": "提示主题"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-002",
+        "word": {
+          "text": "が",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "が",
+              "zh": "提示主语",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。提示主语。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-002-1",
+                "sentence": "これは「が」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「が」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“提示主语”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "が",
+                      "desc": "提示主语"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-003",
+        "word": {
+          "text": "を",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "を",
+              "zh": "宾语标记",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。宾语标记。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-003-1",
+                "sentence": "これは「を」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「を」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“宾语标记”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "を",
+                      "desc": "宾语标记"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-004",
+        "word": {
+          "text": "に",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "に",
+              "zh": "时间、对象、到达点",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。时间、对象、到达点。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-004-1",
+                "sentence": "これは「に」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「に」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“时间、对象、到达点”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "に",
+                      "desc": "时间、对象、到达点"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-005",
+        "word": {
+          "text": "へ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "へ",
+              "zh": "方向",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。方向。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-005-1",
+                "sentence": "これは「へ」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「へ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“方向”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "へ",
+                      "desc": "方向"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-006",
+        "word": {
+          "text": "で",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "で",
+              "zh": "动作场所、手段",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。动作场所、手段。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-006-1",
+                "sentence": "これは「で」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「で」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“动作场所、手段”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "で",
+                      "desc": "动作场所、手段"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-007",
+        "word": {
+          "text": "と",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "と",
+              "zh": "和；引用",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。和；引用。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-007-1",
+                "sentence": "これは「と」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「と」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“和；引用”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "と",
+                      "kana": "と",
+                      "desc": "和；引用"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-008",
+        "word": {
+          "text": "も",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "も",
+              "zh": "也",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。也。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-008-1",
+                "sentence": "これは「も」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「も」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“也”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "も",
+                      "kana": "も",
+                      "desc": "也"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-009",
+        "word": {
+          "text": "の",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "の",
+              "zh": "的；名词修饰",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。的；名词修饰。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-009-1",
+                "sentence": "これは「の」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「の」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“的；名词修饰”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "の",
+                      "desc": "的；名词修饰"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-010",
+        "word": {
+          "text": "から",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "から",
+              "zh": "从；因为",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。从；因为。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-010-1",
+                "sentence": "これは「から」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「から」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“从；因为”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "から",
+                      "kana": "から",
+                      "desc": "从；因为"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-011",
+        "word": {
+          "text": "まで",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "まで",
+              "zh": "到",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。到。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-011-1",
+                "sentence": "これは「まで」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「まで」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“到”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "まで",
+                      "kana": "まで",
+                      "desc": "到"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-012",
+        "word": {
+          "text": "より",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "より",
+              "zh": "比；从",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。比；从。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-012-1",
+                "sentence": "これは「より」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「より」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“比；从”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "より",
+                      "kana": "より",
+                      "desc": "比；从"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-013",
+        "word": {
+          "text": "や",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "や",
+              "zh": "……和……等",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。……和……等。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-013-1",
+                "sentence": "これは「や」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「や」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“……和……等”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "や",
+                      "kana": "や",
+                      "desc": "……和……等"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-014",
+        "word": {
+          "text": "か",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "か",
+              "zh": "疑问；或者",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。疑问；或者。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-014-1",
+                "sentence": "これは「か」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「か」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“疑问；或者”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "か",
+                      "kana": "か",
+                      "desc": "疑问；或者"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-015",
+        "word": {
+          "text": "ね",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ね",
+              "zh": "语气助词：吧",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。语气助词：吧。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-015-1",
+                "sentence": "これは「ね」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ね」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“语气助词：吧”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "ね",
+                      "kana": "ね",
+                      "desc": "语气助词：吧"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-016",
+        "word": {
+          "text": "よ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "よ",
+              "zh": "语气助词：哦",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。语气助词：哦。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-016-1",
+                "sentence": "これは「よ」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「よ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“语气助词：哦”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "よ",
+                      "kana": "よ",
+                      "desc": "语气助词：哦"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-017",
+        "word": {
+          "text": "まだ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "まだ",
+              "zh": "还；仍然",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。还；仍然。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-017-1",
+                "sentence": "これは「まだ」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「まだ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“还；仍然”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "まだ",
+                      "kana": "まだ",
+                      "desc": "还；仍然"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-018",
+        "word": {
+          "text": "もう",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "もう",
+              "zh": "已经；再",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。已经；再。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-018-1",
+                "sentence": "これは「もう」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「もう」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“已经；再”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "もう",
+                      "kana": "もう",
+                      "desc": "已经；再"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-019",
+        "word": {
+          "text": "でも",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "でも",
+              "zh": "但是；即使；或者",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。但是；即使；或者。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-019-1",
+                "sentence": "これは「でも」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「でも」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“但是；即使；或者”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "でも",
+                      "kana": "でも",
+                      "desc": "但是；即使；或者"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-020",
+        "word": {
+          "text": "そして",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "そして",
+              "zh": "然后，而且",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。然后，而且。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-020-1",
+                "sentence": "これは「そして」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「そして」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“然后，而且”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "そして",
+                      "kana": "そして",
+                      "desc": "然后，而且"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-021",
+        "word": {
+          "text": "それから",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "それから",
+              "zh": "然后，之后",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。然后，之后。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-021-1",
+                "sentence": "これは「それから」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「それから」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“然后，之后”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "それから",
+                      "kana": "それから",
+                      "desc": "然后，之后"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-022",
+        "word": {
+          "text": "だから",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "だから",
+              "zh": "所以",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。所以。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-022-1",
+                "sentence": "これは「だから」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「だから」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“所以”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "だから",
+                      "kana": "だから",
+                      "desc": "所以"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-023",
+        "word": {
+          "text": "でも",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "でも",
+              "zh": "可是",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。可是。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-023-1",
+                "sentence": "これは「でも」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「でも」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“可是”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "でも",
+                      "kana": "でも",
+                      "desc": "可是"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-024",
+        "word": {
+          "text": "じゃあ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "じゃあ",
+              "zh": "那么",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。那么。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-024-1",
+                "sentence": "これは「じゃあ」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「じゃあ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“那么”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "じゃあ",
+                      "kana": "じゃあ",
+                      "desc": "那么"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-particle-025",
+        "word": {
+          "text": "では",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "助词・连接语（必学）",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "では",
+              "zh": "那么；那么就",
+              "romaji": ""
+            },
+            "description": "助词・连接语（必学）词汇。那么；那么就。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-particle-025-1",
+                "sentence": "これは「では」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「では」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“那么；那么就”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "では",
+                      "kana": "では",
+                      "desc": "那么；那么就"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,3204 @@
+{
+  "meta": {
+    "version": "1.0",
+    "source": "JLPT_N5_高频优先学习版_完整版.adoc",
+    "importId": "20260404-jlptn5-people-full",
+    "createdAt": "2026-04-04T21:03:51+08:00",
+    "options": {
+      "dryRun": false,
+      "upsert": true,
+      "strict": true
+    }
+  },
+  "payload": {
+    "noteNodes": [
+      {
+        "nodeKey": "node-root-jp",
+        "parentNodeKey": null,
+        "noteNode": {
+          "title": "日语学习",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card",
+        "parentNodeKey": "node-root-jp",
+        "noteNode": {
+          "title": "09 词汇体系（主题+频率）",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5",
+        "parentNodeKey": "jp-study-09-word-card",
+        "noteNode": {
+          "title": "N5 核心词汇",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5-people",
+        "parentNodeKey": "jp-study-09-word-card-N5",
+        "noteNode": {
+          "title": "人・职业・家庭",
+          "noteType": "WORD_CARD",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": {
+          "paragraphs": [
+            "人・职业・家庭（完整版，41词）"
+          ],
+          "bullets": [
+            "N5",
+            "高频优先",
+            "含例句解释"
+          ]
+        }
+      }
+    ],
+    "wordCards": [
+      {
+        "id": "jlpt-n5-people-001",
+        "word": {
+          "text": "人",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ひと",
+              "zh": "人",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。人。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-001-1",
+                "sentence": "これは「人」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ひと」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“人”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "人",
+                      "kana": "ひと",
+                      "desc": "人"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-002",
+        "word": {
+          "text": "男",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おとこ",
+              "zh": "男",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。男。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-002-1",
+                "sentence": "これは「男」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おとこ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“男”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "男",
+                      "kana": "おとこ",
+                      "desc": "男"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-003",
+        "word": {
+          "text": "女",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おんな",
+              "zh": "女",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。女。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-003-1",
+                "sentence": "これは「女」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おんな」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“女”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "女",
+                      "kana": "おんな",
+                      "desc": "女"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-004",
+        "word": {
+          "text": "男の人",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おとこのひと",
+              "zh": "男人",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。男人。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-004-1",
+                "sentence": "これは「男の人」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おとこのひと」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“男人”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "男の人",
+                      "kana": "おとこのひと",
+                      "desc": "男人"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-005",
+        "word": {
+          "text": "女の人",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おんなのひと",
+              "zh": "女人",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。女人。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-005-1",
+                "sentence": "これは「女の人」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おんなのひと」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“女人”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "女の人",
+                      "kana": "おんなのひと",
+                      "desc": "女人"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-006",
+        "word": {
+          "text": "男の子",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おとこのこ",
+              "zh": "男孩",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。男孩。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-006-1",
+                "sentence": "これは「男の子」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おとこのこ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“男孩”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "男の子",
+                      "kana": "おとこのこ",
+                      "desc": "男孩"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-007",
+        "word": {
+          "text": "女の子",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おんなのこ",
+              "zh": "女孩",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。女孩。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-007-1",
+                "sentence": "これは「女の子」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おんなのこ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“女孩”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "女の子",
+                      "kana": "おんなのこ",
+                      "desc": "女孩"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-008",
+        "word": {
+          "text": "子供",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "こども",
+              "zh": "孩子",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。孩子。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-008-1",
+                "sentence": "これは「子供」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「こども」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“孩子”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "子供",
+                      "kana": "こども",
+                      "desc": "孩子"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-009",
+        "word": {
+          "text": "大人",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おとな",
+              "zh": "大人",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。大人。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-009-1",
+                "sentence": "これは「大人」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おとな」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“大人”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "大人",
+                      "kana": "おとな",
+                      "desc": "大人"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-010",
+        "word": {
+          "text": "赤ちゃん",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "あかちゃん",
+              "zh": "婴儿",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。婴儿。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-010-1",
+                "sentence": "これは「赤ちゃん」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「あかちゃん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“婴儿”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "赤ちゃん",
+                      "kana": "あかちゃん",
+                      "desc": "婴儿"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-011",
+        "word": {
+          "text": "友達",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ともだち",
+              "zh": "朋友",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。朋友。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-011-1",
+                "sentence": "これは「友達」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ともだち」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“朋友”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "友達",
+                      "kana": "ともだち",
+                      "desc": "朋友"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-012",
+        "word": {
+          "text": "先生",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "せんせい",
+              "zh": "老师",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。老师。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-012-1",
+                "sentence": "これは「先生」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「せんせい」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“老师”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "先生",
+                      "kana": "せんせい",
+                      "desc": "老师"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-013",
+        "word": {
+          "text": "学生",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "がくせい",
+              "zh": "学生",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。学生。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-013-1",
+                "sentence": "これは「学生」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「がくせい」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“学生”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "学生",
+                      "kana": "がくせい",
+                      "desc": "学生"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-014",
+        "word": {
+          "text": "大学生",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "だいがくせい",
+              "zh": "大学生",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。大学生。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-014-1",
+                "sentence": "これは「大学生」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「だいがくせい」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“大学生”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "大学生",
+                      "kana": "だいがくせい",
+                      "desc": "大学生"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-015",
+        "word": {
+          "text": "会社員",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "かいしゃいん",
+              "zh": "公司职员",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。公司职员。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-015-1",
+                "sentence": "これは「会社員」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「かいしゃいん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“公司职员”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "会社員",
+                      "kana": "かいしゃいん",
+                      "desc": "公司职员"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-016",
+        "word": {
+          "text": "医者",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "いしゃ",
+              "zh": "医生",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。医生。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-016-1",
+                "sentence": "これは「医者」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「いしゃ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“医生”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "医者",
+                      "kana": "いしゃ",
+                      "desc": "医生"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-017",
+        "word": {
+          "text": "看護師",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "かんごし",
+              "zh": "护士",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。护士。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-017-1",
+                "sentence": "これは「看護師」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「かんごし」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“护士”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "看護師",
+                      "kana": "かんごし",
+                      "desc": "护士"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-018",
+        "word": {
+          "text": "店員",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "てんいん",
+              "zh": "店员",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。店员。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-018-1",
+                "sentence": "これは「店員」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「てんいん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“店员”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "店員",
+                      "kana": "てんいん",
+                      "desc": "店员"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-019",
+        "word": {
+          "text": "駅員",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "えきいん",
+              "zh": "车站工作人员",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。车站工作人员。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-019-1",
+                "sentence": "これは「駅員」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「えきいん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“车站工作人员”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "駅員",
+                      "kana": "えきいん",
+                      "desc": "车站工作人员"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-020",
+        "word": {
+          "text": "警官",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "けいかん",
+              "zh": "警察",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。警察。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-020-1",
+                "sentence": "これは「警官」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「けいかん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“警察”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "警官",
+                      "kana": "けいかん",
+                      "desc": "警察"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-021",
+        "word": {
+          "text": "外国人",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "がいこくじん",
+              "zh": "外国人",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。外国人。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-021-1",
+                "sentence": "これは「外国人」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「がいこくじん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“外国人”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "外国人",
+                      "kana": "がいこくじん",
+                      "desc": "外国人"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-022",
+        "word": {
+          "text": "父",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ちち",
+              "zh": "我父亲",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。我父亲。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-022-1",
+                "sentence": "これは「父」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ちち」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“我父亲”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "父",
+                      "kana": "ちち",
+                      "desc": "我父亲"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-023",
+        "word": {
+          "text": "母",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "はは",
+              "zh": "我母亲",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。我母亲。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-023-1",
+                "sentence": "これは「母」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「はは」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“我母亲”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "母",
+                      "kana": "はは",
+                      "desc": "我母亲"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-024",
+        "word": {
+          "text": "両親",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "りょうしん",
+              "zh": "父母",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。父母。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-024-1",
+                "sentence": "これは「両親」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「りょうしん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“父母”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "両親",
+                      "kana": "りょうしん",
+                      "desc": "父母"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-025",
+        "word": {
+          "text": "親",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おや",
+              "zh": "父母",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。父母。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-025-1",
+                "sentence": "これは「親」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おや」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“父母”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "親",
+                      "kana": "おや",
+                      "desc": "父母"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-026",
+        "word": {
+          "text": "兄",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "あに",
+              "zh": "我哥哥",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。我哥哥。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-026-1",
+                "sentence": "これは「兄」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「あに」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“我哥哥”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "兄",
+                      "kana": "あに",
+                      "desc": "我哥哥"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-027",
+        "word": {
+          "text": "姉",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "あね",
+              "zh": "我姐姐",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。我姐姐。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-027-1",
+                "sentence": "これは「姉」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「あね」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“我姐姐”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "姉",
+                      "kana": "あね",
+                      "desc": "我姐姐"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-028",
+        "word": {
+          "text": "弟",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おとうと",
+              "zh": "弟弟",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。弟弟。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-028-1",
+                "sentence": "これは「弟」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おとうと」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“弟弟”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "弟",
+                      "kana": "おとうと",
+                      "desc": "弟弟"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-029",
+        "word": {
+          "text": "妹",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "いもうと",
+              "zh": "妹妹",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。妹妹。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-029-1",
+                "sentence": "これは「妹」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「いもうと」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“妹妹”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "妹",
+                      "kana": "いもうと",
+                      "desc": "妹妹"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-030",
+        "word": {
+          "text": "家族",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "かぞく",
+              "zh": "家人",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。家人。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-030-1",
+                "sentence": "これは「家族」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「かぞく」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“家人”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "家族",
+                      "kana": "かぞく",
+                      "desc": "家人"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-031",
+        "word": {
+          "text": "夫",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おっと／ふうふのふ",
+              "zh": "丈夫",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。丈夫。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-031-1",
+                "sentence": "これは「夫」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おっと」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“丈夫”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "夫",
+                      "kana": "おっと",
+                      "desc": "丈夫"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-032",
+        "word": {
+          "text": "妻",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "つま",
+              "zh": "妻子",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。妻子。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-032-1",
+                "sentence": "これは「妻」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「つま」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“妻子”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "妻",
+                      "kana": "つま",
+                      "desc": "妻子"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-033",
+        "word": {
+          "text": "奥さん",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おくさん",
+              "zh": "太太",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。太太。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-033-1",
+                "sentence": "これは「奥さん」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おくさん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“太太”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "奥さん",
+                      "kana": "おくさん",
+                      "desc": "太太"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-034",
+        "word": {
+          "text": "主人",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "しゅじん",
+              "zh": "丈夫（自谦）",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。丈夫（自谦）。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-034-1",
+                "sentence": "これは「主人」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「しゅじん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“丈夫（自谦）”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "主人",
+                      "kana": "しゅじん",
+                      "desc": "丈夫（自谦）"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-035",
+        "word": {
+          "text": "ご主人",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ごしゅじん",
+              "zh": "您丈夫",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。您丈夫。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-035-1",
+                "sentence": "これは「ご主人」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ごしゅじん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“您丈夫”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "ご主人",
+                      "kana": "ごしゅじん",
+                      "desc": "您丈夫"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-036",
+        "word": {
+          "text": "おじさん",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おじさん",
+              "zh": "叔叔；大叔",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。叔叔；大叔。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-036-1",
+                "sentence": "これは「おじさん」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おじさん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“叔叔；大叔”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "おじさん",
+                      "kana": "おじさん",
+                      "desc": "叔叔；大叔"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-037",
+        "word": {
+          "text": "おばさん",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おばさん",
+              "zh": "阿姨；大婶",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。阿姨；大婶。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-037-1",
+                "sentence": "これは「おばさん」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おばさん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“阿姨；大婶”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "おばさん",
+                      "kana": "おばさん",
+                      "desc": "阿姨；大婶"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-038",
+        "word": {
+          "text": "おじいさん",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おじいさん",
+              "zh": "爷爷；老爷爷",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。爷爷；老爷爷。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-038-1",
+                "sentence": "これは「おじいさん」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おじいさん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“爷爷；老爷爷”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "おじいさん",
+                      "kana": "おじいさん",
+                      "desc": "爷爷；老爷爷"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-039",
+        "word": {
+          "text": "おばあさん",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おばあさん",
+              "zh": "奶奶；老奶奶",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。奶奶；老奶奶。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-039-1",
+                "sentence": "これは「おばあさん」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おばあさん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“奶奶；老奶奶”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "おばあさん",
+                      "kana": "おばあさん",
+                      "desc": "奶奶；老奶奶"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-040",
+        "word": {
+          "text": "兄弟",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "きょうだい",
+              "zh": "兄弟姐妹",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。兄弟姐妹。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-040-1",
+                "sentence": "これは「兄弟」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「きょうだい」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“兄弟姐妹”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "兄弟",
+                      "kana": "きょうだい",
+                      "desc": "兄弟姐妹"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-people-041",
+        "word": {
+          "text": "姉妹",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "人・职业・家庭",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "しまい",
+              "zh": "姐妹",
+              "romaji": ""
+            },
+            "description": "人・职业・家庭词汇。姐妹。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-people-041-1",
+                "sentence": "これは「姉妹」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「しまい」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“姐妹”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "姉妹",
+                      "kana": "しまい",
+                      "desc": "姐妹"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      }
+    ]
+  }
+}

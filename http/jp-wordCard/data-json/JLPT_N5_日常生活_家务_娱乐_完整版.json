@@ -1,0 +1,2900 @@
+{
+  "meta": {
+    "version": "1.0",
+    "source": "JLPT_N5_高频优先学习版_完整版.adoc",
+    "importId": "20260404-jlptn5-daily-full",
+    "createdAt": "2026-04-04T21:03:51+08:00",
+    "options": {
+      "dryRun": false,
+      "upsert": true,
+      "strict": true
+    }
+  },
+  "payload": {
+    "noteNodes": [
+      {
+        "nodeKey": "node-root-jp",
+        "parentNodeKey": null,
+        "noteNode": {
+          "title": "日语学习",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card",
+        "parentNodeKey": "node-root-jp",
+        "noteNode": {
+          "title": "09 词汇体系（主题+频率）",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5",
+        "parentNodeKey": "jp-study-09-word-card",
+        "noteNode": {
+          "title": "N5 核心词汇",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5-daily",
+        "parentNodeKey": "jp-study-09-word-card-N5",
+        "noteNode": {
+          "title": "日常生活・家务・娱乐",
+          "noteType": "WORD_CARD",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": {
+          "paragraphs": [
+            "日常生活・家务・娱乐（完整版，37词）"
+          ],
+          "bullets": [
+            "N5",
+            "高频优先",
+            "含例句解释"
+          ]
+        }
+      }
+    ],
+    "wordCards": [
+      {
+        "id": "jlpt-n5-daily-001",
+        "word": {
+          "text": "生活",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "せいかつ",
+              "zh": "生活",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。生活。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-001-1",
+                "sentence": "これは「生活」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「せいかつ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“生活”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "生活",
+                      "kana": "せいかつ",
+                      "desc": "生活"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-002",
+        "word": {
+          "text": "仕事",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "しごと",
+              "zh": "工作",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。工作。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-002-1",
+                "sentence": "これは「仕事」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「しごと」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“工作”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "仕事",
+                      "kana": "しごと",
+                      "desc": "工作"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-003",
+        "word": {
+          "text": "用事",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ようじ",
+              "zh": "事情",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。事情。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-003-1",
+                "sentence": "これは「用事」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ようじ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“事情”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "用事",
+                      "kana": "ようじ",
+                      "desc": "事情"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-004",
+        "word": {
+          "text": "時間",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "じかん",
+              "zh": "时间",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。时间。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-004-1",
+                "sentence": "これは「時間」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「じかん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“时间”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "時間",
+                      "kana": "じかん",
+                      "desc": "时间"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-005",
+        "word": {
+          "text": "電話",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "でんわ",
+              "zh": "电话",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。电话。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-005-1",
+                "sentence": "これは「電話」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「でんわ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“电话”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "電話",
+                      "kana": "でんわ",
+                      "desc": "电话"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-006",
+        "word": {
+          "text": "手紙",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "てがみ",
+              "zh": "信",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。信。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-006-1",
+                "sentence": "これは「手紙」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「てがみ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“信”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "手紙",
+                      "kana": "てがみ",
+                      "desc": "信"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-007",
+        "word": {
+          "text": "メール",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "メール",
+              "zh": "邮件",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。邮件。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-007-1",
+                "sentence": "これは「メール」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「メール」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“邮件”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "メール",
+                      "kana": "メール",
+                      "desc": "邮件"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-008",
+        "word": {
+          "text": "写真",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "しゃしん",
+              "zh": "照片",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。照片。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-008-1",
+                "sentence": "これは「写真」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「しゃしん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“照片”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "写真",
+                      "kana": "しゃしん",
+                      "desc": "照片"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-009",
+        "word": {
+          "text": "音楽",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "おんがく",
+              "zh": "音乐",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。音乐。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-009-1",
+                "sentence": "これは「音楽」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「おんがく」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“音乐”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "音楽",
+                      "kana": "おんがく",
+                      "desc": "音乐"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-010",
+        "word": {
+          "text": "映画",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "えいが",
+              "zh": "电影",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。电影。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-010-1",
+                "sentence": "これは「映画」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「えいが」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“电影”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "映画",
+                      "kana": "えいが",
+                      "desc": "电影"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-011",
+        "word": {
+          "text": "歌",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "うた",
+              "zh": "歌",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。歌。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-011-1",
+                "sentence": "これは「歌」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「うた」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“歌”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "歌",
+                      "kana": "うた",
+                      "desc": "歌"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-012",
+        "word": {
+          "text": "声",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "こえ",
+              "zh": "声音",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。声音。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-012-1",
+                "sentence": "これは「声」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「こえ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“声音”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "声",
+                      "kana": "こえ",
+                      "desc": "声音"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-013",
+        "word": {
+          "text": "新聞",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "しんぶん",
+              "zh": "报纸",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。报纸。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-013-1",
+                "sentence": "これは「新聞」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「しんぶん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“报纸”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "新聞",
+                      "kana": "しんぶん",
+                      "desc": "报纸"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-014",
+        "word": {
+          "text": "雑誌",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ざっし",
+              "zh": "杂志",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。杂志。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-014-1",
+                "sentence": "これは「雑誌」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ざっし」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“杂志”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "雑誌",
+                      "kana": "ざっし",
+                      "desc": "杂志"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-015",
+        "word": {
+          "text": "テレビ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "テレビ",
+              "zh": "电视",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。电视。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-015-1",
+                "sentence": "これは「テレビ」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「テレビ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“电视”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "テレビ",
+                      "kana": "テレビ",
+                      "desc": "电视"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-016",
+        "word": {
+          "text": "ラジオ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ラジオ",
+              "zh": "广播",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。广播。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-016-1",
+                "sentence": "これは「ラジオ」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ラジオ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“广播”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "ラジオ",
+                      "kana": "ラジオ",
+                      "desc": "广播"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-017",
+        "word": {
+          "text": "カメラ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "カメラ",
+              "zh": "相机",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。相机。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-017-1",
+                "sentence": "これは「カメラ」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「カメラ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“相机”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "カメラ",
+                      "kana": "カメラ",
+                      "desc": "相机"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-018",
+        "word": {
+          "text": "コンピューター",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "コンピューター",
+              "zh": "电脑",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。电脑。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-018-1",
+                "sentence": "これは「コンピューター」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「コンピューター」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“电脑”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "コンピューター",
+                      "kana": "コンピューター",
+                      "desc": "电脑"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-019",
+        "word": {
+          "text": "パソコン",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "パソコン",
+              "zh": "个人电脑",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。个人电脑。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-019-1",
+                "sentence": "これは「パソコン」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「パソコン」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“个人电脑”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "パソコン",
+                      "kana": "パソコン",
+                      "desc": "个人电脑"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-020",
+        "word": {
+          "text": "インターネット",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "インターネット",
+              "zh": "互联网",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。互联网。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-020-1",
+                "sentence": "これは「インターネット」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「インターネット」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“互联网”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "インターネット",
+                      "kana": "インターネット",
+                      "desc": "互联网"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-021",
+        "word": {
+          "text": "ゲーム",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ゲーム",
+              "zh": "游戏",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。游戏。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-021-1",
+                "sentence": "これは「ゲーム」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ゲーム」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“游戏”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "ゲーム",
+                      "kana": "ゲーム",
+                      "desc": "游戏"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-022",
+        "word": {
+          "text": "スポーツ",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "スポーツ",
+              "zh": "运动",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。运动。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-022-1",
+                "sentence": "これは「スポーツ」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「スポーツ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“运动”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "スポーツ",
+                      "kana": "スポーツ",
+                      "desc": "运动"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-023",
+        "word": {
+          "text": "テニス",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "テニス",
+              "zh": "网球",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。网球。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-023-1",
+                "sentence": "これは「テニス」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「テニス」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“网球”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "テニス",
+                      "kana": "テニス",
+                      "desc": "网球"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-024",
+        "word": {
+          "text": "サッカー",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "サッカー",
+              "zh": "足球",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。足球。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-024-1",
+                "sentence": "これは「サッカー」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「サッカー」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“足球”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "サッカー",
+                      "kana": "サッカー",
+                      "desc": "足球"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-025",
+        "word": {
+          "text": "野球",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "やきゅう",
+              "zh": "棒球",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。棒球。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-025-1",
+                "sentence": "これは「野球」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「やきゅう」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“棒球”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "野球",
+                      "kana": "やきゅう",
+                      "desc": "棒球"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-026",
+        "word": {
+          "text": "プール",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "プール",
+              "zh": "游泳池",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。游泳池。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-026-1",
+                "sentence": "これは「プール」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「プール」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“游泳池”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "プール",
+                      "kana": "プール",
+                      "desc": "游泳池"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-027",
+        "word": {
+          "text": "パーティー",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "パーティー",
+              "zh": "聚会",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。聚会。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-027-1",
+                "sentence": "これは「パーティー」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「パーティー」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“聚会”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "パーティー",
+                      "kana": "パーティー",
+                      "desc": "聚会"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-028",
+        "word": {
+          "text": "宿泊",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "しゅくはく",
+              "zh": "住宿",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。住宿。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-028-1",
+                "sentence": "これは「宿泊」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「しゅくはく」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“住宿”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "宿泊",
+                      "kana": "しゅくはく",
+                      "desc": "住宿"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-029",
+        "word": {
+          "text": "掃除",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "そうじ",
+              "zh": "打扫",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。打扫。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-029-1",
+                "sentence": "これは「掃除」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「そうじ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“打扫”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "掃除",
+                      "kana": "そうじ",
+                      "desc": "打扫"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-030",
+        "word": {
+          "text": "洗濯",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "せんたく",
+              "zh": "洗衣服",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。洗衣服。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-030-1",
+                "sentence": "これは「洗濯」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「せんたく」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“洗衣服”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "洗濯",
+                      "kana": "せんたく",
+                      "desc": "洗衣服"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-031",
+        "word": {
+          "text": "料理",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "りょうり",
+              "zh": "做饭；料理",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。做饭；料理。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-031-1",
+                "sentence": "これは「料理」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「りょうり」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“做饭；料理”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "料理",
+                      "kana": "りょうり",
+                      "desc": "做饭；料理"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-032",
+        "word": {
+          "text": "コピー",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "コピー",
+              "zh": "复印",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。复印。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-032-1",
+                "sentence": "これは「コピー」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「コピー」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“复印”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "コピー",
+                      "kana": "コピー",
+                      "desc": "复印"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-033",
+        "word": {
+          "text": "会議",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "かいぎ",
+              "zh": "会议",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。会议。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-033-1",
+                "sentence": "これは「会議」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「かいぎ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“会议”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "会議",
+                      "kana": "かいぎ",
+                      "desc": "会议"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-034",
+        "word": {
+          "text": "説明",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "せつめい",
+              "zh": "说明",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。说明。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-034-1",
+                "sentence": "これは「説明」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「せつめい」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“说明”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "説明",
+                      "kana": "せつめい",
+                      "desc": "说明"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-035",
+        "word": {
+          "text": "案内",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "あんない",
+              "zh": "向导；介绍",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。向导；介绍。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-035-1",
+                "sentence": "これは「案内」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「あんない」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“向导；介绍”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "案内",
+                      "kana": "あんない",
+                      "desc": "向导；介绍"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-036",
+        "word": {
+          "text": "準備",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "じゅんび",
+              "zh": "准备",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。准备。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-036-1",
+                "sentence": "これは「準備」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「じゅんび」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“准备”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "準備",
+                      "kana": "じゅんび",
+                      "desc": "准备"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-daily-037",
+        "word": {
+          "text": "片付け",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "日常生活・家务・娱乐",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "かたづけ",
+              "zh": "收拾整理",
+              "romaji": ""
+            },
+            "description": "日常生活・家务・娱乐词汇。收拾整理。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-daily-037-1",
+                "sentence": "これは「片付け」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「かたづけ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“收拾整理”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "片付け",
+                      "kana": "かたづけ",
+                      "desc": "收拾整理"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      }
+    ]
+  }
+}

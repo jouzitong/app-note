@@ -1,0 +1,4192 @@
+{
+  "meta": {
+    "version": "1.0",
+    "source": "JLPT_N5_高频优先学习版_完整版.adoc",
+    "importId": "20260404-jlptn5-time-full",
+    "createdAt": "2026-04-04T21:03:51+08:00",
+    "options": {
+      "dryRun": false,
+      "upsert": true,
+      "strict": true
+    }
+  },
+  "payload": {
+    "noteNodes": [
+      {
+        "nodeKey": "node-root-jp",
+        "parentNodeKey": null,
+        "noteNode": {
+          "title": "日语学习",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card",
+        "parentNodeKey": "node-root-jp",
+        "noteNode": {
+          "title": "09 词汇体系（主题+频率）",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5",
+        "parentNodeKey": "jp-study-09-word-card",
+        "noteNode": {
+          "title": "N5 核心词汇",
+          "noteType": "EMPTY",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-study-09-word-card-N5-time",
+        "parentNodeKey": "jp-study-09-word-card-N5",
+        "noteNode": {
+          "title": "时间・日期・星期",
+          "noteType": "WORD_CARD",
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": {
+          "paragraphs": [
+            "时间・日期・星期（完整版，54词）"
+          ],
+          "bullets": [
+            "N5",
+            "高频优先",
+            "含例句解释"
+          ]
+        }
+      }
+    ],
+    "wordCards": [
+      {
+        "id": "jlpt-n5-time-001",
+        "word": {
+          "text": "今",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "いま",
+              "zh": "现在",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。现在。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-001-1",
+                "sentence": "これは「今」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「いま」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“现在”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "今",
+                      "kana": "いま",
+                      "desc": "现在"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-002",
+        "word": {
+          "text": "今日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "きょう",
+              "zh": "今天",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。今天。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-002-1",
+                "sentence": "これは「今日」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「きょう」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“今天”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-003",
+        "word": {
+          "text": "昨日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "きのう",
+              "zh": "昨天",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。昨天。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-003-1",
+                "sentence": "これは「昨日」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「きのう」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“昨天”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-004",
+        "word": {
+          "text": "明日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "あした／あす",
+              "zh": "明天",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。明天。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-004-1",
+                "sentence": "これは「明日」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「あした」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“明天”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "明日",
+                      "kana": "あした",
+                      "desc": "明天"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-005",
+        "word": {
+          "text": "今朝",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "けさ",
+              "zh": "今天早上",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。今天早上。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-005-1",
+                "sentence": "これは「今朝」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「けさ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“今天早上”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "今朝",
+                      "kana": "けさ",
+                      "desc": "今天早上"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-006",
+        "word": {
+          "text": "今晩",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "こんばん",
+              "zh": "今晚",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。今晚。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-006-1",
+                "sentence": "これは「今晩」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「こんばん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“今晚”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "今晩",
+                      "kana": "こんばん",
+                      "desc": "今晚"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-007",
+        "word": {
+          "text": "今夜",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "こんや",
+              "zh": "今夜",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。今夜。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-007-1",
+                "sentence": "これは「今夜」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「こんや」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“今夜”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "今夜",
+                      "kana": "こんや",
+                      "desc": "今夜"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-008",
+        "word": {
+          "text": "毎日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "まいにち",
+              "zh": "每天",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。每天。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-008-1",
+                "sentence": "これは「毎日」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「まいにち」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“每天”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-009",
+        "word": {
+          "text": "毎朝",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "まいあさ",
+              "zh": "每天早上",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。每天早上。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-009-1",
+                "sentence": "これは「毎朝」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「まいあさ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“每天早上”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "毎朝",
+                      "kana": "まいあさ",
+                      "desc": "每天早上"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-010",
+        "word": {
+          "text": "毎晩",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "まいばん",
+              "zh": "每天晚上",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。每天晚上。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-010-1",
+                "sentence": "これは「毎晩」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「まいばん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“每天晚上”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "毎晩",
+                      "kana": "まいばん",
+                      "desc": "每天晚上"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-011",
+        "word": {
+          "text": "毎週",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "まいしゅう",
+              "zh": "每周",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。每周。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-011-1",
+                "sentence": "これは「毎週」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「まいしゅう」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“每周”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "毎週",
+                      "kana": "まいしゅう",
+                      "desc": "每周"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-012",
+        "word": {
+          "text": "毎月",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "まいつき／まいげつ",
+              "zh": "每月",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。每月。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-012-1",
+                "sentence": "これは「毎月」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「まいつき」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“每月”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "毎月",
+                      "kana": "まいつき",
+                      "desc": "每月"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-013",
+        "word": {
+          "text": "毎年",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "まいとし／まいねん",
+              "zh": "每年",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。每年。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-013-1",
+                "sentence": "これは「毎年」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「まいとし」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“每年”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "毎年",
+                      "kana": "まいとし",
+                      "desc": "每年"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-014",
+        "word": {
+          "text": "朝",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "あさ",
+              "zh": "早上",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。早上。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-014-1",
+                "sentence": "これは「朝」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「あさ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“早上”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "朝",
+                      "kana": "あさ",
+                      "desc": "早上"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-015",
+        "word": {
+          "text": "午前",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ごぜん",
+              "zh": "上午",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。上午。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-015-1",
+                "sentence": "これは「午前」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ごぜん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“上午”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "午前",
+                      "kana": "ごぜん",
+                      "desc": "上午"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-016",
+        "word": {
+          "text": "昼",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ひる",
+              "zh": "白天；中午",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。白天；中午。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-016-1",
+                "sentence": "これは「昼」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ひる」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“白天；中午”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "昼",
+                      "kana": "ひる",
+                      "desc": "白天；中午"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-017",
+        "word": {
+          "text": "午後",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ごご",
+              "zh": "下午",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。下午。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-017-1",
+                "sentence": "これは「午後」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ごご」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“下午”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "午後",
+                      "kana": "ごご",
+                      "desc": "下午"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-018",
+        "word": {
+          "text": "夕方",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ゆうがた",
+              "zh": "傍晚",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。傍晚。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-018-1",
+                "sentence": "これは「夕方」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ゆうがた」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“傍晚”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "夕方",
+                      "kana": "ゆうがた",
+                      "desc": "傍晚"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-019",
+        "word": {
+          "text": "夜",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "よる",
+              "zh": "夜晚",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。夜晚。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-019-1",
+                "sentence": "これは「夜」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「よる」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“夜晚”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-020",
+        "word": {
+          "text": "晩",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ばん",
+              "zh": "晚上",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。晚上。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-020-1",
+                "sentence": "これは「晩」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ばん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“晚上”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "晩",
+                      "kana": "ばん",
+                      "desc": "晚上"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-021",
+        "word": {
+          "text": "時間",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "じかん",
+              "zh": "时间；小时",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。时间；小时。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-021-1",
+                "sentence": "これは「時間」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「じかん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“时间；小时”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "時間",
+                      "kana": "じかん",
+                      "desc": "时间；小时"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-022",
+        "word": {
+          "text": "時",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "じ",
+              "zh": "点钟",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。点钟。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-022-1",
+                "sentence": "これは「時」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「じ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“点钟”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "時",
+                      "kana": "じ",
+                      "desc": "点钟"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-023",
+        "word": {
+          "text": "分",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ふん／ぷん",
+              "zh": "分钟",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。分钟。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-023-1",
+                "sentence": "これは「分」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ふん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“分钟”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "分",
+                      "kana": "ふん",
+                      "desc": "分钟"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-024",
+        "word": {
+          "text": "秒",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "びょう",
+              "zh": "秒",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。秒。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-024-1",
+                "sentence": "これは「秒」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「びょう」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“秒”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "秒",
+                      "kana": "びょう",
+                      "desc": "秒"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-025",
+        "word": {
+          "text": "週",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "しゅう",
+              "zh": "周",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。周。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-025-1",
+                "sentence": "これは「週」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「しゅう」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“周”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "週",
+                      "kana": "しゅう",
+                      "desc": "周"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-026",
+        "word": {
+          "text": "月",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "つき／げつ",
+              "zh": "月",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。月。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-026-1",
+                "sentence": "これは「月」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「つき」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“月”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "月",
+                      "kana": "つき",
+                      "desc": "月"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-027",
+        "word": {
+          "text": "年",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "とし／ねん",
+              "zh": "年",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。年。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-027-1",
+                "sentence": "これは「年」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「とし」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“年”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "年",
+                      "kana": "とし",
+                      "desc": "年"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-028",
+        "word": {
+          "text": "先週",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "せんしゅう",
+              "zh": "上周",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。上周。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-028-1",
+                "sentence": "これは「先週」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「せんしゅう」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“上周”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "先週",
+                      "kana": "せんしゅう",
+                      "desc": "上周"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-029",
+        "word": {
+          "text": "今週",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "こんしゅう",
+              "zh": "本周",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。本周。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-029-1",
+                "sentence": "これは「今週」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「こんしゅう」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“本周”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "今週",
+                      "kana": "こんしゅう",
+                      "desc": "本周"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-030",
+        "word": {
+          "text": "来週",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "らいしゅう",
+              "zh": "下周",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。下周。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-030-1",
+                "sentence": "これは「来週」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「らいしゅう」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“下周”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "来週",
+                      "kana": "らいしゅう",
+                      "desc": "下周"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-031",
+        "word": {
+          "text": "先月",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "せんげつ",
+              "zh": "上个月",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。上个月。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-031-1",
+                "sentence": "これは「先月」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「せんげつ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“上个月”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "先月",
+                      "kana": "せんげつ",
+                      "desc": "上个月"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-032",
+        "word": {
+          "text": "今月",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "こんげつ",
+              "zh": "这个月",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。这个月。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-032-1",
+                "sentence": "これは「今月」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「こんげつ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“这个月”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "今月",
+                      "kana": "こんげつ",
+                      "desc": "这个月"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-033",
+        "word": {
+          "text": "来月",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "らいげつ",
+              "zh": "下个月",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。下个月。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-033-1",
+                "sentence": "これは「来月」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「らいげつ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“下个月”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "来月",
+                      "kana": "らいげつ",
+                      "desc": "下个月"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-034",
+        "word": {
+          "text": "去年",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "きょねん",
+              "zh": "去年",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。去年。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-034-1",
+                "sentence": "これは「去年」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「きょねん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“去年”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "去年",
+                      "kana": "きょねん",
+                      "desc": "去年"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-035",
+        "word": {
+          "text": "今年",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ことし",
+              "zh": "今年",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。今年。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-035-1",
+                "sentence": "これは「今年」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ことし」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“今年”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "今年",
+                      "kana": "ことし",
+                      "desc": "今年"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-036",
+        "word": {
+          "text": "来年",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "らいねん",
+              "zh": "明年",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。明年。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-036-1",
+                "sentence": "これは「来年」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「らいねん」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“明年”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "来年",
+                      "kana": "らいねん",
+                      "desc": "明年"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-037",
+        "word": {
+          "text": "春",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "はる",
+              "zh": "春天",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。春天。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-037-1",
+                "sentence": "これは「春」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「はる」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“春天”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "春",
+                      "kana": "はる",
+                      "desc": "春天"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-038",
+        "word": {
+          "text": "夏",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "なつ",
+              "zh": "夏天",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。夏天。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-038-1",
+                "sentence": "これは「夏」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「なつ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“夏天”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "夏",
+                      "kana": "なつ",
+                      "desc": "夏天"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-039",
+        "word": {
+          "text": "秋",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "あき",
+              "zh": "秋天",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。秋天。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-039-1",
+                "sentence": "これは「秋」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「あき」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“秋天”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "秋",
+                      "kana": "あき",
+                      "desc": "秋天"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-040",
+        "word": {
+          "text": "冬",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "ふゆ",
+              "zh": "冬天",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。冬天。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-040-1",
+                "sentence": "これは「冬」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「ふゆ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“冬天”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "冬",
+                      "kana": "ふゆ",
+                      "desc": "冬天"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-041",
+        "word": {
+          "text": "休み",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "やすみ",
+              "zh": "休息；假期",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。休息；假期。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-041-1",
+                "sentence": "これは「休み」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「やすみ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“休息；假期”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "休み",
+                      "kana": "やすみ",
+                      "desc": "休息；假期"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-042",
+        "word": {
+          "text": "誕生日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "たんじょうび",
+              "zh": "生日",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。生日。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-042-1",
+                "sentence": "これは「誕生日」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「たんじょうび」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“生日”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "誕生日",
+                      "kana": "たんじょうび",
+                      "desc": "生日"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-043",
+        "word": {
+          "text": "月曜日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "げつようび",
+              "zh": "星期一",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。星期一。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-043-1",
+                "sentence": "これは「月曜日」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「げつようび」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“星期一”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "月曜日",
+                      "kana": "げつようび",
+                      "desc": "星期一"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-044",
+        "word": {
+          "text": "火曜日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "かようび",
+              "zh": "星期二",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。星期二。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-044-1",
+                "sentence": "これは「火曜日」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「かようび」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“星期二”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "火曜日",
+                      "kana": "かようび",
+                      "desc": "星期二"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-045",
+        "word": {
+          "text": "水曜日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "すいようび",
+              "zh": "星期三",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。星期三。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-045-1",
+                "sentence": "これは「水曜日」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「すいようび」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“星期三”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "水曜日",
+                      "kana": "すいようび",
+                      "desc": "星期三"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-046",
+        "word": {
+          "text": "木曜日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "もくようび",
+              "zh": "星期四",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。星期四。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-046-1",
+                "sentence": "これは「木曜日」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「もくようび」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“星期四”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "木曜日",
+                      "kana": "もくようび",
+                      "desc": "星期四"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-047",
+        "word": {
+          "text": "金曜日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "きんようび",
+              "zh": "星期五",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。星期五。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-047-1",
+                "sentence": "これは「金曜日」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「きんようび」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“星期五”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "金曜日",
+                      "kana": "きんようび",
+                      "desc": "星期五"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-048",
+        "word": {
+          "text": "土曜日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "どようび",
+              "zh": "星期六",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。星期六。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-048-1",
+                "sentence": "これは「土曜日」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「どようび」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“星期六”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "土曜日",
+                      "kana": "どようび",
+                      "desc": "星期六"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-049",
+        "word": {
+          "text": "日曜日",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "にちようび",
+              "zh": "星期日",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。星期日。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-049-1",
+                "sentence": "これは「日曜日」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「にちようび」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“星期日”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "日曜日",
+                      "kana": "にちようび",
+                      "desc": "星期日"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-050",
+        "word": {
+          "text": "先",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "さき",
+              "zh": "前面；先；将来",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。前面；先；将来。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-050-1",
+                "sentence": "これは「先」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「さき」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“前面；先；将来”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "先",
+                      "kana": "さき",
+                      "desc": "前面；先；将来"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-051",
+        "word": {
+          "text": "前",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "まえ",
+              "zh": "前；以前",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。前；以前。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-051-1",
+                "sentence": "これは「前」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「まえ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“前；以前”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "前",
+                      "kana": "まえ",
+                      "desc": "前；以前"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-052",
+        "word": {
+          "text": "後",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "あと／のち",
+              "zh": "后；之后",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。后；之后。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-052-1",
+                "sentence": "これは「後」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「あと」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“后；之后”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "後",
+                      "kana": "あと",
+                      "desc": "后；之后"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-053",
+        "word": {
+          "text": "間",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "あいだ",
+              "zh": "之间",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。之间。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-053-1",
+                "sentence": "これは「間」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「あいだ」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“之间”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "間",
+                      "kana": "あいだ",
+                      "desc": "之间"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      },
+      {
+        "id": "jlpt-n5-time-054",
+        "word": {
+          "text": "時",
+          "level": "N5"
+        },
+        "done": false,
+        "tags": [
+          {
+            "name": "N5",
+            "className": "tag-n5"
+          },
+          {
+            "name": "时间・日期・星期",
+            "className": "tag-topic"
+          }
+        ],
+        "sections": {
+          "meaning": {
+            "collapsedByDefault": true,
+            "meta": {
+              "kana": "とき",
+              "zh": "时候",
+              "romaji": ""
+            },
+            "description": "时间・日期・星期词汇。时候。"
+          },
+          "examples": {
+            "collapsedByDefault": false,
+            "items": [
+              {
+                "id": "ex-jlpt-n5-time-054-1",
+                "sentence": "これは「時」です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "これは「とき」です。",
+                  "romaji": "",
+                  "meaningZh": "这是“时候”。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "時",
+                      "kana": "とき",
+                      "desc": "时候"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。表示“是……”。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "これは「A」です",
+                    "meaningZh": "这是“A”"
+                  }
+                }
+              }
+            ]
+          },
+          "synonyms": {
+            "items": []
+          },
+          "related": {
+            "items": []
+          }
+        }
+      }
+    ]
+  }
+}

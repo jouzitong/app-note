@@ -2,7 +2,7 @@
 
 ## 1. 文档目的
 
-本文件定义导入接口 `POST /api/v1/imports/note-word` 的字段级协议，用于：
+本文件定义导入接口 `POST /api/v1/imports/note-word`（或上传文件接口 `POST /api/v1/imports/note-word/json-file` 对应的同结构 JSON）的字段级协议，用于：
 
 - 人工构造导入 JSON
 - 让 AI 稳定解析、校验、生成导入数据
@@ -28,6 +28,7 @@
 4. 若最后一个 `noteNodes[*].nodeKey` 无法解析为实际节点，导入会报错。
 5. 例句为必填：每个 `wordCards[*]` 必须至少包含 1 条例句（`sections.examples.items` 不得为空）。
 6. `noteNode.noteType` 常用且受控为 `EMPTY`、`WORD_CARD` 两种；且只有最后一个节点允许使用 `WORD_CARD`。
+7. `meta.options.upsert` 默认 `true`：已存在 `wordCards.id` / `examples.id` 会按 JSON 覆盖更新；设为 `false` 时回退为兼容复用模式。
 
 ## 4. 字段总览（扁平索引）
 
@@ -36,7 +37,7 @@
 - `meta.importId` string 可选（建议唯一）
 - `meta.createdAt` string 可选（ISO-8601）
 - `meta.options.dryRun` boolean 可选（当前实现仅接收，不生效）
-- `meta.options.upsert` boolean 可选（当前实现固定 REUSE_OR_CREATE）
+- `meta.options.upsert` boolean 可选（默认 `true`，控制是否覆盖更新已存在卡片）
 - `meta.options.strict` boolean 可选（当前实现固定抛错中断）
 - `payload.noteNodes` array 可选（默认 `[]`）
 - `payload.wordCards` array 可选（默认 `[]`）
@@ -54,14 +55,16 @@
 - `createdAt` string 可选
   - 导入数据生成时间，建议 ISO-8601（例如 `2026-03-31T10:00:00+08:00`）。
 - `options` object 可选
-  - 导入策略参数，当前服务仅接收字段，不改变核心逻辑。
+  - 导入策略参数。
 
 ### 5.2 `meta.options`
 
 - `dryRun` boolean 可选，默认 `false`
   - 预演开关；当前实现不生效。
 - `upsert` boolean 可选，默认 `true`
-  - 覆盖/插入开关；当前实现不生效，始终按“存在复用，不存在创建”。
+  - 覆盖/插入开关。
+  - `true`：`wordCards.id` 已存在时，按最新 JSON 覆盖同步单词信息（`wordText/meta/tags/examples`），并按 `examples.items[*].id` 更新或新增例句。
+  - `false`：保持兼容模式，已存在卡片仅补充缺失例句关联，不覆盖原有单词与例句内容。
 - `strict` boolean 可选，默认 `true`
   - 严格模式；当前实现始终按严格报错中断。
 
@@ -300,9 +303,15 @@
 
 ### 7.6 当前后端行为
 
-- `id(card_code)` 已存在：复用历史卡片。
+- `id(card_code)` 已存在：
+  - `upsert=true`：覆盖同步历史卡片（标签、meaning/synonyms/related、例句内容与顺序）。
+  - `upsert=false`：复用历史卡片，仅增量补齐缺失例句关系。
 - `id(card_code)` 不存在：创建新卡片。
-- 对已存在卡片：会按 `sections.examples.items[*].id` 增量补充缺失例句关系（已有不重复添加）。
+- 例句按 `sections.examples.items[*].id` 识别：
+  - 命中已有 `id`：
+    - `upsert=true`：覆盖更新 `sentence/explain/meta/weight`。
+    - `upsert=false`：不覆盖，仅复用。
+  - 未命中：创建新例句。
 
 ## 8. 自动关联规则（替代 relations）
 

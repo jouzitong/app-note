@@ -20,6 +20,7 @@ import org.zzt.note.server.word.entity.WordCard;
 import org.zzt.note.server.word.entity.WordCardNoteNodeRel;
 import org.zzt.note.server.word.entity.ExampleSentence;
 import org.zzt.note.server.word.entity.meta.ExampleSentenceMetaInfo;
+import org.zzt.note.server.word.entity.meta.WordCardMetaInfo;
 import org.zzt.note.server.word.repository.IExampleSentenceRepository;
 import org.zzt.note.server.word.repository.IWordCardNoteNodeRelRepository;
 import org.zzt.note.server.word.repository.IWordCardRepository;
@@ -46,6 +47,8 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
     private static final String NOTE_TYPE_EMPTY = "EMPTY";
 
     private static final String NOTE_TYPE_WORD_CARD = "WORD_CARD";
+
+    private static final String WORD_CARD_TAG_BIZ_TYPE = "WORD_CARD";
 
     private final INoteNodeRepository noteNodeRepository;
 
@@ -85,10 +88,17 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
         result.getSummary().getRelations().setTotal(wordCards.size());
 
         Map<String, Long> nodeKeyToId = importNoteNodes(noteNodes, result);
-        Map<String, Long> cardIdToId = importWordCards(wordCards, result);
+        Map<String, Long> cardIdToId = importWordCards(wordCards, result, isUpsertEnabled(safeRequest));
         importRelationsToLastNoteNode(noteNodes, nodeKeyToId, cardIdToId, result);
 
         return result;
+    }
+
+    private boolean isUpsertEnabled(NoteWordImportRequest request) {
+        if (request == null || request.getMeta() == null || request.getMeta().getOptions() == null) {
+            return true;
+        }
+        return !Boolean.FALSE.equals(request.getMeta().getOptions().getUpsert());
     }
 
     private void validateRequest(List<NoteWordImportRequest.NoteNodeImportItem> noteNodes,
@@ -280,13 +290,19 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
         return target;
     }
 
-    private Map<String, Long> importWordCards(List<WordCardVO> wordCards, NoteWordImportResult result) {
+    private Map<String, Long> importWordCards(List<WordCardVO> wordCards,
+                                              NoteWordImportResult result,
+                                              boolean upsertEnabled) {
         Map<String, Long> cardIdToWordCardId = new HashMap<>();
         for (WordCardVO wordCard : wordCards) {
             String cardId = normalizeKey(wordCard.getId());
             Optional<WordCard> existing = wordCardRepository.findByCardCode(cardId);
             if (existing.isPresent()) {
-                syncExistingWordCardExamples(existing.get(), wordCard);
+                if (upsertEnabled) {
+                    syncExistingWordCard(existing.get(), wordCard);
+                } else {
+                    syncExistingWordCardExamples(existing.get(), wordCard);
+                }
                 cardIdToWordCardId.put(cardId, existing.get().getId());
                 result.getSummary().getWordCards().setReused(result.getSummary().getWordCards().getReused() + 1);
                 continue;
@@ -300,6 +316,21 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
             result.getSummary().getWordCards().setCreated(result.getSummary().getWordCards().getCreated() + 1);
         }
         return cardIdToWordCardId;
+    }
+
+    private void syncExistingWordCard(WordCard existingCard, WordCardVO inputCard) {
+        if (existingCard == null || inputCard == null) {
+            return;
+        }
+
+        if (inputCard.getWord() != null) {
+            existingCard.setWordText(inputCard.getWord().getText());
+        }
+        existingCard.setLocale(extractLocale(existingCard.getCardCode()));
+        existingCard.setMetaInfo(toWordCardMetaInfo(inputCard.getSections()));
+        existingCard.setTags(resolveWordCardTags(inputCard.getTags()));
+        existingCard.setExamples(resolveUpsertExamples(inputCard.getSections()));
+        wordCardRepository.save(existingCard);
     }
 
     private void syncExistingWordCardExamples(WordCard existingCard, WordCardVO inputCard) {
@@ -361,6 +392,144 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
         if (changed) {
             wordCardRepository.save(existingCard);
         }
+    }
+
+    private String extractLocale(String cardCode) {
+        if (cardCode == null || cardCode.isBlank()) {
+            return "jp";
+        }
+        String[] parts = cardCode.split("-");
+        if (parts.length == 0 || parts[0].isBlank()) {
+            return "jp";
+        }
+        return parts[0].toLowerCase();
+    }
+
+    private WordCardMetaInfo toWordCardMetaInfo(WordCardVO.Sections sections) {
+        WordCardMetaInfo metaInfo = new WordCardMetaInfo();
+        if (sections == null) {
+            return metaInfo;
+        }
+        metaInfo.setMeaning(toMeaningMetaSection(sections.getMeaning()));
+        metaInfo.setSynonyms(toVocabularyMetaSection(sections.getSynonyms()));
+        metaInfo.setRelated(toVocabularyMetaSection(sections.getRelated()));
+        return metaInfo;
+    }
+
+    private WordCardMetaInfo.MeaningSection toMeaningMetaSection(WordCardVO.MeaningSection source) {
+        WordCardMetaInfo.MeaningSection target = new WordCardMetaInfo.MeaningSection();
+        if (source == null) {
+            return target;
+        }
+        target.setCollapsedByDefault(source.getCollapsedByDefault());
+        target.setDescription(source.getDescription());
+
+        WordCardMetaInfo.MeaningMeta targetMeta = new WordCardMetaInfo.MeaningMeta();
+        if (source.getMeta() != null) {
+            targetMeta.setKana(source.getMeta().getKana());
+            targetMeta.setZh(source.getMeta().getZh());
+            targetMeta.setRomaji(source.getMeta().getRomaji());
+        }
+        target.setMeta(targetMeta);
+        return target;
+    }
+
+    private WordCardMetaInfo.VocabularySection toVocabularyMetaSection(WordCardVO.VocabularySection source) {
+        WordCardMetaInfo.VocabularySection target = new WordCardMetaInfo.VocabularySection();
+        if (source == null || CollectionUtils.isEmpty(source.getItems())) {
+            return target;
+        }
+        List<WordCardMetaInfo.VocabularyItem> items = source.getItems().stream()
+                .filter(item -> item != null)
+                .map(item -> {
+                    WordCardMetaInfo.VocabularyItem vo = new WordCardMetaInfo.VocabularyItem();
+                    vo.setText(item.getText());
+                    vo.setKana(item.getKana());
+                    return vo;
+                })
+                .collect(Collectors.toList());
+        target.setItems(items);
+        return target;
+    }
+
+    private List<NoteTag> resolveWordCardTags(List<WordCardVO.TagInfo> tags) {
+        if (CollectionUtils.isEmpty(tags)) {
+            return new ArrayList<>();
+        }
+
+        Map<String, String> classNameByLabel = new LinkedHashMap<>();
+        for (WordCardVO.TagInfo tag : tags) {
+            String label = normalizeKey(tag == null ? null : tag.getName());
+            if (label == null) {
+                continue;
+            }
+            classNameByLabel.putIfAbsent(label, tag.getClassName());
+        }
+        if (classNameByLabel.isEmpty()) {
+            return new ArrayList<>();
+        }
+
+        List<String> labels = new ArrayList<>(classNameByLabel.keySet());
+        List<NoteTag> existing = noteTagRepository.findByBizTypeAndLabelIn(WORD_CARD_TAG_BIZ_TYPE, labels);
+        Map<String, NoteTag> existingByLabel = existing.stream()
+                .collect(Collectors.toMap(NoteTag::getLabel, item -> item, (a, b) -> a, LinkedHashMap::new));
+
+        List<NoteTag> resolved = new ArrayList<>();
+        for (String label : labels) {
+            NoteTag found = existingByLabel.get(label);
+            if (found != null) {
+                resolved.add(found);
+                continue;
+            }
+            NoteTag created = new NoteTag();
+            created.setBizType(WORD_CARD_TAG_BIZ_TYPE);
+            created.setLabel(label);
+            created.setClassName(classNameByLabel.get(label));
+            resolved.add(noteTagRepository.save(created));
+        }
+        return resolved;
+    }
+
+    private List<ExampleSentence> resolveUpsertExamples(WordCardVO.Sections sections) {
+        if (sections == null || sections.getExamples() == null || CollectionUtils.isEmpty(sections.getExamples().getItems())) {
+            return new ArrayList<>();
+        }
+
+        List<WordCardVO.ExampleItem> items = sections.getExamples().getItems().stream()
+                .filter(item -> item != null && normalizeKey(item.getId()) != null)
+                .collect(Collectors.toList());
+        if (CollectionUtils.isEmpty(items)) {
+            return new ArrayList<>();
+        }
+
+        List<String> codes = items.stream()
+                .map(WordCardVO.ExampleItem::getId)
+                .map(this::normalizeKey)
+                .collect(Collectors.toList());
+        Map<String, ExampleSentence> existingByCode = exampleSentenceRepository.findByExampleCodeIn(codes)
+                .stream()
+                .collect(Collectors.toMap(ExampleSentence::getExampleCode, item -> item, (a, b) -> a));
+
+        List<ExampleSentence> resolved = new ArrayList<>();
+        int weight = 100;
+        for (WordCardVO.ExampleItem item : items) {
+            String code = normalizeKey(item.getId());
+            if (code == null) {
+                continue;
+            }
+
+            ExampleSentence example = existingByCode.get(code);
+            if (example == null) {
+                example = new ExampleSentence();
+                example.setExampleCode(code);
+            }
+            example.setSentence(item.getSentence());
+            example.setMetaInfo(toExampleMetaInfo(item.getExplain()));
+            example.setWeight(weight++);
+            example = exampleSentenceRepository.save(example);
+            resolved.add(example);
+        }
+        return resolved;
     }
 
     private ExampleSentenceMetaInfo toExampleMetaInfo(WordCardVO.ExampleExplain source) {
