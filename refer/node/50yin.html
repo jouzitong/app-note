@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日语50音图</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: #f5f7fb;
+            color: #222;
+            padding: 12px;
+        }
+
+        .page {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2d3d;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .section {
+            background: #fff;
+            border-radius: 14px;
+            padding: 14px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #2c3e50;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+
+        .card {
+            background: #f8fafc;
+            border: 1px solid #e8edf3;
+            border-radius: 12px;
+            padding: 10px 6px;
+            text-align: center;
+            min-height: 86px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .kana {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #111827;
+            margin-bottom: 6px;
+        }
+
+        .romaji {
+            font-size: 13px;
+            color: #3b82f6;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .katakana {
+            font-size: 15px;
+            color: #6b7280;
+        }
+
+        .tips {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .empty {
+            visibility: hidden;
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 21px;
+            }
+
+            .section {
+                padding: 12px;
+            }
+
+            .grid {
+                gap: 6px;
+            }
+
+            .grid-3 {
+                gap: 6px;
+            }
+
+            .card {
+                min-height: 78px;
+                padding: 8px 4px;
+            }
+
+            .kana {
+                font-size: 22px;
+            }
+
+            .romaji {
+                font-size: 12px;
+            }
+
+            .katakana {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <div class="title">日语 50 音图</div>
+        <div class="subtitle">平假名 · 片假名 · 罗马音</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">清音</div>
+        <div class="grid">
+            <div class="card"><div class="kana">あ</div><div class="romaji">a</div><div class="katakana">ア</div></div>
+            <div class="card"><div class="kana">い</div><div class="romaji">i</div><div class="katakana">イ</div></div>
+            <div class="card"><div class="kana">う</div><div class="romaji">u</div><div class="katakana">ウ</div></div>
+            <div class="card"><div class="kana">え</div><div class="romaji">e</div><div class="katakana">エ</div></div>
+            <div class="card"><div class="kana">お</div><div class="romaji">o</div><div class="katakana">オ</div></div>
+
+            <div class="card"><div class="kana">か</div><div class="romaji">ka</div><div class="katakana">カ</div></div>
+            <div class="card"><div class="kana">き</div><div class="romaji">ki</div><div class="katakana">キ</div></div>
+            <div class="card"><div class="kana">く</div><div class="romaji">ku</div><div class="katakana">ク</div></div>
+            <div class="card"><div class="kana">け</div><div class="romaji">ke</div><div class="katakana">ケ</div></div>
+            <div class="card"><div class="kana">こ</div><div class="romaji">ko</div><div class="katakana">コ</div></div>
+
+            <div class="card"><div class="kana">さ</div><div class="romaji">sa</div><div class="katakana">サ</div></div>
+            <div class="card"><div class="kana">し</div><div class="romaji">shi</div><div class="katakana">シ</div></div>
+            <div class="card"><div class="kana">す</div><div class="romaji">su</div><div class="katakana">ス</div></div>
+            <div class="card"><div class="kana">せ</div><div class="romaji">se</div><div class="katakana">セ</div></div>
+            <div class="card"><div class="kana">そ</div><div class="romaji">so</div><div class="katakana">ソ</div></div>
+
+            <div class="card"><div class="kana">た</div><div class="romaji">ta</div><div class="katakana">タ</div></div>
+            <div class="card"><div class="kana">ち</div><div class="romaji">chi</div><div class="katakana">チ</div></div>
+            <div class="card"><div class="kana">つ</div><div class="romaji">tsu</div><div class="katakana">ツ</div></div>
+            <div class="card"><div class="kana">て</div><div class="romaji">te</div><div class="katakana">テ</div></div>
+            <div class="card"><div class="kana">と</div><div class="romaji">to</div><div class="katakana">ト</div></div>
+
+            <div class="card"><div class="kana">な</div><div class="romaji">na</div><div class="katakana">ナ</div></div>
+            <div class="card"><div class="kana">に</div><div class="romaji">ni</div><div class="katakana">ニ</div></div>
+            <div class="card"><div class="kana">ぬ</div><div class="romaji">nu</div><div class="katakana">ヌ</div></div>
+            <div class="card"><div class="kana">ね</div><div class="romaji">ne</div><div class="katakana">ネ</div></div>
+            <div class="card"><div class="kana">の</div><div class="romaji">no</div><div class="katakana">ノ</div></div>
+
+            <div class="card"><div class="kana">は</div><div class="romaji">ha</div><div class="katakana">ハ</div></div>
+            <div class="card"><div class="kana">ひ</div><div class="romaji">hi</div><div class="katakana">ヒ</div></div>
+            <div class="card"><div class="kana">ふ</div><div class="romaji">fu</div><div class="katakana">フ</div></div>
+            <div class="card"><div class="kana">へ</div><div class="romaji">he</div><div class="katakana">ヘ</div></div>
+            <div class="card"><div class="kana">ほ</div><div class="romaji">ho</div><div class="katakana">ホ</div></div>
+
+            <div class="card"><div class="kana">ま</div><div class="romaji">ma</div><div class="katakana">マ</div></div>
+            <div class="card"><div class="kana">み</div><div class="romaji">mi</div><div class="katakana">ミ</div></div>
+            <div class="card"><div class="kana">む</div><div class="romaji">mu</div><div class="katakana">ム</div></div>
+            <div class="card"><div class="kana">め</div><div class="romaji">me</div><div class="katakana">メ</div></div>
+            <div class="card"><div class="kana">も</div><div class="romaji">mo</div><div class="katakana">モ</div></div>
+
+            <div class="card"><div class="kana">や</div><div class="romaji">ya</div><div class="katakana">ヤ</div></div>
+            <div class="card empty"><div class="kana">-</div><div class="romaji">-</div><div class="katakana">-</div></div>
+            <div class="card"><div class="kana">ゆ</div><div class="romaji">yu</div><div class="katakana">ユ</div></div>
+            <div class="card empty"><div class="kana">-</div><div class="romaji">-</div><div class="katakana">-</div></div>
+            <div class="card"><div class="kana">よ</div><div class="romaji">yo</div><div class="katakana">ヨ</div></div>
+
+            <div class="card"><div class="kana">ら</div><div class="romaji">ra</div><div class="katakana">ラ</div></div>
+            <div class="card"><div class="kana">り</div><div class="romaji">ri</div><div class="katakana">リ</div></div>
+            <div class="card"><div class="kana">る</div><div class="romaji">ru</div><div class="katakana">ル</div></div>
+            <div class="card"><div class="kana">れ</div><div class="romaji">re</div><div class="katakana">レ</div></div>
+            <div class="card"><div class="kana">ろ</div><div class="romaji">ro</div><div class="katakana">ロ</div></div>
+
+            <div class="card"><div class="kana">わ</div><div class="romaji">wa</div><div class="katakana">ワ</div></div>
+            <div class="card empty"><div class="kana">-</div><div class="romaji">-</div><div class="katakana">-</div></div>
+            <div class="card empty"><div class="kana">-</div><div class="romaji">-</div><div class="katakana">-</div></div>
+            <div class="card empty"><div class="kana">-</div><div class="romaji">-</div><div class="katakana">-</div></div>
+            <div class="card"><div class="kana">を</div><div class="romaji">wo</div><div class="katakana">ヲ</div></div>
+
+            <div class="card"><div class="kana">ん</div><div class="romaji">n</div><div class="katakana">ン</div></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">浊音 / 半浊音</div>
+        <div class="grid">
+            <div class="card"><div class="kana">が</div><div class="romaji">ga</div><div class="katakana">ガ</div></div>
+            <div class="card"><div class="kana">ぎ</div><div class="romaji">gi</div><div class="katakana">ギ</div></div>
+            <div class="card"><div class="kana">ぐ</div><div class="romaji">gu</div><div class="katakana">グ</div></div>
+            <div class="card"><div class="kana">げ</div><div class="romaji">ge</div><div class="katakana">ゲ</div></div>
+            <div class="card"><div class="kana">ご</div><div class="romaji">go</div><div class="katakana">ゴ</div></div>
+
+            <div class="card"><div class="kana">ざ</div><div class="romaji">za</div><div class="katakana">ザ</div></div>
+            <div class="card"><div class="kana">じ</div><div class="romaji">ji</div><div class="katakana">ジ</div></div>
+            <div class="card"><div class="kana">ず</div><div class="romaji">zu</div><div class="katakana">ズ</div></div>
+            <div class="card"><div class="kana">ぜ</div><div class="romaji">ze</div><div class="katakana">ゼ</div></div>
+            <div class="card"><div class="kana">ぞ</div><div class="romaji">zo</div><div class="katakana">ゾ</div></div>
+
+            <div class="card"><div class="kana">だ</div><div class="romaji">da</div><div class="katakana">ダ</div></div>
+            <div class="card"><div class="kana">ぢ</div><div class="romaji">ji / di</div><div class="katakana">ヂ</div></div>
+            <div class="card"><div class="kana">づ</div><div class="romaji">zu / du</div><div class="katakana">ヅ</div></div>
+            <div class="card"><div class="kana">で</div><div class="romaji">de</div><div class="katakana">デ</div></div>
+            <div class="card"><div class="kana">ど</div><div class="romaji">do</div><div class="katakana">ド</div></div>
+
+            <div class="card"><div class="kana">ば</div><div class="romaji">ba</div><div class="katakana">バ</div></div>
+            <div class="card"><div class="kana">び</div><div class="romaji">bi</div><div class="katakana">ビ</div></div>
+            <div class="card"><div class="kana">ぶ</div><div class="romaji">bu</div><div class="katakana">ブ</div></div>
+            <div class="card"><div class="kana">べ</div><div class="romaji">be</div><div class="katakana">ベ</div></div>
+            <div class="card"><div class="kana">ぼ</div><div class="romaji">bo</div><div class="katakana">ボ</div></div>
+
+            <div class="card"><div class="kana">ぱ</div><div class="romaji">pa</div><div class="katakana">パ</div></div>
+            <div class="card"><div class="kana">ぴ</div><div class="romaji">pi</div><div class="katakana">ピ</div></div>
+            <div class="card"><div class="kana">ぷ</div><div class="romaji">pu</div><div class="katakana">プ</div></div>
+            <div class="card"><div class="kana">ぺ</div><div class="romaji">pe</div><div class="katakana">ペ</div></div>
+            <div class="card"><div class="kana">ぽ</div><div class="romaji">po</div><div class="katakana">ポ</div></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">拗音</div>
+        <div class="grid-3">
+            <div class="card"><div class="kana">きゃ</div><div class="romaji">kya</div><div class="katakana">キャ</div></div>
+            <div class="card"><div class="kana">きゅ</div><div class="romaji">kyu</div><div class="katakana">キュ</div></div>
+            <div class="card"><div class="kana">きょ</div><div class="romaji">kyo</div><div class="katakana">キョ</div></div>
+
+            <div class="card"><div class="kana">しゃ</div><div class="romaji">sha</div><div class="katakana">シャ</div></div>
+            <div class="card"><div class="kana">しゅ</div><div class="romaji">shu</div><div class="katakana">シュ</div></div>
+            <div class="card"><div class="kana">しょ</div><div class="romaji">sho</div><div class="katakana">ショ</div></div>
+
+            <div class="card"><div class="kana">ちゃ</div><div class="romaji">cha</div><div class="katakana">チャ</div></div>
+            <div class="card"><div class="kana">ちゅ</div><div class="romaji">chu</div><div class="katakana">チュ</div></div>
+            <div class="card"><div class="kana">ちょ</div><div class="romaji">cho</div><div class="katakana">チョ</div></div>
+
+            <div class="card"><div class="kana">にゃ</div><div class="romaji">nya</div><div class="katakana">ニャ</div></div>
+            <div class="card"><div class="kana">にゅ</div><div class="romaji">nyu</div><div class="katakana">ニュ</div></div>
+            <div class="card"><div class="kana">にょ</div><div class="romaji">nyo</div><div class="katakana">ニョ</div></div>
+
+            <div class="card"><div class="kana">ひゃ</div><div class="romaji">hya</div><div class="katakana">ヒャ</div></div>
+            <div class="card"><div class="kana">ひゅ</div><div class="romaji">hyu</div><div class="katakana">ヒュ</div></div>
+            <div class="card"><div class="kana">ひょ</div><div class="romaji">hyo</div><div class="katakana">ヒョ</div></div>
+
+            <div class="card"><div class="kana">みゃ</div><div class="romaji">mya</div><div class="katakana">ミャ</div></div>
+            <div class="card"><div class="kana">みゅ</div><div class="romaji">myu</div><div class="katakana">ミュ</div></div>
+            <div class="card"><div class="kana">みょ</div><div class="romaji">myo</div><div class="katakana">ミョ</div></div>
+
+            <div class="card"><div class="kana">りゃ</div><div class="romaji">rya</div><div class="katakana">リャ</div></div>
+            <div class="card"><div class="kana">りゅ</div><div class="romaji">ryu</div><div class="katakana">リュ</div></div>
+            <div class="card"><div class="kana">りょ</div><div class="romaji">ryo</div><div class="katakana">リョ</div></div>
+
+            <div class="card"><div class="kana">ぎゃ</div><div class="romaji">gya</div><div class="katakana">ギャ</div></div>
+            <div class="card"><div class="kana">ぎゅ</div><div class="romaji">gyu</div><div class="katakana">ギュ</div></div>
+            <div class="card"><div class="kana">ぎょ</div><div class="romaji">gyo</div><div class="katakana">ギョ</div></div>
+
+            <div class="card"><div class="kana">じゃ</div><div class="romaji">ja</div><div class="katakana">ジャ</div></div>
+            <div class="card"><div class="kana">じゅ</div><div class="romaji">ju</div><div class="katakana">ジュ</div></div>
+            <div class="card"><div class="kana">じょ</div><div class="romaji">jo</div><div class="katakana">ジョ</div></div>
+
+            <div class="card"><div class="kana">びゃ</div><div class="romaji">bya</div><div class="katakana">ビャ</div></div>
+            <div class="card"><div class="kana">びゅ</div><div class="romaji">byu</div><div class="katakana">ビュ</div></div>
+            <div class="card"><div class="kana">びょ</div><div class="romaji">byo</div><div class="katakana">ビョ</div></div>
+
+            <div class="card"><div class="kana">ぴゃ</div><div class="romaji">pya</div><div class="katakana">ピャ</div></div>
+            <div class="card"><div class="kana">ぴゅ</div><div class="romaji">pyu</div><div class="katakana">ピュ</div></div>
+            <div class="card"><div class="kana">ぴょ</div><div class="romaji">pyo</div><div class="katakana">ピョ</div></div>
+        </div>
+
+        <div class="tips">
+            提示：<br />
+            1. 平假名常用于日常书写。<br />
+            2. 片假名常用于外来词、拟声词、强调。<br />
+            3. 拗音一般是「i 段假名 + 小ゃ/ゅ/ょ」组成。
+        </div>
+    </div>
+
+    <script>
+    (function(){
+      function speak(text){
+        if(!('speechSynthesis' in window)) return;
+        try{ window.speechSynthesis.cancel(); }catch(e){}
+        var u = new SpeechSynthesisUtterance(text);
+        u.lang = 'ja-JP';
+        u.rate = 0.95;
+        u.pitch = 1.0;
+        window.speechSynthesis.speak(u);
+      }
+
+      document.querySelectorAll('.card').forEach(function(card){
+        var kanaEl = card.querySelector('.kana');
+        if(!kanaEl) return;
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'play-btn';
+        btn.title = '播放发音';
+        btn.textContent = '🔊';
+        btn.addEventListener('click', function(e){
+          speak(kanaEl.textContent.trim());
+        });
+        var romajiEl = card.querySelector('.romaji');
+        if(romajiEl) romajiEl.parentNode.insertBefore(btn, romajiEl.nextSibling);
+        else card.appendChild(btn);
+      });
+
+      var css = '\n.play-btn{margin-left:6px;padding:4px 6px;border-radius:6px;border:1px solid #e8edf3;background:#fff;cursor:pointer;font-size:14px;line-height:1;vertical-align:middle;}\n.play-btn:active{transform:scale(0.98);}\n@media (max-width:480px){.play-btn{padding:3px 5px;font-size:13px}}\n';
+      var style = document.createElement('style'); style.appendChild(document.createTextNode(css)); document.head.appendChild(style);
+    })();
+    </script>
+
+</body>
+</html>
