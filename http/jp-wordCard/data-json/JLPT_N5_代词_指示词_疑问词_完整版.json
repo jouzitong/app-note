@@ -3102,14 +3102,9 @@
                       "desc": "助词。提示主题。"
                     },
                     {
-                      "word": "い",
-                      "kana": "い",
-                      "desc": "在（いる连用形）"
-                    },
-                    {
-                      "word": "つ",
+                      "word": "いつ",
                       "kana": "",
-                      "desc": "助动词/词尾成分。用于数量表达。"
+                      "desc": "什么时候"
                     },
                     {
                       "word": "です",
@@ -4325,8 +4320,8 @@
                 "sentence": "別の日に行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "べつのにちにいきます。",
-                  "romaji": "betsuno nichi ni iki masu .",
+                  "reading": "べつのひにいきます。",
+                  "romaji": "betsuno hi ni iki masu .",
                   "meaningZh": "改天去。",
                   "wordGrammarBreakdown": [
                     {
