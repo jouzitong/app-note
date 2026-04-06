@@ -623,9 +623,11 @@ export default {
   width: min(100%, 420px);
   text-align: left;
   height: calc(100dvh - 16px);
+  max-height: calc(100dvh - 16px);
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow: hidden;
 }
 
 .learning-top {
@@ -698,7 +700,7 @@ export default {
 
 .card {
   width: 100%;
-  height: auto;
+  height: 100%;
   flex: 1;
   min-height: 0;
   margin: 0;
@@ -834,7 +836,9 @@ export default {
   flex: 1;
   min-height: 0;
   padding: 12px 14px 10px;
-  overflow: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   text-align: left;
 }
 
@@ -1154,17 +1158,14 @@ export default {
 
 @media (min-width: 640px) {
   .word-card {
-    height: auto;
     gap: 12px;
   }
 
   .card {
-    height: auto;
-    min-height: 780px;
+    min-height: 0;
   }
 
   .body {
-    overflow: visible;
     padding: 18px 18px 14px;
   }
 }
