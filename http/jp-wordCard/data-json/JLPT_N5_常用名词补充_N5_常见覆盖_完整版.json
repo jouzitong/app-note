@@ -118,19 +118,54 @@
                 "sentence": "会話で国という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでくにということばをよくつかいます。",
+                  "romaji": "kaiwadekunitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“国家”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "国",
                       "kana": "くに",
                       "desc": "国家"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“国家”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
@@ -140,7 +175,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "日本",
+                "kana": "にほん"
+              }
+            ]
           }
         }
       },
@@ -179,29 +219,74 @@
                 "sentence": "会話で日本という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでにほんということばをよくつかいます。",
+                  "romaji": "kaiwadenihontoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“日本”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "日本",
                       "kana": "にほん",
                       "desc": "日本"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“日本”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "国",
+                "kana": "くに"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "中国",
+                "kana": "ちゅうごく"
+              }
+            ]
           }
         }
       },
@@ -240,29 +325,74 @@
                 "sentence": "会話で中国という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでちゅうごくということばをよくつかいます。",
+                  "romaji": "kaiwadechuugokutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“中国”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "中国",
                       "kana": "ちゅうごく",
                       "desc": "中国"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“中国”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "日本",
+                "kana": "にほん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "外国",
+                "kana": "がいこく"
+              }
+            ]
           }
         }
       },
@@ -301,29 +431,74 @@
                 "sentence": "会話で外国という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでがいこくということばをよくつかいます。",
+                  "romaji": "kaiwadegaikokutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“外国”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "外国",
                       "kana": "がいこく",
                       "desc": "外国"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“外国”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "中国",
+                "kana": "ちゅうごく"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "住所",
+                "kana": "じゅうしょ"
+              }
+            ]
           }
         }
       },
@@ -362,29 +537,74 @@
                 "sentence": "会話で住所という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでじゅうしょということばをよくつかいます。",
+                  "romaji": "kaiwadejuushotoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“住址”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "住所",
                       "kana": "じゅうしょ",
                       "desc": "住址"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“住址”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "外国",
+                "kana": "がいこく"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "場所",
+                "kana": "ばしょ"
+              }
+            ]
           }
         }
       },
@@ -423,29 +643,74 @@
                 "sentence": "会話で場所という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでばしょということばをよくつかいます。",
+                  "romaji": "kaiwadebashotoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“地方”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "場所",
                       "kana": "ばしょ",
                       "desc": "地方"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“地方”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "住所",
+                "kana": "じゅうしょ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "所",
+                "kana": "ところ"
+              }
+            ]
           }
         }
       },
@@ -484,29 +749,74 @@
                 "sentence": "会話で所という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでところということばをよくつかいます。",
+                  "romaji": "kaiwadetokorotoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“地方”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "所",
                       "kana": "ところ",
                       "desc": "地方"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“地方”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "場所",
+                "kana": "ばしょ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "方",
+                "kana": "ほう"
+              }
+            ]
           }
         }
       },
@@ -545,29 +855,74 @@
                 "sentence": "会話で方という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでほうということばをよくつかいます。",
+                  "romaji": "kaiwadehoutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“方向；人（礼貌）”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "方",
                       "kana": "ほう",
                       "desc": "方向；人（礼貌）"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“方向；人（礼貌）”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "所",
+                "kana": "ところ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "意味",
+                "kana": "いみ"
+              }
+            ]
           }
         }
       },
@@ -606,29 +961,74 @@
                 "sentence": "会話で意味という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでいみということばをよくつかいます。",
+                  "romaji": "kaiwadeimitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“意思”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "意味",
                       "kana": "いみ",
                       "desc": "意思"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“意思”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "方",
+                "kana": "ほう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "理由",
+                "kana": "りゆう"
+              }
+            ]
           }
         }
       },
@@ -667,29 +1067,74 @@
                 "sentence": "会話で理由という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでりゆうということばをよくつかいます。",
+                  "romaji": "kaiwaderiyuutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“理由”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "理由",
                       "kana": "りゆう",
                       "desc": "理由"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“理由”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "意味",
+                "kana": "いみ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "気持ち",
+                "kana": "きもち"
+              }
+            ]
           }
         }
       },
@@ -728,29 +1173,74 @@
                 "sentence": "会話で気持ちという言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわできもちということばをよくつかいます。",
+                  "romaji": "kaiwadekimochitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“心情”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "気持ち",
                       "kana": "きもち",
                       "desc": "心情"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“心情”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "理由",
+                "kana": "りゆう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "用意",
+                "kana": "ようい"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1279,74 @@
                 "sentence": "会話で用意という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでよういということばをよくつかいます。",
+                  "romaji": "kaiwadeyouitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“准备”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "用意",
                       "kana": "ようい",
                       "desc": "准备"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“准备”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "気持ち",
+                "kana": "きもち"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "予定",
+                "kana": "よてい"
+              }
+            ]
           }
         }
       },
@@ -850,29 +1385,74 @@
                 "sentence": "会話で予定という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでよていということばをよくつかいます。",
+                  "romaji": "kaiwadeyoteitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“计划”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "予定",
                       "kana": "よてい",
                       "desc": "计划"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“计划”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "用意",
+                "kana": "ようい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "都合",
+                "kana": "つごう"
+              }
+            ]
           }
         }
       },
@@ -911,29 +1491,74 @@
                 "sentence": "会話で都合という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでつごうということばをよくつかいます。",
+                  "romaji": "kaiwadetsugoutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“方便；情况”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "都合",
                       "kana": "つごう",
                       "desc": "方便；情况"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“方便；情况”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "予定",
+                "kana": "よてい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "趣味",
+                "kana": "しゅみ"
+              }
+            ]
           }
         }
       },
@@ -972,29 +1597,74 @@
                 "sentence": "会話で趣味という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでしゅみということばをよくつかいます。",
+                  "romaji": "kaiwadeshumitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“爱好”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "趣味",
                       "kana": "しゅみ",
                       "desc": "爱好"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“爱好”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "都合",
+                "kana": "つごう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "必要",
+                "kana": "ひつよう"
+              }
+            ]
           }
         }
       },
@@ -1033,29 +1703,74 @@
                 "sentence": "会話で必要という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでひつようということばをよくつかいます。",
+                  "romaji": "kaiwadehitsuyoutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“必要”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "必要",
                       "kana": "ひつよう",
                       "desc": "必要"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“必要”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "趣味",
+                "kana": "しゅみ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "不便",
+                "kana": "ふべん"
+              }
+            ]
           }
         }
       },
@@ -1094,29 +1809,74 @@
                 "sentence": "会話で不便という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでふべんということばをよくつかいます。",
+                  "romaji": "kaiwadefubentoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“不方便”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "不便",
                       "kana": "ふべん",
                       "desc": "不方便"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“不方便”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "必要",
+                "kana": "ひつよう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "用",
+                "kana": "よう"
+              }
+            ]
           }
         }
       },
@@ -1155,29 +1915,74 @@
                 "sentence": "会話で用という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでようということばをよくつかいます。",
+                  "romaji": "kaiwadeyoutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“事；事情”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "用",
                       "kana": "よう",
                       "desc": "事；事情"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“事；事情”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "不便",
+                "kana": "ふべん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "音",
+                "kana": "おと"
+              }
+            ]
           }
         }
       },
@@ -1216,29 +2021,74 @@
                 "sentence": "会話で音という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでおとということばをよくつかいます。",
+                  "romaji": "kaiwadeototoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“声音”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "音",
                       "kana": "おと",
                       "desc": "声音"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“声音”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "用",
+                "kana": "よう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "字",
+                "kana": "じ"
+              }
+            ]
           }
         }
       },
@@ -1277,29 +2127,74 @@
                 "sentence": "会話で字という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでじということばをよくつかいます。",
+                  "romaji": "kaiwadejitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“字”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "字",
                       "kana": "じ",
                       "desc": "字"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“字”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "音",
+                "kana": "おと"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "線",
+                "kana": "せん"
+              }
+            ]
           }
         }
       },
@@ -1338,29 +2233,74 @@
                 "sentence": "会話で線という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでせんということばをよくつかいます。",
+                  "romaji": "kaiwadesentoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“线”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "線",
                       "kana": "せん",
                       "desc": "线"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“线”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "字",
+                "kana": "じ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ページ",
+                "kana": "ページ"
+              }
+            ]
           }
         }
       },
@@ -1399,29 +2339,74 @@
                 "sentence": "会話でページという言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでページということばをよくつかいます。",
+                  "romaji": "kaiwadepe-jitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“页”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "ページ",
                       "kana": "ページ",
                       "desc": "页"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“页”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "線",
+                "kana": "せん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ドア",
+                "kana": "ドア"
+              }
+            ]
           }
         }
       },
@@ -1460,29 +2445,74 @@
                 "sentence": "会話でドアという言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでドアということばをよくつかいます。",
+                  "romaji": "kaiwadedoatoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“门”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "ドア",
                       "kana": "ドア",
                       "desc": "门"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“门”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ページ",
+                "kana": "ページ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "テーブル",
+                "kana": "テーブル"
+              }
+            ]
           }
         }
       },
@@ -1521,29 +2551,74 @@
                 "sentence": "会話でテーブルという言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでテーブルということばをよくつかいます。",
+                  "romaji": "kaiwadete-burutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“桌子”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "テーブル",
                       "kana": "テーブル",
                       "desc": "桌子"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“桌子”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ドア",
+                "kana": "ドア"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ベッド",
+                "kana": "ベッド"
+              }
+            ]
           }
         }
       },
@@ -1582,29 +2657,74 @@
                 "sentence": "会話でベッドという言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでベッドということばをよくつかいます。",
+                  "romaji": "kaiwadebeddotoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“床”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "ベッド",
                       "kana": "ベッド",
                       "desc": "床"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“床”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "テーブル",
+                "kana": "テーブル"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "冷蔵庫",
+                "kana": "れいぞうこ"
+              }
+            ]
           }
         }
       },
@@ -1643,29 +2763,74 @@
                 "sentence": "会話で冷蔵庫という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでれいぞうこということばをよくつかいます。",
+                  "romaji": "kaiwadereizoukotoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“冰箱”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "冷蔵庫",
                       "kana": "れいぞうこ",
                       "desc": "冰箱"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“冰箱”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ベッド",
+                "kana": "ベッド"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "洗濯機",
+                "kana": "せんたくき"
+              }
+            ]
           }
         }
       },
@@ -1704,29 +2869,74 @@
                 "sentence": "会話で洗濯機という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでせんたくきということばをよくつかいます。",
+                  "romaji": "kaiwadesentakukitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“洗衣机”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "洗濯機",
                       "kana": "せんたくき",
                       "desc": "洗衣机"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“洗衣机”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "冷蔵庫",
+                "kana": "れいぞうこ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "電気",
+                "kana": "でんき"
+              }
+            ]
           }
         }
       },
@@ -1765,29 +2975,74 @@
                 "sentence": "会話で電気という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわででんきということばをよくつかいます。",
+                  "romaji": "kaiwadedenkitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“电”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "電気",
                       "kana": "でんき",
                       "desc": "电"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“电”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "洗濯機",
+                "kana": "せんたくき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "電灯",
+                "kana": "でんとう"
+              }
+            ]
           }
         }
       },
@@ -1826,29 +3081,74 @@
                 "sentence": "会話で電灯という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわででんとうということばをよくつかいます。",
+                  "romaji": "kaiwadedentoutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“电灯”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "電灯",
                       "kana": "でんとう",
                       "desc": "电灯"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“电灯”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "電気",
+                "kana": "でんき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "冷房",
+                "kana": "れいぼう"
+              }
+            ]
           }
         }
       },
@@ -1887,29 +3187,74 @@
                 "sentence": "会話で冷房という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでれいぼうということばをよくつかいます。",
+                  "romaji": "kaiwadereiboutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“冷气”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "冷房",
                       "kana": "れいぼう",
                       "desc": "冷气"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“冷气”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "電灯",
+                "kana": "でんとう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "暖房",
+                "kana": "だんぼう"
+              }
+            ]
           }
         }
       },
@@ -1948,29 +3293,74 @@
                 "sentence": "会話で暖房という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでだんぼうということばをよくつかいます。",
+                  "romaji": "kaiwadedanboutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“暖气”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "暖房",
                       "kana": "だんぼう",
                       "desc": "暖气"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“暖气”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "冷房",
+                "kana": "れいぼう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "住所",
+                "kana": "じゅうしょ"
+              }
+            ]
           }
         }
       },
@@ -2009,29 +3399,74 @@
                 "sentence": "会話で住所という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでじゅうしょということばをよくつかいます。",
+                  "romaji": "kaiwadejuushotoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“地址”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "住所",
                       "kana": "じゅうしょ",
                       "desc": "地址"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“地址”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "暖房",
+                "kana": "だんぼう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "番号",
+                "kana": "ばんごう"
+              }
+            ]
           }
         }
       },
@@ -2070,29 +3505,74 @@
                 "sentence": "会話で番号という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでばんごうということばをよくつかいます。",
+                  "romaji": "kaiwadebangoutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“号码”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "番号",
                       "kana": "ばんごう",
                       "desc": "号码"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“号码”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "住所",
+                "kana": "じゅうしょ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "電話番号",
+                "kana": "でんわばんごう"
+              }
+            ]
           }
         }
       },
@@ -2131,29 +3611,74 @@
                 "sentence": "会話で電話番号という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわででんわばんごうということばをよくつかいます。",
+                  "romaji": "kaiwadedenwabangoutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“电话号码”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "電話番号",
                       "kana": "でんわばんごう",
                       "desc": "电话号码"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“电话号码”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "番号",
+                "kana": "ばんごう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "お金持ち",
+                "kana": "おかねもち"
+              }
+            ]
           }
         }
       },
@@ -2192,29 +3717,74 @@
                 "sentence": "会話でお金持ちという言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでおかねもちということばをよくつかいます。",
+                  "romaji": "kaiwadeokanemochitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“有钱人”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "お金持ち",
                       "kana": "おかねもち",
                       "desc": "有钱人"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“有钱人”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "電話番号",
+                "kana": "でんわばんごう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "世界",
+                "kana": "せかい"
+              }
+            ]
           }
         }
       },
@@ -2253,29 +3823,74 @@
                 "sentence": "会話で世界という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでせかいということばをよくつかいます。",
+                  "romaji": "kaiwadesekaitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“世界”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "世界",
                       "kana": "せかい",
                       "desc": "世界"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“世界”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "お金持ち",
+                "kana": "おかねもち"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "文化",
+                "kana": "ぶんか"
+              }
+            ]
           }
         }
       },
@@ -2314,29 +3929,74 @@
                 "sentence": "会話で文化という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでぶんかということばをよくつかいます。",
+                  "romaji": "kaiwadebunkatoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“文化”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "文化",
                       "kana": "ぶんか",
                       "desc": "文化"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“文化”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "世界",
+                "kana": "せかい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "歴史",
+                "kana": "れきし"
+              }
+            ]
           }
         }
       },
@@ -2375,29 +4035,74 @@
                 "sentence": "会話で歴史という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでれきしということばをよくつかいます。",
+                  "romaji": "kaiwaderekishitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“历史”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "歴史",
                       "kana": "れきし",
                       "desc": "历史"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“历史”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "文化",
+                "kana": "ぶんか"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "空気",
+                "kana": "くうき"
+              }
+            ]
           }
         }
       },
@@ -2436,29 +4141,74 @@
                 "sentence": "会話で空気という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでくうきということばをよくつかいます。",
+                  "romaji": "kaiwadekuukitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“空气”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "空気",
                       "kana": "くうき",
                       "desc": "空气"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“空气”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "歴史",
+                "kana": "れきし"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "問題",
+                "kana": "もんだい"
+              }
+            ]
           }
         }
       },
@@ -2497,29 +4247,74 @@
                 "sentence": "会話で問題という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでもんだいということばをよくつかいます。",
+                  "romaji": "kaiwademondaitoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“问题”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "問題",
                       "kana": "もんだい",
                       "desc": "问题"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“问题”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "空気",
+                "kana": "くうき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "答え",
+                "kana": "こたえ"
+              }
+            ]
           }
         }
       },
@@ -2558,29 +4353,74 @@
                 "sentence": "会話で答えという言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでこたえということばをよくつかいます。",
+                  "romaji": "kaiwadekotaetoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“答案”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "答え",
                       "kana": "こたえ",
                       "desc": "答案"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“答案”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "問題",
+                "kana": "もんだい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "理由",
+                "kana": "りゆう"
+              }
+            ]
           }
         }
       },
@@ -2619,26 +4459,66 @@
                 "sentence": "会話で理由という言葉をよく使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいわでりゆうということばをよくつかいます。",
+                  "romaji": "kaiwaderiyuutoiukotobaoyokutsukaimasu.",
                   "meaningZh": "会话里经常用到“原因”这个词。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会話",
+                      "kana": "かいわ",
+                      "desc": "会话"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。场景。"
+                    },
                     {
                       "word": "理由",
                       "kana": "りゆう",
                       "desc": "原因"
+                    },
+                    {
+                      "word": "という",
+                      "kana": "という",
+                      "desc": "称为…"
+                    },
+                    {
+                      "word": "言葉",
+                      "kana": "ことば",
+                      "desc": "词语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "会话常用名词",
-                    "meaningZh": "会话里经常用到“原因”这个词。"
+                    "pattern": "A で B という C を よく使います",
+                    "meaningZh": "在 A 经常用到叫 B 的 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "答え",
+                "kana": "こたえ"
+              }
+            ]
           },
           "related": {
             "items": []

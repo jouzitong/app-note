@@ -118,19 +118,34 @@
                 "sentence": "私は学生です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしはがくせいです。",
+                  "romaji": "watashihagakuseidesu.",
                   "meaningZh": "我是学生。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
                       "word": "は",
-                      "kana": "は",
-                      "desc": "提示主题"
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "学生",
+                      "kana": "がくせい",
+                      "desc": "学生"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は B です",
-                    "meaningZh": "我是学生。"
+                    "meaningZh": "A 是 B"
                   }
                 }
               }
@@ -140,7 +155,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "が",
+                "kana": "が"
+              }
+            ]
           }
         }
       },
@@ -179,29 +199,49 @@
                 "sentence": "猫がいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "ねこがいます。",
+                  "romaji": "nekogaimasu.",
                   "meaningZh": "有一只猫。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "猫",
+                      "kana": "ねこ",
+                      "desc": "猫"
+                    },
+                    {
                       "word": "が",
-                      "kana": "が",
-                      "desc": "提示主语"
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "います",
+                      "kana": "います",
+                      "desc": "有（人/动物）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が います",
-                    "meaningZh": "有一只猫。"
+                    "meaningZh": "有 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "は",
+                "kana": "は"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "を",
+                "kana": "を"
+              }
+            ]
           }
         }
       },
@@ -240,29 +280,49 @@
                 "sentence": "水を飲みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "みずをのみます。",
+                  "romaji": "mizuonomimasu.",
                   "meaningZh": "喝水。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "水",
+                      "kana": "みず",
+                      "desc": "水"
+                    },
+                    {
                       "word": "を",
-                      "kana": "を",
-                      "desc": "宾语标记"
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "飲みます",
+                      "kana": "のみます",
+                      "desc": "喝（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A を Vます",
-                    "meaningZh": "喝水。"
+                    "meaningZh": "V A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "が",
+                "kana": "が"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "に",
+                "kana": "に"
+              }
+            ]
           }
         }
       },
@@ -301,29 +361,49 @@
                 "sentence": "七時に起きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しちじにおきます。",
+                  "romaji": "shichijiniokimasu.",
                   "meaningZh": "七点起床。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "七時",
+                      "kana": "しちじ",
+                      "desc": "七点"
+                    },
+                    {
                       "word": "に",
-                      "kana": "に",
-                      "desc": "时间、对象、到达点"
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
+                    {
+                      "word": "起きます",
+                      "kana": "おきます",
+                      "desc": "起床（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "时间 に V",
-                    "meaningZh": "七点起床。"
+                    "pattern": "时间 に Vます",
+                    "meaningZh": "在时间点做动作"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "を",
+                "kana": "を"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "へ",
+                "kana": "へ"
+              }
+            ]
           }
         }
       },
@@ -362,29 +442,49 @@
                 "sentence": "学校へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "がっこうへいきます。",
+                  "romaji": "gakkoueikimasu.",
                   "meaningZh": "去学校。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "学校",
+                      "kana": "がっこう",
+                      "desc": "学校"
+                    },
+                    {
                       "word": "へ",
-                      "kana": "へ",
-                      "desc": "方向"
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "地点 へ 行く",
-                    "meaningZh": "去学校。"
+                    "pattern": "地点 へ 行きます",
+                    "meaningZh": "去某地"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "に",
+                "kana": "に"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "で",
+                "kana": "で"
+              }
+            ]
           }
         }
       },
@@ -423,29 +523,49 @@
                 "sentence": "図書館で勉強します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "としょかんでべんきょうします。",
+                  "romaji": "toshokandebenkyoushimasu.",
                   "meaningZh": "在图书馆学习。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "図書館",
+                      "kana": "としょかん",
+                      "desc": "图书馆"
+                    },
+                    {
                       "word": "で",
-                      "kana": "で",
-                      "desc": "动作场所、手段"
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
+                    {
+                      "word": "勉強します",
+                      "kana": "べんきょうします",
+                      "desc": "学习（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "地点 で V",
-                    "meaningZh": "在图书馆学习。"
+                    "pattern": "地点 で Vます",
+                    "meaningZh": "在某地做动作"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "へ",
+                "kana": "へ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "と",
+                "kana": "と"
+              }
+            ]
           }
         }
       },
@@ -484,29 +604,49 @@
                 "sentence": "友達と話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "ともだちとはなします。",
+                  "romaji": "tomodachitohanashimasu.",
                   "meaningZh": "和朋友说话。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "友達",
+                      "kana": "ともだち",
+                      "desc": "朋友"
+                    },
+                    {
                       "word": "と",
-                      "kana": "と",
-                      "desc": "和；引用"
+                      "kana": "",
+                      "desc": "助词。和。"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A と V",
-                    "meaningZh": "和朋友说话。"
+                    "pattern": "A と Vます",
+                    "meaningZh": "和 A 一起做"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "で",
+                "kana": "で"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "も",
+                "kana": "も"
+              }
+            ]
           }
         }
       },
@@ -545,29 +685,49 @@
                 "sentence": "私も行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしもいきます。",
+                  "romaji": "watashimoikimasu.",
                   "meaningZh": "我也去。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
                       "word": "も",
-                      "kana": "も",
-                      "desc": "也"
+                      "kana": "",
+                      "desc": "助词。也。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A も V",
-                    "meaningZh": "我也去。"
+                    "pattern": "A も Vます",
+                    "meaningZh": "A 也…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "と",
+                "kana": "と"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "の",
+                "kana": "の"
+              }
+            ]
           }
         }
       },
@@ -606,29 +766,64 @@
                 "sentence": "これは私の本です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "これはわたしのほんです。",
+                  "romaji": "korehawatashinohondesu.",
                   "meaningZh": "这是我的书。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
                       "word": "の",
-                      "kana": "の",
-                      "desc": "的；名词修饰"
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "本",
+                      "kana": "ほん",
+                      "desc": "书"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A の B",
-                    "meaningZh": "这是我的书。"
+                    "meaningZh": "A 的 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "も",
+                "kana": "も"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "から",
+                "kana": "から"
+              }
+            ]
           }
         }
       },
@@ -667,29 +862,54 @@
                 "sentence": "九時から授業です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "くじからじゅぎょうです。",
+                  "romaji": "kujikarajugyoudesu.",
                   "meaningZh": "九点开始上课。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "九時",
+                      "kana": "くじ",
+                      "desc": "九点"
+                    },
+                    {
                       "word": "から",
-                      "kana": "から",
-                      "desc": "从；因为"
+                      "kana": "",
+                      "desc": "助词。从。"
+                    },
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A から",
-                    "meaningZh": "九点开始上课。"
+                    "meaningZh": "从 A 开始"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "の",
+                "kana": "の"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "まで",
+                "kana": "まで"
+              }
+            ]
           }
         }
       },
@@ -728,29 +948,49 @@
                 "sentence": "五時まで働きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "ごじまではたらきます。",
+                  "romaji": "gojimadehatarakimasu.",
                   "meaningZh": "工作到五点。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "五時",
+                      "kana": "ごじ",
+                      "desc": "五点"
+                    },
+                    {
                       "word": "まで",
-                      "kana": "まで",
-                      "desc": "到"
+                      "kana": "",
+                      "desc": "助词。到。"
+                    },
+                    {
+                      "word": "働きます",
+                      "kana": "はたらきます",
+                      "desc": "工作（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A まで",
-                    "meaningZh": "工作到五点。"
+                    "meaningZh": "到 A 为止"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "から",
+                "kana": "から"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "より",
+                "kana": "より"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1029,59 @@
                 "sentence": "電車よりバスが安いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "でんしゃよりバスがやすいです。",
+                  "romaji": "denshayoribasugayasuidesu.",
                   "meaningZh": "比起电车，公交更便宜。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "電車",
+                      "kana": "でんしゃ",
+                      "desc": "电车"
+                    },
+                    {
                       "word": "より",
-                      "kana": "より",
-                      "desc": "比；从"
+                      "kana": "",
+                      "desc": "助词。比较基准。"
+                    },
+                    {
+                      "word": "バス",
+                      "kana": "バス",
+                      "desc": "公交车"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "安いです",
+                      "kana": "やすいです",
+                      "desc": "便宜（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A より B",
-                    "meaningZh": "比起电车，公交更便宜。"
+                    "meaningZh": "比起 A，B 更…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "まで",
+                "kana": "まで"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "や",
+                "kana": "や"
+              }
+            ]
           }
         }
       },
@@ -850,29 +1120,69 @@
                 "sentence": "机の上に本やノートがあります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "つくえのうえにほんやノートがあります。",
+                  "romaji": "tsukuenouenihonyano-togaarimasu.",
                   "meaningZh": "桌上有书和笔记本等。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "机",
+                      "kana": "つくえ",
+                      "desc": "桌子"
+                    },
+                    {
+                      "word": "の上",
+                      "kana": "のうえ",
+                      "desc": "上面"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。位置。"
+                    },
+                    {
+                      "word": "本",
+                      "kana": "ほん",
+                      "desc": "书"
+                    },
+                    {
                       "word": "や",
-                      "kana": "や",
-                      "desc": "……和……等"
+                      "kana": "",
+                      "desc": "助词。列举。"
+                    },
+                    {
+                      "word": "ノート",
+                      "kana": "ノート",
+                      "desc": "笔记本"
+                    },
+                    {
+                      "word": "があります",
+                      "kana": "があります",
+                      "desc": "有（物）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A や B など",
-                    "meaningZh": "桌上有书和笔记本等。"
+                    "meaningZh": "A 和 B 等"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "より",
+                "kana": "より"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "か",
+                "kana": "か"
+              }
+            ]
           }
         }
       },
@@ -911,29 +1221,64 @@
                 "sentence": "これはあなたのペンですか。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "これはあなたのペンですか。",
+                  "romaji": "korehaanatanopendesuka.",
                   "meaningZh": "这是你的笔吗？",
                   "wordGrammarBreakdown": [
                     {
-                      "word": "か",
-                      "kana": "か",
-                      "desc": "疑问；或者"
+                      "word": "これ",
+                      "kana": "これ",
+                      "desc": "这个"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "あなた",
+                      "kana": "あなた",
+                      "desc": "你"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "ペン",
+                      "kana": "ペン",
+                      "desc": "笔"
+                    },
+                    {
+                      "word": "ですか",
+                      "kana": "",
+                      "desc": "疑问句尾。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A ですか",
-                    "meaningZh": "这是你的笔吗？"
+                    "meaningZh": "A 吗"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "や",
+                "kana": "や"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ね",
+                "kana": "ね"
+              }
+            ]
           }
         }
       },
@@ -972,29 +1317,54 @@
                 "sentence": "今日は寒いですね。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはさむいですね。",
+                  "romaji": "kyouhasamuidesune.",
                   "meaningZh": "今天很冷呢。",
                   "wordGrammarBreakdown": [
                     {
-                      "word": "ね",
-                      "kana": "ね",
-                      "desc": "语气助词：吧"
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "寒い",
+                      "kana": "さむい",
+                      "desc": "冷"
+                    },
+                    {
+                      "word": "ですね",
+                      "kana": "",
+                      "desc": "语气词。征求认同。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "〜ですね",
-                    "meaningZh": "今天很冷呢。"
+                    "meaningZh": "确认/共鸣语气"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "か",
+                "kana": "か"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "よ",
+                "kana": "よ"
+              }
+            ]
           }
         }
       },
@@ -1033,29 +1403,59 @@
                 "sentence": "その映画は面白いですよ。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "そのえいがはおもしろいですよ。",
+                  "romaji": "sonoeigahaomoshiroidesuyo.",
                   "meaningZh": "那部电影很有趣哦。",
                   "wordGrammarBreakdown": [
                     {
-                      "word": "よ",
-                      "kana": "よ",
-                      "desc": "语气助词：哦"
+                      "word": "その",
+                      "kana": "その",
+                      "desc": "那个…"
+                    },
+                    {
+                      "word": "映画",
+                      "kana": "えいが",
+                      "desc": "电影"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "面白い",
+                      "kana": "おもしろい",
+                      "desc": "有趣"
+                    },
+                    {
+                      "word": "ですよ",
+                      "kana": "",
+                      "desc": "语气词。告知。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "〜ですよ",
-                    "meaningZh": "那部电影很有趣哦。"
+                    "meaningZh": "告知语气"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ね",
+                "kana": "ね"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "まだ",
+                "kana": "まだ"
+              }
+            ]
           }
         }
       },
@@ -1094,29 +1494,54 @@
                 "sentence": "宿題はまだ終わっていません。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しゅくだいはまだおわっていません。",
+                  "romaji": "shukudaihamadaowatteimasen.",
                   "meaningZh": "作业还没做完。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "宿題",
+                      "kana": "しゅくだい",
+                      "desc": "作业"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
                       "word": "まだ",
                       "kana": "まだ",
-                      "desc": "还；仍然"
+                      "desc": "还"
+                    },
+                    {
+                      "word": "終わっていません",
+                      "kana": "おわっていません",
+                      "desc": "还没结束"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "まだ 〜ていません",
-                    "meaningZh": "作业还没做完。"
+                    "meaningZh": "还没…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "よ",
+                "kana": "よ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "もう",
+                "kana": "もう"
+              }
+            ]
           }
         }
       },
@@ -1155,29 +1580,54 @@
                 "sentence": "宿題はもう終わりました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しゅくだいはもうおわりました。",
+                  "romaji": "shukudaihamouowarimashita.",
                   "meaningZh": "作业已经做完了。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "宿題",
+                      "kana": "しゅくだい",
+                      "desc": "作业"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
                       "word": "もう",
                       "kana": "もう",
-                      "desc": "已经；再"
+                      "desc": "已经"
+                    },
+                    {
+                      "word": "終わりました",
+                      "kana": "おわりました",
+                      "desc": "结束了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "もう 〜ました",
-                    "meaningZh": "作业已经做完了。"
+                    "meaningZh": "已经…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "まだ",
+                "kana": "まだ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "でも",
+                "kana": "でも"
+              }
+            ]
           }
         }
       },
@@ -1216,29 +1666,49 @@
                 "sentence": "雨でも行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "あめでもいきます。",
+                  "romaji": "amedemoikimasu.",
                   "meaningZh": "即使下雨也去。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "雨",
+                      "kana": "あめ",
+                      "desc": "雨"
+                    },
+                    {
                       "word": "でも",
-                      "kana": "でも",
-                      "desc": "但是；即使；或者"
+                      "kana": "",
+                      "desc": "助词。即使。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A でも B",
-                    "meaningZh": "即使下雨也去。"
+                    "meaningZh": "即使 A 也 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "もう",
+                "kana": "もう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "そして",
+                "kana": "そして"
+              }
+            ]
           }
         }
       },
@@ -1277,29 +1747,69 @@
                 "sentence": "朝ごはんを食べました。そして学校へ行きました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "あさごはんをたべました。そしてがっこうへいきました。",
+                  "romaji": "asagohanotabemashita.soshitegakkoueikimashita.",
                   "meaningZh": "吃完早饭，然后去了学校。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "朝ごはん",
+                      "kana": "あさごはん",
+                      "desc": "早饭"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "食べました",
+                      "kana": "たべました",
+                      "desc": "吃了"
+                    },
+                    {
                       "word": "そして",
-                      "kana": "そして",
-                      "desc": "然后，而且"
+                      "kana": "",
+                      "desc": "连接词。然后。"
+                    },
+                    {
+                      "word": "学校",
+                      "kana": "がっこう",
+                      "desc": "学校"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きました",
+                      "kana": "いきました",
+                      "desc": "去了"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A。そしてB",
-                    "meaningZh": "吃完早饭，然后去了学校。"
+                    "meaningZh": "先 A 然后 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "でも",
+                "kana": "でも"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "それから",
+                "kana": "それから"
+              }
+            ]
           }
         }
       },
@@ -1338,29 +1848,59 @@
                 "sentence": "宿題をします。それから寝ます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しゅくだいをします。それからねます。",
+                  "romaji": "shukudaioshimasu.sorekaranemasu.",
                   "meaningZh": "先做作业，然后睡觉。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "宿題",
+                      "kana": "しゅくだい",
+                      "desc": "作业"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做"
+                    },
+                    {
                       "word": "それから",
-                      "kana": "それから",
-                      "desc": "然后，之后"
+                      "kana": "",
+                      "desc": "连接词。然后。"
+                    },
+                    {
+                      "word": "寝ます",
+                      "kana": "ねます",
+                      "desc": "睡觉（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A。それからB",
-                    "meaningZh": "先做作业，然后睡觉。"
+                    "meaningZh": "A 之后 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "そして",
+                "kana": "そして"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "だから",
+                "kana": "だから"
+              }
+            ]
           }
         }
       },
@@ -1399,29 +1939,74 @@
                 "sentence": "明日は試験です。だから今夜は勉強します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "あしたはしけんです。だからこんやはべんきょうします。",
+                  "romaji": "ashitahashikendesu.dakarakonyahabenkyoushimasu.",
                   "meaningZh": "明天考试，所以今晚学习。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "明日",
+                      "kana": "あした",
+                      "desc": "明天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
+                    },
+                    {
                       "word": "だから",
-                      "kana": "だから",
-                      "desc": "所以"
+                      "kana": "",
+                      "desc": "连接词。所以。"
+                    },
+                    {
+                      "word": "今夜",
+                      "kana": "こんや",
+                      "desc": "今晚"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "勉強します",
+                      "kana": "べんきょうします",
+                      "desc": "学习（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A。だからB",
-                    "meaningZh": "明天考试，所以今晚学习。"
+                    "meaningZh": "因为 A，所以 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "それから",
+                "kana": "それから"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "でも",
+                "kana": "でも"
+              }
+            ]
           }
         }
       },
@@ -1460,29 +2045,49 @@
                 "sentence": "雨でも行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "あめでもいきます。",
+                  "romaji": "amedemoikimasu.",
                   "meaningZh": "即使下雨也去。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "雨",
+                      "kana": "あめ",
+                      "desc": "雨"
+                    },
+                    {
                       "word": "でも",
-                      "kana": "でも",
-                      "desc": "可是"
+                      "kana": "",
+                      "desc": "助词。即使。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A でも B",
-                    "meaningZh": "即使下雨也去。"
+                    "meaningZh": "即使 A 也 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "だから",
+                "kana": "だから"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "じゃあ",
+                "kana": "じゃあ"
+              }
+            ]
           }
         }
       },
@@ -1521,29 +2126,49 @@
                 "sentence": "じゃあ、また明日。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "じゃあ、またあした。",
+                  "romaji": "jaa, mataashita.",
                   "meaningZh": "那么，明天见。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "じゃあ",
-                      "kana": "じゃあ",
-                      "desc": "那么"
+                      "kana": "",
+                      "desc": "连接词。那么。"
+                    },
+                    {
+                      "word": "また",
+                      "kana": "また",
+                      "desc": "再；又"
+                    },
+                    {
+                      "word": "明日",
+                      "kana": "あした",
+                      "desc": "明天"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "じゃあ、〜",
-                    "meaningZh": "那么，明天见。"
+                    "meaningZh": "那么…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "でも",
+                "kana": "でも"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "では",
+                "kana": "では"
+              }
+            ]
           }
         }
       },
@@ -1582,26 +2207,36 @@
                 "sentence": "では、始めましょう。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "では、はじめましょう。",
+                  "romaji": "deha, hajimemashou.",
                   "meaningZh": "那么，开始吧。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "では",
-                      "kana": "では",
-                      "desc": "那么；那么就"
+                      "kana": "",
+                      "desc": "连接词。那么。"
+                    },
+                    {
+                      "word": "始めましょう",
+                      "kana": "はじめましょう",
+                      "desc": "开始吧（提议形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "では、〜",
-                    "meaningZh": "那么，开始吧。"
+                    "meaningZh": "那么就…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "じゃあ",
+                "kana": "じゃあ"
+              }
+            ]
           },
           "related": {
             "items": []

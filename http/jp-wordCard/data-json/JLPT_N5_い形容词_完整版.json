@@ -118,19 +118,44 @@
                 "sentence": "今日の天気はいいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很好。",
+                  "reading": "きょうのてんきはいいです。",
+                  "romaji": "kyounotenkihaiidesu.",
+                  "meaningZh": "今天天气很好。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "いい",
                       "kana": "いい",
                       "desc": "好"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很好。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
@@ -140,7 +165,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "悪い",
+                "kana": "わるい"
+              }
+            ]
           }
         }
       },
@@ -179,29 +209,54 @@
                 "sentence": "この部屋は悪いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很坏。",
+                  "reading": "このへやはわるいです。",
+                  "romaji": "konoeyahawaruidesu.",
+                  "meaningZh": "这个房间很坏。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "悪い",
                       "kana": "わるい",
                       "desc": "坏"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很坏。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "いい",
+                "kana": "いい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "大きい",
+                "kana": "おおきい"
+              }
+            ]
           }
         }
       },
@@ -240,29 +295,54 @@
                 "sentence": "この本は大きいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很大。",
+                  "reading": "このほんはおおきいです。",
+                  "romaji": "konohonhaookiidesu.",
+                  "meaningZh": "这本书很大。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "大きい",
                       "kana": "おおきい",
                       "desc": "大"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很大。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "悪い",
+                "kana": "わるい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "小さい",
+                "kana": "ちいさい"
+              }
+            ]
           }
         }
       },
@@ -301,29 +381,64 @@
                 "sentence": "今日の天気は小さいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很小。",
+                  "reading": "きょうのてんきはちいさいです。",
+                  "romaji": "kyounotenkihachiisaidesu.",
+                  "meaningZh": "今天天气很小。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "小さい",
                       "kana": "ちいさい",
                       "desc": "小"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很小。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "大きい",
+                "kana": "おおきい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "多い",
+                "kana": "おおい"
+              }
+            ]
           }
         }
       },
@@ -362,29 +477,54 @@
                 "sentence": "この部屋は多いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很多。",
+                  "reading": "このへやはおおいです。",
+                  "romaji": "konoeyahaooidesu.",
+                  "meaningZh": "这个房间很多。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "多い",
                       "kana": "おおい",
                       "desc": "多"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很多。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "小さい",
+                "kana": "ちいさい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "少ない",
+                "kana": "すくない"
+              }
+            ]
           }
         }
       },
@@ -423,29 +563,54 @@
                 "sentence": "この本は少ないです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很少。",
+                  "reading": "このほんはすくないです。",
+                  "romaji": "konohonhasukunaidesu.",
+                  "meaningZh": "这本书很少。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "少ない",
                       "kana": "すくない",
                       "desc": "少"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很少。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "多い",
+                "kana": "おおい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "高い",
+                "kana": "たかい"
+              }
+            ]
           }
         }
       },
@@ -484,29 +649,64 @@
                 "sentence": "今日の天気は高いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很高；贵。",
+                  "reading": "きょうのてんきはたかいです。",
+                  "romaji": "kyounotenkihatakaidesu.",
+                  "meaningZh": "今天天气很高；贵。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "高い",
                       "kana": "たかい",
                       "desc": "高；贵"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很高；贵。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "少ない",
+                "kana": "すくない"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "安い",
+                "kana": "やすい"
+              }
+            ]
           }
         }
       },
@@ -545,29 +745,54 @@
                 "sentence": "この部屋は安いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很便宜。",
+                  "reading": "このへやはやすいです。",
+                  "romaji": "konoeyahayasuidesu.",
+                  "meaningZh": "这个房间很便宜。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "安い",
                       "kana": "やすい",
                       "desc": "便宜"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很便宜。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "高い",
+                "kana": "たかい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "新しい",
+                "kana": "あたらしい"
+              }
+            ]
           }
         }
       },
@@ -606,29 +831,54 @@
                 "sentence": "この本は新しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很新。",
+                  "reading": "このほんはあたらしいです。",
+                  "romaji": "konohonhaatarashiidesu.",
+                  "meaningZh": "这本书很新。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "新しい",
                       "kana": "あたらしい",
                       "desc": "新"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很新。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "安い",
+                "kana": "やすい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "古い",
+                "kana": "ふるい"
+              }
+            ]
           }
         }
       },
@@ -667,29 +917,64 @@
                 "sentence": "今日の天気は古いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很旧。",
+                  "reading": "きょうのてんきはふるいです。",
+                  "romaji": "kyounotenkihafuruidesu.",
+                  "meaningZh": "今天天气很旧。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "古い",
                       "kana": "ふるい",
                       "desc": "旧"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很旧。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "新しい",
+                "kana": "あたらしい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "長い",
+                "kana": "ながい"
+              }
+            ]
           }
         }
       },
@@ -728,29 +1013,54 @@
                 "sentence": "この部屋は長いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很长。",
+                  "reading": "このへやはながいです。",
+                  "romaji": "konoeyahanagaidesu.",
+                  "meaningZh": "这个房间很长。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "長い",
                       "kana": "ながい",
                       "desc": "长"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很长。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "古い",
+                "kana": "ふるい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "短い",
+                "kana": "みじかい"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1099,54 @@
                 "sentence": "この本は短いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很短。",
+                  "reading": "このほんはみじかいです。",
+                  "romaji": "konohonhamijikaidesu.",
+                  "meaningZh": "这本书很短。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "短い",
                       "kana": "みじかい",
                       "desc": "短"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很短。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "長い",
+                "kana": "ながい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "早い",
+                "kana": "はやい"
+              }
+            ]
           }
         }
       },
@@ -850,29 +1185,64 @@
                 "sentence": "今日の天気は早いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很早。",
+                  "reading": "きょうのてんきははやいです。",
+                  "romaji": "kyounotenkihahayaidesu.",
+                  "meaningZh": "今天天气很早。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "早い",
                       "kana": "はやい",
                       "desc": "早"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很早。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "短い",
+                "kana": "みじかい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "速い",
+                "kana": "はやい"
+              }
+            ]
           }
         }
       },
@@ -911,29 +1281,54 @@
                 "sentence": "この部屋は速いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很快。",
+                  "reading": "このへやははやいです。",
+                  "romaji": "konoeyahahayaidesu.",
+                  "meaningZh": "这个房间很快。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "速い",
                       "kana": "はやい",
                       "desc": "快"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很快。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "早い",
+                "kana": "はやい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "遅い",
+                "kana": "おそい"
+              }
+            ]
           }
         }
       },
@@ -972,29 +1367,54 @@
                 "sentence": "この本は遅いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很慢；晚。",
+                  "reading": "このほんはおそいです。",
+                  "romaji": "konohonhaosoidesu.",
+                  "meaningZh": "这本书很慢；晚。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "遅い",
                       "kana": "おそい",
                       "desc": "慢；晚"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很慢；晚。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "速い",
+                "kana": "はやい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "近い",
+                "kana": "ちかい"
+              }
+            ]
           }
         }
       },
@@ -1033,29 +1453,64 @@
                 "sentence": "今日の天気は近いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很近。",
+                  "reading": "きょうのてんきはちかいです。",
+                  "romaji": "kyounotenkihachikaidesu.",
+                  "meaningZh": "今天天气很近。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "近い",
                       "kana": "ちかい",
                       "desc": "近"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很近。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "遅い",
+                "kana": "おそい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "遠い",
+                "kana": "とおい"
+              }
+            ]
           }
         }
       },
@@ -1094,29 +1549,54 @@
                 "sentence": "この部屋は遠いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很远。",
+                  "reading": "このへやはとおいです。",
+                  "romaji": "konoeyahatooidesu.",
+                  "meaningZh": "这个房间很远。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "遠い",
                       "kana": "とおい",
                       "desc": "远"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很远。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "近い",
+                "kana": "ちかい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "暑い",
+                "kana": "あつい"
+              }
+            ]
           }
         }
       },
@@ -1155,29 +1635,54 @@
                 "sentence": "この本は暑いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很热（天气）。",
+                  "reading": "このほんはあついです。",
+                  "romaji": "konohonhaatsuidesu.",
+                  "meaningZh": "这本书很热（天气）。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "暑い",
                       "kana": "あつい",
                       "desc": "热（天气）"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很热（天气）。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "遠い",
+                "kana": "とおい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "熱い",
+                "kana": "あつい"
+              }
+            ]
           }
         }
       },
@@ -1216,29 +1721,64 @@
                 "sentence": "今日の天気は熱いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很热（物体）。",
+                  "reading": "きょうのてんきはあついです。",
+                  "romaji": "kyounotenkihaatsuidesu.",
+                  "meaningZh": "今天天气很热（物体）。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "熱い",
                       "kana": "あつい",
                       "desc": "热（物体）"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很热（物体）。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "暑い",
+                "kana": "あつい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "寒い",
+                "kana": "さむい"
+              }
+            ]
           }
         }
       },
@@ -1277,29 +1817,54 @@
                 "sentence": "この部屋は寒いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很冷（天气）。",
+                  "reading": "このへやはさむいです。",
+                  "romaji": "konoeyahasamuidesu.",
+                  "meaningZh": "这个房间很冷（天气）。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "寒い",
                       "kana": "さむい",
                       "desc": "冷（天气）"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很冷（天气）。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "熱い",
+                "kana": "あつい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "冷たい",
+                "kana": "つめたい"
+              }
+            ]
           }
         }
       },
@@ -1338,29 +1903,54 @@
                 "sentence": "この本は冷たいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很冰凉。",
+                  "reading": "このほんはつめたいです。",
+                  "romaji": "konohonhatsumetaidesu.",
+                  "meaningZh": "这本书很冰凉。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "冷たい",
                       "kana": "つめたい",
                       "desc": "冰凉"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很冰凉。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "寒い",
+                "kana": "さむい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "温かい",
+                "kana": "あたたかい"
+              }
+            ]
           }
         }
       },
@@ -1399,29 +1989,64 @@
                 "sentence": "今日の天気は温かいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很温暖。",
+                  "reading": "きょうのてんきはあたたかいです。",
+                  "romaji": "kyounotenkihaatatakaidesu.",
+                  "meaningZh": "今天天气很温暖。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "温かい",
                       "kana": "あたたかい",
                       "desc": "温暖"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很温暖。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "冷たい",
+                "kana": "つめたい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "難しい",
+                "kana": "むずかしい"
+              }
+            ]
           }
         }
       },
@@ -1460,29 +2085,54 @@
                 "sentence": "この部屋は難しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很难。",
+                  "reading": "このへやはむずかしいです。",
+                  "romaji": "konoeyahamuzukashiidesu.",
+                  "meaningZh": "这个房间很难。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "難しい",
                       "kana": "むずかしい",
                       "desc": "难"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很难。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "温かい",
+                "kana": "あたたかい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "易しい",
+                "kana": "やさしい"
+              }
+            ]
           }
         }
       },
@@ -1521,29 +2171,54 @@
                 "sentence": "この本は易しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很容易。",
+                  "reading": "このほんはやさしいです。",
+                  "romaji": "konohonhayasashiidesu.",
+                  "meaningZh": "这本书很容易。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "易しい",
                       "kana": "やさしい",
                       "desc": "容易"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很容易。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "難しい",
+                "kana": "むずかしい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "優しい",
+                "kana": "やさしい"
+              }
+            ]
           }
         }
       },
@@ -1582,29 +2257,64 @@
                 "sentence": "今日の天気は優しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很温柔。",
+                  "reading": "きょうのてんきはやさしいです。",
+                  "romaji": "kyounotenkihayasashiidesu.",
+                  "meaningZh": "今天天气很温柔。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "優しい",
                       "kana": "やさしい",
                       "desc": "温柔"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很温柔。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "易しい",
+                "kana": "やさしい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "忙しい",
+                "kana": "いそがしい"
+              }
+            ]
           }
         }
       },
@@ -1643,29 +2353,54 @@
                 "sentence": "この部屋は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很忙。",
+                  "reading": "このへやはいそがしいです。",
+                  "romaji": "konoeyahaisogashiidesu.",
+                  "meaningZh": "这个房间很忙。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "忙しい",
                       "kana": "いそがしい",
                       "desc": "忙"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很忙。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "優しい",
+                "kana": "やさしい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "楽しい",
+                "kana": "たのしい"
+              }
+            ]
           }
         }
       },
@@ -1704,29 +2439,54 @@
                 "sentence": "この本は楽しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很开心。",
+                  "reading": "このほんはたのしいです。",
+                  "romaji": "konohonhatanoshiidesu.",
+                  "meaningZh": "这本书很开心。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "楽しい",
                       "kana": "たのしい",
                       "desc": "开心"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很开心。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "忙しい",
+                "kana": "いそがしい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "面白い",
+                "kana": "おもしろい"
+              }
+            ]
           }
         }
       },
@@ -1765,29 +2525,64 @@
                 "sentence": "今日の天気は面白いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很有趣。",
+                  "reading": "きょうのてんきはおもしろいです。",
+                  "romaji": "kyounotenkihaomoshiroidesu.",
+                  "meaningZh": "今天天气很有趣。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "面白い",
                       "kana": "おもしろい",
                       "desc": "有趣"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很有趣。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "楽しい",
+                "kana": "たのしい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "つまらない",
+                "kana": "つまらない"
+              }
+            ]
           }
         }
       },
@@ -1826,29 +2621,54 @@
                 "sentence": "この部屋はつまらないです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很无聊。",
+                  "reading": "このへやはつまらないです。",
+                  "romaji": "konoeyahatsumaranaidesu.",
+                  "meaningZh": "这个房间很无聊。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "つまらない",
                       "kana": "つまらない",
                       "desc": "无聊"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很无聊。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "面白い",
+                "kana": "おもしろい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "おいしい",
+                "kana": "おいしい"
+              }
+            ]
           }
         }
       },
@@ -1887,29 +2707,54 @@
                 "sentence": "この本はおいしいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很好吃。",
+                  "reading": "このほんはおいしいです。",
+                  "romaji": "konohonhaoishiidesu.",
+                  "meaningZh": "这本书很好吃。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "おいしい",
                       "kana": "おいしい",
                       "desc": "好吃"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很好吃。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "つまらない",
+                "kana": "つまらない"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "まずい",
+                "kana": "まずい"
+              }
+            ]
           }
         }
       },
@@ -1948,29 +2793,64 @@
                 "sentence": "今日の天気はまずいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很难吃。",
+                  "reading": "きょうのてんきはまずいです。",
+                  "romaji": "kyounotenkihamazuidesu.",
+                  "meaningZh": "今天天气很难吃。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "まずい",
                       "kana": "まずい",
                       "desc": "难吃"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很难吃。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "おいしい",
+                "kana": "おいしい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "甘い",
+                "kana": "あまい"
+              }
+            ]
           }
         }
       },
@@ -2009,29 +2889,54 @@
                 "sentence": "この部屋は甘いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很甜。",
+                  "reading": "このへやはあまいです。",
+                  "romaji": "konoeyahaamaidesu.",
+                  "meaningZh": "这个房间很甜。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "甘い",
                       "kana": "あまい",
                       "desc": "甜"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很甜。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "まずい",
+                "kana": "まずい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "辛い",
+                "kana": "からい"
+              }
+            ]
           }
         }
       },
@@ -2070,29 +2975,54 @@
                 "sentence": "この本は辛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很辣。",
+                  "reading": "このほんはからいです。",
+                  "romaji": "konohonhakaraidesu.",
+                  "meaningZh": "这本书很辣。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "辛い",
                       "kana": "からい",
                       "desc": "辣"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很辣。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "甘い",
+                "kana": "あまい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "しょっぱい",
+                "kana": "しょっぱい"
+              }
+            ]
           }
         }
       },
@@ -2131,29 +3061,64 @@
                 "sentence": "今日の天気はしょっぱいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很咸。",
+                  "reading": "きょうのてんきはしょっぱいです。",
+                  "romaji": "kyounotenkihashoppaidesu.",
+                  "meaningZh": "今天天气很咸。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "しょっぱい",
                       "kana": "しょっぱい",
                       "desc": "咸"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很咸。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "辛い",
+                "kana": "からい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "苦い",
+                "kana": "にがい"
+              }
+            ]
           }
         }
       },
@@ -2192,29 +3157,54 @@
                 "sentence": "この部屋は苦いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很苦。",
+                  "reading": "このへやはにがいです。",
+                  "romaji": "konoeyahanigaidesu.",
+                  "meaningZh": "这个房间很苦。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "苦い",
                       "kana": "にがい",
                       "desc": "苦"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很苦。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "しょっぱい",
+                "kana": "しょっぱい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "丸い",
+                "kana": "まるい"
+              }
+            ]
           }
         }
       },
@@ -2253,29 +3243,54 @@
                 "sentence": "この本は丸いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很圆。",
+                  "reading": "このほんはまるいです。",
+                  "romaji": "konohonhamaruidesu.",
+                  "meaningZh": "这本书很圆。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "丸い",
                       "kana": "まるい",
                       "desc": "圆"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很圆。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "苦い",
+                "kana": "にがい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "赤い",
+                "kana": "あかい"
+              }
+            ]
           }
         }
       },
@@ -2314,29 +3329,64 @@
                 "sentence": "今日の天気は赤いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很红色的。",
+                  "reading": "きょうのてんきはあかいです。",
+                  "romaji": "kyounotenkihaakaidesu.",
+                  "meaningZh": "今天天气很红色的。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "赤い",
                       "kana": "あかい",
                       "desc": "红色的"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很红色的。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "丸い",
+                "kana": "まるい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "青い",
+                "kana": "あおい"
+              }
+            ]
           }
         }
       },
@@ -2375,29 +3425,54 @@
                 "sentence": "この部屋は青いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很蓝色的；青色的。",
+                  "reading": "このへやはあおいです。",
+                  "romaji": "konoeyahaaoidesu.",
+                  "meaningZh": "这个房间很蓝色的；青色的。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "青い",
                       "kana": "あおい",
                       "desc": "蓝色的；青色的"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很蓝色的；青色的。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "赤い",
+                "kana": "あかい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "白い",
+                "kana": "しろい"
+              }
+            ]
           }
         }
       },
@@ -2436,29 +3511,54 @@
                 "sentence": "この本は白いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很白色的。",
+                  "reading": "このほんはしろいです。",
+                  "romaji": "konohonhashiroidesu.",
+                  "meaningZh": "这本书很白色的。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "白い",
                       "kana": "しろい",
                       "desc": "白色的"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很白色的。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "青い",
+                "kana": "あおい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "黒い",
+                "kana": "くろい"
+              }
+            ]
           }
         }
       },
@@ -2497,29 +3597,64 @@
                 "sentence": "今日の天気は黒いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很黑色的。",
+                  "reading": "きょうのてんきはくろいです。",
+                  "romaji": "kyounotenkihakuroidesu.",
+                  "meaningZh": "今天天气很黑色的。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "黒い",
                       "kana": "くろい",
                       "desc": "黑色的"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很黑色的。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "白い",
+                "kana": "しろい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "明るい",
+                "kana": "あかるい"
+              }
+            ]
           }
         }
       },
@@ -2558,29 +3693,54 @@
                 "sentence": "この部屋は明るいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很明亮；开朗。",
+                  "reading": "このへやはあかるいです。",
+                  "romaji": "konoeyahaakaruidesu.",
+                  "meaningZh": "这个房间很明亮；开朗。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "明るい",
                       "kana": "あかるい",
                       "desc": "明亮；开朗"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很明亮；开朗。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "黒い",
+                "kana": "くろい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "暗い",
+                "kana": "くらい"
+              }
+            ]
           }
         }
       },
@@ -2619,29 +3779,54 @@
                 "sentence": "この本は暗いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很昏暗；阴沉。",
+                  "reading": "このほんはくらいです。",
+                  "romaji": "konohonhakuraidesu.",
+                  "meaningZh": "这本书很昏暗；阴沉。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "暗い",
                       "kana": "くらい",
                       "desc": "昏暗；阴沉"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很昏暗；阴沉。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "明るい",
+                "kana": "あかるい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "若い",
+                "kana": "わかい"
+              }
+            ]
           }
         }
       },
@@ -2680,29 +3865,64 @@
                 "sentence": "今日の天気は若いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很年轻。",
+                  "reading": "きょうのてんきはわかいです。",
+                  "romaji": "kyounotenkihawakaidesu.",
+                  "meaningZh": "今天天气很年轻。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "若い",
                       "kana": "わかい",
                       "desc": "年轻"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很年轻。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "暗い",
+                "kana": "くらい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "偉い",
+                "kana": "えらい"
+              }
+            ]
           }
         }
       },
@@ -2741,29 +3961,54 @@
                 "sentence": "この部屋は偉いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很了不起；地位高。",
+                  "reading": "このへやはえらいです。",
+                  "romaji": "konoeyahaeraidesu.",
+                  "meaningZh": "这个房间很了不起；地位高。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "偉い",
                       "kana": "えらい",
                       "desc": "了不起；地位高"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很了不起；地位高。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "若い",
+                "kana": "わかい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "痛い",
+                "kana": "いたい"
+              }
+            ]
           }
         }
       },
@@ -2802,29 +4047,54 @@
                 "sentence": "この本は痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很痛。",
+                  "reading": "このほんはいたいです。",
+                  "romaji": "konohonhaitaidesu.",
+                  "meaningZh": "这本书很痛。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "痛い",
                       "kana": "いたい",
                       "desc": "痛"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很痛。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "偉い",
+                "kana": "えらい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "眠い",
+                "kana": "ねむい"
+              }
+            ]
           }
         }
       },
@@ -2863,29 +4133,64 @@
                 "sentence": "今日の天気は眠いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很困。",
+                  "reading": "きょうのてんきはねむいです。",
+                  "romaji": "kyounotenkihanemuidesu.",
+                  "meaningZh": "今天天气很困。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "眠い",
                       "kana": "ねむい",
                       "desc": "困"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很困。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "痛い",
+                "kana": "いたい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "欲しい",
+                "kana": "ほしい"
+              }
+            ]
           }
         }
       },
@@ -2924,29 +4229,54 @@
                 "sentence": "この部屋は欲しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很想要。",
+                  "reading": "このへやはほしいです。",
+                  "romaji": "konoeyahahoshiidesu.",
+                  "meaningZh": "这个房间很想要。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この部屋",
+                      "kana": "このへや",
+                      "desc": "这个房间"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "欲しい",
                       "kana": "ほしい",
                       "desc": "想要"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很想要。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "眠い",
+                "kana": "ねむい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "危ない",
+                "kana": "あぶない"
+              }
+            ]
           }
         }
       },
@@ -2985,29 +4315,54 @@
                 "sentence": "この本は危ないです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很危险。",
+                  "reading": "このほんはあぶないです。",
+                  "romaji": "konohonhaabunaidesu.",
+                  "meaningZh": "这本书很危险。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この本",
+                      "kana": "このほん",
+                      "desc": "这本书"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "危ない",
                       "kana": "あぶない",
                       "desc": "危险"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很危险。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "欲しい",
+                "kana": "ほしい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "少し",
+                "kana": "すこし"
+              }
+            ]
           }
         }
       },
@@ -3046,26 +4401,56 @@
                 "sentence": "今日の天気は少しです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个场景很一点儿（也常作副词）。",
+                  "reading": "きょうのてんきはすこしです。",
+                  "romaji": "kyounotenkihasukoshidesu.",
+                  "meaningZh": "今天天气很一点儿（也常作副词）。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
+                    {
+                      "word": "天気",
+                      "kana": "てんき",
+                      "desc": "天气"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "少し",
                       "kana": "すこし",
                       "desc": "一点儿（也常作副词）"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は い形容词です",
-                    "meaningZh": "这个场景很一点儿（也常作副词）。"
+                    "meaningZh": "A 很…（い形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "危ない",
+                "kana": "あぶない"
+              }
+            ]
           },
           "related": {
             "items": []

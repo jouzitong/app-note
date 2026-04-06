@@ -118,10 +118,30 @@
                 "sentence": "私は音楽が好きです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしはおんがくがすきです。",
+                  "romaji": "watashihaongakugasukidesu.",
                   "meaningZh": "我喜欢音乐。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "音楽",
+                      "kana": "おんがく",
+                      "desc": "音乐"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
                     {
                       "word": "好き",
                       "kana": "すき",
@@ -130,7 +150,7 @@
                   ],
                   "fixedPattern": {
                     "pattern": "A が 好きです",
-                    "meaningZh": "我喜欢音乐。"
+                    "meaningZh": "喜欢 A"
                   }
                 }
               }
@@ -140,7 +160,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "嫌い",
+                "kana": "きらい"
+              }
+            ]
           }
         }
       },
@@ -179,10 +204,30 @@
                 "sentence": "私は納豆が嫌いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしはなっとうがきらいです。",
+                  "romaji": "watashihanattougakiraidesu.",
                   "meaningZh": "我讨厌纳豆。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "納豆",
+                      "kana": "なっとう",
+                      "desc": "纳豆"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
                     {
                       "word": "嫌い",
                       "kana": "きらい",
@@ -191,17 +236,27 @@
                   ],
                   "fixedPattern": {
                     "pattern": "A が 嫌いです",
-                    "meaningZh": "我讨厌纳豆。"
+                    "meaningZh": "讨厌 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "好き",
+                "kana": "すき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "上手",
+                "kana": "じょうず"
+              }
+            ]
           }
         }
       },
@@ -240,10 +295,30 @@
                 "sentence": "彼は日本語が上手です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはにほんごがじょうずです。",
+                  "romaji": "karehanihongogajouzudesu.",
                   "meaningZh": "他日语很擅长。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "日本語",
+                      "kana": "にほんご",
+                      "desc": "日语"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
                     {
                       "word": "上手",
                       "kana": "じょうず",
@@ -252,17 +327,27 @@
                   ],
                   "fixedPattern": {
                     "pattern": "A が 上手です",
-                    "meaningZh": "他日语很擅长。"
+                    "meaningZh": "擅长 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "嫌い",
+                "kana": "きらい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "下手",
+                "kana": "へた"
+              }
+            ]
           }
         }
       },
@@ -301,10 +386,30 @@
                 "sentence": "彼は料理が下手です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはりょうりがへたです。",
+                  "romaji": "kareharyourigaetadesu.",
                   "meaningZh": "他不擅长做饭。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "料理",
+                      "kana": "りょうり",
+                      "desc": "料理"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
                     {
                       "word": "下手",
                       "kana": "へた",
@@ -313,17 +418,27 @@
                   ],
                   "fixedPattern": {
                     "pattern": "A が 下手です",
-                    "meaningZh": "他不擅长做饭。"
+                    "meaningZh": "不擅长 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "上手",
+                "kana": "じょうず"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "有名",
+                "kana": "ゆうめい"
+              }
+            ]
           }
         }
       },
@@ -362,29 +477,54 @@
                 "sentence": "この町は有名です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはゆうめいです。",
+                  "romaji": "konomachihayuumeidesu.",
                   "meaningZh": "这个城市很有名。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "有名",
                       "kana": "ゆうめい",
                       "desc": "有名"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很有名。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "下手",
+                "kana": "へた"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "静か",
+                "kana": "しずか"
+              }
+            ]
           }
         }
       },
@@ -420,32 +560,57 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-006-1",
-                "sentence": "この図書館は静かです。",
+                "sentence": "この町は静かです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "这个图书馆很安静。",
+                  "reading": "このまちはしずかです。",
+                  "romaji": "konomachihashizukadesu.",
+                  "meaningZh": "这个城市很安静。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "静か",
                       "kana": "しずか",
                       "desc": "安静"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 静かです",
-                    "meaningZh": "这个图书馆很安静。"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "有名",
+                "kana": "ゆうめい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "にぎやか",
+                "kana": "にぎやか"
+              }
+            ]
           }
         }
       },
@@ -481,32 +646,57 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-007-1",
-                "sentence": "駅前はにぎやかです。",
+                "sentence": "この町はにぎやかです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "车站前很热闹。",
+                  "reading": "このまちはにぎやかです。",
+                  "romaji": "konomachihanigiyakadesu.",
+                  "meaningZh": "这个城市很热闹。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "にぎやか",
                       "kana": "にぎやか",
                       "desc": "热闹"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は にぎやかです",
-                    "meaningZh": "车站前很热闹。"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "静か",
+                "kana": "しずか"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "便利",
+                "kana": "べんり"
+              }
+            ]
           }
         }
       },
@@ -545,29 +735,54 @@
                 "sentence": "この町は便利です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはべんりです。",
+                  "romaji": "konomachihabenridesu.",
                   "meaningZh": "这个城市很方便。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "便利",
                       "kana": "べんり",
                       "desc": "方便"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很方便。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "にぎやか",
+                "kana": "にぎやか"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "不便",
+                "kana": "ふべん"
+              }
+            ]
           }
         }
       },
@@ -606,29 +821,54 @@
                 "sentence": "この町は不便です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはふべんです。",
+                  "romaji": "konomachihafubendesu.",
                   "meaningZh": "这个城市很不方便。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "不便",
                       "kana": "ふべん",
                       "desc": "不方便"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很不方便。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "便利",
+                "kana": "べんり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "元気",
+                "kana": "げんき"
+              }
+            ]
           }
         }
       },
@@ -664,32 +904,57 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-010-1",
-                "sentence": "今日は元気です。",
+                "sentence": "この町は元気です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "今天很有精神。",
+                  "reading": "このまちはげんきです。",
+                  "romaji": "konomachihagenkidesu.",
+                  "meaningZh": "这个城市很精神；健康。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "元気",
                       "kana": "げんき",
                       "desc": "精神；健康"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 元気です",
-                    "meaningZh": "今天很有精神。"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "不便",
+                "kana": "ふべん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "大丈夫",
+                "kana": "だいじょうぶ"
+              }
+            ]
           }
         }
       },
@@ -728,29 +993,54 @@
                 "sentence": "この町は大丈夫です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはだいじょうぶです。",
+                  "romaji": "konomachihadaijoubudesu.",
                   "meaningZh": "这个城市很没关系；不要紧。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "大丈夫",
                       "kana": "だいじょうぶ",
                       "desc": "没关系；不要紧"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很没关系；不要紧。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "元気",
+                "kana": "げんき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "大切",
+                "kana": "たいせつ"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1079,54 @@
                 "sentence": "この町は大切です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはたいせつです。",
+                  "romaji": "konomachihataisetsudesu.",
                   "meaningZh": "这个城市很重要；珍贵。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "大切",
                       "kana": "たいせつ",
                       "desc": "重要；珍贵"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很重要；珍贵。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "大丈夫",
+                "kana": "だいじょうぶ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "簡単",
+                "kana": "かんたん"
+              }
+            ]
           }
         }
       },
@@ -850,29 +1165,54 @@
                 "sentence": "この町は簡単です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはかんたんです。",
+                  "romaji": "konomachihakantandesu.",
                   "meaningZh": "这个城市很简单。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "簡単",
                       "kana": "かんたん",
                       "desc": "简单"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很简单。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "大切",
+                "kana": "たいせつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "親切",
+                "kana": "しんせつ"
+              }
+            ]
           }
         }
       },
@@ -911,29 +1251,54 @@
                 "sentence": "この町は親切です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはしんせつです。",
+                  "romaji": "konomachihashinsetsudesu.",
                   "meaningZh": "这个城市很亲切。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "親切",
                       "kana": "しんせつ",
                       "desc": "亲切"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很亲切。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "簡単",
+                "kana": "かんたん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "きれい",
+                "kana": "きれい"
+              }
+            ]
           }
         }
       },
@@ -972,29 +1337,54 @@
                 "sentence": "この町はきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはきれいです。",
+                  "romaji": "konomachihakireidesu.",
                   "meaningZh": "这个城市很漂亮；干净。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "きれい",
                       "kana": "きれい",
                       "desc": "漂亮；干净"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很漂亮；干净。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "親切",
+                "kana": "しんせつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "暇",
+                "kana": "ひま"
+              }
+            ]
           }
         }
       },
@@ -1030,32 +1420,57 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-naadj-016-1",
-                "sentence": "今日は暇です。",
+                "sentence": "この町は暇です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "今天有空。",
+                  "reading": "このまちはひまです。",
+                  "romaji": "konomachihahimadesu.",
+                  "meaningZh": "这个城市很有空；闲。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "暇",
                       "kana": "ひま",
                       "desc": "有空；闲"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 暇です",
-                    "meaningZh": "今天有空。"
+                    "pattern": "A は な形容词です",
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "きれい",
+                "kana": "きれい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "残念",
+                "kana": "ざんねん"
+              }
+            ]
           }
         }
       },
@@ -1094,29 +1509,54 @@
                 "sentence": "この町は残念です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはざんねんです。",
+                  "romaji": "konomachihazannendesu.",
                   "meaningZh": "这个城市很遗憾。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "残念",
                       "kana": "ざんねん",
                       "desc": "遗憾"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很遗憾。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "暇",
+                "kana": "ひま"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "必要",
+                "kana": "ひつよう"
+              }
+            ]
           }
         }
       },
@@ -1155,29 +1595,54 @@
                 "sentence": "この町は必要です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはひつようです。",
+                  "romaji": "konomachihahitsuyoudesu.",
                   "meaningZh": "这个城市很必要。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "必要",
                       "kana": "ひつよう",
                       "desc": "必要"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很必要。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "残念",
+                "kana": "ざんねん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "同じ",
+                "kana": "おなじ"
+              }
+            ]
           }
         }
       },
@@ -1216,29 +1681,54 @@
                 "sentence": "この町は同じです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはおなじです。",
+                  "romaji": "konomachihaonajidesu.",
                   "meaningZh": "这个城市很相同。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "同じ",
                       "kana": "おなじ",
                       "desc": "相同"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很相同。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "必要",
+                "kana": "ひつよう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "特別",
+                "kana": "とくべつ"
+              }
+            ]
           }
         }
       },
@@ -1277,29 +1767,54 @@
                 "sentence": "この町は特別です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはとくべつです。",
+                  "romaji": "konomachihatokubetsudesu.",
                   "meaningZh": "这个城市很特别。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "特別",
                       "kana": "とくべつ",
                       "desc": "特别"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很特别。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "同じ",
+                "kana": "おなじ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "自由",
+                "kana": "じゆう"
+              }
+            ]
           }
         }
       },
@@ -1338,29 +1853,54 @@
                 "sentence": "この町は自由です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはじゆうです。",
+                  "romaji": "konomachihajiyuudesu.",
                   "meaningZh": "这个城市很自由。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "自由",
                       "kana": "じゆう",
                       "desc": "自由"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很自由。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "特別",
+                "kana": "とくべつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "下手",
+                "kana": "へた"
+              }
+            ]
           }
         }
       },
@@ -1399,29 +1939,59 @@
                 "sentence": "彼は料理が下手です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはりょうりがへたです。",
+                  "romaji": "kareharyourigaetadesu.",
                   "meaningZh": "他不擅长做饭。",
                   "wordGrammarBreakdown": [
                     {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "料理",
+                      "kana": "りょうり",
+                      "desc": "料理"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
                       "word": "下手",
                       "kana": "へた",
-                      "desc": "笨拙"
+                      "desc": "不擅长"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 下手です",
-                    "meaningZh": "他不擅长做饭。"
+                    "meaningZh": "不擅长 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "自由",
+                "kana": "じゆう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "変",
+                "kana": "へん"
+              }
+            ]
           }
         }
       },
@@ -1460,29 +2030,54 @@
                 "sentence": "この町は変です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはへんです。",
+                  "romaji": "konomachihaendesu.",
                   "meaningZh": "这个城市很奇怪。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "変",
                       "kana": "へん",
                       "desc": "奇怪"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很奇怪。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "下手",
+                "kana": "へた"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "まじめ",
+                "kana": "まじめ"
+              }
+            ]
           }
         }
       },
@@ -1521,26 +2116,46 @@
                 "sentence": "この町はまじめです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このまちはまじめです。",
+                  "romaji": "konomachihamajimedesu.",
                   "meaningZh": "这个城市很认真。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この町",
+                      "kana": "このまち",
+                      "desc": "这个城市"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "まじめ",
                       "kana": "まじめ",
                       "desc": "认真"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は な形容词です",
-                    "meaningZh": "这个城市很认真。"
+                    "meaningZh": "A 很…（な形）"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "変",
+                "kana": "へん"
+              }
+            ]
           },
           "related": {
             "items": []

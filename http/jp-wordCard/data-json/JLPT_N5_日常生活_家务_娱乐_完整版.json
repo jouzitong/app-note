@@ -118,19 +118,39 @@
                 "sentence": "夜に生活をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにせいかつをします。",
+                  "romaji": "yoruniseikatsuoshimasu.",
                   "meaningZh": "晚上生活。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "生活",
                       "kana": "せいかつ",
                       "desc": "生活"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上生活。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
@@ -140,7 +160,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "仕事",
+                "kana": "しごと"
+              }
+            ]
           }
         }
       },
@@ -179,29 +204,59 @@
                 "sentence": "夜に仕事をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにしごとをします。",
+                  "romaji": "yorunishigotooshimasu.",
                   "meaningZh": "晚上工作。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "仕事",
                       "kana": "しごと",
                       "desc": "工作"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上工作。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "生活",
+                "kana": "せいかつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "用事",
+                "kana": "ようじ"
+              }
+            ]
           }
         }
       },
@@ -240,29 +295,59 @@
                 "sentence": "夜に用事をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにようじをします。",
+                  "romaji": "yoruniyoujioshimasu.",
                   "meaningZh": "晚上事情。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "用事",
                       "kana": "ようじ",
                       "desc": "事情"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上事情。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "仕事",
+                "kana": "しごと"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "時間",
+                "kana": "じかん"
+              }
+            ]
           }
         }
       },
@@ -301,29 +386,59 @@
                 "sentence": "夜に時間をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにじかんをします。",
+                  "romaji": "yorunijikanoshimasu.",
                   "meaningZh": "晚上时间。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "時間",
                       "kana": "じかん",
                       "desc": "时间"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上时间。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "用事",
+                "kana": "ようじ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "電話",
+                "kana": "でんわ"
+              }
+            ]
           }
         }
       },
@@ -362,29 +477,59 @@
                 "sentence": "夜に電話をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにでんわをします。",
+                  "romaji": "yorunidenwaoshimasu.",
                   "meaningZh": "晚上电话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "電話",
                       "kana": "でんわ",
                       "desc": "电话"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上电话。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "時間",
+                "kana": "じかん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "手紙",
+                "kana": "てがみ"
+              }
+            ]
           }
         }
       },
@@ -423,29 +568,59 @@
                 "sentence": "夜に手紙をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにてがみをします。",
+                  "romaji": "yorunitegamioshimasu.",
                   "meaningZh": "晚上信。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "手紙",
                       "kana": "てがみ",
                       "desc": "信"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上信。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "電話",
+                "kana": "でんわ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "メール",
+                "kana": "メール"
+              }
+            ]
           }
         }
       },
@@ -484,29 +659,59 @@
                 "sentence": "夜にメールをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにメールをします。",
+                  "romaji": "yorunime-ruoshimasu.",
                   "meaningZh": "晚上邮件。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "メール",
                       "kana": "メール",
                       "desc": "邮件"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上邮件。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "手紙",
+                "kana": "てがみ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "写真",
+                "kana": "しゃしん"
+              }
+            ]
           }
         }
       },
@@ -545,29 +750,59 @@
                 "sentence": "夜に写真をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにしゃしんをします。",
+                  "romaji": "yorunishashinoshimasu.",
                   "meaningZh": "晚上照片。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "写真",
                       "kana": "しゃしん",
                       "desc": "照片"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上照片。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "メール",
+                "kana": "メール"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "音楽",
+                "kana": "おんがく"
+              }
+            ]
           }
         }
       },
@@ -606,29 +841,59 @@
                 "sentence": "夜に音楽をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにおんがくをします。",
+                  "romaji": "yoruniongakuoshimasu.",
                   "meaningZh": "晚上音乐。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "音楽",
                       "kana": "おんがく",
                       "desc": "音乐"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上音乐。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "写真",
+                "kana": "しゃしん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "映画",
+                "kana": "えいが"
+              }
+            ]
           }
         }
       },
@@ -667,29 +932,59 @@
                 "sentence": "夜に映画をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにえいがをします。",
+                  "romaji": "yorunieigaoshimasu.",
                   "meaningZh": "晚上电影。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "映画",
                       "kana": "えいが",
                       "desc": "电影"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上电影。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "音楽",
+                "kana": "おんがく"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "歌",
+                "kana": "うた"
+              }
+            ]
           }
         }
       },
@@ -728,29 +1023,59 @@
                 "sentence": "夜に歌をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにうたをします。",
+                  "romaji": "yoruniutaoshimasu.",
                   "meaningZh": "晚上歌。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "歌",
                       "kana": "うた",
                       "desc": "歌"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上歌。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "映画",
+                "kana": "えいが"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "声",
+                "kana": "こえ"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1114,59 @@
                 "sentence": "夜に声をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにこえをします。",
+                  "romaji": "yorunikoeoshimasu.",
                   "meaningZh": "晚上声音。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "声",
                       "kana": "こえ",
                       "desc": "声音"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上声音。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "歌",
+                "kana": "うた"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "新聞",
+                "kana": "しんぶん"
+              }
+            ]
           }
         }
       },
@@ -850,29 +1205,59 @@
                 "sentence": "夜に新聞をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにしんぶんをします。",
+                  "romaji": "yorunishinbunoshimasu.",
                   "meaningZh": "晚上报纸。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "新聞",
                       "kana": "しんぶん",
                       "desc": "报纸"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上报纸。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "声",
+                "kana": "こえ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "雑誌",
+                "kana": "ざっし"
+              }
+            ]
           }
         }
       },
@@ -911,29 +1296,59 @@
                 "sentence": "夜に雑誌をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにざっしをします。",
+                  "romaji": "yorunizasshioshimasu.",
                   "meaningZh": "晚上杂志。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "雑誌",
                       "kana": "ざっし",
                       "desc": "杂志"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上杂志。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "新聞",
+                "kana": "しんぶん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "テレビ",
+                "kana": "テレビ"
+              }
+            ]
           }
         }
       },
@@ -972,29 +1387,59 @@
                 "sentence": "夜にテレビをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにテレビをします。",
+                  "romaji": "yoruniterebioshimasu.",
                   "meaningZh": "晚上电视。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "テレビ",
                       "kana": "テレビ",
                       "desc": "电视"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上电视。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "雑誌",
+                "kana": "ざっし"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ラジオ",
+                "kana": "ラジオ"
+              }
+            ]
           }
         }
       },
@@ -1033,29 +1478,59 @@
                 "sentence": "夜にラジオをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにラジオをします。",
+                  "romaji": "yorunirajiooshimasu.",
                   "meaningZh": "晚上广播。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "ラジオ",
                       "kana": "ラジオ",
                       "desc": "广播"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上广播。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "テレビ",
+                "kana": "テレビ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "カメラ",
+                "kana": "カメラ"
+              }
+            ]
           }
         }
       },
@@ -1094,29 +1569,59 @@
                 "sentence": "夜にカメラをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにカメラをします。",
+                  "romaji": "yorunikameraoshimasu.",
                   "meaningZh": "晚上相机。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "カメラ",
                       "kana": "カメラ",
                       "desc": "相机"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上相机。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ラジオ",
+                "kana": "ラジオ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "コンピューター",
+                "kana": "コンピューター"
+              }
+            ]
           }
         }
       },
@@ -1155,29 +1660,59 @@
                 "sentence": "夜にコンピューターをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにコンピューターをします。",
+                  "romaji": "yorunikonpyu-ta-oshimasu.",
                   "meaningZh": "晚上电脑。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "コンピューター",
                       "kana": "コンピューター",
                       "desc": "电脑"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上电脑。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "カメラ",
+                "kana": "カメラ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "パソコン",
+                "kana": "パソコン"
+              }
+            ]
           }
         }
       },
@@ -1216,29 +1751,59 @@
                 "sentence": "夜にパソコンをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにパソコンをします。",
+                  "romaji": "yorunipasokonoshimasu.",
                   "meaningZh": "晚上个人电脑。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "パソコン",
                       "kana": "パソコン",
                       "desc": "个人电脑"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上个人电脑。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "コンピューター",
+                "kana": "コンピューター"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "インターネット",
+                "kana": "インターネット"
+              }
+            ]
           }
         }
       },
@@ -1277,29 +1842,59 @@
                 "sentence": "夜にインターネットをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにインターネットをします。",
+                  "romaji": "yoruniinta-nettooshimasu.",
                   "meaningZh": "晚上互联网。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "インターネット",
                       "kana": "インターネット",
                       "desc": "互联网"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上互联网。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "パソコン",
+                "kana": "パソコン"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ゲーム",
+                "kana": "ゲーム"
+              }
+            ]
           }
         }
       },
@@ -1338,29 +1933,59 @@
                 "sentence": "夜にゲームをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにゲームをします。",
+                  "romaji": "yorunige-muoshimasu.",
                   "meaningZh": "晚上游戏。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "ゲーム",
                       "kana": "ゲーム",
                       "desc": "游戏"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上游戏。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "インターネット",
+                "kana": "インターネット"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "スポーツ",
+                "kana": "スポーツ"
+              }
+            ]
           }
         }
       },
@@ -1399,29 +2024,59 @@
                 "sentence": "夜にスポーツをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにスポーツをします。",
+                  "romaji": "yorunisupo-tsuoshimasu.",
                   "meaningZh": "晚上运动。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "スポーツ",
                       "kana": "スポーツ",
                       "desc": "运动"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上运动。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ゲーム",
+                "kana": "ゲーム"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "テニス",
+                "kana": "テニス"
+              }
+            ]
           }
         }
       },
@@ -1460,29 +2115,59 @@
                 "sentence": "夜にテニスをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにテニスをします。",
+                  "romaji": "yorunitenisuoshimasu.",
                   "meaningZh": "晚上网球。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "テニス",
                       "kana": "テニス",
                       "desc": "网球"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上网球。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "スポーツ",
+                "kana": "スポーツ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "サッカー",
+                "kana": "サッカー"
+              }
+            ]
           }
         }
       },
@@ -1521,29 +2206,59 @@
                 "sentence": "夜にサッカーをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにサッカーをします。",
+                  "romaji": "yorunisakka-oshimasu.",
                   "meaningZh": "晚上足球。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "サッカー",
                       "kana": "サッカー",
                       "desc": "足球"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上足球。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "テニス",
+                "kana": "テニス"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "野球",
+                "kana": "やきゅう"
+              }
+            ]
           }
         }
       },
@@ -1582,29 +2297,59 @@
                 "sentence": "夜に野球をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにやきゅうをします。",
+                  "romaji": "yoruniyakyuuoshimasu.",
                   "meaningZh": "晚上棒球。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "野球",
                       "kana": "やきゅう",
                       "desc": "棒球"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上棒球。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "サッカー",
+                "kana": "サッカー"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "プール",
+                "kana": "プール"
+              }
+            ]
           }
         }
       },
@@ -1643,29 +2388,59 @@
                 "sentence": "夜にプールをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにプールをします。",
+                  "romaji": "yorunipu-ruoshimasu.",
                   "meaningZh": "晚上游泳池。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "プール",
                       "kana": "プール",
                       "desc": "游泳池"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上游泳池。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "野球",
+                "kana": "やきゅう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "パーティー",
+                "kana": "パーティー"
+              }
+            ]
           }
         }
       },
@@ -1704,29 +2479,59 @@
                 "sentence": "夜にパーティーをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにパーティーをします。",
+                  "romaji": "yorunipa-tei-oshimasu.",
                   "meaningZh": "晚上聚会。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "パーティー",
                       "kana": "パーティー",
                       "desc": "聚会"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上聚会。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "プール",
+                "kana": "プール"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "宿泊",
+                "kana": "しゅくはく"
+              }
+            ]
           }
         }
       },
@@ -1765,29 +2570,59 @@
                 "sentence": "夜に宿泊をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにしゅくはくをします。",
+                  "romaji": "yorunishukuhakuoshimasu.",
                   "meaningZh": "晚上住宿。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "宿泊",
                       "kana": "しゅくはく",
                       "desc": "住宿"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上住宿。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "パーティー",
+                "kana": "パーティー"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "掃除",
+                "kana": "そうじ"
+              }
+            ]
           }
         }
       },
@@ -1826,29 +2661,59 @@
                 "sentence": "夜に掃除をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにそうじをします。",
+                  "romaji": "yorunisoujioshimasu.",
                   "meaningZh": "晚上打扫。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "掃除",
                       "kana": "そうじ",
                       "desc": "打扫"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上打扫。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "宿泊",
+                "kana": "しゅくはく"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "洗濯",
+                "kana": "せんたく"
+              }
+            ]
           }
         }
       },
@@ -1887,29 +2752,59 @@
                 "sentence": "夜に洗濯をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにせんたくをします。",
+                  "romaji": "yorunisentakuoshimasu.",
                   "meaningZh": "晚上洗衣服。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "洗濯",
                       "kana": "せんたく",
                       "desc": "洗衣服"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上洗衣服。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "掃除",
+                "kana": "そうじ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "料理",
+                "kana": "りょうり"
+              }
+            ]
           }
         }
       },
@@ -1948,29 +2843,59 @@
                 "sentence": "夜に料理をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにりょうりをします。",
+                  "romaji": "yoruniryourioshimasu.",
                   "meaningZh": "晚上做饭；料理。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "料理",
                       "kana": "りょうり",
                       "desc": "做饭；料理"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上做饭；料理。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "洗濯",
+                "kana": "せんたく"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "コピー",
+                "kana": "コピー"
+              }
+            ]
           }
         }
       },
@@ -2009,29 +2934,59 @@
                 "sentence": "夜にコピーをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにコピーをします。",
+                  "romaji": "yorunikopi-oshimasu.",
                   "meaningZh": "晚上复印。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "コピー",
                       "kana": "コピー",
                       "desc": "复印"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上复印。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "料理",
+                "kana": "りょうり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "会議",
+                "kana": "かいぎ"
+              }
+            ]
           }
         }
       },
@@ -2070,29 +3025,59 @@
                 "sentence": "夜に会議をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにかいぎをします。",
+                  "romaji": "yorunikaigioshimasu.",
                   "meaningZh": "晚上会议。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "会議",
                       "kana": "かいぎ",
                       "desc": "会议"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上会议。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "コピー",
+                "kana": "コピー"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "説明",
+                "kana": "せつめい"
+              }
+            ]
           }
         }
       },
@@ -2131,29 +3116,59 @@
                 "sentence": "夜に説明をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにせつめいをします。",
+                  "romaji": "yorunisetsumeioshimasu.",
                   "meaningZh": "晚上说明。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "説明",
                       "kana": "せつめい",
                       "desc": "说明"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上说明。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "会議",
+                "kana": "かいぎ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "案内",
+                "kana": "あんない"
+              }
+            ]
           }
         }
       },
@@ -2192,29 +3207,59 @@
                 "sentence": "夜に案内をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにあんないをします。",
+                  "romaji": "yoruniannaioshimasu.",
                   "meaningZh": "晚上向导；介绍。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "案内",
                       "kana": "あんない",
                       "desc": "向导；介绍"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上向导；介绍。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "説明",
+                "kana": "せつめい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "準備",
+                "kana": "じゅんび"
+              }
+            ]
           }
         }
       },
@@ -2253,29 +3298,59 @@
                 "sentence": "夜に準備をします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにじゅんびをします。",
+                  "romaji": "yorunijunbioshimasu.",
                   "meaningZh": "晚上准备。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "準備",
                       "kana": "じゅんび",
                       "desc": "准备"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上准备。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "案内",
+                "kana": "あんない"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "片付け",
+                "kana": "かたづけ"
+              }
+            ]
           }
         }
       },
@@ -2314,26 +3389,51 @@
                 "sentence": "夜に片付けをします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "よるにかたづけをします。",
+                  "romaji": "yorunikatazukeoshimasu.",
                   "meaningZh": "晚上收拾整理。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夜",
+                      "kana": "よる",
+                      "desc": "夜晚"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "片付け",
                       "kana": "かたづけ",
                       "desc": "收拾整理"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "します",
+                      "kana": "します",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を する",
-                    "meaningZh": "晚上收拾整理。"
+                    "pattern": "A に B を します",
+                    "meaningZh": "在 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "準備",
+                "kana": "じゅんび"
+              }
+            ]
           },
           "related": {
             "items": []

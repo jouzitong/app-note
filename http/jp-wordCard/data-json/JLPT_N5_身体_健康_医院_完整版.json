@@ -118,19 +118,39 @@
                 "sentence": "今日は体が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはからだがいたいです。",
+                  "romaji": "kyouhakaradagaitaidesu.",
                   "meaningZh": "今天身体疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "体",
                       "kana": "からだ",
                       "desc": "身体"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天身体疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
@@ -140,7 +160,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "頭",
+                "kana": "あたま"
+              }
+            ]
           }
         }
       },
@@ -179,29 +204,59 @@
                 "sentence": "今日は頭が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはあたまがいたいです。",
+                  "romaji": "kyouhaatamagaitaidesu.",
                   "meaningZh": "今天头疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "頭",
                       "kana": "あたま",
                       "desc": "头"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天头疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "体",
+                "kana": "からだ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "顔",
+                "kana": "かお"
+              }
+            ]
           }
         }
       },
@@ -240,29 +295,59 @@
                 "sentence": "今日は顔が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはかおがいたいです。",
+                  "romaji": "kyouhakaogaitaidesu.",
                   "meaningZh": "今天脸疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "顔",
                       "kana": "かお",
                       "desc": "脸"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天脸疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "頭",
+                "kana": "あたま"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "目",
+                "kana": "め"
+              }
+            ]
           }
         }
       },
@@ -301,29 +386,59 @@
                 "sentence": "今日は目が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはめがいたいです。",
+                  "romaji": "kyouhamegaitaidesu.",
                   "meaningZh": "今天眼睛疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "目",
                       "kana": "め",
                       "desc": "眼睛"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天眼睛疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "顔",
+                "kana": "かお"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "耳",
+                "kana": "みみ"
+              }
+            ]
           }
         }
       },
@@ -362,29 +477,59 @@
                 "sentence": "今日は耳が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはみみがいたいです。",
+                  "romaji": "kyouhamimigaitaidesu.",
                   "meaningZh": "今天耳朵疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "耳",
                       "kana": "みみ",
                       "desc": "耳朵"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天耳朵疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "目",
+                "kana": "め"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "鼻",
+                "kana": "はな"
+              }
+            ]
           }
         }
       },
@@ -423,29 +568,59 @@
                 "sentence": "今日は鼻が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうははながいたいです。",
+                  "romaji": "kyouhahanagaitaidesu.",
                   "meaningZh": "今天鼻子疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "鼻",
                       "kana": "はな",
                       "desc": "鼻子"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天鼻子疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "耳",
+                "kana": "みみ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "口",
+                "kana": "くち"
+              }
+            ]
           }
         }
       },
@@ -484,29 +659,59 @@
                 "sentence": "今日は口が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはくちがいたいです。",
+                  "romaji": "kyouhakuchigaitaidesu.",
                   "meaningZh": "今天嘴疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "口",
                       "kana": "くち",
                       "desc": "嘴"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天嘴疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "鼻",
+                "kana": "はな"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "歯",
+                "kana": "は"
+              }
+            ]
           }
         }
       },
@@ -545,29 +750,59 @@
                 "sentence": "今日は歯が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうははがいたいです。",
+                  "romaji": "kyouhahagaitaidesu.",
                   "meaningZh": "今天牙齿疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "歯",
                       "kana": "は",
                       "desc": "牙齿"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天牙齿疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "口",
+                "kana": "くち"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "首",
+                "kana": "くび"
+              }
+            ]
           }
         }
       },
@@ -606,29 +841,59 @@
                 "sentence": "今日は首が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはくびがいたいです。",
+                  "romaji": "kyouhakubigaitaidesu.",
                   "meaningZh": "今天脖子疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "首",
                       "kana": "くび",
                       "desc": "脖子"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天脖子疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "歯",
+                "kana": "は"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "肩",
+                "kana": "かた"
+              }
+            ]
           }
         }
       },
@@ -667,29 +932,59 @@
                 "sentence": "今日は肩が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはかたがいたいです。",
+                  "romaji": "kyouhakatagaitaidesu.",
                   "meaningZh": "今天肩膀疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "肩",
                       "kana": "かた",
                       "desc": "肩膀"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天肩膀疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "首",
+                "kana": "くび"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "胸",
+                "kana": "むね"
+              }
+            ]
           }
         }
       },
@@ -728,29 +1023,59 @@
                 "sentence": "今日は胸が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはむねがいたいです。",
+                  "romaji": "kyouhamunegaitaidesu.",
                   "meaningZh": "今天胸疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "胸",
                       "kana": "むね",
                       "desc": "胸"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天胸疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "肩",
+                "kana": "かた"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "手",
+                "kana": "て"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1114,59 @@
                 "sentence": "今日は手が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはてがいたいです。",
+                  "romaji": "kyouhategaitaidesu.",
                   "meaningZh": "今天手疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "手",
                       "kana": "て",
                       "desc": "手"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天手疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "胸",
+                "kana": "むね"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "腕",
+                "kana": "うで"
+              }
+            ]
           }
         }
       },
@@ -850,29 +1205,59 @@
                 "sentence": "今日は腕が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはうでがいたいです。",
+                  "romaji": "kyouhaudegaitaidesu.",
                   "meaningZh": "今天胳膊疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "腕",
                       "kana": "うで",
                       "desc": "胳膊"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天胳膊疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "手",
+                "kana": "て"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "指",
+                "kana": "ゆび"
+              }
+            ]
           }
         }
       },
@@ -911,29 +1296,59 @@
                 "sentence": "今日は指が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはゆびがいたいです。",
+                  "romaji": "kyouhayubigaitaidesu.",
                   "meaningZh": "今天手指疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "指",
                       "kana": "ゆび",
                       "desc": "手指"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天手指疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "腕",
+                "kana": "うで"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "足",
+                "kana": "あし"
+              }
+            ]
           }
         }
       },
@@ -972,29 +1387,59 @@
                 "sentence": "今日は足が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはあしがいたいです。",
+                  "romaji": "kyouhaashigaitaidesu.",
                   "meaningZh": "今天脚；腿疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "足",
                       "kana": "あし",
                       "desc": "脚；腿"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天脚；腿疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "指",
+                "kana": "ゆび"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "お腹",
+                "kana": "おなか"
+              }
+            ]
           }
         }
       },
@@ -1033,29 +1478,59 @@
                 "sentence": "今日はお腹が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはおなかがいたいです。",
+                  "romaji": "kyouhaonakagaitaidesu.",
                   "meaningZh": "今天肚子疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "お腹",
                       "kana": "おなか",
                       "desc": "肚子"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天肚子疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "足",
+                "kana": "あし"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "背",
+                "kana": "せ"
+              }
+            ]
           }
         }
       },
@@ -1094,29 +1569,59 @@
                 "sentence": "今日は背が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはせがいたいです。",
+                  "romaji": "kyouhasegaitaidesu.",
                   "meaningZh": "今天后背；身高疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "背",
                       "kana": "せ",
                       "desc": "后背；身高"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天后背；身高疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "お腹",
+                "kana": "おなか"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "心",
+                "kana": "こころ"
+              }
+            ]
           }
         }
       },
@@ -1155,29 +1660,59 @@
                 "sentence": "今日は心が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはこころがいたいです。",
+                  "romaji": "kyouhakokorogaitaidesu.",
                   "meaningZh": "今天心疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "心",
                       "kana": "こころ",
                       "desc": "心"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天心疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "背",
+                "kana": "せ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "病気",
+                "kana": "びょうき"
+              }
+            ]
           }
         }
       },
@@ -1216,29 +1751,59 @@
                 "sentence": "今日は病気が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはびょうきがいたいです。",
+                  "romaji": "kyouhabyoukigaitaidesu.",
                   "meaningZh": "今天生病；疾病疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "病気",
                       "kana": "びょうき",
                       "desc": "生病；疾病"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天生病；疾病疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "心",
+                "kana": "こころ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "風邪",
+                "kana": "かぜ"
+              }
+            ]
           }
         }
       },
@@ -1277,29 +1842,59 @@
                 "sentence": "今日は風邪が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはかぜがいたいです。",
+                  "romaji": "kyouhakazegaitaidesu.",
                   "meaningZh": "今天感冒疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "風邪",
                       "kana": "かぜ",
                       "desc": "感冒"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天感冒疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "病気",
+                "kana": "びょうき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "熱",
+                "kana": "ねつ"
+              }
+            ]
           }
         }
       },
@@ -1338,29 +1933,59 @@
                 "sentence": "今日は熱が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはねつがいたいです。",
+                  "romaji": "kyouhanetsugaitaidesu.",
                   "meaningZh": "今天发烧疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "熱",
                       "kana": "ねつ",
                       "desc": "发烧"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天发烧疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "風邪",
+                "kana": "かぜ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "薬",
+                "kana": "くすり"
+              }
+            ]
           }
         }
       },
@@ -1399,29 +2024,59 @@
                 "sentence": "食後に薬を飲みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しょくごにくすりをのみます。",
+                  "romaji": "shokugonikusurionomimasu.",
                   "meaningZh": "饭后吃药。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "食後",
+                      "kana": "しょくご",
+                      "desc": "饭后"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "薬",
                       "kana": "くすり",
                       "desc": "药"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "飲みます",
+                      "kana": "のみます",
+                      "desc": "服用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 飲む",
-                    "meaningZh": "饭后吃药。"
+                    "pattern": "A に B を 飲みます",
+                    "meaningZh": "在 A 时服用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "熱",
+                "kana": "ねつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "病院",
+                "kana": "びょういん"
+              }
+            ]
           }
         }
       },
@@ -1460,29 +2115,59 @@
                 "sentence": "風邪なので病院へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かぜなのでびょういんへいきます。",
+                  "romaji": "kazenanodebyouineikimasu.",
                   "meaningZh": "因为感冒去医院。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "風邪",
+                      "kana": "かぜ",
+                      "desc": "感冒"
+                    },
+                    {
+                      "word": "なので",
+                      "kana": "",
+                      "desc": "因为"
+                    },
                     {
                       "word": "病院",
                       "kana": "びょういん",
                       "desc": "医院"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A へ 行く",
-                    "meaningZh": "因为感冒去医院。"
+                    "pattern": "A なので B へ 行きます",
+                    "meaningZh": "因为 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "薬",
+                "kana": "くすり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "医者",
+                "kana": "いしゃ"
+              }
+            ]
           }
         }
       },
@@ -1521,29 +2206,59 @@
                 "sentence": "風邪なので医者へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かぜなのでいしゃへいきます。",
+                  "romaji": "kazenanodeishaeikimasu.",
                   "meaningZh": "因为感冒去医生。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "風邪",
+                      "kana": "かぜ",
+                      "desc": "感冒"
+                    },
+                    {
+                      "word": "なので",
+                      "kana": "",
+                      "desc": "因为"
+                    },
                     {
                       "word": "医者",
                       "kana": "いしゃ",
                       "desc": "医生"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A へ 行く",
-                    "meaningZh": "因为感冒去医生。"
+                    "pattern": "A なので B へ 行きます",
+                    "meaningZh": "因为 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "病院",
+                "kana": "びょういん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "歯医者",
+                "kana": "はいしゃ"
+              }
+            ]
           }
         }
       },
@@ -1582,29 +2297,59 @@
                 "sentence": "風邪なので歯医者へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かぜなのではいしゃへいきます。",
+                  "romaji": "kazenanodehaishaeikimasu.",
                   "meaningZh": "因为感冒去牙医。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "風邪",
+                      "kana": "かぜ",
+                      "desc": "感冒"
+                    },
+                    {
+                      "word": "なので",
+                      "kana": "",
+                      "desc": "因为"
+                    },
                     {
                       "word": "歯医者",
                       "kana": "はいしゃ",
                       "desc": "牙医"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A へ 行く",
-                    "meaningZh": "因为感冒去牙医。"
+                    "pattern": "A なので B へ 行きます",
+                    "meaningZh": "因为 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "医者",
+                "kana": "いしゃ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "痛い",
+                "kana": "いたい"
+              }
+            ]
           }
         }
       },
@@ -1643,29 +2388,59 @@
                 "sentence": "今日は痛いが痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはいたいがいたいです。",
+                  "romaji": "kyouhaitaigaitaidesu.",
                   "meaningZh": "今天痛疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "痛い",
                       "kana": "いたい",
                       "desc": "痛"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天痛疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "歯医者",
+                "kana": "はいしゃ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "元気",
+                "kana": "げんき"
+              }
+            ]
           }
         }
       },
@@ -1704,26 +2479,51 @@
                 "sentence": "今日は元気が痛いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはげんきがいたいです。",
+                  "romaji": "kyouhagenkigaitaidesu.",
                   "meaningZh": "今天健康；有精神疼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "元気",
                       "kana": "げんき",
                       "desc": "健康；有精神"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "痛いです",
+                      "kana": "いたいです",
+                      "desc": "疼（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A が 痛いです",
-                    "meaningZh": "今天健康；有精神疼。"
+                    "meaningZh": "A 疼"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "痛い",
+                "kana": "いたい"
+              }
+            ]
           },
           "related": {
             "items": []

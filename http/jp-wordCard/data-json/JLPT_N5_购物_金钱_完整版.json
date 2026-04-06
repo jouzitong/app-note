@@ -118,19 +118,44 @@
                 "sentence": "昨日、店で買い物を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでかいものをかいました。",
+                  "romaji": "kinou, misedekaimonookaimashita.",
                   "meaningZh": "昨天在店里买了购物。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "買い物",
                       "kana": "かいもの",
                       "desc": "购物"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了购物。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
@@ -140,7 +165,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "お金",
+                "kana": "おかね"
+              }
+            ]
           }
         }
       },
@@ -179,29 +209,64 @@
                 "sentence": "昨日、店でお金を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでおかねをかいました。",
+                  "romaji": "kinou, misedeokaneokaimashita.",
                   "meaningZh": "昨天在店里买了钱。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "お金",
                       "kana": "おかね",
                       "desc": "钱"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了钱。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "買い物",
+                "kana": "かいもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "円",
+                "kana": "えん"
+              }
+            ]
           }
         }
       },
@@ -240,29 +305,64 @@
                 "sentence": "昨日、店で円を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでえんをかいました。",
+                  "romaji": "kinou, misedeenokaimashita.",
                   "meaningZh": "昨天在店里买了日元。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "円",
                       "kana": "えん",
                       "desc": "日元"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了日元。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "お金",
+                "kana": "おかね"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "財布",
+                "kana": "さいふ"
+              }
+            ]
           }
         }
       },
@@ -301,29 +401,64 @@
                 "sentence": "昨日、店で財布を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでさいふをかいました。",
+                  "romaji": "kinou, misedesaifuokaimashita.",
                   "meaningZh": "昨天在店里买了钱包。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "財布",
                       "kana": "さいふ",
                       "desc": "钱包"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了钱包。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "円",
+                "kana": "えん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "値段",
+                "kana": "ねだん"
+              }
+            ]
           }
         }
       },
@@ -362,29 +497,64 @@
                 "sentence": "昨日、店で値段を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでねだんをかいました。",
+                  "romaji": "kinou, misedenedanokaimashita.",
                   "meaningZh": "昨天在店里买了价格。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "値段",
                       "kana": "ねだん",
                       "desc": "价格"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了价格。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "財布",
+                "kana": "さいふ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "いくら",
+                "kana": "いくら"
+              }
+            ]
           }
         }
       },
@@ -423,29 +593,64 @@
                 "sentence": "昨日、店でいくらを買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでいくらをかいました。",
+                  "romaji": "kinou, misedeikuraokaimashita.",
                   "meaningZh": "昨天在店里买了多少钱。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "いくら",
                       "kana": "いくら",
                       "desc": "多少钱"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了多少钱。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "値段",
+                "kana": "ねだん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "安い",
+                "kana": "やすい"
+              }
+            ]
           }
         }
       },
@@ -484,29 +689,64 @@
                 "sentence": "昨日、店で安いを買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでやすいをかいました。",
+                  "romaji": "kinou, misedeyasuiokaimashita.",
                   "meaningZh": "昨天在店里买了便宜。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "安い",
                       "kana": "やすい",
                       "desc": "便宜"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了便宜。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "いくら",
+                "kana": "いくら"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "高い",
+                "kana": "たかい"
+              }
+            ]
           }
         }
       },
@@ -545,29 +785,64 @@
                 "sentence": "昨日、店で高いを買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでたかいをかいました。",
+                  "romaji": "kinou, misedetakaiokaimashita.",
                   "meaningZh": "昨天在店里买了贵。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "高い",
                       "kana": "たかい",
                       "desc": "贵"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了贵。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "安い",
+                "kana": "やすい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "売り場",
+                "kana": "うりば"
+              }
+            ]
           }
         }
       },
@@ -606,29 +881,64 @@
                 "sentence": "昨日、店で売り場を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでうりばをかいました。",
+                  "romaji": "kinou, misedeuribaokaimashita.",
                   "meaningZh": "昨天在店里买了卖场。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "売り場",
                       "kana": "うりば",
                       "desc": "卖场"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了卖场。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "高い",
+                "kana": "たかい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "店員",
+                "kana": "てんいん"
+              }
+            ]
           }
         }
       },
@@ -667,29 +977,64 @@
                 "sentence": "昨日、店で店員を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでてんいんをかいました。",
+                  "romaji": "kinou, misedeteninokaimashita.",
                   "meaningZh": "昨天在店里买了店员。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "店員",
                       "kana": "てんいん",
                       "desc": "店员"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了店员。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "売り場",
+                "kana": "うりば"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "お釣り",
+                "kana": "おつり"
+              }
+            ]
           }
         }
       },
@@ -728,29 +1073,64 @@
                 "sentence": "昨日、店でお釣りを買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでおつりをかいました。",
+                  "romaji": "kinou, misedeotsuriokaimashita.",
                   "meaningZh": "昨天在店里买了找零。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "お釣り",
                       "kana": "おつり",
                       "desc": "找零"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了找零。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "店員",
+                "kana": "てんいん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "レシート",
+                "kana": "レシート"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1169,64 @@
                 "sentence": "昨日、店でレシートを買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでレシートをかいました。",
+                  "romaji": "kinou, misedereshi-tookaimashita.",
                   "meaningZh": "昨天在店里买了收据。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "レシート",
                       "kana": "レシート",
                       "desc": "收据"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了收据。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "お釣り",
+                "kana": "おつり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "サービス",
+                "kana": "サービス"
+              }
+            ]
           }
         }
       },
@@ -850,29 +1265,64 @@
                 "sentence": "昨日、店でサービスを買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでサービスをかいました。",
+                  "romaji": "kinou, misedesa-bisuokaimashita.",
                   "meaningZh": "昨天在店里买了服务；附送。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "サービス",
                       "kana": "サービス",
                       "desc": "服务；附送"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了服务；附送。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "レシート",
+                "kana": "レシート"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "品物",
+                "kana": "しなもの"
+              }
+            ]
           }
         }
       },
@@ -911,29 +1361,64 @@
                 "sentence": "昨日、店で品物を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでしなものをかいました。",
+                  "romaji": "kinou, misedeshinamonookaimashita.",
                   "meaningZh": "昨天在店里买了物品。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "品物",
                       "kana": "しなもの",
                       "desc": "物品"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了物品。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "サービス",
+                "kana": "サービス"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "荷物",
+                "kana": "にもつ"
+              }
+            ]
           }
         }
       },
@@ -972,29 +1457,64 @@
                 "sentence": "昨日、店で荷物を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでにもつをかいました。",
+                  "romaji": "kinou, misedenimotsuokaimashita.",
                   "meaningZh": "昨天在店里买了行李；包裹。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "荷物",
                       "kana": "にもつ",
                       "desc": "行李；包裹"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了行李；包裹。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "品物",
+                "kana": "しなもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "箱",
+                "kana": "はこ"
+              }
+            ]
           }
         }
       },
@@ -1033,29 +1553,64 @@
                 "sentence": "昨日、店で箱を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせではこをかいました。",
+                  "romaji": "kinou, misedehakookaimashita.",
                   "meaningZh": "昨天在店里买了盒子。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "箱",
                       "kana": "はこ",
                       "desc": "盒子"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了盒子。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "荷物",
+                "kana": "にもつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "袋",
+                "kana": "ふくろ"
+              }
+            ]
           }
         }
       },
@@ -1094,29 +1649,64 @@
                 "sentence": "昨日、店で袋を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでふくろをかいました。",
+                  "romaji": "kinou, misedefukurookaimashita.",
                   "meaningZh": "昨天在店里买了袋子。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "袋",
                       "kana": "ふくろ",
                       "desc": "袋子"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了袋子。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "箱",
+                "kana": "はこ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "封筒",
+                "kana": "ふうとう"
+              }
+            ]
           }
         }
       },
@@ -1155,29 +1745,64 @@
                 "sentence": "昨日、店で封筒を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせでふうとうをかいました。",
+                  "romaji": "kinou, misedefuutouokaimashita.",
                   "meaningZh": "昨天在店里买了信封。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "封筒",
                       "kana": "ふうとう",
                       "desc": "信封"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了信封。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "袋",
+                "kana": "ふくろ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "切手",
+                "kana": "きって"
+              }
+            ]
           }
         }
       },
@@ -1216,26 +1841,56 @@
                 "sentence": "昨日、店で切手を買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのう、みせできってをかいました。",
+                  "romaji": "kinou, misedekitteokaimashita.",
                   "meaningZh": "昨天在店里买了邮票。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昨日",
+                      "kana": "きのう",
+                      "desc": "昨天"
+                    },
+                    {
+                      "word": "店",
+                      "kana": "みせ",
+                      "desc": "商店"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "切手",
                       "kana": "きって",
                       "desc": "邮票"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 買う",
-                    "meaningZh": "昨天在店里买了邮票。"
+                    "pattern": "A で B を 買いました",
+                    "meaningZh": "在 A 买了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "封筒",
+                "kana": "ふうとう"
+              }
+            ]
           },
           "related": {
             "items": []

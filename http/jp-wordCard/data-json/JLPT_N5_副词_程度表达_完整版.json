@@ -118,19 +118,34 @@
                 "sentence": "彼はよく話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはよくはなします。",
+                  "romaji": "karehayokuhanashimasu.",
                   "meaningZh": "他经常；很好地地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "よく",
                       "kana": "よく",
                       "desc": "经常；很好地"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他经常；很好地地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
@@ -140,7 +155,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "たくさん",
+                "kana": "たくさん"
+              }
+            ]
           }
         }
       },
@@ -179,29 +199,54 @@
                 "sentence": "彼はたくさん話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはたくさんはなします。",
+                  "romaji": "karehatakusanhanashimasu.",
                   "meaningZh": "他很多地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "たくさん",
                       "kana": "たくさん",
                       "desc": "很多"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他很多地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "よく",
+                "kana": "よく"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "とても",
+                "kana": "とても"
+              }
+            ]
           }
         }
       },
@@ -240,29 +285,54 @@
                 "sentence": "彼はとても話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはとてもはなします。",
+                  "romaji": "karehatotemohanashimasu.",
                   "meaningZh": "他非常地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "とても",
                       "kana": "とても",
                       "desc": "非常"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他非常地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "たくさん",
+                "kana": "たくさん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ちょっと",
+                "kana": "ちょっと"
+              }
+            ]
           }
         }
       },
@@ -301,29 +371,54 @@
                 "sentence": "彼はちょっと話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはちょっとはなします。",
+                  "romaji": "karehachottohanashimasu.",
                   "meaningZh": "他一点；稍微地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "ちょっと",
                       "kana": "ちょっと",
                       "desc": "一点；稍微"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他一点；稍微地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "とても",
+                "kana": "とても"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "少し",
+                "kana": "すこし"
+              }
+            ]
           }
         }
       },
@@ -362,29 +457,54 @@
                 "sentence": "彼は少し話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはすこしはなします。",
+                  "romaji": "karehasukoshihanashimasu.",
                   "meaningZh": "他一点地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "少し",
                       "kana": "すこし",
                       "desc": "一点"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他一点地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ちょっと",
+                "kana": "ちょっと"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "あまり",
+                "kana": "あまり"
+              }
+            ]
           }
         }
       },
@@ -423,29 +543,54 @@
                 "sentence": "彼はあまり話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはあまりはなします。",
+                  "romaji": "karehaamarihanashimasu.",
                   "meaningZh": "他不太……地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "あまり",
                       "kana": "あまり",
                       "desc": "不太……"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他不太……地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "少し",
+                "kana": "すこし"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ぜんぜん",
+                "kana": "ぜんぜん"
+              }
+            ]
           }
         }
       },
@@ -484,29 +629,54 @@
                 "sentence": "彼はぜんぜん話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはぜんぜんはなします。",
+                  "romaji": "karehazenzenhanashimasu.",
                   "meaningZh": "他完全（不）地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "ぜんぜん",
                       "kana": "ぜんぜん",
                       "desc": "完全（不）"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他完全（不）地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "あまり",
+                "kana": "あまり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "いつも",
+                "kana": "いつも"
+              }
+            ]
           }
         }
       },
@@ -545,29 +715,54 @@
                 "sentence": "彼はいつも話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはいつもはなします。",
+                  "romaji": "karehaitsumohanashimasu.",
                   "meaningZh": "他总是地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "いつも",
                       "kana": "いつも",
                       "desc": "总是"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他总是地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ぜんぜん",
+                "kana": "ぜんぜん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ときどき",
+                "kana": "ときどき"
+              }
+            ]
           }
         }
       },
@@ -606,29 +801,54 @@
                 "sentence": "彼はときどき話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはときどきはなします。",
+                  "romaji": "karehatokidokihanashimasu.",
                   "meaningZh": "他有时地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "ときどき",
                       "kana": "ときどき",
                       "desc": "有时"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他有时地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "いつも",
+                "kana": "いつも"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "たいてい",
+                "kana": "たいてい"
+              }
+            ]
           }
         }
       },
@@ -667,29 +887,54 @@
                 "sentence": "彼はたいてい話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはたいていはなします。",
+                  "romaji": "karehataiteihanashimasu.",
                   "meaningZh": "他大多；通常地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "たいてい",
                       "kana": "たいてい",
                       "desc": "大多；通常"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他大多；通常地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ときどき",
+                "kana": "ときどき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "しばしば",
+                "kana": "しばしば"
+              }
+            ]
           }
         }
       },
@@ -728,29 +973,54 @@
                 "sentence": "彼はしばしば話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはしばしばはなします。",
+                  "romaji": "karehashibashibahanashimasu.",
                   "meaningZh": "他常常地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "しばしば",
                       "kana": "しばしば",
                       "desc": "常常"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他常常地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "たいてい",
+                "kana": "たいてい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "すぐ",
+                "kana": "すぐ"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1059,54 @@
                 "sentence": "彼はすぐ話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはすぐはなします。",
+                  "romaji": "karehasuguhanashimasu.",
                   "meaningZh": "他马上地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "すぐ",
                       "kana": "すぐ",
                       "desc": "马上"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他马上地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "しばしば",
+                "kana": "しばしば"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "もうすぐ",
+                "kana": "もうすぐ"
+              }
+            ]
           }
         }
       },
@@ -850,29 +1145,54 @@
                 "sentence": "彼はもうすぐ話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはもうすぐはなします。",
+                  "romaji": "karehamousuguhanashimasu.",
                   "meaningZh": "他马上就地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "もうすぐ",
                       "kana": "もうすぐ",
                       "desc": "马上就"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他马上就地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "すぐ",
+                "kana": "すぐ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "まだ",
+                "kana": "まだ"
+              }
+            ]
           }
         }
       },
@@ -911,29 +1231,54 @@
                 "sentence": "彼はまだ話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはまだはなします。",
+                  "romaji": "karehamadahanashimasu.",
                   "meaningZh": "他还地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "まだ",
                       "kana": "まだ",
                       "desc": "还"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他还地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "もうすぐ",
+                "kana": "もうすぐ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "もう",
+                "kana": "もう"
+              }
+            ]
           }
         }
       },
@@ -972,29 +1317,54 @@
                 "sentence": "彼はもう話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはもうはなします。",
+                  "romaji": "karehamouhanashimasu.",
                   "meaningZh": "他已经地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "もう",
                       "kana": "もう",
                       "desc": "已经"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他已经地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "まだ",
+                "kana": "まだ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "また",
+                "kana": "また"
+              }
+            ]
           }
         }
       },
@@ -1033,29 +1403,54 @@
                 "sentence": "彼はまた話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはまたはなします。",
+                  "romaji": "karehamatahanashimasu.",
                   "meaningZh": "他又；再地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "また",
                       "kana": "また",
                       "desc": "又；再"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他又；再地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "もう",
+                "kana": "もう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "あとで",
+                "kana": "あとで"
+              }
+            ]
           }
         }
       },
@@ -1094,29 +1489,54 @@
                 "sentence": "彼はあとで話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはあとではなします。",
+                  "romaji": "karehaatodehanashimasu.",
                   "meaningZh": "他之后地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "あとで",
                       "kana": "あとで",
                       "desc": "之后"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他之后地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "また",
+                "kana": "また"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "さっき",
+                "kana": "さっき"
+              }
+            ]
           }
         }
       },
@@ -1155,29 +1575,54 @@
                 "sentence": "彼はさっき話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはさっきはなします。",
+                  "romaji": "karehasakkihanashimasu.",
                   "meaningZh": "他刚才地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "さっき",
                       "kana": "さっき",
                       "desc": "刚才"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他刚才地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "あとで",
+                "kana": "あとで"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "いっしょに",
+                "kana": "いっしょに"
+              }
+            ]
           }
         }
       },
@@ -1216,29 +1661,54 @@
                 "sentence": "彼はいっしょに話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはいっしょにはなします。",
+                  "romaji": "karehaisshonihanashimasu.",
                   "meaningZh": "他一起地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "いっしょに",
                       "kana": "いっしょに",
                       "desc": "一起"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他一起地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "さっき",
+                "kana": "さっき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ゆっくり",
+                "kana": "ゆっくり"
+              }
+            ]
           }
         }
       },
@@ -1277,29 +1747,54 @@
                 "sentence": "彼はゆっくり話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはゆっくりはなします。",
+                  "romaji": "karehayukkurihanashimasu.",
                   "meaningZh": "他慢慢地地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "ゆっくり",
                       "kana": "ゆっくり",
                       "desc": "慢慢地"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他慢慢地地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "いっしょに",
+                "kana": "いっしょに"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "たぶん",
+                "kana": "たぶん"
+              }
+            ]
           }
         }
       },
@@ -1338,29 +1833,54 @@
                 "sentence": "彼はたぶん話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはたぶんはなします。",
+                  "romaji": "karehatabunhanashimasu.",
                   "meaningZh": "他大概地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "たぶん",
                       "kana": "たぶん",
                       "desc": "大概"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他大概地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ゆっくり",
+                "kana": "ゆっくり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "もちろん",
+                "kana": "もちろん"
+              }
+            ]
           }
         }
       },
@@ -1399,29 +1919,54 @@
                 "sentence": "彼はもちろん話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはもちろんはなします。",
+                  "romaji": "karehamochironhanashimasu.",
                   "meaningZh": "他当然地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "もちろん",
                       "kana": "もちろん",
                       "desc": "当然"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他当然地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "たぶん",
+                "kana": "たぶん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ぜひ",
+                "kana": "ぜひ"
+              }
+            ]
           }
         }
       },
@@ -1460,29 +2005,54 @@
                 "sentence": "彼はぜひ話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはぜひはなします。",
+                  "romaji": "karehazehihanashimasu.",
                   "meaningZh": "他一定；务必地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "ぜひ",
                       "kana": "ぜひ",
                       "desc": "一定；务必"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他一定；务必地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "もちろん",
+                "kana": "もちろん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "なかなか",
+                "kana": "なかなか"
+              }
+            ]
           }
         }
       },
@@ -1521,29 +2091,54 @@
                 "sentence": "彼はなかなか話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはなかなかはなします。",
+                  "romaji": "karehanakanakahanashimasu.",
                   "meaningZh": "他相当；不轻易地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "なかなか",
                       "kana": "なかなか",
                       "desc": "相当；不轻易"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他相当；不轻易地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ぜひ",
+                "kana": "ぜひ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "こう",
+                "kana": "こう"
+              }
+            ]
           }
         }
       },
@@ -1582,29 +2177,54 @@
                 "sentence": "彼はこう話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはこうはなします。",
+                  "romaji": "karehakouhanashimasu.",
                   "meaningZh": "他这样地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "こう",
                       "kana": "こう",
                       "desc": "这样"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他这样地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "なかなか",
+                "kana": "なかなか"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "そう",
+                "kana": "そう"
+              }
+            ]
           }
         }
       },
@@ -1643,29 +2263,54 @@
                 "sentence": "彼はそう話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはそうはなします。",
+                  "romaji": "karehasouhanashimasu.",
                   "meaningZh": "他那样地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "そう",
                       "kana": "そう",
                       "desc": "那样"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他那样地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "こう",
+                "kana": "こう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ああ",
+                "kana": "ああ"
+              }
+            ]
           }
         }
       },
@@ -1704,29 +2349,54 @@
                 "sentence": "彼はああ話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはああはなします。",
+                  "romaji": "karehaaahanashimasu.",
                   "meaningZh": "他那样地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "ああ",
                       "kana": "ああ",
                       "desc": "那样"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他那样地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "そう",
+                "kana": "そう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "どうしても",
+                "kana": "どうしても"
+              }
+            ]
           }
         }
       },
@@ -1765,29 +2435,54 @@
                 "sentence": "彼はどうしても話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはどうしてもはなします。",
+                  "romaji": "karehadoushitemohanashimasu.",
                   "meaningZh": "他无论如何地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "どうしても",
                       "kana": "どうしても",
                       "desc": "无论如何"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他无论如何地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ああ",
+                "kana": "ああ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "特に",
+                "kana": "とくに"
+              }
+            ]
           }
         }
       },
@@ -1826,29 +2521,54 @@
                 "sentence": "彼は特に話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはとくにはなします。",
+                  "romaji": "karehatokunihanashimasu.",
                   "meaningZh": "他特别地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "特に",
                       "kana": "とくに",
                       "desc": "特别"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他特别地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "どうしても",
+                "kana": "どうしても"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "本当に",
+                "kana": "ほんとうに"
+              }
+            ]
           }
         }
       },
@@ -1887,29 +2607,54 @@
                 "sentence": "彼は本当に話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはほんとうにはなします。",
+                  "romaji": "karehahontounihanashimasu.",
                   "meaningZh": "他真的地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "本当に",
                       "kana": "ほんとうに",
                       "desc": "真的"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他真的地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "特に",
+                "kana": "とくに"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "一番",
+                "kana": "いちばん"
+              }
+            ]
           }
         }
       },
@@ -1948,29 +2693,54 @@
                 "sentence": "彼は一番話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはいちばんはなします。",
+                  "romaji": "karehaichibanhanashimasu.",
                   "meaningZh": "他最地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "一番",
                       "kana": "いちばん",
                       "desc": "最"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他最地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "本当に",
+                "kana": "ほんとうに"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "だいたい",
+                "kana": "だいたい"
+              }
+            ]
           }
         }
       },
@@ -2009,29 +2779,54 @@
                 "sentence": "彼はだいたい話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはだいたいはなします。",
+                  "romaji": "karehadaitaihanashimasu.",
                   "meaningZh": "他大概地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "だいたい",
                       "kana": "だいたい",
                       "desc": "大概"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他大概地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "一番",
+                "kana": "いちばん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "いろいろ",
+                "kana": "いろいろ"
+              }
+            ]
           }
         }
       },
@@ -2070,26 +2865,46 @@
                 "sentence": "彼はいろいろ話します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはいろいろはなします。",
+                  "romaji": "karehairoirohanashimasu.",
                   "meaningZh": "他各种各样地说话。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "いろいろ",
                       "kana": "いろいろ",
                       "desc": "各种各样"
+                    },
+                    {
+                      "word": "話します",
+                      "kana": "はなします",
+                      "desc": "说话（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 副词 V",
-                    "meaningZh": "他各种各样地说话。"
+                    "pattern": "A は 副词 Vます",
+                    "meaningZh": "A …地做某事"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "だいたい",
+                "kana": "だいたい"
+              }
+            ]
           },
           "related": {
             "items": []

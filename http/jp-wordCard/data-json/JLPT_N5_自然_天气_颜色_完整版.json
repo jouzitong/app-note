@@ -118,19 +118,39 @@
                 "sentence": "この季節は天気がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはてんきがきれいです。",
+                  "romaji": "konokisetsuhatenkigakireidesu.",
                   "meaningZh": "这个季节的天气很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "天気",
                       "kana": "てんき",
                       "desc": "天气"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的天气很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
@@ -140,7 +160,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "晴れ",
+                "kana": "はれ"
+              }
+            ]
           }
         }
       },
@@ -179,29 +204,59 @@
                 "sentence": "この季節は晴れがきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつははれがきれいです。",
+                  "romaji": "konokisetsuhaharegakireidesu.",
                   "meaningZh": "这个季节的晴天很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "晴れ",
                       "kana": "はれ",
                       "desc": "晴天"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的晴天很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "天気",
+                "kana": "てんき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "雨",
+                "kana": "あめ"
+              }
+            ]
           }
         }
       },
@@ -240,29 +295,59 @@
                 "sentence": "この季節は雨がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはあめがきれいです。",
+                  "romaji": "konokisetsuhaamegakireidesu.",
                   "meaningZh": "这个季节的雨很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "雨",
                       "kana": "あめ",
                       "desc": "雨"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的雨很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "晴れ",
+                "kana": "はれ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "雪",
+                "kana": "ゆき"
+              }
+            ]
           }
         }
       },
@@ -301,29 +386,59 @@
                 "sentence": "この季節は雪がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはゆきがきれいです。",
+                  "romaji": "konokisetsuhayukigakireidesu.",
                   "meaningZh": "这个季节的雪很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "雪",
                       "kana": "ゆき",
                       "desc": "雪"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的雪很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "雨",
+                "kana": "あめ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "風",
+                "kana": "かぜ"
+              }
+            ]
           }
         }
       },
@@ -362,29 +477,59 @@
                 "sentence": "この季節は風がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはかぜがきれいです。",
+                  "romaji": "konokisetsuhakazegakireidesu.",
                   "meaningZh": "这个季节的风很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "風",
                       "kana": "かぜ",
                       "desc": "风"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的风很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "雪",
+                "kana": "ゆき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "空",
+                "kana": "そら"
+              }
+            ]
           }
         }
       },
@@ -423,29 +568,59 @@
                 "sentence": "この季節は空がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはそらがきれいです。",
+                  "romaji": "konokisetsuhasoragakireidesu.",
                   "meaningZh": "这个季节的天空很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "空",
                       "kana": "そら",
                       "desc": "天空"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的天空很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "風",
+                "kana": "かぜ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "雲",
+                "kana": "くも"
+              }
+            ]
           }
         }
       },
@@ -484,29 +659,59 @@
                 "sentence": "この季節は雲がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはくもがきれいです。",
+                  "romaji": "konokisetsuhakumogakireidesu.",
                   "meaningZh": "这个季节的云很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "雲",
                       "kana": "くも",
                       "desc": "云"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的云很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "空",
+                "kana": "そら"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "山",
+                "kana": "やま"
+              }
+            ]
           }
         }
       },
@@ -545,29 +750,59 @@
                 "sentence": "この季節は山がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはやまがきれいです。",
+                  "romaji": "konokisetsuhayamagakireidesu.",
                   "meaningZh": "这个季节的山很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "山",
                       "kana": "やま",
                       "desc": "山"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的山很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "雲",
+                "kana": "くも"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "川",
+                "kana": "かわ"
+              }
+            ]
           }
         }
       },
@@ -606,29 +841,59 @@
                 "sentence": "この季節は川がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはかわがきれいです。",
+                  "romaji": "konokisetsuhakawagakireidesu.",
                   "meaningZh": "这个季节的河很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "川",
                       "kana": "かわ",
                       "desc": "河"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的河很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "山",
+                "kana": "やま"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "海",
+                "kana": "うみ"
+              }
+            ]
           }
         }
       },
@@ -667,29 +932,59 @@
                 "sentence": "この季節は海がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはうみがきれいです。",
+                  "romaji": "konokisetsuhaumigakireidesu.",
                   "meaningZh": "这个季节的海很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "海",
                       "kana": "うみ",
                       "desc": "海"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的海很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "川",
+                "kana": "かわ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "木",
+                "kana": "き"
+              }
+            ]
           }
         }
       },
@@ -728,29 +1023,59 @@
                 "sentence": "この季節は木がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはきがきれいです。",
+                  "romaji": "konokisetsuhakigakireidesu.",
                   "meaningZh": "这个季节的树很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "木",
                       "kana": "き",
                       "desc": "树"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的树很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "海",
+                "kana": "うみ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "花",
+                "kana": "はな"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1114,59 @@
                 "sentence": "この季節は花がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつははながきれいです。",
+                  "romaji": "konokisetsuhahanagakireidesu.",
                   "meaningZh": "这个季节的花很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "花",
                       "kana": "はな",
                       "desc": "花"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的花很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "木",
+                "kana": "き"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "草",
+                "kana": "くさ"
+              }
+            ]
           }
         }
       },
@@ -850,29 +1205,59 @@
                 "sentence": "この季節は草がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはくさがきれいです。",
+                  "romaji": "konokisetsuhakusagakireidesu.",
                   "meaningZh": "这个季节的草很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "草",
                       "kana": "くさ",
                       "desc": "草"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的草很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "花",
+                "kana": "はな"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "犬",
+                "kana": "いぬ"
+              }
+            ]
           }
         }
       },
@@ -911,29 +1296,59 @@
                 "sentence": "この季節は犬がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはいぬがきれいです。",
+                  "romaji": "konokisetsuhainugakireidesu.",
                   "meaningZh": "这个季节的狗很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "犬",
                       "kana": "いぬ",
                       "desc": "狗"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的狗很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "草",
+                "kana": "くさ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "猫",
+                "kana": "ねこ"
+              }
+            ]
           }
         }
       },
@@ -972,29 +1387,59 @@
                 "sentence": "この季節は猫がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはねこがきれいです。",
+                  "romaji": "konokisetsuhanekogakireidesu.",
                   "meaningZh": "这个季节的猫很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "猫",
                       "kana": "ねこ",
                       "desc": "猫"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的猫很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "犬",
+                "kana": "いぬ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "鳥",
+                "kana": "とり"
+              }
+            ]
           }
         }
       },
@@ -1033,29 +1478,59 @@
                 "sentence": "この季節は鳥がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはとりがきれいです。",
+                  "romaji": "konokisetsuhatorigakireidesu.",
                   "meaningZh": "这个季节的鸟很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "鳥",
                       "kana": "とり",
                       "desc": "鸟"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的鸟很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "猫",
+                "kana": "ねこ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "魚",
+                "kana": "さかな"
+              }
+            ]
           }
         }
       },
@@ -1094,29 +1569,59 @@
                 "sentence": "この季節は魚がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはさかながきれいです。",
+                  "romaji": "konokisetsuhasakanagakireidesu.",
                   "meaningZh": "这个季节的鱼很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "魚",
                       "kana": "さかな",
                       "desc": "鱼"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的鱼很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "鳥",
+                "kana": "とり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "赤",
+                "kana": "あか"
+              }
+            ]
           }
         }
       },
@@ -1155,29 +1660,59 @@
                 "sentence": "この季節は赤がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはあかがきれいです。",
+                  "romaji": "konokisetsuhaakagakireidesu.",
                   "meaningZh": "这个季节的红色很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "赤",
                       "kana": "あか",
                       "desc": "红色"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的红色很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "魚",
+                "kana": "さかな"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "青",
+                "kana": "あお"
+              }
+            ]
           }
         }
       },
@@ -1216,29 +1751,59 @@
                 "sentence": "この季節は青がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはあおがきれいです。",
+                  "romaji": "konokisetsuhaaogakireidesu.",
                   "meaningZh": "这个季节的蓝色；青色很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "青",
                       "kana": "あお",
                       "desc": "蓝色；青色"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的蓝色；青色很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "赤",
+                "kana": "あか"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "白",
+                "kana": "しろ"
+              }
+            ]
           }
         }
       },
@@ -1277,29 +1842,59 @@
                 "sentence": "この季節は白がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはしろがきれいです。",
+                  "romaji": "konokisetsuhashirogakireidesu.",
                   "meaningZh": "这个季节的白色很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "白",
                       "kana": "しろ",
                       "desc": "白色"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的白色很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "青",
+                "kana": "あお"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "黒",
+                "kana": "くろ"
+              }
+            ]
           }
         }
       },
@@ -1338,29 +1933,59 @@
                 "sentence": "この季節は黒がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはくろがきれいです。",
+                  "romaji": "konokisetsuhakurogakireidesu.",
                   "meaningZh": "这个季节的黑色很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "黒",
                       "kana": "くろ",
                       "desc": "黑色"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的黑色很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "白",
+                "kana": "しろ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "黄色",
+                "kana": "きいろ"
+              }
+            ]
           }
         }
       },
@@ -1399,29 +2024,59 @@
                 "sentence": "この季節は黄色がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはきいろがきれいです。",
+                  "romaji": "konokisetsuhakiirogakireidesu.",
                   "meaningZh": "这个季节的黄色很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "黄色",
                       "kana": "きいろ",
                       "desc": "黄色"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的黄色很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "黒",
+                "kana": "くろ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "茶色",
+                "kana": "ちゃいろ"
+              }
+            ]
           }
         }
       },
@@ -1460,29 +2115,59 @@
                 "sentence": "この季節は茶色がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはちゃいろがきれいです。",
+                  "romaji": "konokisetsuhachairogakireidesu.",
                   "meaningZh": "这个季节的棕色很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "茶色",
                       "kana": "ちゃいろ",
                       "desc": "棕色"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的棕色很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "黄色",
+                "kana": "きいろ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "色",
+                "kana": "いろ"
+              }
+            ]
           }
         }
       },
@@ -1521,26 +2206,51 @@
                 "sentence": "この季節は色がきれいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "このきせつはいろがきれいです。",
+                  "romaji": "konokisetsuhairogakireidesu.",
                   "meaningZh": "这个季节的颜色很美。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この季節",
+                      "kana": "このきせつ",
+                      "desc": "这个季节"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "色",
                       "kana": "いろ",
                       "desc": "颜色"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "きれいです",
+                      "kana": "きれいです",
+                      "desc": "漂亮（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A が きれいです",
-                    "meaningZh": "这个季节的颜色很美。"
+                    "pattern": "A は B が きれいです",
+                    "meaningZh": "A 的 B 很美"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "茶色",
+                "kana": "ちゃいろ"
+              }
+            ]
           },
           "related": {
             "items": []

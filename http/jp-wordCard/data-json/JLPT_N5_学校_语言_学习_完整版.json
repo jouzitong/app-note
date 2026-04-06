@@ -118,19 +118,34 @@
                 "sentence": "毎日学校で勉強します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちがっこうでべんきょうします。",
+                  "romaji": "mainichigakkoudebenkyoushimasu.",
                   "meaningZh": "每天在学校学习。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "学校",
                       "kana": "がっこう",
                       "desc": "学校"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
+                    {
+                      "word": "勉強します",
+                      "kana": "べんきょうします",
+                      "desc": "学习（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 勉強する",
-                    "meaningZh": "每天在学校学习。"
+                    "pattern": "A で 勉強します",
+                    "meaningZh": "在 A 学习"
                   }
                 }
               }
@@ -140,7 +155,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "大学",
+                "kana": "だいがく"
+              }
+            ]
           }
         }
       },
@@ -179,29 +199,54 @@
                 "sentence": "毎日大学で勉強します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちだいがくでべんきょうします。",
+                  "romaji": "mainichidaigakudebenkyoushimasu.",
                   "meaningZh": "每天在大学学习。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "大学",
                       "kana": "だいがく",
                       "desc": "大学"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
+                    {
+                      "word": "勉強します",
+                      "kana": "べんきょうします",
+                      "desc": "学习（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 勉強する",
-                    "meaningZh": "每天在大学学习。"
+                    "pattern": "A で 勉強します",
+                    "meaningZh": "在 A 学习"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "学校",
+                "kana": "がっこう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "教室",
+                "kana": "きょうしつ"
+              }
+            ]
           }
         }
       },
@@ -240,29 +285,54 @@
                 "sentence": "毎日教室で勉強します。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちきょうしつでべんきょうします。",
+                  "romaji": "mainichikyoushitsudebenkyoushimasu.",
                   "meaningZh": "每天在教室学习。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "教室",
                       "kana": "きょうしつ",
                       "desc": "教室"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
+                    {
+                      "word": "勉強します",
+                      "kana": "べんきょうします",
+                      "desc": "学习（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 勉強する",
-                    "meaningZh": "每天在教室学习。"
+                    "pattern": "A で 勉強します",
+                    "meaningZh": "在 A 学习"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "大学",
+                "kana": "だいがく"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "授業",
+                "kana": "じゅぎょう"
+              }
+            ]
           }
         }
       },
@@ -298,32 +368,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-004-1",
-                "sentence": "毎日授業を勉強しています。",
+                "sentence": "授業で授業を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习上课；课程。",
+                  "reading": "じゅぎょうでじゅぎょうをつかいます。",
+                  "romaji": "jugyoudejugyouotsukaimasu.",
+                  "meaningZh": "在课堂上使用上课；课程。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "授業",
                       "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
                       "desc": "上课；课程"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习上课；课程。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "教室",
+                "kana": "きょうしつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "宿題",
+                "kana": "しゅくだい"
+              }
+            ]
           }
         }
       },
@@ -359,32 +459,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-005-1",
-                "sentence": "毎日宿題を勉強しています。",
+                "sentence": "授業で宿題を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习作业。",
+                  "reading": "じゅぎょうでしゅくだいをつかいます。",
+                  "romaji": "jugyoudeshukudaiotsukaimasu.",
+                  "meaningZh": "在课堂上使用作业。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "宿題",
                       "kana": "しゅくだい",
                       "desc": "作业"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习作业。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "授業",
+                "kana": "じゅぎょう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "試験",
+                "kana": "しけん"
+              }
+            ]
           }
         }
       },
@@ -420,32 +550,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-006-1",
-                "sentence": "毎日試験を勉強しています。",
+                "sentence": "授業で試験を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习考试。",
+                  "reading": "じゅぎょうでしけんをつかいます。",
+                  "romaji": "jugyoudeshikenotsukaimasu.",
+                  "meaningZh": "在课堂上使用考试。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "試験",
                       "kana": "しけん",
                       "desc": "考试"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习考试。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "宿題",
+                "kana": "しゅくだい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "テスト",
+                "kana": "テスト"
+              }
+            ]
           }
         }
       },
@@ -481,32 +641,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-007-1",
-                "sentence": "毎日テストを勉強しています。",
+                "sentence": "授業でテストを使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习测试。",
+                  "reading": "じゅぎょうでテストをつかいます。",
+                  "romaji": "jugyoudetesutootsukaimasu.",
+                  "meaningZh": "在课堂上使用测试。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "テスト",
                       "kana": "テスト",
                       "desc": "测试"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习测试。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "試験",
+                "kana": "しけん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "問題",
+                "kana": "もんだい"
+              }
+            ]
           }
         }
       },
@@ -542,32 +732,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-008-1",
-                "sentence": "毎日問題を勉強しています。",
+                "sentence": "授業で問題を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习问题；题目。",
+                  "reading": "じゅぎょうでもんだいをつかいます。",
+                  "romaji": "jugyoudemondaiotsukaimasu.",
+                  "meaningZh": "在课堂上使用问题；题目。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "問題",
                       "kana": "もんだい",
                       "desc": "问题；题目"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习问题；题目。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "テスト",
+                "kana": "テスト"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "答え",
+                "kana": "こたえ"
+              }
+            ]
           }
         }
       },
@@ -603,32 +823,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-009-1",
-                "sentence": "毎日答えを勉強しています。",
+                "sentence": "授業で答えを使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习答案。",
+                  "reading": "じゅぎょうでこたえをつかいます。",
+                  "romaji": "jugyoudekotaeotsukaimasu.",
+                  "meaningZh": "在课堂上使用答案。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "答え",
                       "kana": "こたえ",
                       "desc": "答案"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习答案。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "問題",
+                "kana": "もんだい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "質問",
+                "kana": "しつもん"
+              }
+            ]
           }
         }
       },
@@ -664,32 +914,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-010-1",
-                "sentence": "毎日質問を勉強しています。",
+                "sentence": "授業で質問を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习问题；提问。",
+                  "reading": "じゅぎょうでしつもんをつかいます。",
+                  "romaji": "jugyoudeshitsumonotsukaimasu.",
+                  "meaningZh": "在课堂上使用问题；提问。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "質問",
                       "kana": "しつもん",
                       "desc": "问题；提问"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习问题；提问。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "答え",
+                "kana": "こたえ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "練習",
+                "kana": "れんしゅう"
+              }
+            ]
           }
         }
       },
@@ -725,32 +1005,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-011-1",
-                "sentence": "毎日練習を勉強しています。",
+                "sentence": "授業で練習を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习练习。",
+                  "reading": "じゅぎょうでれんしゅうをつかいます。",
+                  "romaji": "jugyouderenshuuotsukaimasu.",
+                  "meaningZh": "在课堂上使用练习。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "練習",
                       "kana": "れんしゅう",
                       "desc": "练习"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习练习。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "質問",
+                "kana": "しつもん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "勉強",
+                "kana": "べんきょう"
+              }
+            ]
           }
         }
       },
@@ -786,32 +1096,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-012-1",
-                "sentence": "毎日勉強を勉強しています。",
+                "sentence": "授業で勉強を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习学习。",
+                  "reading": "じゅぎょうでべんきょうをつかいます。",
+                  "romaji": "jugyoudebenkyouotsukaimasu.",
+                  "meaningZh": "在课堂上使用学习。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "勉強",
                       "kana": "べんきょう",
                       "desc": "学习"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习学习。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "練習",
+                "kana": "れんしゅう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "字",
+                "kana": "じ"
+              }
+            ]
           }
         }
       },
@@ -847,32 +1187,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-013-1",
-                "sentence": "毎日字を勉強しています。",
+                "sentence": "授業で字を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习字。",
+                  "reading": "じゅぎょうでじをつかいます。",
+                  "romaji": "jugyoudejiotsukaimasu.",
+                  "meaningZh": "在课堂上使用字。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "字",
                       "kana": "じ",
                       "desc": "字"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习字。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "勉強",
+                "kana": "べんきょう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "漢字",
+                "kana": "かんじ"
+              }
+            ]
           }
         }
       },
@@ -908,32 +1278,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-014-1",
-                "sentence": "毎日漢字を勉強しています。",
+                "sentence": "授業で漢字を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习汉字。",
+                  "reading": "じゅぎょうでかんじをつかいます。",
+                  "romaji": "jugyoudekanjiotsukaimasu.",
+                  "meaningZh": "在课堂上使用汉字。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "漢字",
                       "kana": "かんじ",
                       "desc": "汉字"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习汉字。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "字",
+                "kana": "じ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "平仮名",
+                "kana": "ひらがな"
+              }
+            ]
           }
         }
       },
@@ -969,32 +1369,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-015-1",
-                "sentence": "毎日平仮名を勉強しています。",
+                "sentence": "授業で平仮名を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习平假名。",
+                  "reading": "じゅぎょうでひらがなをつかいます。",
+                  "romaji": "jugyoudehiraganaotsukaimasu.",
+                  "meaningZh": "在课堂上使用平假名。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "平仮名",
                       "kana": "ひらがな",
                       "desc": "平假名"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习平假名。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "漢字",
+                "kana": "かんじ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "片仮名",
+                "kana": "カタカナ"
+              }
+            ]
           }
         }
       },
@@ -1030,32 +1460,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-016-1",
-                "sentence": "毎日片仮名を勉強しています。",
+                "sentence": "授業で片仮名を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习片假名。",
+                  "reading": "じゅぎょうでカタカナをつかいます。",
+                  "romaji": "jugyoudekatakanaotsukaimasu.",
+                  "meaningZh": "在课堂上使用片假名。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "片仮名",
                       "kana": "カタカナ",
                       "desc": "片假名"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习片假名。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "平仮名",
+                "kana": "ひらがな"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "言葉",
+                "kana": "ことば"
+              }
+            ]
           }
         }
       },
@@ -1091,32 +1551,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-017-1",
-                "sentence": "毎日言葉を勉強しています。",
+                "sentence": "授業で言葉を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习词语；语言。",
+                  "reading": "じゅぎょうでことばをつかいます。",
+                  "romaji": "jugyoudekotobaotsukaimasu.",
+                  "meaningZh": "在课堂上使用词语；语言。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "言葉",
                       "kana": "ことば",
                       "desc": "词语；语言"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习词语；语言。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "片仮名",
+                "kana": "カタカナ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "文",
+                "kana": "ぶん"
+              }
+            ]
           }
         }
       },
@@ -1152,32 +1642,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-018-1",
-                "sentence": "毎日文を勉強しています。",
+                "sentence": "授業で文を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习句子；文章。",
+                  "reading": "じゅぎょうでぶんをつかいます。",
+                  "romaji": "jugyoudebunotsukaimasu.",
+                  "meaningZh": "在课堂上使用句子；文章。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "文",
                       "kana": "ぶん",
                       "desc": "句子；文章"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习句子；文章。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "言葉",
+                "kana": "ことば"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "意味",
+                "kana": "いみ"
+              }
+            ]
           }
         }
       },
@@ -1213,32 +1733,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-019-1",
-                "sentence": "毎日意味を勉強しています。",
+                "sentence": "授業で意味を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习意思。",
+                  "reading": "じゅぎょうでいみをつかいます。",
+                  "romaji": "jugyoudeimiotsukaimasu.",
+                  "meaningZh": "在课堂上使用意思。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "意味",
                       "kana": "いみ",
                       "desc": "意思"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习意思。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "文",
+                "kana": "ぶん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "作文",
+                "kana": "さくぶん"
+              }
+            ]
           }
         }
       },
@@ -1274,32 +1824,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-020-1",
-                "sentence": "毎日作文を勉強しています。",
+                "sentence": "授業で作文を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习作文。",
+                  "reading": "じゅぎょうでさくぶんをつかいます。",
+                  "romaji": "jugyoudesakubunotsukaimasu.",
+                  "meaningZh": "在课堂上使用作文。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "作文",
                       "kana": "さくぶん",
                       "desc": "作文"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习作文。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "意味",
+                "kana": "いみ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "本",
+                "kana": "ほん"
+              }
+            ]
           }
         }
       },
@@ -1335,32 +1915,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-021-1",
-                "sentence": "毎日本を勉強しています。",
+                "sentence": "授業で本を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习书。",
+                  "reading": "じゅぎょうでほんをつかいます。",
+                  "romaji": "jugyoudehonotsukaimasu.",
+                  "meaningZh": "在课堂上使用书。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "本",
                       "kana": "ほん",
                       "desc": "书"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习书。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "作文",
+                "kana": "さくぶん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "辞書",
+                "kana": "じしょ"
+              }
+            ]
           }
         }
       },
@@ -1396,32 +2006,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-022-1",
-                "sentence": "毎日辞書を勉強しています。",
+                "sentence": "授業で辞書を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习词典。",
+                  "reading": "じゅぎょうでじしょをつかいます。",
+                  "romaji": "jugyoudejishootsukaimasu.",
+                  "meaningZh": "在课堂上使用词典。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "辞書",
                       "kana": "じしょ",
                       "desc": "词典"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习词典。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "本",
+                "kana": "ほん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ノート",
+                "kana": "ノート"
+              }
+            ]
           }
         }
       },
@@ -1457,32 +2097,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-023-1",
-                "sentence": "毎日ノートを勉強しています。",
+                "sentence": "授業でノートを使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习笔记本。",
+                  "reading": "じゅぎょうでノートをつかいます。",
+                  "romaji": "jugyoudeno-tootsukaimasu.",
+                  "meaningZh": "在课堂上使用笔记本。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "ノート",
                       "kana": "ノート",
                       "desc": "笔记本"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习笔记本。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "辞書",
+                "kana": "じしょ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "紙",
+                "kana": "かみ"
+              }
+            ]
           }
         }
       },
@@ -1518,32 +2188,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-024-1",
-                "sentence": "毎日紙を勉強しています。",
+                "sentence": "授業で紙を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习纸。",
+                  "reading": "じゅぎょうでかみをつかいます。",
+                  "romaji": "jugyoudekamiotsukaimasu.",
+                  "meaningZh": "在课堂上使用纸。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "紙",
                       "kana": "かみ",
                       "desc": "纸"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习纸。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ノート",
+                "kana": "ノート"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "鉛筆",
+                "kana": "えんぴつ"
+              }
+            ]
           }
         }
       },
@@ -1579,32 +2279,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-025-1",
-                "sentence": "毎日鉛筆を勉強しています。",
+                "sentence": "授業で鉛筆を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习铅笔。",
+                  "reading": "じゅぎょうでえんぴつをつかいます。",
+                  "romaji": "jugyoudeenpitsuotsukaimasu.",
+                  "meaningZh": "在课堂上使用铅笔。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "鉛筆",
                       "kana": "えんぴつ",
                       "desc": "铅笔"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习铅笔。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "紙",
+                "kana": "かみ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ペン",
+                "kana": "ペン"
+              }
+            ]
           }
         }
       },
@@ -1640,32 +2370,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-026-1",
-                "sentence": "毎日ペンを勉強しています。",
+                "sentence": "授業でペンを使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习钢笔；笔。",
+                  "reading": "じゅぎょうでペンをつかいます。",
+                  "romaji": "jugyoudepenotsukaimasu.",
+                  "meaningZh": "在课堂上使用钢笔；笔。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "ペン",
                       "kana": "ペン",
                       "desc": "钢笔；笔"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习钢笔；笔。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "鉛筆",
+                "kana": "えんぴつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ボールペン",
+                "kana": "ボールペン"
+              }
+            ]
           }
         }
       },
@@ -1701,32 +2461,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-027-1",
-                "sentence": "毎日ボールペンを勉強しています。",
+                "sentence": "授業でボールペンを使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习圆珠笔。",
+                  "reading": "じゅぎょうでボールペンをつかいます。",
+                  "romaji": "jugyoudebo-rupenotsukaimasu.",
+                  "meaningZh": "在课堂上使用圆珠笔。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "ボールペン",
                       "kana": "ボールペン",
                       "desc": "圆珠笔"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习圆珠笔。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ペン",
+                "kana": "ペン"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "万年筆",
+                "kana": "まんねんひつ"
+              }
+            ]
           }
         }
       },
@@ -1762,32 +2552,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-028-1",
-                "sentence": "毎日万年筆を勉強しています。",
+                "sentence": "授業で万年筆を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习钢笔。",
+                  "reading": "じゅぎょうでまんねんひつをつかいます。",
+                  "romaji": "jugyoudemannenhitsuotsukaimasu.",
+                  "meaningZh": "在课堂上使用钢笔。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "万年筆",
                       "kana": "まんねんひつ",
                       "desc": "钢笔"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习钢笔。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ボールペン",
+                "kana": "ボールペン"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "消しゴム",
+                "kana": "けしゴム"
+              }
+            ]
           }
         }
       },
@@ -1823,32 +2643,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-029-1",
-                "sentence": "毎日消しゴムを勉強しています。",
+                "sentence": "授業で消しゴムを使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习橡皮。",
+                  "reading": "じゅぎょうでけしゴムをつかいます。",
+                  "romaji": "jugyoudekeshigomuotsukaimasu.",
+                  "meaningZh": "在课堂上使用橡皮。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "消しゴム",
                       "kana": "けしゴム",
                       "desc": "橡皮"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习橡皮。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "万年筆",
+                "kana": "まんねんひつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "机",
+                "kana": "つくえ"
+              }
+            ]
           }
         }
       },
@@ -1884,32 +2734,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-030-1",
-                "sentence": "毎日机を勉強しています。",
+                "sentence": "授業で机を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习桌子。",
+                  "reading": "じゅぎょうでつくえをつかいます。",
+                  "romaji": "jugyoudetsukueotsukaimasu.",
+                  "meaningZh": "在课堂上使用桌子。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "机",
                       "kana": "つくえ",
                       "desc": "桌子"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习桌子。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "消しゴム",
+                "kana": "けしゴム"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "椅子",
+                "kana": "いす"
+              }
+            ]
           }
         }
       },
@@ -1945,32 +2825,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-031-1",
-                "sentence": "毎日椅子を勉強しています。",
+                "sentence": "授業で椅子を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习椅子。",
+                  "reading": "じゅぎょうでいすをつかいます。",
+                  "romaji": "jugyoudeisuotsukaimasu.",
+                  "meaningZh": "在课堂上使用椅子。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "椅子",
                       "kana": "いす",
                       "desc": "椅子"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习椅子。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "机",
+                "kana": "つくえ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "日本語",
+                "kana": "にほんご"
+              }
+            ]
           }
         }
       },
@@ -2006,32 +2916,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-032-1",
-                "sentence": "毎日日本語を勉強しています。",
+                "sentence": "授業で日本語を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习日语。",
+                  "reading": "じゅぎょうでにほんごをつかいます。",
+                  "romaji": "jugyoudenihongootsukaimasu.",
+                  "meaningZh": "在课堂上使用日语。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "日本語",
                       "kana": "にほんご",
                       "desc": "日语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习日语。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "椅子",
+                "kana": "いす"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "英語",
+                "kana": "えいご"
+              }
+            ]
           }
         }
       },
@@ -2067,32 +3007,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-033-1",
-                "sentence": "毎日英語を勉強しています。",
+                "sentence": "授業で英語を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习英语。",
+                  "reading": "じゅぎょうでえいごをつかいます。",
+                  "romaji": "jugyoudeeigootsukaimasu.",
+                  "meaningZh": "在课堂上使用英语。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "英語",
                       "kana": "えいご",
                       "desc": "英语"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习英语。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "日本語",
+                "kana": "にほんご"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "中国語",
+                "kana": "ちゅうごくご"
+              }
+            ]
           }
         }
       },
@@ -2128,32 +3098,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-034-1",
-                "sentence": "毎日中国語を勉強しています。",
+                "sentence": "授業で中国語を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习中文。",
+                  "reading": "じゅぎょうでちゅうごくごをつかいます。",
+                  "romaji": "jugyoudechuugokugootsukaimasu.",
+                  "meaningZh": "在课堂上使用中文。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "中国語",
                       "kana": "ちゅうごくご",
                       "desc": "中文"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习中文。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "英語",
+                "kana": "えいご"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "名前",
+                "kana": "なまえ"
+              }
+            ]
           }
         }
       },
@@ -2189,29 +3189,54 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-school-035-1",
-                "sentence": "毎日名前を勉強しています。",
+                "sentence": "授業で名前を使います。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "每天学习名字。",
+                  "reading": "じゅぎょうでなまえをつかいます。",
+                  "romaji": "jugyoudenamaeotsukaimasu.",
+                  "meaningZh": "在课堂上使用名字。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "授業",
+                      "kana": "じゅぎょう",
+                      "desc": "课程；上课"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "名前",
                       "kana": "なまえ",
                       "desc": "名字"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使います",
+                      "kana": "つかいます",
+                      "desc": "使用（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 勉強する",
-                    "meaningZh": "每天学习名字。"
+                    "pattern": "A で B を 使います",
+                    "meaningZh": "在 A 使用 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "中国語",
+                "kana": "ちゅうごくご"
+              }
+            ]
           },
           "related": {
             "items": []

@@ -118,19 +118,49 @@
                 "sentence": "私の人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのひとはとうきょうにすんでいます。",
+                  "romaji": "watashinohitohatoukyounisundeimasu.",
                   "meaningZh": "我的人住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "人",
                       "kana": "ひと",
                       "desc": "人"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的人住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
@@ -140,7 +170,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "男",
+                "kana": "おとこ"
+              }
+            ]
           }
         }
       },
@@ -179,29 +214,69 @@
                 "sentence": "私の男は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおとこはとうきょうにすんでいます。",
+                  "romaji": "watashinootokohatoukyounisundeimasu.",
                   "meaningZh": "我的男住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "男",
                       "kana": "おとこ",
                       "desc": "男"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的男住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "人",
+                "kana": "ひと"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "女",
+                "kana": "おんな"
+              }
+            ]
           }
         }
       },
@@ -240,29 +315,69 @@
                 "sentence": "私の女は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおんなはとうきょうにすんでいます。",
+                  "romaji": "watashinoonnahatoukyounisundeimasu.",
                   "meaningZh": "我的女住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "女",
                       "kana": "おんな",
                       "desc": "女"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的女住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "男",
+                "kana": "おとこ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "男の人",
+                "kana": "おとこのひと"
+              }
+            ]
           }
         }
       },
@@ -301,29 +416,69 @@
                 "sentence": "私の男の人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおとこのひとはとうきょうにすんでいます。",
+                  "romaji": "watashinootokonohitohatoukyounisundeimasu.",
                   "meaningZh": "我的男人住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "男の人",
                       "kana": "おとこのひと",
                       "desc": "男人"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的男人住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "女",
+                "kana": "おんな"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "女の人",
+                "kana": "おんなのひと"
+              }
+            ]
           }
         }
       },
@@ -362,29 +517,69 @@
                 "sentence": "私の女の人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおんなのひとはとうきょうにすんでいます。",
+                  "romaji": "watashinoonnanohitohatoukyounisundeimasu.",
                   "meaningZh": "我的女人住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "女の人",
                       "kana": "おんなのひと",
                       "desc": "女人"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的女人住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "男の人",
+                "kana": "おとこのひと"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "男の子",
+                "kana": "おとこのこ"
+              }
+            ]
           }
         }
       },
@@ -423,29 +618,69 @@
                 "sentence": "私の男の子は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおとこのこはとうきょうにすんでいます。",
+                  "romaji": "watashinootokonokohatoukyounisundeimasu.",
                   "meaningZh": "我的男孩住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "男の子",
                       "kana": "おとこのこ",
                       "desc": "男孩"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的男孩住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "女の人",
+                "kana": "おんなのひと"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "女の子",
+                "kana": "おんなのこ"
+              }
+            ]
           }
         }
       },
@@ -484,29 +719,69 @@
                 "sentence": "私の女の子は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおんなのこはとうきょうにすんでいます。",
+                  "romaji": "watashinoonnanokohatoukyounisundeimasu.",
                   "meaningZh": "我的女孩住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "女の子",
                       "kana": "おんなのこ",
                       "desc": "女孩"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的女孩住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "男の子",
+                "kana": "おとこのこ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "子供",
+                "kana": "こども"
+              }
+            ]
           }
         }
       },
@@ -545,29 +820,69 @@
                 "sentence": "私の子供は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのこどもはとうきょうにすんでいます。",
+                  "romaji": "watashinokodomohatoukyounisundeimasu.",
                   "meaningZh": "我的孩子住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "子供",
                       "kana": "こども",
                       "desc": "孩子"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的孩子住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "女の子",
+                "kana": "おんなのこ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "大人",
+                "kana": "おとな"
+              }
+            ]
           }
         }
       },
@@ -606,29 +921,69 @@
                 "sentence": "私の大人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおとなはとうきょうにすんでいます。",
+                  "romaji": "watashinootonahatoukyounisundeimasu.",
                   "meaningZh": "我的大人住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "大人",
                       "kana": "おとな",
                       "desc": "大人"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的大人住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "子供",
+                "kana": "こども"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "赤ちゃん",
+                "kana": "あかちゃん"
+              }
+            ]
           }
         }
       },
@@ -667,29 +1022,69 @@
                 "sentence": "私の赤ちゃんは東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのあかちゃんはとうきょうにすんでいます。",
+                  "romaji": "watashinoakachanhatoukyounisundeimasu.",
                   "meaningZh": "我的婴儿住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "赤ちゃん",
                       "kana": "あかちゃん",
                       "desc": "婴儿"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的婴儿住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "大人",
+                "kana": "おとな"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "友達",
+                "kana": "ともだち"
+              }
+            ]
           }
         }
       },
@@ -728,29 +1123,69 @@
                 "sentence": "私の友達は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのともだちはとうきょうにすんでいます。",
+                  "romaji": "watashinotomodachihatoukyounisundeimasu.",
                   "meaningZh": "我的朋友住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "友達",
                       "kana": "ともだち",
                       "desc": "朋友"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的朋友住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "赤ちゃん",
+                "kana": "あかちゃん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "先生",
+                "kana": "せんせい"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1224,54 @@
                 "sentence": "彼は先生です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはせんせいです。",
+                  "romaji": "karehasenseidesu.",
                   "meaningZh": "他是老师。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "先生",
                       "kana": "せんせい",
                       "desc": "老师"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 职业 です",
-                    "meaningZh": "他是老师。"
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "友達",
+                "kana": "ともだち"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "学生",
+                "kana": "がくせい"
+              }
+            ]
           }
         }
       },
@@ -850,29 +1310,54 @@
                 "sentence": "彼は学生です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはがくせいです。",
+                  "romaji": "karehagakuseidesu.",
                   "meaningZh": "他是学生。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "学生",
                       "kana": "がくせい",
                       "desc": "学生"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 职业 です",
-                    "meaningZh": "他是学生。"
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "先生",
+                "kana": "せんせい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "大学生",
+                "kana": "だいがくせい"
+              }
+            ]
           }
         }
       },
@@ -911,29 +1396,54 @@
                 "sentence": "彼は大学生です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはだいがくせいです。",
+                  "romaji": "karehadaigakuseidesu.",
                   "meaningZh": "他是大学生。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "大学生",
                       "kana": "だいがくせい",
                       "desc": "大学生"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 职业 です",
-                    "meaningZh": "他是大学生。"
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "学生",
+                "kana": "がくせい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "会社員",
+                "kana": "かいしゃいん"
+              }
+            ]
           }
         }
       },
@@ -972,29 +1482,54 @@
                 "sentence": "彼は会社員です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはかいしゃいんです。",
+                  "romaji": "karehakaishaindesu.",
                   "meaningZh": "他是公司职员。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "会社員",
                       "kana": "かいしゃいん",
                       "desc": "公司职员"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 职业 です",
-                    "meaningZh": "他是公司职员。"
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "大学生",
+                "kana": "だいがくせい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "医者",
+                "kana": "いしゃ"
+              }
+            ]
           }
         }
       },
@@ -1033,29 +1568,54 @@
                 "sentence": "彼は医者です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはいしゃです。",
+                  "romaji": "karehaishadesu.",
                   "meaningZh": "他是医生。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "医者",
                       "kana": "いしゃ",
                       "desc": "医生"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 职业 です",
-                    "meaningZh": "他是医生。"
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "会社員",
+                "kana": "かいしゃいん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "看護師",
+                "kana": "かんごし"
+              }
+            ]
           }
         }
       },
@@ -1094,29 +1654,69 @@
                 "sentence": "私の看護師は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのかんごしはとうきょうにすんでいます。",
+                  "romaji": "watashinokangoshihatoukyounisundeimasu.",
                   "meaningZh": "我的护士住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "看護師",
                       "kana": "かんごし",
                       "desc": "护士"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的护士住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "医者",
+                "kana": "いしゃ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "店員",
+                "kana": "てんいん"
+              }
+            ]
           }
         }
       },
@@ -1155,29 +1755,54 @@
                 "sentence": "彼は店員です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはてんいんです。",
+                  "romaji": "karehatenindesu.",
                   "meaningZh": "他是店员。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "店員",
                       "kana": "てんいん",
                       "desc": "店员"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 职业 です",
-                    "meaningZh": "他是店员。"
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "看護師",
+                "kana": "かんごし"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "駅員",
+                "kana": "えきいん"
+              }
+            ]
           }
         }
       },
@@ -1216,29 +1841,69 @@
                 "sentence": "私の駅員は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのえきいんはとうきょうにすんでいます。",
+                  "romaji": "watashinoekiinhatoukyounisundeimasu.",
                   "meaningZh": "我的车站工作人员住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "駅員",
                       "kana": "えきいん",
                       "desc": "车站工作人员"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的车站工作人员住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "店員",
+                "kana": "てんいん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "警官",
+                "kana": "けいかん"
+              }
+            ]
           }
         }
       },
@@ -1277,29 +1942,54 @@
                 "sentence": "彼は警官です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かれはけいかんです。",
+                  "romaji": "karehakeikandesu.",
                   "meaningZh": "他是警察。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "彼",
+                      "kana": "かれ",
+                      "desc": "他"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "警官",
                       "kana": "けいかん",
                       "desc": "警察"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は 职业 です",
-                    "meaningZh": "他是警察。"
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "駅員",
+                "kana": "えきいん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "外国人",
+                "kana": "がいこくじん"
+              }
+            ]
           }
         }
       },
@@ -1338,29 +2028,69 @@
                 "sentence": "私の外国人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのがいこくじんはとうきょうにすんでいます。",
+                  "romaji": "watashinogaikokujinhatoukyounisundeimasu.",
                   "meaningZh": "我的外国人住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "外国人",
                       "kana": "がいこくじん",
                       "desc": "外国人"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的外国人住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "警官",
+                "kana": "けいかん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "父",
+                "kana": "ちち"
+              }
+            ]
           }
         }
       },
@@ -1399,29 +2129,69 @@
                 "sentence": "私の父は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのちちはとうきょうにすんでいます。",
+                  "romaji": "watashinochichihatoukyounisundeimasu.",
                   "meaningZh": "我的我父亲住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "父",
                       "kana": "ちち",
                       "desc": "我父亲"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的我父亲住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "外国人",
+                "kana": "がいこくじん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "母",
+                "kana": "はは"
+              }
+            ]
           }
         }
       },
@@ -1460,29 +2230,69 @@
                 "sentence": "私の母は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのはははとうきょうにすんでいます。",
+                  "romaji": "watashinohahahatoukyounisundeimasu.",
                   "meaningZh": "我的我母亲住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "母",
                       "kana": "はは",
                       "desc": "我母亲"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的我母亲住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "父",
+                "kana": "ちち"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "両親",
+                "kana": "りょうしん"
+              }
+            ]
           }
         }
       },
@@ -1521,29 +2331,69 @@
                 "sentence": "私の両親は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのりょうしんはとうきょうにすんでいます。",
+                  "romaji": "watashinoryoushinhatoukyounisundeimasu.",
                   "meaningZh": "我的父母住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "両親",
                       "kana": "りょうしん",
                       "desc": "父母"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的父母住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "母",
+                "kana": "はは"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "親",
+                "kana": "おや"
+              }
+            ]
           }
         }
       },
@@ -1582,29 +2432,69 @@
                 "sentence": "私の親は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおやはとうきょうにすんでいます。",
+                  "romaji": "watashinooyahatoukyounisundeimasu.",
                   "meaningZh": "我的父母住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "親",
                       "kana": "おや",
                       "desc": "父母"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的父母住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "両親",
+                "kana": "りょうしん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "兄",
+                "kana": "あに"
+              }
+            ]
           }
         }
       },
@@ -1643,29 +2533,69 @@
                 "sentence": "私の兄は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのあにはとうきょうにすんでいます。",
+                  "romaji": "watashinoanihatoukyounisundeimasu.",
                   "meaningZh": "我的我哥哥住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "兄",
                       "kana": "あに",
                       "desc": "我哥哥"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的我哥哥住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "親",
+                "kana": "おや"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "姉",
+                "kana": "あね"
+              }
+            ]
           }
         }
       },
@@ -1704,29 +2634,69 @@
                 "sentence": "私の姉は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのあねはとうきょうにすんでいます。",
+                  "romaji": "watashinoanehatoukyounisundeimasu.",
                   "meaningZh": "我的我姐姐住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "姉",
                       "kana": "あね",
                       "desc": "我姐姐"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的我姐姐住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "兄",
+                "kana": "あに"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "弟",
+                "kana": "おとうと"
+              }
+            ]
           }
         }
       },
@@ -1765,29 +2735,69 @@
                 "sentence": "私の弟は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおとうとはとうきょうにすんでいます。",
+                  "romaji": "watashinootoutohatoukyounisundeimasu.",
                   "meaningZh": "我的弟弟住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "弟",
                       "kana": "おとうと",
                       "desc": "弟弟"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的弟弟住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "姉",
+                "kana": "あね"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "妹",
+                "kana": "いもうと"
+              }
+            ]
           }
         }
       },
@@ -1826,29 +2836,69 @@
                 "sentence": "私の妹は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのいもうとはとうきょうにすんでいます。",
+                  "romaji": "watashinoimoutohatoukyounisundeimasu.",
                   "meaningZh": "我的妹妹住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "妹",
                       "kana": "いもうと",
                       "desc": "妹妹"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的妹妹住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "弟",
+                "kana": "おとうと"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "家族",
+                "kana": "かぞく"
+              }
+            ]
           }
         }
       },
@@ -1887,29 +2937,69 @@
                 "sentence": "私の家族は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのかぞくはとうきょうにすんでいます。",
+                  "romaji": "watashinokazokuhatoukyounisundeimasu.",
                   "meaningZh": "我的家人住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "家族",
                       "kana": "かぞく",
                       "desc": "家人"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的家人住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "妹",
+                "kana": "いもうと"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "夫",
+                "kana": "おっと"
+              }
+            ]
           }
         }
       },
@@ -1948,29 +3038,69 @@
                 "sentence": "私の夫は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおっとはとうきょうにすんでいます。",
+                  "romaji": "watashinoottohatoukyounisundeimasu.",
                   "meaningZh": "我的丈夫住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "夫",
                       "kana": "おっと",
                       "desc": "丈夫"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的丈夫住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "家族",
+                "kana": "かぞく"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "妻",
+                "kana": "つま"
+              }
+            ]
           }
         }
       },
@@ -2009,29 +3139,69 @@
                 "sentence": "私の妻は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのつまはとうきょうにすんでいます。",
+                  "romaji": "watashinotsumahatoukyounisundeimasu.",
                   "meaningZh": "我的妻子住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "妻",
                       "kana": "つま",
                       "desc": "妻子"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的妻子住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "夫",
+                "kana": "おっと"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "奥さん",
+                "kana": "おくさん"
+              }
+            ]
           }
         }
       },
@@ -2070,29 +3240,69 @@
                 "sentence": "私の奥さんは東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおくさんはとうきょうにすんでいます。",
+                  "romaji": "watashinookusanhatoukyounisundeimasu.",
                   "meaningZh": "我的太太住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "奥さん",
                       "kana": "おくさん",
                       "desc": "太太"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的太太住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "妻",
+                "kana": "つま"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "主人",
+                "kana": "しゅじん"
+              }
+            ]
           }
         }
       },
@@ -2131,29 +3341,69 @@
                 "sentence": "私の主人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのしゅじんはとうきょうにすんでいます。",
+                  "romaji": "watashinoshujinhatoukyounisundeimasu.",
                   "meaningZh": "我的丈夫（自谦）住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "主人",
                       "kana": "しゅじん",
                       "desc": "丈夫（自谦）"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的丈夫（自谦）住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "奥さん",
+                "kana": "おくさん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ご主人",
+                "kana": "ごしゅじん"
+              }
+            ]
           }
         }
       },
@@ -2192,29 +3442,69 @@
                 "sentence": "私のご主人は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのごしゅじんはとうきょうにすんでいます。",
+                  "romaji": "watashinogoshujinhatoukyounisundeimasu.",
                   "meaningZh": "我的您丈夫住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "ご主人",
                       "kana": "ごしゅじん",
                       "desc": "您丈夫"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的您丈夫住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "主人",
+                "kana": "しゅじん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "おじさん",
+                "kana": "おじさん"
+              }
+            ]
           }
         }
       },
@@ -2253,29 +3543,69 @@
                 "sentence": "私のおじさんは東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおじさんはとうきょうにすんでいます。",
+                  "romaji": "watashinoojisanhatoukyounisundeimasu.",
                   "meaningZh": "我的叔叔；大叔住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "おじさん",
                       "kana": "おじさん",
                       "desc": "叔叔；大叔"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的叔叔；大叔住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ご主人",
+                "kana": "ごしゅじん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "おばさん",
+                "kana": "おばさん"
+              }
+            ]
           }
         }
       },
@@ -2314,29 +3644,69 @@
                 "sentence": "私のおばさんは東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおばさんはとうきょうにすんでいます。",
+                  "romaji": "watashinoobasanhatoukyounisundeimasu.",
                   "meaningZh": "我的阿姨；大婶住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "おばさん",
                       "kana": "おばさん",
                       "desc": "阿姨；大婶"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的阿姨；大婶住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "おじさん",
+                "kana": "おじさん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "おじいさん",
+                "kana": "おじいさん"
+              }
+            ]
           }
         }
       },
@@ -2375,29 +3745,69 @@
                 "sentence": "私のおじいさんは東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおじいさんはとうきょうにすんでいます。",
+                  "romaji": "watashinoojiisanhatoukyounisundeimasu.",
                   "meaningZh": "我的爷爷；老爷爷住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "おじいさん",
                       "kana": "おじいさん",
                       "desc": "爷爷；老爷爷"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的爷爷；老爷爷住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "おばさん",
+                "kana": "おばさん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "おばあさん",
+                "kana": "おばあさん"
+              }
+            ]
           }
         }
       },
@@ -2436,29 +3846,69 @@
                 "sentence": "私のおばあさんは東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのおばあさんはとうきょうにすんでいます。",
+                  "romaji": "watashinoobaasanhatoukyounisundeimasu.",
                   "meaningZh": "我的奶奶；老奶奶住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "おばあさん",
                       "kana": "おばあさん",
                       "desc": "奶奶；老奶奶"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的奶奶；老奶奶住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "おじいさん",
+                "kana": "おじいさん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "兄弟",
+                "kana": "きょうだい"
+              }
+            ]
           }
         }
       },
@@ -2497,29 +3947,69 @@
                 "sentence": "私の兄弟は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのきょうだいはとうきょうにすんでいます。",
+                  "romaji": "watashinokyoudaihatoukyounisundeimasu.",
                   "meaningZh": "我的兄弟姐妹住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "兄弟",
                       "kana": "きょうだい",
                       "desc": "兄弟姐妹"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的兄弟姐妹住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "おばあさん",
+                "kana": "おばあさん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "姉妹",
+                "kana": "しまい"
+              }
+            ]
           }
         }
       },
@@ -2558,26 +4048,61 @@
                 "sentence": "私の姉妹は東京に住んでいます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "わたしのしまいはとうきょうにすんでいます。",
+                  "romaji": "watashinoshimaihatoukyounisundeimasu.",
                   "meaningZh": "我的姐妹住在东京。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "私",
+                      "kana": "わたし",
+                      "desc": "我"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。所属。"
+                    },
                     {
                       "word": "姉妹",
                       "kana": "しまい",
                       "desc": "姐妹"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "東京",
+                      "kana": "とうきょう",
+                      "desc": "东京"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。地点。"
+                    },
+                    {
+                      "word": "住んでいます",
+                      "kana": "すんでいます",
+                      "desc": "居住（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "私の A は B",
-                    "meaningZh": "我的姐妹住在东京。"
+                    "pattern": "私の A は B に 住んでいます",
+                    "meaningZh": "我的 A 住在 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "兄弟",
+                "kana": "きょうだい"
+              }
+            ]
           },
           "related": {
             "items": []

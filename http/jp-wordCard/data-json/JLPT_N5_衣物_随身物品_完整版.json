@@ -118,19 +118,39 @@
                 "sentence": "今日は服を着ています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはふくをきています。",
+                  "romaji": "kyouhafukuokiteimasu.",
                   "meaningZh": "今天穿着衣服。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "服",
                       "kana": "ふく",
                       "desc": "衣服"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "着ています",
+                      "kana": "きています",
+                      "desc": "穿着（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 着る",
-                    "meaningZh": "今天穿着衣服。"
+                    "pattern": "A を 着ています",
+                    "meaningZh": "穿着 A"
                   }
                 }
               }
@@ -140,7 +160,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "着物",
+                "kana": "きもの"
+              }
+            ]
           }
         }
       },
@@ -179,29 +204,59 @@
                 "sentence": "今日は着物を着ています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはきものをきています。",
+                  "romaji": "kyouhakimonookiteimasu.",
                   "meaningZh": "今天穿着和服。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "着物",
                       "kana": "きもの",
                       "desc": "和服"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "着ています",
+                      "kana": "きています",
+                      "desc": "穿着（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 着る",
-                    "meaningZh": "今天穿着和服。"
+                    "pattern": "A を 着ています",
+                    "meaningZh": "穿着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "服",
+                "kana": "ふく"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "シャツ",
+                "kana": "シャツ"
+              }
+            ]
           }
         }
       },
@@ -240,29 +295,59 @@
                 "sentence": "今日はシャツを着ています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはシャツをきています。",
+                  "romaji": "kyouhashatsuokiteimasu.",
                   "meaningZh": "今天穿着衬衫。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "シャツ",
                       "kana": "シャツ",
                       "desc": "衬衫"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "着ています",
+                      "kana": "きています",
+                      "desc": "穿着（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 着る",
-                    "meaningZh": "今天穿着衬衫。"
+                    "pattern": "A を 着ています",
+                    "meaningZh": "穿着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "着物",
+                "kana": "きもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "セーター",
+                "kana": "セーター"
+              }
+            ]
           }
         }
       },
@@ -301,29 +386,59 @@
                 "sentence": "今日はセーターを着ています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはセーターをきています。",
+                  "romaji": "kyouhase-ta-okiteimasu.",
                   "meaningZh": "今天穿着毛衣。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "セーター",
                       "kana": "セーター",
                       "desc": "毛衣"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "着ています",
+                      "kana": "きています",
+                      "desc": "穿着（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 着る",
-                    "meaningZh": "今天穿着毛衣。"
+                    "pattern": "A を 着ています",
+                    "meaningZh": "穿着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "シャツ",
+                "kana": "シャツ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "コート",
+                "kana": "コート"
+              }
+            ]
           }
         }
       },
@@ -362,29 +477,59 @@
                 "sentence": "今日はコートを着ています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはコートをきています。",
+                  "romaji": "kyouhako-tookiteimasu.",
                   "meaningZh": "今天穿着大衣。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "コート",
                       "kana": "コート",
                       "desc": "大衣"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "着ています",
+                      "kana": "きています",
+                      "desc": "穿着（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 着る",
-                    "meaningZh": "今天穿着大衣。"
+                    "pattern": "A を 着ています",
+                    "meaningZh": "穿着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "セーター",
+                "kana": "セーター"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "上着",
+                "kana": "うわぎ"
+              }
+            ]
           }
         }
       },
@@ -423,29 +568,54 @@
                 "sentence": "毎日上着を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちうわぎをもっています。",
+                  "romaji": "mainichiuwagiomotteimasu.",
                   "meaningZh": "每天都带着外套。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "上着",
                       "kana": "うわぎ",
                       "desc": "外套"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "持っています",
+                      "kana": "もっています",
+                      "desc": "持有（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 持つ",
-                    "meaningZh": "每天都带着外套。"
+                    "pattern": "A を 持っています",
+                    "meaningZh": "带着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "コート",
+                "kana": "コート"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ズボン",
+                "kana": "ズボン"
+              }
+            ]
           }
         }
       },
@@ -484,29 +654,59 @@
                 "sentence": "今日はズボンを着ています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはズボンをきています。",
+                  "romaji": "kyouhazubonokiteimasu.",
                   "meaningZh": "今天穿着裤子。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "ズボン",
                       "kana": "ズボン",
                       "desc": "裤子"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "着ています",
+                      "kana": "きています",
+                      "desc": "穿着（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 着る",
-                    "meaningZh": "今天穿着裤子。"
+                    "pattern": "A を 着ています",
+                    "meaningZh": "穿着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "上着",
+                "kana": "うわぎ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "スカート",
+                "kana": "スカート"
+              }
+            ]
           }
         }
       },
@@ -545,29 +745,54 @@
                 "sentence": "毎日スカートを持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちスカートをもっています。",
+                  "romaji": "mainichisuka-toomotteimasu.",
                   "meaningZh": "每天都带着裙子。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "スカート",
                       "kana": "スカート",
                       "desc": "裙子"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "持っています",
+                      "kana": "もっています",
+                      "desc": "持有（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 持つ",
-                    "meaningZh": "每天都带着裙子。"
+                    "pattern": "A を 持っています",
+                    "meaningZh": "带着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ズボン",
+                "kana": "ズボン"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "靴",
+                "kana": "くつ"
+              }
+            ]
           }
         }
       },
@@ -606,29 +831,54 @@
                 "sentence": "毎日靴を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちくつをもっています。",
+                  "romaji": "mainichikutsuomotteimasu.",
                   "meaningZh": "每天都带着鞋。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "靴",
                       "kana": "くつ",
                       "desc": "鞋"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "持っています",
+                      "kana": "もっています",
+                      "desc": "持有（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 持つ",
-                    "meaningZh": "每天都带着鞋。"
+                    "pattern": "A を 持っています",
+                    "meaningZh": "带着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "スカート",
+                "kana": "スカート"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "靴下",
+                "kana": "くつした"
+              }
+            ]
           }
         }
       },
@@ -667,29 +917,54 @@
                 "sentence": "毎日靴下を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちくつしたをもっています。",
+                  "romaji": "mainichikutsushitaomotteimasu.",
                   "meaningZh": "每天都带着袜子。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "靴下",
                       "kana": "くつした",
                       "desc": "袜子"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "持っています",
+                      "kana": "もっています",
+                      "desc": "持有（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 持つ",
-                    "meaningZh": "每天都带着袜子。"
+                    "pattern": "A を 持っています",
+                    "meaningZh": "带着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "靴",
+                "kana": "くつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "帽子",
+                "kana": "ぼうし"
+              }
+            ]
           }
         }
       },
@@ -728,29 +1003,54 @@
                 "sentence": "毎日帽子を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちぼうしをもっています。",
+                  "romaji": "mainichiboushiomotteimasu.",
                   "meaningZh": "每天都带着帽子。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "帽子",
                       "kana": "ぼうし",
                       "desc": "帽子"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "持っています",
+                      "kana": "もっています",
+                      "desc": "持有（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 持つ",
-                    "meaningZh": "每天都带着帽子。"
+                    "pattern": "A を 持っています",
+                    "meaningZh": "带着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "靴下",
+                "kana": "くつした"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "眼鏡",
+                "kana": "めがね"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1089,54 @@
                 "sentence": "毎日眼鏡を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちめがねをもっています。",
+                  "romaji": "mainichimeganeomotteimasu.",
                   "meaningZh": "每天都带着眼镜。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "眼鏡",
                       "kana": "めがね",
                       "desc": "眼镜"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "持っています",
+                      "kana": "もっています",
+                      "desc": "持有（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 持つ",
-                    "meaningZh": "每天都带着眼镜。"
+                    "pattern": "A を 持っています",
+                    "meaningZh": "带着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "帽子",
+                "kana": "ぼうし"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "時計",
+                "kana": "とけい"
+              }
+            ]
           }
         }
       },
@@ -850,29 +1175,54 @@
                 "sentence": "毎日時計を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちとけいをもっています。",
+                  "romaji": "mainichitokeiomotteimasu.",
                   "meaningZh": "每天都带着手表；时钟。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "時計",
                       "kana": "とけい",
                       "desc": "手表；时钟"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "持っています",
+                      "kana": "もっています",
+                      "desc": "持有（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 持つ",
-                    "meaningZh": "每天都带着手表；时钟。"
+                    "pattern": "A を 持っています",
+                    "meaningZh": "带着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "眼鏡",
+                "kana": "めがね"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "かばん",
+                "kana": "かばん"
+              }
+            ]
           }
         }
       },
@@ -911,29 +1261,54 @@
                 "sentence": "毎日かばんを持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちかばんをもっています。",
+                  "romaji": "mainichikabanomotteimasu.",
                   "meaningZh": "每天都带着包。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "かばん",
                       "kana": "かばん",
                       "desc": "包"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "持っています",
+                      "kana": "もっています",
+                      "desc": "持有（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 持つ",
-                    "meaningZh": "每天都带着包。"
+                    "pattern": "A を 持っています",
+                    "meaningZh": "带着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "時計",
+                "kana": "とけい"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "傘",
+                "kana": "かさ"
+              }
+            ]
           }
         }
       },
@@ -972,29 +1347,54 @@
                 "sentence": "毎日傘を持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちかさをもっています。",
+                  "romaji": "mainichikasaomotteimasu.",
                   "meaningZh": "每天都带着伞。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "傘",
                       "kana": "かさ",
                       "desc": "伞"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "持っています",
+                      "kana": "もっています",
+                      "desc": "持有（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 持つ",
-                    "meaningZh": "每天都带着伞。"
+                    "pattern": "A を 持っています",
+                    "meaningZh": "带着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "かばん",
+                "kana": "かばん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ハンカチ",
+                "kana": "ハンカチ"
+              }
+            ]
           }
         }
       },
@@ -1033,29 +1433,54 @@
                 "sentence": "毎日ハンカチを持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちハンカチをもっています。",
+                  "romaji": "mainichihankachiomotteimasu.",
                   "meaningZh": "每天都带着手帕。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "ハンカチ",
                       "kana": "ハンカチ",
                       "desc": "手帕"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "持っています",
+                      "kana": "もっています",
+                      "desc": "持有（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 持つ",
-                    "meaningZh": "每天都带着手帕。"
+                    "pattern": "A を 持っています",
+                    "meaningZh": "带着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "傘",
+                "kana": "かさ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ポケット",
+                "kana": "ポケット"
+              }
+            ]
           }
         }
       },
@@ -1094,26 +1519,46 @@
                 "sentence": "毎日ポケットを持っています。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "まいにちポケットをもっています。",
+                  "romaji": "mainichipokettoomotteimasu.",
                   "meaningZh": "每天都带着口袋。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "ポケット",
                       "kana": "ポケット",
                       "desc": "口袋"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "持っています",
+                      "kana": "もっています",
+                      "desc": "持有（进行）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 持つ",
-                    "meaningZh": "每天都带着口袋。"
+                    "pattern": "A を 持っています",
+                    "meaningZh": "带着 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ハンカチ",
+                "kana": "ハンカチ"
+              }
+            ]
           },
           "related": {
             "items": []

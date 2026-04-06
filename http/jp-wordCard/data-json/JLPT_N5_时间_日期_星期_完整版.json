@@ -118,19 +118,34 @@
                 "sentence": "今は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "いまはいそがしいです。",
+                  "romaji": "imahaisogashiidesu.",
                   "meaningZh": "现在很忙。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "今",
                       "kana": "いま",
                       "desc": "现在"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "忙しい",
+                      "kana": "いそがしい",
+                      "desc": "忙"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "时间词 は 〜です",
-                    "meaningZh": "现在很忙。"
+                    "meaningZh": "时间词作为主题。"
                   }
                 }
               }
@@ -140,7 +155,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "今日",
+                "kana": "きょう"
+              }
+            ]
           }
         }
       },
@@ -179,29 +199,54 @@
                 "sentence": "今日は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはいそがしいです。",
+                  "romaji": "kyouhaisogashiidesu.",
                   "meaningZh": "今天很忙。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "今日",
                       "kana": "きょう",
                       "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "忙しい",
+                      "kana": "いそがしい",
+                      "desc": "忙"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "时间词 は 〜です",
-                    "meaningZh": "今天很忙。"
+                    "meaningZh": "时间词作为主题。"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "今",
+                "kana": "いま"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "昨日",
+                "kana": "きのう"
+              }
+            ]
           }
         }
       },
@@ -240,29 +285,54 @@
                 "sentence": "昨日は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きのうはいそがしいです。",
+                  "romaji": "kinouhaisogashiidesu.",
                   "meaningZh": "昨天很忙。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "昨日",
                       "kana": "きのう",
                       "desc": "昨天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "忙しい",
+                      "kana": "いそがしい",
+                      "desc": "忙"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "时间词 は 〜です",
-                    "meaningZh": "昨天很忙。"
+                    "meaningZh": "时间词作为主题。"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "今日",
+                "kana": "きょう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "明日",
+                "kana": "あした"
+              }
+            ]
           }
         }
       },
@@ -301,29 +371,54 @@
                 "sentence": "明日は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "あしたはいそがしいです。",
+                  "romaji": "ashitahaisogashiidesu.",
                   "meaningZh": "明天很忙。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "明日",
                       "kana": "あした",
                       "desc": "明天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "忙しい",
+                      "kana": "いそがしい",
+                      "desc": "忙"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "时间词 は 〜です",
-                    "meaningZh": "明天很忙。"
+                    "meaningZh": "时间词作为主题。"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "昨日",
+                "kana": "きのう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "今朝",
+                "kana": "けさ"
+              }
+            ]
           }
         }
       },
@@ -362,29 +457,54 @@
                 "sentence": "今朝は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "けさはいそがしいです。",
+                  "romaji": "kesahaisogashiidesu.",
                   "meaningZh": "今天早上很忙。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "今朝",
                       "kana": "けさ",
                       "desc": "今天早上"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "忙しい",
+                      "kana": "いそがしい",
+                      "desc": "忙"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "时间词 は 〜です",
-                    "meaningZh": "今天早上很忙。"
+                    "meaningZh": "时间词作为主题。"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "明日",
+                "kana": "あした"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "今晩",
+                "kana": "こんばん"
+              }
+            ]
           }
         }
       },
@@ -423,29 +543,54 @@
                 "sentence": "今晩は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "こんばんはいそがしいです。",
+                  "romaji": "konbanhaisogashiidesu.",
                   "meaningZh": "今晚很忙。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "今晩",
                       "kana": "こんばん",
                       "desc": "今晚"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "忙しい",
+                      "kana": "いそがしい",
+                      "desc": "忙"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "时间词 は 〜です",
-                    "meaningZh": "今晚很忙。"
+                    "meaningZh": "时间词作为主题。"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "今朝",
+                "kana": "けさ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "今夜",
+                "kana": "こんや"
+              }
+            ]
           }
         }
       },
@@ -484,29 +629,54 @@
                 "sentence": "今夜は忙しいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "こんやはいそがしいです。",
+                  "romaji": "konyahaisogashiidesu.",
                   "meaningZh": "今夜很忙。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "今夜",
                       "kana": "こんや",
                       "desc": "今夜"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "忙しい",
+                      "kana": "いそがしい",
+                      "desc": "忙"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "时间词 は 〜です",
-                    "meaningZh": "今夜很忙。"
+                    "meaningZh": "时间词作为主题。"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "今晩",
+                "kana": "こんばん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "毎日",
+                "kana": "まいにち"
+              }
+            ]
           }
         }
       },
@@ -545,29 +715,54 @@
                 "sentence": "試験は毎日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはまいにちです。",
+                  "romaji": "shikenhamainichidesu.",
                   "meaningZh": "考试时间是每天。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "毎日",
                       "kana": "まいにち",
                       "desc": "每天"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是每天。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "今夜",
+                "kana": "こんや"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "毎朝",
+                "kana": "まいあさ"
+              }
+            ]
           }
         }
       },
@@ -606,29 +801,54 @@
                 "sentence": "試験は毎朝です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはまいあさです。",
+                  "romaji": "shikenhamaiasadesu.",
                   "meaningZh": "考试时间是每天早上。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "毎朝",
                       "kana": "まいあさ",
                       "desc": "每天早上"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是每天早上。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "毎日",
+                "kana": "まいにち"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "毎晩",
+                "kana": "まいばん"
+              }
+            ]
           }
         }
       },
@@ -667,29 +887,54 @@
                 "sentence": "試験は毎晩です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはまいばんです。",
+                  "romaji": "shikenhamaibandesu.",
                   "meaningZh": "考试时间是每天晚上。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "毎晩",
                       "kana": "まいばん",
                       "desc": "每天晚上"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是每天晚上。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "毎朝",
+                "kana": "まいあさ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "毎週",
+                "kana": "まいしゅう"
+              }
+            ]
           }
         }
       },
@@ -728,29 +973,54 @@
                 "sentence": "試験は毎週です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはまいしゅうです。",
+                  "romaji": "shikenhamaishuudesu.",
                   "meaningZh": "考试时间是每周。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "毎週",
                       "kana": "まいしゅう",
                       "desc": "每周"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是每周。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "毎晩",
+                "kana": "まいばん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "毎月",
+                "kana": "まいつき"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1059,54 @@
                 "sentence": "試験は毎月です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはまいつきです。",
+                  "romaji": "shikenhamaitsukidesu.",
                   "meaningZh": "考试时间是每月。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "毎月",
                       "kana": "まいつき",
                       "desc": "每月"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是每月。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "毎週",
+                "kana": "まいしゅう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "毎年",
+                "kana": "まいとし"
+              }
+            ]
           }
         }
       },
@@ -850,29 +1145,54 @@
                 "sentence": "試験は毎年です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはまいとしです。",
+                  "romaji": "shikenhamaitoshidesu.",
                   "meaningZh": "考试时间是每年。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "毎年",
                       "kana": "まいとし",
                       "desc": "每年"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是每年。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "毎月",
+                "kana": "まいつき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "朝",
+                "kana": "あさ"
+              }
+            ]
           }
         }
       },
@@ -911,29 +1231,54 @@
                 "sentence": "試験は朝です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはあさです。",
+                  "romaji": "shikenhaasadesu.",
                   "meaningZh": "考试时间是早上。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "朝",
                       "kana": "あさ",
                       "desc": "早上"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是早上。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "毎年",
+                "kana": "まいとし"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "午前",
+                "kana": "ごぜん"
+              }
+            ]
           }
         }
       },
@@ -972,29 +1317,54 @@
                 "sentence": "試験は午前です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはごぜんです。",
+                  "romaji": "shikenhagozendesu.",
                   "meaningZh": "考试时间是上午。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "午前",
                       "kana": "ごぜん",
                       "desc": "上午"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是上午。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "朝",
+                "kana": "あさ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "昼",
+                "kana": "ひる"
+              }
+            ]
           }
         }
       },
@@ -1033,29 +1403,54 @@
                 "sentence": "試験は昼です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはひるです。",
+                  "romaji": "shikenhahirudesu.",
                   "meaningZh": "考试时间是白天；中午。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "昼",
                       "kana": "ひる",
                       "desc": "白天；中午"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是白天；中午。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "午前",
+                "kana": "ごぜん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "午後",
+                "kana": "ごご"
+              }
+            ]
           }
         }
       },
@@ -1094,29 +1489,54 @@
                 "sentence": "試験は午後です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはごごです。",
+                  "romaji": "shikenhagogodesu.",
                   "meaningZh": "考试时间是下午。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "午後",
                       "kana": "ごご",
                       "desc": "下午"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是下午。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "昼",
+                "kana": "ひる"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "夕方",
+                "kana": "ゆうがた"
+              }
+            ]
           }
         }
       },
@@ -1155,29 +1575,54 @@
                 "sentence": "試験は夕方です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはゆうがたです。",
+                  "romaji": "shikenhayuugatadesu.",
                   "meaningZh": "考试时间是傍晚。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "夕方",
                       "kana": "ゆうがた",
                       "desc": "傍晚"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是傍晚。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "午後",
+                "kana": "ごご"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "夜",
+                "kana": "よる"
+              }
+            ]
           }
         }
       },
@@ -1216,29 +1661,54 @@
                 "sentence": "試験は夜です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはよるです。",
+                  "romaji": "shikenhayorudesu.",
                   "meaningZh": "考试时间是夜晚。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "夜",
                       "kana": "よる",
                       "desc": "夜晚"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是夜晚。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "夕方",
+                "kana": "ゆうがた"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "晩",
+                "kana": "ばん"
+              }
+            ]
           }
         }
       },
@@ -1277,29 +1747,54 @@
                 "sentence": "試験は晩です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはばんです。",
+                  "romaji": "shikenhabandesu.",
                   "meaningZh": "考试时间是晚上。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "晩",
                       "kana": "ばん",
                       "desc": "晚上"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是晚上。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "夜",
+                "kana": "よる"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "時間",
+                "kana": "じかん"
+              }
+            ]
           }
         }
       },
@@ -1338,29 +1833,54 @@
                 "sentence": "試験は時間です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはじかんです。",
+                  "romaji": "shikenhajikandesu.",
                   "meaningZh": "考试时间是时间；小时。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "時間",
                       "kana": "じかん",
                       "desc": "时间；小时"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是时间；小时。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "晩",
+                "kana": "ばん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "時",
+                "kana": "とき"
+              }
+            ]
           }
         }
       },
@@ -1399,29 +1919,54 @@
                 "sentence": "試験は時です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはじです。",
+                  "romaji": "shikenhajidesu.",
                   "meaningZh": "考试时间是点钟。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "時",
                       "kana": "じ",
                       "desc": "点钟"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是点钟。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "時間",
+                "kana": "じかん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "分",
+                "kana": "ふん"
+              }
+            ]
           }
         }
       },
@@ -1460,29 +2005,54 @@
                 "sentence": "試験は分です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはふんです。",
+                  "romaji": "shikenhafundesu.",
                   "meaningZh": "考试时间是分钟。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "分",
                       "kana": "ふん",
                       "desc": "分钟"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是分钟。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "時",
+                "kana": "とき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "秒",
+                "kana": "びょう"
+              }
+            ]
           }
         }
       },
@@ -1521,29 +2091,54 @@
                 "sentence": "試験は秒です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはびょうです。",
+                  "romaji": "shikenhabyoudesu.",
                   "meaningZh": "考试时间是秒。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "秒",
                       "kana": "びょう",
                       "desc": "秒"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是秒。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "分",
+                "kana": "ふん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "週",
+                "kana": "しゅう"
+              }
+            ]
           }
         }
       },
@@ -1582,29 +2177,54 @@
                 "sentence": "試験は週です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはしゅうです。",
+                  "romaji": "shikenhashuudesu.",
                   "meaningZh": "考试时间是周。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "週",
                       "kana": "しゅう",
                       "desc": "周"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是周。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "秒",
+                "kana": "びょう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "月",
+                "kana": "つき"
+              }
+            ]
           }
         }
       },
@@ -1643,29 +2263,54 @@
                 "sentence": "試験は月です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはつきです。",
+                  "romaji": "shikenhatsukidesu.",
                   "meaningZh": "考试时间是月。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "月",
                       "kana": "つき",
                       "desc": "月"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是月。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "週",
+                "kana": "しゅう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "年",
+                "kana": "とし"
+              }
+            ]
           }
         }
       },
@@ -1704,29 +2349,54 @@
                 "sentence": "試験は年です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはとしです。",
+                  "romaji": "shikenhatoshidesu.",
                   "meaningZh": "考试时间是年。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "年",
                       "kana": "とし",
                       "desc": "年"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是年。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "月",
+                "kana": "つき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "先週",
+                "kana": "せんしゅう"
+              }
+            ]
           }
         }
       },
@@ -1765,29 +2435,54 @@
                 "sentence": "試験は先週です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはせんしゅうです。",
+                  "romaji": "shikenhasenshuudesu.",
                   "meaningZh": "考试时间是上周。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "先週",
                       "kana": "せんしゅう",
                       "desc": "上周"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是上周。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "年",
+                "kana": "とし"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "今週",
+                "kana": "こんしゅう"
+              }
+            ]
           }
         }
       },
@@ -1826,29 +2521,54 @@
                 "sentence": "試験は今週です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはこんしゅうです。",
+                  "romaji": "shikenhakonshuudesu.",
                   "meaningZh": "考试时间是本周。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "今週",
                       "kana": "こんしゅう",
                       "desc": "本周"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是本周。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "先週",
+                "kana": "せんしゅう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "来週",
+                "kana": "らいしゅう"
+              }
+            ]
           }
         }
       },
@@ -1887,29 +2607,54 @@
                 "sentence": "試験は来週です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはらいしゅうです。",
+                  "romaji": "shikenharaishuudesu.",
                   "meaningZh": "考试时间是下周。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "来週",
                       "kana": "らいしゅう",
                       "desc": "下周"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是下周。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "今週",
+                "kana": "こんしゅう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "先月",
+                "kana": "せんげつ"
+              }
+            ]
           }
         }
       },
@@ -1948,29 +2693,54 @@
                 "sentence": "試験は先月です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはせんげつです。",
+                  "romaji": "shikenhasengetsudesu.",
                   "meaningZh": "考试时间是上个月。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "先月",
                       "kana": "せんげつ",
                       "desc": "上个月"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是上个月。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "来週",
+                "kana": "らいしゅう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "今月",
+                "kana": "こんげつ"
+              }
+            ]
           }
         }
       },
@@ -2009,29 +2779,54 @@
                 "sentence": "試験は今月です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはこんげつです。",
+                  "romaji": "shikenhakongetsudesu.",
                   "meaningZh": "考试时间是这个月。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "今月",
                       "kana": "こんげつ",
                       "desc": "这个月"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是这个月。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "先月",
+                "kana": "せんげつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "来月",
+                "kana": "らいげつ"
+              }
+            ]
           }
         }
       },
@@ -2070,29 +2865,54 @@
                 "sentence": "試験は来月です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはらいげつです。",
+                  "romaji": "shikenharaigetsudesu.",
                   "meaningZh": "考试时间是下个月。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "来月",
                       "kana": "らいげつ",
                       "desc": "下个月"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是下个月。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "今月",
+                "kana": "こんげつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "去年",
+                "kana": "きょねん"
+              }
+            ]
           }
         }
       },
@@ -2131,29 +2951,54 @@
                 "sentence": "試験は去年です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはきょねんです。",
+                  "romaji": "shikenhakyonendesu.",
                   "meaningZh": "考试时间是去年。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "去年",
                       "kana": "きょねん",
                       "desc": "去年"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是去年。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "来月",
+                "kana": "らいげつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "今年",
+                "kana": "ことし"
+              }
+            ]
           }
         }
       },
@@ -2192,29 +3037,54 @@
                 "sentence": "試験は今年です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはことしです。",
+                  "romaji": "shikenhakotoshidesu.",
                   "meaningZh": "考试时间是今年。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "今年",
                       "kana": "ことし",
                       "desc": "今年"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是今年。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "去年",
+                "kana": "きょねん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "来年",
+                "kana": "らいねん"
+              }
+            ]
           }
         }
       },
@@ -2253,29 +3123,54 @@
                 "sentence": "試験は来年です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはらいねんです。",
+                  "romaji": "shikenharainendesu.",
                   "meaningZh": "考试时间是明年。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "来年",
                       "kana": "らいねん",
                       "desc": "明年"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是明年。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "今年",
+                "kana": "ことし"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "春",
+                "kana": "はる"
+              }
+            ]
           }
         }
       },
@@ -2314,29 +3209,54 @@
                 "sentence": "試験は春です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんははるです。",
+                  "romaji": "shikenhaharudesu.",
                   "meaningZh": "考试时间是春天。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "春",
                       "kana": "はる",
                       "desc": "春天"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是春天。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "来年",
+                "kana": "らいねん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "夏",
+                "kana": "なつ"
+              }
+            ]
           }
         }
       },
@@ -2375,29 +3295,54 @@
                 "sentence": "試験は夏です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはなつです。",
+                  "romaji": "shikenhanatsudesu.",
                   "meaningZh": "考试时间是夏天。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "夏",
                       "kana": "なつ",
                       "desc": "夏天"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是夏天。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "春",
+                "kana": "はる"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "秋",
+                "kana": "あき"
+              }
+            ]
           }
         }
       },
@@ -2436,29 +3381,54 @@
                 "sentence": "試験は秋です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはあきです。",
+                  "romaji": "shikenhaakidesu.",
                   "meaningZh": "考试时间是秋天。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "秋",
                       "kana": "あき",
                       "desc": "秋天"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是秋天。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "夏",
+                "kana": "なつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "冬",
+                "kana": "ふゆ"
+              }
+            ]
           }
         }
       },
@@ -2497,29 +3467,54 @@
                 "sentence": "試験は冬です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはふゆです。",
+                  "romaji": "shikenhafuyudesu.",
                   "meaningZh": "考试时间是冬天。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "冬",
                       "kana": "ふゆ",
                       "desc": "冬天"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是冬天。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "秋",
+                "kana": "あき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "休み",
+                "kana": "やすみ"
+              }
+            ]
           }
         }
       },
@@ -2558,29 +3553,54 @@
                 "sentence": "試験は休みです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはやすみです。",
+                  "romaji": "shikenhayasumidesu.",
                   "meaningZh": "考试时间是休息；假期。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "休み",
                       "kana": "やすみ",
                       "desc": "休息；假期"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是休息；假期。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "冬",
+                "kana": "ふゆ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "誕生日",
+                "kana": "たんじょうび"
+              }
+            ]
           }
         }
       },
@@ -2619,29 +3639,54 @@
                 "sentence": "試験は誕生日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはたんじょうびです。",
+                  "romaji": "shikenhatanjoubidesu.",
                   "meaningZh": "考试时间是生日。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "誕生日",
                       "kana": "たんじょうび",
                       "desc": "生日"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是生日。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "休み",
+                "kana": "やすみ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "月曜日",
+                "kana": "げつようび"
+              }
+            ]
           }
         }
       },
@@ -2680,29 +3725,54 @@
                 "sentence": "会議は月曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいぎはげつようびです。",
+                  "romaji": "kaigihagetsuyoubidesu.",
                   "meaningZh": "会议在星期一。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会議",
+                      "kana": "かいぎ",
+                      "desc": "会议"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "月曜日",
                       "kana": "げつようび",
                       "desc": "星期一"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 曜日 です",
-                    "meaningZh": "会议在星期一。"
+                    "meaningZh": "A 在星期几。"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "誕生日",
+                "kana": "たんじょうび"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "火曜日",
+                "kana": "かようび"
+              }
+            ]
           }
         }
       },
@@ -2741,29 +3811,54 @@
                 "sentence": "会議は火曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいぎはかようびです。",
+                  "romaji": "kaigihakayoubidesu.",
                   "meaningZh": "会议在星期二。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会議",
+                      "kana": "かいぎ",
+                      "desc": "会议"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "火曜日",
                       "kana": "かようび",
                       "desc": "星期二"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 曜日 です",
-                    "meaningZh": "会议在星期二。"
+                    "meaningZh": "A 在星期几。"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "月曜日",
+                "kana": "げつようび"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "水曜日",
+                "kana": "すいようび"
+              }
+            ]
           }
         }
       },
@@ -2802,29 +3897,54 @@
                 "sentence": "会議は水曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいぎはすいようびです。",
+                  "romaji": "kaigihasuiyoubidesu.",
                   "meaningZh": "会议在星期三。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会議",
+                      "kana": "かいぎ",
+                      "desc": "会议"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "水曜日",
                       "kana": "すいようび",
                       "desc": "星期三"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 曜日 です",
-                    "meaningZh": "会议在星期三。"
+                    "meaningZh": "A 在星期几。"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "火曜日",
+                "kana": "かようび"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "木曜日",
+                "kana": "もくようび"
+              }
+            ]
           }
         }
       },
@@ -2863,29 +3983,54 @@
                 "sentence": "会議は木曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいぎはもくようびです。",
+                  "romaji": "kaigihamokuyoubidesu.",
                   "meaningZh": "会议在星期四。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会議",
+                      "kana": "かいぎ",
+                      "desc": "会议"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "木曜日",
                       "kana": "もくようび",
                       "desc": "星期四"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 曜日 です",
-                    "meaningZh": "会议在星期四。"
+                    "meaningZh": "A 在星期几。"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "水曜日",
+                "kana": "すいようび"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "金曜日",
+                "kana": "きんようび"
+              }
+            ]
           }
         }
       },
@@ -2924,29 +4069,54 @@
                 "sentence": "会議は金曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいぎはきんようびです。",
+                  "romaji": "kaigihakinyoubidesu.",
                   "meaningZh": "会议在星期五。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会議",
+                      "kana": "かいぎ",
+                      "desc": "会议"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "金曜日",
                       "kana": "きんようび",
                       "desc": "星期五"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 曜日 です",
-                    "meaningZh": "会议在星期五。"
+                    "meaningZh": "A 在星期几。"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "木曜日",
+                "kana": "もくようび"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "土曜日",
+                "kana": "どようび"
+              }
+            ]
           }
         }
       },
@@ -2985,29 +4155,54 @@
                 "sentence": "会議は土曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいぎはどようびです。",
+                  "romaji": "kaigihadoyoubidesu.",
                   "meaningZh": "会议在星期六。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会議",
+                      "kana": "かいぎ",
+                      "desc": "会议"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "土曜日",
                       "kana": "どようび",
                       "desc": "星期六"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 曜日 です",
-                    "meaningZh": "会议在星期六。"
+                    "meaningZh": "A 在星期几。"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "金曜日",
+                "kana": "きんようび"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "日曜日",
+                "kana": "にちようび"
+              }
+            ]
           }
         }
       },
@@ -3046,29 +4241,54 @@
                 "sentence": "会議は日曜日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "かいぎはにちようびです。",
+                  "romaji": "kaigihanichiyoubidesu.",
                   "meaningZh": "会议在星期日。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "会議",
+                      "kana": "かいぎ",
+                      "desc": "会议"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "日曜日",
                       "kana": "にちようび",
                       "desc": "星期日"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 曜日 です",
-                    "meaningZh": "会议在星期日。"
+                    "meaningZh": "A 在星期几。"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "土曜日",
+                "kana": "どようび"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "先",
+                "kana": "さき"
+              }
+            ]
           }
         }
       },
@@ -3107,29 +4327,54 @@
                 "sentence": "試験は先です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはさきです。",
+                  "romaji": "shikenhasakidesu.",
                   "meaningZh": "考试时间是前面；先；将来。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "先",
                       "kana": "さき",
                       "desc": "前面；先；将来"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是前面；先；将来。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "日曜日",
+                "kana": "にちようび"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "前",
+                "kana": "まえ"
+              }
+            ]
           }
         }
       },
@@ -3168,29 +4413,54 @@
                 "sentence": "試験は前です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはまえです。",
+                  "romaji": "shikenhamaedesu.",
                   "meaningZh": "考试时间是前；以前。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "前",
                       "kana": "まえ",
                       "desc": "前；以前"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是前；以前。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "先",
+                "kana": "さき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "後",
+                "kana": "あと"
+              }
+            ]
           }
         }
       },
@@ -3229,29 +4499,54 @@
                 "sentence": "試験は後です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはあとです。",
+                  "romaji": "shikenhaatodesu.",
                   "meaningZh": "考试时间是后；之后。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "後",
                       "kana": "あと",
                       "desc": "后；之后"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是后；之后。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "前",
+                "kana": "まえ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "間",
+                "kana": "あいだ"
+              }
+            ]
           }
         }
       },
@@ -3290,29 +4585,54 @@
                 "sentence": "試験は間です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはあいだです。",
+                  "romaji": "shikenhaaidadesu.",
                   "meaningZh": "考试时间是之间。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "間",
                       "kana": "あいだ",
                       "desc": "之间"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是之间。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "後",
+                "kana": "あと"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "時",
+                "kana": "とき"
+              }
+            ]
           }
         }
       },
@@ -3351,26 +4671,46 @@
                 "sentence": "試験は時です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "しけんはときです。",
+                  "romaji": "shikenhatokidesu.",
                   "meaningZh": "考试时间是时候。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "試験",
+                      "kana": "しけん",
+                      "desc": "考试"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "時",
                       "kana": "とき",
                       "desc": "时候"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词。"
                     }
                   ],
                   "fixedPattern": {
                     "pattern": "A は 时间词 です",
-                    "meaningZh": "考试时间是时候。"
+                    "meaningZh": "A 的时间是…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "間",
+                "kana": "あいだ"
+              }
+            ]
           },
           "related": {
             "items": []

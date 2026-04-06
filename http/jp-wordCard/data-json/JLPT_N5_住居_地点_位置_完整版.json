@@ -115,22 +115,42 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-001-1",
-                "sentence": "週末は家で写真を撮ります。",
+                "sentence": "週末は家へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在家拍照。",
+                  "reading": "しゅうまつはいえへいきます。",
+                  "romaji": "shuumatsuhaieeikimasu.",
+                  "meaningZh": "周末去家。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "家",
                       "kana": "いえ",
                       "desc": "家"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在家拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
@@ -140,7 +160,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "部屋",
+                "kana": "へや"
+              }
+            ]
           }
         }
       },
@@ -176,32 +201,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-002-1",
-                "sentence": "週末は部屋で写真を撮ります。",
+                "sentence": "週末は部屋へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在房间拍照。",
+                  "reading": "しゅうまつはへやへいきます。",
+                  "romaji": "shuumatsuhaeyaeikimasu.",
+                  "meaningZh": "周末去房间。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "部屋",
                       "kana": "へや",
                       "desc": "房间"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在房间拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "家",
+                "kana": "いえ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "玄関",
+                "kana": "げんかん"
+              }
+            ]
           }
         }
       },
@@ -237,32 +292,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-003-1",
-                "sentence": "週末は玄関で写真を撮ります。",
+                "sentence": "週末は玄関へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在玄关拍照。",
+                  "reading": "しゅうまつはげんかんへいきます。",
+                  "romaji": "shuumatsuhagenkaneikimasu.",
+                  "meaningZh": "周末去玄关。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "玄関",
                       "kana": "げんかん",
                       "desc": "玄关"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在玄关拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "部屋",
+                "kana": "へや"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "台所",
+                "kana": "だいどころ"
+              }
+            ]
           }
         }
       },
@@ -298,32 +383,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-004-1",
-                "sentence": "週末は台所で写真を撮ります。",
+                "sentence": "週末は台所へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在厨房拍照。",
+                  "reading": "しゅうまつはだいどころへいきます。",
+                  "romaji": "shuumatsuhadaidokoroeikimasu.",
+                  "meaningZh": "周末去厨房。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "台所",
                       "kana": "だいどころ",
                       "desc": "厨房"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在厨房拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "玄関",
+                "kana": "げんかん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "キッチン",
+                "kana": "キッチン"
+              }
+            ]
           }
         }
       },
@@ -359,32 +474,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-005-1",
-                "sentence": "週末はキッチンで写真を撮ります。",
+                "sentence": "週末はキッチンへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在厨房拍照。",
+                  "reading": "しゅうまつはキッチンへいきます。",
+                  "romaji": "shuumatsuhakicchineikimasu.",
+                  "meaningZh": "周末去厨房。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "キッチン",
                       "kana": "キッチン",
                       "desc": "厨房"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在厨房拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "台所",
+                "kana": "だいどころ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "お風呂",
+                "kana": "おふろ"
+              }
+            ]
           }
         }
       },
@@ -420,32 +565,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-006-1",
-                "sentence": "週末はお風呂で写真を撮ります。",
+                "sentence": "週末はお風呂へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在浴室；洗澡水拍照。",
+                  "reading": "しゅうまつはおふろへいきます。",
+                  "romaji": "shuumatsuhaofuroeikimasu.",
+                  "meaningZh": "周末去浴室；洗澡水。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "お風呂",
                       "kana": "おふろ",
                       "desc": "浴室；洗澡水"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在浴室；洗澡水拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "キッチン",
+                "kana": "キッチン"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "トイレ",
+                "kana": "トイレ"
+              }
+            ]
           }
         }
       },
@@ -481,32 +656,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-007-1",
-                "sentence": "週末はトイレで写真を撮ります。",
+                "sentence": "週末はトイレへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在厕所拍照。",
+                  "reading": "しゅうまつはトイレへいきます。",
+                  "romaji": "shuumatsuhatoireeikimasu.",
+                  "meaningZh": "周末去厕所。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "トイレ",
                       "kana": "トイレ",
                       "desc": "厕所"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在厕所拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "お風呂",
+                "kana": "おふろ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "庭",
+                "kana": "にわ"
+              }
+            ]
           }
         }
       },
@@ -542,32 +747,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-008-1",
-                "sentence": "週末は庭で写真を撮ります。",
+                "sentence": "週末は庭へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在院子拍照。",
+                  "reading": "しゅうまつはにわへいきます。",
+                  "romaji": "shuumatsuhaniwaeikimasu.",
+                  "meaningZh": "周末去院子。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "庭",
                       "kana": "にわ",
                       "desc": "院子"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在院子拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "トイレ",
+                "kana": "トイレ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ドア",
+                "kana": "ドア"
+              }
+            ]
           }
         }
       },
@@ -603,32 +838,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-009-1",
-                "sentence": "週末はドアで写真を撮ります。",
+                "sentence": "週末はドアへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在门拍照。",
+                  "reading": "しゅうまつはドアへいきます。",
+                  "romaji": "shuumatsuhadoaeikimasu.",
+                  "meaningZh": "周末去门。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "ドア",
                       "kana": "ドア",
                       "desc": "门"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在门拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "庭",
+                "kana": "にわ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "窓",
+                "kana": "まど"
+              }
+            ]
           }
         }
       },
@@ -664,32 +929,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-010-1",
-                "sentence": "週末は窓で写真を撮ります。",
+                "sentence": "週末は窓へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在窗户拍照。",
+                  "reading": "しゅうまつはまどへいきます。",
+                  "romaji": "shuumatsuhamadoeikimasu.",
+                  "meaningZh": "周末去窗户。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "窓",
                       "kana": "まど",
                       "desc": "窗户"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在窗户拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ドア",
+                "kana": "ドア"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "階段",
+                "kana": "かいだん"
+              }
+            ]
           }
         }
       },
@@ -725,32 +1020,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-011-1",
-                "sentence": "週末は階段で写真を撮ります。",
+                "sentence": "週末は階段へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在楼梯拍照。",
+                  "reading": "しゅうまつはかいだんへいきます。",
+                  "romaji": "shuumatsuhakaidaneikimasu.",
+                  "meaningZh": "周末去楼梯。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "階段",
                       "kana": "かいだん",
                       "desc": "楼梯"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在楼梯拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "窓",
+                "kana": "まど"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "エレベーター",
+                "kana": "エレベーター"
+              }
+            ]
           }
         }
       },
@@ -786,32 +1111,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-012-1",
-                "sentence": "週末はエレベーターで写真を撮ります。",
+                "sentence": "週末はエレベーターへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在电梯拍照。",
+                  "reading": "しゅうまつはエレベーターへいきます。",
+                  "romaji": "shuumatsuhaerebe-ta-eikimasu.",
+                  "meaningZh": "周末去电梯。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "エレベーター",
                       "kana": "エレベーター",
                       "desc": "电梯"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在电梯拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "階段",
+                "kana": "かいだん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "エスカレーター",
+                "kana": "エスカレーター"
+              }
+            ]
           }
         }
       },
@@ -847,32 +1202,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-013-1",
-                "sentence": "週末はエスカレーターで写真を撮ります。",
+                "sentence": "週末はエスカレーターへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在自动扶梯拍照。",
+                  "reading": "しゅうまつはエスカレーターへいきます。",
+                  "romaji": "shuumatsuhaesukare-ta-eikimasu.",
+                  "meaningZh": "周末去自动扶梯。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "エスカレーター",
                       "kana": "エスカレーター",
                       "desc": "自动扶梯"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在自动扶梯拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "エレベーター",
+                "kana": "エレベーター"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "建物",
+                "kana": "たてもの"
+              }
+            ]
           }
         }
       },
@@ -908,32 +1293,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-014-1",
-                "sentence": "週末は建物で写真を撮ります。",
+                "sentence": "週末は建物へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在建筑物拍照。",
+                  "reading": "しゅうまつはたてものへいきます。",
+                  "romaji": "shuumatsuhatatemonoeikimasu.",
+                  "meaningZh": "周末去建筑物。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "建物",
                       "kana": "たてもの",
                       "desc": "建筑物"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在建筑物拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "エスカレーター",
+                "kana": "エスカレーター"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "店",
+                "kana": "みせ"
+              }
+            ]
           }
         }
       },
@@ -969,32 +1384,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-015-1",
-                "sentence": "週末は店で写真を撮ります。",
+                "sentence": "週末は店へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在店拍照。",
+                  "reading": "しゅうまつはみせへいきます。",
+                  "romaji": "shuumatsuhamiseeikimasu.",
+                  "meaningZh": "周末去店。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "店",
                       "kana": "みせ",
                       "desc": "店"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在店拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "建物",
+                "kana": "たてもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "会社",
+                "kana": "かいしゃ"
+              }
+            ]
           }
         }
       },
@@ -1030,32 +1475,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-016-1",
-                "sentence": "週末は会社で写真を撮ります。",
+                "sentence": "週末は会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在公司拍照。",
+                  "reading": "しゅうまつはかいしゃへいきます。",
+                  "romaji": "shuumatsuhakaishaeikimasu.",
+                  "meaningZh": "周末去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "会社",
                       "kana": "かいしゃ",
                       "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在公司拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "店",
+                "kana": "みせ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "銀行",
+                "kana": "ぎんこう"
+              }
+            ]
           }
         }
       },
@@ -1091,32 +1566,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-017-1",
-                "sentence": "週末は銀行で写真を撮ります。",
+                "sentence": "週末は銀行へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在银行拍照。",
+                  "reading": "しゅうまつはぎんこうへいきます。",
+                  "romaji": "shuumatsuhaginkoueikimasu.",
+                  "meaningZh": "周末去银行。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "銀行",
                       "kana": "ぎんこう",
                       "desc": "银行"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在银行拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "会社",
+                "kana": "かいしゃ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "郵便局",
+                "kana": "ゆうびんきょく"
+              }
+            ]
           }
         }
       },
@@ -1152,32 +1657,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-018-1",
-                "sentence": "週末は郵便局で写真を撮ります。",
+                "sentence": "週末は郵便局へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在邮局拍照。",
+                  "reading": "しゅうまつはゆうびんきょくへいきます。",
+                  "romaji": "shuumatsuhayuubinkyokueikimasu.",
+                  "meaningZh": "周末去邮局。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "郵便局",
                       "kana": "ゆうびんきょく",
                       "desc": "邮局"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在邮局拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "銀行",
+                "kana": "ぎんこう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "病院",
+                "kana": "びょういん"
+              }
+            ]
           }
         }
       },
@@ -1213,32 +1748,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-019-1",
-                "sentence": "週末は病院で写真を撮ります。",
+                "sentence": "週末は病院へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在医院拍照。",
+                  "reading": "しゅうまつはびょういんへいきます。",
+                  "romaji": "shuumatsuhabyouineikimasu.",
+                  "meaningZh": "周末去医院。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "病院",
                       "kana": "びょういん",
                       "desc": "医院"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在医院拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "郵便局",
+                "kana": "ゆうびんきょく"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "図書館",
+                "kana": "としょかん"
+              }
+            ]
           }
         }
       },
@@ -1274,32 +1839,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-020-1",
-                "sentence": "週末は図書館で写真を撮ります。",
+                "sentence": "週末は図書館へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在图书馆拍照。",
+                  "reading": "しゅうまつはとしょかんへいきます。",
+                  "romaji": "shuumatsuhatoshokaneikimasu.",
+                  "meaningZh": "周末去图书馆。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "図書館",
                       "kana": "としょかん",
                       "desc": "图书馆"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在图书馆拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "病院",
+                "kana": "びょういん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "公園",
+                "kana": "こうえん"
+              }
+            ]
           }
         }
       },
@@ -1335,32 +1930,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-021-1",
-                "sentence": "週末は公園で写真を撮ります。",
+                "sentence": "週末は公園へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在公园拍照。",
+                  "reading": "しゅうまつはこうえんへいきます。",
+                  "romaji": "shuumatsuhakoueneikimasu.",
+                  "meaningZh": "周末去公园。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "公園",
                       "kana": "こうえん",
                       "desc": "公园"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在公园拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "図書館",
+                "kana": "としょかん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ホテル",
+                "kana": "ホテル"
+              }
+            ]
           }
         }
       },
@@ -1396,32 +2021,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-022-1",
-                "sentence": "週末はホテルで写真を撮ります。",
+                "sentence": "週末はホテルへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在宾馆拍照。",
+                  "reading": "しゅうまつはホテルへいきます。",
+                  "romaji": "shuumatsuhahoterueikimasu.",
+                  "meaningZh": "周末去宾馆。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "ホテル",
                       "kana": "ホテル",
                       "desc": "宾馆"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在宾馆拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "公園",
+                "kana": "こうえん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "デパート",
+                "kana": "デパート"
+              }
+            ]
           }
         }
       },
@@ -1457,32 +2112,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-023-1",
-                "sentence": "週末はデパートで写真を撮ります。",
+                "sentence": "週末はデパートへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在百货商店拍照。",
+                  "reading": "しゅうまつはデパートへいきます。",
+                  "romaji": "shuumatsuhadepa-toeikimasu.",
+                  "meaningZh": "周末去百货商店。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "デパート",
                       "kana": "デパート",
                       "desc": "百货商店"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在百货商店拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ホテル",
+                "kana": "ホテル"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "スーパー",
+                "kana": "スーパー"
+              }
+            ]
           }
         }
       },
@@ -1518,32 +2203,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-024-1",
-                "sentence": "週末はスーパーで写真を撮ります。",
+                "sentence": "週末はスーパーへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在超市拍照。",
+                  "reading": "しゅうまつはスーパーへいきます。",
+                  "romaji": "shuumatsuhasu-pa-eikimasu.",
+                  "meaningZh": "周末去超市。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "スーパー",
                       "kana": "スーパー",
                       "desc": "超市"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在超市拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "デパート",
+                "kana": "デパート"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "コンビニ",
+                "kana": "コンビニ"
+              }
+            ]
           }
         }
       },
@@ -1579,32 +2294,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-025-1",
-                "sentence": "週末はコンビニで写真を撮ります。",
+                "sentence": "週末はコンビニへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在便利店拍照。",
+                  "reading": "しゅうまつはコンビニへいきます。",
+                  "romaji": "shuumatsuhakonbinieikimasu.",
+                  "meaningZh": "周末去便利店。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "コンビニ",
                       "kana": "コンビニ",
                       "desc": "便利店"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在便利店拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "スーパー",
+                "kana": "スーパー"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "レストラン",
+                "kana": "レストラン"
+              }
+            ]
           }
         }
       },
@@ -1640,32 +2385,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-026-1",
-                "sentence": "週末はレストランで写真を撮ります。",
+                "sentence": "週末はレストランへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在餐厅拍照。",
+                  "reading": "しゅうまつはレストランへいきます。",
+                  "romaji": "shuumatsuharesutoraneikimasu.",
+                  "meaningZh": "周末去餐厅。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "レストラン",
                       "kana": "レストラン",
                       "desc": "餐厅"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在餐厅拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "コンビニ",
+                "kana": "コンビニ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "喫茶店",
+                "kana": "きっさてん"
+              }
+            ]
           }
         }
       },
@@ -1701,32 +2476,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-027-1",
-                "sentence": "週末は喫茶店で写真を撮ります。",
+                "sentence": "週末は喫茶店へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在咖啡店拍照。",
+                  "reading": "しゅうまつはきっさてんへいきます。",
+                  "romaji": "shuumatsuhakissateneikimasu.",
+                  "meaningZh": "周末去咖啡店。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "喫茶店",
                       "kana": "きっさてん",
                       "desc": "咖啡店"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在咖啡店拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "レストラン",
+                "kana": "レストラン"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "駅",
+                "kana": "えき"
+              }
+            ]
           }
         }
       },
@@ -1762,32 +2567,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-028-1",
-                "sentence": "週末は駅で写真を撮ります。",
+                "sentence": "週末は駅へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在车站拍照。",
+                  "reading": "しゅうまつはえきへいきます。",
+                  "romaji": "shuumatsuhaekieikimasu.",
+                  "meaningZh": "周末去车站。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "駅",
                       "kana": "えき",
                       "desc": "车站"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在车站拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "喫茶店",
+                "kana": "きっさてん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "空港",
+                "kana": "くうこう"
+              }
+            ]
           }
         }
       },
@@ -1823,32 +2658,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-029-1",
-                "sentence": "週末は空港で写真を撮ります。",
+                "sentence": "週末は空港へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在机场拍照。",
+                  "reading": "しゅうまつはくうこうへいきます。",
+                  "romaji": "shuumatsuhakuukoueikimasu.",
+                  "meaningZh": "周末去机场。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "空港",
                       "kana": "くうこう",
                       "desc": "机场"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在机场拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "駅",
+                "kana": "えき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "町",
+                "kana": "まち"
+              }
+            ]
           }
         }
       },
@@ -1884,32 +2749,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-030-1",
-                "sentence": "週末は町で写真を撮ります。",
+                "sentence": "週末は町へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在城镇；街道拍照。",
+                  "reading": "しゅうまつはまちへいきます。",
+                  "romaji": "shuumatsuhamachieikimasu.",
+                  "meaningZh": "周末去城镇；街道。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "町",
                       "kana": "まち",
                       "desc": "城镇；街道"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在城镇；街道拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "空港",
+                "kana": "くうこう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "村",
+                "kana": "むら"
+              }
+            ]
           }
         }
       },
@@ -1945,32 +2840,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-031-1",
-                "sentence": "週末は村で写真を撮ります。",
+                "sentence": "週末は村へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在村庄拍照。",
+                  "reading": "しゅうまつはむらへいきます。",
+                  "romaji": "shuumatsuhamuraeikimasu.",
+                  "meaningZh": "周末去村庄。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "村",
                       "kana": "むら",
                       "desc": "村庄"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在村庄拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "町",
+                "kana": "まち"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "道",
+                "kana": "みち"
+              }
+            ]
           }
         }
       },
@@ -2006,32 +2931,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-032-1",
-                "sentence": "週末は道で写真を撮ります。",
+                "sentence": "週末は道へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在路拍照。",
+                  "reading": "しゅうまつはみちへいきます。",
+                  "romaji": "shuumatsuhamichieikimasu.",
+                  "meaningZh": "周末去路。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "道",
                       "kana": "みち",
                       "desc": "路"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在路拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "村",
+                "kana": "むら"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "角",
+                "kana": "かど"
+              }
+            ]
           }
         }
       },
@@ -2067,32 +3022,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-033-1",
-                "sentence": "週末は角で写真を撮ります。",
+                "sentence": "週末は角へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在拐角拍照。",
+                  "reading": "しゅうまつはかどへいきます。",
+                  "romaji": "shuumatsuhakadoeikimasu.",
+                  "meaningZh": "周末去拐角。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "角",
                       "kana": "かど",
                       "desc": "拐角"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在拐角拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "道",
+                "kana": "みち"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "隣",
+                "kana": "となり"
+              }
+            ]
           }
         }
       },
@@ -2128,32 +3113,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-034-1",
-                "sentence": "週末は隣で写真を撮ります。",
+                "sentence": "週末は隣へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在旁边拍照。",
+                  "reading": "しゅうまつはとなりへいきます。",
+                  "romaji": "shuumatsuhatonarieikimasu.",
+                  "meaningZh": "周末去旁边。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "隣",
                       "kana": "となり",
                       "desc": "旁边"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在旁边拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "角",
+                "kana": "かど"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "近く",
+                "kana": "ちかく"
+              }
+            ]
           }
         }
       },
@@ -2189,32 +3204,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-035-1",
-                "sentence": "週末は近くで写真を撮ります。",
+                "sentence": "週末は近くへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在附近拍照。",
+                  "reading": "しゅうまつはちかくへいきます。",
+                  "romaji": "shuumatsuhachikakueikimasu.",
+                  "meaningZh": "周末去附近。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "近く",
                       "kana": "ちかく",
                       "desc": "附近"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在附近拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "隣",
+                "kana": "となり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "右",
+                "kana": "みぎ"
+              }
+            ]
           }
         }
       },
@@ -2250,32 +3295,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-036-1",
-                "sentence": "週末は右で写真を撮ります。",
+                "sentence": "週末は右へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在右拍照。",
+                  "reading": "しゅうまつはみぎへいきます。",
+                  "romaji": "shuumatsuhamigieikimasu.",
+                  "meaningZh": "周末去右。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "右",
                       "kana": "みぎ",
                       "desc": "右"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在右拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "近く",
+                "kana": "ちかく"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "左",
+                "kana": "ひだり"
+              }
+            ]
           }
         }
       },
@@ -2311,32 +3386,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-037-1",
-                "sentence": "週末は左で写真を撮ります。",
+                "sentence": "週末は左へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在左拍照。",
+                  "reading": "しゅうまつはひだりへいきます。",
+                  "romaji": "shuumatsuhahidarieikimasu.",
+                  "meaningZh": "周末去左。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "左",
                       "kana": "ひだり",
                       "desc": "左"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在左拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "右",
+                "kana": "みぎ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "上",
+                "kana": "うえ"
+              }
+            ]
           }
         }
       },
@@ -2372,32 +3477,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-038-1",
-                "sentence": "週末は上で写真を撮ります。",
+                "sentence": "週末は上へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在上面拍照。",
+                  "reading": "しゅうまつはうえへいきます。",
+                  "romaji": "shuumatsuhaueeikimasu.",
+                  "meaningZh": "周末去上面。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "上",
                       "kana": "うえ",
                       "desc": "上面"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在上面拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "左",
+                "kana": "ひだり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "下",
+                "kana": "した"
+              }
+            ]
           }
         }
       },
@@ -2433,32 +3568,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-039-1",
-                "sentence": "週末は下で写真を撮ります。",
+                "sentence": "週末は下へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在下面拍照。",
+                  "reading": "しゅうまつはしたへいきます。",
+                  "romaji": "shuumatsuhashitaeikimasu.",
+                  "meaningZh": "周末去下面。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "下",
                       "kana": "した",
                       "desc": "下面"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在下面拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "上",
+                "kana": "うえ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "中",
+                "kana": "なか"
+              }
+            ]
           }
         }
       },
@@ -2494,32 +3659,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-040-1",
-                "sentence": "週末は中で写真を撮ります。",
+                "sentence": "週末は中へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在里面拍照。",
+                  "reading": "しゅうまつはなかへいきます。",
+                  "romaji": "shuumatsuhanakaeikimasu.",
+                  "meaningZh": "周末去里面。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "中",
                       "kana": "なか",
                       "desc": "里面"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在里面拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "下",
+                "kana": "した"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "外",
+                "kana": "そと"
+              }
+            ]
           }
         }
       },
@@ -2555,32 +3750,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-041-1",
-                "sentence": "週末は外で写真を撮ります。",
+                "sentence": "週末は外へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在外面拍照。",
+                  "reading": "しゅうまつはそとへいきます。",
+                  "romaji": "shuumatsuhasotoeikimasu.",
+                  "meaningZh": "周末去外面。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "外",
                       "kana": "そと",
                       "desc": "外面"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在外面拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "中",
+                "kana": "なか"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "前",
+                "kana": "まえ"
+              }
+            ]
           }
         }
       },
@@ -2616,32 +3841,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-042-1",
-                "sentence": "週末は前で写真を撮ります。",
+                "sentence": "週末は前へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在前面拍照。",
+                  "reading": "しゅうまつはまえへいきます。",
+                  "romaji": "shuumatsuhamaeeikimasu.",
+                  "meaningZh": "周末去前面。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "前",
                       "kana": "まえ",
                       "desc": "前面"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在前面拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "外",
+                "kana": "そと"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "後ろ",
+                "kana": "うしろ"
+              }
+            ]
           }
         }
       },
@@ -2677,32 +3932,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-043-1",
-                "sentence": "週末は後ろで写真を撮ります。",
+                "sentence": "週末は後ろへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在后面拍照。",
+                  "reading": "しゅうまつはうしろへいきます。",
+                  "romaji": "shuumatsuhaushiroeikimasu.",
+                  "meaningZh": "周末去后面。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "後ろ",
                       "kana": "うしろ",
                       "desc": "后面"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在后面拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "前",
+                "kana": "まえ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "横",
+                "kana": "よこ"
+              }
+            ]
           }
         }
       },
@@ -2738,32 +4023,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-044-1",
-                "sentence": "週末は横で写真を撮ります。",
+                "sentence": "週末は横へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在旁边；横向拍照。",
+                  "reading": "しゅうまつはよこへいきます。",
+                  "romaji": "shuumatsuhayokoeikimasu.",
+                  "meaningZh": "周末去旁边；横向。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "横",
                       "kana": "よこ",
                       "desc": "旁边；横向"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在旁边；横向拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "後ろ",
+                "kana": "うしろ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "向こう",
+                "kana": "むこう"
+              }
+            ]
           }
         }
       },
@@ -2799,32 +4114,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-045-1",
-                "sentence": "週末は向こうで写真を撮ります。",
+                "sentence": "週末は向こうへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在对面；那边拍照。",
+                  "reading": "しゅうまつはむこうへいきます。",
+                  "romaji": "shuumatsuhamukoueikimasu.",
+                  "meaningZh": "周末去对面；那边。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "向こう",
                       "kana": "むこう",
                       "desc": "对面；那边"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在对面；那边拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "横",
+                "kana": "よこ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "こちら",
+                "kana": "こちら"
+              }
+            ]
           }
         }
       },
@@ -2860,29 +4205,54 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-place-046-1",
-                "sentence": "週末はこちらで写真を撮ります。",
+                "sentence": "週末はこちらへ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "周末在这边拍照。",
+                  "reading": "しゅうまつはこちらへいきます。",
+                  "romaji": "shuumatsuhakochiraeikimasu.",
+                  "meaningZh": "周末去这边。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "こちら",
                       "kana": "こちら",
                       "desc": "这边"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で V",
-                    "meaningZh": "周末在这边拍照。"
+                    "pattern": "A は B へ 行きます",
+                    "meaningZh": "A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "向こう",
+                "kana": "むこう"
+              }
+            ]
           },
           "related": {
             "items": []

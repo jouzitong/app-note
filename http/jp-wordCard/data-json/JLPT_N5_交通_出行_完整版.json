@@ -118,19 +118,49 @@
                 "sentence": "今日は車で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはくるまでかいしゃへいきます。",
+                  "romaji": "kyouhakurumadekaishaeikimasu.",
                   "meaningZh": "今天坐汽车去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "車",
                       "kana": "くるま",
                       "desc": "汽车"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐汽车去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
@@ -140,7 +170,12 @@
             "items": []
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "自転車",
+                "kana": "じてんしゃ"
+              }
+            ]
           }
         }
       },
@@ -179,29 +214,69 @@
                 "sentence": "今日は自転車で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはじてんしゃでかいしゃへいきます。",
+                  "romaji": "kyouhajitenshadekaishaeikimasu.",
                   "meaningZh": "今天坐自行车去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "自転車",
                       "kana": "じてんしゃ",
                       "desc": "自行车"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐自行车去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "車",
+                "kana": "くるま"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "バス",
+                "kana": "バス"
+              }
+            ]
           }
         }
       },
@@ -240,29 +315,69 @@
                 "sentence": "今日はバスで会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはバスでかいしゃへいきます。",
+                  "romaji": "kyouhabasudekaishaeikimasu.",
                   "meaningZh": "今天坐公交车去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "バス",
                       "kana": "バス",
                       "desc": "公交车"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐公交车去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "自転車",
+                "kana": "じてんしゃ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "電車",
+                "kana": "でんしゃ"
+              }
+            ]
           }
         }
       },
@@ -301,29 +416,69 @@
                 "sentence": "今日は電車で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはでんしゃでかいしゃへいきます。",
+                  "romaji": "kyouhadenshadekaishaeikimasu.",
                   "meaningZh": "今天坐电车去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "電車",
                       "kana": "でんしゃ",
                       "desc": "电车"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐电车去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "バス",
+                "kana": "バス"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "地下鉄",
+                "kana": "ちかてつ"
+              }
+            ]
           }
         }
       },
@@ -362,29 +517,69 @@
                 "sentence": "今日は地下鉄で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはちかてつでかいしゃへいきます。",
+                  "romaji": "kyouhachikatetsudekaishaeikimasu.",
                   "meaningZh": "今天坐地铁去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "地下鉄",
                       "kana": "ちかてつ",
                       "desc": "地铁"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐地铁去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "電車",
+                "kana": "でんしゃ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "新幹線",
+                "kana": "しんかんせん"
+              }
+            ]
           }
         }
       },
@@ -423,29 +618,69 @@
                 "sentence": "今日は新幹線で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはしんかんせんでかいしゃへいきます。",
+                  "romaji": "kyouhashinkansendekaishaeikimasu.",
                   "meaningZh": "今天坐新干线去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "新幹線",
                       "kana": "しんかんせん",
                       "desc": "新干线"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐新干线去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "地下鉄",
+                "kana": "ちかてつ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "飛行機",
+                "kana": "ひこうき"
+              }
+            ]
           }
         }
       },
@@ -484,29 +719,69 @@
                 "sentence": "今日は飛行機で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはひこうきでかいしゃへいきます。",
+                  "romaji": "kyouhahikoukidekaishaeikimasu.",
                   "meaningZh": "今天坐飞机去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "飛行機",
                       "kana": "ひこうき",
                       "desc": "飞机"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐飞机去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "新幹線",
+                "kana": "しんかんせん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "船",
+                "kana": "ふね"
+              }
+            ]
           }
         }
       },
@@ -545,29 +820,69 @@
                 "sentence": "今日は船で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはふねでかいしゃへいきます。",
+                  "romaji": "kyouhafunedekaishaeikimasu.",
                   "meaningZh": "今天坐船去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "船",
                       "kana": "ふね",
                       "desc": "船"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐船去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "飛行機",
+                "kana": "ひこうき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "タクシー",
+                "kana": "タクシー"
+              }
+            ]
           }
         }
       },
@@ -606,29 +921,69 @@
                 "sentence": "今日はタクシーで会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはタクシーでかいしゃへいきます。",
+                  "romaji": "kyouhatakushi-dekaishaeikimasu.",
                   "meaningZh": "今天坐出租车去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "タクシー",
                       "kana": "タクシー",
                       "desc": "出租车"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐出租车去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "船",
+                "kana": "ふね"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "切符",
+                "kana": "きっぷ"
+              }
+            ]
           }
         }
       },
@@ -667,29 +1022,69 @@
                 "sentence": "今日は切符で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはきっぷでかいしゃへいきます。",
+                  "romaji": "kyouhakippudekaishaeikimasu.",
                   "meaningZh": "今天坐票去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "切符",
                       "kana": "きっぷ",
                       "desc": "票"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐票去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "タクシー",
+                "kana": "タクシー"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "定期券",
+                "kana": "ていきけん"
+              }
+            ]
           }
         }
       },
@@ -728,29 +1123,69 @@
                 "sentence": "今日は定期券で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはていきけんでかいしゃへいきます。",
+                  "romaji": "kyouhateikikendekaishaeikimasu.",
                   "meaningZh": "今天坐月票；定期票去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "定期券",
                       "kana": "ていきけん",
                       "desc": "月票；定期票"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐月票；定期票去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "切符",
+                "kana": "きっぷ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "地図",
+                "kana": "ちず"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1224,69 @@
                 "sentence": "今日は地図で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはちずでかいしゃへいきます。",
+                  "romaji": "kyouhachizudekaishaeikimasu.",
                   "meaningZh": "今天坐地图去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "地図",
                       "kana": "ちず",
                       "desc": "地图"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐地图去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "定期券",
+                "kana": "ていきけん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "道",
+                "kana": "みち"
+              }
+            ]
           }
         }
       },
@@ -850,29 +1325,69 @@
                 "sentence": "今日は道で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはみちでかいしゃへいきます。",
+                  "romaji": "kyouhamichidekaishaeikimasu.",
                   "meaningZh": "今天坐路去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "道",
                       "kana": "みち",
                       "desc": "路"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐路去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "地図",
+                "kana": "ちず"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "交差点",
+                "kana": "こうさてん"
+              }
+            ]
           }
         }
       },
@@ -911,29 +1426,69 @@
                 "sentence": "今日は交差点で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはこうさてんでかいしゃへいきます。",
+                  "romaji": "kyouhakousatendekaishaeikimasu.",
                   "meaningZh": "今天坐十字路口去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "交差点",
                       "kana": "こうさてん",
                       "desc": "十字路口"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐十字路口去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "道",
+                "kana": "みち"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "信号",
+                "kana": "しんごう"
+              }
+            ]
           }
         }
       },
@@ -972,29 +1527,69 @@
                 "sentence": "今日は信号で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはしんごうでかいしゃへいきます。",
+                  "romaji": "kyouhashingoudekaishaeikimasu.",
                   "meaningZh": "今天坐红绿灯去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "信号",
                       "kana": "しんごう",
                       "desc": "红绿灯"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐红绿灯去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "交差点",
+                "kana": "こうさてん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "橋",
+                "kana": "はし"
+              }
+            ]
           }
         }
       },
@@ -1033,29 +1628,69 @@
                 "sentence": "今日は橋で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうははしでかいしゃへいきます。",
+                  "romaji": "kyouhahashidekaishaeikimasu.",
                   "meaningZh": "今天坐桥去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "橋",
                       "kana": "はし",
                       "desc": "桥"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐桥去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "信号",
+                "kana": "しんごう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "止まれ",
+                "kana": "とまれ"
+              }
+            ]
           }
         }
       },
@@ -1094,29 +1729,69 @@
                 "sentence": "今日は止まれで会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはとまれでかいしゃへいきます。",
+                  "romaji": "kyouhatomaredekaishaeikimasu.",
                   "meaningZh": "今天坐停去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "止まれ",
                       "kana": "とまれ",
                       "desc": "停"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐停去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "橋",
+                "kana": "はし"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "入口",
+                "kana": "いりぐち"
+              }
+            ]
           }
         }
       },
@@ -1155,29 +1830,69 @@
                 "sentence": "今日は入口で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはいりぐちでかいしゃへいきます。",
+                  "romaji": "kyouhairiguchidekaishaeikimasu.",
                   "meaningZh": "今天坐入口去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "入口",
                       "kana": "いりぐち",
                       "desc": "入口"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐入口去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "止まれ",
+                "kana": "とまれ"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "出口",
+                "kana": "でぐち"
+              }
+            ]
           }
         }
       },
@@ -1216,29 +1931,69 @@
                 "sentence": "今日は出口で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはでぐちでかいしゃへいきます。",
+                  "romaji": "kyouhadeguchidekaishaeikimasu.",
                   "meaningZh": "今天坐出口去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "出口",
                       "kana": "でぐち",
                       "desc": "出口"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐出口去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "入口",
+                "kana": "いりぐち"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "席",
+                "kana": "せき"
+              }
+            ]
           }
         }
       },
@@ -1277,29 +2032,69 @@
                 "sentence": "今日は席で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはせきでかいしゃへいきます。",
+                  "romaji": "kyouhasekidekaishaeikimasu.",
                   "meaningZh": "今天坐座位去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "席",
                       "kana": "せき",
                       "desc": "座位"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐座位去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "出口",
+                "kana": "でぐち"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "旅行",
+                "kana": "りょこう"
+              }
+            ]
           }
         }
       },
@@ -1338,29 +2133,69 @@
                 "sentence": "今日は旅行で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはりょこうでかいしゃへいきます。",
+                  "romaji": "kyouharyokoudekaishaeikimasu.",
                   "meaningZh": "今天坐旅行去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "旅行",
                       "kana": "りょこう",
                       "desc": "旅行"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐旅行去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "席",
+                "kana": "せき"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "散歩",
+                "kana": "さんぽ"
+              }
+            ]
           }
         }
       },
@@ -1399,26 +2234,61 @@
                 "sentence": "今日は散歩で会社へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "きょうはさんぽでかいしゃへいきます。",
+                  "romaji": "kyouhasanpodekaishaeikimasu.",
                   "meaningZh": "今天坐散步去公司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "散歩",
                       "kana": "さんぽ",
                       "desc": "散步"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A で 行く",
-                    "meaningZh": "今天坐散步去公司。"
+                    "pattern": "A で B へ 行きます",
+                    "meaningZh": "坐 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "旅行",
+                "kana": "りょこう"
+              }
+            ]
           },
           "related": {
             "items": []

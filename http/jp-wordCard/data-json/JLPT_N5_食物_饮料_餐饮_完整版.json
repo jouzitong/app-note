@@ -115,32 +115,57 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-001-1",
-                "sentence": "夕ご飯にご飯を食べます。",
+                "sentence": "毎日ご飯を食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃米饭；饭。",
+                  "reading": "まいにちごはんをたべます。",
+                  "romaji": "mainichi gohan o tabemasu.",
+                  "meaningZh": "每天都吃米饭。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "ご飯",
                       "kana": "ごはん",
                       "desc": "米饭；饭"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃米饭；饭。"
+                    "pattern": "A を 食べます",
+                    "meaningZh": "吃 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "朝ご飯",
+                "kana": "あさごはん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "昼ご飯",
+                "kana": "ひるごはん"
+              }
+            ]
           }
         }
       },
@@ -176,32 +201,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-002-1",
-                "sentence": "夕ご飯に朝ご飯を食べます。",
+                "sentence": "朝ご飯を食べて、学校へ行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃早饭。",
+                  "reading": "あさごはんをたべて、がっこうへいきます。",
+                  "romaji": "asagohan o tabete, gakkou e ikimasu.",
+                  "meaningZh": "吃完早饭去学校。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "朝ご飯",
                       "kana": "あさごはん",
                       "desc": "早饭"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "食べて",
+                      "kana": "たべて",
+                      "desc": "吃（て形）"
+                    },
+                    {
+                      "word": "学校",
+                      "kana": "がっこう",
+                      "desc": "学校"
+                    },
+                    {
+                      "word": "へ",
+                      "kana": "",
+                      "desc": "助词。表示方向。"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃早饭。"
+                    "pattern": "A を 食べて、B へ 行きます",
+                    "meaningZh": "吃完 A 去 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ご飯",
+                "kana": "ごはん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "昼ご飯",
+                "kana": "ひるごはん"
+              }
+            ]
           }
         }
       },
@@ -237,32 +297,72 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-003-1",
-                "sentence": "夕ご飯に昼ご飯を食べます。",
+                "sentence": "昼ご飯は会社の食堂で食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃午饭。",
+                  "reading": "ひるごはんはかいしゃのしょくどうでたべます。",
+                  "romaji": "hirugohan wa kaisha no shokudou de tabemasu.",
+                  "meaningZh": "午饭在公司的食堂吃。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "昼ご飯",
                       "kana": "ひるごはん",
                       "desc": "午饭"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "会社",
+                      "kana": "かいしゃ",
+                      "desc": "公司"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。表示所属。"
+                    },
+                    {
+                      "word": "食堂",
+                      "kana": "しょくどう",
+                      "desc": "食堂"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃午饭。"
+                    "pattern": "A は B で 食べます",
+                    "meaningZh": "A 在 B 吃"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ご飯",
+                "kana": "ごはん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "朝ご飯",
+                "kana": "あさごはん"
+              }
+            ]
           }
         }
       },
@@ -298,32 +398,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-004-1",
-                "sentence": "夕ご飯に晩ご飯を食べます。",
+                "sentence": "晩ご飯は家族と一緒に食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃晚饭。",
+                  "reading": "ばんごはんはかぞくといっしょにたべます。",
+                  "romaji": "bangohan wa kazoku to issho ni tabemasu.",
+                  "meaningZh": "晚饭和家人一起吃。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "晩ご飯",
                       "kana": "ばんごはん",
                       "desc": "晚饭"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "家族",
+                      "kana": "かぞく",
+                      "desc": "家人"
+                    },
+                    {
+                      "word": "と",
+                      "kana": "",
+                      "desc": "助词。和。"
+                    },
+                    {
+                      "word": "一緒に",
+                      "kana": "いっしょに",
+                      "desc": "一起"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃晚饭。"
+                    "pattern": "A は B と 一緒に 食べます",
+                    "meaningZh": "A 和 B 一起吃"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "ご飯",
+                "kana": "ごはん"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "朝ご飯",
+                "kana": "あさごはん"
+              }
+            ]
           }
         }
       },
@@ -359,22 +494,47 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-005-1",
-                "sentence": "夕ご飯に食べ物を食べます。",
+                "sentence": "この店の食べ物は安くておいしいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃食物。",
+                  "reading": "このみせのたべものはやすくておいしいです。",
+                  "romaji": "kono mise no tabemono wa yasukute oishii desu.",
+                  "meaningZh": "这家店的食物又便宜又好吃。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この店",
+                      "kana": "このみせ",
+                      "desc": "这家店"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。表示所属。"
+                    },
                     {
                       "word": "食べ物",
                       "kana": "たべもの",
                       "desc": "食物"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "安くて",
+                      "kana": "やすくて",
+                      "desc": "便宜而且…"
+                    },
+                    {
+                      "word": "おいしいです",
+                      "kana": "おいしいです",
+                      "desc": "好吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃食物。"
+                    "pattern": "A は 安くて おいしいです",
+                    "meaningZh": "A 又便宜又好吃"
                   }
                 }
               }
@@ -420,32 +580,57 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-006-1",
-                "sentence": "朝は飲み物を飲みます。",
+                "sentence": "冷たい飲み物をください。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "早上喝饮料。",
+                  "reading": "つめたいのみものをください。",
+                  "romaji": "tsumetai nomimono o kudasai.",
+                  "meaningZh": "请给我冷饮。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "冷たい",
+                      "kana": "つめたい",
+                      "desc": "冷的"
+                    },
                     {
                       "word": "飲み物",
                       "kana": "のみもの",
                       "desc": "饮料"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "ください",
+                      "kana": "",
+                      "desc": "请给我…"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 飲む",
-                    "meaningZh": "早上喝饮料。"
+                    "pattern": "A を ください",
+                    "meaningZh": "请给我 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "水",
+                "kana": "みず"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "お湯",
+                "kana": "おゆ"
+              }
+            ]
           }
         }
       },
@@ -481,32 +666,72 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-007-1",
-                "sentence": "朝は水を飲みます。",
+                "sentence": "のどが渇いたので、水を飲みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "早上喝水。",
+                  "reading": "のどがかわいたので、みずをのみます。",
+                  "romaji": "nodo ga kawaita node, mizu o nomimasu.",
+                  "meaningZh": "因为口渴，所以喝水。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "のど",
+                      "kana": "のど",
+                      "desc": "喉咙"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "渇いた",
+                      "kana": "かわいた",
+                      "desc": "渴了"
+                    },
+                    {
+                      "word": "ので",
+                      "kana": "",
+                      "desc": "因为"
+                    },
                     {
                       "word": "水",
                       "kana": "みず",
                       "desc": "水"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "飲みます",
+                      "kana": "のみます",
+                      "desc": "喝（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 飲む",
-                    "meaningZh": "早上喝水。"
+                    "pattern": "A ので、B",
+                    "meaningZh": "因为 A，所以 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "飲み物",
+                "kana": "のみもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "お湯",
+                "kana": "おゆ"
+              }
+            ]
           }
         }
       },
@@ -542,32 +767,72 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-008-1",
-                "sentence": "朝はお湯を飲みます。",
+                "sentence": "お茶を入れるので、お湯をください。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "早上喝热水。",
+                  "reading": "おちゃをいれるので、おゆをください。",
+                  "romaji": "ocha o ireru node, oyu o kudasai.",
+                  "meaningZh": "要泡茶，请给我热水。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "お茶",
+                      "kana": "おちゃ",
+                      "desc": "茶"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "入れる",
+                      "kana": "いれる",
+                      "desc": "冲泡；加入"
+                    },
+                    {
+                      "word": "ので",
+                      "kana": "",
+                      "desc": "因为"
+                    },
                     {
                       "word": "お湯",
                       "kana": "おゆ",
                       "desc": "热水"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "ください",
+                      "kana": "",
+                      "desc": "请给我…"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 飲む",
-                    "meaningZh": "早上喝热水。"
+                    "pattern": "A ので、B を ください",
+                    "meaningZh": "因为 A，请给我 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "飲み物",
+                "kana": "のみもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "水",
+                "kana": "みず"
+              }
+            ]
           }
         }
       },
@@ -603,32 +868,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-009-1",
-                "sentence": "朝はお茶を飲みます。",
+                "sentence": "母は毎朝お茶を飲みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "早上喝茶。",
+                  "reading": "はははまいあさおちゃをのみます。",
+                  "romaji": "haha wa maiasa ocha o nomimasu.",
+                  "meaningZh": "妈妈每天早上喝茶。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "母",
+                      "kana": "はは",
+                      "desc": "母亲"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "毎朝",
+                      "kana": "まいあさ",
+                      "desc": "每天早上"
+                    },
                     {
                       "word": "お茶",
                       "kana": "おちゃ",
                       "desc": "茶"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "飲みます",
+                      "kana": "のみます",
+                      "desc": "喝（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 飲む",
-                    "meaningZh": "早上喝茶。"
+                    "pattern": "A は 毎朝 B を 飲みます",
+                    "meaningZh": "A 每天早上喝 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "飲み物",
+                "kana": "のみもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "水",
+                "kana": "みず"
+              }
+            ]
           }
         }
       },
@@ -664,32 +964,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-010-1",
-                "sentence": "朝は紅茶を飲みます。",
+                "sentence": "午後に紅茶を一杯飲みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "早上喝红茶。",
+                  "reading": "ごごにこうちゃをいっぱいのみます。",
+                  "romaji": "gogo ni koucha o ippai nomimasu.",
+                  "meaningZh": "下午喝一杯红茶。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "午後",
+                      "kana": "ごご",
+                      "desc": "下午"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "紅茶",
                       "kana": "こうちゃ",
                       "desc": "红茶"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "一杯",
+                      "kana": "いっぱい",
+                      "desc": "一杯（量词）"
+                    },
+                    {
+                      "word": "飲みます",
+                      "kana": "のみます",
+                      "desc": "喝（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 飲む",
-                    "meaningZh": "早上喝红茶。"
+                    "pattern": "A に B を 一杯 飲みます",
+                    "meaningZh": "在 A 喝一杯 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "飲み物",
+                "kana": "のみもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "水",
+                "kana": "みず"
+              }
+            ]
           }
         }
       },
@@ -725,32 +1060,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-011-1",
-                "sentence": "朝は牛乳を飲みます。",
+                "sentence": "子どもは毎日牛乳を飲みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "早上喝牛奶。",
+                  "reading": "こどもはまいにちぎゅうにゅうをのみます。",
+                  "romaji": "kodomo wa mainichi gyuunyuu o nomimasu.",
+                  "meaningZh": "孩子每天喝牛奶。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "子ども",
+                      "kana": "こども",
+                      "desc": "孩子"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "毎日",
+                      "kana": "まいにち",
+                      "desc": "每天"
+                    },
                     {
                       "word": "牛乳",
                       "kana": "ぎゅうにゅう",
                       "desc": "牛奶"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "飲みます",
+                      "kana": "のみます",
+                      "desc": "喝（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 飲む",
-                    "meaningZh": "早上喝牛奶。"
+                    "pattern": "A は 毎日 B を 飲みます",
+                    "meaningZh": "A 每天喝 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "飲み物",
+                "kana": "のみもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "水",
+                "kana": "みず"
+              }
+            ]
           }
         }
       },
@@ -789,29 +1159,59 @@
                 "sentence": "朝はコーヒーを飲みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "あさはコーヒーをのみます。",
+                  "romaji": "asa wa koohii o nomimasu.",
                   "meaningZh": "早上喝咖啡。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "朝",
+                      "kana": "あさ",
+                      "desc": "早上"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "コーヒー",
                       "kana": "コーヒー",
                       "desc": "咖啡"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "飲みます",
+                      "kana": "のみます",
+                      "desc": "喝（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 飲む",
-                    "meaningZh": "早上喝咖啡。"
+                    "pattern": "A は B を 飲みます",
+                    "meaningZh": "A 喝 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "飲み物",
+                "kana": "のみもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "水",
+                "kana": "みず"
+              }
+            ]
           }
         }
       },
@@ -847,32 +1247,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-013-1",
-                "sentence": "朝はジュースを飲みます。",
+                "sentence": "このジュースは甘くておいしいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "早上喝果汁。",
+                  "reading": "このジュースはあまくておいしいです。",
+                  "romaji": "kono juusu wa amakute oishii desu.",
+                  "meaningZh": "这个果汁又甜又好喝。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この",
+                      "kana": "この",
+                      "desc": "这个…"
+                    },
                     {
                       "word": "ジュース",
                       "kana": "ジュース",
                       "desc": "果汁"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "甘くて",
+                      "kana": "あまくて",
+                      "desc": "甜而且…"
+                    },
+                    {
+                      "word": "おいしいです",
+                      "kana": "おいしいです",
+                      "desc": "好喝；好吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 飲む",
-                    "meaningZh": "早上喝果汁。"
+                    "pattern": "A は 甘くて おいしいです",
+                    "meaningZh": "A 又甜又好喝"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "飲み物",
+                "kana": "のみもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "水",
+                "kana": "みず"
+              }
+            ]
           }
         }
       },
@@ -908,32 +1338,72 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-014-1",
-                "sentence": "朝はビールを飲みます。",
+                "sentence": "父は晩ご飯のときビールを飲みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "早上喝啤酒。",
+                  "reading": "ちちはばんごはんのときビールをのみます。",
+                  "romaji": "chichi wa bangohan no toki biiru o nomimasu.",
+                  "meaningZh": "爸爸晚饭时喝啤酒。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "父",
+                      "kana": "ちち",
+                      "desc": "父亲"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "晩ご飯",
+                      "kana": "ばんごはん",
+                      "desc": "晚饭"
+                    },
+                    {
+                      "word": "のとき",
+                      "kana": "のとき",
+                      "desc": "…的时候"
+                    },
                     {
                       "word": "ビール",
                       "kana": "ビール",
                       "desc": "啤酒"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "飲みます",
+                      "kana": "のみます",
+                      "desc": "喝（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 飲む",
-                    "meaningZh": "早上喝啤酒。"
+                    "pattern": "A は B の とき C を 飲みます",
+                    "meaningZh": "A 在 B 时喝 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "飲み物",
+                "kana": "のみもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "水",
+                "kana": "みず"
+              }
+            ]
           }
         }
       },
@@ -969,32 +1439,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-015-1",
-                "sentence": "朝は酒を飲みます。",
+                "sentence": "父は酒を少し飲みます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "早上喝酒。",
+                  "reading": "ちちはさけをすこしのみます。",
+                  "romaji": "chichi wa sake o sukoshi nomimasu.",
+                  "meaningZh": "爸爸喝一点酒。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "父",
+                      "kana": "ちち",
+                      "desc": "父亲"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "酒",
                       "kana": "さけ",
                       "desc": "酒"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "少し",
+                      "kana": "すこし",
+                      "desc": "一点"
+                    },
+                    {
+                      "word": "飲みます",
+                      "kana": "のみます",
+                      "desc": "喝（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 飲む",
-                    "meaningZh": "早上喝酒。"
+                    "pattern": "A は B を 少し 飲みます",
+                    "meaningZh": "A 喝一点 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "飲み物",
+                "kana": "のみもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "水",
+                "kana": "みず"
+              }
+            ]
           }
         }
       },
@@ -1030,22 +1535,52 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-016-1",
-                "sentence": "夕ご飯にパンを食べます。",
+                "sentence": "朝はパンと卵を食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃面包。",
+                  "reading": "あさはパンとたまごをたべます。",
+                  "romaji": "asa wa pan to tamago o tabemasu.",
+                  "meaningZh": "早上吃面包和鸡蛋。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "朝",
+                      "kana": "あさ",
+                      "desc": "早上"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "パン",
                       "kana": "パン",
                       "desc": "面包"
+                    },
+                    {
+                      "word": "と",
+                      "kana": "",
+                      "desc": "助词。和。"
+                    },
+                    {
+                      "word": "卵",
+                      "kana": "たまご",
+                      "desc": "鸡蛋"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃面包。"
+                    "pattern": "A は B と C を 食べます",
+                    "meaningZh": "A 吃 B 和 C"
                   }
                 }
               }
@@ -1091,32 +1626,57 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-017-1",
-                "sentence": "夕ご飯に卵を食べます。",
+                "sentence": "卵を二つ買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃鸡蛋。",
+                  "reading": "たまごをふたつかいました。",
+                  "romaji": "tamago o futatsu kaimashita.",
+                  "meaningZh": "买了两个鸡蛋。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "卵",
                       "kana": "たまご",
                       "desc": "鸡蛋"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "二つ",
+                      "kana": "ふたつ",
+                      "desc": "两个（泛指）"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃鸡蛋。"
+                    "pattern": "A を B つ 買いました",
+                    "meaningZh": "买了 B 个 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "肉",
+                "kana": "にく"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "牛肉",
+                "kana": "ぎゅうにく"
+              }
+            ]
           }
         }
       },
@@ -1152,32 +1712,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-018-1",
-                "sentence": "夕ご飯に肉を食べます。",
+                "sentence": "今日は肉を焼いて食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃肉。",
+                  "reading": "きょうはにくをやいてたべます。",
+                  "romaji": "kyou wa niku o yaite tabemasu.",
+                  "meaningZh": "今天把肉烤着吃。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "肉",
                       "kana": "にく",
                       "desc": "肉"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "焼いて",
+                      "kana": "やいて",
+                      "desc": "烤（て形）"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃肉。"
+                    "pattern": "A を Vて 食べます",
+                    "meaningZh": "把 A …后吃"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "卵",
+                "kana": "たまご"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "牛肉",
+                "kana": "ぎゅうにく"
+              }
+            ]
           }
         }
       },
@@ -1213,32 +1808,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-019-1",
-                "sentence": "夕ご飯に牛肉を食べます。",
+                "sentence": "牛肉でカレーを作ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃牛肉。",
+                  "reading": "ぎゅうにくでカレーをつくります。",
+                  "romaji": "gyuuniku de karee o tsukurimasu.",
+                  "meaningZh": "用牛肉做咖喱。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "牛肉",
                       "kana": "ぎゅうにく",
                       "desc": "牛肉"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。表示材料/手段。"
+                    },
+                    {
+                      "word": "カレー",
+                      "kana": "カレー",
+                      "desc": "咖喱"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "作ります",
+                      "kana": "つくります",
+                      "desc": "做（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃牛肉。"
+                    "pattern": "A で B を 作ります",
+                    "meaningZh": "用 A 做 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "卵",
+                "kana": "たまご"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "肉",
+                "kana": "にく"
+              }
+            ]
           }
         }
       },
@@ -1274,32 +1899,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-020-1",
-                "sentence": "夕ご飯に豚肉を食べます。",
+                "sentence": "豚肉を入れたうどんが好きです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃猪肉。",
+                  "reading": "ぶたにくをいれたうどんがすきです。",
+                  "romaji": "butaniku o ireta udon ga suki desu.",
+                  "meaningZh": "我喜欢放了猪肉的乌冬面。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "豚肉",
                       "kana": "ぶたにく",
                       "desc": "猪肉"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "入れた",
+                      "kana": "いれた",
+                      "desc": "放入（过去连体）"
+                    },
+                    {
+                      "word": "うどん",
+                      "kana": "うどん",
+                      "desc": "乌冬面"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "好きです",
+                      "kana": "すきです",
+                      "desc": "喜欢（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃猪肉。"
+                    "pattern": "A を 入れた B が 好きです",
+                    "meaningZh": "喜欢放了 A 的 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "卵",
+                "kana": "たまご"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "肉",
+                "kana": "にく"
+              }
+            ]
           }
         }
       },
@@ -1335,32 +1995,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-021-1",
-                "sentence": "夕ご飯に鶏肉を食べます。",
+                "sentence": "鶏肉は安くて料理しやすいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃鸡肉。",
+                  "reading": "とりにくはやすくてりょうりしやすいです。",
+                  "romaji": "toriniku wa yasukute ryouri shiyasui desu.",
+                  "meaningZh": "鸡肉便宜而且好料理。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "鶏肉",
                       "kana": "とりにく",
                       "desc": "鸡肉"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "安くて",
+                      "kana": "やすくて",
+                      "desc": "便宜而且…"
+                    },
+                    {
+                      "word": "料理しやすい",
+                      "kana": "りょうりしやすい",
+                      "desc": "容易料理"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "礼貌断定"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃鸡肉。"
+                    "pattern": "A は 安くて Vしやすいです",
+                    "meaningZh": "A 又便宜又容易…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "卵",
+                "kana": "たまご"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "肉",
+                "kana": "にく"
+              }
+            ]
           }
         }
       },
@@ -1399,29 +2089,59 @@
                 "sentence": "夕ご飯に魚を食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
+                  "reading": "ゆうごはんにさかなをたべます。",
+                  "romaji": "yuugohan ni sakana o tabemasu.",
                   "meaningZh": "晚饭吃鱼。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "夕ご飯",
+                      "kana": "ゆうごはん",
+                      "desc": "晚饭"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
                     {
                       "word": "魚",
                       "kana": "さかな",
                       "desc": "鱼"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃鱼。"
+                    "pattern": "A に B を 食べます",
+                    "meaningZh": "A 时吃 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "卵",
+                "kana": "たまご"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "肉",
+                "kana": "にく"
+              }
+            ]
           }
         }
       },
@@ -1457,22 +2177,47 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-023-1",
-                "sentence": "夕ご飯に野菜を食べます。",
+                "sentence": "野菜をたくさん食べると体にいいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃蔬菜。",
+                  "reading": "やさいをたくさんたべるとからだにいいです。",
+                  "romaji": "yasai o takusan taberu to karada ni ii desu.",
+                  "meaningZh": "多吃蔬菜对身体好。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "野菜",
                       "kana": "やさい",
                       "desc": "蔬菜"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "たくさん",
+                      "kana": "たくさん",
+                      "desc": "很多"
+                    },
+                    {
+                      "word": "食べると",
+                      "kana": "たべると",
+                      "desc": "如果吃…就…"
+                    },
+                    {
+                      "word": "体",
+                      "kana": "からだ",
+                      "desc": "身体"
+                    },
+                    {
+                      "word": "にいい",
+                      "kana": "にいい",
+                      "desc": "对…好"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃蔬菜。"
+                    "pattern": "A を たくさん 食べると B",
+                    "meaningZh": "多吃 A 就 B"
                   }
                 }
               }
@@ -1518,32 +2263,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-024-1",
-                "sentence": "朝は果物を飲みます。",
+                "sentence": "果物は食後のデザートにします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "早上喝水果。",
+                  "reading": "くだものはしょくごのデザートにします。",
+                  "romaji": "kudamono wa shokugo no dezaato ni shimasu.",
+                  "meaningZh": "水果当作饭后甜点。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "果物",
                       "kana": "くだもの",
                       "desc": "水果"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "食後",
+                      "kana": "しょくご",
+                      "desc": "饭后"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。表示所属。"
+                    },
+                    {
+                      "word": "デザート",
+                      "kana": "デザート",
+                      "desc": "甜点"
+                    },
+                    {
+                      "word": "にします",
+                      "kana": "にします",
+                      "desc": "作为；决定为"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 飲む",
-                    "meaningZh": "早上喝水果。"
+                    "pattern": "A は B に します",
+                    "meaningZh": "把 A 当作 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "りんご",
+                "kana": "りんご"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "みかん",
+                "kana": "みかん"
+              }
+            ]
           }
         }
       },
@@ -1579,32 +2359,57 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-025-1",
-                "sentence": "夕ご飯にりんごを食べます。",
+                "sentence": "りんごを一つください。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃苹果。",
+                  "reading": "りんごをひとつください。",
+                  "romaji": "ringo o hitotsu kudasai.",
+                  "meaningZh": "请给我一个苹果。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "りんご",
                       "kana": "りんご",
                       "desc": "苹果"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "一つ",
+                      "kana": "ひとつ",
+                      "desc": "一个"
+                    },
+                    {
+                      "word": "ください",
+                      "kana": "",
+                      "desc": "请给我…"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃苹果。"
+                    "pattern": "A を B つ ください",
+                    "meaningZh": "请给我 B 个 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "果物",
+                "kana": "くだもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "みかん",
+                "kana": "みかん"
+              }
+            ]
           }
         }
       },
@@ -1640,32 +2445,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-026-1",
-                "sentence": "夕ご飯にみかんを食べます。",
+                "sentence": "冬はみかんをよく食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃橘子。",
+                  "reading": "ふゆはみかんをよくたべます。",
+                  "romaji": "fuyu wa mikan o yoku tabemasu.",
+                  "meaningZh": "冬天经常吃橘子。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "冬",
+                      "kana": "ふゆ",
+                      "desc": "冬天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "みかん",
                       "kana": "みかん",
                       "desc": "橘子"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "よく",
+                      "kana": "よく",
+                      "desc": "经常"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃橘子。"
+                    "pattern": "A は B を よく 食べます",
+                    "meaningZh": "A 经常吃 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "果物",
+                "kana": "くだもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "りんご",
+                "kana": "りんご"
+              }
+            ]
           }
         }
       },
@@ -1701,32 +2541,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-027-1",
-                "sentence": "夕ご飯にバナナを食べます。",
+                "sentence": "朝、バナナを一本食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃香蕉。",
+                  "reading": "あさ、バナナをいっぽんたべます。",
+                  "romaji": "asa, banana o ippon tabemasu.",
+                  "meaningZh": "早上吃一根香蕉。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "朝",
+                      "kana": "あさ",
+                      "desc": "早上"
+                    },
                     {
                       "word": "バナナ",
                       "kana": "バナナ",
                       "desc": "香蕉"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "一本",
+                      "kana": "いっぽん",
+                      "desc": "一根（细长物）"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃香蕉。"
+                    "pattern": "A に B を 一本 食べます",
+                    "meaningZh": "A 时吃一根 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "果物",
+                "kana": "くだもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "りんご",
+                "kana": "りんご"
+              }
+            ]
           }
         }
       },
@@ -1762,32 +2632,57 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-028-1",
-                "sentence": "夕ご飯にいちごを食べます。",
+                "sentence": "このいちごは甘いです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃草莓。",
+                  "reading": "このいちごはあまいです。",
+                  "romaji": "kono ichigo wa amai desu.",
+                  "meaningZh": "这个草莓很甜。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "この",
+                      "kana": "この",
+                      "desc": "这个…"
+                    },
                     {
                       "word": "いちご",
                       "kana": "いちご",
                       "desc": "草莓"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "甘いです",
+                      "kana": "あまいです",
+                      "desc": "很甜（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃草莓。"
+                    "pattern": "この A は B です",
+                    "meaningZh": "这个 A 很 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "果物",
+                "kana": "くだもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "りんご",
+                "kana": "りんご"
+              }
+            ]
           }
         }
       },
@@ -1823,32 +2718,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-029-1",
-                "sentence": "夕ご飯にぶどうを食べます。",
+                "sentence": "ぶどうを冷蔵庫で冷やします。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃葡萄。",
+                  "reading": "ぶどうをれいぞうこでひやします。",
+                  "romaji": "budou o reizouko de hiyashimasu.",
+                  "meaningZh": "把葡萄放冰箱里冰一下。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "ぶどう",
                       "kana": "ぶどう",
                       "desc": "葡萄"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "冷蔵庫",
+                      "kana": "れいぞうこ",
+                      "desc": "冰箱"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
+                    {
+                      "word": "冷やします",
+                      "kana": "ひやします",
+                      "desc": "冷却；冰（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃葡萄。"
+                    "pattern": "A を B で Vます",
+                    "meaningZh": "把 A 在 B 里…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "果物",
+                "kana": "くだもの"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "りんご",
+                "kana": "りんご"
+              }
+            ]
           }
         }
       },
@@ -1884,22 +2809,37 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-030-1",
-                "sentence": "夕ご飯に米を食べます。",
+                "sentence": "米を三キロ買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃米。",
+                  "reading": "こめをさんキロかいました。",
+                  "romaji": "kome o san-kiro kaimashita.",
+                  "meaningZh": "买了三公斤米。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "米",
                       "kana": "こめ",
                       "desc": "米"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "三キロ",
+                      "kana": "さんキロ",
+                      "desc": "三公斤"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃米。"
+                    "pattern": "A を 数量 買いました",
+                    "meaningZh": "买了数量的 A"
                   }
                 }
               }
@@ -1945,32 +2885,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-031-1",
-                "sentence": "夕ご飯に塩を食べます。",
+                "sentence": "スープに塩を少し入れます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃盐。",
+                  "reading": "スープにしおをすこしいれます。",
+                  "romaji": "suupu ni shio o sukoshi iremasu.",
+                  "meaningZh": "汤里放一点盐。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "スープ",
+                      "kana": "スープ",
+                      "desc": "汤"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。动作目标。"
+                    },
                     {
                       "word": "塩",
                       "kana": "しお",
                       "desc": "盐"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "少し",
+                      "kana": "すこし",
+                      "desc": "一点"
+                    },
+                    {
+                      "word": "入れます",
+                      "kana": "いれます",
+                      "desc": "放入（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃盐。"
+                    "pattern": "A に B を 少し 入れます",
+                    "meaningZh": "在 A 里放一点 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "砂糖",
+                "kana": "さとう"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "醤油",
+                "kana": "しょうゆ"
+              }
+            ]
           }
         }
       },
@@ -2006,32 +2981,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-032-1",
-                "sentence": "夕ご飯に砂糖を食べます。",
+                "sentence": "コーヒーに砂糖を入れますか。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃糖。",
+                  "reading": "コーヒーにさとうをいれますか。",
+                  "romaji": "koohii ni satou o iremasu ka.",
+                  "meaningZh": "咖啡里要放糖吗？",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "コーヒー",
+                      "kana": "コーヒー",
+                      "desc": "咖啡"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。动作目标。"
+                    },
                     {
                       "word": "砂糖",
                       "kana": "さとう",
                       "desc": "糖"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "入れますか",
+                      "kana": "いれますか",
+                      "desc": "要放吗（疑问）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃糖。"
+                    "pattern": "A に B を 入れますか",
+                    "meaningZh": "在 A 里放 B 吗"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "塩",
+                "kana": "しお"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "醤油",
+                "kana": "しょうゆ"
+              }
+            ]
           }
         }
       },
@@ -2067,32 +3072,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-033-1",
-                "sentence": "夕ご飯に醤油を食べます。",
+                "sentence": "刺身に醤油をつけて食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃酱油。",
+                  "reading": "さしみにしょうゆをつけてたべます。",
+                  "romaji": "sashimi ni shouyu o tsukete tabemasu.",
+                  "meaningZh": "生鱼片蘸酱油吃。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "刺身",
+                      "kana": "さしみ",
+                      "desc": "生鱼片"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。动作对象。"
+                    },
                     {
                       "word": "醤油",
                       "kana": "しょうゆ",
                       "desc": "酱油"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "つけて",
+                      "kana": "つけて",
+                      "desc": "蘸（て形）"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃酱油。"
+                    "pattern": "A に B を つけて 食べます",
+                    "meaningZh": "A 蘸 B 吃"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "塩",
+                "kana": "しお"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "砂糖",
+                "kana": "さとう"
+              }
+            ]
           }
         }
       },
@@ -2128,32 +3168,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-034-1",
-                "sentence": "夕ご飯に料理を食べます。",
+                "sentence": "日本料理を作るのが好きです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃菜；料理。",
+                  "reading": "にほんりょうりをつくるのがすきです。",
+                  "romaji": "nihon ryouri o tsukuru no ga suki desu.",
+                  "meaningZh": "我喜欢做日本料理。",
                   "wordGrammarBreakdown": [
                     {
-                      "word": "料理",
-                      "kana": "りょうり",
-                      "desc": "菜；料理"
+                      "word": "日本料理",
+                      "kana": "にほんりょうり",
+                      "desc": "日本料理"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "作る",
+                      "kana": "つくる",
+                      "desc": "做"
+                    },
+                    {
+                      "word": "のが",
+                      "kana": "",
+                      "desc": "名词化+主语标记"
+                    },
+                    {
+                      "word": "好きです",
+                      "kana": "すきです",
+                      "desc": "喜欢（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃菜；料理。"
+                    "pattern": "A を 作る のが 好きです",
+                    "meaningZh": "喜欢做 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "カレー",
+                "kana": "カレー"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ラーメン",
+                "kana": "ラーメン"
+              }
+            ]
           }
         }
       },
@@ -2189,32 +3259,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-035-1",
-                "sentence": "夕ご飯にカレーを食べます。",
+                "sentence": "今日の晩ご飯はカレーです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃咖喱。",
+                  "reading": "きょうのばんごはんはカレーです。",
+                  "romaji": "kyou no bangohan wa karee desu.",
+                  "meaningZh": "今天晚饭是咖喱。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "の",
+                      "kana": "",
+                      "desc": "助词。表示所属。"
+                    },
+                    {
+                      "word": "晩ご飯",
+                      "kana": "ばんごはん",
+                      "desc": "晚饭"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "カレー",
                       "kana": "カレー",
                       "desc": "咖喱"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "礼貌断定"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃咖喱。"
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "料理",
+                "kana": "りょうり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ラーメン",
+                "kana": "ラーメン"
+              }
+            ]
           }
         }
       },
@@ -2250,32 +3355,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-036-1",
-                "sentence": "夕ご飯にラーメンを食べます。",
+                "sentence": "駅の近くでラーメンを食べました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃拉面。",
+                  "reading": "えきのちかくでラーメンをたべました。",
+                  "romaji": "eki no chikaku de raamen o tabemashita.",
+                  "meaningZh": "在车站附近吃了拉面。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "駅",
+                      "kana": "えき",
+                      "desc": "车站"
+                    },
+                    {
+                      "word": "の近く",
+                      "kana": "のちかく",
+                      "desc": "附近"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。动作场所。"
+                    },
                     {
                       "word": "ラーメン",
                       "kana": "ラーメン",
                       "desc": "拉面"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "食べました",
+                      "kana": "たべました",
+                      "desc": "吃了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃拉面。"
+                    "pattern": "A で B を 食べました",
+                    "meaningZh": "在 A 吃了 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "料理",
+                "kana": "りょうり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "カレー",
+                "kana": "カレー"
+              }
+            ]
           }
         }
       },
@@ -2311,32 +3451,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-037-1",
-                "sentence": "夕ご飯にうどんを食べます。",
+                "sentence": "昼はうどんを食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃乌冬面。",
+                  "reading": "ひるはうどんをたべます。",
+                  "romaji": "hiru wa udon o tabemasu.",
+                  "meaningZh": "中午吃乌冬面。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "昼",
+                      "kana": "ひる",
+                      "desc": "中午"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "うどん",
                       "kana": "うどん",
                       "desc": "乌冬面"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃乌冬面。"
+                    "pattern": "A は B を 食べます",
+                    "meaningZh": "A 吃 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "料理",
+                "kana": "りょうり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "カレー",
+                "kana": "カレー"
+              }
+            ]
           }
         }
       },
@@ -2372,32 +3542,72 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-038-1",
-                "sentence": "夕ご飯にそばを食べます。",
+                "sentence": "父はそばよりうどんが好きです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃荞麦面。",
+                  "reading": "ちちはそばよりうどんがすきです。",
+                  "romaji": "chichi wa soba yori udon ga suki desu.",
+                  "meaningZh": "爸爸比起荞麦面更喜欢乌冬面。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "父",
+                      "kana": "ちち",
+                      "desc": "父亲"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "そば",
                       "kana": "そば",
                       "desc": "荞麦面"
+                    },
+                    {
+                      "word": "より",
+                      "kana": "",
+                      "desc": "助词。比较基准。"
+                    },
+                    {
+                      "word": "うどん",
+                      "kana": "うどん",
+                      "desc": "乌冬面"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。主语标记。"
+                    },
+                    {
+                      "word": "好きです",
+                      "kana": "すきです",
+                      "desc": "喜欢（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃荞麦面。"
+                    "pattern": "A は B より C が 好きです",
+                    "meaningZh": "A 比起 B 更喜欢 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "料理",
+                "kana": "りょうり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "カレー",
+                "kana": "カレー"
+              }
+            ]
           }
         }
       },
@@ -2433,32 +3643,72 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-039-1",
-                "sentence": "夕ご飯に寿司を食べます。",
+                "sentence": "週末に友達と寿司を食べに行きます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃寿司。",
+                  "reading": "しゅうまつにともだちとすしをたべにいきます。",
+                  "romaji": "shuumatsu ni tomodachi to sushi o tabe ni ikimasu.",
+                  "meaningZh": "周末和朋友去吃寿司。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "週末",
+                      "kana": "しゅうまつ",
+                      "desc": "周末"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。时间点。"
+                    },
+                    {
+                      "word": "友達",
+                      "kana": "ともだち",
+                      "desc": "朋友"
+                    },
+                    {
+                      "word": "と",
+                      "kana": "",
+                      "desc": "助词。和。"
+                    },
                     {
                       "word": "寿司",
                       "kana": "すし",
                       "desc": "寿司"
+                    },
+                    {
+                      "word": "を食べに",
+                      "kana": "をたべに",
+                      "desc": "去吃…（目的）"
+                    },
+                    {
+                      "word": "行きます",
+                      "kana": "いきます",
+                      "desc": "去（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃寿司。"
+                    "pattern": "A に B と C を Vに 行きます",
+                    "meaningZh": "A 时和 B 去做 C"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "料理",
+                "kana": "りょうり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "カレー",
+                "kana": "カレー"
+              }
+            ]
           }
         }
       },
@@ -2494,32 +3744,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-040-1",
-                "sentence": "夕ご飯に刺身を食べます。",
+                "sentence": "新鮮な刺身はとてもおいしいです。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃生鱼片。",
+                  "reading": "しんせんなさしみはとてもおいしいです。",
+                  "romaji": "shinsen na sashimi wa totemo oishii desu.",
+                  "meaningZh": "新鲜的生鱼片非常好吃。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "新鮮な",
+                      "kana": "しんせんな",
+                      "desc": "新鲜的"
+                    },
                     {
                       "word": "刺身",
                       "kana": "さしみ",
                       "desc": "生鱼片"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "とても",
+                      "kana": "とても",
+                      "desc": "非常"
+                    },
+                    {
+                      "word": "おいしいです",
+                      "kana": "おいしいです",
+                      "desc": "好吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃生鱼片。"
+                    "pattern": "A は とても B です",
+                    "meaningZh": "A 非常 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "料理",
+                "kana": "りょうり"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "カレー",
+                "kana": "カレー"
+              }
+            ]
           }
         }
       },
@@ -2555,32 +3835,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-041-1",
-                "sentence": "夕ご飯にスプーンを食べます。",
+                "sentence": "スープはスプーンで食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃勺子。",
+                  "reading": "スープはスプーンでたべます。",
+                  "romaji": "suupu wa supuun de tabemasu.",
+                  "meaningZh": "汤用勺子喝/吃。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "スープ",
+                      "kana": "スープ",
+                      "desc": "汤"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "スプーン",
                       "kana": "スプーン",
                       "desc": "勺子"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃勺子。"
+                    "pattern": "A は B で 食べます",
+                    "meaningZh": "A 用 B 吃"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "フォーク",
+                "kana": "フォーク"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ナイフ",
+                "kana": "ナイフ"
+              }
+            ]
           }
         }
       },
@@ -2616,32 +3926,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-042-1",
-                "sentence": "夕ご飯にフォークを食べます。",
+                "sentence": "パスタはフォークで食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃叉子。",
+                  "reading": "パスタはフォークでたべます。",
+                  "romaji": "pasuta wa fooku de tabemasu.",
+                  "meaningZh": "意面用叉子吃。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "パスタ",
+                      "kana": "パスタ",
+                      "desc": "意大利面"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "フォーク",
                       "kana": "フォーク",
                       "desc": "叉子"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃叉子。"
+                    "pattern": "A は B で 食べます",
+                    "meaningZh": "A 用 B 吃"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "スプーン",
+                "kana": "スプーン"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "ナイフ",
+                "kana": "ナイフ"
+              }
+            ]
           }
         }
       },
@@ -2677,32 +4017,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-043-1",
-                "sentence": "夕ご飯にナイフを食べます。",
+                "sentence": "肉はナイフで切ります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃刀。",
+                  "reading": "にくはナイフできります。",
+                  "romaji": "niku wa naifu de kirimasu.",
+                  "meaningZh": "肉用刀切。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "肉",
+                      "kana": "にく",
+                      "desc": "肉"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
                     {
                       "word": "ナイフ",
                       "kana": "ナイフ",
                       "desc": "刀"
+                    },
+                    {
+                      "word": "で",
+                      "kana": "",
+                      "desc": "助词。手段。"
+                    },
+                    {
+                      "word": "切ります",
+                      "kana": "きります",
+                      "desc": "切（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃刀。"
+                    "pattern": "A は B で 切ります",
+                    "meaningZh": "A 用 B 切"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "スプーン",
+                "kana": "スプーン"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "フォーク",
+                "kana": "フォーク"
+              }
+            ]
           }
         }
       },
@@ -2738,32 +4108,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-044-1",
-                "sentence": "夕ご飯に箸を食べます。",
+                "sentence": "日本では箸を使って食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃筷子。",
+                  "reading": "にほんでははしをつかってたべます。",
+                  "romaji": "nihon dewa hashi o tsukatte tabemasu.",
+                  "meaningZh": "在日本用筷子吃饭。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "日本",
+                      "kana": "にほん",
+                      "desc": "日本"
+                    },
+                    {
+                      "word": "では",
+                      "kana": "",
+                      "desc": "助词。场景提示。"
+                    },
                     {
                       "word": "箸",
                       "kana": "はし",
                       "desc": "筷子"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "使って",
+                      "kana": "つかって",
+                      "desc": "使用（て形）"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃筷子。"
+                    "pattern": "A では B を 使って Vます",
+                    "meaningZh": "在 A 用 B 做…"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "スプーン",
+                "kana": "スプーン"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "フォーク",
+                "kana": "フォーク"
+              }
+            ]
           }
         }
       },
@@ -2799,32 +4204,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-045-1",
-                "sentence": "夕ご飯に皿を食べます。",
+                "sentence": "新しい皿を二枚買いました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃盘子。",
+                  "reading": "あたらしいさらをにまいかいました。",
+                  "romaji": "atarashii sara o nimai kaimashita.",
+                  "meaningZh": "买了两只新盘子。",
                   "wordGrammarBreakdown": [
+                    {
+                      "word": "新しい",
+                      "kana": "あたらしい",
+                      "desc": "新的"
+                    },
                     {
                       "word": "皿",
                       "kana": "さら",
                       "desc": "盘子"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "二枚",
+                      "kana": "にまい",
+                      "desc": "两张/两只（扁平物）"
+                    },
+                    {
+                      "word": "買いました",
+                      "kana": "かいました",
+                      "desc": "买了（礼貌过去形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃盘子。"
+                    "pattern": "A を 数量 買いました",
+                    "meaningZh": "买了数量的 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "スプーン",
+                "kana": "スプーン"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "フォーク",
+                "kana": "フォーク"
+              }
+            ]
           }
         }
       },
@@ -2860,32 +4295,62 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-046-1",
-                "sentence": "夕ご飯にコップを食べます。",
+                "sentence": "コップに水を入れてください。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "晚饭吃杯子。",
+                  "reading": "コップにみずをいれてください。",
+                  "romaji": "koppu ni mizu o irete kudasai.",
+                  "meaningZh": "请往杯子里倒水。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "コップ",
                       "kana": "コップ",
                       "desc": "杯子"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。动作目标。"
+                    },
+                    {
+                      "word": "水",
+                      "kana": "みず",
+                      "desc": "水"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "入れてください",
+                      "kana": "いれてください",
+                      "desc": "请放入/倒入"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 食べる",
-                    "meaningZh": "晚饭吃杯子。"
+                    "pattern": "A に B を 入れてください",
+                    "meaningZh": "请把 B 放进 A"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "スプーン",
+                "kana": "スプーン"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "フォーク",
+                "kana": "フォーク"
+              }
+            ]
           }
         }
       },
@@ -2921,32 +4386,67 @@
             "items": [
               {
                 "id": "ex-jlpt-n5-food-047-1",
-                "sentence": "朝は茶碗を飲みます。",
+                "sentence": "茶碗によそったご飯を食べます。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "",
-                  "romaji": "",
-                  "meaningZh": "早上喝饭碗。",
+                  "reading": "ちゃわんによそったごはんをたべます。",
+                  "romaji": "chawan ni yosotta gohan o tabemasu.",
+                  "meaningZh": "吃盛在饭碗里的米饭。",
                   "wordGrammarBreakdown": [
                     {
                       "word": "茶碗",
                       "kana": "ちゃわん",
                       "desc": "饭碗"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。位置/对象。"
+                    },
+                    {
+                      "word": "よそった",
+                      "kana": "よそった",
+                      "desc": "盛（饭）好的"
+                    },
+                    {
+                      "word": "ご飯",
+                      "kana": "ごはん",
+                      "desc": "米饭"
+                    },
+                    {
+                      "word": "を",
+                      "kana": "",
+                      "desc": "助词。宾语标记。"
+                    },
+                    {
+                      "word": "食べます",
+                      "kana": "たべます",
+                      "desc": "吃（礼貌形）"
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A を 飲む",
-                    "meaningZh": "早上喝饭碗。"
+                    "pattern": "A に Vた B を 食べます",
+                    "meaningZh": "吃盛在 A 里的 B"
                   }
                 }
               }
             ]
           },
           "synonyms": {
-            "items": []
+            "items": [
+              {
+                "text": "スプーン",
+                "kana": "スプーン"
+              }
+            ]
           },
           "related": {
-            "items": []
+            "items": [
+              {
+                "text": "フォーク",
+                "kana": "フォーク"
+              }
+            ]
           }
         }
       }
