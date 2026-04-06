@@ -16,13 +16,23 @@
             color: #222;
             font-family: -apple-system, BlinkMacSystemFont, "Hiragino Mincho ProN",
             "Yu Mincho", "Noto Serif JP", "PingFang SC", serif;
+            height: 100dvh;
+            overflow: hidden;
+        }
+
+        html {
+            height: 100%;
+            overflow: hidden;
         }
 
         .page {
             max-width: 480px;
             margin: 0 auto;
-            min-height: 100vh;
+            height: 100dvh;
             background: #fbf8f3;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
         }
 
         .header {
@@ -48,6 +58,11 @@
             cursor: pointer;
         }
 
+        .header-placeholder {
+            width: 50px;
+            height: 33px;
+        }
+
         .header-title {
             font-size: 16px;
             font-weight: 700;
@@ -55,7 +70,10 @@
         }
 
         .content {
-            padding: 18px 16px 32px;
+            padding: 18px 16px;
+            flex: 1;
+            overflow-y: auto;
+            overscroll-behavior: contain;
         }
 
         .article-card {
@@ -87,6 +105,7 @@
             line-height: 1.5;
             color: #2d241b;
             font-weight: 700;
+            text-align: center;
         }
 
         .article-subtitle {
@@ -156,26 +175,51 @@
         }
 
         .toolbar {
-            margin-top: 16px;
             display: flex;
             gap: 10px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            padding: 12px 16px;
+            border-top: 1px solid #e8e0d5;
+            background: rgba(251, 248, 243, 0.96);
+            backdrop-filter: blur(8px);
+            overflow-x: auto;
+            overflow-y: hidden;
         }
 
         .tool-btn {
-            flex: 1 1 calc(50% - 10px);
+            flex: 0 0 auto;
             border: none;
             border-radius: 12px;
             padding: 12px 14px;
             background: #5f4630;
             color: #fff;
-            font-size: 14px;
+            font-size: 13px;
             cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .tool-btn.icon {
+            min-width: 44px;
+            padding: 12px 10px;
+            font-size: 16px;
+            line-height: 1;
         }
 
         .tool-btn.secondary {
             background: #efe7db;
             color: #5a4632;
+        }
+
+        .speed-select {
+            flex: 0 0 auto;
+            border: 1px solid #e0d5c6;
+            border-radius: 12px;
+            background: #fffdf9;
+            color: #5a4632;
+            padding: 0 10px;
+            height: 40px;
+            font-size: 13px;
+            min-width: 88px;
         }
 
         .hidden-rt rt {
@@ -189,7 +233,13 @@
             }
 
             .tool-btn {
-                flex: 1 1 100%;
+                font-size: 12px;
+                padding: 10px 8px;
+            }
+
+            .tool-btn.icon {
+                min-width: 40px;
+                padding: 10px 8px;
             }
         }
     </style>
@@ -199,7 +249,7 @@
     <div class="header">
         <button class="header-btn">返回</button>
         <div class="header-title">文章阅读</div>
-        <button class="header-btn">收藏</button>
+        <div class="header-placeholder" aria-hidden="true"></div>
     </div>
 
     <div class="content">
@@ -211,13 +261,8 @@
             </div>
 
             <h1 class="article-title">私の毎日の生活</h1>
-            <div class="article-subtitle">
-                更接近日文书籍阅读的排版效果：正文中汉字上方直接显示平假名。
-            </div>
 
             <div class="section">
-                <h2 class="section-title">正文</h2>
-
                 <p class="jp-paragraph" id="articleText">
                     <ruby>私<rt>わたし</rt></ruby>は
                     <ruby>毎朝<rt>まいあさ</rt></ruby>
@@ -240,12 +285,21 @@
             </div>
         </div>
 
-        <div class="toolbar">
-            <button class="tool-btn secondary" id="toggleRubyBtn">隐藏平假名</button>
-            <button class="tool-btn">播放全文</button>
-            <button class="tool-btn secondary">上一段</button>
-            <button class="tool-btn">下一段</button>
-        </div>
+    </div>
+
+    <div class="toolbar">
+        <button class="tool-btn secondary" id="toggleRubyBtn">隐藏平假名</button>
+        <button class="tool-btn secondary icon" title="收藏" aria-label="收藏">☆</button>
+        <button class="tool-btn">播放全文</button>
+        <select class="speed-select" aria-label="播放速度">
+            <option value="0.5">0.5x</option>
+            <option value="0.75">0.75x</option>
+            <option value="1.0" selected>1.0x</option>
+            <option value="1.25">1.25x</option>
+            <option value="1.5">1.5x</option>
+        </select>
+        <button class="tool-btn secondary icon" title="上一段" aria-label="上一段">◀</button>
+        <button class="tool-btn icon" title="下一段" aria-label="下一段">▶</button>
     </div>
 </div>
 

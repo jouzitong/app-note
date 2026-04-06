@@ -39,9 +39,14 @@ public enum NoteType implements IEnum {
     SENTENCE(3, "Sentence", "语句/表达卡片，适合例句积累与语感训练"),
 
     /**
+     * 文章卡：用于长文、文档的整理与结构化，通常包含标题、内容、目录等信息。
+     */
+    ARTICLE(4, "Article", "文章卡片，适合文章、长文、文档的整理与结构化"),
+
+    /**
      * 题目卡：用于题目练习与错题整理，通常包含题干、答案与解析。
      */
-    QUESTIONS(4, "Questions", "题目练习卡片，适合刷题与错题复盘"),
+    QUESTIONS(100, "Questions", "题目练习卡片，适合刷题与错题复盘"),
 
     ;
 
