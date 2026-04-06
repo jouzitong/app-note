@@ -63,7 +63,7 @@
         "noteNode": {
           "title": "代词・指示词・疑问词",
           "noteType": "WORD_CARD",
-          "sort": 1,
+          "sort": 10,
           "meta": {
             "icon": "📚",
             "subject": "日语",

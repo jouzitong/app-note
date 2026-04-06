@@ -18,7 +18,7 @@
         "noteNode": {
           "title": "日语学习",
           "noteType": "EMPTY",
-          "sort": 1,
+          "sort": 20,
           "meta": {
             "icon": "📚",
             "subject": "日语",
@@ -423,7 +423,7 @@
               "zh": "四",
               "romaji": "yon / shi"
             },
-            "description": "数字。四。一般数数和读电话号码更常用「よん」；「し」多见于固定词或音读组合。"
+            "description": "数字“四”。常用读音：よん。音读し常见于复合词，如四月（しがつ）。"
           },
           "examples": {
             "collapsedByDefault": false,
@@ -466,6 +466,47 @@
                   "fixedPattern": {
                     "pattern": "【存在地点】 に 【存在事物】　が + あります",
                     "meaningZh": "某个地方有什么。"
+                  }
+                }
+              },
+              {
+                "id": "ex-jlpt-n5-num-004-2",
+                "sentence": "四月から新学期が始まります。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "しがつからしんがっきがはじまります。",
+                  "romaji": "shigatsu kara shingakki ga hajimarimasu.",
+                  "meaningZh": "从四月开始新学期。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "四月",
+                      "kana": "しがつ",
+                      "desc": "四月（此处读し）"
+                    },
+                    {
+                      "word": "から",
+                      "kana": "",
+                      "desc": "助词。表示起点“从”。"
+                    },
+                    {
+                      "word": "新学期",
+                      "kana": "しんがっき",
+                      "desc": "新学期"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "始まります",
+                      "kana": "はじまります",
+                      "desc": "开始（礼貌形）"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A から B が 始まります",
+                    "meaningZh": "从 A 开始，B 开始。"
                   }
                 }
               }
@@ -739,7 +780,7 @@
               "zh": "七",
               "romaji": "nana / shichi"
             },
-            "description": "数字。七。单独数数更常用「なな」；「しち」多见于复合词或部分固定说法。"
+            "description": "数字“七”。常用读音：なな。音读しち常见于时刻等复合词，如七時（しちじ）。"
           },
           "examples": {
             "collapsedByDefault": false,
@@ -772,6 +813,42 @@
                   "fixedPattern": {
                     "pattern": "A は B です",
                     "meaningZh": "A 是 B"
+                  }
+                }
+              },
+              {
+                "id": "ex-jlpt-n5-num-007-2",
+                "sentence": "番号は七です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "ばんごうはななです。",
+                  "romaji": "bangou wa nana desu.",
+                  "meaningZh": "号码是七。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "番号",
+                      "kana": "ばんごう",
+                      "desc": "号码"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "七",
+                      "kana": "なな",
+                      "desc": "七（此处读なな）"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词（礼貌断定）。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B。"
                   }
                 }
               }
@@ -938,7 +1015,7 @@
               "zh": "九",
               "romaji": "kyuu / ku"
             },
-            "description": "数字。九。一般更常用「きゅう」；「く」多见于部分固定搭配。"
+            "description": "数字“九”。常用读音：きゅう。读く时常见于时刻等复合词，如九時（くじ）。"
           },
           "examples": {
             "collapsedByDefault": false,
@@ -981,6 +1058,47 @@
                   "fixedPattern": {
                     "pattern": "A は B です",
                     "meaningZh": "A 是 B"
+                  }
+                }
+              },
+              {
+                "id": "ex-jlpt-n5-num-009-2",
+                "sentence": "今日は九時に寝ます。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "きょうはくじにねます。",
+                  "romaji": "kyou wa kuji ni nemasu.",
+                  "meaningZh": "今天九点睡觉。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "九時",
+                      "kana": "くじ",
+                      "desc": "九点（此处读く）"
+                    },
+                    {
+                      "word": "に",
+                      "kana": "",
+                      "desc": "助词。表示时间点。"
+                    },
+                    {
+                      "word": "寝ます",
+                      "kana": "ねます",
+                      "desc": "睡觉（礼貌形）"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B 時 に Vます",
+                    "meaningZh": "A 在 B 点做某动作。"
                   }
                 }
               }
@@ -1478,7 +1596,7 @@
               "zh": "零",
               "romaji": "rei / zero"
             },
-            "description": "数字。零。正式或数学语境常用「れい」；口语和外来语语境常用「ゼロ」。"
+            "description": "“零”。日语里既可读れい（偏正式、数字读法），也常用外来语ゼロ（口语常见）。"
           },
           "examples": {
             "collapsedByDefault": false,
@@ -1516,6 +1634,52 @@
                   "fixedPattern": {
                     "pattern": "A は B です",
                     "meaningZh": "A 是 B"
+                  }
+                }
+              },
+              {
+                "id": "ex-jlpt-n5-num-014-2",
+                "sentence": "今日は気温がゼロ度です。",
+                "explain": {
+                  "collapsedByDefault": true,
+                  "reading": "きょうはきおんがぜろどです。",
+                  "romaji": "kyou wa kion ga zero-do desu.",
+                  "meaningZh": "今天气温是零度。",
+                  "wordGrammarBreakdown": [
+                    {
+                      "word": "今日",
+                      "kana": "きょう",
+                      "desc": "今天"
+                    },
+                    {
+                      "word": "は",
+                      "kana": "",
+                      "desc": "助词。提示主题。"
+                    },
+                    {
+                      "word": "気温",
+                      "kana": "きおん",
+                      "desc": "气温"
+                    },
+                    {
+                      "word": "が",
+                      "kana": "",
+                      "desc": "助词。提示主语。"
+                    },
+                    {
+                      "word": "ゼロ度",
+                      "kana": "ぜろど",
+                      "desc": "零度（此处用ゼロ）"
+                    },
+                    {
+                      "word": "です",
+                      "kana": "",
+                      "desc": "判断助动词（礼貌断定）。"
+                    }
+                  ],
+                  "fixedPattern": {
+                    "pattern": "A は B が C です",
+                    "meaningZh": "A 的 B 是 C。"
                   }
                 }
               }
