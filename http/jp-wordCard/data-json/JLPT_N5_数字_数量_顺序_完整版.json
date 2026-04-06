@@ -123,7 +123,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "りんごがひとつあります。",
-                  "romaji": "ringoga hitotsu arimasu .",
+                  "romaji": "ringogahitotsuarimasu.",
                   "meaningZh": "有一个苹果。",
                   "wordGrammarBreakdown": [
                     {
@@ -148,8 +148,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A が Vます",
+                    "meaningZh": "A 做/发生某事"
                   }
                 }
               }
@@ -225,7 +225,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "ぺんがにほんあります。",
-                  "romaji": "pen ga nihon arimasu .",
+                  "romaji": "penganihonarimasu.",
                   "meaningZh": "有两支笔。",
                   "wordGrammarBreakdown": [
                     {
@@ -250,8 +250,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A が Vます",
+                    "meaningZh": "A 做/发生某事"
                   }
                 }
               }
@@ -327,7 +327,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "さんじにえきであいましょう。",
-                  "romaji": "sanji ni eki de ai mashou .",
+                  "romaji": "sanjiniekideaimashou.",
                   "meaningZh": "我们三点在车站见吧。",
                   "wordGrammarBreakdown": [
                     {
@@ -357,8 +357,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "V ましょう",
-                    "meaningZh": "……吧"
+                    "pattern": "Vましょう",
+                    "meaningZh": "……吧（提议）"
                   }
                 }
               }
@@ -434,7 +434,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "よんかいにとしょかんがあります。",
-                  "romaji": "yonkai ni toshokan gaarimasu .",
+                  "romaji": "yonkainitoshokangaarimasu.",
                   "meaningZh": "四楼有图书馆。",
                   "wordGrammarBreakdown": [
                     {
@@ -464,8 +464,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "【存在地点】 に 【存在事物】　が + あります",
-                    "meaningZh": "某个地方有什么。"
+                    "pattern": "A に B が あります",
+                    "meaningZh": "A 里有 B（物）"
                   }
                 }
               },
@@ -475,7 +475,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "しがつからしんがっきがはじまります。",
-                  "romaji": "shigatsu kara shingakki ga hajimarimasu.",
+                  "romaji": "shigatsukarashingakkigahajimarimasu.",
                   "meaningZh": "从四月开始新学期。",
                   "wordGrammarBreakdown": [
                     {
@@ -506,7 +506,7 @@
                   ],
                   "fixedPattern": {
                     "pattern": "A から B が 始まります",
-                    "meaningZh": "从 A 开始，B 开始。"
+                    "meaningZh": "从 A 开始，B 开始"
                   }
                 }
               }
@@ -581,8 +581,8 @@
                 "sentence": "五分だけ待ってください。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "ごぶだけまってください。",
-                  "romaji": "gobu dake matsu tekudasai .",
+                  "reading": "ごふんだけまってください。",
+                  "romaji": "gofundakemattekudasai.",
                   "meaningZh": "请只等五分钟。",
                   "wordGrammarBreakdown": [
                     {
@@ -607,7 +607,7 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "V てください",
+                    "pattern": "Vてください",
                     "meaningZh": "请……"
                   }
                 }
@@ -684,7 +684,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "ろくがつはあめがおおいです。",
-                  "romaji": "rokugatsu ha ame ga ooi desu .",
+                  "romaji": "rokugatsuhaamegaooidesu.",
                   "meaningZh": "六月雨很多。",
                   "wordGrammarBreakdown": [
                     {
@@ -791,7 +791,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "しちじにおきます。",
-                  "romaji": "shichiji ni oki masu .",
+                  "romaji": "shichijiniokimasu.",
                   "meaningZh": "七点起床。",
                   "wordGrammarBreakdown": [
                     {
@@ -811,8 +811,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A 時に Vます",
+                    "meaningZh": "在 A 点做某动作"
                   }
                 }
               },
@@ -822,7 +822,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "ばんごうはななです。",
-                  "romaji": "bangou wa nana desu.",
+                  "romaji": "bangouhananadesu.",
                   "meaningZh": "号码是七。",
                   "wordGrammarBreakdown": [
                     {
@@ -848,7 +848,7 @@
                   ],
                   "fixedPattern": {
                     "pattern": "A は B です",
-                    "meaningZh": "A 是 B。"
+                    "meaningZh": "A 是 B"
                   }
                 }
               }
@@ -924,7 +924,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "はちぺーじをよんでください。",
-                  "romaji": "hachi peeji wo yonde kudasai .",
+                  "romaji": "hachipeejioyondekudasai.",
                   "meaningZh": "请读第八页。",
                   "wordGrammarBreakdown": [
                     {
@@ -949,7 +949,7 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "V てください",
+                    "pattern": "Vてください",
                     "meaningZh": "请……"
                   }
                 }
@@ -1026,7 +1026,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "きゅうばんのばすにのります。",
-                  "romaji": "kyuu ban no basu ni nori masu .",
+                  "romaji": "kyuubannobasuninorimasu.",
                   "meaningZh": "我坐9路公交车。",
                   "wordGrammarBreakdown": [
                     {
@@ -1056,8 +1056,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "Vます",
+                    "meaningZh": "……（礼貌形）"
                   }
                 }
               },
@@ -1067,7 +1067,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "きょうはくじにねます。",
-                  "romaji": "kyou wa kuji ni nemasu.",
+                  "romaji": "kyouhakujininemasu.",
                   "meaningZh": "今天九点睡觉。",
                   "wordGrammarBreakdown": [
                     {
@@ -1097,8 +1097,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B 時 に Vます",
-                    "meaningZh": "A 在 B 点做某动作。"
+                    "pattern": "A 時に Vます",
+                    "meaningZh": "在 A 点做某动作"
                   }
                 }
               }
@@ -1174,7 +1174,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "かれはじゅうさいです。",
-                  "romaji": "kareha juusai desu .",
+                  "romaji": "karehajuusaidesu.",
                   "meaningZh": "他十岁。",
                   "wordGrammarBreakdown": [
                     {
@@ -1276,7 +1276,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "このほんはひゃくぺーじあります。",
-                  "romaji": "kono hon ha hyaku peeji arimasu .",
+                  "romaji": "konohonhahyakupeejiarimasu.",
                   "meaningZh": "这本书有一百页。",
                   "wordGrammarBreakdown": [
                     {
@@ -1306,8 +1306,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "Vます",
+                    "meaningZh": "……（礼貌形）"
                   }
                 }
               }
@@ -1383,7 +1383,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "このまちにはせんにんぐらいすんでいます。",
-                  "romaji": "kono machi niha sennin gurai sun deimasu .",
+                  "romaji": "konomachinihasenninguraisundeimasu.",
                   "meaningZh": "这个镇大约住着一千人。",
                   "wordGrammarBreakdown": [
                     {
@@ -1423,8 +1423,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "Vます",
+                    "meaningZh": "……（礼貌形）"
                   }
                 }
               }
@@ -1500,7 +1500,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "このくるまはひゃくまんえんです。",
-                  "romaji": "kono kuruma ha hyakuman'en desu .",
+                  "romaji": "konokurumahahyakumanendesu.",
                   "meaningZh": "这辆车是一百万日元。",
                   "wordGrammarBreakdown": [
                     {
@@ -1607,7 +1607,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "てすとはれいてんでした。",
-                  "romaji": "tesuto ha reiten deshita .",
+                  "romaji": "tesutohareitendeshita.",
                   "meaningZh": "考试是零分。",
                   "wordGrammarBreakdown": [
                     {
@@ -1632,8 +1632,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "N5 基础表达",
+                    "meaningZh": "N5 基础表达"
                   }
                 }
               },
@@ -1643,7 +1643,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "きょうはきおんがぜろどです。",
-                  "romaji": "kyou wa kion ga zero-do desu.",
+                  "romaji": "kyouhakiongazerododesu.",
                   "meaningZh": "今天气温是零度。",
                   "wordGrammarBreakdown": [
                     {
@@ -1678,8 +1678,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B が C です",
-                    "meaningZh": "A 的 B 是 C。"
+                    "pattern": "A は B です",
+                    "meaningZh": "A 是 B"
                   }
                 }
               }
@@ -1755,7 +1755,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "いまはさんじはんです。",
-                  "romaji": "ima ha sanji han desu .",
+                  "romaji": "imahasanjihandesu.",
                   "meaningZh": "现在是三点半。",
                   "wordGrammarBreakdown": [
                     {
@@ -1857,7 +1857,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "りんごがひとつあります。",
-                  "romaji": "ringoga hitotsu arimasu .",
+                  "romaji": "ringogahitotsuarimasu.",
                   "meaningZh": "有一个苹果。",
                   "wordGrammarBreakdown": [
                     {
@@ -1882,8 +1882,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A が Vます",
+                    "meaningZh": "A 做/发生某事"
                   }
                 }
               }
@@ -1959,7 +1959,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "こっぷがふたつあります。",
-                  "romaji": "koppu ga futatsu arimasu .",
+                  "romaji": "koppugafutatsuarimasu.",
                   "meaningZh": "有两个杯子。",
                   "wordGrammarBreakdown": [
                     {
@@ -1984,8 +1984,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A が Vます",
+                    "meaningZh": "A 做/发生某事"
                   }
                 }
               }
@@ -2061,7 +2061,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "しつもんがみっつあります。",
-                  "romaji": "shitsumon ga mittsu arimasu .",
+                  "romaji": "shitsumongamittsuarimasu.",
                   "meaningZh": "有三个问题。",
                   "wordGrammarBreakdown": [
                     {
@@ -2086,8 +2086,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A が Vます",
+                    "meaningZh": "A 做/发生某事"
                   }
                 }
               }
@@ -2163,7 +2163,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "はこがよつあります。",
-                  "romaji": "hako ga yotsu arimasu .",
+                  "romaji": "hakogayotsuarimasu.",
                   "meaningZh": "有四个箱子。",
                   "wordGrammarBreakdown": [
                     {
@@ -2188,8 +2188,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A が Vます",
+                    "meaningZh": "A 做/发生某事"
                   }
                 }
               }
@@ -2265,7 +2265,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "たまごをいつつかいました。",
-                  "romaji": "tamago wo itsutsu kai mashita .",
+                  "romaji": "tamagooitsutsukaimashita.",
                   "meaningZh": "买了五个鸡蛋。",
                   "wordGrammarBreakdown": [
                     {
@@ -2290,8 +2290,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A を Vました",
+                    "meaningZh": "对 A 做了某事"
                   }
                 }
               }
@@ -2367,7 +2367,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "つくえがむつあります。",
-                  "romaji": "tsukue ga mutsu arimasu .",
+                  "romaji": "tsukuegamutsuarimasu.",
                   "meaningZh": "有六张桌子。",
                   "wordGrammarBreakdown": [
                     {
@@ -2392,8 +2392,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A が Vます",
+                    "meaningZh": "A 做/发生某事"
                   }
                 }
               }
@@ -2469,7 +2469,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "ほしがななつみえます。",
-                  "romaji": "hoshi ga nanatsu mie masu .",
+                  "romaji": "hoshigananatsumiemasu.",
                   "meaningZh": "看得见七颗星星。",
                   "wordGrammarBreakdown": [
                     {
@@ -2494,8 +2494,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A が Vます",
+                    "meaningZh": "A 做/发生某事"
                   }
                 }
               }
@@ -2570,8 +2570,8 @@
                 "sentence": "今日は宿題が八つあります。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "こんにちはしゅくだいがやつあります。",
-                  "romaji": "konnichiha shukudai ga yatsu arimasu .",
+                  "reading": "きょうはしゅくだいがやっつあります。",
+                  "romaji": "kyouhashukudaigayattsuarimasu.",
                   "meaningZh": "今天有八项作业。",
                   "wordGrammarBreakdown": [
                     {
@@ -2606,8 +2606,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A が Vます",
+                    "meaningZh": "A 做/发生某事"
                   }
                 }
               }
@@ -2683,7 +2683,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "ここのつのくにをりょこうしました。",
-                  "romaji": "kokonotsu no kuni wo ryokou shimashita .",
+                  "romaji": "kokonotsunokunioryokoushimashita.",
                   "meaningZh": "旅行过九个国家。",
                   "wordGrammarBreakdown": [
                     {
@@ -2713,8 +2713,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "N5 基础表达",
+                    "meaningZh": "N5 基础表达"
                   }
                 }
               }
@@ -2790,7 +2790,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "こどもがひとつからとおまでかぞえました。",
-                  "romaji": "kodomo ga hitotsu karatoomade kazoe mashita .",
+                  "romaji": "kodomogahitotsukaratoomadekazoemashita.",
                   "meaningZh": "孩子从一数到了十。",
                   "wordGrammarBreakdown": [
                     {
@@ -2830,8 +2830,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "N5 基础表达",
+                    "meaningZh": "N5 基础表达"
                   }
                 }
               }
@@ -2907,7 +2907,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "きょうしつにひとりいます。",
-                  "romaji": "kyoushitsu ni hitori imasu .",
+                  "romaji": "kyoushitsunihitoriimasu.",
                   "meaningZh": "教室里有一个人。",
                   "wordGrammarBreakdown": [
                     {
@@ -2932,8 +2932,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "Vます",
+                    "meaningZh": "……（礼貌形）"
                   }
                 }
               }
@@ -3001,7 +3001,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "わたしたちはふたりでりょこうします。",
-                  "romaji": "watashitachi ha futari de ryokou shimasu .",
+                  "romaji": "watashitachihafutarideryokoushimasu.",
                   "meaningZh": "我们两个人去旅行。",
                   "wordGrammarBreakdown": [
                     {
@@ -3031,8 +3031,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "Vます",
+                    "meaningZh": "……（礼貌形）"
                   }
                 }
               }
@@ -3100,7 +3100,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "さんにんでしゃしんをとりました。",
-                  "romaji": "sannin de shashin wo tori mashita .",
+                  "romaji": "sannindeshashinotorimashita.",
                   "meaningZh": "三个人一起拍了照片。",
                   "wordGrammarBreakdown": [
                     {
@@ -3130,8 +3130,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A を Vました",
+                    "meaningZh": "对 A 做了某事"
                   }
                 }
               }
@@ -3199,7 +3199,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "ぱーてぃーにはなんにんきますか。",
-                  "romaji": "paateii niha nannin kima suka .",
+                  "romaji": "paateiinihananninkimasuka.",
                   "meaningZh": "聚会会来几个人？",
                   "wordGrammarBreakdown": [
                     {
@@ -3234,8 +3234,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "N5 基础表达",
+                    "meaningZh": "N5 基础表达"
                   }
                 }
               }
@@ -3303,7 +3303,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "たんじょうびはついたちです。",
-                  "romaji": "tanjoubi ha tsuitachi desu .",
+                  "romaji": "tanjoubihatsuitachidesu.",
                   "meaningZh": "生日是1号。",
                   "wordGrammarBreakdown": [
                     {
@@ -3328,8 +3328,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A 日で B",
+                    "meaningZh": "在 A 天内完成 B"
                   }
                 }
               }
@@ -3405,7 +3405,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "にっぽんにふつかたいざいしました。",
-                  "romaji": "nippon ni futsuka taizai shimashita .",
+                  "romaji": "nipponnifutsukataizaishimashita.",
                   "meaningZh": "在日本停留了两天。",
                   "wordGrammarBreakdown": [
                     {
@@ -3430,8 +3430,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "N5 基础表达",
+                    "meaningZh": "N5 基础表达"
                   }
                 }
               }
@@ -3507,7 +3507,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "みっかでこのほんをよみました。",
-                  "romaji": "mikka dekono hon wo yomi mashita .",
+                  "romaji": "mikkadekonohonoyomimashita.",
                   "meaningZh": "三天读完了这本书。",
                   "wordGrammarBreakdown": [
                     {
@@ -3542,8 +3542,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A 日で B",
+                    "meaningZh": "在 A 天内完成 B"
                   }
                 }
               }
@@ -3619,7 +3619,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "よっかにとうきょうへいきます。",
-                  "romaji": "yokka ni toukyou he iki masu .",
+                  "romaji": "yokkanitoukyoueikimasu.",
                   "meaningZh": "4号去东京。",
                   "wordGrammarBreakdown": [
                     {
@@ -3649,8 +3649,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A 日に/から B",
+                    "meaningZh": "在 A 号/从 A 号……"
                   }
                 }
               }
@@ -3725,8 +3725,8 @@
                 "sentence": "今日は五日です。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "こんにちはいつかです。",
-                  "romaji": "konnichiha itsuka desu .",
+                  "reading": "きょうはいつかです。",
+                  "romaji": "kyouhaitsukadesu.",
                   "meaningZh": "今天是5号。",
                   "wordGrammarBreakdown": [
                     {
@@ -3751,8 +3751,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A 日で B",
+                    "meaningZh": "在 A 天内完成 B"
                   }
                 }
               }
@@ -3828,7 +3828,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "むいかまでにていしゅつしてください。",
-                  "romaji": "muika madeni teishutsu shitekudasai .",
+                  "romaji": "muikamadeniteishutsushitekudasai.",
                   "meaningZh": "请在6号之前提交。",
                   "wordGrammarBreakdown": [
                     {
@@ -3853,7 +3853,7 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "V てください",
+                    "pattern": "Vてください",
                     "meaningZh": "请……"
                   }
                 }
@@ -3930,7 +3930,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "なのかにしけんがあります。",
-                  "romaji": "nanoka ni shiken gaarimasu .",
+                  "romaji": "nanokanishikengaarimasu.",
                   "meaningZh": "7号有考试。",
                   "wordGrammarBreakdown": [
                     {
@@ -3960,8 +3960,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A 日に/から B",
+                    "meaningZh": "在 A 号/从 A 号……"
                   }
                 }
               }
@@ -4037,7 +4037,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "ようかにきこくします。",
-                  "romaji": "youka ni kikoku shimasu .",
+                  "romaji": "youkanikikokushimasu.",
                   "meaningZh": "8号回国。",
                   "wordGrammarBreakdown": [
                     {
@@ -4057,8 +4057,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A 日に/から B",
+                    "meaningZh": "在 A 号/从 A 号……"
                   }
                 }
               }
@@ -4134,7 +4134,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "ここのかからじゅぎょうがはじまります。",
-                  "romaji": "kokonoka kara jugyou ga hajimari masu .",
+                  "romaji": "kokonokakarajugyougahajimarimasu.",
                   "meaningZh": "课程从9号开始。",
                   "wordGrammarBreakdown": [
                     {
@@ -4164,8 +4164,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A から B が 始まります",
+                    "meaningZh": "从 A 开始，B 开始"
                   }
                 }
               }
@@ -4241,7 +4241,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "とうかでれぽーとをかきました。",
-                  "romaji": "touka de repooto wo kaki mashita .",
+                  "romaji": "toukaderepootookakimashita.",
                   "meaningZh": "用了十天写完报告。",
                   "wordGrammarBreakdown": [
                     {
@@ -4271,8 +4271,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A 日で B",
+                    "meaningZh": "在 A 天内完成 B"
                   }
                 }
               }
@@ -4347,8 +4347,8 @@
                 "sentence": "会議は十四日に変更しました。",
                 "explain": {
                   "collapsedByDefault": true,
-                  "reading": "かいぎはじゅうよんにちにへんこうしました。",
-                  "romaji": "kaigi ha juuyon nichi ni henkou shimashita .",
+                  "reading": "かいぎはじゅうよっかにへんこうしました。",
+                  "romaji": "kaigihajuuyokkanienkoushimashita.",
                   "meaningZh": "会议改到14号了。",
                   "wordGrammarBreakdown": [
                     {
@@ -4378,8 +4378,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A 日に/から B",
+                    "meaningZh": "在 A 号/从 A 号……"
                   }
                 }
               }
@@ -4455,7 +4455,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "きゅうりょうびははつかです。",
-                  "romaji": "kyuuryoubi ha hatsuka desu .",
+                  "romaji": "kyuuryoubihahatsukadesu.",
                   "meaningZh": "发薪日是20号。",
                   "wordGrammarBreakdown": [
                     {
@@ -4480,8 +4480,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A 日で B",
+                    "meaningZh": "在 A 天内完成 B"
                   }
                 }
               }
@@ -4557,7 +4557,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "つぎのめんせつはなんにちですか。",
-                  "romaji": "tsugino mensetsu ha nannichi desuka .",
+                  "romaji": "tsuginomensetsuhanannichidesuka.",
                   "meaningZh": "下一次面试是几号？",
                   "wordGrammarBreakdown": [
                     {
@@ -4598,7 +4598,7 @@
                   ],
                   "fixedPattern": {
                     "pattern": "A は B ですか",
-                    "meaningZh": "A 是 B 吗？"
+                    "meaningZh": "A 是 B 吗"
                   }
                 }
               }
@@ -4674,7 +4674,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "このみせのらーめんがいちばんおいしいです。",
-                  "romaji": "kono mise no raamen ga ichiban oishiidesu .",
+                  "romaji": "konomisenoraamengaichibanoishiidesu.",
                   "meaningZh": "这家店的拉面最好吃。",
                   "wordGrammarBreakdown": [
                     {
@@ -4714,8 +4714,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "N5 基础表达",
+                    "meaningZh": "N5 基础表达"
                   }
                 }
               }
@@ -4778,7 +4778,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "さいしょにじこしょうかいをしてください。",
-                  "romaji": "saisho ni jikoshoukai woshitekudasai .",
+                  "romaji": "saishonijikoshoukaioshitekudasai.",
                   "meaningZh": "请先做自我介绍。",
                   "wordGrammarBreakdown": [
                     {
@@ -4808,7 +4808,7 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "V てください",
+                    "pattern": "Vてください",
                     "meaningZh": "请……"
                   }
                 }
@@ -4872,7 +4872,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "さいごにしつもんをうけます。",
-                  "romaji": "saigo ni shitsumon wo uke masu .",
+                  "romaji": "saigonishitsumonoukemasu.",
                   "meaningZh": "最后我会接受提问。",
                   "wordGrammarBreakdown": [
                     {
@@ -4902,8 +4902,8 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "A は B です",
-                    "meaningZh": "A 是 B"
+                    "pattern": "A を/に Vます",
+                    "meaningZh": "对 A 做某事"
                   }
                 }
               }
@@ -4966,7 +4966,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "もうしこみしょにでんわばんごうをかいてください。",
-                  "romaji": "moushikomisho ni denwabangou wo kai tekudasai .",
+                  "romaji": "moushikomishonidenwabangouokaitekudasai.",
                   "meaningZh": "请在申请表上写电话号码。",
                   "wordGrammarBreakdown": [
                     {
@@ -5001,7 +5001,7 @@
                     }
                   ],
                   "fixedPattern": {
-                    "pattern": "V てください",
+                    "pattern": "Vてください",
                     "meaningZh": "请……"
                   }
                 }
@@ -5061,7 +5061,7 @@
                 "explain": {
                   "collapsedByDefault": true,
                   "reading": "このでんしゃはなんばんほーむですか。",
-                  "romaji": "kono densha ha nanban hoomu desuka .",
+                  "romaji": "konodenshahananbanhoomudesuka.",
                   "meaningZh": "这趟电车是几号站台？",
                   "wordGrammarBreakdown": [
                     {
@@ -5102,7 +5102,7 @@
                   ],
                   "fixedPattern": {
                     "pattern": "A は B ですか",
-                    "meaningZh": "A 是 B 吗？"
+                    "meaningZh": "A 是 B 吗"
                   }
                 }
               }
