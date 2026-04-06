@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日语文章阅读</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            margin: 0;
+            background: #f6f3ee;
+            color: #222;
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Mincho ProN",
+            "Yu Mincho", "Noto Serif JP", "PingFang SC", serif;
+        }
+
+        .page {
+            max-width: 480px;
+            margin: 0 auto;
+            min-height: 100vh;
+            background: #fbf8f3;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 16px;
+            background: rgba(251, 248, 243, 0.94);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid #e8e0d5;
+        }
+
+        .header-btn {
+            border: none;
+            background: #efe7db;
+            color: #5a4632;
+            border-radius: 10px;
+            padding: 8px 12px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .header-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #3d2f22;
+        }
+
+        .content {
+            padding: 18px 16px 32px;
+        }
+
+        .article-card {
+            background: #fffdf9;
+            border: 1px solid #eee4d7;
+            border-radius: 18px;
+            padding: 18px 16px;
+            box-shadow: 0 6px 18px rgba(80, 55, 20, 0.04);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .tag {
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            color: #7a5b3d;
+            background: #f4eadc;
+        }
+
+        .article-title {
+            margin: 0;
+            font-size: 22px;
+            line-height: 1.5;
+            color: #2d241b;
+            font-weight: 700;
+        }
+
+        .article-subtitle {
+            margin-top: 8px;
+            font-size: 13px;
+            color: #8a7662;
+            line-height: 1.7;
+        }
+
+        .section {
+            margin-top: 18px;
+        }
+
+        .section-title {
+            margin: 0 0 12px;
+            font-size: 15px;
+            color: #5c4732;
+            font-weight: 700;
+        }
+
+        .jp-paragraph {
+            margin: 0 0 16px;
+            padding: 16px 14px;
+            background: #fffaf3;
+            border-radius: 14px;
+            border: 1px solid #f0e5d6;
+            font-size: 22px;
+            line-height: 2.3;
+            letter-spacing: 0.02em;
+            color: #1f1a14;
+            word-break: break-word;
+        }
+
+        ruby {
+            ruby-position: over;
+        }
+
+        rt {
+            font-size: 0.48em;
+            color: #9c7d5e;
+            letter-spacing: 0;
+        }
+
+        .translation {
+            margin-top: 8px;
+            padding: 12px 14px;
+            background: #f8f3ec;
+            border-radius: 12px;
+            color: #6a5746;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .note-card {
+            margin-top: 16px;
+            background: #fffdf9;
+            border: 1px solid #eee4d7;
+            border-radius: 18px;
+            padding: 16px;
+        }
+
+        .note-text {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.9;
+            color: #4c3d31;
+        }
+
+        .toolbar {
+            margin-top: 16px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tool-btn {
+            flex: 1 1 calc(50% - 10px);
+            border: none;
+            border-radius: 12px;
+            padding: 12px 14px;
+            background: #5f4630;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .tool-btn.secondary {
+            background: #efe7db;
+            color: #5a4632;
+        }
+
+        .hidden-rt rt {
+            display: none;
+        }
+
+        @media (max-width: 390px) {
+            .jp-paragraph {
+                font-size: 20px;
+                line-height: 2.2;
+            }
+
+            .tool-btn {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <button class="header-btn">返回</button>
+        <div class="header-title">文章阅读</div>
+        <button class="header-btn">收藏</button>
+    </div>
+
+    <div class="content">
+        <div class="article-card">
+            <div class="article-meta">
+                <span class="tag">日语文章</span>
+                <span class="tag">振假名</span>
+                <span class="tag">手机阅读</span>
+            </div>
+
+            <h1 class="article-title">私の毎日の生活</h1>
+            <div class="article-subtitle">
+                更接近日文书籍阅读的排版效果：正文中汉字上方直接显示平假名。
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">正文</h2>
+
+                <p class="jp-paragraph" id="articleText">
+                    <ruby>私<rt>わたし</rt></ruby>は
+                    <ruby>毎朝<rt>まいあさ</rt></ruby>
+                    <ruby>七時<rt>しちじ</rt></ruby>に
+                    <ruby>起<rt>お</rt></ruby>きます。
+                    <ruby>朝<rt>あさ</rt></ruby>ご
+                    <ruby>飯<rt>はん</rt></ruby>を
+                    <ruby>食<rt>た</rt></ruby>べて、
+                    <ruby>学校<rt>がっこう</rt></ruby>へ
+                    <ruby>行<rt>い</rt></ruby>きます。
+                    <ruby>夜<rt>よる</rt></ruby>は
+                    <ruby>家<rt>いえ</rt></ruby>で
+                    <ruby>日本語<rt>にほんご</rt></ruby>を
+                    <ruby>勉強<rt>べんきょう</rt></ruby>します。
+                </p>
+
+                <div class="translation">
+                    我每天早上七点起床。吃完早饭后去学校。晚上在家学习日语。
+                </div>
+            </div>
+        </div>
+
+        <div class="toolbar">
+            <button class="tool-btn secondary" id="toggleRubyBtn">隐藏平假名</button>
+            <button class="tool-btn">播放全文</button>
+            <button class="tool-btn secondary">上一段</button>
+            <button class="tool-btn">下一段</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const toggleRubyBtn = document.getElementById('toggleRubyBtn');
+    const articleText = document.getElementById('articleText');
+    let rubyVisible = true;
+
+    toggleRubyBtn.addEventListener('click', function () {
+        rubyVisible = !rubyVisible;
+        if (rubyVisible) {
+            articleText.classList.remove('hidden-rt');
+            toggleRubyBtn.textContent = '隐藏平假名';
+        } else {
+            articleText.classList.add('hidden-rt');
+            toggleRubyBtn.textContent = '显示平假名';
+        }
+    });
+</script>
+</body>
+</html>
