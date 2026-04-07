@@ -23,19 +23,17 @@ public interface IArticleDomainService {
      * 查询文章详情（包含用户进度）
      *
      * @param articleId 文章业务 ID
-     * @param userId    用户 ID
      * @return 文章详情
      */
-    ArticleVO get(String articleId, Long userId);
+    ArticleVO get(String articleId);
 
     /**
      * 按笔记节点 ID 查询文章详情（包含用户进度）
      *
      * @param noteNodeId 笔记节点 ID
-     * @param userId     用户 ID
      * @return 文章详情
      */
-    ArticleVO getByNoteNodeId(Long noteNodeId, Long userId);
+    ArticleVO getByNoteNodeId(Long noteNodeId);
 
     /**
      * 分页查询文章列表
@@ -49,31 +47,28 @@ public interface IArticleDomainService {
      * 更新收藏状态
      *
      * @param articleId 文章业务 ID
-     * @param userId    用户 ID
      * @param favorite  收藏状态
      * @return 更新后的详情
      */
-    ArticleVO updateFavorite(String articleId, Long userId, Boolean favorite);
+    ArticleVO updateFavorite(String articleId, Boolean favorite);
 
     /**
      * 更新播放速度
      *
      * @param articleId    文章业务 ID
-     * @param userId       用户 ID
      * @param playbackRate 播放速度
      * @return 更新后的详情
      */
-    ArticleVO updatePlaybackRate(String articleId, Long userId, Double playbackRate);
+    ArticleVO updatePlaybackRate(String articleId, Double playbackRate);
 
     /**
      * 更新阅读位置
      *
      * @param articleId      文章业务 ID
-     * @param userId         用户 ID
      * @param paragraphIndex 段落下标（从 0 开始）
      * @return 更新后的详情
      */
-    ArticleVO updatePosition(String articleId, Long userId, Integer paragraphIndex);
+    ArticleVO updatePosition(String articleId, Integer paragraphIndex);
 
     /**
      * 删除文章

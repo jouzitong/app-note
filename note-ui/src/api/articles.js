@@ -44,35 +44,23 @@ function unwrap(data) {
   return data;
 }
 
-export async function getArticle(articleId, userId) {
+export async function getArticle(articleId) {
   if (!articleId) {
     throw new Error("articleId is required");
   }
-  const params = new URLSearchParams();
-  if (userId !== undefined && userId !== null && `${userId}` !== "") {
-    params.append("userId", `${userId}`);
-  }
-  const query = params.toString();
   const response = await request(
-    `${BASE_PATH}/${encodeURIComponent(articleId)}${query ? `?${query}` : ""}`
+    `${BASE_PATH}/${encodeURIComponent(articleId)}`
   );
   return unwrap(response);
 }
 
-export async function getArticleByNoteNode(noteNodeId, userId) {
+export async function getArticleByNoteNode(noteNodeId) {
   const numericNodeId = Number(noteNodeId);
   if (!Number.isInteger(numericNodeId) || numericNodeId <= 0) {
     throw new Error("noteNodeId is required");
   }
-  const params = new URLSearchParams();
-  if (userId !== undefined && userId !== null && `${userId}` !== "") {
-    params.append("userId", `${userId}`);
-  }
-  const query = params.toString();
   const response = await request(
-    `${BASE_PATH}/note-node/${encodeURIComponent(numericNodeId)}${
-      query ? `?${query}` : ""
-    }`
+    `${BASE_PATH}/note-node/${encodeURIComponent(numericNodeId)}`
   );
   return unwrap(response);
 }
@@ -84,12 +72,9 @@ export async function saveArticle(article) {
   });
 }
 
-export async function updateArticleFavorite(articleId, favorite, userId) {
+export async function updateArticleFavorite(articleId, favorite) {
   const params = new URLSearchParams();
   params.append("favorite", `${Boolean(favorite)}`);
-  if (userId !== undefined && userId !== null && `${userId}` !== "") {
-    params.append("userId", `${userId}`);
-  }
   const response = await request(
     `${BASE_PATH}/${encodeURIComponent(
       articleId
@@ -99,16 +84,9 @@ export async function updateArticleFavorite(articleId, favorite, userId) {
   return unwrap(response);
 }
 
-export async function updateArticlePlaybackRate(
-  articleId,
-  playbackRate,
-  userId
-) {
+export async function updateArticlePlaybackRate(articleId, playbackRate) {
   const params = new URLSearchParams();
   params.append("playbackRate", `${playbackRate}`);
-  if (userId !== undefined && userId !== null && `${userId}` !== "") {
-    params.append("userId", `${userId}`);
-  }
   const response = await request(
     `${BASE_PATH}/${encodeURIComponent(
       articleId
@@ -118,12 +96,9 @@ export async function updateArticlePlaybackRate(
   return unwrap(response);
 }
 
-export async function updateArticlePosition(articleId, paragraphIndex, userId) {
+export async function updateArticlePosition(articleId, paragraphIndex) {
   const params = new URLSearchParams();
   params.append("paragraphIndex", `${paragraphIndex}`);
-  if (userId !== undefined && userId !== null && `${userId}` !== "") {
-    params.append("userId", `${userId}`);
-  }
   const response = await request(
     `${BASE_PATH}/${encodeURIComponent(
       articleId

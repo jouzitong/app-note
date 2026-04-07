@@ -40,6 +40,8 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class ArticleDomainServiceImpl implements IArticleDomainService {
 
+    private static final long DEFAULT_USER_ID = 1L;
+
     private final IArticleRepository articleRepository;
 
     private final IArticleUserProgressRepository articleUserProgressRepository;
@@ -72,21 +74,21 @@ public class ArticleDomainServiceImpl implements IArticleDomainService {
 
     @Override
     @Transactional
-    public ArticleVO get(String articleId, Long userId) {
+    public ArticleVO get(String articleId) {
         if (!StringUtils.hasText(articleId)) {
             throw new IllegalArgumentException("articleId cannot be blank");
         }
         Article article = articleRepository.findByArticleCode(articleId)
                 .orElseThrow(() -> new IllegalArgumentException("Article not found, articleId=" + articleId));
 
-        ArticleUserProgress progress = resolveProgress(userId, article.getId(), false);
+        ArticleUserProgress progress = resolveProgress(DEFAULT_USER_ID, article.getId(), false);
         Long noteNodeId = resolveNoteNodeId(article.getId());
         return toVO(article, progress, true, noteNodeId);
     }
 
     @Override
     @Transactional
-    public ArticleVO getByNoteNodeId(Long noteNodeId, Long userId) {
+    public ArticleVO getByNoteNodeId(Long noteNodeId) {
         if (noteNodeId == null || noteNodeId <= 0) {
             throw new IllegalArgumentException("noteNodeId must be greater than 0");
         }
@@ -98,7 +100,7 @@ public class ArticleDomainServiceImpl implements IArticleDomainService {
         Article article = articleRepository.findById(rel.getArticleId())
                 .orElseThrow(() -> new IllegalArgumentException("Article not found, id=" + rel.getArticleId()));
 
-        ArticleUserProgress progress = resolveProgress(userId, article.getId(), false);
+        ArticleUserProgress progress = resolveProgress(DEFAULT_USER_ID, article.getId(), false);
         return toVO(article, progress, true, noteNodeId);
     }
 
@@ -116,8 +118,6 @@ public class ArticleDomainServiceImpl implements IArticleDomainService {
 
         Pageable pageable = PageRequest.of(currentPage - 1, size);
         String keyword = request == null ? null : request.getKeyword();
-        Long userId = request == null ? null : request.getUserId();
-
         Page<Article> result = StringUtils.hasText(keyword)
                 ? articleRepository.findByTitleContainingOrderByIdDesc(keyword.trim(), pageable)
                 : articleRepository.findAll(pageable);
@@ -126,7 +126,7 @@ public class ArticleDomainServiceImpl implements IArticleDomainService {
         List<ArticleVO> records = result.getContent().stream()
                 .map(item -> toVO(
                         item,
-                        resolveProgress(userId, item.getId(), false),
+                        resolveProgress(DEFAULT_USER_ID, item.getId(), false),
                         false,
                         noteNodeIdMap.get(item.getId())
                 ))
@@ -138,9 +138,9 @@ public class ArticleDomainServiceImpl implements IArticleDomainService {
 
     @Override
     @Transactional
-    public ArticleVO updateFavorite(String articleId, Long userId, Boolean favorite) {
+    public ArticleVO updateFavorite(String articleId, Boolean favorite) {
         Article article = requireArticle(articleId);
-        ArticleUserProgress progress = resolveProgress(userId, article.getId(), true);
+        ArticleUserProgress progress = resolveProgress(DEFAULT_USER_ID, article.getId(), true);
         progress.setFavorite(Boolean.TRUE.equals(favorite));
         ArticleUserProgress saved = articleUserProgressRepository.save(progress);
         return toVO(article, saved, true, resolveNoteNodeId(article.getId()));
@@ -148,13 +148,13 @@ public class ArticleDomainServiceImpl implements IArticleDomainService {
 
     @Override
     @Transactional
-    public ArticleVO updatePlaybackRate(String articleId, Long userId, Double playbackRate) {
+    public ArticleVO updatePlaybackRate(String articleId, Double playbackRate) {
         if (playbackRate == null || playbackRate <= 0D) {
             throw new IllegalArgumentException("playbackRate must be greater than 0");
         }
 
         Article article = requireArticle(articleId);
-        ArticleUserProgress progress = resolveProgress(userId, article.getId(), true);
+        ArticleUserProgress progress = resolveProgress(DEFAULT_USER_ID, article.getId(), true);
         progress.setPlaybackRate(BigDecimal.valueOf(playbackRate));
         ArticleUserProgress saved = articleUserProgressRepository.save(progress);
         return toVO(article, saved, true, resolveNoteNodeId(article.getId()));
@@ -162,13 +162,13 @@ public class ArticleDomainServiceImpl implements IArticleDomainService {
 
     @Override
     @Transactional
-    public ArticleVO updatePosition(String articleId, Long userId, Integer paragraphIndex) {
+    public ArticleVO updatePosition(String articleId, Integer paragraphIndex) {
         if (paragraphIndex == null || paragraphIndex < 0) {
             throw new IllegalArgumentException("paragraphIndex cannot be less than 0");
         }
 
         Article article = requireArticle(articleId);
-        ArticleUserProgress progress = resolveProgress(userId, article.getId(), true);
+        ArticleUserProgress progress = resolveProgress(DEFAULT_USER_ID, article.getId(), true);
         progress.setLastReadParagraphIndex(paragraphIndex);
         ArticleUserProgress saved = articleUserProgressRepository.save(progress);
         return toVO(article, saved, true, resolveNoteNodeId(article.getId()));

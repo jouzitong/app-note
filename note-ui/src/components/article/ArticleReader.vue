@@ -122,8 +122,6 @@ import {
 } from "@/model/article/article";
 import { AudioPlaybackManager } from "@/utils/audioPlayback";
 
-const DEFAULT_USER_ID = 1;
-
 export default {
   name: "ArticleReader",
   props: {
@@ -171,14 +169,11 @@ export default {
     this.audioManager.destroy();
   },
   methods: {
-    userId() {
-      return DEFAULT_USER_ID;
-    },
     async loadArticle() {
       this.loading = true;
       this.errorMessage = "";
       try {
-        const data = await getArticleByNoteNode(this.noteNodeId, this.userId());
+        const data = await getArticleByNoteNode(this.noteNodeId);
         this.article = normalizeArticle(data);
         this.playbackRate = this.pickPlaybackRate(
           this.article.progress && this.article.progress.playbackRate
@@ -248,8 +243,7 @@ export default {
       try {
         const updated = await updateArticleFavorite(
           this.article.id,
-          !this.isFavorite,
-          this.userId()
+          !this.isFavorite
         );
         this.article = normalizeArticle({ ...this.article, ...updated });
       } catch (error) {
@@ -265,8 +259,7 @@ export default {
       try {
         const updated = await updateArticlePlaybackRate(
           this.article.id,
-          nextRate,
-          this.userId()
+          nextRate
         );
         this.article = normalizeArticle({ ...this.article, ...updated });
       } catch (error) {
@@ -296,11 +289,7 @@ export default {
         return;
       }
       try {
-        const updated = await updateArticlePosition(
-          this.article.id,
-          index,
-          this.userId()
-        );
+        const updated = await updateArticlePosition(this.article.id, index);
         this.article = normalizeArticle({ ...this.article, ...updated });
       } catch (error) {
         console.error("[article-reader] persistPosition failed:", error);

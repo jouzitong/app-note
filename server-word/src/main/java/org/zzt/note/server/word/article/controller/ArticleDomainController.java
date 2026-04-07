@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.zzt.note.server.word.article.req.ArticleDomainPageRequest;
 import org.zzt.note.server.word.article.service.IArticleDomainService;
 import org.zzt.note.server.word.article.vo.ArticleVO;
-import org.zzt.note.server.word.utils.WordUserUtils;
 
 /**
  * 文章阅读领域控制器
@@ -34,44 +33,36 @@ public class ArticleDomainController {
     }
 
     @GetMapping("/{articleId}")
-    public ArticleVO get(@PathVariable("articleId") String articleId,
-                         @RequestParam(value = "userId", required = false) Long userId) {
-        return articleDomainService.get(articleId, WordUserUtils.resolveUserId(userId));
+    public ArticleVO get(@PathVariable("articleId") String articleId) {
+        return articleDomainService.get(articleId);
     }
 
     @GetMapping("/note-node/{noteNodeId}")
-    public ArticleVO getByNoteNode(@PathVariable("noteNodeId") Long noteNodeId,
-                                   @RequestParam(value = "userId", required = false) Long userId) {
-        return articleDomainService.getByNoteNodeId(noteNodeId, WordUserUtils.resolveUserId(userId));
+    public ArticleVO getByNoteNode(@PathVariable("noteNodeId") Long noteNodeId) {
+        return articleDomainService.getByNoteNodeId(noteNodeId);
     }
 
     @GetMapping
     public PageResultVO<ArticleVO> page(ArticleDomainPageRequest request) {
-        if (request != null) {
-            request.setUserId(WordUserUtils.resolveUserId(request.getUserId()));
-        }
         return articleDomainService.page(request);
     }
 
     @PostMapping("/{articleId}/favorite")
     public ArticleVO updateFavorite(@PathVariable("articleId") String articleId,
-                                    @RequestParam("favorite") Boolean favorite,
-                                    @RequestParam(value = "userId", required = false) Long userId) {
-        return articleDomainService.updateFavorite(articleId, WordUserUtils.resolveUserId(userId), favorite);
+                                    @RequestParam("favorite") Boolean favorite) {
+        return articleDomainService.updateFavorite(articleId, favorite);
     }
 
     @PostMapping("/{articleId}/playback-rate")
     public ArticleVO updatePlaybackRate(@PathVariable("articleId") String articleId,
-                                        @RequestParam("playbackRate") Double playbackRate,
-                                        @RequestParam(value = "userId", required = false) Long userId) {
-        return articleDomainService.updatePlaybackRate(articleId, WordUserUtils.resolveUserId(userId), playbackRate);
+                                        @RequestParam("playbackRate") Double playbackRate) {
+        return articleDomainService.updatePlaybackRate(articleId, playbackRate);
     }
 
     @PostMapping("/{articleId}/position")
     public ArticleVO updatePosition(@PathVariable("articleId") String articleId,
-                                    @RequestParam("paragraphIndex") Integer paragraphIndex,
-                                    @RequestParam(value = "userId", required = false) Long userId) {
-        return articleDomainService.updatePosition(articleId, WordUserUtils.resolveUserId(userId), paragraphIndex);
+                                    @RequestParam("paragraphIndex") Integer paragraphIndex) {
+        return articleDomainService.updatePosition(articleId, paragraphIndex);
     }
 
     @DeleteMapping("/{articleId}")

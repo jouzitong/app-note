@@ -18,9 +18,4 @@ public class ArticleDomainPageRequest extends BaseRequest {
      * 标题关键字（可空）
      */
     private String keyword;
-
-    /**
-     * 用户 ID（可空）
-     */
-    private Long userId;
 }
