@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日语语音转文字 Demo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            background: #f7f8fa;
+            color: #222;
+        }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            margin-bottom: 16px;
+        }
+
+        .title {
+            margin: 0 0 8px;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .desc {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        button {
+            appearance: none;
+            border: 0;
+            border-radius: 12px;
+            padding: 12px 16px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            background: #111827;
+            color: #fff;
+        }
+
+        button.secondary {
+            background: #6b7280;
+        }
+
+        button.danger {
+            background: #dc2626;
+        }
+
+        button:disabled {
+            opacity: 0.45;
+            cursor: not-allowed;
+        }
+
+        .status-wrap {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #9ca3af;
+        }
+
+        .status-dot.recording {
+            background: #ef4444;
+            box-shadow: 0 0 0 6px rgba(239, 68, 68, 0.15);
+        }
+
+        .status-text {
+            font-size: 14px;
+            color: #374151;
+        }
+
+        .field {
+            margin-top: 16px;
+        }
+
+        .label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #374151;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 140px;
+            border: 1px solid #d1d5db;
+            border-radius: 12px;
+            padding: 12px;
+            resize: vertical;
+            font-size: 15px;
+            line-height: 1.6;
+            outline: none;
+            background: #fff;
+        }
+
+        textarea:focus {
+            border-color: #111827;
+        }
+
+        .hint {
+            margin-top: 8px;
+            font-size: 13px;
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .error {
+            margin-top: 12px;
+            color: #b91c1c;
+            font-size: 14px;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        .lang-row {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        select {
+            height: 40px;
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            padding: 0 12px;
+            background: #fff;
+            font-size: 14px;
+        }
+
+        .footer-note {
+            margin-top: 16px;
+            font-size: 12px;
+            color: #6b7280;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="card">
+        <h1 class="title">日语语音转文字</h1>
+        <p class="desc">
+            先基于 Safari 原生语音识别做一个快速上线版。建议直接在 Safari 中打开并允许麦克风权限。
+        </p>
+
+        <div class="lang-row">
+            <label class="label" style="margin: 0;">识别语言</label>
+            <select id="langSelect">
+                <option value="ja-JP" selected>日语（ja-JP）</option>
+                <option value="zh-CN">中文（zh-CN）</option>
+                <option value="en-US">英语（en-US）</option>
+            </select>
+        </div>
+
+        <div class="toolbar">
+            <button id="startBtn">开始识别</button>
+            <button id="stopBtn" class="secondary" disabled>停止识别</button>
+            <button id="clearBtn" class="danger">清空文本</button>
+        </div>
+
+        <div class="status-wrap">
+            <div id="statusDot" class="status-dot"></div>
+            <div id="statusText" class="status-text">未开始</div>
+        </div>
+
+        <div id="errorBox" class="error"></div>
+
+        <div class="field">
+            <label class="label" for="finalText">最终结果</label>
+            <textarea id="finalText" placeholder="这里显示最终识别结果"></textarea>
+            <div class="hint">识别完成的文本会持续追加到这里。</div>
+        </div>
+
+        <div class="field">
+            <label class="label" for="interimText">实时预览</label>
+            <textarea id="interimText" placeholder="这里显示实时识别中的内容"></textarea>
+            <div class="hint">这个区域显示临时结果，适合观察识别过程。</div>
+        </div>
+
+        <div class="footer-note">
+            提示：这个方案适合先快速验证效果。Web Speech API 的 SpeechRecognition 当前并不是所有浏览器都稳定可用，Safari 也不适合拿它作为长期唯一方案。:contentReference[oaicite:1]{index=1}
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+        const startBtn = document.getElementById('startBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const finalText = document.getElementById('finalText');
+        const interimText = document.getElementById('interimText');
+        const statusText = document.getElementById('statusText');
+        const statusDot = document.getElementById('statusDot');
+        const errorBox = document.getElementById('errorBox');
+        const langSelect = document.getElementById('langSelect');
+
+        let recognition = null;
+        let isListening = false;
+        let finalTranscript = '';
+
+        function setStatus(text, recording) {
+            statusText.textContent = text;
+            if (recording) {
+                statusDot.classList.add('recording');
+            } else {
+                statusDot.classList.remove('recording');
+            }
+        }
+
+        function setError(message) {
+            errorBox.textContent = message || '';
+        }
+
+        if (!SpeechRecognition) {
+            setStatus('当前浏览器不支持语音识别', false);
+            setError('当前 Safari 环境未检测到 SpeechRecognition / webkitSpeechRecognition。\n建议升级 Safari 或改用后端转写方案。');
+            startBtn.disabled = true;
+            stopBtn.disabled = true;
+            return;
+        }
+
+        recognition = new SpeechRecognition();
+
+        recognition.lang = langSelect.value;
+        recognition.continuous = true;
+        recognition.interimResults = true;
+        recognition.maxAlternatives = 1;
+
+        langSelect.addEventListener('change', function () {
+            recognition.lang = this.value;
+        });
+
+        recognition.onstart = function () {
+            isListening = true;
+            setStatus('正在监听...', true);
+            setError('');
+            startBtn.disabled = true;
+            stopBtn.disabled = false;
+        };
+
+        recognition.onspeechstart = function () {
+            setStatus('检测到语音，识别中...', true);
+        };
+
+        recognition.onspeechend = function () {
+            setStatus('语音结束，等待结果...', true);
+        };
+
+        recognition.onresult = function (event) {
+            let interimTranscript = '';
+
+            for (let i = event.resultIndex; i < event.results.length; i++) {
+                const text = event.results[i][0].transcript;
+                if (event.results[i].isFinal) {
+                    finalTranscript += text;
+                } else {
+                    interimTranscript += text;
+                }
+            }
+
+            finalText.value = finalTranscript.trim();
+            interimText.value = interimTranscript.trim();
+        };
+
+        recognition.onerror = function (event) {
+            let msg = '识别失败';
+            if (event && event.error) {
+                msg += '：' + event.error;
+            }
+            setError(msg);
+
+            if (event && event.error === 'not-allowed') {
+                setError('麦克风权限被拒绝，请在 Safari 中允许麦克风访问。');
+            } else if (event && event.error === 'no-speech') {
+                setError('没有检测到语音，请靠近麦克风后重试。');
+            } else if (event && event.error === 'audio-capture') {
+                setError('无法获取麦克风，请检查设备和浏览器权限。');
+            }
+
+            setStatus('识别异常', false);
+        };
+
+        recognition.onend = function () {
+            isListening = false;
+            interimText.value = '';
+            setStatus('已停止', false);
+            startBtn.disabled = false;
+            stopBtn.disabled = true;
+        };
+
+        startBtn.addEventListener('click', function () {
+            if (isListening) {
+                return;
+            }
+
+            try {
+                recognition.lang = langSelect.value;
+                recognition.start();
+            } catch (e) {
+                setError('启动失败：' + (e.message || e));
+            }
+        });
+
+        stopBtn.addEventListener('click', function () {
+            if (!isListening) {
+                return;
+            }
+
+            try {
+                recognition.stop();
+            } catch (e) {
+                setError('停止失败：' + (e.message || e));
+            }
+        });
+
+        clearBtn.addEventListener('click', function () {
+            finalTranscript = '';
+            finalText.value = '';
+            interimText.value = '';
+            setError('');
+            setStatus(isListening ? '正在监听...' : '未开始', isListening);
+        });
+    })();
+</script>
+</body>
+</html>
