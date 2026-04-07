@@ -142,6 +142,15 @@
                     />
                   </button>
                 </div>
+                <div class="example-speech-row">
+                  <SpeechTranscribeInput
+                    :value="getExampleSpeechText(example, index)"
+                    lang="ja-JP"
+                    placeholder="点击麦克风，实时转写当前例句"
+                    @input="setExampleSpeechText(example, index, $event)"
+                    @error="handleExampleSpeechError(index, $event)"
+                  />
+                </div>
                 <details
                   class="example-explain"
                   :open="!example.explain.collapsedByDefault"
@@ -265,6 +274,7 @@
 
 <script>
 import { confirmWordCardDone, getWordCardPage } from "@/api/wordCards";
+import SpeechTranscribeInput from "@/components/speech/SpeechTranscribeInput.vue";
 import {
   createDefaultWordCard,
   createMockWordCard,
@@ -278,6 +288,9 @@ import {
 
 export default {
   name: "WordCard",
+  components: {
+    SpeechTranscribeInput,
+  },
   // 临时前端配置：播放速度本地存储键。
   // TODO(后端待实现): 若后续要云端同步用户配置，可由接口返回后替换本地读写。
   playbackRateStorageKey: "note-ui.word-card.playback-rate",
@@ -307,6 +320,7 @@ export default {
       requestSeq: 0,
       pageSize: 10,
       confirming: false,
+      exampleSpeechTexts: {},
     };
   },
   computed: {
@@ -406,6 +420,7 @@ export default {
           : [];
         const record = records[this.indexInPage] || records[0] || {};
         this.wordCard = normalizeWordCard(record);
+        this.exampleSpeechTexts = {};
         this.tryAutoPlayWord();
       } catch (error) {
         if (seq !== this.requestSeq) {
@@ -415,6 +430,7 @@ export default {
         this.pageInfo = {
           total: 0,
         };
+        this.exampleSpeechTexts = {};
         this.errorMessage = `接口请求失败，已回退示例数据：${error.message}`;
       } finally {
         if (seq === this.requestSeq) {
@@ -606,6 +622,28 @@ export default {
     formatBreakdownDesc(item = {}) {
       const desc = item.desc || "";
       return desc;
+    },
+    getExampleSpeechKey(example = {}, index = 0) {
+      const id = example?.id || `example-${index}`;
+      return `speech-${id}-${index}`;
+    },
+    getExampleSpeechText(example = {}, index = 0) {
+      const key = this.getExampleSpeechKey(example, index);
+      return this.exampleSpeechTexts[key] || "";
+    },
+    setExampleSpeechText(example = {}, index = 0, text = "") {
+      const key = this.getExampleSpeechKey(example, index);
+      this.$set(this.exampleSpeechTexts, key, text || "");
+    },
+    handleExampleSpeechError(index = 0, errorCode = "") {
+      const messageMap = {
+        "not-allowed": "麦克风权限被拒绝，请在浏览器设置中允许访问麦克风",
+        "no-speech": "没有检测到语音，请靠近麦克风后重试",
+        "audio-capture": "无法访问麦克风设备，请检查系统设备权限",
+      };
+      const prefix = `例句 ${index + 1} 语音转写失败`;
+      const detail = messageMap[errorCode] || errorCode || "unknown";
+      this.errorMessage = `${prefix}：${detail}`;
     },
     handleBackToCatalog() {
       this.$emit("back");
@@ -992,6 +1030,21 @@ export default {
   font-size: 12px;
   color: #374151;
   line-height: 1.4;
+}
+
+.example-speech-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  max-width: 100%;
+}
+
+.example-speech-label {
+  font-size: 12px;
+  color: #4b5563;
+  line-height: 1;
 }
 
 .example-grid {

@@ -4,6 +4,7 @@ import HomeView from "../views/HomeView.vue";
 import NoteIndexView from "../views/notes/index.vue";
 import NoteEditView from "../views/notes/edit.vue";
 import WordCardView from "@/views/test/word-card.vue";
+import WordCardSpeechTestView from "@/views/test/word-card-speech.vue";
 import WordCardIndexView from "@/views/wordCard/index.vue";
 import ArticleReaderIndexView from "@/views/article/index.vue";
 
@@ -38,6 +39,11 @@ const routes = [
     path: "/test/word-card",
     name: "test-word-card",
     component: WordCardView,
+  },
+  {
+    path: "/test/word-card-speech",
+    name: "test-word-card-speech",
+    component: WordCardSpeechTestView,
   },
   {
     path: "/note/:parentId/word-card",
