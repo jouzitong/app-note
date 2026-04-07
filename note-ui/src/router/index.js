@@ -45,7 +45,7 @@ const routes = [
     component: WordCardIndexView,
   },
   {
-    path: "/article/:id?",
+    path: "/note/:parentId/article",
     name: "article-reader",
     component: ArticleReaderIndexView,
   },

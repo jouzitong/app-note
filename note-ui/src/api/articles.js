@@ -59,6 +59,24 @@ export async function getArticle(articleId, userId) {
   return unwrap(response);
 }
 
+export async function getArticleByNoteNode(noteNodeId, userId) {
+  const numericNodeId = Number(noteNodeId);
+  if (!Number.isInteger(numericNodeId) || numericNodeId <= 0) {
+    throw new Error("noteNodeId is required");
+  }
+  const params = new URLSearchParams();
+  if (userId !== undefined && userId !== null && `${userId}` !== "") {
+    params.append("userId", `${userId}`);
+  }
+  const query = params.toString();
+  const response = await request(
+    `${BASE_PATH}/note-node/${encodeURIComponent(numericNodeId)}${
+      query ? `?${query}` : ""
+    }`
+  );
+  return unwrap(response);
+}
+
 export async function saveArticle(article) {
   await request(BASE_PATH, {
     method: "POST",

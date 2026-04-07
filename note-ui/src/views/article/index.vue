@@ -1,5 +1,12 @@
 <template>
-  <ArticleReader :article-id="resolvedArticleId" />
+  <div class="article-page">
+    <ArticleReader
+      v-if="resolvedNodeId !== null"
+      :note-node-id="resolvedNodeId"
+      @back="goToParentNote"
+    />
+    <div v-else class="note-id-missing">缺少 nodeId 参数</div>
+  </div>
 </template>
 
 <script>
@@ -11,15 +18,47 @@ export default {
     ArticleReader,
   },
   computed: {
-    resolvedArticleId() {
-      const params = (this.$route && this.$route.params) || {};
-      const articleId = params.id;
-      if (articleId === undefined || articleId === null) {
-        return "article_001";
+    resolvedParentId() {
+      return this.parsePositiveInt(this.$route.params.parentId);
+    },
+    resolvedNodeId() {
+      return this.parsePositiveInt(this.$route.query.nodeId);
+    },
+  },
+  methods: {
+    parsePositiveInt(value) {
+      if (value === undefined || value === null || value === "") {
+        return null;
       }
-      const normalized = String(articleId).trim();
-      return normalized || "article_001";
+      const parsed = Number(value);
+      if (!Number.isInteger(parsed) || parsed <= 0) {
+        return null;
+      }
+      return parsed;
+    },
+    goToParentNote() {
+      if (this.resolvedParentId === null) {
+        this.$router.back();
+        return;
+      }
+      this.$router.push({
+        name: "note",
+        params: { id: String(this.resolvedParentId) },
+      });
     },
   },
 };
 </script>
+
+<style scoped>
+.article-page {
+  min-height: 100vh;
+}
+
+.note-id-missing {
+  margin-top: 40px;
+  color: #ef4444;
+  font-size: 14px;
+  text-align: center;
+}
+</style>

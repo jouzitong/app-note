@@ -18,6 +18,8 @@ public interface IArticleNoteNodeRelRepository extends BaseRepository<ArticleNot
 
     List<ArticleNoteNodeRel> findByArticleIdIn(List<Long> articleIds);
 
+    List<ArticleNoteNodeRel> findByNoteNodeIdOrderByArticleIdAsc(Long noteNodeId);
+
     @Transactional
     void deleteByArticleId(Long articleId);
 }

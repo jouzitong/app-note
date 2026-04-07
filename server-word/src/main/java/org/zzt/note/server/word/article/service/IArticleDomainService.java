@@ -29,6 +29,15 @@ public interface IArticleDomainService {
     ArticleVO get(String articleId, Long userId);
 
     /**
+     * 按笔记节点 ID 查询文章详情（包含用户进度）
+     *
+     * @param noteNodeId 笔记节点 ID
+     * @param userId     用户 ID
+     * @return 文章详情
+     */
+    ArticleVO getByNoteNodeId(Long noteNodeId, Long userId);
+
+    /**
      * 分页查询文章列表
      *
      * @param request 分页请求

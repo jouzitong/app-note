@@ -111,7 +111,7 @@
 
 <script>
 import {
-  getArticle,
+  getArticleByNoteNode,
   updateArticleFavorite,
   updateArticlePlaybackRate,
   updateArticlePosition,
@@ -127,8 +127,8 @@ const DEFAULT_USER_ID = 1;
 export default {
   name: "ArticleReader",
   props: {
-    articleId: {
-      type: String,
+    noteNodeId: {
+      type: Number,
       required: true,
     },
   },
@@ -156,7 +156,7 @@ export default {
     },
   },
   watch: {
-    articleId: {
+    noteNodeId: {
       immediate: true,
       handler() {
         this.loadArticle();
@@ -178,7 +178,7 @@ export default {
       this.loading = true;
       this.errorMessage = "";
       try {
-        const data = await getArticle(this.articleId, this.userId());
+        const data = await getArticleByNoteNode(this.noteNodeId, this.userId());
         this.article = normalizeArticle(data);
         this.playbackRate = this.pickPlaybackRate(
           this.article.progress && this.article.progress.playbackRate
@@ -316,7 +316,7 @@ export default {
       el.scrollIntoView({ block: "center", behavior: "smooth" });
     },
     goBack() {
-      this.$router.back();
+      this.$emit("back");
     },
   },
 };

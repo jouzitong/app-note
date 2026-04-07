@@ -39,6 +39,12 @@ public class ArticleDomainController {
         return articleDomainService.get(articleId, WordUserUtils.resolveUserId(userId));
     }
 
+    @GetMapping("/note-node/{noteNodeId}")
+    public ArticleVO getByNoteNode(@PathVariable("noteNodeId") Long noteNodeId,
+                                   @RequestParam(value = "userId", required = false) Long userId) {
+        return articleDomainService.getByNoteNodeId(noteNodeId, WordUserUtils.resolveUserId(userId));
+    }
+
     @GetMapping
     public PageResultVO<ArticleVO> page(ArticleDomainPageRequest request) {
         if (request != null) {

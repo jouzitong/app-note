@@ -86,6 +86,24 @@ public class ArticleDomainServiceImpl implements IArticleDomainService {
 
     @Override
     @Transactional
+    public ArticleVO getByNoteNodeId(Long noteNodeId, Long userId) {
+        if (noteNodeId == null || noteNodeId <= 0) {
+            throw new IllegalArgumentException("noteNodeId must be greater than 0");
+        }
+
+        ArticleNoteNodeRel rel = articleNoteNodeRelRepository.findByNoteNodeIdOrderByArticleIdAsc(noteNodeId)
+                .stream()
+                .findFirst()
+                .orElseThrow(() -> new IllegalArgumentException("Article not found by noteNodeId=" + noteNodeId));
+        Article article = articleRepository.findById(rel.getArticleId())
+                .orElseThrow(() -> new IllegalArgumentException("Article not found, id=" + rel.getArticleId()));
+
+        ArticleUserProgress progress = resolveProgress(userId, article.getId(), false);
+        return toVO(article, progress, true, noteNodeId);
+    }
+
+    @Override
+    @Transactional
     public PageResultVO<ArticleVO> page(ArticleDomainPageRequest request) {
         int currentPage = request == null || request.page() == null ? 1 : request.page();
         int size = request == null || request.size() == null ? 10 : request.size();
