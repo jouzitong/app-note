@@ -5,6 +5,7 @@ import NoteIndexView from "../views/notes/index.vue";
 import NoteEditView from "../views/notes/edit.vue";
 import WordCardView from "@/views/test/word-card.vue";
 import WordCardIndexView from "@/views/wordCard/index.vue";
+import ArticleReaderIndexView from "@/views/article/index.vue";
 
 Vue.use(VueRouter);
 
@@ -42,6 +43,11 @@ const routes = [
     path: "/note/:parentId/word-card",
     name: "word-card",
     component: WordCardIndexView,
+  },
+  {
+    path: "/article/:id?",
+    name: "article-reader",
+    component: ArticleReaderIndexView,
   },
 ];
 
