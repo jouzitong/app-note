@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import LanguageJpView from "../views/language-jp.vue";
 import LoginView from "../views/LoginView.vue";
 import NoteIndexView from "../views/notes/index.vue";
 import NoteEditView from "../views/notes/edit.vue";
@@ -15,8 +16,14 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "home",
+    name: "note-home",
     component: HomeView,
+    meta: { public: true },
+  },
+  {
+    path: "/language-jp",
+    name: "language-jp",
+    component: LanguageJpView,
     meta: { public: true },
   },
   {
@@ -74,7 +81,7 @@ router.beforeEach((to, from, next) => {
   const loggedIn = hasAuthToken();
 
   if (to.name === "login" && loggedIn) {
-    next({ name: "home" });
+    next({ name: "note-home" });
     return;
   }
 

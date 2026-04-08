@@ -64,7 +64,7 @@ export default {
   },
   methods: {
     goHome() {
-      this.$router.push({ name: "home" });
+      this.$router.push({ name: "note-home" });
     },
     resolveRedirect() {
       const redirect = this.$route.query.redirect;
