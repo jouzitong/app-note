@@ -451,6 +451,15 @@ export default {
         this.wordCard.progress.favorite = !this.wordCard.progress.favorite;
         return;
       }
+      if (action?.key === "prev" || action?.key === "previous") {
+        if (this.safeIndex <= 0) {
+          this.errorMessage = "已经是第一张";
+          return;
+        }
+        const currentIndex = this.safeIndex;
+        this.$emit("update:index", currentIndex - 1);
+        return;
+      }
       if (action?.key === "next") {
         if (this.totalCards > 0 && this.safeIndex >= this.totalCards - 1) {
           this.errorMessage = "已经是最后一张";

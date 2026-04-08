@@ -1,0 +1,39 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Note system logo">
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#4F8CFF"/>
+            <stop offset="100%" stop-color="#6C5CFF"/>
+        </linearGradient>
+        <linearGradient id="pen" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#FFD76A"/>
+            <stop offset="100%" stop-color="#FFB84D"/>
+        </linearGradient>
+    </defs>
+
+    <!-- background -->
+    <rect x="16" y="16" width="224" height="224" rx="48" fill="url(#bg)"/>
+
+    <!-- notebook -->
+    <g transform="translate(0, 4)">
+        <path d="M74 78C74 70.268 80.268 64 88 64H122C136 64 146 70 152 80C158 70 168 64 182 64H188C195.732 64 202 70.268 202 78V170C202 177.732 195.732 184 188 184H178C167.242 184 158.048 187.298 152 193C145.952 187.298 136.758 184 126 184H88C80.268 184 74 177.732 74 170V78Z" fill="white" fill-opacity="0.96"/>
+
+        <!-- center fold -->
+        <path d="M152 80V193" stroke="#D9E1FF" stroke-width="4" stroke-linecap="round"/>
+
+        <!-- lines -->
+        <line x1="92" y1="98" x2="136" y2="98" stroke="#B8C6FF" stroke-width="6" stroke-linecap="round"/>
+        <line x1="92" y1="118" x2="136" y2="118" stroke="#B8C6FF" stroke-width="6" stroke-linecap="round"/>
+        <line x1="92" y1="138" x2="128" y2="138" stroke="#B8C6FF" stroke-width="6" stroke-linecap="round"/>
+
+        <line x1="168" y1="98" x2="184" y2="98" stroke="#B8C6FF" stroke-width="6" stroke-linecap="round"/>
+        <line x1="168" y1="118" x2="184" y2="118" stroke="#B8C6FF" stroke-width="6" stroke-linecap="round"/>
+        <line x1="168" y1="138" x2="184" y2="138" stroke="#B8C6FF" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <!-- pen -->
+    <g transform="rotate(-18 188 72)">
+        <rect x="158" y="58" width="52" height="14" rx="7" fill="url(#pen)"/>
+        <polygon points="210,58 224,65 210,72" fill="#FFF2C7"/>
+        <rect x="152" y="58" width="10" height="14" rx="4" fill="#2F3A5A" opacity="0.85"/>
+    </g>
+</svg>

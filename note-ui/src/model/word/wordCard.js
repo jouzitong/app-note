@@ -163,6 +163,7 @@ export function createDefaultWordCard() {
       { key: "hard", icon: "⚠", title: "易错" },
       { key: "favorite", icon: "★", title: "收藏" },
       { key: "audio", icon: "🔊", title: "整卡朗读" },
+      { key: "prev", icon: "⏮", title: "上一个" },
       { key: "next", icon: "⏭", title: "下一个" },
     ],
   };
@@ -277,6 +278,7 @@ export function createMockWordCard() {
       { key: "hard", icon: "⚠", title: "易错" },
       { key: "favorite", icon: "★", title: "收藏" },
       { key: "audio", icon: "🔊", title: "整卡朗读" },
+      { key: "prev", icon: "⏮", title: "上一个" },
       { key: "next", icon: "⏭", title: "下一个" },
     ],
   };
@@ -297,6 +299,29 @@ export function normalizeWordCard(source = {}) {
   const rawExamples = rawSections.examples || {};
   const rawSynonyms = rawSections.synonyms || {};
   const rawRelated = rawSections.related || {};
+  const rawActions = Array.isArray(source.actions)
+    ? source.actions.slice()
+    : defaults.actions.slice();
+  const hasPrevAction = rawActions.some(
+    (action) => action?.key === "prev" || action?.key === "previous"
+  );
+  if (!hasPrevAction) {
+    const prevAction = defaults.actions.find(
+      (action) => action?.key === "prev"
+    ) || {
+      key: "prev",
+      icon: "⏮",
+      title: "上一个",
+    };
+    const nextActionIndex = rawActions.findIndex(
+      (action) => action?.key === "next"
+    );
+    if (nextActionIndex >= 0) {
+      rawActions.splice(nextActionIndex, 0, prevAction);
+    } else {
+      rawActions.push(prevAction);
+    }
+  }
 
   return {
     ...defaults,
@@ -363,7 +388,7 @@ export function normalizeWordCard(source = {}) {
         items: Array.isArray(rawRelated.items) ? rawRelated.items : [],
       },
     },
-    actions: Array.isArray(source.actions) ? source.actions : defaults.actions,
+    actions: rawActions,
     progress: {
       ...defaults.progress,
       ...rawProgress,
