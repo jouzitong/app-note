@@ -1,0 +1,22 @@
+athena:
+  security:
+    enabled: true
+
+    auth:
+      enabled: true
+      token-header: Authorization
+      token-prefix: Bearer
+      ignore-urls:
+        - /auth/login
+        - /auth/refresh
+
+    token:
+      type: jwt
+      jwt:
+        enabled: true
+        secret: app-note-athena-jwt-secret-change-me
+        access-token-expire-minutes: 120
+
+    user:
+      jpa:
+        enabled: true

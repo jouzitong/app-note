@@ -24,6 +24,18 @@
             <groupId>org.athena</groupId>
             <artifactId>athena-framework-starter-data-jpa</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.athena</groupId>
+            <artifactId>athena-framework-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.athena</groupId>
+            <artifactId>athena-framework-starter-security-token-jwt</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.athena</groupId>
+            <artifactId>athena-framework-starter-security-user-jpa</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>mysql</groupId>
