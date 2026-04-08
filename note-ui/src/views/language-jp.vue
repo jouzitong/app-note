@@ -82,7 +82,7 @@
         type="button"
         class="nav-item"
         :class="{ active: activeTab === tab.key }"
-        disabled
+        @click="handleTab(tab)"
       >
         <span class="nav-icon">{{ tab.icon }}</span>
         <span class="nav-label">{{ tab.label }}</span>
@@ -93,13 +93,17 @@
 
 <script>
 import { hasAuthToken } from "@/utils/auth";
+import {
+  buildLanguageJpNotePath,
+  getLastLanguageJpNoteId,
+} from "@/utils/languageJpNav";
 
 export default {
   name: "LanguageJpView",
   data() {
     return {
       progressRate: 42,
-      activeTab: "home",
+      activeTab: "course",
       overviewKpis: [
         { label: "新词", value: "30" },
         { label: "复习", value: "80" },
@@ -152,7 +156,7 @@ export default {
       tabs: [
         { key: "home", label: "首页", icon: "⌂" },
         { key: "exam", label: "考试", icon: "✎" },
-        { key: "course", label: "课程", icon: "▦" },
+        { key: "course", label: "资料", icon: "▦" },
         { key: "plan", label: "计划", icon: "◷" },
         { key: "mine", label: "我的", icon: "◉" },
       ],
@@ -204,21 +208,45 @@ export default {
       this.$router.push(next);
     },
     openNoteModule() {
-      this.requireLogin({ name: "note", params: { id: "1" } });
+      this.requireLogin(buildLanguageJpNotePath());
     },
     openWordCardModule() {
+      const noteId = getLastLanguageJpNoteId();
       this.requireLogin({
         name: "word-card",
-        params: { parentId: "1" },
-        query: { nodeId: "1", pageIndex: "1", wordIndex: "0" },
+        params: { parentId: String(noteId) },
+        query: { nodeId: String(noteId), pageIndex: "1", wordIndex: "0" },
       });
     },
     openArticleModule() {
+      const noteId = getLastLanguageJpNoteId();
       this.requireLogin({
         name: "article-reader",
-        params: { parentId: "1" },
-        query: { nodeId: "1" },
+        params: { parentId: String(noteId) },
+        query: { nodeId: String(noteId) },
       });
+    },
+    handleTab(tab) {
+      this.activeTab = tab.key;
+      if (tab.key === "course") {
+        this.openNoteModule();
+        return;
+      }
+      if (tab.key === "home") {
+        this.$router.push({ name: "note-home" });
+        return;
+      }
+      if (tab.key === "plan") {
+        this.openWordCardModule();
+        return;
+      }
+      if (tab.key === "exam") {
+        this.openArticleModule();
+        return;
+      }
+      if (tab.key === "mine") {
+        this.$router.push({ name: "note-home" });
+      }
     },
   },
 };
@@ -499,8 +527,7 @@ export default {
   padding-top: 4px;
   margin: 0;
   color: #6b7280;
-  pointer-events: none;
-  cursor: default;
+  cursor: pointer;
 }
 
 .nav-item.active {

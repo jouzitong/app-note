@@ -39,12 +39,14 @@ const routes = [
     meta: { public: true },
   },
   {
-    path: "/note/:id?",
+    path: "/language-jp/note/:id?",
+    alias: ["/note/:id?"],
     name: "note",
     component: NoteIndexView,
   },
   {
-    path: "/note/:id/edit",
+    path: "/language-jp/note/:id/edit",
+    alias: ["/note/:id/edit"],
     name: "note-edit",
     component: NoteEditView,
   },
@@ -59,12 +61,14 @@ const routes = [
     component: WordCardSpeechTestView,
   },
   {
-    path: "/note/:parentId/word-card",
+    path: "/language-jp/note/:parentId/word",
+    alias: ["/note/:parentId/word", "/note/:parentId/word-card"],
     name: "word-card",
     component: WordCardIndexView,
   },
   {
-    path: "/note/:parentId/article",
+    path: "/language-jp/note/:parentId/article",
+    alias: ["/note/:parentId/article"],
     name: "article-reader",
     component: ArticleReaderIndexView,
   },

@@ -102,11 +102,31 @@
         </div>
       </div>
     </div>
+
+    <nav class="bottom-nav" aria-label="主导航">
+      <button
+        v-for="tab in tabs"
+        :key="tab.key"
+        type="button"
+        class="nav-item"
+        :class="{ active: activeTab === tab.key }"
+        @click="handleTab(tab)"
+      >
+        <span class="nav-icon">{{ tab.icon }}</span>
+        <span class="nav-label">{{ tab.label }}</span>
+      </button>
+    </nav>
   </div>
 </template>
 
 <script>
 import { getNoteNodeById } from "@/api/noteNodes";
+import { hasAuthToken } from "@/utils/auth";
+import {
+  buildLanguageJpNotePath,
+  getLastLanguageJpNoteId,
+  saveLastLanguageJpNoteId,
+} from "@/utils/languageJpNav";
 import {
   createDefaultNoteNode,
   createMockNoteNode,
@@ -127,9 +147,20 @@ export default {
       noteContent: null,
       loading: false,
       errorMessage: "",
+      activeTab: "course",
+      tabs: [
+        { key: "home", label: "首页", icon: "⌂" },
+        { key: "exam", label: "考试", icon: "✎" },
+        { key: "course", label: "资料", icon: "▦" },
+        { key: "plan", label: "计划", icon: "◷" },
+        { key: "mine", label: "我的", icon: "◉" },
+      ],
     };
   },
   computed: {
+    loggedIn() {
+      return hasAuthToken();
+    },
     noteIdLabel() {
       if (!this.noteNode.id) {
         return "--";
@@ -230,6 +261,7 @@ export default {
 
         const noteVO = await getNoteNodeById(noteId);
         const note = noteVO?.noteNode || noteVO;
+        saveLastLanguageJpNoteId(noteId);
 
         this.noteNode = normalizeNoteNode(note || {});
         this.paths = Array.isArray(noteVO?.paths) ? noteVO.paths : [];
@@ -318,6 +350,53 @@ export default {
         params: { id: String(this.noteNode.id) },
       });
     },
+    requireLogin(next) {
+      if (!this.loggedIn) {
+        const targetPath =
+          typeof next === "string"
+            ? next
+            : this.$router.resolve(next).route.fullPath;
+        this.$router.push({ name: "login", query: { redirect: targetPath } });
+        return;
+      }
+      this.$router.push(next);
+    },
+    handleTab(tab) {
+      this.activeTab = tab.key;
+      if (tab.key === "course") {
+        this.requireLogin(
+          buildLanguageJpNotePath(
+            this.resolveNoteId() || getLastLanguageJpNoteId()
+          )
+        );
+        return;
+      }
+      if (tab.key === "home") {
+        this.$router.push({ name: "note-home" });
+        return;
+      }
+      if (tab.key === "plan") {
+        const noteId = this.resolveNoteId() || getLastLanguageJpNoteId();
+        this.requireLogin({
+          name: "word-card",
+          params: { parentId: String(noteId) },
+          query: { nodeId: String(noteId), pageIndex: "1", wordIndex: "0" },
+        });
+        return;
+      }
+      if (tab.key === "exam") {
+        const noteId = this.resolveNoteId() || getLastLanguageJpNoteId();
+        this.requireLogin({
+          name: "article-reader",
+          params: { parentId: String(noteId) },
+          query: { nodeId: String(noteId) },
+        });
+        return;
+      }
+      if (tab.key === "mine") {
+        this.$router.push({ name: "note-home" });
+      }
+    },
   },
 };
 </script>
@@ -329,10 +408,12 @@ export default {
 
 .note-page {
   min-height: 100vh;
+  min-height: 100dvh;
   background: #f5f7fb;
   color: #1f2937;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  padding-bottom: calc(56px + env(safe-area-inset-bottom));
 }
 
 .page {
@@ -616,5 +697,50 @@ export default {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(56px + env(safe-area-inset-bottom));
+  padding-bottom: calc(4px + env(safe-area-inset-bottom));
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: start;
+  z-index: 10;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.nav-item {
+  border: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
+  padding-top: 4px;
+  margin: 0;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  color: #1d4ed8;
+}
+
+.nav-icon {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.nav-label {
+  font-size: 10px;
+  line-height: 1;
 }
 </style>
