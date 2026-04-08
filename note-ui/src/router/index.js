@@ -1,12 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import LoginView from "../views/LoginView.vue";
 import NoteIndexView from "../views/notes/index.vue";
 import NoteEditView from "../views/notes/edit.vue";
 import WordCardView from "@/views/test/word-card.vue";
 import WordCardSpeechTestView from "@/views/test/word-card-speech.vue";
 import WordCardIndexView from "@/views/wordCard/index.vue";
 import ArticleReaderIndexView from "@/views/article/index.vue";
+import { hasAuthToken } from "@/utils/auth";
 
 Vue.use(VueRouter);
 
@@ -15,15 +17,19 @@ const routes = [
     path: "/",
     name: "home",
     component: HomeView,
+    meta: { public: true },
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: LoginView,
+    meta: { public: true },
   },
   {
     path: "/about",
     name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    component: () => import("../views/AboutView.vue"),
+    meta: { public: true },
   },
   {
     path: "/note/:id?",
@@ -61,6 +67,28 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  const isPublic = to.matched.some((record) => record.meta?.public);
+  const loggedIn = hasAuthToken();
+
+  if (to.name === "login" && loggedIn) {
+    next({ name: "home" });
+    return;
+  }
+
+  if (isPublic || loggedIn) {
+    next();
+    return;
+  }
+
+  next({
+    name: "login",
+    query: {
+      redirect: to.fullPath,
+    },
+  });
 });
 
 export default router;

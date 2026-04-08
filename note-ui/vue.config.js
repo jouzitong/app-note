@@ -12,6 +12,10 @@ module.exports = defineConfig({
         target,
         changeOrigin: true,
       },
+      "/auth": {
+        target,
+        changeOrigin: true,
+      },
     },
   },
 });
