@@ -47,15 +47,18 @@ export default {
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
-  height: calc(8px + env(safe-area-inset-bottom));
+  bottom: env(safe-area-inset-bottom);
+  box-sizing: border-box;
+  min-height: 56px;
+  padding-top: 4px;
   padding-bottom: calc(4px + env(safe-area-inset-bottom));
   background: #ffffff;
   border-top: 1px solid #e5e7eb;
+  box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.06);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  align-items: start;
-  z-index: 10;
+  align-items: stretch;
+  z-index: 1000;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
 }
@@ -65,10 +68,11 @@ export default {
   background: transparent;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 3px;
-  padding-top: 4px;
+  min-height: 48px;
+  padding-top: 0;
   margin: 0;
   color: #6b7280;
   cursor: pointer;
