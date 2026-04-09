@@ -1,0 +1,43 @@
+= 笔记系统单体架构设计方案
+:toc: left
+:toclevels: 3
+:sectnums:
+
+== 文档信息
+项目：笔记系统
+技术：Spring Boot + JPA + MySQL
+
+== 总体说明
+
+.单体架构，按业务域拆分：
+- module（模块）
+** 日语学习
+** 计算机知识学习
+- note（笔记）
+- material（资料）
+- practice（做题）
+- checkin（打卡）
+- auth（用户）（已完成）
+- statistic（统计）
+
+.数据库：MySQL
+- ORM：Spring Data JPA
+
+== 核心设计原则
+
+- 模块是顶层容器
+- 资料=输入，笔记=输出
+- 做题/打卡=行为记录
+- 单体优先，后续可拆微服务
+
+== 模块说明
+
+- module：学习分类（日语/计算机等）
+- note：笔记（类型+内容）
+- material：资料目录（树结构）
+- practice：题库+做题记录
+- checkin：打卡与连续记录
+- auth：用户与权限
+- statistic：统计分析
+
+== 结束
