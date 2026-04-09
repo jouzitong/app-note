@@ -44,12 +44,6 @@ const routes = [
         component: NoteEditView,
       },
       {
-        path: "note/:parentId/word",
-        alias: ["/note/:parentId/word", "/note/:parentId/word-card"],
-        name: "word-card",
-        component: WordCardIndexView,
-      },
-      {
         path: "note/:parentId/article",
         alias: ["/note/:parentId/article"],
         name: "article-reader",
@@ -68,6 +62,12 @@ const routes = [
     name: "about",
     component: () => import("../views/AboutView.vue"),
     meta: { public: true },
+  },
+  {
+    path: "/language-jp/note/:parentId/word",
+    alias: ["/note/:parentId/word", "/note/:parentId/word-card"],
+    name: "word-card",
+    component: WordCardIndexView,
   },
   {
     path: "/test/word-card",

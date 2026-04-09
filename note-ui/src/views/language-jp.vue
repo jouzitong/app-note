@@ -5,6 +5,7 @@
     </main>
 
     <BottomNav
+      v-if="showBottomNav"
       :tabs="tabs"
       :active-key="currentTabKey"
       :bounded="true"
@@ -66,6 +67,9 @@ export default {
     };
   },
   computed: {
+    showBottomNav() {
+      return !this.$route.matched.some((record) => record.meta?.hideBottomNav);
+    },
     currentTabKey() {
       const routeName = this.$route.name;
       const matched = this.tabs.find((tab) => {

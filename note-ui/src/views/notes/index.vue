@@ -85,20 +85,6 @@
               <li v-if="!childNodes.length" class="tree-item">暂无子节点</li>
             </ul>
           </div>
-
-          <NoteMarkdownContent :content-data="contentData" />
-        </div>
-
-        <div class="side-content">
-          <div class="card aside-block">
-            <h2 class="section-title">扩展字段</h2>
-            <ul class="info-list">
-              <li class="info-item">模板类型：句型笔记</li>
-              <li class="info-item">标签：{{ tagText }}</li>
-              <li class="info-item">难度：入门</li>
-              <li class="info-item">复习状态：待复习</li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
@@ -113,13 +99,9 @@ import {
   createMockNoteNode,
   normalizeNoteNode,
 } from "@/model/note/noteNode";
-import NoteMarkdownContent from "@/components/notes/NoteMarkdownContent.vue";
 
 export default {
   name: "NoteIndexView",
-  components: {
-    NoteMarkdownContent,
-  },
   data() {
     return {
       noteNode: createDefaultNoteNode(),

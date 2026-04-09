@@ -83,10 +83,17 @@ export default {
       });
     },
     goToParentNote() {
-      if (this.resolvedParentId === null) {
+      const hasHistory = window.history.length > 1;
+      if (hasHistory) {
         this.$router.back();
         return;
       }
+
+      if (this.resolvedParentId === null) {
+        this.$router.push({ name: "language-jp" });
+        return;
+      }
+
       this.$router.push({
         name: "note",
         params: { id: String(this.resolvedParentId) },
