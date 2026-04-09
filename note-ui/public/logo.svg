@@ -11,7 +11,7 @@
     </defs>
 
     <!-- background -->
-    <rect x="16" y="16" width="224" height="224" rx="48" fill="url(#bg)"/>
+    <rect x="30" y="16" width="224" height="224" rx="48" fill="url(#bg)"/>
 
     <!-- notebook -->
     <g transform="translate(0, 4)">

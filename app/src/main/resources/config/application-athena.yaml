@@ -15,7 +15,7 @@ athena:
       jwt:
         enabled: true
         secret: app-note-athena-jwt-secret-change-me
-        access-token-expire-minutes: 120
+        access-token-expire-minutes: 1440
 
     user:
       jpa:

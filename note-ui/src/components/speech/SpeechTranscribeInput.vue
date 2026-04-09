@@ -9,13 +9,19 @@
       :disabled="!isSupported"
       :title="buttonTitle"
       :aria-label="buttonTitle"
-      @click="toggleListening"
+      @pointerdown="handlePressStart"
+      @pointerup="handlePressEnd"
+      @pointerleave="handlePressEnd"
+      @pointercancel="handlePressEnd"
+      @click.prevent
+      @contextmenu.prevent
     >
       {{ isListening ? "■" : "🎤" }}
     </button>
     <input
       :value="displayText"
       class="speech-field"
+      :class="fieldStateClass"
       type="text"
       :placeholder="resolvedPlaceholder"
       :readonly="readonly"
@@ -44,12 +50,20 @@ export default {
       type: Boolean,
       default: false,
     },
+    releaseStopDelayMs: {
+      type: Number,
+      default: 450,
+    },
   },
   data() {
     return {
       recognition: null,
       isSupported: false,
       isListening: false,
+      isPressing: false,
+      pendingStart: false,
+      stopTimer: null,
+      recognitionState: "idle",
       finalText: "",
       interimText: "",
     };
@@ -62,7 +76,16 @@ export default {
       if (!this.isSupported) {
         return "当前浏览器不支持语音识别";
       }
-      return this.isListening ? "停止语音转写" : "开始语音转写";
+      return this.isListening ? "松开结束语音转写" : "按住开始语音转写";
+    },
+    fieldStateClass() {
+      if (this.recognitionState === "listening") {
+        return "is-listening";
+      }
+      if (this.recognitionState === "completed") {
+        return "is-completed";
+      }
+      return "";
     },
     resolvedPlaceholder() {
       if (this.isSupported) {
@@ -90,10 +113,28 @@ export default {
     this.initRecognition();
   },
   beforeDestroy() {
+    this.clearStopTimer();
     this.stopListening(true);
     this.recognition = null;
   },
   methods: {
+    clearStopTimer() {
+      if (this.stopTimer) {
+        window.clearTimeout(this.stopTimer);
+        this.stopTimer = null;
+      }
+    },
+    appendText(base = "", extra = "") {
+      const left = String(base || "").trim();
+      const right = String(extra || "").trim();
+      if (!right) {
+        return left;
+      }
+      if (!left) {
+        return right;
+      }
+      return `${left} ${right}`;
+    },
     initRecognition() {
       const SpeechRecognition =
         window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -111,7 +152,9 @@ export default {
       this.recognition.maxAlternatives = 1;
 
       this.recognition.onstart = () => {
+        this.pendingStart = false;
         this.isListening = true;
+        this.recognitionState = "listening";
       };
 
       this.recognition.onresult = (event) => {
@@ -119,7 +162,7 @@ export default {
         for (let i = event.resultIndex; i < event.results.length; i += 1) {
           const text = event.results[i][0].transcript;
           if (event.results[i].isFinal) {
-            this.finalText += text;
+            this.finalText = this.appendText(this.finalText, text);
           } else {
             interim += text;
           }
@@ -130,24 +173,54 @@ export default {
 
       this.recognition.onerror = (event) => {
         const errorCode = event?.error || "unknown";
+        this.pendingStart = false;
+        this.isPressing = false;
         this.$emit("error", errorCode);
       };
 
       this.recognition.onend = () => {
+        this.pendingStart = false;
         this.isListening = false;
+        this.isPressing = false;
+        this.clearStopTimer();
+        if (this.interimText) {
+          this.finalText = this.appendText(this.finalText, this.interimText);
+        }
         this.interimText = "";
+        this.recognitionState = this.displayText ? "completed" : "idle";
         this.$emit("input", this.displayText);
       };
     },
-    toggleListening() {
+    handlePressStart(event) {
       if (!this.isSupported) {
         return;
       }
-      if (this.isListening) {
-        this.stopListening();
+      if (event && event.isPrimary === false) {
         return;
       }
+      if (this.isPressing) {
+        return;
+      }
+      this.clearStopTimer();
+      this.isPressing = true;
       this.startListening();
+    },
+    handlePressEnd(event) {
+      if (!this.isSupported) {
+        return;
+      }
+      if (event && event.isPrimary === false) {
+        return;
+      }
+      if (!this.isPressing) {
+        return;
+      }
+      this.isPressing = false;
+      this.clearStopTimer();
+      this.stopTimer = window.setTimeout(() => {
+        this.stopTimer = null;
+        this.stopListening();
+      }, Math.max(0, Number(this.releaseStopDelayMs) || 0));
     },
     startListening() {
       if (!this.recognition || this.isListening) {
@@ -155,13 +228,30 @@ export default {
       }
       try {
         this.recognition.lang = this.lang || "ja-JP";
+        this.pendingStart = true;
+        this.recognitionState = "listening";
         this.recognition.start();
       } catch (error) {
+        this.pendingStart = false;
+        this.recognitionState = "idle";
         this.$emit("error", error?.message || "start-failed");
       }
     },
     stopListening(silent = false) {
-      if (!this.recognition || !this.isListening) {
+      if (!this.recognition) {
+        return;
+      }
+      if (!this.isListening) {
+        if (this.pendingStart) {
+          try {
+            this.pendingStart = false;
+            this.recognition.abort();
+          } catch (error) {
+            if (!silent) {
+              this.$emit("error", error?.message || "abort-failed");
+            }
+          }
+        }
         return;
       }
       try {
@@ -178,6 +268,7 @@ export default {
       }
       this.finalText = event?.target?.value || "";
       this.interimText = "";
+      this.recognitionState = "idle";
       this.$emit("input", this.finalText);
     },
   },
@@ -208,6 +299,7 @@ export default {
   justify-content: center;
   padding: 0;
   flex: 0 0 auto;
+  touch-action: none;
 }
 
 .speech-btn:disabled {
@@ -230,6 +322,17 @@ export default {
   font-size: 12px;
   color: #1f2937;
   background: #f8fbff;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.speech-field.is-listening {
+  background: #fef3c7;
+  border-color: #f59e0b;
+}
+
+.speech-field.is-completed {
+  background: #dcfce7;
+  border-color: #22c55e;
 }
 
 .speech-field:focus {

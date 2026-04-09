@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import LanguageJpView from "../views/language-jp.vue";
+import LanguageJpHomeView from "../views/language-jp-home.vue";
 import LoginView from "../views/LoginView.vue";
 import NoteIndexView from "../views/notes/index.vue";
 import NoteEditView from "../views/notes/edit.vue";
@@ -22,9 +23,39 @@ const routes = [
   },
   {
     path: "/language-jp",
-    name: "language-jp",
     component: LanguageJpView,
-    meta: { public: true },
+    children: [
+      {
+        path: "",
+        name: "language-jp",
+        component: LanguageJpHomeView,
+        meta: { public: true },
+      },
+      {
+        path: "note/:id?",
+        alias: ["/note/:id?"],
+        name: "note",
+        component: NoteIndexView,
+      },
+      {
+        path: "note/:id/edit",
+        alias: ["/note/:id/edit"],
+        name: "note-edit",
+        component: NoteEditView,
+      },
+      {
+        path: "note/:parentId/word",
+        alias: ["/note/:parentId/word", "/note/:parentId/word-card"],
+        name: "word-card",
+        component: WordCardIndexView,
+      },
+      {
+        path: "note/:parentId/article",
+        alias: ["/note/:parentId/article"],
+        name: "article-reader",
+        component: ArticleReaderIndexView,
+      },
+    ],
   },
   {
     path: "/login",
@@ -39,18 +70,6 @@ const routes = [
     meta: { public: true },
   },
   {
-    path: "/language-jp/note/:id?",
-    alias: ["/note/:id?"],
-    name: "note",
-    component: NoteIndexView,
-  },
-  {
-    path: "/language-jp/note/:id/edit",
-    alias: ["/note/:id/edit"],
-    name: "note-edit",
-    component: NoteEditView,
-  },
-  {
     path: "/test/word-card",
     name: "test-word-card",
     component: WordCardView,
@@ -59,18 +78,6 @@ const routes = [
     path: "/test/word-card-speech",
     name: "test-word-card-speech",
     component: WordCardSpeechTestView,
-  },
-  {
-    path: "/language-jp/note/:parentId/word",
-    alias: ["/note/:parentId/word", "/note/:parentId/word-card"],
-    name: "word-card",
-    component: WordCardIndexView,
-  },
-  {
-    path: "/language-jp/note/:parentId/article",
-    alias: ["/note/:parentId/article"],
-    name: "article-reader",
-    component: ArticleReaderIndexView,
   },
 ];
 

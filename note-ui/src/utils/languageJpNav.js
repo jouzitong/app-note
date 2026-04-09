@@ -44,5 +44,5 @@ export function getLastLanguageJpNoteId() {
 
 export function buildLanguageJpNotePath(noteId) {
   const normalized = normalizeNoteId(noteId) || getLastLanguageJpNoteId();
-  return `/note/${normalized}`;
+  return `/language-jp/note/${normalized}`;
 }
