@@ -5,7 +5,7 @@ spring:
     import:
       - optional:classpath:config/application-athena.yaml
   datasource:
-    url: jdbc:mysql://localhost:3306/note?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/note_test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
     password: root
     type: com.alibaba.druid.pool.DruidDataSource

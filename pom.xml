@@ -15,6 +15,7 @@
         <module>boot</module>
         <module>app-layer</module>
         <module>server-word</module>
+        <module>server-practice</module>
         <module>data-core</module>
     </modules>
 
@@ -57,6 +58,12 @@
             <dependency>
                 <groupId>org.zzt.note</groupId>
                 <artifactId>server-word</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.zzt.note</groupId>
+                <artifactId>server-practice</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

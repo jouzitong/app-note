@@ -10,6 +10,7 @@ import WordCardView from "@/views/test/word-card.vue";
 import WordCardSpeechTestView from "@/views/test/word-card-speech.vue";
 import WordCardIndexView from "@/views/wordCard/index.vue";
 import ArticleReaderIndexView from "@/views/article/index.vue";
+import PracticeExamIndexView from "@/views/practice/index.vue";
 import { hasAuthToken } from "@/utils/auth";
 
 Vue.use(VueRouter);
@@ -48,6 +49,12 @@ const routes = [
         alias: ["/note/:parentId/article"],
         name: "article-reader",
         component: ArticleReaderIndexView,
+      },
+      {
+        path: "note/:parentId/practice",
+        alias: ["/note/:parentId/practice"],
+        name: "practice-exam",
+        component: PracticeExamIndexView,
       },
     ],
   },

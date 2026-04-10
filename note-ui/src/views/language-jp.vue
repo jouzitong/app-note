@@ -20,6 +20,7 @@ import {
   buildLanguageJpNotePath,
   getLastLanguageJpNoteId,
 } from "@/utils/languageJpNav";
+import { getLastLanguageJpPracticeNodeId } from "@/utils/languageJpPracticeNav";
 
 export default {
   name: "LanguageJpLayout",
@@ -40,8 +41,8 @@ export default {
           key: "exam",
           label: "考试",
           icon: "✎",
-          action: "openArticleModule",
-          matchNames: ["article-reader"],
+          action: "openPracticeModule",
+          matchNames: ["practice-exam"],
         },
         {
           key: "course",
@@ -116,6 +117,15 @@ export default {
         name: "article-reader",
         params: { parentId: String(noteId) },
         query: { nodeId: String(noteId) },
+      });
+    },
+    openPracticeModule() {
+      const parentId = getLastLanguageJpNoteId();
+      const nodeId = getLastLanguageJpPracticeNodeId(parentId);
+      this.navigateTo({
+        name: "practice-exam",
+        params: { parentId: String(parentId) },
+        query: { nodeId: String(nodeId) },
       });
     },
     handleTab(tab) {
