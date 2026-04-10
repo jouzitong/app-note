@@ -12,7 +12,8 @@
 
     <modules>
         <module>commons</module>
-        <module>app</module>
+        <module>boot</module>
+        <module>app-layer</module>
         <module>server-word</module>
         <module>data-core</module>
     </modules>
@@ -44,6 +45,12 @@
             <dependency>
                 <groupId>org.zzt.note</groupId>
                 <artifactId>data-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.zzt.note</groupId>
+                <artifactId>app-layer</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

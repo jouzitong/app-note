@@ -1,0 +1,485 @@
+= app-note 重构任务开发文档
+:toc: left
+:toclevels: 4
+:sectnums:
+
+== 文档信息
+
+- 目标文档：[app-note-architecture.adoc](/Users/zhouzhitong/workroom/items/okx-core/app-note/docs/app-note-architecture.adoc)
+- 文档目的：把架构设计落成可执行的重构任务清单
+- 适用阶段：当前代码基线到 `boot + app-layer + 领域模块` 的演进阶段
+
+== 重构目标
+
+本次重构不是为了“代码看起来更漂亮”，而是为了把当前已经出现的概念混用收敛掉，避免后续功能继续堆到错误的模块和接口里。
+
+本次重构要达成以下目标：
+
+- 把当前 `app` 模块中的“启动职责”和“应用层职责”拆开
+- 建立 `app-layer` 模块，承接导入、运维、聚合查询、跨领域编排
+- 保持 `data-core` 和 `server-word` 的领域边界稳定
+- 统一 `noteType` 的表达方式，减少字符串硬编码
+- 逐步弱化泛 CRUD 风格，转向能力型接口
+
+== 重构范围
+
+=== 本次纳入范围
+
+- Maven 模块结构重构
+- 包结构迁移
+- 启动模块拆分
+- 导入与运维编排迁移
+- 查询聚合模块落位
+- `noteType` 表达统一
+- Controller / Service 命名收敛
+
+=== 本次不纳入范围
+
+- 大规模数据库结构重构
+- `NoteNode` / `WordCard` 主体表重新设计
+- 新领域完整实现，例如 `practice`、`checkin`
+- 前端页面大规模联动改造
+
+== 当前问题清单
+
+=== 问题 1：`app` 模块职责混合
+
+当前 `app` 模块同时承担：
+
+- Spring Boot 启动
+- 导入编排
+- 运维编排
+
+问题在于：
+
+- 启动入口和业务编排耦合
+- 后续聚合查询无处安放，只能继续堆进 `app`
+- 模块名 `app` 无法准确表达职责
+
+=== 问题 2：应用层概念未落地
+
+架构上已经明确需要 `app-layer`，但代码里还不存在对应模块。
+
+直接后果：
+
+- 导入、运维、查询等跨领域逻辑只能混放
+- 没有统一的应用层抽象
+- 后续节点详情、统计查询没有归属位置
+
+=== 问题 3：`noteType` 表达不统一
+
+当前存在以下混用：
+
+- 实体层使用 `NoteType` 枚举
+- DTO 层使用 `String`
+- 导入和业务逻辑中直接写 `"EMPTY"`、`"WORD_CARD"` 等字面量
+
+问题在于：
+
+- 编译期无法约束
+- 重命名类型风险高
+- 前后端协议容易漂移
+
+=== 问题 4：接口风格混杂
+
+当前同时存在：
+
+- 基于框架的泛 CRUD Controller
+- 领域能力型 Controller
+
+这会导致：
+
+- 对外接口风格不统一
+- 领域能力边界不清晰
+- 后续前端和调用方难以判断哪个接口才是主入口
+
+=== 问题 5：命名存在概念噪音
+
+例如：
+
+- `DomainController`
+- `DomainService`
+
+`DomainService` 在领域模块中是合理的，但 `DomainController` 这个名字并不准确。Controller 是对外接口，不是领域对象。
+
+== 目标结构
+
+重构后推荐结构如下：
+
+[source,text]
+----
+app-note
+|- boot
+|- app-layer
+|- commons
+|- data-core
+|- server-word
+----
+
+=== 模块职责
+
+==== boot
+
+负责：
+
+- Spring Boot 启动类
+- 组件扫描
+- 配置装配
+
+不负责：
+
+- 业务 Controller
+- 导入、运维、查询编排
+
+==== app-layer
+
+负责：
+
+- `importer`
+- `ops`
+- `query`
+- `command`
+- 聚合 VO 组装
+- 初始化 / 补偿 / 调度流程
+
+不负责：
+
+- 持有领域主表
+- 实现领域底层规则
+
+==== data-core
+
+负责：
+
+- `NoteNode`
+- `NoteNodeMeta`
+- `NoteNodeContent`
+- `NoteTag`
+- 节点树规则与核心节点能力
+
+==== server-word
+
+负责：
+
+- 单词卡
+- 例句
+- 用户词卡进度
+- 文章及文章进度
+
+== 重构任务拆解
+
+=== 阶段一：模块拆分
+
+==== 任务 R1：新增 `boot` 模块
+
+目标：
+
+- 建立独立启动模块
+
+改动内容：
+
+- 新建 Maven 模块 `boot`
+- 将 `NoteApplication` 迁移到 `boot`
+- `boot` 依赖 `app-layer`、`commons`、`data-core`、`server-word`
+- 调整父 `pom.xml` 的 `<modules>`
+
+验收标准：
+
+- 项目可从 `boot` 成功启动
+- 原有 Bean 扫描、JPA 扫描正常
+- 原 `app` 中不再保留启动类
+
+==== 任务 R2：新增 `app-layer` 模块
+
+目标：
+
+- 建立应用层编排模块
+
+改动内容：
+
+- 新建 Maven 模块 `app-layer`
+- 依赖 `commons`、`data-core`、`server-word`
+- 迁移当前 `app.importer`、`app.ops` 代码到 `app-layer`
+
+推荐包结构：
+
+[source,text]
+----
+org.zzt.note.app.layer
+|- importer
+|- ops
+|- query
+|- command
+|- controller
+|- vo
+----
+
+验收标准：
+
+- 导入接口可正常访问
+- 运维删除接口可正常访问
+- `app-layer` 中不包含启动类
+
+==== 任务 R3：原 `app` 模块退役或改名
+
+推荐两种方案：
+
+1. 直接把现有 `app` 模块重命名为 `boot`，然后新建 `app-layer`
+2. 保留 `app` 作为迁移过渡模块，待迁移完成后再清理
+
+建议优先方案：
+
+- 先保留 `app` 过渡
+- 待 `boot`、`app-layer` 稳定后删除或重命名 `app`
+
+=== 阶段二：应用层能力落位
+
+==== 任务 R4：迁移导入编排
+
+现有代码位置：
+
+- [NoteWordImportController.java](/Users/zhouzhitong/workroom/items/okx-core/app-note/app/src/main/java/org/zzt/note/app/importer/controller/NoteWordImportController.java)
+- [NoteWordImportServiceImpl.java](/Users/zhouzhitong/workroom/items/okx-core/app-note/app/src/main/java/org/zzt/note/app/importer/service/impl/NoteWordImportServiceImpl.java)
+
+目标：
+
+- 明确导入属于 `app-layer.importer`
+
+改动内容：
+
+- 包路径迁移
+- 调整模块依赖
+- 保持接口地址兼容
+
+验收标准：
+
+- JSON 导入接口可用
+- 文件导入接口可用
+- 导入结果结构不变
+
+==== 任务 R5：迁移运维编排
+
+现有代码位置：
+
+- [NoteNodeOpsController.java](/Users/zhouzhitong/workroom/items/okx-core/app-note/app/src/main/java/org/zzt/note/app/ops/controller/NoteNodeOpsController.java)
+- [NoteNodeOpsServiceImpl.java](/Users/zhouzhitong/workroom/items/okx-core/app-note/app/src/main/java/org/zzt/note/app/ops/service/impl/NoteNodeOpsServiceImpl.java)
+
+目标：
+
+- 明确危险操作属于 `app-layer.ops`
+
+改动内容：
+
+- 包迁移
+- 模块依赖调整
+- 保持接口地址兼容
+
+验收标准：
+
+- 删除节点及关联数据逻辑可正常执行
+- 共享词卡、共享例句处理逻辑不变
+
+==== 任务 R6：新增 `app-layer.query`
+
+目标：
+
+- 给后续聚合查询一个明确归属
+
+首批建议落位的查询：
+
+- 节点详情聚合查询
+- 节点树查询
+- 节点统计查询
+- 节点下词卡汇总查询
+
+本阶段至少完成：
+
+- `NoteNodeDetailQueryService`
+- `NoteNodeTreeQueryService`
+- `NoteNodeStatsVO`
+
+验收标准：
+
+- 至少存在一个面向页面的聚合查询样例
+- 聚合查询不直接写库
+- 相关代码不放在 `data-core` / `server-word` 中
+
+=== 阶段三：类型与接口收敛
+
+==== 任务 R7：统一 `noteType` 表达
+
+目标：
+
+- 消除 `String` 字面量和枚举并存的问题
+
+改动建议：
+
+- [NoteNodeDTO.java](/Users/zhouzhitong/workroom/items/okx-core/app-note/data-core/src/main/java/org/zzt/note/data/core/entity/dto/NoteNodeDTO.java) 改为使用 `NoteType`
+- 导入逻辑中去除 `"EMPTY"`、`"WORD_CARD"` 等硬编码字符串
+- 前后端统一使用一种表达：
+
+推荐优先方案：
+
+- 后端内部统一 `NoteType`
+- 对外接口传输稳定 `code` 或稳定 `name`
+
+验收标准：
+
+- 业务逻辑中不再直接比较 `"WORD_CARD"` 这类字符串
+- DTO、VO、导入校验逻辑表达一致
+
+==== 任务 R8：整理 Controller 命名
+
+目标：
+
+- 消除 `DomainController` 命名噪音
+
+建议命名方向：
+
+- `NoteNodeCommandController`
+- `NoteNodeQueryController`
+- `WordCardCommandController`
+- `WordCardQueryController`
+
+过渡策略：
+
+- 先保留原路径
+- 类名先改
+- 后续再根据接口风格统一 URL
+
+验收标准：
+
+- 对外 Controller 命名能体现职责
+- 不再新增 `*DomainController`
+
+==== 任务 R9：整理 Service 命名与职责
+
+目标：
+
+- 明确“领域服务”和“应用层服务”的边界
+
+建议原则：
+
+- 领域模块中保留 `DomainService`
+- `app-layer` 中使用 `QueryService`、`CommandService`、`ImporterService`、`OpsService`
+
+验收标准：
+
+- `app-layer` 中不出现“伪领域服务”
+- 领域模块不承担跨领域编排
+
+=== 阶段四：弱化泛 CRUD 主入口
+
+==== 任务 R10：定义主接口风格
+
+目标：
+
+- 从“表级 CRUD 主导”转向“能力接口主导”
+
+策略：
+
+- 泛 CRUD 接口保留但降级为内部/调试接口
+- 新需求统一优先走能力型接口
+
+建议首批主能力接口：
+
+- 节点创建 / 更新 / 删除 / 获取详情
+- 节点树查询
+- 节点统计查询
+- 节点下词卡分页与详情
+- 词卡掌握确认
+
+验收标准：
+
+- 新功能不再默认先开 CRUD 接口
+- 前端主流程调用能力接口
+
+== 建议执行顺序
+
+建议按以下顺序推进：
+
+1. 新建 `boot`
+2. 新建 `app-layer`
+3. 迁移 `importer`
+4. 迁移 `ops`
+5. 新增 `query`
+6. 统一 `noteType`
+7. 收敛 Controller / Service 命名
+8. 调整接口风格
+
+== 详细开发任务清单
+
+=== Epic A：模块拆分
+
+- A1：新增 `boot/pom.xml`
+- A2：新增 `app-layer/pom.xml`
+- A3：父工程 `pom.xml` 增加新模块
+- A4：迁移启动类
+- A5：验证启动链路
+
+=== Epic B：导入与运维迁移
+
+- B1：迁移 `importer` 包
+- B2：迁移 `ops` 包
+- B3：修复 import 依赖与包名
+- B4：回归导入接口
+- B5：回归删除接口
+
+=== Epic C：查询聚合能力落位
+
+- C1：定义 `app-layer.query` 包
+- C2：设计 `NoteNodeDetailVO`
+- C3：设计 `NoteNodeStatsVO`
+- C4：实现节点详情聚合查询
+- C5：实现节点统计聚合查询
+
+=== Epic D：类型与命名收敛
+
+- D1：统一 `NoteType` 协议
+- D2：清理字符串常量判断
+- D3：重命名 `DomainController`
+- D4：梳理 Service 命名
+
+== 风险与注意事项
+
+=== 风险 1：模块迁移导致 Bean 扫描失败
+
+规避方式：
+
+- 优先保持根包 `org.zzt.note`
+- 启动类仍扫描 `org.zzt.note`
+- 每迁移一个包就启动验证一次
+
+=== 风险 2：接口路径变更影响前端
+
+规避方式：
+
+- 先只迁类和模块，不改 URL
+- 路径收敛放到后续单独任务
+
+=== 风险 3：`noteType` 改造影响导入协议
+
+规避方式：
+
+- 增加兼容解析
+- 在过渡期允许字符串转枚举
+- 文档同步更新
+
+=== 风险 4：过度重构拖慢功能开发
+
+规避方式：
+
+- 只做必要的概念重构
+- 先建结构和边界
+- 业务表先不动
+
+== 完成判定
+
+满足以下条件即可认为本轮重构完成：
+
+- `boot` 与 `app-layer` 模块存在且职责清晰
+- `importer`、`ops` 迁入 `app-layer`
+- 至少一个聚合查询能力落在 `app-layer.query`
+- `noteType` 表达方式完成统一
+- 新增代码不再进入旧 `app` 模块
+
