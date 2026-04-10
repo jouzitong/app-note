@@ -1,0 +1,786 @@
+= app-note 做题模块（practice）详细设计与开发文档
+:toc: left
+:toclevels: 4
+:sectnums:
+
+== 文档信息
+
+- 基础参考文档：
+** `docs/app-note-architecture.adoc`
+** `docs/app-note-feature-development.adoc`（对应 F7：练习域）
+- 目标：在现有“NoteNode 统一入口 + 多模块单体”的体系下，新增“做题/练习/错题复盘”能力的可落地设计
+- 约束：优先复用既有风格（JPA 实体、`AuditableEntity/LogicalDeleteEntity`、`/api/v1/...` 接口路径、`NoteType` 作为页面入口）
+
+== 背景与目标
+
+系统已经存在 `NoteType.QUESTIONS`（题目卡/题目练习入口）。本模块要补齐的是：
+
+- 静态题库：题目、选项、解析、标签等
+- 节点挂载：题目与 `NoteNode` 的 N:N 关系（题目集/章节/目录）
+- 用户做题事实：一次作答记录（用于回放、统计、错题判定）
+- 用户题目进度：题目掌握状态/错题本（用于“未做/错题/已掌握”筛选与推荐）
+- 会话/练习单：一次刷题过程聚合（可选，但建议第一期就做，便于前端体验与统计）
+
+非目标（第一期不做，避免过度设计）：
+
+- 复杂组卷策略（题型配比、难度梯度、知识点覆盖率）
+- 全量题库导入平台化（先支持 JSON 导入/后台录入即可）
+- 完整的权限体系（沿用现有 JWT，先实现“管理端可写、用户端可练”）
+
+== 模块归属与依赖建议
+
+结合 `docs/app-note-architecture.adoc` 的领域划分建议，本模块归属为 `practice` 领域：
+
+- 第一阶段（推荐落地方式）：在单体内“按领域包”落地
+** 静态题库与用户行为：建议新建 Maven 模块 `server-practice`（类似 `server-word`），依赖 `data-core`
+** 聚合查询（节点详情/统计/下一题编排）：放在 `app-layer.query`（当前未落地可先在 `app` 模块按包实现，后续迁移）
+- 依赖方向：
+** `app-layer` -> `server-practice` -> `data-core` -> `commons`
+
+这样做的好处：
+
+- `data-core` 只负责“节点容器”，不被题库字段污染
+- `server-practice` 拥有题库与行为事实的领域真相
+- `app-layer` 负责页面编排：下一题、节点统计、错题本聚合等
+
+== 核心数据模型设计
+
+=== 关系概览
+
+[source,text]
+----
+NoteNode (data-core)
+  |- N:N <- question_note_node_rel -> N:1 Question
+
+Question (静态题库)
+  |- 1:N <- UserQuestionProgress (用户维度题目状态)
+  |- 1:N <- PracticeAnswerRecord (用户作答事实表)
+  |- 1:N <- PracticeSessionItem (会话题目明细，可选)
+
+PracticeSession (一次练习会话，可选但推荐)
+  |- 1:N -> PracticeSessionItem
+  |- 1:N <- PracticeAnswerRecord (通过 session_id 关联)
+----
+
+=== 表结构设计（建议 DDL）
+
+说明：
+
+- 静态实体建议继承 `AuditableEntity`：`id/version/create_time/created_by/update_time/updated_by`
+- 用户行为/事实表建议继承 `LogicalDeleteEntity`（包含审计字段，并使用 Hibernate `@SoftDelete`）
+- JSON 字段使用 MySQL 8+ `JSON`，便于扩展与减少频繁加列
+
+==== 1）题目主表：`question`
+
+用途：存储“可检索的稳定字段”，以及题目结构载荷 `meta_info`（选项、标准答案、解析、音频/图片等均放入 JSON，按题型扩展）。
+
+|===
+|字段 |类型 |约束 |说明
+
+|id |bigint |PK |主键（`AuditableEntity`）
+|version |bigint |not null |乐观锁（`AuditableEntity`）
+|question_code |varchar(100) |unique, not null |业务唯一键（导入/幂等）
+|title |varchar(255) |not null |题干标题/简述（列表展示）
+|stem |text |not null |题干正文（可富文本/markdown/结构化 JSON 字符串）
+|question_type |varchar(30) |not null |题型：`SINGLE_CHOICE/MULTIPLE_CHOICE/TRUE_FALSE/FILL_BLANK/SHORT_ANSWER`
+|difficulty |int |null |难度（1-5 或 0-100，统一在枚举/常量中约束）
+|locale |varchar(20) |null |语言环境（与 `server-word` 风格一致）
+|meta_info |json |null |题目结构载荷（按题型扩展）：选项/标准答案/解析/音频图片/知识点等
+|create_time |datetime |not null |创建时间
+|created_by |bigint |null |创建人
+|update_time |datetime |not null |更新时间
+|updated_by |bigint |null |更新人
+|===
+
+建议索引：
+
+- `uk_question_question_code(question_code)`
+- `idx_question_type(question_type)`
+- `idx_question_locale(locale)`
+- `idx_question_title(title)`（题库列表/关键字搜索常用）
+
+[source,sql]
+----
+CREATE TABLE IF NOT EXISTS `question` (
+  `id` BIGINT NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `version` BIGINT NOT NULL DEFAULT 1 COMMENT '版本',
+  `question_code` VARCHAR(100) NOT NULL COMMENT '业务唯一键（导入/幂等）',
+  `title` VARCHAR(255) NOT NULL COMMENT '题干标题/简述',
+  `stem` TEXT NOT NULL COMMENT '题干正文',
+  `question_type` VARCHAR(30) NOT NULL COMMENT '题型',
+  `difficulty` INT NULL COMMENT '难度',
+  `locale` VARCHAR(20) NULL COMMENT '语言环境',
+  `meta_info` JSON NULL COMMENT '题目结构载荷（选项/答案/解析/素材等）',
+  `create_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `created_by` BIGINT NULL DEFAULT -1 COMMENT '创建人',
+  `update_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '最后修改时间',
+  `updated_by` BIGINT NULL DEFAULT -1 COMMENT '最后修改人',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_question_question_code` (`question_code`),
+  KEY `idx_question_type` (`question_type`),
+  KEY `idx_question_locale` (`locale`),
+  KEY `idx_question_title` (`title`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='题目';
+----
+
+===== `meta_info` 结构建议（关键：按题型扩展）
+
+考虑到：
+
+- 不是所有题目都有“选项/音频/图片”等结构
+- 业务检索通常只依赖 `id/question_code/title/stem/question_type/...`
+- 不会基于“选项内容”做筛选/检索
+
+因此第一期建议 *不单独建 `question_option`*，把结构性内容统一放在 `question.meta_info` 中，便于按题型扩展且减少表数量与联表开销。
+
+建议 `meta_info` 基础字段：
+
+- `options`：仅选择题/判断题需要（数组，每项为 JSON）
+- `answerKey`：标准答案（结构化），仅用于判题与提交结果回包
+- `analysis`：解析（可选）
+- `assets`：素材（可选，音频/图片/视频）
+- `tags/source/knowledgePoints`：扩展维度（可选）
+
+示例（单选题）：
+
+[source,json]
+----
+{
+  "options": [
+    {"key": "1", "content": {"type": "text", "text": "寝ていました"}, "sort": 1},
+    {"key": "2", "content": {"type": "text", "text": "寝ました"}, "sort": 2},
+    {"key": "3", "content": {"type": "text", "text": "寝られます"}, "sort": 3},
+    {"key": "4", "content": {"type": "text", "text": "寝させました"}, "sort": 4}
+  ],
+  "answerKey": {"optionKeys": ["2"]},
+  "analysis": {"type": "text", "text": "这里考察的是……"},
+  "assets": [{"type": "audio", "url": "https://..." }]
+}
+----
+
+示例（填空题）：
+
+[source,json]
+----
+{
+  "blanks": [
+    {"key": "blank_1", "hint": "提示1"},
+    {"key": "blank_2", "hint": "提示2"}
+  ],
+  "answerKey": {"blanks": {"blank_1": ["答案A"], "blank_2": ["答案B", "答案B2"]}},
+  "analysis": {"type": "markdown", "text": "解析内容..."}
+}
+----
+
+后续若出现“选项非常大/需要独立分页编辑/需要局部更新”的强需求，再考虑拆分出独立表，但字段建议统一为 `payload JSON`（而不是固定列），例如：
+
+- `question_struct(question_id, struct_type, payload_json, sort)`
+
+==== 3）题目与节点关联表：`question_note_node_rel`
+
+用途：题目挂载到 `NoteNode`（`NoteType.QUESTIONS` 节点通常是题目集/章节）。
+
+表风格与 `word_card_note_node_rel` 保持一致（复合主键，无自增 ID）。
+
+[source,sql]
+----
+CREATE TABLE IF NOT EXISTS `question_note_node_rel` (
+  `question_id` BIGINT NOT NULL COMMENT '题目ID',
+  `note_node_id` BIGINT NOT NULL COMMENT '笔记节点ID',
+  PRIMARY KEY (`question_id`, `note_node_id`),
+  KEY `idx_question_note_node_rel_question_id` (`question_id`),
+  KEY `idx_question_note_node_rel_note_node_id` (`note_node_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='题目与笔记节点关联';
+----
+
+==== 4）用户题目进度表：`user_question_progress`
+
+用途：在用户维度沉淀题目掌握状态与错题本（类似 `user_word_progress`）。
+
+推荐状态枚举 `UserQuestionProgressStatus`：
+
+- `NEW`：未做过
+- `WRONG`：最近一次或最近 N 次存在错误（用于错题本）
+- `CORRECT`：最近一次正确
+- `MASTERED`：达到掌握阈值（如连续正确 N 次）
+
+|===
+|字段 |类型 |约束 |说明
+
+|id/version/create_time/... |— |— |来自 `LogicalDeleteEntity`/`AuditableEntity`
+|user_id |bigint |not null |用户ID（从 JWT 解析，兼容 query 参数覆盖）
+|question_id |bigint |not null |题目ID
+|status |varchar(30) |not null |题目状态
+|wrong_count |int |not null |累计错误次数
+|correct_count |int |not null |累计正确次数
+|correct_streak |int |not null |连续正确次数（用于 MASTERED）
+|last_answered_at |datetime |null |最近作答时间
+|last_wrong_at |datetime |null |最近错误时间
+|last_correct_at |datetime |null |最近正确时间
+|meta_info |json |null |扩展信息（如最近一次答案摘要）
+|===
+
+建议索引/约束：
+
+- `uk_user_question_progress_user_question(user_id, question_id)`
+- `idx_user_question_progress_user_id(user_id)`
+- `idx_user_question_progress_status(status)`
+- `idx_user_question_progress_last_answered_at(last_answered_at)`
+
+[source,sql]
+----
+CREATE TABLE IF NOT EXISTS `user_question_progress` (
+  `id` BIGINT NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `version` BIGINT NOT NULL DEFAULT 1 COMMENT '版本',
+  `user_id` BIGINT NOT NULL COMMENT '用户ID',
+  `question_id` BIGINT NOT NULL COMMENT '题目ID',
+  `status` VARCHAR(30) NOT NULL COMMENT '题目状态',
+  `wrong_count` INT NOT NULL DEFAULT 0 COMMENT '累计错误次数',
+  `correct_count` INT NOT NULL DEFAULT 0 COMMENT '累计正确次数',
+  `correct_streak` INT NOT NULL DEFAULT 0 COMMENT '连续正确次数',
+  `last_answered_at` DATETIME NULL COMMENT '最近作答时间',
+  `last_wrong_at` DATETIME NULL COMMENT '最近错误时间',
+  `last_correct_at` DATETIME NULL COMMENT '最近正确时间',
+  `meta_info` JSON NULL COMMENT '扩展信息',
+  `create_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `created_by` BIGINT NULL DEFAULT -1 COMMENT '创建人',
+  `update_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '最后修改时间',
+  `updated_by` BIGINT NULL DEFAULT -1 COMMENT '最后修改人',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_user_question_progress_user_question` (`user_id`, `question_id`),
+  KEY `idx_user_question_progress_user_id` (`user_id`),
+  KEY `idx_user_question_progress_status` (`status`),
+  KEY `idx_user_question_progress_last_answered_at` (`last_answered_at`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='用户题目进度/错题本';
+----
+
+==== 5）作答事实表：`practice_answer_record`
+
+用途：记录“用户一次作答事实”，用于：
+
+- 回放（用户答了什么、耗时多少）
+- 统计（按节点、按会话、按时间窗口聚合）
+- 错题判断（与标准答案比对结果）
+
+推荐枚举 `PracticeAnswerResult`：
+
+- `CORRECT/WRONG/SKIPPED`
+
+|===
+|字段 |类型 |约束 |说明
+
+|id/version/create_time/... |— |— |来自 `LogicalDeleteEntity`
+|user_id |bigint |not null |用户ID
+|question_id |bigint |not null |题目ID
+|note_node_id |bigint |null |答题发生的节点上下文（题目可能挂多个节点）
+|session_id |varchar(64) |null |练习会话ID（见下表）
+|client_request_id |varchar(64) |null |客户端幂等键（防止重复提交）
+|user_answer |json |null |用户答案（结构化，支持多题型）
+|result |varchar(20) |not null |结果：正确/错误/跳过
+|cost_ms |bigint |null |耗时（毫秒）
+|answered_at |datetime |not null |作答时间（业务时间）
+|meta_info |json |null |扩展信息（评分细节、命中知识点等）
+|===
+
+建议索引/约束：
+
+- `idx_practice_answer_record_user_time(user_id, answered_at)`
+- `idx_practice_answer_record_user_question(user_id, question_id)`
+- `idx_practice_answer_record_session_id(session_id)`
+- 幂等唯一键（可选，建议做）：`uk_practice_answer_record_user_client_req(user_id, client_request_id)`
+
+[source,sql]
+----
+CREATE TABLE IF NOT EXISTS `practice_answer_record` (
+  `id` BIGINT NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `version` BIGINT NOT NULL DEFAULT 1 COMMENT '版本',
+  `user_id` BIGINT NOT NULL COMMENT '用户ID',
+  `question_id` BIGINT NOT NULL COMMENT '题目ID',
+  `note_node_id` BIGINT NULL COMMENT '节点上下文',
+  `session_id` VARCHAR(64) NULL COMMENT '练习会话ID',
+  `client_request_id` VARCHAR(64) NULL COMMENT '客户端幂等键',
+  `user_answer` JSON NULL COMMENT '用户答案',
+  `result` VARCHAR(20) NOT NULL COMMENT '作答结果',
+  `cost_ms` BIGINT NULL COMMENT '耗时（毫秒）',
+  `answered_at` DATETIME NOT NULL COMMENT '作答时间',
+  `meta_info` JSON NULL COMMENT '扩展信息',
+  `create_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `created_by` BIGINT NULL DEFAULT -1 COMMENT '创建人',
+  `update_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '最后修改时间',
+  `updated_by` BIGINT NULL DEFAULT -1 COMMENT '最后修改人',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_practice_answer_record_user_client_req` (`user_id`, `client_request_id`),
+  KEY `idx_practice_answer_record_user_time` (`user_id`, `answered_at`),
+  KEY `idx_practice_answer_record_user_question` (`user_id`, `question_id`),
+  KEY `idx_practice_answer_record_session_id` (`session_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='用户作答事实表';
+----
+
+==== 6）练习会话表（推荐）：`practice_session` + `practice_session_item`
+
+用途：把“一次刷题过程”结构化，便于：
+
+- 前端：开始练习 -> 下一题 -> 提交 -> 完成结算
+- 后端：结算统计、可恢复进度、可回放
+
+`practice_session` 仅保存会话摘要；题目列表放在 `practice_session_item`（避免 JSON 过大、便于分页/定位）。
+
+`practice_session`：
+
+|===
+|字段 |类型 |约束 |说明
+
+|session_id |varchar(64) |PK |会话ID（雪花/UUID）
+|user_id |bigint |not null |用户ID
+|note_node_id |bigint |not null |练习入口节点（通常 `NoteType.QUESTIONS`）
+|mode |varchar(30) |not null |模式：`SEQUENTIAL/RANDOM/WRONG_ONLY/UNANSWERED_ONLY`
+|status |varchar(20) |not null |状态：`RUNNING/FINISHED/ABORTED`
+|total_count |int |not null |题目总数
+|correct_count |int |not null |正确数（会话维度）
+|wrong_count |int |not null |错误数（会话维度）
+|current_index |int |not null |当前题目下标（0-based）
+|started_at |datetime |not null |开始时间
+|finished_at |datetime |null |结束时间
+|meta_info |json |null |扩展信息（抽题策略参数）
+|===
+
+`practice_session_item`：
+
+|===
+|字段 |类型 |约束 |说明
+
+|id |bigint |PK |主键
+|session_id |varchar(64) |not null |会话ID
+|question_id |bigint |not null |题目ID
+|sort |int |not null |题目顺序
+|answered |tinyint(1) |not null |是否已作答
+|result |varchar(20) |null |作答结果（冗余便于列表）
+|answered_at |datetime |null |作答时间（冗余便于列表）
+|===
+
+建议索引：
+
+- `idx_practice_session_user_time(user_id, started_at)`
+- `idx_practice_session_item_session_sort(session_id, sort)`
+
+[source,sql]
+----
+CREATE TABLE IF NOT EXISTS `practice_session` (
+  `session_id` VARCHAR(64) NOT NULL COMMENT '会话ID',
+  `user_id` BIGINT NOT NULL COMMENT '用户ID',
+  `note_node_id` BIGINT NOT NULL COMMENT '练习入口节点ID',
+  `mode` VARCHAR(30) NOT NULL COMMENT '会话模式',
+  `status` VARCHAR(20) NOT NULL COMMENT '会话状态',
+  `total_count` INT NOT NULL DEFAULT 0 COMMENT '题目总数',
+  `correct_count` INT NOT NULL DEFAULT 0 COMMENT '正确数',
+  `wrong_count` INT NOT NULL DEFAULT 0 COMMENT '错误数',
+  `current_index` INT NOT NULL DEFAULT 0 COMMENT '当前下标（0-based）',
+  `started_at` DATETIME NOT NULL COMMENT '开始时间',
+  `finished_at` DATETIME NULL COMMENT '结束时间',
+  `meta_info` JSON NULL COMMENT '扩展信息',
+  `create_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `created_by` BIGINT NULL DEFAULT -1 COMMENT '创建人',
+  `update_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '最后修改时间',
+  `updated_by` BIGINT NULL DEFAULT -1 COMMENT '最后修改人',
+  PRIMARY KEY (`session_id`),
+  KEY `idx_practice_session_user_time` (`user_id`, `started_at`),
+  KEY `idx_practice_session_note_node_id` (`note_node_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='练习会话';
+
+CREATE TABLE IF NOT EXISTS `practice_session_item` (
+  `id` BIGINT NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `session_id` VARCHAR(64) NOT NULL COMMENT '会话ID',
+  `question_id` BIGINT NOT NULL COMMENT '题目ID',
+  `sort` INT NOT NULL DEFAULT 0 COMMENT '题目顺序',
+  `answered` TINYINT(1) NOT NULL DEFAULT 0 COMMENT '是否已作答',
+  `result` VARCHAR(20) NULL COMMENT '作答结果（冗余）',
+  `answered_at` DATETIME NULL COMMENT '作答时间（冗余）',
+  `create_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `created_by` BIGINT NULL DEFAULT -1 COMMENT '创建人',
+  `update_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '最后修改时间',
+  `updated_by` BIGINT NULL DEFAULT -1 COMMENT '最后修改人',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_practice_session_item` (`session_id`, `sort`),
+  KEY `idx_practice_session_item_session_sort` (`session_id`, `sort`),
+  KEY `idx_practice_session_item_question_id` (`question_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='练习会话题目明细';
+----
+
+== 核心接口设计
+
+接口分为两类：
+
+1. 题库管理接口（静态内容，偏管理端/运营端）
+2. 做题/练习接口（用户端核心流程）
+
+接口路径风格参考现有 `server-word`：
+
+- CRUD：`/api/v1/questions`（可直接复用 `BaseControllerV2` 风格）
+- 领域接口：`/api/v1/questions/domain`（组合写/组合查）
+- 练习接口：`/api/v1/practices/...`（会话与提交）
+
+=== 前端参考页面与交互（`refer/node/practice/index.html`）
+
+该页面体现的核心交互是“*一题一题模式*”：
+
+- 顶部：练习标题、题型标签、进度条（`第 i / N 题`）
+- 中部：题目展示
+** 题型标签（选择/听力选择/填空）
+** section（如 `文字・語彙`、`聴解`）
+** 分值 score
+** title（题目说明）
+** desc（题目正文/题干）
+** listening：可选音频播放器
+** choice：单选选项（radio）
+** fill：输入框
+- 底部：上一题 / 提交答案 / 下一题 + 总结（已作答数、答对数）
+
+因此后端必须支持两类能力：
+
+1. **会话级导航**：按 `index` 获取任意题目（上一题/下一题），并能返回“该题用户已选答案/是否已判定”
+2. **提交判题**：提交后返回判题结果、正确答案（可选）、解析（可选），并刷新会话统计
+
+推荐的最小数据契约：
+
+- `PracticeSessionVO`：`sessionId/totalCount/currentIndex/answeredCount/correctCount/wrongCount`
+- `PracticeQuestionVO`：`questionId/questionType/title/stem/metaInfo(脱敏后的展示字段)/userAnswer/result`
+
+`PracticeQuestionVO.metaInfo` 与 `question.meta_info` 的映射建议（贴合参考页面字段）：
+
+- `display.typeLabel` -> 页面 `typeLabel`
+- `display.section` -> 页面 `section`
+- `display.score` -> 页面 `score`
+- `options[]` -> 选择题选项（仅展示，不返回答案）
+- `assets[]` -> 听力音频等（`type=audio`）
+
+题型映射建议（与参考页面一致）：
+
+- 选择题（`type=choice`）：`question_type=SINGLE_CHOICE` 或 `MULTIPLE_CHOICE`，`meta_info.options[]` 必填
+- 听力选择题（`type=listening`）：同选择题，但 `meta_info.assets[]` 包含音频
+- 填空题（`type=fill`）：`question_type=FILL_BLANK`，`meta_info.blanks[]`（可选）+ `meta_info.answerKey.blanks`
+
+=== 1）题库管理（domain）
+
+==== 创建/更新题目（含选项）
+
+`POST /api/v1/questions/domain`
+
+请求（示例，字段按需裁剪）：
+
+[source,json]
+----
+{
+  "questionCode": "n3_grammar_001",
+  "title": "语法选择题 001",
+  "stem": "（   ）に入る最も適当なものを選びなさい。",
+  "questionType": "SINGLE_CHOICE",
+  "difficulty": 2,
+  "locale": "ja-JP",
+  "metaInfo": {
+    "options": [
+      {"key": "1", "content": {"type": "text", "text": "寝ていました"}, "sort": 1},
+      {"key": "2", "content": {"type": "text", "text": "寝ました"}, "sort": 2},
+      {"key": "3", "content": {"type": "text", "text": "寝られます"}, "sort": 3},
+      {"key": "4", "content": {"type": "text", "text": "寝させました"}, "sort": 4}
+    ],
+    "answerKey": {"optionKeys": ["2"]},
+    "analysis": {"type": "text", "text": "这里考察的是……"}
+  },
+  "bindNoteNodeIds": [10001, 10002]
+}
+----
+
+返回：
+
+- `void` 或返回 `QuestionVO`（建议返回 VO，便于前端立即展示与编辑）
+
+关键规则：
+
+- 以 `questionCode` 做幂等：已存在则更新（类似导入语义）
+- 写入 `question + question_note_node_rel` 需事务
+- `metaInfo.answerKey` 等正确答案信息 *不得在“非提交结果接口”输出*
+
+==== 按节点分页题目（用于题目列表/题库预览）
+
+`GET /api/v1/questions/domain/page?noteNodeId=...&pageNo=1&pageSize=20`
+
+可选参数：
+
+- `questionType`、`difficulty`、`keyword`（标题/题干关键字）
+
+返回：
+
+- `PageResultVO<QuestionVO>`（VO 仅包含题干与选项，不包含正确答案）
+
+==== 题目挂载/解绑节点
+
+- `POST /api/v1/questions/{questionId}/bind`（body：`noteNodeIds`）
+- `POST /api/v1/questions/{questionId}/unbind`
+
+（或在创建接口内一次性处理，第一期建议以“创建接口内 bind”为主）
+
+=== 2）做题/练习（practices）
+
+==== 开始练习会话
+
+`POST /api/v1/practices/sessions`
+
+请求：
+
+[source,json]
+----
+{
+  "noteNodeId": 10001,
+  "mode": "RANDOM",
+  "size": 20,
+  "userId": 1
+}
+----
+
+说明：
+
+- `userId` 建议与 `server-word` 一致：支持 query/body 显式传入，若为空由 JWT 解析（后端统一 `resolveUserId`）
+- `size` 表示本次会话抽题数量；不足时按实际数量返回
+
+返回（示例）：
+
+[source,json]
+----
+{
+  "sessionId": "ps_20260410_000001",
+  "noteNodeId": 10001,
+  "mode": "RANDOM",
+  "totalCount": 20,
+  "currentIndex": 0,
+  "answeredCount": 0,
+  "correctCount": 0,
+  "wrongCount": 0,
+  "question": { "...": "第一题（脱敏后的 QuestionVO）" }
+}
+----
+
+抽题策略（第一期建议）：
+
+- `SEQUENTIAL`：按题目 ID 或 `question_code` 排序取前 N
+- `RANDOM`：在节点题目集合内随机抽 N（可 `ORDER BY RAND()` 的替代方案：先取 id 列表再本地 shuffle）
+- `WRONG_ONLY`：优先从 `user_question_progress.status=WRONG` 且挂载该节点的题目中抽取
+- `UNANSWERED_ONLY`：从未出现在 `practice_answer_record` 的题目中抽取
+
+==== 获取指定题目（用于上一题/下一题导航）
+
+`GET /api/v1/practices/sessions/{sessionId}/items/{index}`
+
+返回（示例）：
+
+[source,json]
+----
+{
+  "session": {
+    "sessionId": "ps_20260410_000001",
+    "totalCount": 20,
+    "currentIndex": 3,
+    "answeredCount": 2,
+    "correctCount": 1,
+    "wrongCount": 1
+  },
+  "question": {
+    "questionId": 20001,
+    "questionType": "SINGLE_CHOICE",
+    "title": "次の文の（　）に入る言葉として、最もよいものを一つ選びなさい。",
+    "stem": "昨日は疲れていたので、家に帰ってすぐ（　）。",
+    "metaInfo": {
+      "display": {"typeLabel": "选择题", "section": "文字・語彙", "score": 1},
+      "options": [
+        {"key": "1", "content": {"type": "text", "text": "寝ていました"}},
+        {"key": "2", "content": {"type": "text", "text": "寝ました"}},
+        {"key": "3", "content": {"type": "text", "text": "寝られます"}},
+        {"key": "4", "content": {"type": "text", "text": "寝させました"}}
+      ],
+      "assets": []
+    },
+    "userAnswer": {"optionKeys": ["2"]},
+    "result": "CORRECT"
+  }
+}
+----
+
+说明：
+
+- `index` 为会话内题目顺序（0-based），与参考页面的 `currentIndex` 对齐
+- 返回中可携带 `userAnswer/result`，用于页面回显已选项与“对/错结果框”
+- `question.metaInfo.answerKey/analysis` 默认不返回，只有提交接口返回
+
+==== 提交答案
+
+`POST /api/v1/practices/sessions/{sessionId}/submit`
+
+请求：
+
+[source,json]
+----
+{
+  "index": 3,
+  "questionId": 20001,
+  "noteNodeId": 10001,
+  "clientRequestId": "c_7f0d0b3d",
+  "userAnswer": {"optionKeys": ["2"]},
+  "costMs": 5321,
+  "userId": 1
+}
+----
+
+说明：`userAnswer` 为 JSON 结构载荷，按 `questionType` 存储不同结构（与 `question.meta_info.answerKey` 对齐），例如：
+
+- 单选/多选（推荐与参考页面一致用数字 key）：`{"optionKeys":["2"]}` / `{"optionKeys":["1","3"]}`（也允许用 `A/B/C`，但同一题目内必须一致）
+- 判断：`{"value": true}`
+- 填空：`{"blanks":{"blank_1":"答案A","blank_2":"答案B"}}`
+- 简答：`{"text":"..."}`
+
+返回（示例）：
+
+[source,json]
+----
+{
+  "result": "CORRECT",
+  "correctAnswer": {"optionKeys": ["2"]},
+  "analysis": {"type": "text", "text": "……"},
+  "session": {
+    "sessionId": "ps_20260410_000001",
+    "currentIndex": 1,
+    "answeredCount": 1,
+    "correctCount": 1,
+    "wrongCount": 0,
+    "finished": false
+  },
+  "nextQuestion": { "...": "下一题（脱敏后的 QuestionVO）" }
+}
+----
+
+关键业务规则（必须落地到代码）：
+
+- 幂等：`(user_id, client_request_id)` 唯一，重复提交返回上次结果（避免网络重试导致多条记录）
+- 事务边界：一次提交必须同时完成
+** 写 `practice_answer_record`
+** 更新/插入 `user_question_progress`
+** 更新 `practice_session` 与 `practice_session_item`（若启用会话表）
+- 正确答案脱敏：只在“提交结果接口”返回 `correctAnswer`，普通查询接口不返回
+
+==== 错题本分页
+
+`GET /api/v1/practices/wrong-questions?pageNo=1&pageSize=20&noteNodeId=10001`
+
+实现建议：
+
+- 以 `user_question_progress.status=WRONG` 为主过滤
+- 若传 `noteNodeId`：额外 join `question_note_node_rel` 做限定
+
+返回：
+
+- `PageResultVO<QuestionVO>`（不含正确答案）
+
+==== 节点练习统计（供节点详情/树展示）
+
+`GET /api/v1/practices/stats?noteNodeId=10001`
+
+建议返回模型 `NoteNodePracticeStatsVO`：
+
+- `totalQuestionCount`（节点题目数）
+- `answeredCount`（用户已做过题目数）
+- `wrongCount`（用户错题数）
+- `masteredCount`（用户掌握题目数）
+- `lastAnsweredAt`（最近一次作答时间）
+
+该接口属于典型聚合查询，建议最终归属 `app-layer.query`，与 `NoteNodeStatsVO` 汇合。
+
+== 核心业务与状态流转
+
+=== 1）题目创建与挂载
+
+流程：
+
+1. 写入/更新 `question`
+2. 写入 `question_note_node_rel`（绑定题目到一个或多个 `NoteNode`）
+
+注意点：
+
+- `NoteType.QUESTIONS` 节点建议作为“题目集合/章节”，普通节点也允许挂题（便于灵活组织）
+- 删除节点时的清理：
+** 至少删除 `question_note_node_rel` 中与子树相关的关联
+** 是否删除题目实体取决于“是否还有其他节点引用”
+** 该逻辑与 `NoteNodeOpsServiceImpl` 删除词卡的思路一致：先清理关系，再判断是否需要删孤儿题目
+
+=== 2）做题提交：事实表 + 进度表双写
+
+在一次“提交答案”中，系统要写两类数据：
+
+- 事实：`practice_answer_record`（永远追加，不能覆盖）
+- 状态：`user_question_progress`（同一 `(user, question)` 唯一，覆盖式更新）
+
+建议进度更新规则（第一期可用，后续再调参）：
+
+- 提交结果为 `WRONG`：
+** `wrong_count += 1`
+** `correct_streak = 0`
+** `status = WRONG`
+** `last_wrong_at = answered_at`
+- 提交结果为 `CORRECT`：
+** `correct_count += 1`
+** `correct_streak += 1`
+** `status = CORRECT`
+** 若 `correct_streak >= 3`（可配置）：`status = MASTERED`
+** `last_correct_at = answered_at`
+- 无论对错：
+** `last_answered_at = answered_at`
+
+=== 3）抽题与“下一题”编排
+
+会话模式下建议采用“先生成题目列表，再逐题推进”的方式：
+
+- `POST /sessions` 时生成 `practice_session_item`（含顺序）
+- 提交时仅推进 `current_index`，并从 `session_item` 定位下一题
+
+好处：
+
+- 同一会话“下一题”稳定（便于刷新/断线恢复）
+- 统计结算自然（会话完成即可生成结算）
+
+无会话模式（可作为降级方案）：
+
+- `GET /questions/domain/next?noteNodeId=...&mode=...` 实时计算下一题
+- 但实现复杂度会转移到“选择算法”上，且难以回放
+
+=== 4）错题标记与复盘
+
+错题本的“事实”来自 `practice_answer_record.result=WRONG`，但列表与筛选建议以 `user_question_progress.status=WRONG` 为准。
+
+“错题消除”策略（第一期建议）：
+
+- 最近一次作答正确 -> `status` 从 `WRONG` 变更为 `CORRECT`（或需要连续正确 N 次才变更）
+- 维持 `wrong_count` 作为历史统计，不做回滚
+
+== 核心实现落地清单（面向代码任务拆解）
+
+=== 领域模型与仓储（server-practice）
+
+- Entity：
+** `Question`（`AuditableEntity`）
+** `QuestionNoteNodeRel`（复合主键）
+** `UserQuestionProgress`（`LogicalDeleteEntity`）
+** `PracticeAnswerRecord`（`LogicalDeleteEntity`）
+** （推荐）`PracticeSession`、`PracticeSessionItem`
+- Repository：JPA Repository + 必要的自定义查询（按 nodeId 抽题、按用户错题筛选等）
+- Domain Service：
+** 题库管理：新增/更新/绑定节点/分页查询
+** 练习会话：开始会话、提交答案、下一题、完成结算
+
+=== 应用层编排与聚合（app-layer）
+
+- `NoteNode` 详情/统计中增加练习域聚合（可参考 `docs/app-note-feature-development.adoc` 的 F3/F7）
+- 节点删除运维逻辑扩展：删除节点子树时清理 `question_note_node_rel`，并处理“孤儿题目”策略
+
+== 验收标准（第一期）
+
+- 能在一个 `NoteType.QUESTIONS` 节点下挂载一批题目并分页展示
+- 用户能开始一次练习会话，并完成“下一题 + 提交 + 结算”
+- 系统能形成可用的错题本（按节点过滤、可复盘）
+- 节点统计能展示：题目数、已做数、错题数、最近作答时间（可先实时聚合）

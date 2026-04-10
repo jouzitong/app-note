@@ -1,0 +1,9 @@
+= 标题
+
+
+== 常用命令记录
+
+[source, shell]
+----
+docker exec 6708cf2e0c48 mysqldump -uroot -p'root' note > note-20260410.sql
+----
