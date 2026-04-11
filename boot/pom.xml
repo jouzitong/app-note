@@ -11,6 +11,10 @@
 
     <artifactId>boot</artifactId>
 
+    <properties>
+        <spring-boot.version>3.2.5</spring-boot.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.zzt.note</groupId>
@@ -28,6 +32,21 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>org.zzt.note.boot.NoteApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
