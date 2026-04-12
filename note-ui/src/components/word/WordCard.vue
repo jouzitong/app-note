@@ -321,6 +321,8 @@ export default {
       pageSize: 10,
       confirming: false,
       exampleSpeechTexts: {},
+      autoPlaybackSeq: 0,
+      autoPlaybackTimers: [],
     };
   },
   computed: {
@@ -389,6 +391,33 @@ export default {
     },
   },
   methods: {
+    clearAutoPlaybackTimers() {
+      const timers = Array.isArray(this.autoPlaybackTimers)
+        ? this.autoPlaybackTimers
+        : [];
+      timers.forEach((timerId) => clearTimeout(timerId));
+      this.autoPlaybackTimers = [];
+    },
+    cancelAutoPlayback() {
+      this.autoPlaybackSeq += 1;
+      this.clearAutoPlaybackTimers();
+    },
+    waitWithAutoPlaybackSeq(ms, seq) {
+      return new Promise((resolve) => {
+        if (seq !== this.autoPlaybackSeq) {
+          resolve(false);
+          return;
+        }
+        const timerId = setTimeout(() => {
+          const index = this.autoPlaybackTimers.indexOf(timerId);
+          if (index >= 0) {
+            this.autoPlaybackTimers.splice(index, 1);
+          }
+          resolve(seq === this.autoPlaybackSeq);
+        }, ms);
+        this.autoPlaybackTimers.push(timerId);
+      });
+    },
     async loadWordCard() {
       this.stopPlayback();
       if (
@@ -421,7 +450,7 @@ export default {
         const record = records[this.indexInPage] || records[0] || {};
         this.wordCard = normalizeWordCard(record);
         this.exampleSpeechTexts = {};
-        this.tryAutoPlayWord();
+        this.tryAutoPlayWordAndExamples();
       } catch (error) {
         if (seq !== this.requestSeq) {
           return;
@@ -542,6 +571,7 @@ export default {
       savePlaybackRate(this.$options.playbackRateStorageKey, this.playbackRate);
     },
     async playWordAudio({ silent = false } = {}) {
+      this.cancelAutoPlayback();
       const source = this.getWordAudioSource();
       if (!source) {
         if (!silent) {
@@ -552,6 +582,7 @@ export default {
       await this.playAudioSequence([source], { silent });
     },
     async playExampleAudio(example = {}, index = 0) {
+      this.cancelAutoPlayback();
       const source = this.getExampleAudioSource(example, index);
       if (!source) {
         this.errorMessage = "当前例句没有可播放内容";
@@ -559,11 +590,14 @@ export default {
       }
       await this.playAudioSequence([source]);
     },
-    async playWordAndExamplesAudio() {
+    async playWordAndExamplesAudio({ silent = false, gapMs = 1500 } = {}) {
+      this.cancelAutoPlayback();
       const queue = [];
       const wordSource = this.getWordAudioSource();
       if (!wordSource) {
-        this.errorMessage = "缺少单词发音，无法开始整卡朗读";
+        if (!silent) {
+          this.errorMessage = "缺少单词发音，无法开始整卡朗读";
+        }
         return;
       }
       // 整卡朗读固定从卡片单词发音开始，再顺序播放例句。
@@ -576,10 +610,12 @@ export default {
         }
       });
       if (!queue.length) {
-        this.errorMessage = "当前卡片没有可播放内容";
+        if (!silent) {
+          this.errorMessage = "当前卡片没有可播放内容";
+        }
         return;
       }
-      await this.playAudioSequence(queue);
+      await this.playAudioSequenceWithGap(queue, { silent, gapMs });
     },
     async playAudioSequence(sources = [], { silent = false } = {}) {
       if (!Array.isArray(sources) || !sources.length) {
@@ -601,10 +637,41 @@ export default {
         }
       }
     },
-    tryAutoPlayWord() {
-      this.playWordAudio({ silent: true });
+    async playAudioSequenceWithGap(
+      sources = [],
+      { silent = false, gapMs = 2000 } = {}
+    ) {
+      if (!Array.isArray(sources) || !sources.length) {
+        return;
+      }
+      // 在开始新的“间隔播放”前，先停止现有播放并取消旧的自动播放队列。
+      this.stopPlayback();
+      const currentSeq = ++this.autoPlaybackSeq;
+      for (let index = 0; index < sources.length; index += 1) {
+        if (currentSeq !== this.autoPlaybackSeq) {
+          return;
+        }
+        await this.playAudioSequence([sources[index]], { silent });
+        if (currentSeq !== this.autoPlaybackSeq) {
+          return;
+        }
+        if (index < sources.length - 1 && gapMs > 0) {
+          const stillValid = await this.waitWithAutoPlaybackSeq(
+            gapMs,
+            currentSeq
+          );
+          if (!stillValid) {
+            return;
+          }
+        }
+      }
+    },
+    tryAutoPlayWordAndExamples() {
+      // 自动播放：单词发音 -> 间隔 2 秒 -> 例句逐条发音（每条之间也间隔 2 秒）。
+      this.playWordAndExamplesAudio({ silent: true, gapMs: 2000 });
     },
     stopPlayback() {
+      this.cancelAutoPlayback();
       if (this.audioPlaybackManager) {
         this.audioPlaybackManager.stop();
       }
