@@ -1,27 +1,10 @@
-import { requestJson } from "@/utils/http";
+import { requestJson, unwrapResponse } from "@/utils/http";
 
-const API_BASE_URL = process.env.VUE_APP_API_BASE_URL || "/api";
-const normalizedBase = API_BASE_URL.replace(/\/+$/, "");
-const BASE_PATH = normalizedBase.endsWith("/api")
-  ? `${normalizedBase}/v1/wordCards/domain`
-  : `${normalizedBase}/api/v1/wordCards/domain`;
-
-function unwrap(data) {
-  if (data == null) {
-    return data;
-  }
-  if (Object.prototype.hasOwnProperty.call(data, "data")) {
-    return data.data;
-  }
-  if (Object.prototype.hasOwnProperty.call(data, "result")) {
-    return data.result;
-  }
-  return data;
-}
+const BASE_PATH = "/api/v1/wordCards/domain";
 
 export async function getWordCardByNoteAndIndex(noteId, index) {
   const response = await requestJson(`${BASE_PATH}/${noteId}/${index}`);
-  return unwrap(response);
+  return unwrapResponse(response);
 }
 
 export async function confirmWordCardDone(cardId, userId) {
@@ -41,7 +24,7 @@ export async function confirmWordCardDone(cardId, userId) {
       method: "POST",
     }
   );
-  return unwrap(response);
+  return unwrapResponse(response);
 }
 
 export async function getWordCardPage({
@@ -68,7 +51,7 @@ export async function getWordCardPage({
   const response = await requestJson(
     `${BASE_PATH}${queryString ? `?${queryString}` : ""}`
   );
-  const records = unwrap(response);
+  const records = unwrapResponse(response);
   return {
     records: Array.isArray(records) ? records : [],
     pageInfo: response?.pageInfo || null,

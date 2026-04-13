@@ -1,23 +1,6 @@
-import { requestJson } from "@/utils/http";
+import { requestJson, unwrapResponse } from "@/utils/http";
 
-const API_BASE_URL = process.env.VUE_APP_API_BASE_URL || "/api";
-const normalizedBase = API_BASE_URL.replace(/\/+$/, "");
-const BASE_PATH = normalizedBase.endsWith("/api")
-  ? `${normalizedBase}/v1/articles/domain`
-  : `${normalizedBase}/api/v1/articles/domain`;
-
-function unwrap(data) {
-  if (data == null) {
-    return data;
-  }
-  if (Object.prototype.hasOwnProperty.call(data, "data")) {
-    return data.data;
-  }
-  if (Object.prototype.hasOwnProperty.call(data, "result")) {
-    return data.result;
-  }
-  return data;
-}
+const BASE_PATH = "/api/v1/articles/domain";
 
 export async function getArticle(articleId) {
   if (!articleId) {
@@ -26,7 +9,7 @@ export async function getArticle(articleId) {
   const response = await requestJson(
     `${BASE_PATH}/${encodeURIComponent(articleId)}`
   );
-  return unwrap(response);
+  return unwrapResponse(response);
 }
 
 export async function getArticleByNoteNode(noteNodeId) {
@@ -37,13 +20,13 @@ export async function getArticleByNoteNode(noteNodeId) {
   const response = await requestJson(
     `${BASE_PATH}/note-node/${encodeURIComponent(numericNodeId)}`
   );
-  return unwrap(response);
+  return unwrapResponse(response);
 }
 
 export async function saveArticle(article) {
   await requestJson(BASE_PATH, {
     method: "POST",
-    body: JSON.stringify(article || {}),
+    json: article || {},
   });
 }
 
@@ -56,7 +39,7 @@ export async function updateArticleFavorite(articleId, favorite) {
     )}/favorite?${params.toString()}`,
     { method: "POST" }
   );
-  return unwrap(response);
+  return unwrapResponse(response);
 }
 
 export async function updateArticlePlaybackRate(articleId, playbackRate) {
@@ -68,7 +51,7 @@ export async function updateArticlePlaybackRate(articleId, playbackRate) {
     )}/playback-rate?${params.toString()}`,
     { method: "POST" }
   );
-  return unwrap(response);
+  return unwrapResponse(response);
 }
 
 export async function updateArticlePosition(articleId, paragraphIndex) {
@@ -80,5 +63,5 @@ export async function updateArticlePosition(articleId, paragraphIndex) {
     )}/position?${params.toString()}`,
     { method: "POST" }
   );
-  return unwrap(response);
+  return unwrapResponse(response);
 }

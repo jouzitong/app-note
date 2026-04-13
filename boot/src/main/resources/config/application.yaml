@@ -1,5 +1,7 @@
 server:
   port: 19812
+  servlet:
+    context-path: /app-note
 spring:
   config:
     import:

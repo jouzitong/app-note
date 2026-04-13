@@ -1,10 +1,6 @@
-import { requestJson } from "@/utils/http";
+import { requestJson, unwrapResponse } from "@/utils/http";
 
-const API_BASE_URL = process.env.VUE_APP_API_BASE_URL || "/api";
-const normalizedBase = API_BASE_URL.replace(/\/+$/, "");
-const BASE_PATH = normalizedBase.endsWith("/api")
-  ? `${normalizedBase}/v1/noteNodes/domain`
-  : `${normalizedBase}/api/v1/noteNodes/domain`;
+const BASE_PATH = "/api/v1/noteNodes/domain";
 
 function toQueryString(params = {}) {
   const query = new URLSearchParams();
@@ -19,19 +15,11 @@ function toQueryString(params = {}) {
 }
 
 function unwrap(data) {
-  if (data == null) {
-    return data;
+  const body = unwrapResponse(data);
+  if (Array.isArray(body)) {
+    return body;
   }
-  if (Array.isArray(data)) {
-    return data;
-  }
-  if (Object.prototype.hasOwnProperty.call(data, "data")) {
-    return data.data;
-  }
-  if (Object.prototype.hasOwnProperty.call(data, "result")) {
-    return data.result;
-  }
-  return data;
+  return body;
 }
 
 export async function listNoteNodes(params = {}) {
@@ -80,22 +68,22 @@ export async function getNoteNodeById(id) {
 export async function createNoteNode(payload) {
   return requestJson(BASE_PATH, {
     method: "POST",
-    body: JSON.stringify({
+    json: {
       noteNode: payload.noteNode || payload,
       pathIds: payload.pathIds || null,
       content: payload.content || null,
-    }),
+    },
   });
 }
 
 export async function updateNoteNode(id, payload) {
   return requestJson(`${BASE_PATH}/${id}`, {
     method: "PUT",
-    body: JSON.stringify({
+    json: {
       noteNode: payload.noteNode || payload,
       pathIds: payload.pathIds || null,
       content: payload.content || null,
-    }),
+    },
   });
 }
 
