@@ -223,7 +223,7 @@ export async function requestJson(path, options = {}) {
     });
     if (typeof hooks.onError === "function") {
       try {
-        hooks.onError(httpError);
+        hooks.onError(httpError, { url, method, options });
       } catch (hookError) {
         // ignore
       }
@@ -288,7 +288,7 @@ export async function requestJson(path, options = {}) {
     });
     if (typeof hooks.onError === "function") {
       try {
-        hooks.onError(httpError);
+        hooks.onError(httpError, { url, method, options });
       } catch (hookError) {
         // ignore
       }

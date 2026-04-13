@@ -35,10 +35,12 @@ module.exports = defineConfig({
         ? {
             [`${prefix}/api`]: { target, changeOrigin: true },
             [`${prefix}/auth`]: { target, changeOrigin: true },
+            [`${prefix}/common`]: { target, changeOrigin: true },
           }
         : {}),
       "/api": { target, changeOrigin: true },
       "/auth": { target, changeOrigin: true },
+      "/common": { target, changeOrigin: true },
     },
   },
 });

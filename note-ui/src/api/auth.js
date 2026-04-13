@@ -12,6 +12,7 @@ export async function login(username, password, tenantId = "") {
     method: "POST",
     json: payload,
     auth: false,
+    silentError: true,
     clearAuthOn401: false,
     skipAuthRefresh: true,
   });

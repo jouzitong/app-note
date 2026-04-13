@@ -1,4 +1,4 @@
 ### 获取全局枚举
-GET {{host}}:/app-note/common/v1/system/enums
+GET {{host}}:/common/v1/system/enums
 Accept: application/json
-
+Authorization: Bearer {{token}}
