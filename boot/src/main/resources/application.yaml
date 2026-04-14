@@ -4,17 +4,10 @@ server:
     context-path: /app-note
 spring:
   config:
-    activate:
-      on-profile: dev
     import:
       - optional:classpath:application-athena.yaml
-  datasource:
-    url: jdbc:mysql://localhost:3306/note?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-    username: root
-    password: root
-    type: com.alibaba.druid.pool.DruidDataSource
-  jpa:
-    show-sql: false
+  profiles:
+    active: dev
 
 lib:
   web:
