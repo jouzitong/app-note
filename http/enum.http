@@ -1,3 +1,4 @@
 ### 获取全局枚举
 GET {{host}}:/common/v1/system/enums
 Accept: application/json
+Authorization: Bearer {{token}}

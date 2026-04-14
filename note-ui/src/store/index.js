@@ -4,12 +4,19 @@ import { fetchGlobalEnums as requestGlobalEnums } from "@/api/enums";
 
 Vue.use(Vuex);
 
+let toastTimer = null;
+
 export default new Vuex.Store({
   state: {
     globalEnums: {},
     globalEnumsLoading: false,
     globalEnumsLoaded: false,
     globalEnumsError: "",
+    toast: {
+      visible: false,
+      message: "",
+      type: "error",
+    },
   },
   getters: {
     globalEnums(state) {
@@ -36,8 +43,36 @@ export default new Vuex.Store({
     SET_GLOBAL_ENUMS(state, enums) {
       state.globalEnums = enums && typeof enums === "object" ? enums : {};
     },
+    SHOW_TOAST(state, payload = {}) {
+      state.toast.visible = true;
+      state.toast.message = (payload?.message || "").trim();
+      state.toast.type = payload?.type || "error";
+    },
+    HIDE_TOAST(state) {
+      state.toast.visible = false;
+    },
   },
   actions: {
+    showToast({ commit }, payload = {}) {
+      const message = (payload?.message || "").trim();
+      if (!message) {
+        return;
+      }
+      commit("SHOW_TOAST", payload);
+      if (toastTimer) {
+        clearTimeout(toastTimer);
+        toastTimer = null;
+      }
+      const durationMs =
+        typeof payload?.durationMs === "number" ? payload.durationMs : 3000;
+      toastTimer = setTimeout(() => {
+        commit("HIDE_TOAST");
+        toastTimer = null;
+      }, Math.max(800, durationMs));
+    },
+    notifyError({ dispatch }, message) {
+      return dispatch("showToast", { type: "error", message });
+    },
     async fetchGlobalEnums({ state, commit }, options = {}) {
       const force = Boolean(options?.force);
       if (state.globalEnumsLoading) {

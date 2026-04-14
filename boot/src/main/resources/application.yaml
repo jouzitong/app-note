@@ -1,0 +1,16 @@
+server:
+  port: 19812
+  servlet:
+    context-path: /app-note
+spring:
+  config:
+    import:
+      - optional:classpath:application-athena.yaml
+  profiles:
+    active: dev
+
+lib:
+  web:
+    enumPackages:
+      - 'org.athena.framework'
+      - 'org.zzt.note'

@@ -9,6 +9,8 @@ athena:
       ignore-urls:
         - /auth/login
         - /auth/refresh
+        - /app-note/auth/login
+        - /app-note/auth/refresh
 
     token:
       type: jwt

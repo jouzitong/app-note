@@ -49,6 +49,7 @@
 <script>
 import { login } from "@/api/auth";
 import { saveAuthToken, saveAuthUser } from "@/utils/auth";
+import { getErrorMessage } from "@/utils/error";
 
 export default {
   name: "LoginView",
@@ -91,7 +92,7 @@ export default {
         saveAuthUser(result?.user || null);
         this.$router.replace(this.resolveRedirect());
       } catch (error) {
-        this.errorMessage = error?.message || "登录失败，请稍后重试";
+        this.errorMessage = getErrorMessage(error) || "登录失败，请稍后重试";
       } finally {
         this.loading = false;
       }
