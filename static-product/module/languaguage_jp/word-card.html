@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>日语学习 - 词卡</title>
+  <style>
+    :root {
+      --bg: #f3f6fb;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --brand: #1d4ed8;
+      --ok: #059669;
+      --warn: #d97706;
+      --danger: #dc2626;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+
+    .mobile-page {
+      position: relative;
+      width: 100%;
+      height: 100dvh;
+      min-height: -webkit-fill-available;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .content-scroll {
+      height: calc(100dvh - 56px - env(safe-area-inset-bottom));
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: calc(14px + env(safe-area-inset-top)) 12px calc(16px + env(safe-area-inset-bottom));
+    }
+
+    .learning-top {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .back-btn {
+      border: 1px solid #d1d5db;
+      background: #fff;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      color: #374151;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .progress-track {
+      height: 8px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: #e5e7eb;
+    }
+
+    .progress-fill {
+      display: block;
+      width: 40%;
+      height: 100%;
+      background: linear-gradient(90deg, #2563eb, #06b6d4);
+    }
+
+    .speed-select {
+      height: 28px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      background: #fff;
+      font-size: 12px;
+      color: #374151;
+      padding: 0 6px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      padding: 14px;
+    }
+
+    .word-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .word-main {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .done-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: #dcfce7;
+      color: var(--ok);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      flex: 0 0 18px;
+    }
+
+    .word {
+      font-size: 26px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .audio-btn {
+      border: 1px solid #dbeafe;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border-radius: 999px;
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      display: inline-flex;
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 11px;
+      border: 1px solid #e5e7eb;
+      background: #f8fafc;
+      color: #475569;
+    }
+
+    .section {
+      border-top: 1px solid #eef2f7;
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+
+    .title {
+      margin: 0 0 8px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .meta-grid {
+      display: grid;
+      gap: 6px;
+      font-size: 13px;
+      color: #374151;
+    }
+
+    .example {
+      margin: 0;
+      padding-left: 20px;
+      color: #374151;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .chip {
+      display: inline-flex;
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 11px;
+      border: 1px solid #e5e7eb;
+      background: #f8fafc;
+      color: #475569;
+    }
+
+    .actions {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+
+    .action-btn {
+      height: 36px;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      background: #fff;
+      font-size: 16px;
+      color: #374151;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .action-btn.done { color: var(--ok); border-color: #bbf7d0; background: #ecfdf5; }
+    .action-btn.hard { color: var(--warn); border-color: #fde68a; background: #fffbeb; }
+    .action-btn.favorite { color: var(--danger); border-color: #fecaca; background: #fef2f2; }
+
+    .bottom-nav {
+      position: fixed;
+      left: 0;
+      right: 0;
+      width: 100%;
+      bottom: env(safe-area-inset-bottom);
+      box-sizing: border-box;
+      min-height: 56px;
+      padding-top: 4px;
+      padding-bottom: calc(4px + env(safe-area-inset-bottom));
+      background: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.06);
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      align-items: stretch;
+      z-index: 1000;
+      transform: translateZ(0);
+    }
+
+    .nav-item {
+      border: 0;
+      background: transparent;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+      min-height: 48px;
+      margin: 0;
+      color: #6b7280;
+      cursor: pointer;
+    }
+
+    .nav-item.active { color: #1d4ed8; }
+    .nav-icon { font-size: 15px; line-height: 1; }
+    .nav-label { font-size: 10px; line-height: 1; }
+
+    @media (min-width: 768px) {
+      .mobile-page {
+        max-width: 430px;
+        margin: 0 auto;
+        border-left: 1px solid #e5e7eb;
+        border-right: 1px solid #e5e7eb;
+      }
+
+      .bottom-nav {
+        max-width: 430px;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%) translateZ(0);
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="mobile-page">
+  <main class="content-scroll">
+    <div class="learning-top">
+      <a class="back-btn" href="../language-jp-materials.html">&lt; 进度 2/120</a>
+      <div class="progress-track"><span class="progress-fill"></span></div>
+      <select class="speed-select" aria-label="速度">
+        <option>0.75x</option>
+        <option selected>1.00x</option>
+        <option>1.25x</option>
+        <option>1.50x</option>
+      </select>
+    </div>
+
+    <section class="card">
+      <div class="word-row">
+        <div class="word-main">
+          <span class="done-dot">✓</span>
+          <div class="word">先生</div>
+          <button class="audio-btn" type="button" data-placeholder="true" title="播放">▶</button>
+        </div>
+      </div>
+
+      <div class="tags">
+        <span class="tag">N5</span>
+        <span class="tag">名词</span>
+        <span class="tag">课堂高频</span>
+      </div>
+
+      <div class="section">
+        <h3 class="title">意味 / 解释</h3>
+        <div class="meta-grid">
+          <div>假名：せんせい</div>
+          <div>中文：老师；师长</div>
+          <div>发音：sensei</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 class="title">例文 / 例句</h3>
+        <ol class="example">
+          <li>それは先生の本です。</li>
+          <li>先生は日本語を教えます。</li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <h3 class="title">類義語 / 相似词</h3>
+        <div class="chips">
+          <span class="chip">教師（きょうし）</span>
+          <span class="chip">講師（こうし）</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 class="title">関連語 / 关联词</h3>
+        <div class="chips">
+          <span class="chip">学生（がくせい）</span>
+          <span class="chip">教室（きょうしつ）</span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="action-btn" href="javascript:;" data-placeholder="true">◀</a>
+        <a class="action-btn" href="javascript:;" data-placeholder="true">▶</a>
+        <a class="action-btn done" href="javascript:;" data-placeholder="true">✓</a>
+        <a class="action-btn hard" href="javascript:;" data-placeholder="true">!</a>
+        <a class="action-btn favorite" href="javascript:;" data-placeholder="true">★</a>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="主导航">
+    <a class="nav-item" href="../language-jp.html">
+      <span class="nav-icon">⌂</span>
+      <span class="nav-label">首页</span>
+    </a>
+    <a class="nav-item" href="javascript:;" data-placeholder="true">
+      <span class="nav-icon">✎</span>
+      <span class="nav-label">考试</span>
+    </a>
+    <a class="nav-item active" href="../language-jp-materials.html">
+      <span class="nav-icon">▦</span>
+      <span class="nav-label">资料</span>
+    </a>
+    <a class="nav-item" href="javascript:;" data-placeholder="true">
+      <span class="nav-icon">◷</span>
+      <span class="nav-label">计划</span>
+    </a>
+    <a class="nav-item" href="javascript:;" data-placeholder="true">
+      <span class="nav-icon">◉</span>
+      <span class="nav-label">我的</span>
+    </a>
+  </nav>
+</div>
+
+<script>
+  document.querySelectorAll('[data-placeholder="true"]').forEach(function (node) {
+    node.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.alert('该功能暂未实现。');
+    });
+  });
+</script>
+</body>
+</html>
