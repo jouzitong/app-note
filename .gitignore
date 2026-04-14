@@ -52,3 +52,4 @@ tmp/
 ### 单独排除 codex 执行任务的日志. 这个很有参考价值
 !.codex/logs/
 !.codex/**/log*/
+*.zip
