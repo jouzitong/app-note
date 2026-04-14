@@ -14,8 +14,8 @@
         <module>commons</module>
         <module>boot</module>
         <module>app-layer</module>
-        <module>server-word</module>
-        <module>server-practice</module>
+        <module>module/server-word</module>
+        <module>module/server-practice</module>
         <module>data-core</module>
     </modules>
 
