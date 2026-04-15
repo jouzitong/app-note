@@ -6,8 +6,6 @@ spring:
   config:
     import:
       - optional:classpath:application-athena.yaml
-  profiles:
-    active: dev
 
 lib:
   web:
