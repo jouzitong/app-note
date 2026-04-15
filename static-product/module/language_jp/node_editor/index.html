@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>节点编辑</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --brand: #1d4ed8;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    }
+
+    .mobile-page {
+      position: relative;
+      width: 100%;
+      height: 100dvh;
+      min-height: -webkit-fill-available;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .content-scroll {
+      height: calc(100dvh - 56px - env(safe-area-inset-bottom));
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: calc(14px + env(safe-area-inset-top)) 12px calc(132px + env(safe-area-inset-bottom));
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #edf2f7;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .title {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .back-btn {
+      width: 34px;
+      height: 34px;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      background: #f8fafc;
+      color: #374151;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .sub {
+      margin: 0;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    .label {
+      font-size: 13px;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .input,
+    .select {
+      width: 100%;
+      border: 1px solid #dbe1ea;
+      border-radius: 10px;
+      background: #fff;
+      color: #111827;
+      font-size: 14px;
+      padding: 10px 12px;
+      outline: none;
+    }
+
+    .input:focus,
+    .select:focus {
+      border-color: #93c5fd;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+    }
+
+    .hint {
+      font-size: 12px;
+      color: #6b7280;
+      line-height: 1.45;
+    }
+
+    .inline-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .tag-editor {
+      display: grid;
+      gap: 8px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      min-height: 24px;
+    }
+
+    .tag-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 12px;
+      border: 1px solid #dbeafe;
+      color: #1d4ed8;
+      background: #eff6ff;
+    }
+
+    .tag-remove {
+      border: 0;
+      background: transparent;
+      color: #64748b;
+      cursor: pointer;
+      font-size: 12px;
+      line-height: 1;
+      padding: 0;
+    }
+
+    .tag-combobox {
+      position: relative;
+    }
+
+    .tag-dropdown {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: calc(100% + 4px);
+      z-index: 20;
+      margin: 0;
+      padding: 4px;
+      list-style: none;
+      border: 1px solid #dbe1ea;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+      max-height: 160px;
+      overflow-y: auto;
+      display: none;
+    }
+
+    .tag-dropdown.show {
+      display: block;
+    }
+
+    .tag-option {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      text-align: left;
+      font-size: 13px;
+      color: #334155;
+      padding: 8px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .tag-option:hover {
+      background: #eff6ff;
+      color: #1d4ed8;
+    }
+
+    .search-combobox {
+      position: relative;
+    }
+
+    .search-dropdown {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: calc(100% + 4px);
+      z-index: 20;
+      margin: 0;
+      padding: 4px;
+      list-style: none;
+      border: 1px solid #dbe1ea;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+      max-height: 180px;
+      overflow-y: auto;
+      display: none;
+    }
+
+    .search-dropdown.show {
+      display: block;
+    }
+
+    .search-option {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      text-align: left;
+      font-size: 13px;
+      color: #334155;
+      padding: 8px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .search-option:hover {
+      background: #eff6ff;
+      color: #1d4ed8;
+    }
+
+    .editor-actions-fixed {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: calc(56px + env(safe-area-inset-bottom));
+      z-index: 1001;
+      padding: 8px 12px;
+      background: rgba(245, 247, 251, 0.95);
+      backdrop-filter: blur(8px);
+    }
+
+    .action-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .btn {
+      height: 40px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn.secondary {
+      background: #f8fafc;
+      border-color: #dbe1ea;
+      color: #334155;
+    }
+
+    .btn.primary {
+      background: #1d4ed8;
+      border-color: #1d4ed8;
+      color: #fff;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      left: 0;
+      right: 0;
+      width: 100%;
+      bottom: env(safe-area-inset-bottom);
+      box-sizing: border-box;
+      min-height: 56px;
+      padding-top: 4px;
+      padding-bottom: calc(4px + env(safe-area-inset-bottom));
+      background: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.06);
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      align-items: stretch;
+      z-index: 1000;
+      transform: translateZ(0);
+    }
+
+    .nav-item {
+      border: 0;
+      background: transparent;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+      min-height: 48px;
+      margin: 0;
+      color: #6b7280;
+      cursor: pointer;
+    }
+
+    .nav-item.active { color: #1d4ed8; }
+    .nav-icon { font-size: 15px; line-height: 1; }
+    .nav-label { font-size: 10px; line-height: 1; }
+
+    @media (min-width: 768px) {
+      .mobile-page {
+        max-width: 430px;
+        margin: 0 auto;
+        border-left: 1px solid #e5e7eb;
+        border-right: 1px solid #e5e7eb;
+      }
+
+      .bottom-nav {
+        max-width: 430px;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%) translateZ(0);
+      }
+
+      .editor-actions-fixed {
+        max-width: 430px;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="mobile-page">
+  <main class="content-scroll">
+    <section class="card">
+      <div class="header-row">
+        <h1 class="title">节点编辑</h1>
+        <a class="back-btn" href="../materials/index.html" title="返回资料页" aria-label="返回资料页">↩</a>
+      </div>
+      <p class="sub">统一用于节点新增与编辑。当前为静态原型，保存动作仅做占位提示。</p>
+    </section>
+
+    <section class="card">
+      <div class="form-grid">
+        <label class="field">
+          <span class="label">节点名称</span>
+          <input class="input" type="text" value="これは私の本です" />
+        </label>
+
+        <label class="field">
+          <span class="label">选择父节点</span>
+          <div class="search-combobox" id="parentCombobox">
+            <input class="input" type="text" id="parentInput" value="根节点 / N5核心词汇" placeholder="搜索父节点" autocomplete="off" />
+            <ul class="search-dropdown" id="parentDropdown"></ul>
+          </div>
+          <span class="hint">输入关键字可搜索父节点并选择。</span>
+        </label>
+
+        <label class="field">
+          <span class="label">标签</span>
+          <div class="tag-editor">
+            <div class="tag-list" id="tagList">
+              <span class="tag-chip">N5<button type="button" class="tag-remove" aria-label="删除标签">×</button></span>
+              <span class="tag-chip">句型<button type="button" class="tag-remove" aria-label="删除标签">×</button></span>
+              <span class="tag-chip">进行中<button type="button" class="tag-remove" aria-label="删除标签">×</button></span>
+            </div>
+            <div class="tag-combobox">
+              <input class="input" type="text" id="tagInput" placeholder="搜索并选择标签" autocomplete="off" />
+              <ul class="tag-dropdown" id="tagDropdown"></ul>
+            </div>
+          </div>
+          <span class="hint">输入关键字可搜索下拉候选标签，点击即可添加。</span>
+        </label>
+
+        <div class="inline-row">
+          <label class="field">
+            <span class="label">类型</span>
+            <select class="select">
+              <option>句型</option>
+              <option selected>练习</option>
+              <option>词卡</option>
+              <option>文章</option>
+              <option>素材</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="label">顺序</span>
+            <input class="input" type="number" min="1" step="1" value="4" />
+          </label>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="editor-actions-fixed">
+    <div class="action-row">
+      <a class="btn secondary" href="../materials/index.html">取消</a>
+      <button class="btn primary" type="button" data-placeholder="true">保存</button>
+    </div>
+  </div>
+
+  <nav class="bottom-nav" aria-label="主导航">
+    <a class="nav-item" href="../index.html">
+      <span class="nav-icon">⌂</span>
+      <span class="nav-label">首页</span>
+    </a>
+    <a class="nav-item" href="javascript:;" data-placeholder="true">
+      <span class="nav-icon">✎</span>
+      <span class="nav-label">考试</span>
+    </a>
+    <a class="nav-item active" href="../materials/index.html">
+      <span class="nav-icon">▦</span>
+      <span class="nav-label">资料</span>
+    </a>
+    <a class="nav-item" href="javascript:;" data-placeholder="true">
+      <span class="nav-icon">◷</span>
+      <span class="nav-label">计划</span>
+    </a>
+    <a class="nav-item" href="javascript:;" data-placeholder="true">
+      <span class="nav-icon">◉</span>
+      <span class="nav-label">我的</span>
+    </a>
+  </nav>
+</div>
+
+<script>
+  var allTagOptions = ['N5', 'N4', 'N3', '句型', '词卡', '练习', '文章', '素材', '阅读', '进行中', '待复习', '已完成'];
+  var parentNodeOptions = ['根节点 / N5核心词汇', '1. これは私の本です', '2. それは先生の本です', '3. あれは日本語の本です', '4. 疑问词练习', '5. 常见文章与素材库'];
+
+  function removeTag(button) {
+    var chip = button.closest('.tag-chip');
+    if (chip) chip.remove();
+  }
+
+  function createTagChip(text) {
+    var chip = document.createElement('span');
+    chip.className = 'tag-chip';
+    chip.innerHTML = text + '<button type="button" class="tag-remove" aria-label="删除标签">×</button>';
+    return chip;
+  }
+
+  function getSelectedTags() {
+    return Array.from(document.querySelectorAll('#tagList .tag-chip')).map(function (node) {
+      return (node.childNodes[0] && node.childNodes[0].nodeValue || '').trim();
+    }).filter(Boolean);
+  }
+
+  function addTag(text) {
+    var list = document.getElementById('tagList');
+    if (!list) return;
+    var value = (text || '').trim();
+    if (!value) return;
+    if (getSelectedTags().indexOf(value) >= 0) return;
+    list.appendChild(createTagChip(value));
+  }
+
+  function renderTagDropdown(keyword) {
+    var dropdown = document.getElementById('tagDropdown');
+    if (!dropdown) return;
+    var q = (keyword || '').trim().toLowerCase();
+    var selected = getSelectedTags();
+    var matches = allTagOptions.filter(function (item) {
+      if (selected.indexOf(item) >= 0) return false;
+      if (!q) return true;
+      return item.toLowerCase().indexOf(q) >= 0;
+    });
+
+    dropdown.innerHTML = '';
+    if (!matches.length) {
+      dropdown.classList.remove('show');
+      return;
+    }
+
+    matches.forEach(function (item) {
+      var li = document.createElement('li');
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'tag-option';
+      btn.textContent = item;
+      btn.addEventListener('click', function () {
+        addTag(item);
+        document.getElementById('tagInput').value = '';
+        renderTagDropdown('');
+      });
+      li.appendChild(btn);
+      dropdown.appendChild(li);
+    });
+
+    dropdown.classList.add('show');
+  }
+
+  document.getElementById('tagList').addEventListener('click', function (e) {
+    if (e.target.classList.contains('tag-remove')) {
+      removeTag(e.target);
+      renderTagDropdown(document.getElementById('tagInput').value);
+    }
+  });
+
+  document.getElementById('tagInput').addEventListener('focus', function () {
+    renderTagDropdown(this.value);
+  });
+
+  document.getElementById('tagInput').addEventListener('input', function () {
+    renderTagDropdown(this.value);
+  });
+
+  document.getElementById('tagInput').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      var first = document.querySelector('#tagDropdown .tag-option');
+      if (first) {
+        first.click();
+      }
+    }
+  });
+
+  document.addEventListener('click', function (e) {
+    var combobox = document.querySelector('.tag-combobox');
+    var dropdown = document.getElementById('tagDropdown');
+    if (!combobox || !dropdown) return;
+    if (!combobox.contains(e.target)) {
+      dropdown.classList.remove('show');
+    }
+  });
+
+  function renderParentDropdown(keyword) {
+    var dropdown = document.getElementById('parentDropdown');
+    if (!dropdown) return;
+    var q = (keyword || '').trim().toLowerCase();
+    var matches = parentNodeOptions.filter(function (item) {
+      if (!q) return true;
+      return item.toLowerCase().indexOf(q) >= 0;
+    });
+
+    dropdown.innerHTML = '';
+    if (!matches.length) {
+      dropdown.classList.remove('show');
+      return;
+    }
+
+    matches.forEach(function (item) {
+      var li = document.createElement('li');
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'search-option';
+      btn.textContent = item;
+      btn.addEventListener('click', function () {
+        document.getElementById('parentInput').value = item;
+        dropdown.classList.remove('show');
+      });
+      li.appendChild(btn);
+      dropdown.appendChild(li);
+    });
+
+    dropdown.classList.add('show');
+  }
+
+  document.getElementById('parentInput').addEventListener('focus', function () {
+    renderParentDropdown(this.value);
+  });
+
+  document.getElementById('parentInput').addEventListener('input', function () {
+    renderParentDropdown(this.value);
+  });
+
+  document.getElementById('parentInput').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      var first = document.querySelector('#parentDropdown .search-option');
+      if (first) first.click();
+    }
+  });
+
+  document.addEventListener('click', function (e) {
+    var combobox = document.getElementById('parentCombobox');
+    var dropdown = document.getElementById('parentDropdown');
+    if (!combobox || !dropdown) return;
+    if (!combobox.contains(e.target)) {
+      dropdown.classList.remove('show');
+    }
+  });
+
+  document.querySelectorAll('[data-placeholder="true"]').forEach(function (node) {
+    node.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.alert('该功能暂未实现。');
+    });
+  });
+</script>
+</body>
+</html>

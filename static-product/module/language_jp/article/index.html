@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日语文章阅读</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            margin: 0;
+            background: #f6f3ee;
+            color: #222;
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Mincho ProN",
+            "Yu Mincho", "Noto Serif JP", "PingFang SC", serif;
+            height: 100dvh;
+            overflow: hidden;
+        }
+
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .page {
+            max-width: 480px;
+            margin: 0 auto;
+            height: 100dvh;
+            background: #fbf8f3;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 16px;
+            background: rgba(251, 248, 243, 0.94);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid #e8e0d5;
+        }
+
+        .header-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border: none;
+            background: #efe7db;
+            color: #5a4632;
+            border-radius: 10px;
+            padding: 8px 12px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .header-placeholder {
+            width: 50px;
+            height: 33px;
+        }
+
+        .header-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #3d2f22;
+        }
+
+        .content {
+            padding: 18px 16px;
+            flex: 1;
+            overflow-y: auto;
+            overscroll-behavior: contain;
+        }
+
+        .article-card {
+            background: #fffdf9;
+            border: 1px solid #eee4d7;
+            border-radius: 18px;
+            padding: 18px 16px;
+            box-shadow: 0 6px 18px rgba(80, 55, 20, 0.04);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .tag {
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            color: #7a5b3d;
+            background: #f4eadc;
+        }
+
+        .article-title {
+            margin: 0;
+            font-size: 22px;
+            line-height: 1.5;
+            color: #2d241b;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .article-subtitle {
+            margin-top: 8px;
+            font-size: 13px;
+            color: #8a7662;
+            line-height: 1.7;
+        }
+
+        .section {
+            margin-top: 18px;
+        }
+
+        .section-title {
+            margin: 0 0 12px;
+            font-size: 15px;
+            color: #5c4732;
+            font-weight: 700;
+        }
+
+        .jp-paragraph {
+            margin: 0 0 16px;
+            padding: 16px 14px;
+            background: #fffaf3;
+            border-radius: 14px;
+            border: 1px solid #f0e5d6;
+            font-size: 22px;
+            line-height: 2.3;
+            letter-spacing: 0.02em;
+            color: #1f1a14;
+            word-break: break-word;
+        }
+
+        ruby {
+            ruby-position: over;
+        }
+
+        rt {
+            font-size: 0.48em;
+            color: #9c7d5e;
+            letter-spacing: 0;
+        }
+
+        .translation {
+            margin-top: 8px;
+            padding: 12px 14px;
+            background: #f8f3ec;
+            border-radius: 12px;
+            color: #6a5746;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .note-card {
+            margin-top: 16px;
+            background: #fffdf9;
+            border: 1px solid #eee4d7;
+            border-radius: 18px;
+            padding: 16px;
+        }
+
+        .note-text {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.9;
+            color: #4c3d31;
+        }
+
+        .toolbar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: nowrap;
+            padding: 12px 16px;
+            border-top: 1px solid #e8e0d5;
+            background: rgba(251, 248, 243, 0.96);
+            backdrop-filter: blur(8px);
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .tool-btn {
+            flex: 0 0 auto;
+            border: none;
+            border-radius: 12px;
+            padding: 12px 14px;
+            background: #5f4630;
+            color: #fff;
+            font-size: 13px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .tool-btn.icon {
+            min-width: 44px;
+            padding: 12px 10px;
+            font-size: 16px;
+            line-height: 1;
+        }
+
+        .tool-btn.secondary {
+            background: #efe7db;
+            color: #5a4632;
+        }
+
+        .speed-select {
+            flex: 0 0 auto;
+            border: 1px solid #e0d5c6;
+            border-radius: 12px;
+            background: #fffdf9;
+            color: #5a4632;
+            padding: 0 10px;
+            height: 40px;
+            font-size: 13px;
+            min-width: 88px;
+        }
+
+        .hidden-rt rt {
+            display: none;
+        }
+
+        @media (max-width: 390px) {
+            .jp-paragraph {
+                font-size: 20px;
+                line-height: 2.2;
+            }
+
+            .tool-btn {
+                font-size: 12px;
+                padding: 10px 8px;
+            }
+
+            .tool-btn.icon {
+                min-width: 40px;
+                padding: 10px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <a class="header-btn" href="../materials/index.html">返回</a>
+        <div class="header-title">文章阅读</div>
+        <div class="header-placeholder" aria-hidden="true"></div>
+    </div>
+
+    <div class="content">
+        <div class="article-card">
+            <div class="article-meta">
+                <span class="tag">日语文章</span>
+                <span class="tag">振假名</span>
+                <span class="tag">手机阅读</span>
+            </div>
+
+            <h1 class="article-title">私の毎日の生活</h1>
+
+            <div class="section">
+                <p class="jp-paragraph" id="articleText">
+                    <ruby>私<rt>わたし</rt></ruby>は
+                    <ruby>毎朝<rt>まいあさ</rt></ruby>
+                    <ruby>七時<rt>しちじ</rt></ruby>に
+                    <ruby>起<rt>お</rt></ruby>きます。
+                    <ruby>朝<rt>あさ</rt></ruby>ご
+                    <ruby>飯<rt>はん</rt></ruby>を
+                    <ruby>食<rt>た</rt></ruby>べて、
+                    <ruby>学校<rt>がっこう</rt></ruby>へ
+                    <ruby>行<rt>い</rt></ruby>きます。
+                    <ruby>夜<rt>よる</rt></ruby>は
+                    <ruby>家<rt>いえ</rt></ruby>で
+                    <ruby>日本語<rt>にほんご</rt></ruby>を
+                    <ruby>勉強<rt>べんきょう</rt></ruby>します。
+                </p>
+
+                <div class="translation">
+                    我每天早上七点起床。吃完早饭后去学校。晚上在家学习日语。
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="toolbar">
+        <button class="tool-btn secondary" id="toggleRubyBtn">隐藏平假名</button>
+        <button class="tool-btn secondary icon" title="收藏" aria-label="收藏">☆</button>
+        <button class="tool-btn">播放全文</button>
+        <select class="speed-select" aria-label="播放速度">
+            <option value="0.5">0.5x</option>
+            <option value="0.75">0.75x</option>
+            <option value="1.0" selected>1.0x</option>
+            <option value="1.25">1.25x</option>
+            <option value="1.5">1.5x</option>
+        </select>
+        <button class="tool-btn secondary icon" title="上一段" aria-label="上一段">◀</button>
+        <button class="tool-btn icon" title="下一段" aria-label="下一段">▶</button>
+    </div>
+</div>
+
+<script>
+    const toggleRubyBtn = document.getElementById('toggleRubyBtn');
+    const articleText = document.getElementById('articleText');
+    let rubyVisible = true;
+
+    toggleRubyBtn.addEventListener('click', function () {
+        rubyVisible = !rubyVisible;
+        if (rubyVisible) {
+            articleText.classList.remove('hidden-rt');
+            toggleRubyBtn.textContent = '隐藏平假名';
+        } else {
+            articleText.classList.add('hidden-rt');
+            toggleRubyBtn.textContent = '显示平假名';
+        }
+    });
+</script>
+</body>
+</html>

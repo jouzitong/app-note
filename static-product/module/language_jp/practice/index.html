@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N3 做题页面</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+            "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #f5f6f8;
+            color: #222;
+            height: 100dvh;
+            overflow: hidden;
+        }
+
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .page {
+            max-width: 520px;
+            margin: 0 auto;
+            height: 100dvh;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .exam-shell {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            flex: 1;
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .exam-header {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ececec;
+            background: linear-gradient(180deg, #fafafa 0%, #f4f4f4 100%);
+            flex: 0 0 auto;
+        }
+
+        .exam-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 0 10px;
+        }
+
+        .exam-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .meta-tag {
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: #fff;
+            border: 1px solid #e6e6e6;
+        }
+
+        .progress-wrap {
+            margin-top: 2px;
+        }
+
+        .progress-head {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        .back-icon-btn {
+            width: 24px;
+            height: 24px;
+            border-radius: 8px;
+            border: 1px solid #dbe7ff;
+            background: #f8fbff;
+            color: #295ec9;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            line-height: 1;
+            text-decoration: none;
+            flex: 0 0 24px;
+        }
+
+        .progress-text {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #eceff3;
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .progress-inner {
+            height: 100%;
+            width: 0;
+            background: #3b82f6;
+            border-radius: 999px;
+            transition: width 0.25s ease;
+        }
+
+        .question-card {
+            padding: 10px 12px 8px;
+            flex: 1;
+            min-height: 0;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            overscroll-behavior: contain;
+        }
+
+        .question-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .question-type {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 10px;
+            background: #eef4ff;
+            color: #295ec9;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .question-score {
+            font-size: 12px;
+            color: #777;
+        }
+
+        .question-section {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 4px;
+        }
+
+        .question-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .question-desc {
+            font-size: 13px;
+            line-height: 1.55;
+            color: #444;
+            background: #fafafa;
+            border: 1px solid #ededed;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .listening-box {
+            background: #f8fbff;
+            border: 1px solid #dbe9ff;
+            border-radius: 12px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .listening-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #2f5fb8;
+            margin-bottom: 6px;
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 6px;
+        }
+
+        .option-item {
+            position: relative;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            background: #fff;
+            transition: all 0.2s ease;
+            overflow: hidden;
+        }
+
+        .option-item:hover {
+            border-color: #c7d2fe;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.08);
+        }
+
+        .option-item input {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .option-label {
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+            padding: 10px;
+            cursor: pointer;
+            line-height: 1.5;
+        }
+
+        .option-index {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: #f1f5f9;
+            color: #334155;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            margin-top: 1px;
+        }
+
+        .option-text {
+            flex: 1;
+            font-size: 13px;
+            color: #222;
+        }
+
+        .option-item.active {
+            border-color: #3b82f6;
+            background: #f8fbff;
+        }
+
+        .option-item.active .option-index {
+            background: #3b82f6;
+            color: #fff;
+        }
+
+        .fill-box {
+            margin-top: 6px;
+        }
+
+        .fill-tip {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 6px;
+        }
+
+        .fill-input {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #dcdfe5;
+            border-radius: 10px;
+            padding: 0 10px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+            background: #fff;
+        }
+
+        .fill-input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+        }
+
+        .result-box {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 12px;
+            display: none;
+            line-height: 1.5;
+            font-size: 13px;
+        }
+
+        .result-box.show {
+            display: block;
+        }
+
+        .result-box.correct {
+            background: #ecfdf3;
+            border: 1px solid #b7efcc;
+            color: #166534;
+        }
+
+        .result-box.wrong {
+            background: #fff3f2;
+            border: 1px solid #f7c5c0;
+            color: #b42318;
+        }
+
+        .analysis-box {
+            margin-top: 50px;
+            border: 1px solid #dbe7ff;
+            border-radius: 10px;
+            background: #f8fbff;
+            overflow: hidden;
+        }
+
+        .analysis-box summary {
+            list-style: none;
+            cursor: pointer;
+            user-select: none;
+            padding: 8px 10px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #295ec9;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .analysis-box summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .analysis-box summary::before {
+            content: "▶";
+            font-size: 10px;
+            line-height: 1;
+            transition: transform 0.2s ease;
+        }
+
+        .analysis-box[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        .analysis-content {
+            border-top: 1px solid #dbe7ff;
+            padding: 8px 10px 10px;
+            background: #ffffff;
+        }
+
+        .analysis-section + .analysis-section {
+            margin-top: 8px;
+        }
+
+        .analysis-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: #334155;
+            margin-bottom: 4px;
+        }
+
+        .analysis-value {
+            font-size: 12px;
+            color: #475569;
+            line-height: 1.5;
+        }
+
+        .analysis-points {
+            margin: 0;
+            padding-left: 16px;
+            color: #475569;
+            font-size: 12px;
+            line-height: 1.45;
+        }
+
+        .analysis-points li + li {
+            margin-top: 2px;
+        }
+
+        .exam-footer {
+            padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+            border-top: 1px solid #ececec;
+            background: #fff;
+            flex: 0 0 auto;
+        }
+
+        .action-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: nowrap;
+        }
+
+        .btn {
+            min-width: 0;
+            flex: 1;
+            height: 38px;
+            border: none;
+            border-radius: 9px;
+            padding: 0 10px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-default {
+            background: #eef2f7;
+            color: #334155;
+        }
+
+        .btn-default:hover {
+            background: #e2e8f0;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-success {
+            background: #16a34a;
+            color: #fff;
+        }
+
+        .btn-success:hover {
+            background: #15803d;
+        }
+
+        .summary {
+            margin-top: 8px;
+            font-size: 12px;
+            color: #555;
+        }
+
+        @media (max-width: 640px) {
+            .page {
+                padding: 6px;
+            }
+
+            .question-card {
+                padding: 10px;
+            }
+
+            .exam-header,
+            .exam-footer {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .question-title {
+                font-size: 15px;
+            }
+
+            .option-text {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="exam-shell">
+        <div class="exam-header">
+            <div class="progress-wrap">
+                <div class="progress-head">
+                    <a class="back-icon-btn" href="../materials/index.html" aria-label="返回资料页" title="返回资料页">↩</a>
+                    <div class="progress-text" id="progressText">第 1 / 3 题</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-inner" id="progressInner"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <div class="question-top">
+                <div class="question-type" id="questionType">选择题</div>
+                <div class="question-score" id="questionScore">分值：1 分</div>
+            </div>
+
+            <div class="question-section" id="questionSection">文字・語彙</div>
+            <div class="question-title" id="questionTitle"></div>
+            <div class="question-desc" id="questionDesc"></div>
+
+            <div class="listening-box" id="listeningBox" style="display: none;">
+                <div class="listening-label">听力音频</div>
+                <audio id="audioPlayer" controls>
+                    <source id="audioSource" src="" type="audio/mpeg" />
+                    您的浏览器不支持 audio 标签
+                </audio>
+            </div>
+
+            <div class="options" id="optionsBox"></div>
+
+            <div class="fill-box" id="fillBox" style="display: none;">
+                <div class="fill-tip">请输入你认为正确的单词：</div>
+                <input type="text" class="fill-input" id="fillInput" placeholder="请输入答案" />
+            </div>
+
+            <div class="result-box" id="resultBox"></div>
+
+            <details class="analysis-box" id="analysisBox">
+                <summary>题目解析</summary>
+                <div class="analysis-content">
+                    <div class="analysis-section">
+                        <div class="analysis-label">答案</div>
+                        <div class="analysis-value" id="analysisAnswer">-</div>
+                    </div>
+                    <div class="analysis-section">
+                        <div class="analysis-label">详细解析</div>
+                        <div class="analysis-value" id="analysisExplanation">-</div>
+                    </div>
+                    <div class="analysis-section">
+                        <div class="analysis-label">关键知识点</div>
+                        <ul class="analysis-points" id="analysisPoints"></ul>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <div class="exam-footer">
+            <div class="action-row">
+                <button class="btn btn-default" id="prevBtn">上一题</button>
+                <button class="btn btn-success" id="submitBtn">提交答案</button>
+                <button class="btn btn-primary" id="nextBtn">下一题</button>
+            </div>
+            <div class="summary" id="summaryText">
+                已作答：0 / 3，答对：0 题
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            type: "choice",
+            typeLabel: "选择题",
+            section: "文字・語彙",
+            score: 1,
+            title: "次の文の（　）に入る言葉として、最もよいものを一つ選びなさい。",
+            desc: "昨日は疲れていたので、家に帰ってすぐ（　）。",
+            options: [
+                "寝ていました",
+                "寝ました",
+                "寝られます",
+                "寝させました"
+            ],
+            answer: 1,
+            explanation: "句子表示过去发生的动作，且“回家后马上睡了”，用过去式「寝ました」最自然。",
+            keyPoints: [
+                "过去完成动作常用动词过去式（ました）。",
+                "「～ていました」更偏持续状态，不符合“马上睡了”的语境。"
+            ]
+        },
+        {
+            id: 2,
+            type: "listening",
+            typeLabel: "听力选择题",
+            section: "聴解",
+            score: 1,
+            title: "問題を聞いて、正しい答えを一つ選んでください。",
+            desc: "先听音频，再选择正确答案。",
+            audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+            options: [
+                "男の人は図書館へ行きます",
+                "女の人は駅で待ちます",
+                "二人は午後三時に会います",
+                "男の人は今日は行きません"
+            ],
+            answer: 2,
+            explanation: "这是听力题示例，这里先用前端静态音频占位。后续你可以换成自己的日语 mp3。",
+            keyPoints: [
+                "听力题先抓时间、地点、人物关系等关键信息。",
+                "选项中常有近义干扰项，需和原文表达严格对应。"
+            ]
+        },
+        {
+            id: 3,
+            type: "fill",
+            typeLabel: "单词填写题",
+            section: "語彙",
+            score: 1,
+            title: "文脈に合う言葉をひらがな、または漢字で書きなさい。",
+            desc: "このかばんは少し重いですが、まだ（　）です。",
+            answerText: "だいじょうぶ",
+            acceptAnswers: ["だいじょうぶ", "大丈夫"],
+            explanation: "句意是“这个包虽然有点重，但还没问题”，所以填「だいじょうぶ / 大丈夫」。",
+            keyPoints: [
+                "「大丈夫」可表示“没问题/可以”。",
+                "填空题注意结合上下文语气和搭配。"
+            ]
+        }
+    ];
+
+    let currentIndex = 0;
+    const userAnswers = new Array(questions.length).fill(null);
+    const answerResults = new Array(questions.length).fill(null);
+
+    const progressText = document.getElementById("progressText");
+    const progressInner = document.getElementById("progressInner");
+    const questionType = document.getElementById("questionType");
+    const questionScore = document.getElementById("questionScore");
+    const questionSection = document.getElementById("questionSection");
+    const questionTitle = document.getElementById("questionTitle");
+    const questionDesc = document.getElementById("questionDesc");
+    const listeningBox = document.getElementById("listeningBox");
+    const audioSource = document.getElementById("audioSource");
+    const audioPlayer = document.getElementById("audioPlayer");
+    const optionsBox = document.getElementById("optionsBox");
+    const fillBox = document.getElementById("fillBox");
+    const fillInput = document.getElementById("fillInput");
+    const resultBox = document.getElementById("resultBox");
+    const analysisBox = document.getElementById("analysisBox");
+    const analysisAnswer = document.getElementById("analysisAnswer");
+    const analysisExplanation = document.getElementById("analysisExplanation");
+    const analysisPoints = document.getElementById("analysisPoints");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const submitBtn = document.getElementById("submitBtn");
+    const summaryText = document.getElementById("summaryText");
+
+    function renderQuestion() {
+        const q = questions[currentIndex];
+
+        progressText.textContent = `第 ${currentIndex + 1} / ${questions.length} 题`;
+        progressInner.style.width = `${((currentIndex + 1) / questions.length) * 100}%`;
+
+        questionType.textContent = q.typeLabel;
+        questionScore.textContent = `分值：${q.score} 分`;
+        questionSection.textContent = q.section;
+        questionTitle.textContent = q.title;
+        questionDesc.textContent = q.desc;
+
+        resultBox.className = "result-box";
+        resultBox.innerHTML = "";
+
+        optionsBox.innerHTML = "";
+        fillBox.style.display = "none";
+        listeningBox.style.display = "none";
+
+        if (q.type === "choice" || q.type === "listening") {
+            q.options.forEach((item, idx) => {
+                const option = document.createElement("div");
+                option.className = "option-item";
+
+                if (userAnswers[currentIndex] === idx) {
+                    option.classList.add("active");
+                }
+
+                option.innerHTML = `
+            <label class="option-label">
+              <input type="radio" name="option" value="${idx}" ${userAnswers[currentIndex] === idx ? "checked" : ""}>
+              <span class="option-index">${idx + 1}</span>
+              <span class="option-text">${item}</span>
+            </label>
+          `;
+
+                option.addEventListener("click", () => {
+                    userAnswers[currentIndex] = idx;
+                    renderQuestion();
+                });
+
+                optionsBox.appendChild(option);
+            });
+        }
+
+        if (q.type === "listening") {
+            listeningBox.style.display = "block";
+            audioSource.src = q.audio || "";
+            audioPlayer.load();
+        }
+
+        if (q.type === "fill") {
+            fillBox.style.display = "block";
+            fillInput.value = userAnswers[currentIndex] || "";
+        }
+
+        if (answerResults[currentIndex] !== null) {
+            showResult(answerResults[currentIndex], q);
+        }
+
+        renderAnalysis(q);
+
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex === questions.length - 1;
+
+        updateSummary();
+    }
+
+    function getAnswerText(q) {
+        if (q.type === "fill") {
+            return (q.acceptAnswers || []).join(" / ");
+        }
+        if (Array.isArray(q.options) && typeof q.answer === "number") {
+            return q.options[q.answer] || "-";
+        }
+        return "-";
+    }
+
+    function renderAnalysis(q) {
+        analysisAnswer.textContent = getAnswerText(q);
+        analysisExplanation.textContent = q.explanation || "-";
+
+        const points = Array.isArray(q.keyPoints) ? q.keyPoints : [];
+        analysisPoints.innerHTML = "";
+        if (!points.length) {
+            const li = document.createElement("li");
+            li.textContent = "暂无关键知识点。";
+            analysisPoints.appendChild(li);
+        } else {
+            points.forEach((point) => {
+                const li = document.createElement("li");
+                li.textContent = point;
+                analysisPoints.appendChild(li);
+            });
+        }
+
+        analysisBox.removeAttribute("open");
+    }
+
+    function submitAnswer() {
+        const q = questions[currentIndex];
+        let isCorrect = false;
+
+        if (q.type === "choice" || q.type === "listening") {
+            if (userAnswers[currentIndex] === null) {
+                alert("请先选择答案");
+                return;
+            }
+            isCorrect = userAnswers[currentIndex] === q.answer;
+        }
+
+        if (q.type === "fill") {
+            const value = fillInput.value.trim();
+            if (!value) {
+                alert("请先填写答案");
+                return;
+            }
+            userAnswers[currentIndex] = value;
+            isCorrect = q.acceptAnswers.includes(value);
+        }
+
+        answerResults[currentIndex] = isCorrect;
+        showResult(isCorrect, q);
+        updateSummary();
+    }
+
+    function showResult(isCorrect, q) {
+        resultBox.className = "result-box show " + (isCorrect ? "correct" : "wrong");
+
+        if (q.type === "fill") {
+            resultBox.innerHTML = isCorrect
+                ? `回答正确。<br>解析：${q.explanation}`
+                : `回答错误。<br>正确答案：${q.acceptAnswers.join(" / ")}<br>解析：${q.explanation}`;
+        } else {
+            resultBox.innerHTML = isCorrect
+                ? `回答正确。<br>解析：${q.explanation}`
+                : `回答错误。<br>正确答案：${q.options[q.answer]}<br>解析：${q.explanation}`;
+        }
+    }
+
+    function updateSummary() {
+        const answeredCount = userAnswers.filter(v => v !== null && v !== "").length;
+        const correctCount = answerResults.filter(v => v === true).length;
+        summaryText.textContent = `已作答：${answeredCount} / ${questions.length}，答对：${correctCount} 题`;
+    }
+
+    fillInput.addEventListener("input", (e) => {
+        userAnswers[currentIndex] = e.target.value;
+    });
+
+    prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            renderQuestion();
+        }
+    });
+
+    nextBtn.addEventListener("click", () => {
+        if (currentIndex < questions.length - 1) {
+            currentIndex++;
+            renderQuestion();
+        }
+    });
+
+    submitBtn.addEventListener("click", submitAnswer);
+
+    renderQuestion();
+</script>
+</body>
+</html>
