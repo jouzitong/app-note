@@ -1,0 +1,154 @@
+= P-002-M1（资料页）后端架构说明（As-Is）
+:toc: left
+:toclevels: 4
+:sectnums:
+
+== 1. 文档定位
+
+- 目标：沉淀 `P-002-M1`（资料页）当前已落地实现的后端架构，作为调试与后续迭代基线。
+- 范围：`/language-jp/note/${normalized}` 路由对应的节点目录读取、节点维护、子节点分发，以及与词卡/文章/练习模块的关系。
+- 说明：本文档基于现有代码“反向归档”（as-is），不是全新设计稿。
+
+== 2. 业务流程（按请求链路）
+
+=== 2.1 资料页主链路（P-002-M1）
+
+1. 前端进入 `note-ui` 路由：`/language-jp/note/:id?`。
+2. 页面 `note-ui/src/views/notes/index.vue` 解析 `id`（即 `normalized` 后的节点 ID）。
+3. 前端调用 `GET /api/v1/noteNodes/domain/{id}`。
+4. `data-core` 领域服务返回 `NoteNodeVO`：
+- `noteNode`：当前节点基础信息（标题、类型、排序、meta）。
+- `paths`：路径面包屑（根到当前节点）。
+- `childNoteNodes`：子节点列表（按 `sort` 升序）。
+- `content`：节点正文对象（JSON 解析后对象，或原始字符串）。
+5. 前端渲染面包屑、子节点列表、内容区，并持久化最近访问节点 ID（`language_jp_last_note_id`）。
+
+=== 2.2 子节点分发链路
+
+1. 用户点击子节点。
+2. 前端根据 `child.noteType` 分流：
+- `noteType == 2`（`WORD_CARD`）进入词卡路由：`/language-jp/note/:parentId/word?nodeId={childId}`。
+- 其他类型默认进入同一资料页路由：`/language-jp/note/{childId}`。
+3. 词卡/文章/练习页面通过 `nodeId` 调用对应模块接口：
+- 词卡：`/api/v1/wordCards/domain/...`
+- 文章：`/api/v1/articles/domain/...`
+- 练习：`/api/v1/practices/...`
+
+=== 2.3 节点维护链路（编辑/新增/删除）
+
+- 新增：`POST /api/v1/noteNodes/domain`
+- 更新：`PUT /api/v1/noteNodes/domain/{id}`
+- 删除（纯节点域）：`DELETE /api/v1/noteNodes/domain/{id}`
+- 删除（含跨域关联清理）：`POST /api/v1/ops/noteNodes/delete?noteNodeId=...&checkCode=root`
+
+== 3. 模块落位与职责
+
+=== 3.1 `data-core`（主模块，已实现）
+
+- `NoteNodeDomainController`：资料页主读写 API 入口。
+- `NoteNodeDomainServiceImpl`：节点树路径计算、子树重算、内容表 upsert、领域读取聚合。
+- `NoteNode` / `NoteNodeMeta` / `NoteNodeContent` / `NoteTag`：节点目录结构核心实体。
+- 结论：`P-002-M1` 的节点目录结构确实由 `NoteNode` + 关联实体共同构建。
+
+=== 3.2 `app-layer`（运维增强）
+
+- `NoteNodeOpsController` + `NoteNodeOpsServiceImpl`：
+- 提供“带关联清理”的安全删除能力（会处理词卡关系与例句回收）。
+
+=== 3.3 `server-word` / `server-practice`（消费节点）
+
+- `server-word`：通过 `note_node_id` 关系表挂载词卡、文章。
+- `server-practice`：通过 `note_node_id` 关联题目与练习会话。
+- 这些模块不负责维护节点树本身，节点树归属 `data-core`。
+
+== 4. 核心数据结构与约束
+
+=== 4.1 `note_node`（实体：`NoteNode`）
+
+- 关键字段：
+- `id`：主键（继承基础实体）。
+- `note_key`：业务唯一键（唯一约束 `uk_note_node_note_key`）。
+- `parent_id`：父节点 ID，根节点为 `null`。
+- `title`：标题（非空）。
+- `note_type`：节点类型（`NoteType` 枚举，DB 按字符串存储）。
+- `sort`：排序值（默认 `0`）。
+- `path_ids`：路径 ID 列表（JSON）。
+- 关键索引：
+- `idx_note_node_parent_sort(parent_id, sort)`：支撑子节点有序读取。
+- `idx_note_node_parent_id(parent_id)`：支撑树结构查询。
+
+=== 4.2 `note_node_meta`（实体：`NoteNodeMeta`）
+
+- 与 `note_node` 一对一（`node_id` 唯一）。
+- 承载 `icon`、`subject`、`tags`。
+- 标签关系走中间表 `note_node_meta_tag_rel`（`meta_id + tag_id` 唯一）。
+
+=== 4.3 `note_node_content`（实体：`NoteNodeContent`）
+
+- 与 `note_node` 一对一（`node_id` 唯一）。
+- `content` 为 `TEXT`，保存 JSON 字符串或文本。
+- 读路径中会优先尝试反序列化为对象返回。
+
+=== 4.4 节点类型（`NoteType`）
+
+- 已定义：`EMPTY(0)`、`MARKDOWN(1)`、`WORD_CARD(2)`、`SENTENCE(3)`、`ARTICLE(4)`、`QUESTIONS(100)`。
+- 返回给前端时，`NoteNodePathVO.noteType` 通过 `@JsonValue` 以数字 `code` 透出。
+
+== 5. API 清单（当前实现）
+
+=== 5.1 `P-002-M1` 主 API（`data-core`）
+
+[cols="1,1,2,2",options="header"]
+|===
+| 方法 | 路径 | 说明 | 主要入参/出参
+| GET | `/api/v1/noteNodes/domain/{id}` | 资料页读取节点详情 | 入参：`id`；出参：`NoteNodeVO(noteNode, paths, childNoteNodes, content)`
+| POST | `/api/v1/noteNodes/domain` | 新增节点 | 入参：`NoteNodeAddDTO`（`noteNode` + `content`）
+| PUT | `/api/v1/noteNodes/domain/{id}` | 更新节点 | 入参：`id` + `NoteNodeAddDTO`
+| DELETE | `/api/v1/noteNodes/domain/{id}` | 删除节点子树（节点域） | 入参：`id`
+|===
+
+=== 5.2 节点运维 API（`app-layer`）
+
+[cols="1,1,2,2",options="header"]
+|===
+| 方法 | 路径 | 说明 | 主要入参/出参
+| POST | `/api/v1/ops/noteNodes/delete` | 删除节点并清理词卡/例句关联 | 入参：`noteNodeId`、`checkCode=root`；出参：`NoteNodeOpsDeleteResult`
+|===
+
+=== 5.3 子页面关联 API（跨模块）
+
+[cols="1,1,2",options="header"]
+|===
+| 模块 | 路径 | 用途
+| 词卡 | `/api/v1/wordCards/domain/{noteId}/{index}` | 按节点获取词卡
+| 文章 | `/api/v1/articles/domain/note-node/{noteNodeId}` | 按节点获取文章
+| 练习 | `/api/v1/practices/*` | 基于 `noteNodeId` 创建会话/答题/统计
+|===
+
+== 6. 与前端路由的映射
+
+- 主路由：`/language-jp/note/:id?`（页面组件：`note-ui/src/views/notes/index.vue`）。
+- 规范化入口函数：`buildLanguageJpNotePath(noteId)`，实际生成 `/language-jp/note/${normalized}`。
+- 节点详情接口：`note-ui/src/api/noteNodes.js#getNoteNodeById` -> `GET /api/v1/noteNodes/domain/{id}`。
+
+== 7. 当前实现特征与调试关注点
+
+=== 7.1 已实现特征
+
+- 节点树读取、路径回溯、子节点排序读取已实现。
+- 节点新增/更新会维护 `pathIds`，并支持子树路径重算。
+- 节点内容与主表分离，支持对象型内容返回。
+- `P-002-M1` 到词卡/文章/练习的路由与接口链路均已落地。
+
+=== 7.2 调试关注点（建议）
+
+- `noteType` 在不同 DTO/VO 里的表示（字符串 vs 数值）需确认前后端一致性。
+- `DELETE /api/v1/noteNodes/domain/{id}` 仅清理节点域；若涉及词卡/例句，优先走 ops 删除接口。
+- 历史数据若存在 `path_ids` 缺失或脏数据，需验证 `buildPathIds` 重算逻辑是否覆盖。
+- `content` JSON 反序列化失败时会降级返回字符串，前端渲染应做好兜底。
+
+== 8. 后续演进建议（不影响当前已实现）
+
+- 为 `P-002-M1` 补充接口契约示例（请求/响应 JSON 示例）。
+- 补充 `note_node_meta_tag_rel` 与跨模块关系表的数据字典。
+- 将“节点删除（普通/级联）”在前端明确分级，减少误删风险。
