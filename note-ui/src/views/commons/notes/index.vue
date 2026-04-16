@@ -70,16 +70,26 @@
                   <button
                     class="item-action-btn"
                     type="button"
+                    title="编辑"
+                    aria-label="编辑"
                     @click.stop="handleEditChild(item)"
                   >
-                    编辑
+                    <i class="el-icon-edit item-action-icon" aria-hidden="true"
+                      >✎</i
+                    >
                   </button>
                   <button
                     class="item-action-btn danger"
                     type="button"
+                    title="删除"
+                    aria-label="删除"
                     @click.stop="handleDeleteChild(item)"
                   >
-                    删除
+                    <i
+                      class="el-icon-delete item-action-icon"
+                      aria-hidden="true"
+                      >🗑</i
+                    >
                   </button>
                 </span>
               </li>
@@ -513,18 +523,31 @@ export default {
 }
 
 .item-action-btn {
+  width: 28px;
+  height: 28px;
   border: 1px solid #d1d5db;
   background: #fff;
   color: #374151;
   border-radius: 8px;
-  font-size: 12px;
   line-height: 1;
-  padding: 6px 8px;
+  padding: 0;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .item-action-btn:hover {
   border-color: #9ca3af;
+}
+
+.item-action-icon {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .item-action-btn.danger {
