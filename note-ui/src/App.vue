@@ -73,4 +73,71 @@ nav a.router-link-exact-active {
   opacity: 0;
   transform: translateY(-6px);
 }
+
+.app-tag {
+  --app-tag-color: #41464b;
+  --app-tag-bg: #e2e3e5;
+  --app-tag-border: #c4c8cb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 22px;
+  padding: 2px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--app-tag-border);
+  background: var(--app-tag-bg);
+  color: var(--app-tag-color);
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.app-tag--primary {
+  --app-tag-color: #084298;
+  --app-tag-bg: #cfe2ff;
+  --app-tag-border: #9ec5fe;
+}
+
+.app-tag--secondary {
+  --app-tag-color: #41464b;
+  --app-tag-bg: #e2e3e5;
+  --app-tag-border: #c4c8cb;
+}
+
+.app-tag--success {
+  --app-tag-color: #0f5132;
+  --app-tag-bg: #d1e7dd;
+  --app-tag-border: #a3cfbb;
+}
+
+.app-tag--danger {
+  --app-tag-color: #842029;
+  --app-tag-bg: #f8d7da;
+  --app-tag-border: #f1aeb5;
+}
+
+.app-tag--warning {
+  --app-tag-color: #664d03;
+  --app-tag-bg: #fff3cd;
+  --app-tag-border: #ffe69c;
+}
+
+.app-tag--info {
+  --app-tag-color: #055160;
+  --app-tag-bg: #cff4fc;
+  --app-tag-border: #9eeaf9;
+}
+
+.app-tag--light {
+  --app-tag-color: #495057;
+  --app-tag-bg: #fcfcfd;
+  --app-tag-border: #f1f3f5;
+}
+
+.app-tag--dark {
+  --app-tag-color: #e9ecef;
+  --app-tag-bg: #343a40;
+  --app-tag-border: #1f2327;
+}
 </style>

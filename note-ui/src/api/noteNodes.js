@@ -1,6 +1,7 @@
 import { requestJson, unwrapResponse } from "@/utils/http";
 
 const BASE_PATH = "/api/v1/noteNodes/domain";
+const NOTE_TAG_BIZ_TYPE = "NOTE";
 
 function toQueryString(params = {}) {
   const query = new URLSearchParams();
@@ -90,5 +91,60 @@ export async function updateNoteNode(id, payload) {
 export async function deleteNoteNode(id) {
   return requestJson(`${BASE_PATH}/${id}`, {
     method: "DELETE",
+  });
+}
+
+export async function searchParentNoteNodes(params = {}) {
+  const res = await requestJson(
+    `${BASE_PATH}/parents/search${toQueryString(params)}`
+  );
+  const body = unwrap(res);
+  if (Array.isArray(body)) {
+    return body;
+  }
+  if (Array.isArray(body?.records)) {
+    return body.records;
+  }
+  if (Array.isArray(body?.content)) {
+    return body.content;
+  }
+  if (Array.isArray(body?.items)) {
+    return body.items;
+  }
+  return [];
+}
+
+export async function searchNoteTags(params = {}) {
+  const query = {
+    bizType: NOTE_TAG_BIZ_TYPE,
+    ...params,
+  };
+  const res = await requestJson(
+    `${BASE_PATH}/tags/search${toQueryString(query)}`
+  );
+  const body = unwrap(res);
+  if (Array.isArray(body)) {
+    return body;
+  }
+  if (Array.isArray(body?.records)) {
+    return body.records;
+  }
+  if (Array.isArray(body?.content)) {
+    return body.content;
+  }
+  if (Array.isArray(body?.items)) {
+    return body.items;
+  }
+  return [];
+}
+
+export async function createNoteTag(payload) {
+  const body = {
+    bizType: NOTE_TAG_BIZ_TYPE,
+    ...(payload || {}),
+  };
+  return requestJson(`${BASE_PATH}/tags`, {
+    method: "POST",
+    json: body,
   });
 }

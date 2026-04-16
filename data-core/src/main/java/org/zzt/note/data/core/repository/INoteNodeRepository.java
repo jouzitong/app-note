@@ -18,4 +18,6 @@ public interface INoteNodeRepository extends BaseRepository<NoteNode> {
     List<NoteNode> findByIdIn(List<Long> ids);
 
     List<NoteNode> findByParentIdOrderBySortAsc(Long parentId);
+
+    List<NoteNode> findByTitleContainingIgnoreCaseOrderBySortAscIdAsc(String keyword);
 }

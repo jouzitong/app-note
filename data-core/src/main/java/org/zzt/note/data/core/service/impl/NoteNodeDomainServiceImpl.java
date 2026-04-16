@@ -11,9 +11,12 @@ import org.zzt.note.data.core.convert.NoteNodeConvert;
 import org.zzt.note.data.core.dto.NoteNodeAddDTO;
 import org.zzt.note.data.core.entity.NoteNode;
 import org.zzt.note.data.core.entity.NoteNodeContent;
+import org.zzt.note.data.core.entity.NoteTag;
 import org.zzt.note.data.core.entity.dto.NoteNodeDTO;
+import org.zzt.note.data.core.entity.dto.NoteTagDTO;
 import org.zzt.note.data.core.repository.INoteNodeContentRepository;
 import org.zzt.note.data.core.repository.INoteNodeRepository;
+import org.zzt.note.data.core.repository.INoteTagRepository;
 import org.zzt.note.data.core.request.NoteNodeRequest;
 import org.zzt.note.data.core.service.INoteNodeDomainService;
 import org.zzt.note.data.core.vo.NoteNodePathVO;
@@ -42,10 +45,14 @@ import java.util.stream.Collectors;
 public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
+    private static final String DEFAULT_TAG_BIZ_TYPE = "NOTE_NODE";
+    private static final int DEFAULT_SEARCH_LIMIT = 20;
 
     private final INoteNodeRepository noteNodeRepository;
 
     private final INoteNodeContentRepository noteNodeContentRepository;
+
+    private final INoteTagRepository noteTagRepository;
 
     private final NoteNodeConvert noteNodeConvert;
 
@@ -253,6 +260,109 @@ public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
         return new NoteNodeVO(noteNodeDTO, paths, childNoteNodes, content);
     }
 
+    @Override
+    @Transactional
+    public List<NoteNodePathVO> searchParentNodes(String keyword, Long excludeId, Integer limit) {
+        int normalizedLimit = normalizeLimit(limit);
+
+        List<NoteNode> allNodes = noteNodeRepository.findAll();
+        if (CollectionUtils.isEmpty(allNodes)) {
+            return Collections.emptyList();
+        }
+
+        Set<Long> blockedIds = Collections.emptySet();
+        if (excludeId != null) {
+            blockedIds = collectSubtreeIds(excludeId, allNodes);
+        }
+
+        String normalizedKeyword = normalizeKeyword(keyword);
+        List<NoteNode> candidates;
+        if (normalizedKeyword == null) {
+            candidates = allNodes.stream()
+                    .sorted((a, b) -> {
+                        int sortCompare = Integer.compare(safeSort(a.getSort()), safeSort(b.getSort()));
+                        if (sortCompare != 0) {
+                            return sortCompare;
+                        }
+                        return Long.compare(safeId(a.getId()), safeId(b.getId()));
+                    })
+                    .collect(Collectors.toList());
+        } else {
+            candidates = noteNodeRepository.findByTitleContainingIgnoreCaseOrderBySortAscIdAsc(normalizedKeyword);
+        }
+
+        Map<Long, NoteNode> nodeMap = allNodes.stream()
+                .collect(Collectors.toMap(NoteNode::getId, node -> node));
+        Map<Long, List<Long>> pathCache = new HashMap<>();
+
+        List<NoteNodePathVO> results = new ArrayList<>();
+        for (NoteNode node : candidates) {
+            if (node == null || node.getId() == null) {
+                continue;
+            }
+            if (blockedIds.contains(node.getId())) {
+                continue;
+            }
+            List<Long> pathIds = node.getPathIds();
+            if (CollectionUtils.isEmpty(pathIds)) {
+                pathIds = buildPathIds(node.getId(), nodeMap, pathCache, new HashSet<>());
+            }
+            String pathTitle = toPathTitle(pathIds, nodeMap);
+            String title = pathTitle.isBlank() ? node.getTitle() : pathTitle;
+            results.add(new NoteNodePathVO(node.getId(), title, node.getNoteType()));
+            if (results.size() >= normalizedLimit) {
+                break;
+            }
+        }
+
+        return results;
+    }
+
+    @Override
+    @Transactional
+    public List<NoteTagDTO> searchTags(String keyword, String bizType, Integer limit) {
+        int normalizedLimit = normalizeLimit(limit);
+        String normalizedBizType = normalizeBizType(bizType);
+        String normalizedKeyword = normalizeKeyword(keyword);
+
+        List<NoteTag> tags = normalizedKeyword == null
+                ? noteTagRepository.findByBizTypeOrderByLabelAsc(normalizedBizType)
+                : noteTagRepository.findByBizTypeAndLabelContainingIgnoreCaseOrderByLabelAsc(normalizedBizType, normalizedKeyword);
+
+        if (CollectionUtils.isEmpty(tags)) {
+            return Collections.emptyList();
+        }
+
+        return tags.stream()
+                .filter(tag -> tag != null && tag.getId() != null)
+                .limit(normalizedLimit)
+                .map(this::toTagDTO)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    @Transactional
+    public NoteTagDTO createTag(NoteTagDTO tagDTO) {
+        if (tagDTO == null) {
+            throw new IllegalArgumentException("tagDTO cannot be null");
+        }
+        String label = normalizeKeyword(tagDTO.getLabel());
+        if (label == null) {
+            throw new IllegalArgumentException("tagDTO.label cannot be blank");
+        }
+
+        String normalizedBizType = normalizeBizType(tagDTO.getBizType());
+        NoteTag tag = noteTagRepository.findByBizTypeAndLabel(normalizedBizType, label)
+                .orElseGet(() -> {
+                    NoteTag created = new NoteTag();
+                    created.setBizType(normalizedBizType);
+                    created.setLabel(label);
+                    created.setClassName(tagDTO.getClassName());
+                    return noteTagRepository.save(created);
+                });
+        return toTagDTO(tag);
+    }
+
     /**
      * 新增节点时，根据 parentId 计算 pathIds（根 -> 当前节点）。
      */
@@ -367,6 +477,54 @@ public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
             }
         }
         return paths;
+    }
+
+    private String toPathTitle(List<Long> pathIds, Map<Long, NoteNode> nodeMap) {
+        if (CollectionUtils.isEmpty(pathIds) || nodeMap == null || nodeMap.isEmpty()) {
+            return "";
+        }
+        return pathIds.stream()
+                .map(nodeMap::get)
+                .filter(node -> node != null && node.getTitle() != null && !node.getTitle().isBlank())
+                .map(NoteNode::getTitle)
+                .collect(Collectors.joining(" / "));
+    }
+
+    private NoteTagDTO toTagDTO(NoteTag tag) {
+        NoteTagDTO dto = new NoteTagDTO();
+        dto.setId(tag.getId());
+        dto.setBizType(tag.getBizType());
+        dto.setLabel(tag.getLabel());
+        dto.setClassName(tag.getClassName());
+        return dto;
+    }
+
+    private String normalizeKeyword(String keyword) {
+        if (keyword == null) {
+            return null;
+        }
+        String trimmed = keyword.trim();
+        return trimmed.isEmpty() ? null : trimmed;
+    }
+
+    private String normalizeBizType(String bizType) {
+        String normalized = normalizeKeyword(bizType);
+        return normalized == null ? DEFAULT_TAG_BIZ_TYPE : normalized;
+    }
+
+    private int normalizeLimit(Integer limit) {
+        if (limit == null || limit <= 0) {
+            return DEFAULT_SEARCH_LIMIT;
+        }
+        return Math.min(limit, 100);
+    }
+
+    private int safeSort(Integer sort) {
+        return sort == null ? 0 : sort;
+    }
+
+    private long safeId(Long id) {
+        return id == null ? Long.MAX_VALUE : id;
     }
 
     private String toContentString(Object content) {

@@ -17,4 +17,8 @@ public interface INoteTagRepository extends BaseRepository<NoteTag> {
     Optional<NoteTag> findByBizTypeAndLabel(String bizType, String label);
 
     List<NoteTag> findByBizTypeAndLabelIn(String bizType, List<String> labels);
+
+    List<NoteTag> findByBizTypeOrderByLabelAsc(String bizType);
+
+    List<NoteTag> findByBizTypeAndLabelContainingIgnoreCaseOrderByLabelAsc(String bizType, String keyword);
 }
