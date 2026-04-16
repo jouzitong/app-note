@@ -53,3 +53,4 @@ tmp/
 !.codex/logs/
 !.codex/**/log*/
 *.zip
+application-local.yaml
