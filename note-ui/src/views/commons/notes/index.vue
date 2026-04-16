@@ -207,7 +207,8 @@ export default {
           this.paths = [];
           this.noteContent = null;
           this.childNodes = [];
-          this.errorMessage = "请通过 /language-jp/note/{id} 访问指定节点。";
+          this.errorMessage =
+            "请通过 /language-jp/materials/{id} 访问指定节点。";
           return;
         }
 
@@ -256,7 +257,7 @@ export default {
           return;
         }
         this.$router.push({
-          name: "word-card",
+          name: "language-jp-word-card",
           params: { parentId: String(parentId) },
           query: {
             nodeId: String(childNode.id),
@@ -267,7 +268,7 @@ export default {
         return;
       }
       this.$router.push({
-        name: "note",
+        name: "language-jp-materials",
         params: { id: String(childNode.id) },
       });
     },
@@ -285,7 +286,7 @@ export default {
         const parent = this.paths[this.paths.length - 2];
         if (parent && parent.id) {
           this.$router.push({
-            name: "note",
+            name: "language-jp-materials",
             params: { id: String(parent.id) },
           });
           return;
@@ -298,7 +299,7 @@ export default {
         return;
       }
       this.$router.push({
-        name: "note-edit",
+        name: "language-jp-materials-edit",
         params: { id: String(this.noteNode.id) },
       });
     },

@@ -80,7 +80,7 @@
 
 <script>
 import {
-  buildLanguageJpNotePath,
+  buildLanguageJpMaterialsPath,
   getLastLanguageJpNoteId,
 } from "@/utils/languageJpNav";
 
@@ -185,12 +185,12 @@ export default {
       this.navigateTo({ name: "note-home" });
     },
     openNoteModule() {
-      this.navigateTo(buildLanguageJpNotePath());
+      this.navigateTo(buildLanguageJpMaterialsPath());
     },
     openWordCardModule() {
       const noteId = getLastLanguageJpNoteId();
       this.navigateTo({
-        name: "word-card",
+        name: "language-jp-word-card",
         params: { parentId: String(noteId) },
         query: { nodeId: String(noteId), pageIndex: "1", wordIndex: "0" },
       });
@@ -198,7 +198,7 @@ export default {
     openArticleModule() {
       const noteId = getLastLanguageJpNoteId();
       this.navigateTo({
-        name: "article-reader",
+        name: "language-jp-article",
         params: { parentId: String(noteId) },
         query: { nodeId: String(noteId) },
       });

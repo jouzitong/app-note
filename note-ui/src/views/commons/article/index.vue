@@ -42,7 +42,7 @@ export default {
         return;
       }
       this.$router.push({
-        name: "note",
+        name: "language-jp-materials",
         params: { id: String(this.resolvedParentId) },
       });
     },

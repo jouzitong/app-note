@@ -42,7 +42,11 @@ export function getLastLanguageJpNoteId() {
   return normalized === null ? DEFAULT_NOTE_ID : normalized;
 }
 
-export function buildLanguageJpNotePath(noteId) {
+export function buildLanguageJpMaterialsPath(noteId) {
   const normalized = normalizeNoteId(noteId) || getLastLanguageJpNoteId();
-  return `/language-jp/note/${normalized}`;
+  return `/language-jp/materials/${normalized}`;
+}
+
+export function buildLanguageJpNotePath(noteId) {
+  return buildLanguageJpMaterialsPath(noteId);
 }

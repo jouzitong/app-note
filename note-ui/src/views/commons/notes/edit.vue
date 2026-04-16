@@ -241,7 +241,7 @@ export default {
       const id = this.resolveNoteId();
       if (id) {
         this.$router.push({
-          name: "note",
+          name: "language-jp-materials",
           params: { id: String(id) },
         });
         return;

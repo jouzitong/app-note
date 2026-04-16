@@ -1,16 +1,16 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import LanguageJpView from "../views/language-jp.vue";
-import LanguageJpHomeView from "../views/language-jp-home.vue";
+import LanguageJpView from "../views/modules/language-jp/layout.vue";
+import LanguageJpHomeView from "../views/modules/language-jp/home.vue";
 import LoginView from "../views/LoginView.vue";
-import NoteIndexView from "../views/notes/index.vue";
-import NoteEditView from "../views/notes/edit.vue";
+import NoteIndexView from "../views/commons/notes/index.vue";
+import NoteEditView from "../views/commons/notes/edit.vue";
 import WordCardView from "@/views/test/word-card.vue";
 import WordCardSpeechTestView from "@/views/test/word-card-speech.vue";
-import WordCardIndexView from "@/views/wordCard/index.vue";
-import ArticleReaderIndexView from "@/views/article/index.vue";
-import PracticeExamIndexView from "@/views/practice/index.vue";
+import WordCardIndexView from "@/views/commons/wordCard/index.vue";
+import ArticleReaderIndexView from "@/views/commons/article/index.vue";
+import PracticeExamIndexView from "@/views/commons/practice/index.vue";
 import { hasAuthToken } from "@/utils/auth";
 
 Vue.use(VueRouter);
@@ -28,32 +28,38 @@ const routes = [
     children: [
       {
         path: "",
-        name: "language-jp",
+        name: "language-jp-home",
         component: LanguageJpHomeView,
         meta: { public: true },
       },
       {
-        path: "note/:id?",
-        alias: ["/note/:id?"],
-        name: "note",
+        path: "materials/:id?",
+        alias: ["/language-jp/note/:id?", "/note/:id?"],
+        name: "language-jp-materials",
         component: NoteIndexView,
       },
       {
-        path: "note/:id/edit",
-        alias: ["/note/:id/edit"],
-        name: "note-edit",
+        path: "materials/:id/edit",
+        alias: ["/language-jp/note/:id/edit", "/note/:id/edit"],
+        name: "language-jp-materials-edit",
         component: NoteEditView,
       },
       {
-        path: "note/:parentId/article",
-        alias: ["/note/:parentId/article"],
-        name: "article-reader",
+        path: "article/:parentId",
+        alias: [
+          "/language-jp/note/:parentId/article",
+          "/note/:parentId/article",
+        ],
+        name: "language-jp-article",
         component: ArticleReaderIndexView,
       },
       {
-        path: "note/:parentId/practice",
-        alias: ["/note/:parentId/practice"],
-        name: "practice-exam",
+        path: "practice/:parentId",
+        alias: [
+          "/language-jp/note/:parentId/practice",
+          "/note/:parentId/practice",
+        ],
+        name: "language-jp-practice",
         component: PracticeExamIndexView,
       },
     ],
@@ -71,9 +77,13 @@ const routes = [
     meta: { public: true },
   },
   {
-    path: "/language-jp/note/:parentId/word",
-    alias: ["/note/:parentId/word", "/note/:parentId/word-card"],
-    name: "word-card",
+    path: "/language-jp/word-card/:parentId",
+    alias: [
+      "/language-jp/note/:parentId/word",
+      "/note/:parentId/word",
+      "/note/:parentId/word-card",
+    ],
+    name: "language-jp-word-card",
     component: WordCardIndexView,
   },
   {

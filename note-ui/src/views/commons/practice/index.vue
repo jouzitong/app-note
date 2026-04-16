@@ -378,7 +378,7 @@ export default {
       }
       saveLastLanguageJpPracticeNodeId(value);
       this.$router.replace({
-        name: "practice-exam",
+        name: "language-jp-practice",
         params: { parentId: String(this.parentId) },
         query: { nodeId: String(value) },
       });

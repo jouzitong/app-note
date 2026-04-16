@@ -104,7 +104,7 @@ export default {
   name: "NoteHomeView",
   methods: {
     goLanguageJp() {
-      this.$router.push({ name: "language-jp" });
+      this.$router.push({ name: "language-jp-home" });
     },
   },
 };

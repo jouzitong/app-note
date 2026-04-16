@@ -17,7 +17,7 @@
 <script>
 import BottomNav from "@/components/navigation/BottomNav.vue";
 import {
-  buildLanguageJpNotePath,
+  buildLanguageJpMaterialsPath,
   getLastLanguageJpNoteId,
 } from "@/utils/languageJpNav";
 import { getLastLanguageJpPracticeNodeId } from "@/utils/languageJpPracticeNav";
@@ -34,29 +34,29 @@ export default {
           key: "home",
           label: "首页",
           icon: "⌂",
-          to: { name: "language-jp" },
-          matchNames: ["language-jp"],
+          to: { name: "language-jp-home" },
+          matchNames: ["language-jp-home"],
         },
         {
           key: "exam",
           label: "考试",
           icon: "✎",
           action: "openPracticeModule",
-          matchNames: ["practice-exam"],
+          matchNames: ["language-jp-practice"],
         },
         {
           key: "course",
           label: "资料",
           icon: "▦",
           action: "openNoteModule",
-          matchNames: ["note", "note-edit"],
+          matchNames: ["language-jp-materials", "language-jp-materials-edit"],
         },
         {
           key: "plan",
           label: "计划",
           icon: "◷",
           action: "openWordCardModule",
-          matchNames: ["word-card"],
+          matchNames: ["language-jp-word-card"],
         },
         {
           key: "mine",
@@ -101,12 +101,12 @@ export default {
       this.$router.push(target);
     },
     openNoteModule() {
-      this.navigateTo(buildLanguageJpNotePath());
+      this.navigateTo(buildLanguageJpMaterialsPath());
     },
     openWordCardModule() {
       const noteId = getLastLanguageJpNoteId();
       this.navigateTo({
-        name: "word-card",
+        name: "language-jp-word-card",
         params: { parentId: String(noteId) },
         query: { nodeId: String(noteId), pageIndex: "1", wordIndex: "0" },
       });
@@ -114,7 +114,7 @@ export default {
     openArticleModule() {
       const noteId = getLastLanguageJpNoteId();
       this.navigateTo({
-        name: "article-reader",
+        name: "language-jp-article",
         params: { parentId: String(noteId) },
         query: { nodeId: String(noteId) },
       });
@@ -123,7 +123,7 @@ export default {
       const parentId = getLastLanguageJpNoteId();
       const nodeId = getLastLanguageJpPracticeNodeId(parentId);
       this.navigateTo({
-        name: "practice-exam",
+        name: "language-jp-practice",
         params: { parentId: String(parentId) },
         query: { nodeId: String(nodeId) },
       });

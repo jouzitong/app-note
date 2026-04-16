@@ -73,7 +73,7 @@ export default {
       }
       const pageIndex = Math.floor(nextIndex / this.pageSize) + 1;
       this.$router.replace({
-        name: "word-card",
+        name: "language-jp-word-card",
         params: { parentId: String(this.resolvedParentId) },
         query: {
           nodeId: String(this.resolvedNodeId),
@@ -90,12 +90,12 @@ export default {
       }
 
       if (this.resolvedParentId === null) {
-        this.$router.push({ name: "language-jp" });
+        this.$router.push({ name: "language-jp-home" });
         return;
       }
 
       this.$router.push({
-        name: "note",
+        name: "language-jp-materials",
         params: { id: String(this.resolvedParentId) },
       });
     },
