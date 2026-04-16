@@ -26,19 +26,20 @@
           </div>
         </div>
 
-        <div class="meta-icons">
-          <span class="meta-chip"
-            ><span class="chip-icon">#</span>{{ noteIdLabel }}</span
+        <div class="meta-row">
+          <div class="meta-icons">
+            <span class="meta-chip"
+              ><span class="chip-icon">T</span>{{ noteNode.noteType }}</span
+            >
+          </div>
+          <span
+            v-for="tag in noteTags"
+            :key="`${tag.id || tag.label}-${tag.className}`"
+            class="app-tag"
+            :class="tag.className"
           >
-          <span class="meta-chip"
-            ><span class="chip-icon">T</span>{{ noteNode.noteType }}</span
-          >
-          <span class="meta-chip"
-            ><span class="chip-icon">S</span>{{ noteNode.meta.subject }}</span
-          >
-          <span class="meta-chip"
-            ><span class="chip-icon">↕</span>{{ noteNode.sort }}</span
-          >
+            {{ tag.label }}
+          </span>
         </div>
         <div v-if="loading" class="note-status">正在加载节点数据...</div>
         <div v-else-if="errorMessage" class="note-status error">
@@ -96,7 +97,6 @@ import { getNoteNodeById } from "@/api/noteNodes";
 import { saveLastLanguageJpNoteId } from "@/utils/languageJpNav";
 import {
   createDefaultNoteNode,
-  createMockNoteNode,
   normalizeNoteNode,
 } from "@/model/note/noteNode";
 
@@ -113,69 +113,35 @@ export default {
     };
   },
   computed: {
-    noteIdLabel() {
-      if (!this.noteNode.id) {
-        return "--";
+    noteTags() {
+      const tags = this.noteNode?.meta?.tags;
+      if (!Array.isArray(tags)) {
+        return [];
       }
-      return `NN-${this.noteNode.id}`;
-    },
-    tagText() {
-      return (this.noteNode.meta.tags || [])
-        .map((item) => item.name)
-        .join(" / ");
+      return tags
+        .map((item) => {
+          const label =
+            typeof item?.label === "string"
+              ? item.label.trim()
+              : typeof item?.name === "string"
+              ? item.name.trim()
+              : "";
+          if (!label) {
+            return null;
+          }
+          return {
+            id: item?.id || null,
+            label,
+            className: item?.className || "app-tag--info",
+          };
+        })
+        .filter(Boolean);
     },
     breadcrumbText() {
       return this.paths
         .map((item) => item.title)
         .filter(Boolean)
         .join(" / ");
-    },
-    contentData() {
-      const fallback = createMockNoteNode();
-      const fallbackContent = JSON.parse(fallback.content);
-
-      const rawContent = this.noteContent ?? this.noteNode.content;
-      if (rawContent && typeof rawContent === "object") {
-        if (
-          Array.isArray(rawContent.paragraphs) ||
-          Array.isArray(rawContent.bullets)
-        ) {
-          return {
-            paragraphs: rawContent.paragraphs || fallbackContent.paragraphs,
-            bullets: rawContent.bullets || fallbackContent.bullets,
-          };
-        }
-
-        if (typeof rawContent.desc === "string" && rawContent.desc.trim()) {
-          return {
-            paragraphs: [
-              rawContent.desc,
-              "该内容由 Domain 接口返回对象渲染。",
-              "你可以将 content 扩展为 paragraphs/bullets 结构实现更丰富展示。",
-            ],
-            bullets: [],
-          };
-        }
-
-        return {
-          paragraphs: [
-            JSON.stringify(rawContent, null, 2),
-            "该内容由 Domain 接口返回对象渲染。",
-            "你可以将 content 扩展为 paragraphs/bullets 结构实现更丰富展示。",
-          ],
-          bullets: [],
-        };
-      }
-
-      try {
-        const parsed = JSON.parse(rawContent || "{}");
-        return {
-          paragraphs: parsed.paragraphs || fallbackContent.paragraphs,
-          bullets: parsed.bullets || fallbackContent.bullets,
-        };
-      } catch (error) {
-        return fallbackContent;
-      }
     },
   },
   async created() {
@@ -228,17 +194,11 @@ export default {
           }))
           .filter((item) => item.id && item.title);
       } catch (error) {
-        const mock = createMockNoteNode();
-        this.noteNode = normalizeNoteNode(mock);
+        this.noteNode = createDefaultNoteNode();
         this.paths = [];
-        this.noteContent = mock.content;
-        this.childNodes = [
-          { id: 1, title: "これは私の本です", sort: 1, noteType: 1 },
-          { id: 2, title: "それは先生の本です", sort: 2, noteType: 2 },
-          { id: 3, title: "あれは日本語の本です", sort: 3, noteType: 1 },
-          { id: 4, title: "疑问词练习", sort: 4, noteType: 1 },
-        ];
-        this.errorMessage = `接口请求失败，已使用示例数据：${error.message}`;
+        this.noteContent = null;
+        this.childNodes = [];
+        this.errorMessage = `接口请求失败：${error.message}`;
       } finally {
         this.loading = false;
       }
@@ -409,6 +369,14 @@ export default {
   gap: 8px;
   flex-wrap: wrap;
   margin-top: 4px;
+}
+
+.meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 6px;
 }
 
 .meta-chip {
