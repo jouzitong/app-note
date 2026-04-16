@@ -49,7 +49,11 @@ export default {
           label: "资料",
           icon: "▦",
           action: "openNoteModule",
-          matchNames: ["language-jp-materials", "language-jp-materials-edit"],
+          matchNames: [
+            "language-jp-materials",
+            "language-jp-materials-new",
+            "language-jp-materials-edit",
+          ],
         },
         {
           key: "plan",

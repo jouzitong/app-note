@@ -1,127 +1,315 @@
 <template>
-  <div class="note-edit-page">
-    <div class="page">
-      <div class="edit-header card">
-        <div class="header-top">
+  <div class="mobile-page">
+    <main class="content-scroll">
+      <section class="card">
+        <div class="header-row">
+          <h1 class="title">{{ pageTitle }}</h1>
           <button
-            class="icon-btn"
-            title="返回详情"
-            aria-label="返回详情"
+            type="button"
+            class="back-btn"
+            title="返回"
+            aria-label="返回"
             @click="goBack"
           >
             ↩
           </button>
-          <h1 class="title">编辑笔记节点</h1>
-          <button class="save-btn" type="button" @click="handleSave">
-            保存（暂未接入）
-          </button>
         </div>
-        <div v-if="loading" class="status">正在加载节点数据...</div>
-        <div v-else-if="errorMessage" class="status error">
+        <p class="sub">{{ pageSubTitle }}</p>
+        <p v-if="loading" class="status">正在加载节点数据...</p>
+        <p v-else-if="errorMessage" class="status status-error">
           {{ errorMessage }}
-        </div>
-      </div>
+        </p>
+      </section>
 
-      <div class="card">
+      <section class="card">
         <div class="form-grid">
           <label class="field">
-            <span class="label">父节点ID</span>
-            <input v-model="form.parentId" type="number" disabled />
+            <span class="label">节点名称</span>
+            <input
+              v-model.trim="form.title"
+              class="input"
+              type="text"
+              maxlength="30"
+              placeholder="请输入节点名称"
+            />
+            <span class="hint">必填，最大 30 字符</span>
           </label>
+
           <label class="field">
-            <span class="label">标题</span>
-            <input v-model="form.title" type="text" />
+            <span class="label">选择父节点（可选）</span>
+            <div class="search-combobox" ref="parentCombobox">
+              <input
+                v-model.trim="parentKeyword"
+                class="input"
+                type="text"
+                placeholder="搜索父节点"
+                autocomplete="off"
+                @focus="handleParentFocus"
+                @input="handleParentInput"
+                @keydown.enter.prevent="handleParentEnter"
+              />
+              <ul class="search-dropdown" :class="{ show: showParentDropdown }">
+                <li>
+                  <button
+                    type="button"
+                    class="search-option"
+                    @click="clearParentNode"
+                  >
+                    不设置父节点
+                  </button>
+                </li>
+                <li v-for="item in parentOptions" :key="item.id">
+                  <button
+                    type="button"
+                    class="search-option"
+                    @click="selectParentNode(item)"
+                  >
+                    {{ item.title }}
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <span class="hint">可留空；新增完成后默认返回父节点详情。</span>
           </label>
+
           <label class="field">
-            <span class="label">类型 noteType</span>
-            <select v-model="form.noteType">
-              <option disabled value="">请选择类型</option>
-              <option
-                v-for="item in noteTypeOptions"
-                :key="item.value"
-                :value="item.value"
+            <span class="label">标签</span>
+            <div class="tag-editor">
+              <div class="tag-list">
+                <span
+                  v-for="(tag, index) in form.tags"
+                  :key="`${tag.label}-${index}`"
+                  class="tag-chip app-tag"
+                  :class="tag.className || FALLBACK_TAG_CLASS_NAME"
+                >
+                  {{ tag.label }}
+                  <button
+                    type="button"
+                    class="tag-remove"
+                    aria-label="删除标签"
+                    @click.stop="removeTag(index)"
+                  >
+                    ×
+                  </button>
+                </span>
+                <span v-if="!form.tags.length" class="hint">暂无标签</span>
+              </div>
+
+              <div class="tag-input-row">
+                <div class="tag-combobox" ref="tagCombobox">
+                  <input
+                    v-model.trim="tagKeyword"
+                    class="input"
+                    type="text"
+                    placeholder="搜索标签"
+                    autocomplete="off"
+                    @focus="handleTagFocus"
+                    @input="handleTagInput"
+                    @keydown.enter.prevent="handleTagEnter"
+                  />
+                  <ul class="tag-dropdown" :class="{ show: showTagDropdown }">
+                    <li v-for="item in tagOptions" :key="item.id || item.label">
+                      <button
+                        type="button"
+                        class="tag-option"
+                        @click="selectTagOption(item)"
+                      >
+                        <span
+                          class="app-tag"
+                          :class="item.className || FALLBACK_TAG_CLASS_NAME"
+                        >
+                          {{ item.label }}
+                        </span>
+                      </button>
+                    </li>
+                    <li v-if="canCreateTagFromKeyword">
+                      <button
+                        type="button"
+                        class="tag-option"
+                        @click="openCreateTagModal"
+                      >
+                        新增标签：{{ normalizedTagKeyword }}
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <span class="hint"
+              >先搜索；无结果时可新增，新增时必须选择标签样式。</span
+            >
+          </label>
+
+          <div class="inline-row">
+            <label class="field">
+              <span class="label">类型</span>
+              <select
+                v-model.number="form.noteTypeCode"
+                class="select"
+                :disabled="!isCreateMode"
               >
-                {{ item.label }}
-              </option>
-            </select>
-          </label>
+                <option disabled :value="null">请选择类型</option>
+                <option
+                  v-for="item in noteTypeOptions"
+                  :key="item.code"
+                  :value="item.code"
+                >
+                  {{ item.label }}
+                </option>
+              </select>
+              <span v-if="!isCreateMode" class="hint"
+                >编辑模式不允许修改类型</span
+              >
+            </label>
+
+            <label class="field">
+              <span class="label">顺序</span>
+              <input
+                v-model.number="form.sort"
+                class="input"
+                type="number"
+                min="0"
+                step="1"
+                placeholder="100"
+              />
+              <span class="hint">默认 100</span>
+            </label>
+          </div>
+
           <label class="field">
-            <span class="label">排序 sort</span>
-            <input v-model.number="form.sort" type="number" />
-          </label>
-          <label class="field">
-            <span class="label">图标 icon</span>
-            <input v-model="form.icon" type="text" />
-          </label>
-          <label class="field">
-            <span class="label">标签（逗号分隔）</span>
-            <input v-model="form.tagsText" type="text" />
+            <span class="label">内容（可选，JSON 或文本）</span>
+            <textarea
+              v-model="form.contentText"
+              class="input textarea"
+              rows="6"
+              placeholder="可留空"
+            />
           </label>
         </div>
+      </section>
+    </main>
 
-        <label class="field block">
-          <span class="label">内容 content（JSON）</span>
-          <textarea v-model="form.contentText" rows="12"></textarea>
-        </label>
+    <div class="editor-actions-fixed">
+      <div class="action-row">
+        <button type="button" class="btn secondary" @click="goBack">
+          取消
+        </button>
+        <button
+          type="button"
+          class="btn primary"
+          :disabled="loading || saving"
+          @click="handleSave"
+        >
+          {{ saving ? "保存中..." : "保存" }}
+        </button>
+      </div>
+    </div>
+
+    <div
+      v-if="showTagCreateModal"
+      class="tag-modal-mask"
+      role="dialog"
+      aria-modal="true"
+      @click.self="closeTagCreateModal"
+    >
+      <div class="tag-modal">
+        <div class="tag-modal-header">
+          <h3 class="tag-modal-title">新增标签样式选择</h3>
+          <button
+            type="button"
+            class="tag-modal-close"
+            aria-label="关闭"
+            @click="closeTagCreateModal"
+          >
+            ×
+          </button>
+        </div>
+        <div class="tag-modal-content">
+          <div class="tag-modal-preview">
+            <span>实时预览：</span>
+            <span class="app-tag" :class="pendingNewTagClassName">
+              {{ pendingNewTagLabel }}
+            </span>
+          </div>
+          <div class="tag-style-grid">
+            <button
+              v-for="preset in TAG_STYLE_PRESETS"
+              :key="preset.className"
+              type="button"
+              class="tag-style-item"
+              :class="{
+                active: pendingNewTagClassName === preset.className,
+              }"
+              @click="pendingNewTagClassName = preset.className"
+            >
+              <span class="app-tag" :class="preset.className">
+                {{ preset.label }}
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="tag-modal-actions">
+          <button
+            type="button"
+            class="btn secondary"
+            @click="closeTagCreateModal"
+          >
+            取消
+          </button>
+          <button
+            type="button"
+            class="btn primary"
+            :disabled="saving"
+            @click="confirmCreateTag"
+          >
+            确认新增
+          </button>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { getNoteNodeById } from "@/api/noteNodes";
 import {
-  createDefaultNoteNode,
-  normalizeNoteNode,
-} from "@/model/note/noteNode";
+  createNoteNode,
+  createNoteTag,
+  getNoteNodeById,
+  searchNoteTags,
+  searchParentNoteNodes,
+  updateNoteNode,
+} from "@/api/noteNodes";
+import {
+  DEFAULT_TAG_CLASS_NAME,
+  TAG_STYLE_PRESETS,
+} from "@/constants/tagStylePresets";
 
-const DEFAULT_NOTE_TYPE_OPTIONS = [
-  { value: 1, label: "MARKDOWN (1) - Markdown" },
-  { value: 2, label: "WORD_CARD (2) - Word Card" },
-  { value: 3, label: "SENTENCE (3) - Sentence" },
-  { value: 4, label: "QUESTIONS (4) - Questions" },
-];
+const NOTE_TYPE_CODE_TO_KEY = Object.freeze({
+  0: "EMPTY",
+  1: "MARKDOWN",
+  2: "WORD_CARD",
+  3: "SENTENCE",
+  4: "ARTICLE",
+  100: "QUESTIONS",
+});
 
-function normalizeEnumOption(item) {
-  if (item == null || typeof item !== "object") {
-    return null;
-  }
+const NOTE_TYPE_FALLBACK_OPTIONS = Object.freeze([
+  { code: 1, enumKey: "MARKDOWN", label: "Markdown (1)" },
+  { code: 2, enumKey: "WORD_CARD", label: "Word Card (2)" },
+  { code: 3, enumKey: "SENTENCE", label: "Sentence (3)" },
+  { code: 4, enumKey: "ARTICLE", label: "Article (4)" },
+  { code: 100, enumKey: "QUESTIONS", label: "Questions (100)" },
+]);
 
-  const value = [item.code, item.value, item.id, item.key].find(
-    (it) => it !== undefined && it !== null && it !== ""
-  );
+function parsePositiveInt(value) {
   if (value === undefined || value === null || value === "") {
     return null;
   }
-
-  const codeText = item.code ?? value;
-  const nameText = item.name || item.label || item.text || item.key || "";
-  const descText = item.desc || item.description || "";
-  const label = descText
-    ? `${nameText} (${codeText}) - ${descText}`
-    : `${nameText} (${codeText})`;
-
-  return {
-    value: Number.isNaN(Number(value)) ? value : Number(value),
-    label,
-  };
-}
-
-function resolveNoteTypeOptions(enums) {
-  if (!enums || typeof enums !== "object") {
-    return DEFAULT_NOTE_TYPE_OPTIONS;
+  const parsed = Number(value);
+  if (!Number.isInteger(parsed) || parsed <= 0) {
+    return null;
   }
-
-  const candidates = [
-    enums.noteType,
-    enums.NOTE_TYPE,
-    enums.NoteType,
-    enums.noteTypes,
-    enums.NOTE_TYPES,
-  ];
-  const source = candidates.find((item) => Array.isArray(item)) || [];
-  const options = source.map(normalizeEnumOption).filter(Boolean);
-  return options.length ? options : DEFAULT_NOTE_TYPE_OPTIONS;
+  return parsed;
 }
 
 function toContentText(content) {
@@ -138,164 +326,627 @@ function toContentText(content) {
   }
 }
 
+function parseContent(value) {
+  const text = String(value || "").trim();
+  if (!text) {
+    return null;
+  }
+  try {
+    return JSON.parse(text);
+  } catch (error) {
+    return text;
+  }
+}
+
 export default {
   name: "NoteEditView",
   data() {
     return {
+      TAG_STYLE_PRESETS,
+      FALLBACK_TAG_CLASS_NAME: "app-tag--info",
       loading: false,
+      saving: false,
       errorMessage: "",
       form: {
-        id: "",
-        parentId: "",
+        id: null,
+        parentId: null,
         title: "",
-        noteType: "",
-        sort: 0,
-        icon: "",
-        tagsText: "",
+        noteTypeCode: null,
+        sort: 100,
         contentText: "",
+        icon: "",
+        subject: "",
+        tags: [],
       },
+      parentKeyword: "",
+      parentOptions: [],
+      showParentDropdown: false,
+      parentSearchSeq: 0,
+      tagKeyword: "",
+      tagOptions: [],
+      showTagDropdown: false,
+      tagSearchSeq: 0,
+      showTagCreateModal: false,
+      pendingNewTagLabel: "",
+      pendingNewTagClassName: DEFAULT_TAG_CLASS_NAME,
     };
   },
   computed: {
+    isCreateMode() {
+      return this.$route.name === "language-jp-materials-new";
+    },
+    pageTitle() {
+      return this.isCreateMode ? "节点新增" : "节点编辑";
+    },
+    pageSubTitle() {
+      return this.isCreateMode
+        ? "统一用于节点新增。保存后返回父节点详情。"
+        : "统一用于节点编辑。编辑模式不允许修改节点类型。";
+    },
+    routeNodeId() {
+      return parsePositiveInt(this.$route.params.id);
+    },
+    routeParentId() {
+      return parsePositiveInt(this.$route.query.parentId);
+    },
+    normalizedTagKeyword() {
+      return String(this.tagKeyword || "").trim();
+    },
     noteTypeOptions() {
-      return resolveNoteTypeOptions(this.$store.getters.globalEnums);
+      const source = this.$store.getters.enumByKey("noteType");
+      if (!Array.isArray(source) || !source.length) {
+        return NOTE_TYPE_FALLBACK_OPTIONS;
+      }
+
+      const options = source
+        .map((item) => {
+          if (!item || typeof item !== "object") {
+            return null;
+          }
+          const codeRaw = [item.code, item.value, item.id].find(
+            (x) => x !== undefined && x !== null && x !== ""
+          );
+          const code = Number(codeRaw);
+          if (!Number.isInteger(code)) {
+            return null;
+          }
+
+          const enumKey =
+            item.key ||
+            item.enumKey ||
+            item.enumName ||
+            NOTE_TYPE_CODE_TO_KEY[code] ||
+            "";
+          const name = item.name || item.label || enumKey || `Type-${code}`;
+          const desc = item.desc || item.description || "";
+          const label = desc
+            ? `${name} (${code}) - ${desc}`
+            : `${name} (${code})`;
+
+          return {
+            code,
+            enumKey,
+            label,
+          };
+        })
+        .filter(Boolean)
+        .filter(
+          (item, index, arr) =>
+            arr.findIndex((v) => v.code === item.code) === index
+        );
+
+      return options.length ? options : NOTE_TYPE_FALLBACK_OPTIONS;
+    },
+    canCreateTagFromKeyword() {
+      if (!this.normalizedTagKeyword) {
+        return false;
+      }
+      const normalized = this.normalizedTagKeyword.toLowerCase();
+      const existsInSelected = this.form.tags.some(
+        (item) =>
+          String(item.label || "")
+            .trim()
+            .toLowerCase() === normalized
+      );
+      if (existsInSelected) {
+        return false;
+      }
+      const existsInSearch = this.tagOptions.some(
+        (item) =>
+          String(item.label || "")
+            .trim()
+            .toLowerCase() === normalized
+      );
+      return !existsInSearch;
     },
   },
   async created() {
-    try {
-      await this.$store.dispatch("fetchGlobalEnums");
-    } catch (error) {
-      // 枚举加载失败时使用本地兜底，不影响详情加载。
-      console.warn("[NoteEditView] fetchGlobalEnums failed:", error);
-    }
-    await this.loadDetail();
+    await this.loadPageData();
+  },
+  mounted() {
+    document.addEventListener("click", this.handleGlobalClick);
+  },
+  beforeDestroy() {
+    document.removeEventListener("click", this.handleGlobalClick);
   },
   watch: {
     "$route.fullPath"() {
-      this.loadDetail();
+      this.loadPageData();
     },
   },
   methods: {
-    resolveNoteId() {
-      const routeId = this.$route.params.id || this.$route.query.id;
-      const parsed = Number(routeId);
-      return Number.isNaN(parsed) ? null : parsed;
-    },
-    normalizeNoteTypeValue(noteType) {
-      if (typeof noteType === "number") {
-        return noteType;
-      }
-      if (typeof noteType === "string") {
-        const asNumber = Number(noteType);
-        if (!Number.isNaN(asNumber)) {
-          return asNumber;
-        }
-        const map = {
-          MARKDOWN: 1,
-          WORD_CARD: 2,
-          SENTENCE: 3,
-          QUESTIONS: 4,
-        };
-        if (Object.prototype.hasOwnProperty.call(map, noteType)) {
-          return map[noteType];
-        }
-      }
-      return "";
-    },
-    async loadDetail() {
+    async loadPageData() {
       this.loading = true;
       this.errorMessage = "";
       try {
-        const id = this.resolveNoteId();
-        if (!id) {
-          this.errorMessage = "缺少节点ID，无法进入编辑页。";
-          return;
+        await this.$store.dispatch("fetchGlobalEnums");
+        if (this.isCreateMode) {
+          await this.loadCreateMode();
+        } else {
+          await this.loadEditMode();
         }
-        const vo = await getNoteNodeById(id);
-        const noteNode = normalizeNoteNode(
-          vo?.noteNode || createDefaultNoteNode()
-        );
-        const content = vo?.content ?? noteNode.content;
-        this.form = {
-          id: noteNode.id || "",
-          parentId: noteNode.parentId ?? "",
-          title: noteNode.title || "",
-          noteType: this.normalizeNoteTypeValue(noteNode.noteType),
-          sort: Number(noteNode.sort || 0),
-          icon: noteNode.meta.icon || "",
-          tagsText: (noteNode.meta.tags || [])
-            .map((item) => item.name)
-            .join(", "),
-          contentText: toContentText(content),
-        };
       } catch (error) {
         this.errorMessage = `加载失败：${error.message}`;
       } finally {
         this.loading = false;
       }
     },
-    handleSave() {
-      this.errorMessage = "提交逻辑暂未实现。";
+    resetForm() {
+      this.form = {
+        id: null,
+        parentId: null,
+        title: "",
+        noteTypeCode: this.resolveDefaultNoteTypeCode(),
+        sort: 100,
+        contentText: "",
+        icon: "",
+        subject: "",
+        tags: [],
+      };
+      this.parentKeyword = "";
+      this.parentOptions = [];
+      this.showParentDropdown = false;
+      this.tagKeyword = "";
+      this.tagOptions = [];
+      this.showTagDropdown = false;
+      this.showTagCreateModal = false;
+      this.pendingNewTagLabel = "";
+      this.pendingNewTagClassName = DEFAULT_TAG_CLASS_NAME;
     },
-    goBack() {
-      const id = this.resolveNoteId();
-      if (id) {
+    async loadCreateMode() {
+      this.resetForm();
+      const parentId = this.routeParentId;
+      this.form.parentId = parentId;
+      if (parentId) {
+        await this.loadParentDisplay(parentId);
+      }
+    },
+    async loadEditMode() {
+      this.resetForm();
+      const id = this.routeNodeId;
+      if (!id) {
+        this.errorMessage = "缺少节点ID，无法进入编辑页。";
+        return;
+      }
+
+      const detail = await getNoteNodeById(id);
+      const noteNode = detail?.noteNode || {};
+      const noteTypeCode = this.resolveNoteTypeCode(noteNode.noteType);
+
+      this.form.id = id;
+      this.form.parentId = parsePositiveInt(noteNode.parentId);
+      this.form.title = noteNode.title || "";
+      this.form.noteTypeCode =
+        noteTypeCode ?? this.resolveDefaultNoteTypeCode();
+      this.form.sort = Number.isFinite(Number(noteNode.sort))
+        ? Number(noteNode.sort)
+        : 100;
+      this.form.icon = noteNode?.meta?.icon || "";
+      this.form.subject = noteNode?.meta?.subject || "";
+      this.form.tags = this.normalizeTags(noteNode?.meta?.tags || []);
+      this.form.contentText = toContentText(detail?.content);
+
+      if (this.form.parentId) {
+        await this.loadParentDisplay(this.form.parentId);
+      }
+    },
+    async loadParentDisplay(parentId) {
+      try {
+        const parentDetail = await getNoteNodeById(parentId);
+        const pathText = (parentDetail?.paths || [])
+          .map((item) => item.title)
+          .filter(Boolean)
+          .join(" / ");
+        this.parentKeyword =
+          pathText || parentDetail?.noteNode?.title || `节点 ${parentId}`;
+      } catch (error) {
+        this.parentKeyword = `节点 ${parentId}`;
+      }
+    },
+    normalizeTags(tags) {
+      if (!Array.isArray(tags)) {
+        return [];
+      }
+      return tags
+        .map((item) => {
+          const label =
+            typeof item?.label === "string"
+              ? item.label.trim()
+              : typeof item?.name === "string"
+              ? item.name.trim()
+              : "";
+          if (!label) {
+            return null;
+          }
+          return {
+            id: item?.id || null,
+            bizType: item?.bizType || "NOTE",
+            label,
+            className: item?.className || this.FALLBACK_TAG_CLASS_NAME,
+          };
+        })
+        .filter(Boolean);
+    },
+    resolveDefaultNoteTypeCode() {
+      const markdown = this.noteTypeOptions.find((item) => item.code === 1);
+      if (markdown) {
+        return markdown.code;
+      }
+      return this.noteTypeOptions[0]?.code ?? null;
+    },
+    resolveNoteTypeCode(noteType) {
+      if (Number.isInteger(Number(noteType))) {
+        return Number(noteType);
+      }
+      if (typeof noteType === "string" && noteType.trim()) {
+        const normalized = noteType.trim().toUpperCase();
+        const found = this.noteTypeOptions.find(
+          (item) => item.enumKey && item.enumKey.toUpperCase() === normalized
+        );
+        if (found) {
+          return found.code;
+        }
+      }
+      return null;
+    },
+    resolveNoteTypeKey(code) {
+      const found = this.noteTypeOptions.find(
+        (item) => item.code === Number(code)
+      );
+      if (found?.enumKey) {
+        return found.enumKey;
+      }
+      return NOTE_TYPE_CODE_TO_KEY[Number(code)] || "";
+    },
+    async handleParentFocus() {
+      await this.searchParentOptions(this.parentKeyword);
+      this.showParentDropdown = true;
+    },
+    async handleParentInput() {
+      this.form.parentId = null;
+      await this.searchParentOptions(this.parentKeyword);
+      this.showParentDropdown = true;
+    },
+    async handleParentEnter() {
+      if (this.parentOptions.length) {
+        this.selectParentNode(this.parentOptions[0]);
+      }
+    },
+    async searchParentOptions(keyword) {
+      const seq = ++this.parentSearchSeq;
+      const list = await searchParentNoteNodes({
+        keyword: String(keyword || "").trim(),
+        excludeId: this.isCreateMode ? null : this.form.id,
+        limit: 20,
+      });
+      if (seq !== this.parentSearchSeq) {
+        return;
+      }
+      this.parentOptions = Array.isArray(list)
+        ? list.map((item) => ({
+            id: item.id,
+            title: item.title || `节点 ${item.id}`,
+          }))
+        : [];
+    },
+    selectParentNode(item) {
+      if (!item || !item.id) {
+        return;
+      }
+      this.form.parentId = Number(item.id);
+      this.parentKeyword = item.title;
+      this.showParentDropdown = false;
+    },
+    clearParentNode() {
+      this.form.parentId = null;
+      this.parentKeyword = "";
+      this.showParentDropdown = false;
+    },
+    async handleTagFocus() {
+      await this.searchTagOptions(this.tagKeyword);
+      this.showTagDropdown = true;
+    },
+    async handleTagInput() {
+      await this.searchTagOptions(this.tagKeyword);
+      this.showTagDropdown = true;
+    },
+    async handleTagEnter() {
+      if (this.tagOptions.length) {
+        this.selectTagOption(this.tagOptions[0]);
+        return;
+      }
+      if (this.canCreateTagFromKeyword) {
+        this.openCreateTagModal();
+      }
+    },
+    async searchTagOptions(keyword) {
+      const seq = ++this.tagSearchSeq;
+      const list = await searchNoteTags({
+        keyword: String(keyword || "").trim(),
+        limit: 20,
+      });
+      if (seq !== this.tagSearchSeq) {
+        return;
+      }
+
+      const selectedLabels = new Set(
+        this.form.tags.map((item) => item.label.toLowerCase())
+      );
+
+      this.tagOptions = (Array.isArray(list) ? list : [])
+        .map((item) => {
+          const label = String(item?.label || "").trim();
+          if (!label) {
+            return null;
+          }
+          return {
+            id: item?.id || null,
+            bizType: item?.bizType || "NOTE",
+            label,
+            className: item?.className || this.FALLBACK_TAG_CLASS_NAME,
+          };
+        })
+        .filter(Boolean)
+        .filter((item) => !selectedLabels.has(item.label.toLowerCase()));
+    },
+    selectTagOption(item) {
+      if (!item || !item.label) {
+        return;
+      }
+      const exists = this.form.tags.some(
+        (tag) => tag.label.toLowerCase() === item.label.toLowerCase()
+      );
+      if (exists) {
+        return;
+      }
+      this.form.tags.push({
+        id: item.id || null,
+        bizType: item.bizType || "NOTE",
+        label: item.label,
+        className: item.className || this.FALLBACK_TAG_CLASS_NAME,
+      });
+      this.tagKeyword = "";
+      this.showTagDropdown = false;
+    },
+    openCreateTagModal() {
+      if (!this.canCreateTagFromKeyword) {
+        return;
+      }
+      this.pendingNewTagLabel = this.normalizedTagKeyword;
+      this.pendingNewTagClassName = DEFAULT_TAG_CLASS_NAME;
+      this.showTagCreateModal = true;
+      this.showTagDropdown = false;
+    },
+    closeTagCreateModal() {
+      this.showTagCreateModal = false;
+      this.pendingNewTagLabel = "";
+      this.pendingNewTagClassName = DEFAULT_TAG_CLASS_NAME;
+    },
+    async confirmCreateTag() {
+      const label = String(this.pendingNewTagLabel || "").trim();
+      if (!label) {
+        this.errorMessage = "标签名称不能为空。";
+        return;
+      }
+      this.errorMessage = "";
+      const created = await createNoteTag({
+        label,
+        className: this.pendingNewTagClassName || DEFAULT_TAG_CLASS_NAME,
+      });
+      this.selectTagOption({
+        id: created?.id || null,
+        bizType: created?.bizType || "NOTE",
+        label: created?.label || label,
+        className:
+          created?.className ||
+          this.pendingNewTagClassName ||
+          DEFAULT_TAG_CLASS_NAME,
+      });
+      this.closeTagCreateModal();
+    },
+    removeTag(index) {
+      this.form.tags.splice(index, 1);
+    },
+    validateForm() {
+      const title = String(this.form.title || "").trim();
+      if (!title) {
+        return "标题必填。";
+      }
+      if (title.length > 30) {
+        return "标题长度不能超过 30 字符。";
+      }
+      if (!Number.isInteger(Number(this.form.sort))) {
+        return "顺序必须是整数。";
+      }
+      if (Number(this.form.sort) < 0) {
+        return "顺序不能小于 0。";
+      }
+      if (this.form.noteTypeCode == null) {
+        return "请选择节点类型。";
+      }
+      const noteTypeKey = this.resolveNoteTypeKey(this.form.noteTypeCode);
+      if (!noteTypeKey) {
+        return "节点类型无效，请刷新后重试。";
+      }
+      return "";
+    },
+    buildPayload() {
+      const noteType = this.resolveNoteTypeKey(this.form.noteTypeCode);
+      return {
+        noteNode: {
+          parentId: this.form.parentId,
+          title: String(this.form.title || "").trim(),
+          noteType,
+          sort: Number(this.form.sort),
+          meta: {
+            icon: this.form.icon || "",
+            subject: this.form.subject || "",
+            tags: this.form.tags.map((item) => ({
+              id: item.id || undefined,
+              bizType: "NOTE",
+              label: item.label,
+              className: item.className || this.FALLBACK_TAG_CLASS_NAME,
+            })),
+          },
+        },
+        content: parseContent(this.form.contentText),
+      };
+    },
+    async handleSave() {
+      const validationError = this.validateForm();
+      if (validationError) {
+        this.errorMessage = validationError;
+        return;
+      }
+
+      this.saving = true;
+      this.errorMessage = "";
+      try {
+        const payload = this.buildPayload();
+        if (this.isCreateMode) {
+          await createNoteNode(payload);
+          this.$store.dispatch("showToast", {
+            type: "info",
+            message: "新增成功",
+          });
+          if (this.form.parentId) {
+            this.$router.push({
+              name: "language-jp-materials",
+              params: { id: String(this.form.parentId) },
+            });
+          } else {
+            this.$router.push({ name: "language-jp-home" });
+          }
+          return;
+        }
+
+        await updateNoteNode(this.form.id, payload);
+        this.$store.dispatch("showToast", {
+          type: "info",
+          message: "保存成功",
+        });
         this.$router.push({
           name: "language-jp-materials",
-          params: { id: String(id) },
+          params: { id: String(this.form.id) },
+        });
+      } catch (error) {
+        this.errorMessage = error?.message || "保存失败，请稍后重试。";
+      } finally {
+        this.saving = false;
+      }
+    },
+    goBack() {
+      if (this.isCreateMode) {
+        if (this.form.parentId) {
+          this.$router.push({
+            name: "language-jp-materials",
+            params: { id: String(this.form.parentId) },
+          });
+          return;
+        }
+        this.$router.push({ name: "language-jp-home" });
+        return;
+      }
+
+      if (this.form.id) {
+        this.$router.push({
+          name: "language-jp-materials",
+          params: { id: String(this.form.id) },
         });
         return;
       }
       this.$router.back();
+    },
+    handleGlobalClick(event) {
+      const parentBox = this.$refs.parentCombobox;
+      if (parentBox && !parentBox.contains(event.target)) {
+        this.showParentDropdown = false;
+      }
+      const tagBox = this.$refs.tagCombobox;
+      if (tagBox && !tagBox.contains(event.target)) {
+        this.showTagDropdown = false;
+      }
     },
   },
 };
 </script>
 
 <style scoped>
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --brand: #1d4ed8;
+}
+
 * {
   box-sizing: border-box;
 }
 
-.note-edit-page {
-  min-height: 100vh;
-  background: #f5f7fb;
-  color: #1f2937;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
-    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+.mobile-page {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  background: var(--bg);
 }
 
-.page {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px 16px 40px;
+.content-scroll {
+  min-height: calc(100dvh - 56px - env(safe-area-inset-bottom));
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: calc(14px + env(safe-area-inset-top)) 12px
+    calc(132px + env(safe-area-inset-bottom));
 }
 
 .card {
-  background: #ffffff;
+  background: var(--card);
+  border: 1px solid #edf2f7;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
-  padding: 20px;
-  margin-bottom: 16px;
+  padding: 16px;
+  margin-bottom: 12px;
 }
 
-.header-top {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 12px;
+.header-row {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
 }
 
 .title {
   margin: 0;
-  text-align: center;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 700;
   color: #111827;
 }
 
-.icon-btn {
-  width: 38px;
-  height: 38px;
+.back-btn {
+  width: 34px;
+  height: 34px;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   background: #f8fafc;
@@ -303,80 +954,330 @@ export default {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.save-btn {
-  height: 38px;
-  border: 1px solid #2563eb;
-  border-radius: 10px;
-  background: #2563eb;
-  color: #fff;
-  padding: 0 12px;
-  font-size: 14px;
-  cursor: pointer;
+.sub {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
 }
 
 .status {
-  margin-top: 12px;
-  font-size: 13px;
-  color: #6b7280;
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: #334155;
 }
 
-.status.error {
+.status-error {
   color: #b91c1c;
 }
 
 .form-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px 16px;
+  gap: 12px;
 }
 
 .field {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 6px;
-}
-
-.field.block {
-  margin-top: 16px;
 }
 
 .label {
   font-size: 13px;
-  color: #4b5563;
+  font-weight: 600;
+  color: #374151;
 }
 
-input,
-select,
-textarea {
+.input,
+.select {
   width: 100%;
-  border: 1px solid #d1d5db;
+  border: 1px solid #dbe1ea;
   border-radius: 10px;
-  padding: 10px 12px;
-  font-size: 14px;
-  color: #111827;
   background: #fff;
+  color: #111827;
+  font-size: 14px;
+  padding: 10px 12px;
+  outline: none;
 }
 
-textarea {
+.input:focus,
+.select:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+.input:disabled,
+.select:disabled {
+  background: #f8fafc;
+  color: #64748b;
+}
+
+.textarea {
   resize: vertical;
-  min-height: 220px;
+  min-height: 96px;
 }
 
-@media (max-width: 680px) {
-  .form-grid {
+.hint {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.45;
+}
+
+.inline-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.search-combobox,
+.tag-combobox {
+  position: relative;
+}
+
+.search-dropdown,
+.tag-dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 4px);
+  z-index: 20;
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  border: 1px solid #dbe1ea;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  max-height: 180px;
+  overflow-y: auto;
+  display: none;
+}
+
+.search-dropdown.show,
+.tag-dropdown.show {
+  display: block;
+}
+
+.search-option,
+.tag-option {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  font-size: 13px;
+  color: #334155;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-option:hover,
+.tag-option:hover {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.tag-editor {
+  display: grid;
+  gap: 8px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 24px;
+}
+
+.tag-chip {
+  gap: 6px;
+}
+
+.tag-remove {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #64748b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+  padding: 0;
+}
+
+.tag-remove:hover {
+  background: rgba(148, 163, 184, 0.24);
+}
+
+.tag-input-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.editor-actions-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: calc(56px + env(safe-area-inset-bottom));
+  z-index: 1001;
+  padding: 8px 12px;
+  background: rgba(245, 247, 251, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+.action-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.btn {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn.secondary {
+  background: #f8fafc;
+  border-color: #dbe1ea;
+  color: #334155;
+}
+
+.btn.primary {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #fff;
+}
+
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.tag-modal-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.tag-modal {
+  width: min(520px, 100%);
+  max-height: min(80vh, 700px);
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.2);
+}
+
+.tag-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 14px 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tag-modal-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.tag-modal-close {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tag-modal-content {
+  padding: 12px 14px;
+}
+
+.tag-modal-preview {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.tag-style-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.tag-style-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.tag-style-item.active {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.12);
+}
+
+.tag-modal-actions {
+  padding: 10px 14px 14px;
+  border-top: 1px solid #e5e7eb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 420px) {
+  .inline-row,
+  .tag-style-grid {
     grid-template-columns: 1fr;
   }
+}
 
-  .header-top {
-    grid-template-columns: auto 1fr;
+@media (min-width: 768px) {
+  .mobile-page {
+    max-width: 430px;
+    margin: 0 auto;
+    border-left: 1px solid #e5e7eb;
+    border-right: 1px solid #e5e7eb;
   }
 
-  .save-btn {
-    grid-column: 1 / -1;
+  .editor-actions-fixed {
+    max-width: 430px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 </style>

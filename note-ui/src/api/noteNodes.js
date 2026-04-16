@@ -67,24 +67,18 @@ export async function getNoteNodeById(id) {
 }
 
 export async function createNoteNode(payload) {
+  const body = normalizeNoteNodeAddPayload(payload);
   return requestJson(BASE_PATH, {
     method: "POST",
-    json: {
-      noteNode: payload.noteNode || payload,
-      pathIds: payload.pathIds || null,
-      content: payload.content || null,
-    },
+    json: body,
   });
 }
 
 export async function updateNoteNode(id, payload) {
+  const body = normalizeNoteNodeAddPayload(payload);
   return requestJson(`${BASE_PATH}/${id}`, {
     method: "PUT",
-    json: {
-      noteNode: payload.noteNode || payload,
-      pathIds: payload.pathIds || null,
-      content: payload.content || null,
-    },
+    json: body,
   });
 }
 
@@ -143,8 +137,22 @@ export async function createNoteTag(payload) {
     bizType: NOTE_TAG_BIZ_TYPE,
     ...(payload || {}),
   };
-  return requestJson(`${BASE_PATH}/tags`, {
+  const res = await requestJson(`${BASE_PATH}/tags`, {
     method: "POST",
     json: body,
   });
+  return unwrap(res);
+}
+
+function normalizeNoteNodeAddPayload(payload) {
+  const source = payload && typeof payload === "object" ? payload : {};
+  const rawNoteNode = source.noteNode || source;
+  const noteNode =
+    rawNoteNode && rawNoteNode.noteNode ? rawNoteNode.noteNode : rawNoteNode;
+
+  return {
+    noteNode: noteNode || null,
+    pathIds: source.pathIds ?? null,
+    content: source.content ?? null,
+  };
 }

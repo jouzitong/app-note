@@ -273,10 +273,24 @@ export default {
       });
     },
     handleAddChild() {
-      window.alert("新增功能暂未实现。");
+      const parentId =
+        this.noteNode && this.noteNode.id
+          ? this.noteNode.id
+          : this.resolveNoteId();
+      this.$router.push({
+        name: "language-jp-materials-new",
+        query: parentId ? { parentId: String(parentId) } : {},
+      });
     },
-    handleEditChild() {
-      window.alert("子节点编辑功能暂未实现。");
+    handleEditChild(childNode) {
+      if (!childNode || !childNode.id) {
+        this.errorMessage = "缺少子节点ID，无法进入编辑页。";
+        return;
+      }
+      this.$router.push({
+        name: "language-jp-materials-edit",
+        params: { id: String(childNode.id) },
+      });
     },
     handleDeleteChild() {
       window.alert("子节点删除功能暂未实现。");

@@ -11,8 +11,10 @@ import org.zzt.note.data.core.convert.NoteNodeConvert;
 import org.zzt.note.data.core.dto.NoteNodeAddDTO;
 import org.zzt.note.data.core.entity.NoteNode;
 import org.zzt.note.data.core.entity.NoteNodeContent;
+import org.zzt.note.data.core.entity.NoteNodeMeta;
 import org.zzt.note.data.core.entity.NoteTag;
 import org.zzt.note.data.core.entity.dto.NoteNodeDTO;
+import org.zzt.note.data.core.entity.dto.NoteNodeMetaDTO;
 import org.zzt.note.data.core.entity.dto.NoteTagDTO;
 import org.zzt.note.data.core.repository.INoteNodeContentRepository;
 import org.zzt.note.data.core.repository.INoteNodeRepository;
@@ -102,6 +104,7 @@ public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
 
         // 3) 先保存节点主表（note_node）
         NoteNode noteNode = noteNodeConvert.toEntity(noteNodeDTO);
+        normalizeMetaTags(noteNode);
         NoteNode saved = noteNodeRepository.save(noteNode);
 
         // 4) 基于 parentId 计算当前节点 pathIds 并回写
@@ -135,7 +138,11 @@ public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
         if (noteNodeAdd.getPathIds() != null) {
             dto.setPathIds(noteNodeAdd.getPathIds());
         }
+        NoteNodeMetaDTO incomingMeta = dto.getMeta();
+        dto.setMeta(null);
         noteNodeConvert.updateEntityFromDto(dto, existingNode);
+        applyMetaFromDto(existingNode, incomingMeta);
+        normalizeMetaTags(existingNode);
         noteNodeRepository.save(existingNode);
 
         // 3) 内容表做 upsert/清空
@@ -488,6 +495,110 @@ public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
                 .filter(node -> node != null && node.getTitle() != null && !node.getTitle().isBlank())
                 .map(NoteNode::getTitle)
                 .collect(Collectors.joining(" / "));
+    }
+
+    /**
+     * update 场景下手动合并 meta，避免 DTO 映射直接改写 NoteNodeMeta 主键。
+     */
+    private void applyMetaFromDto(NoteNode node, NoteNodeMetaDTO metaDTO) {
+        if (node == null) {
+            return;
+        }
+        if (metaDTO == null) {
+            node.setMeta(null);
+            return;
+        }
+
+        NoteNodeMeta meta = node.getMeta();
+        if (meta == null) {
+            meta = new NoteNodeMeta();
+            node.setMeta(meta);
+        }
+
+        meta.setIcon(metaDTO.getIcon());
+        meta.setSubject(metaDTO.getSubject());
+        if (CollectionUtils.isEmpty(metaDTO.getTags())) {
+            meta.setTags(new ArrayList<>());
+            return;
+        }
+
+        List<NoteTag> tags = metaDTO.getTags().stream()
+                .map(dto -> {
+                    NoteTag tag = new NoteTag();
+                    tag.setId(dto.getId());
+                    tag.setBizType(dto.getBizType());
+                    tag.setLabel(dto.getLabel());
+                    tag.setClassName(dto.getClassName());
+                    return tag;
+                })
+                .collect(Collectors.toList());
+        meta.setTags(tags);
+    }
+
+    /**
+     * 将 meta.tags 归一化为受管实体，避免仅有 id 的脱管 Tag 触发 JPA persist 异常。
+     */
+    private void normalizeMetaTags(NoteNode node) {
+        if (node == null || node.getMeta() == null) {
+            return;
+        }
+        List<NoteTag> incomingTags = node.getMeta().getTags();
+        if (CollectionUtils.isEmpty(incomingTags)) {
+            node.getMeta().setTags(new ArrayList<>());
+            return;
+        }
+
+        List<NoteTag> managedTags = new ArrayList<>();
+        Set<String> dedupeKeys = new HashSet<>();
+        for (NoteTag tag : incomingTags) {
+            NoteTag managed = resolveManagedTag(tag);
+            if (managed == null) {
+                continue;
+            }
+            String dedupeKey = managed.getId() != null
+                    ? "ID:" + managed.getId()
+                    : "K:" + normalizeBizType(managed.getBizType()) + ":" + normalizeKeyword(managed.getLabel());
+            if (!dedupeKeys.add(dedupeKey)) {
+                continue;
+            }
+            managedTags.add(managed);
+        }
+        node.getMeta().setTags(managedTags);
+    }
+
+    private NoteTag resolveManagedTag(NoteTag tag) {
+        if (tag == null) {
+            return null;
+        }
+        String incomingClassName = normalizeKeyword(tag.getClassName());
+        if (tag.getId() != null) {
+            NoteTag persisted = noteTagRepository.findById(tag.getId())
+                    .orElseThrow(() -> new IllegalArgumentException("NoteTag not found, id=" + tag.getId()));
+            if (incomingClassName != null && !incomingClassName.equals(persisted.getClassName())) {
+                persisted.setClassName(incomingClassName);
+                noteTagRepository.save(persisted);
+            }
+            return persisted;
+        }
+
+        String label = normalizeKeyword(tag.getLabel());
+        if (label == null) {
+            return null;
+        }
+        String bizType = normalizeBizType(tag.getBizType());
+        NoteTag persisted = noteTagRepository.findByBizTypeAndLabel(bizType, label)
+                .orElseGet(() -> {
+                    NoteTag created = new NoteTag();
+                    created.setBizType(bizType);
+                    created.setLabel(label);
+                    created.setClassName(incomingClassName);
+                    return noteTagRepository.save(created);
+                });
+        if (incomingClassName != null && !incomingClassName.equals(persisted.getClassName())) {
+            persisted.setClassName(incomingClassName);
+            noteTagRepository.save(persisted);
+        }
+        return persisted;
     }
 
     private NoteTagDTO toTagDTO(NoteTag tag) {

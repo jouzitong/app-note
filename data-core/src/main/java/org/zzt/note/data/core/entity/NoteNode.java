@@ -4,8 +4,6 @@ import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Convert;
 import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.Index;
 import jakarta.persistence.OneToOne;
@@ -17,6 +15,7 @@ import lombok.Setter;
 import lombok.ToString;
 import org.athena.framework.data.jpa.domain.LogicalDeleteEntity;
 import org.zzt.note.data.core.entity.converter.NoteNodePathIdsJsonConverter;
+import org.zzt.note.data.core.entity.converter.NoteTypeNameConverter;
 import org.zzt.note.data.core.type.NoteType;
 
 import java.util.ArrayList;
@@ -68,7 +67,7 @@ public class NoteNode extends LogicalDeleteEntity {
      * 笔记模板类型（核心字段）
      */
     @Column(name = "note_type", length = 50)
-    @Enumerated(EnumType.STRING)
+    @Convert(converter = NoteTypeNameConverter.class)
     private NoteType noteType;
 
     /**

@@ -33,6 +33,12 @@ const routes = [
         meta: { public: true },
       },
       {
+        path: "materials/new",
+        alias: ["/language-jp/note/new", "/note/new"],
+        name: "language-jp-materials-new",
+        component: NoteEditView,
+      },
+      {
         path: "materials/:id?",
         alias: ["/language-jp/note/:id?", "/note/:id?"],
         name: "language-jp-materials",
