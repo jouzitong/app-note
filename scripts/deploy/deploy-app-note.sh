@@ -9,6 +9,8 @@ BOOT_DIR="$SRC_ROOT/boot"
 CONFIG_SRC_ROOT="${CONFIG_SRC_ROOT:-$SRC_ROOT/config}"
 BIN_SRC_DEFAULT="$BOOT_DIR/target/app-note"
 BIN_DEST="$DEST_ROOT/app-note"
+APP_CTL_SRC_DEFAULT="$SRC_ROOT/bin/app"
+APP_CTL_DEST="$DEST_ROOT/bin/app"
 
 DRY_RUN=0
 NO_BACKUP=0
@@ -117,6 +119,12 @@ if [ ! -x "$BIN_SRC" ]; then
   exit 1
 fi
 
+APP_CTL_SRC="${APP_CTL_SRC:-$APP_CTL_SRC_DEFAULT}"
+if [ ! -f "$APP_CTL_SRC" ]; then
+  echo "[err] app control script not found: $APP_CTL_SRC" >&2
+  exit 1
+fi
+
 APP_YAML_SRC=""
 if APP_YAML_SRC=$(first_existing \
   "$CONFIG_SRC_ROOT/application.yaml" \
@@ -151,6 +159,11 @@ run "cp -f \"$BIN_SRC\" \"$TMP_BIN\""
 run "chmod 755 \"$TMP_BIN\""
 run "mv -f \"$TMP_BIN\" \"$BIN_DEST\""
 log "[ok] installed binary: $BIN_DEST"
+
+backup_if_exists "$APP_CTL_DEST"
+run "cp -f \"$APP_CTL_SRC\" \"$APP_CTL_DEST\""
+run "chmod 755 \"$APP_CTL_DEST\""
+log "[ok] installed app ctl: $APP_CTL_DEST"
 
 backup_if_exists "$DEST_ROOT/config/application.yaml"
 run "cp -f \"$APP_YAML_SRC\" \"$DEST_ROOT/config/application.yaml\""
