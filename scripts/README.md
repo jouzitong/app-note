@@ -6,11 +6,13 @@
 
 ### 1.1 后端构建与部署
 
-1. `build-native-centos7.sh`
-- 构建 `boot` 模块 native 可执行文件（`boot/target/app-note`）。
-2. `deploy-app-note.sh`
+1. `build-native-linux.sh`
+- Linux 通用 native 构建脚本，可选 `--target-glibc` 做兼容校验（默认不限制目标版本）。
+2. `build-native-centos7.sh`
+- 兼容旧入口，内部转发到 `build-native-linux.sh --target-glibc 2.17`。
+3. `deploy-app-note.sh`
 - 部署 native 产物和配置到目标目录（默认 `/home/app/app-note`）。
-3. `deploy-app-noe.sh`
+4. `deploy-app-noe.sh`
 - 兼容旧入口，内部转发到 `deploy-app-note.sh`。
 
 ### 1.2 后端运行管理
@@ -46,7 +48,7 @@
 
 ```bash
 # 后端 native 构建 + 部署 + 启动
-scripts/build-native-centos7.sh --profile pro
+scripts/build-native-linux.sh --profile pro
 scripts/deploy-app-note.sh --env pro
 scripts/backend-start.sh --env pro
 
@@ -56,6 +58,31 @@ scripts/deploy-note-ui-nginx.sh
 
 # 联动发布
 scripts/release-all.sh --env pro
+```
+
+### 2.1 构建后直接启动（前台）
+
+```bash
+# 构建完成后直接前台启动
+scripts/build-native-linux.sh --profile dev --run
+scripts/build-native-linux.sh --profile test --run
+scripts/build-native-linux.sh --profile pro --run
+```
+
+### 2.2 后台启动（deploy + start 脚本）
+
+`backend-start.sh` 支持 `dev|test|pro`，默认 `pro`。
+
+```bash
+# 先部署，再后台启动
+scripts/deploy-app-note.sh --env dev
+scripts/backend-start.sh --env dev
+
+scripts/deploy-app-note.sh --env test
+scripts/backend-start.sh --env test
+
+scripts/deploy-app-note.sh --env pro
+scripts/backend-start.sh --env pro
 ```
 
 ## 3. 环境变量模板

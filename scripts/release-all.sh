@@ -44,7 +44,7 @@ case "$ENV_NAME" in
 esac
 
 if [ "$SKIP_BACKEND" -eq 0 ]; then
-  "$SCRIPT_DIR/build-native-centos7.sh" --profile "$ENV_NAME"
+  "$SCRIPT_DIR/build-native-linux.sh" --profile "$ENV_NAME"
   "$SCRIPT_DIR/deploy-app-note.sh" --env "$ENV_NAME"
   "$SCRIPT_DIR/backend-restart.sh" --env "$ENV_NAME"
   "$SCRIPT_DIR/backend-status.sh"

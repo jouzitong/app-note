@@ -11,7 +11,7 @@
 1. 构建 native：
 
 ```bash
-scripts/build-native-centos7.sh --profile pro
+scripts/build-native-linux.sh --profile pro
 ```
 
 2. 部署后端产物与配置：
