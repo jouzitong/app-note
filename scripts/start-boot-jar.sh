@@ -68,4 +68,6 @@ fi
 echo "[run] jar: $jar_path"
 echo "[run] env: $ENV_NAME"
 
-exec java -jar "$jar_path" --spring.profiles.active="$ENV_NAME"
+exec java -jar "$jar_path" \
+  --spring.profiles.active="$ENV_NAME" \
+  --spring.config.additional-location="file:$(pwd)/config/"

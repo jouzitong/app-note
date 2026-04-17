@@ -54,3 +54,5 @@ tmp/
 !.codex/**/log*/
 *.zip
 application-local.yaml
+
+deploy/versions/**

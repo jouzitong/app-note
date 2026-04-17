@@ -6,6 +6,7 @@ DEST_ROOT="${DEST_ROOT:-/home/app/app-note}"
 DEFAULT_ENV="${DEFAULT_ENV:-pro}"
 
 BOOT_DIR="$SRC_ROOT/boot"
+CONFIG_SRC_ROOT="${CONFIG_SRC_ROOT:-$SRC_ROOT/config}"
 BIN_SRC_DEFAULT="$BOOT_DIR/target/app-note"
 BIN_DEST="$DEST_ROOT/app-note"
 
@@ -20,6 +21,7 @@ Usage: $(basename "$0") [--env dev|test|pro] [--dry-run] [--no-backup]
 
 Environment:
   SRC_ROOT      Source repo root (default: $SRC_ROOT)
+  CONFIG_SRC_ROOT Config source dir (default: $CONFIG_SRC_ROOT)
   DEST_ROOT     Deploy root (default: $DEST_ROOT)
   NATIVE_BIN    Source native binary (default: $BIN_SRC_DEFAULT)
 
@@ -117,31 +119,27 @@ fi
 
 APP_YAML_SRC=""
 if APP_YAML_SRC=$(first_existing \
-  "$BOOT_DIR/src/main/resources/application.yaml" \
-  "$BOOT_DIR/src/main/resources/application.yml" \
-  "$BOOT_DIR/target/classes/application.yaml" \
-  "$BOOT_DIR/target/classes/application.yml" \
+  "$CONFIG_SRC_ROOT/application.yaml" \
+  "$CONFIG_SRC_ROOT/application.yml" \
 ); then
   :
 else
-  echo "[err] application.yaml/application.yml not found under $BOOT_DIR" >&2
+  echo "[err] application.yaml/application.yml not found under $CONFIG_SRC_ROOT" >&2
   exit 1
 fi
 
 ENV_YAML_SRC=""
 if ENV_YAML_SRC=$(first_existing \
-  "$BOOT_DIR/src/main/resources/application-${ENV_NAME}.yaml" \
-  "$BOOT_DIR/target/classes/application-${ENV_NAME}.yaml" \
+  "$CONFIG_SRC_ROOT/application-${ENV_NAME}.yaml" \
 ); then
   :
 else
-  echo "[err] application-${ENV_NAME}.yaml not found under $BOOT_DIR" >&2
+  echo "[err] application-${ENV_NAME}.yaml not found under $CONFIG_SRC_ROOT" >&2
   exit 1
 fi
 
 ATHENA_YAML_SRC="$(first_existing \
-  "$BOOT_DIR/src/main/resources/application-athena.yaml" \
-  "$BOOT_DIR/target/classes/application-athena.yaml" \
+  "$CONFIG_SRC_ROOT/application-athena.yaml" \
   || true
 )"
 

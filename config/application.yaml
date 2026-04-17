@@ -5,7 +5,7 @@ server:
 spring:
   config:
     import:
-      - optional:classpath:application-athena.yaml
+      - optional:application-athena.yaml
   profiles:
     default: dev
     group:
