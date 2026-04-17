@@ -23,7 +23,7 @@ scripts/deploy-app-note.sh --env pro
 3. 启停管理：
 
 ```bash
-bin/app start --env pro
+bin/app start --no-tail
 bin/app stop
 bin/app status
 bin/app log

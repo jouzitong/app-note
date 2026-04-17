@@ -50,7 +50,7 @@
 # 后端 native 构建 + 部署 + 启动
 scripts/builder/build-native-linux.sh --profile pro
 scripts/deploy/deploy-app-note.sh --env pro
-bin/app start --env pro
+bin/app start --no-tail
 
 # 前端构建 + nginx 发布
 scripts/builder/build-note-ui-prod.sh
@@ -87,18 +87,14 @@ scripts/builder/build-native-linux.sh --profile pro --run
 
 ### 2.3 后台启动（deploy + start 脚本）
 
-`bin/app start` 支持 `dev|test|pro`，默认 `pro`。
+`bin/app start` 固定 `pro` 环境启动；默认启动后自动 tail 应用日志，可用 `--no-tail` 关闭。
 
 ```bash
-# 先部署，再后台启动
-scripts/deploy/deploy-app-note.sh --env dev
-bin/app start --env dev
-
-scripts/deploy/deploy-app-note.sh --env test
-bin/app start --env test
-
 scripts/deploy/deploy-app-note.sh --env pro
-bin/app start --env pro
+bin/app start
+
+# 不自动进入日志跟踪
+bin/app start --no-tail
 ```
 
 ## 3. 环境变量模板

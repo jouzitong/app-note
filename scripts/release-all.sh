@@ -67,7 +67,7 @@ if [ "$SKIP_BACKEND" -eq 0 ]; then
   "$SCRIPT_DIR/builder/build-native-linux.sh" --profile "$ENV_NAME"
   "$SCRIPT_DIR/deploy/deploy-app-note.sh" --env "$ENV_NAME"
   "$APP_CMD" stop || true
-  "$APP_CMD" start --env "$ENV_NAME"
+  "$APP_CMD" start --no-tail
   "$APP_CMD" status
 fi
 

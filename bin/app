@@ -7,7 +7,7 @@ PID_FILE="${PID_FILE:-$APP_ROOT/bin/app-note.pid}"
 LOG_DIR="${LOG_DIR:-$APP_ROOT/logs}"
 CONSOLE_LOG_FILE="${CONSOLE_LOG_FILE:-$LOG_DIR/app-note-console.log}"
 APP_LOG_FILE="${APP_LOG_FILE:-$LOG_DIR/app-note.log}"
-ENV_NAME="${ENV_NAME:-pro}"
+ENV_NAME="pro"
 WAIT_SECONDS="${WAIT_SECONDS:-20}"
 
 usage() {
@@ -16,7 +16,7 @@ Usage:
   bin/app <command> [options]
 
 Commands:
-  start    Start app-note
+  start    Start app-note (pro only)
   stop     Stop app-note
   status   Show app-note status
   log      Tail logs
@@ -28,15 +28,15 @@ Global env defaults:
   LOG_DIR=$APP_ROOT/logs
   CONSOLE_LOG_FILE=$LOG_DIR/app-note-console.log
   APP_LOG_FILE=$LOG_DIR/app-note.log
-  ENV_NAME=pro
   WAIT_SECONDS=20
 
 Examples:
-  bin/app start --env pro
+  bin/app start
+  bin/app start --no-tail
   bin/app stop
   bin/app status
   bin/app log --lines 200
-  bin/app log --app --no-follow
+  bin/app log --console --no-follow
 USAGE
 }
 
@@ -61,50 +61,45 @@ is_running_pid() {
   kill -0 "$pid" >/dev/null 2>&1
 }
 
-validate_env_name() {
-  local env_name="$1"
-  case "$env_name" in
-    dev|test|pro) ;;
-    *)
-      echo "[err] unsupported env: $env_name (allowed: dev|test|pro)" >&2
-      exit 2
-      ;;
-  esac
-}
-
 start_app() {
-  local env_name="$ENV_NAME"
-  declare -a extra_args=()
+  local show_tail=1
+  local tail_lines="${LINES:-200}"
 
   while [ "$#" -gt 0 ]; do
     case "$1" in
-      --env)
+      --no-tail)
+        show_tail=0
+        shift
+        ;;
+      --tail-lines)
         if [ "$#" -lt 2 ]; then
-          echo "[err] --env requires a value" >&2
+          echo "[err] --tail-lines requires a value" >&2
           exit 2
         fi
-        env_name="$2"
+        tail_lines="$2"
         shift 2
-        ;;
-      --)
-        shift
-        extra_args=("$@")
-        break
         ;;
       -h|--help)
         cat <<'USAGE'
-Usage: bin/app start [--env dev|test|pro] [-- <extra-args>]
+Usage: bin/app start [--no-tail] [--tail-lines N]
 USAGE
         exit 0
         ;;
+      --|--*)
+        echo "[err] unsupported start option: $1" >&2
+        exit 2
+        ;;
       *)
-        echo "[err] unknown arg for start: $1" >&2
+        echo "[err] start does not accept positional args: $1" >&2
         exit 2
         ;;
     esac
   done
 
-  validate_env_name "$env_name"
+  if ! [[ "$tail_lines" =~ ^[0-9]+$ ]] || [ "$tail_lines" -le 0 ]; then
+    echo "[err] --tail-lines must be a positive integer" >&2
+    exit 2
+  fi
 
   if [ ! -x "$APP_BIN" ]; then
     echo "[err] binary not executable: $APP_BIN" >&2
@@ -124,20 +119,27 @@ USAGE
 
   cmd=(
     "$APP_BIN"
-    "--spring.profiles.active=$env_name"
+    "--spring.profiles.active=$ENV_NAME"
     "--spring.config.additional-location=file:$APP_ROOT/config/"
     "--logging.file.name=$APP_LOG_FILE"
   )
-  if ((${#extra_args[@]} > 0)); then
-    cmd+=("${extra_args[@]}")
-  fi
 
   echo "[run] ${cmd[*]}"
+  echo "[run] env: $ENV_NAME"
   echo "[run] console log: $CONSOLE_LOG_FILE"
   echo "[run] app log: $APP_LOG_FILE"
   nohup "${cmd[@]}" >> "$CONSOLE_LOG_FILE" 2>&1 &
   echo $! > "$PID_FILE"
   echo "[ok] started pid=$(cat "$PID_FILE")"
+
+  if [ "$show_tail" -eq 0 ]; then
+    echo "[hint] view app log: tail -n $tail_lines -f $APP_LOG_FILE"
+    return 0
+  fi
+
+  touch "$APP_LOG_FILE"
+  echo "[log] following app log: $APP_LOG_FILE"
+  exec tail -n "$tail_lines" -f "$APP_LOG_FILE"
 }
 
 stop_app() {
@@ -202,6 +204,7 @@ status_app() {
 
   if is_running_pid "$pid"; then
     echo "running (pid=$pid)"
+    echo "profile=$ENV_NAME"
     echo "console_log=$CONSOLE_LOG_FILE"
     echo "app_log=$APP_LOG_FILE"
     return 0
@@ -214,7 +217,7 @@ status_app() {
 log_app() {
   local lines="${LINES:-200}"
   local follow=1
-  local log_target="console"
+  local log_target="app"
   while [ "$#" -gt 0 ]; do
     case "$1" in
       --lines)
@@ -250,9 +253,9 @@ USAGE
     esac
   done
 
-  local log_file="$CONSOLE_LOG_FILE"
-  if [ "$log_target" = "app" ]; then
-    log_file="$APP_LOG_FILE"
+  local log_file="$APP_LOG_FILE"
+  if [ "$log_target" = "console" ]; then
+    log_file="$CONSOLE_LOG_FILE"
   fi
 
   if [ ! -f "$log_file" ]; then
