@@ -23,8 +23,11 @@ fi
 cd "$NOTE_UI_DIR"
 
 if [[ ! -d "node_modules" ]]; then
-  echo "[build] node_modules not found, running npm install..."
-  npm install
+  echo "[build] node_modules not found, running npm ci..."
+  npm ci
+else
+  echo "[build] running npm ci to ensure lockfile-consistent deps..."
+  npm ci
 fi
 
 echo "[build] npm run build"

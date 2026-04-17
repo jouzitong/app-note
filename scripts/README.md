@@ -1,133 +1,67 @@
 # Scripts 说明
 
-本目录存放项目常用构建脚本。
+本目录存放项目构建、部署、启动脚本。当前优先支持 MVP 生产部署链路。
 
-## 1. 脚本列表
+## 1. 核心脚本
 
-- `build-native-centos7.sh`：构建后端 Spring Boot Native Image（默认 `pro` 环境），可选构建后直接启动。
-- `build-note-ui-prod.sh`：构建前端 `note-ui` 产物并打包为 zip。
-- `start-boot-jar.sh`：启动 `boot` 模块打包后的 JVM jar，要求显式传入 `-env dev|test|pro`。
+### 1.1 后端构建与部署
 
-## 2. build-native-centos7.sh
+1. `build-native-centos7.sh`
+- 构建 `boot` 模块 native 可执行文件（`boot/target/app-note`）。
+2. `deploy-app-note.sh`
+- 部署 native 产物和配置到目标目录（默认 `/home/app/app-note`）。
+3. `deploy-app-noe.sh`
+- 兼容旧入口，内部转发到 `deploy-app-note.sh`。
 
-### 2.1 用途
+### 1.2 后端运行管理
 
-用于在支持 GraalVM Native Image 的环境中执行：
+1. `backend-start.sh`
+2. `backend-stop.sh`
+3. `backend-restart.sh`
+4. `backend-status.sh`
+5. `backend-log.sh`
 
-- `boot` 模块 native 打包（`mvn -pl boot -am -Pnative -DskipTests package`）
-- 默认按 `pro` 配置参与 AOT/native 构建
-- 可选构建后直接运行二进制
+默认目录结构：
+1. `bin/`
+2. `config/`
+3. `logs/`
+4. `app-note`（可执行文件）
+5. `meta/`（版本信息）
+6. `bak/`（备份）
 
-### 2.2 依赖
+### 1.3 前端构建与部署
 
-- `java`（建议 GraalVM JDK 17）
-- `native-image`
-- `mvn`
-- `rpm`（用于打印 `glibc` 版本，非强依赖，失败不影响构建）
+1. `build-note-ui-prod.sh`
+- 构建 `note-ui` 并打包 zip（构建依赖安装改为 `npm ci`）。
+2. `deploy-note-ui-nginx.sh`
+- 将 `note-ui/dist` 部署到 nginx 静态目录（默认 `/usr/share/nginx/html/app-note`），并 reload nginx。
 
-### 2.3 用法
+### 1.4 联动发布
 
-```bash
-scripts/build-native-centos7.sh [options] [maven-args...]
-```
+1. `release-all.sh`
+- 串行执行后端构建部署 + 前端构建部署 + 可选健康检查。
+- 当前版本失败即中断，不做自动回滚。
 
-#### 参数
-
-- `--profile <name>`：指定 Spring profile（默认 `pro`）
-- `--run`：构建完成后直接启动 native 可执行文件
-- `--help`：查看帮助
-- `--`：后续参数透传给运行阶段（仅在 `--run` 时生效）
-
-#### 环境变量
-
-- `SPRING_PROFILES_ACTIVE`：未传 `--profile` 时使用，默认 `pro`
-- `SPRING_CONFIG_LOCATION`：构建和运行时传入 `spring.config.location`
-- `SPRING_CONFIG_ADDITIONAL_LOCATION`：构建和运行时传入 `spring.config.additional-location`
-- `NATIVE_BIN`：`--run` 时指定可执行文件路径，默认 `boot/target/app-note`
-
-### 2.4 示例
+## 2. 常用命令
 
 ```bash
-# 默认 pro 构建
-scripts/build-native-centos7.sh
+# 后端 native 构建 + 部署 + 启动
+scripts/build-native-centos7.sh --profile pro
+scripts/deploy-app-note.sh --env pro
+scripts/backend-start.sh --env pro
 
-# 按 dev 配置构建
-scripts/build-native-centos7.sh --profile dev
-
-# 追加 Maven 参数
-scripts/build-native-centos7.sh -DskipTests=false
-
-# 指定附加配置目录并构建后启动
-SPRING_CONFIG_ADDITIONAL_LOCATION=./config/ \
-  scripts/build-native-centos7.sh --profile pro --run -- --server.port=8081
-```
-
-### 2.5 产物
-
-- Native 可执行文件：`boot/target/app-note`（或 `boot/target` 下匹配 `app-note*` 的可执行文件）
-
-## 3. build-note-ui-prod.sh
-
-### 3.1 用途
-
-用于构建前端 `note-ui` 生产包并压缩为 zip，方便发布或分发。
-
-### 3.2 依赖
-
-- `npm`
-- `zip`
-
-### 3.3 用法
-
-```bash
-scripts/build-note-ui-prod.sh [zip-output]
-```
-
-- 不传 `zip-output`：默认输出为仓库根目录下 `note-ui-dist-YYYYMMDD-HHMMSS.zip`
-- 传绝对路径：输出到指定绝对路径
-- 传相对路径：相对仓库根目录解析
-
-### 3.4 执行流程
-
-1. 检查 `npm`/`zip` 是否存在
-2. 检查 `note-ui/` 目录
-3. 若无 `node_modules`，自动执行 `npm install`
-4. 执行 `npm run build`
-5. 压缩 `note-ui/dist` 到 zip
-
-### 3.5 示例
-
-```bash
-# 默认输出文件名
+# 前端构建 + nginx 发布
 scripts/build-note-ui-prod.sh
+scripts/deploy-note-ui-nginx.sh
 
-# 指定相对路径输出
-scripts/build-note-ui-prod.sh artifacts/note-ui-prod.zip
-
-# 指定绝对路径输出
-scripts/build-note-ui-prod.sh /tmp/note-ui-prod.zip
+# 联动发布
+scripts/release-all.sh --env pro
 ```
 
-## 4. start-boot-jar.sh
+## 3. 环境变量模板
 
-### 4.1 用途
+可参考：
 
-用于启动 `boot/target` 下的 Spring Boot 可执行 jar，并强制显式指定运行环境。
+- `deploy/.env.example`
 
-### 4.2 用法
-
-```bash
-scripts/start-boot-jar.sh -env dev|test|pro
-```
-
-### 4.3 参数
-
-- `-env <name>`：必填，允许值为 `dev`、`test`、`pro`
-
-### 4.4 示例
-
-```bash
-scripts/start-boot-jar.sh -env dev
-scripts/start-boot-jar.sh -env test
-scripts/start-boot-jar.sh -env pro
-```
+其中包含 `DEST_ROOT`、`NGINX_WEB_ROOT`、`ENABLE_NGINX_RELOAD` 等配置示例。
