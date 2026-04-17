@@ -131,10 +131,10 @@
 2. 部署脚本：发布到 `releases/<id>/backend`，并创建 `current`。
 3. systemd 服务文件模板：`deploy/systemd/app-note.service`
 4. 运维脚本：
-1. `backend-start.sh`
-2. `backend-stop.sh`
-3. `backend-restart.sh`
-4. `backend-status.sh`
+1. `bin/app start`
+2. `bin/app stop`
+3. `bin/app status`
+4. `bin/app log`
 5. 验证脚本：`backend-healthcheck.sh`（检查 `/app-note/auth/login` 等基础接口可达性）。
 
 ### 阶段 C：前端脚本体系（P0）

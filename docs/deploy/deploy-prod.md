@@ -23,11 +23,10 @@ scripts/deploy-app-note.sh --env pro
 3. 启停管理：
 
 ```bash
-scripts/backend-start.sh --env pro
-scripts/backend-stop.sh
-scripts/backend-restart.sh --env pro
-scripts/backend-status.sh
-scripts/backend-log.sh
+bin/app start --env pro
+bin/app stop
+bin/app status
+bin/app log
 ```
 
 ## 3. 前端部署
@@ -57,7 +56,7 @@ scripts/release-all.sh --env pro
 1. 检查后端状态：
 
 ```bash
-scripts/backend-status.sh
+bin/app status
 ```
 
 2. 打开页面：

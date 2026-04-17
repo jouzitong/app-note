@@ -113,7 +113,7 @@ esac
 BIN_SRC="${NATIVE_BIN:-$BIN_SRC_DEFAULT}"
 if [ ! -x "$BIN_SRC" ]; then
   echo "[err] native binary not found or not executable: $BIN_SRC" >&2
-  echo "[hint] build first: scripts/build-native-linux.sh --profile $ENV_NAME" >&2
+  echo "[hint] build first: scripts/builder/build-native-linux.sh --profile $ENV_NAME" >&2
   exit 1
 fi
 

@@ -47,7 +47,7 @@ done
 
 if [ ! -d "$SRC_DIST" ]; then
   echo "[err] dist directory not found: $SRC_DIST" >&2
-  echo "[hint] run first: scripts/build-note-ui-prod.sh" >&2
+  echo "[hint] run first: scripts/builder/build-note-ui-prod.sh" >&2
   exit 1
 fi
 

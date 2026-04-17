@@ -6,22 +6,15 @@
 
 ### 1.1 后端构建与部署
 
-1. `build-native-linux.sh`
+1. `builder/build-native-linux.sh`
 - Linux 通用 native 构建脚本，可选 `--target-glibc` 做兼容校验（默认不限制目标版本）。
-2. `build-native-centos7.sh`
-- 兼容旧入口，内部转发到 `build-native-linux.sh --target-glibc 2.17`。
-3. `deploy-app-note.sh`
+2. `deploy/deploy-app-note.sh`
 - 部署 native 产物和配置到目标目录（默认 `/home/app/app-note`）。
-4. `deploy-app-noe.sh`
-- 兼容旧入口，内部转发到 `deploy-app-note.sh`。
 
 ### 1.2 后端运行管理
 
-1. `backend-start.sh`
-2. `backend-stop.sh`
-3. `backend-restart.sh`
-4. `backend-status.sh`
-5. `backend-log.sh`
+1. `../bin/app`
+- 统一后端管理入口：`start|stop|status|log`。
 
 默认目录结构：
 1. `bin/`
@@ -33,9 +26,9 @@
 
 ### 1.3 前端构建与部署
 
-1. `build-note-ui-prod.sh`
+1. `builder/build-note-ui-prod.sh`
 - 构建 `note-ui` 并打包 zip（构建依赖安装改为 `npm ci`）。
-2. `deploy-note-ui-nginx.sh`
+2. `deploy/deploy-note-ui-nginx.sh`
 - 将 `note-ui/dist` 部署到 nginx 静态目录（默认 `/usr/share/nginx/html/app-note`），并 reload nginx。
 
 ### 1.4 联动发布
@@ -44,45 +37,68 @@
 - 串行执行后端构建部署 + 前端构建部署 + 可选健康检查。
 - 当前版本失败即中断，不做自动回滚。
 
+### 1.5 本地调试启动（JAR）
+
+1. `start-boot-jar.sh`
+- 用于本地临时调试：每次先执行 `mvn -pl boot -am package -DskipTests` 构建 jar，再把仓库根 `config/` 同步到 `boot/target/config/`，最后前台启动。
+- JVM 参数风格：`-Dxxx=xxx`（如 `-Dspring.profiles.active=test`、`-Denv=local`）。
+- 默认环境是 `dev`，只允许 `dev|test|local`，不允许 `pro`。
+
 ## 2. 常用命令
 
 ```bash
 # 后端 native 构建 + 部署 + 启动
-scripts/build-native-linux.sh --profile pro
-scripts/deploy-app-note.sh --env pro
-scripts/backend-start.sh --env pro
+scripts/builder/build-native-linux.sh --profile pro
+scripts/deploy/deploy-app-note.sh --env pro
+bin/app start --env pro
 
 # 前端构建 + nginx 发布
-scripts/build-note-ui-prod.sh
-scripts/deploy-note-ui-nginx.sh
+scripts/builder/build-note-ui-prod.sh
+scripts/deploy/deploy-note-ui-nginx.sh
 
 # 联动发布
 scripts/release-all.sh --env pro
 ```
 
-### 2.1 构建后直接启动（前台）
+### 2.1 本地调试启动（前台）
+
+```bash
+# 默认 dev
+scripts/start-boot-jar.sh
+
+# 使用本地环境（等价于 -Dspring.profiles.active=local）
+scripts/start-boot-jar.sh -Denv=local
+
+# 指定 test
+scripts/start-boot-jar.sh -Dspring.profiles.active=test
+
+# 透传 Spring Boot 参数
+scripts/start-boot-jar.sh -Dspring.profiles.active=dev -- --server.port=19813
+```
+
+### 2.2 构建后直接启动（前台）
 
 ```bash
 # 构建完成后直接前台启动
-scripts/build-native-linux.sh --profile dev --run
-scripts/build-native-linux.sh --profile test --run
-scripts/build-native-linux.sh --profile pro --run
+scripts/builder/build-native-linux.sh --profile dev --run
+scripts/builder/build-native-linux.sh --profile test --run
+scripts/builder/build-native-linux.sh --profile pro --run
 ```
 
-### 2.2 后台启动（deploy + start 脚本）
+### 2.3 后台启动（deploy + start 脚本）
 
-`backend-start.sh` 支持 `dev|test|pro`，默认 `pro`。
+`bin/app start` 支持 `dev|test|pro`，默认 `pro`。
 
 ```bash
 # 先部署，再后台启动
-scripts/deploy-app-note.sh --env dev
-scripts/backend-start.sh --env dev
+scripts/deploy/deploy-app-note.sh --env dev
+bin/app start --env dev
 
-scripts/deploy-app-note.sh --env test
-scripts/backend-start.sh --env test
+scripts/deploy/deploy-app-note.sh --env test
+bin/app start --env test
 
-scripts/deploy-app-note.sh --env pro
-scripts/backend-start.sh --env pro
+scripts/deploy/deploy-app-note.sh --env pro
+bin/app start --env pro
 ```
 
 ## 3. 环境变量模板

@@ -2,6 +2,8 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+APP_CMD="$ROOT_DIR/bin/app"
 ENV_NAME="pro"
 SKIP_FRONTEND=0
 SKIP_BACKEND=0
@@ -14,7 +16,7 @@ Usage: $(basename "$0") [--env dev|test|pro] [--skip-backend] [--skip-frontend]
 Pipeline:
   1) build backend native
   2) deploy backend
-  3) restart backend
+  3) stop/start backend
   4) build frontend
   5) deploy frontend to nginx
   6) optional backend URL health check
@@ -44,15 +46,16 @@ case "$ENV_NAME" in
 esac
 
 if [ "$SKIP_BACKEND" -eq 0 ]; then
-  "$SCRIPT_DIR/build-native-linux.sh" --profile "$ENV_NAME"
-  "$SCRIPT_DIR/deploy-app-note.sh" --env "$ENV_NAME"
-  "$SCRIPT_DIR/backend-restart.sh" --env "$ENV_NAME"
-  "$SCRIPT_DIR/backend-status.sh"
+  "$SCRIPT_DIR/builder/build-native-linux.sh" --profile "$ENV_NAME"
+  "$SCRIPT_DIR/deploy/deploy-app-note.sh" --env "$ENV_NAME"
+  "$APP_CMD" stop || true
+  "$APP_CMD" start --env "$ENV_NAME"
+  "$APP_CMD" status
 fi
 
 if [ "$SKIP_FRONTEND" -eq 0 ]; then
-  "$SCRIPT_DIR/build-note-ui-prod.sh"
-  "$SCRIPT_DIR/deploy-note-ui-nginx.sh"
+  "$SCRIPT_DIR/builder/build-note-ui-prod.sh"
+  "$SCRIPT_DIR/deploy/deploy-note-ui-nginx.sh"
 fi
 
 if [ -n "$BACKEND_CHECK_URL" ]; then

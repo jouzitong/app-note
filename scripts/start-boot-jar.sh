@@ -6,30 +6,53 @@ cd "$(dirname "$0")/.."
 usage() {
   cat <<'USAGE'
 Usage:
-  scripts/start-boot-jar.sh -env dev|test|pro
+  scripts/start-boot-jar.sh [<jvm-opts>] [-- <app-args>]
 
 Options:
-  -env <name>   Spring profile. Required, one of: dev, test, pro
+  <jvm-opts>    JVM 参数，例如 -Dspring.profiles.active=test、-Denv=local、-Xmx1g
+  -- <app-args> 透传给 Spring Boot 应用参数，例如 --server.port=19813
   -h, --help    Show this help message
 
 Examples:
-  scripts/start-boot-jar.sh -env dev
-  scripts/start-boot-jar.sh -env test
-  scripts/start-boot-jar.sh -env pro
+  scripts/start-boot-jar.sh
+  scripts/start-boot-jar.sh -Denv=local
+  scripts/start-boot-jar.sh -Dspring.profiles.active=test
+  scripts/start-boot-jar.sh -Dspring.profiles.active=dev -- --server.port=19813
 USAGE
 }
 
-ENV_NAME=""
+ENV_NAME="dev"
+declare -a JVM_OPTS=()
+declare -a APP_ARGS=()
+HAS_PROFILE_OPT=0
 
 while (($# > 0)); do
   case "$1" in
-    -env)
-      if (($# < 2)); then
-        echo "[err] -env requires a value" >&2
-        exit 1
-      fi
-      ENV_NAME="$2"
-      shift 2
+    --)
+      shift
+      APP_ARGS=("$@")
+      break
+      ;;
+    -Dspring.profiles.active=*)
+      ENV_NAME="${1#*=}"
+      JVM_OPTS+=("$1")
+      HAS_PROFILE_OPT=1
+      shift
+      ;;
+    -Denv=*)
+      ENV_NAME="${1#*=}"
+      JVM_OPTS+=("$1")
+      JVM_OPTS+=("-Dspring.profiles.active=$ENV_NAME")
+      HAS_PROFILE_OPT=1
+      shift
+      ;;
+    -D*)
+      JVM_OPTS+=("$1")
+      shift
+      ;;
+    -X*)
+      JVM_OPTS+=("$1")
+      shift
       ;;
     -h|--help)
       usage
@@ -44,30 +67,78 @@ while (($# > 0)); do
 done
 
 case "$ENV_NAME" in
-  dev|test|pro)
-    ;;
-  "")
-    echo "[err] -env is required" >&2
-    usage
-    exit 2
+  dev|test|local)
     ;;
   *)
     echo "[err] unsupported env: $ENV_NAME" >&2
-    echo "[err] allowed values: dev, test, pro" >&2
+    echo "[err] allowed values: dev, test, local" >&2
+    echo "[err] pro is not allowed in this debug start script" >&2
     exit 2
     ;;
 esac
 
-jar_path="$(find boot/target -maxdepth 1 -type f -name 'boot-*.jar' ! -name '*.jar.original' | sort | head -n 1 || true)"
+if [[ "$HAS_PROFILE_OPT" -eq 0 ]]; then
+  JVM_OPTS+=("-Dspring.profiles.active=$ENV_NAME")
+fi
+
+if ! command -v mvn >/dev/null 2>&1; then
+  echo "[err] mvn not found in PATH" >&2
+  exit 1
+fi
+if ! command -v java >/dev/null 2>&1; then
+  echo "[err] java not found in PATH" >&2
+  exit 1
+fi
+
+echo "[build] mvn -pl boot -am package -DskipTests"
+mvn -pl boot -am package -DskipTests
+
+CONFIG_SRC_DIR="config"
+CONFIG_DEST_DIR="boot/target/config"
+if [[ ! -d "$CONFIG_SRC_DIR" ]]; then
+  echo "[err] config directory not found: $CONFIG_SRC_DIR" >&2
+  exit 1
+fi
+
+rm -rf "$CONFIG_DEST_DIR"
+mkdir -p "$CONFIG_DEST_DIR"
+cp -a "$CONFIG_SRC_DIR/." "$CONFIG_DEST_DIR/"
+echo "[ok] synced config: $CONFIG_SRC_DIR -> $CONFIG_DEST_DIR"
+
+shopt -s nullglob
+jar_candidates=(boot/target/boot-*.jar)
+shopt -u nullglob
+jar_path=""
+for candidate in "${jar_candidates[@]}"; do
+  if [[ "$candidate" == *.jar.original ]]; then
+    continue
+  fi
+  if [[ -z "$jar_path" || "$candidate" -nt "$jar_path" ]]; then
+    jar_path="$candidate"
+  fi
+done
+
 if [[ -z "$jar_path" ]]; then
-  echo "[err] boot jar not found under boot/target" >&2
-  echo "[err] build it first: mvn -pl boot -am package -DskipTests" >&2
+  echo "[err] build succeeded but boot jar not found under boot/target" >&2
   exit 1
 fi
 
 echo "[run] jar: $jar_path"
 echo "[run] env: $ENV_NAME"
+echo "[run] config dir: $(pwd)/$CONFIG_DEST_DIR"
+echo "[run] spring.config.location: file:$(pwd)/$CONFIG_DEST_DIR/"
 
-exec java -jar "$jar_path" \
-  --spring.profiles.active="$ENV_NAME" \
-  --spring.config.additional-location="file:$(pwd)/config/"
+cmd=(
+  java
+  "${JVM_OPTS[@]}"
+  "-Dspring.config.name=application"
+  "-Dspring.config.location=optional:file:$(pwd)/$CONFIG_DEST_DIR/"
+  -jar
+  "$jar_path"
+)
+
+if [[ "${APP_ARGS+x}" == "x" ]]; then
+  cmd+=("${APP_ARGS[@]}")
+fi
+
+exec "${cmd[@]}"

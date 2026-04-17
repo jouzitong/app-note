@@ -9,6 +9,8 @@ spring:
   profiles:
     default: dev
     group:
+      dev:
+        - local
       pro:
         - prod
 

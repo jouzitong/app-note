@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cd "$(dirname "$0")/.."
+cd "$(dirname "$0")/../.."
 
 usage() {
   cat <<'USAGE'
 Usage:
-  scripts/build-native-linux.sh [options] [maven-args...]
+  scripts/builder/build-native-linux.sh [options] [maven-args...]
 
 Options:
   --profile <name>       Spring profile used for native AOT build. Default: pro
@@ -23,11 +23,11 @@ Environment variables:
   TARGET_GLIBC                      Same as --target-glibc
 
 Examples:
-  scripts/build-native-linux.sh
-  scripts/build-native-linux.sh --profile dev
-  scripts/build-native-linux.sh --target-glibc 2.17
-  SPRING_CONFIG_ADDITIONAL_LOCATION=./config/ scripts/build-native-linux.sh
-  scripts/build-native-linux.sh --profile pro --run -- --server.port=8081
+  scripts/builder/build-native-linux.sh
+  scripts/builder/build-native-linux.sh --profile dev
+  scripts/builder/build-native-linux.sh --target-glibc 2.17
+  SPRING_CONFIG_ADDITIONAL_LOCATION=./config/ scripts/builder/build-native-linux.sh
+  scripts/builder/build-native-linux.sh --profile pro --run -- --server.port=8081
 USAGE
 }
 
