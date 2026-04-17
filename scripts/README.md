@@ -6,6 +6,7 @@
 
 - `build-native-centos7.sh`：构建后端 Spring Boot Native Image（默认 `pro` 环境），可选构建后直接启动。
 - `build-note-ui-prod.sh`：构建前端 `note-ui` 产物并打包为 zip。
+- `start-boot-jar.sh`：启动 `boot` 模块打包后的 JVM jar，要求显式传入 `-env dev|test|pro`。
 
 ## 2. build-native-centos7.sh
 
@@ -105,4 +106,28 @@ scripts/build-note-ui-prod.sh artifacts/note-ui-prod.zip
 
 # 指定绝对路径输出
 scripts/build-note-ui-prod.sh /tmp/note-ui-prod.zip
+```
+
+## 4. start-boot-jar.sh
+
+### 4.1 用途
+
+用于启动 `boot/target` 下的 Spring Boot 可执行 jar，并强制显式指定运行环境。
+
+### 4.2 用法
+
+```bash
+scripts/start-boot-jar.sh -env dev|test|pro
+```
+
+### 4.3 参数
+
+- `-env <name>`：必填，允许值为 `dev`、`test`、`pro`
+
+### 4.4 示例
+
+```bash
+scripts/start-boot-jar.sh -env dev
+scripts/start-boot-jar.sh -env test
+scripts/start-boot-jar.sh -env pro
 ```

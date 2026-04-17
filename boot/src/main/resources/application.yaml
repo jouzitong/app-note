@@ -6,6 +6,11 @@ spring:
   config:
     import:
       - optional:classpath:application-athena.yaml
+  profiles:
+    default: dev
+    group:
+      pro:
+        - prod
 
 lib:
   web:
