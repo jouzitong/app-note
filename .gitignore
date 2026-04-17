@@ -56,3 +56,4 @@ tmp/
 application-local.yaml
 
 deploy/versions/**
+.codex
