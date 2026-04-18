@@ -46,7 +46,7 @@ public enum NoteType implements IEnum {
     /**
      * 题目卡：用于题目练习与错题整理，通常包含题干、答案与解析。
      */
-    QUESTIONS(100, "Questions", "题目练习卡片，适合刷题与错题复盘"),
+    PRACTICE(100, "Practice", "题目练习卡片，适合刷题与错题复盘"),
 
     ;
 
