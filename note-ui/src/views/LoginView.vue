@@ -34,13 +34,6 @@
         </button>
       </form>
 
-      <div class="tips">
-        <div class="tip-title">测试账号（按你后端初始化数据）</div>
-        <div class="tip-text">admin / admin123</div>
-        <div class="tip-text">operator / op123</div>
-        <div class="tip-text">guest / guest123</div>
-      </div>
-
       <button class="back-home" type="button" @click="goHome">返回首页</button>
     </div>
   </div>

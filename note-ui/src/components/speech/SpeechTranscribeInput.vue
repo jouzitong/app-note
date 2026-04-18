@@ -9,10 +9,14 @@
       :disabled="!isSupported"
       :title="buttonTitle"
       :aria-label="buttonTitle"
-      @pointerdown="handlePressStart"
-      @pointerup="handlePressEnd"
-      @pointerleave="handlePressEnd"
-      @pointercancel="handlePressEnd"
+      @selectstart.prevent
+      @dragstart.prevent
+      @pointerdown="handlePointerDown"
+      @pointerup="handlePointerUp"
+      @pointerleave="handlePointerLeave"
+      @pointercancel="handlePointerCancel"
+      @keydown.enter.prevent="handleKeyboardToggle"
+      @keydown.space.prevent="handleKeyboardToggle"
       @click.prevent
       @contextmenu.prevent
     >
@@ -50,9 +54,9 @@ export default {
       type: Boolean,
       default: false,
     },
-    releaseStopDelayMs: {
+    longPressThresholdMs: {
       type: Number,
-      default: 450,
+      default: 280,
     },
   },
   data() {
@@ -61,8 +65,10 @@ export default {
       isSupported: false,
       isListening: false,
       isPressing: false,
+      holdTriggered: false,
       pendingStart: false,
-      stopTimer: null,
+      longPressTimer: null,
+      listeningMode: "idle",
       recognitionState: "idle",
       finalText: "",
       interimText: "",
@@ -76,7 +82,13 @@ export default {
       if (!this.isSupported) {
         return "当前浏览器不支持语音识别";
       }
-      return this.isListening ? "松开结束语音转写" : "按住开始语音转写";
+      if (this.listeningMode === "hold") {
+        return "松开结束语音转写";
+      }
+      if (this.listeningMode === "toggle" && this.isListening) {
+        return "点击关闭语音转写";
+      }
+      return "点击开关语音转写，或长按录音";
     },
     fieldStateClass() {
       if (this.recognitionState === "listening") {
@@ -113,15 +125,15 @@ export default {
     this.initRecognition();
   },
   beforeDestroy() {
-    this.clearStopTimer();
+    this.clearLongPressTimer();
     this.stopListening(true);
     this.recognition = null;
   },
   methods: {
-    clearStopTimer() {
-      if (this.stopTimer) {
-        window.clearTimeout(this.stopTimer);
-        this.stopTimer = null;
+    clearLongPressTimer() {
+      if (this.longPressTimer) {
+        window.clearTimeout(this.longPressTimer);
+        this.longPressTimer = null;
       }
     },
     appendText(base = "", extra = "") {
@@ -175,6 +187,9 @@ export default {
         const errorCode = event?.error || "unknown";
         this.pendingStart = false;
         this.isPressing = false;
+        this.holdTriggered = false;
+        this.listeningMode = "idle";
+        this.clearLongPressTimer();
         this.$emit("error", errorCode);
       };
 
@@ -182,7 +197,9 @@ export default {
         this.pendingStart = false;
         this.isListening = false;
         this.isPressing = false;
-        this.clearStopTimer();
+        this.holdTriggered = false;
+        this.listeningMode = "idle";
+        this.clearLongPressTimer();
         if (this.interimText) {
           this.finalText = this.appendText(this.finalText, this.interimText);
         }
@@ -191,7 +208,7 @@ export default {
         this.$emit("input", this.displayText);
       };
     },
-    handlePressStart(event) {
+    handlePointerDown(event) {
       if (!this.isSupported) {
         return;
       }
@@ -201,11 +218,21 @@ export default {
       if (this.isPressing) {
         return;
       }
-      this.clearStopTimer();
       this.isPressing = true;
-      this.startListening();
+      this.holdTriggered = false;
+      this.clearLongPressTimer();
+      if (this.listeningMode === "toggle") {
+        return;
+      }
+      this.longPressTimer = window.setTimeout(() => {
+        if (!this.isPressing || this.listeningMode === "toggle") {
+          return;
+        }
+        this.holdTriggered = true;
+        this.startHoldListening();
+      }, Math.max(0, Number(this.longPressThresholdMs) || 0));
     },
-    handlePressEnd(event) {
+    handlePointerUp(event) {
       if (!this.isSupported) {
         return;
       }
@@ -216,14 +243,75 @@ export default {
         return;
       }
       this.isPressing = false;
-      this.clearStopTimer();
-      this.stopTimer = window.setTimeout(() => {
-        this.stopTimer = null;
-        this.stopListening();
-      }, Math.max(0, Number(this.releaseStopDelayMs) || 0));
+      this.clearLongPressTimer();
+
+      if (this.holdTriggered) {
+        this.holdTriggered = false;
+        this.stopHoldListening();
+        return;
+      }
+
+      if (this.listeningMode === "toggle") {
+        this.stopToggleListening();
+        return;
+      }
+      this.startToggleListening();
+    },
+    handlePointerLeave(event) {
+      if (event && event.isPrimary === false) {
+        return;
+      }
+      this.tryFinishHoldByLeave();
+    },
+    handlePointerCancel(event) {
+      if (event && event.isPrimary === false) {
+        return;
+      }
+      this.tryFinishHoldByLeave();
+    },
+    tryFinishHoldByLeave() {
+      if (!this.isPressing) {
+        return;
+      }
+      this.isPressing = false;
+      this.clearLongPressTimer();
+      if (!this.holdTriggered) {
+        return;
+      }
+      this.holdTriggered = false;
+      this.stopHoldListening();
+    },
+    handleKeyboardToggle() {
+      if (!this.isSupported || this.isPressing) {
+        return;
+      }
+      if (this.listeningMode === "toggle") {
+        this.stopToggleListening();
+        return;
+      }
+      if (this.listeningMode === "hold") {
+        return;
+      }
+      this.startToggleListening();
+    },
+    startToggleListening() {
+      this.listeningMode = "toggle";
+      this.startListening();
+    },
+    stopToggleListening() {
+      this.listeningMode = "idle";
+      this.stopListening();
+    },
+    startHoldListening() {
+      this.listeningMode = "hold";
+      this.startListening();
+    },
+    stopHoldListening() {
+      this.listeningMode = "idle";
+      this.stopListening();
     },
     startListening() {
-      if (!this.recognition || this.isListening) {
+      if (!this.recognition || this.isListening || this.pendingStart) {
         return;
       }
       try {
@@ -300,6 +388,10 @@ export default {
   padding: 0;
   flex: 0 0 auto;
   touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .speech-btn:disabled {

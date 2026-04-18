@@ -48,6 +48,9 @@
                 :disabled="!canPlayWordAudio()"
                 title="播放单词"
                 aria-label="播放单词"
+                @contextmenu.prevent
+                @selectstart.prevent
+                @dragstart.prevent
                 @click="playWordAudio"
               >
                 <i
@@ -134,6 +137,9 @@
                     :disabled="!canPlayExampleAudio(example)"
                     title="播放例句"
                     aria-label="播放例句"
+                    @contextmenu.prevent
+                    @selectstart.prevent
+                    @dragstart.prevent
                     @click="playExampleAudio(example, index)"
                   >
                     <i
@@ -253,7 +259,7 @@
 
       <div class="actions">
         <button
-          v-for="action in wordCard.actions"
+          v-for="action in visibleActions"
           :key="action.key"
           class="icon-btn"
           :class="{
@@ -263,6 +269,9 @@
           }"
           :disabled="action.key === 'done' && confirming"
           :title="action.title"
+          @contextmenu.prevent
+          @selectstart.prevent
+          @dragstart.prevent
           @click="handleAction(action)"
         >
           {{ action.icon }}
@@ -323,6 +332,7 @@ export default {
       exampleSpeechTexts: {},
       autoPlaybackSeq: 0,
       autoPlaybackTimers: [],
+      isMobileViewport: false,
     };
   },
   computed: {
@@ -368,14 +378,37 @@ export default {
     playbackRateOptions() {
       return this.$options.playbackRateOptions || [1];
     },
+    visibleActions() {
+      const actions = Array.isArray(this.wordCard?.actions)
+        ? this.wordCard.actions
+        : [];
+      if (!this.isMobileViewport) {
+        return actions;
+      }
+      const mobileActionKeys = ["done", "audio", "prev", "next"];
+      const byKey = new Map();
+      actions.forEach((action) => {
+        if (action?.key && !byKey.has(action.key)) {
+          byKey.set(action.key, action);
+        }
+      });
+      return mobileActionKeys
+        .map((key) => byKey.get(key))
+        .filter((action) => !!action);
+    },
   },
   async created() {
+    this.syncMobileViewport();
     this.initPlaybackRate();
     this.audioPlaybackManager = new AudioPlaybackManager({ lang: "ja-JP" });
     this.audioPlaybackManager.warmupVoices();
     await this.loadWordCard();
   },
+  mounted() {
+    window.addEventListener("resize", this.syncMobileViewport);
+  },
   beforeDestroy() {
+    window.removeEventListener("resize", this.syncMobileViewport);
     this.stopPlayback();
     if (this.audioPlaybackManager) {
       this.audioPlaybackManager.destroy();
@@ -391,6 +424,9 @@ export default {
     },
   },
   methods: {
+    syncMobileViewport() {
+      this.isMobileViewport = window.matchMedia("(max-width: 639px)").matches;
+    },
     clearAutoPlaybackTimers() {
       const timers = Array.isArray(this.autoPlaybackTimers)
         ? this.autoPlaybackTimers
@@ -892,6 +928,10 @@ export default {
   justify-content: center;
   padding: 0;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .inline-audio-btn:disabled {
@@ -1233,6 +1273,9 @@ export default {
   padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
   border-top: 1px solid #eceff5;
   background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .icon-btn {
@@ -1245,6 +1288,10 @@ export default {
   font-size: 20px;
   line-height: 1;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .icon-btn.done {
