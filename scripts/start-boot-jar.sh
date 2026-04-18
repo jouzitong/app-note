@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cd "$(dirname "$0")/.."
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+NOTE_PROJECT_DIR="$ROOT_DIR/note-project"
+BOOT_MODULE_PATH="note-project/boot"
+BOOT_TARGET_DIR="$NOTE_PROJECT_DIR/boot/target"
+cd "$ROOT_DIR"
 
 usage() {
   cat <<'USAGE'
@@ -90,11 +95,11 @@ if ! command -v java >/dev/null 2>&1; then
   exit 1
 fi
 
-echo "[build] mvn -pl boot -am package -DskipTests"
-mvn -pl boot -am package -DskipTests
+echo "[build] mvn -pl $BOOT_MODULE_PATH -am package -DskipTests"
+mvn -pl "$BOOT_MODULE_PATH" -am package -DskipTests
 
-CONFIG_SRC_DIR="config"
-CONFIG_DEST_DIR="boot/target/config"
+CONFIG_SRC_DIR="note-project/config"
+CONFIG_DEST_DIR="note-project/boot/target/config"
 if [[ ! -d "$CONFIG_SRC_DIR" ]]; then
   echo "[err] config directory not found: $CONFIG_SRC_DIR" >&2
   exit 1
@@ -106,7 +111,7 @@ cp -a "$CONFIG_SRC_DIR/." "$CONFIG_DEST_DIR/"
 echo "[ok] synced config: $CONFIG_SRC_DIR -> $CONFIG_DEST_DIR"
 
 shopt -s nullglob
-jar_candidates=(boot/target/boot-*.jar)
+jar_candidates=("$BOOT_TARGET_DIR"/boot-*.jar)
 shopt -u nullglob
 jar_path=""
 for candidate in "${jar_candidates[@]}"; do
@@ -119,7 +124,7 @@ for candidate in "${jar_candidates[@]}"; do
 done
 
 if [[ -z "$jar_path" ]]; then
-  echo "[err] build succeeded but boot jar not found under boot/target" >&2
+  echo "[err] build succeeded but boot jar not found under $BOOT_TARGET_DIR" >&2
   exit 1
 fi
 

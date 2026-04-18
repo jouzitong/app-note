@@ -5,35 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.zzt.note</groupId>
-        <artifactId>app-note</artifactId>
+        <artifactId>note-project</artifactId>
         <version>${revision}</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>app</artifactId>
+    <artifactId>server-word</artifactId>
+    <description>业务-单词</description>
 
     <dependencies>
         <dependency>
             <groupId>org.zzt.note</groupId>
-            <artifactId>commons</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.zzt.note</groupId>
             <artifactId>data-core</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.zzt.note</groupId>
-            <artifactId>server-word</artifactId>
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>

@@ -5,9 +5,9 @@ SRC_ROOT="${SRC_ROOT:-/home/workroom/items/app-note}"
 DEST_ROOT="${DEST_ROOT:-/home/app/app-note}"
 DEFAULT_ENV="${DEFAULT_ENV:-pro}"
 
-BOOT_DIR="$SRC_ROOT/boot"
-CONFIG_SRC_ROOT="${CONFIG_SRC_ROOT:-$SRC_ROOT/config}"
-APP_CTL_SRC_DEFAULT="$SRC_ROOT/bin/app"
+BOOT_DIR="$SRC_ROOT/note-project/boot"
+CONFIG_SRC_ROOT="${CONFIG_SRC_ROOT:-$SRC_ROOT/note-project/config}"
+APP_CTL_SRC_DEFAULT="$SRC_ROOT/note-project/bin/app"
 APP_CTL_DEST="$DEST_ROOT/bin/app"
 JAR_DEST="$DEST_ROOT/app-note.jar"
 
@@ -24,7 +24,7 @@ Environment:
   SRC_ROOT         Source repo root (default: $SRC_ROOT)
   CONFIG_SRC_ROOT  Config source dir (default: $CONFIG_SRC_ROOT)
   DEST_ROOT        Deploy root (default: $DEST_ROOT)
-  BOOT_JAR         Source boot jar (default: latest boot/target/boot-*.jar)
+  BOOT_JAR         Source boot jar (default: latest note-project/boot/target/boot-*.jar)
 
 Deploy layout:
   $DEST_ROOT/bin

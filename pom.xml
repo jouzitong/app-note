@@ -11,12 +11,7 @@
     <name>笔记应用</name>
 
     <modules>
-        <module>commons</module>
-        <module>boot</module>
-        <module>app-layer</module>
-        <module>module/server-word</module>
-        <module>module/server-practice</module>
-        <module>data-core</module>
+        <module>note-project</module>
     </modules>
 
     <properties>
@@ -26,49 +21,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <revision>1.2.4-SNAPSHOT</revision>
     </properties>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <artifactId>framework-dependencies</artifactId>
-                <groupId>org.athena</groupId>
-                <version>1.2.0-SNAPSHOT</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.zzt.note</groupId>
-                <artifactId>commons</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.zzt.note</groupId>
-                <artifactId>data-core</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.zzt.note</groupId>
-                <artifactId>app-layer</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.zzt.note</groupId>
-                <artifactId>server-word</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.zzt.note</groupId>
-                <artifactId>server-practice</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>

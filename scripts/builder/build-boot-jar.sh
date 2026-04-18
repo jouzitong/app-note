@@ -3,6 +3,9 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+NOTE_PROJECT_DIR="$ROOT_DIR/note-project"
+BOOT_MODULE_PATH="note-project/boot"
+BOOT_TARGET_DIR="$NOTE_PROJECT_DIR/boot/target"
 cd "$ROOT_DIR"
 
 usage() {
@@ -16,7 +19,7 @@ Options:
   -h, --help        Show this help message
 
 Environment:
-  BOOT_JAR  Boot jar path for --run (default: latest boot/target/boot-*.jar)
+  BOOT_JAR  Boot jar path for --run (default: latest note-project/boot/target/boot-*.jar)
 
 Examples:
   scripts/builder/build-boot-jar.sh
@@ -73,19 +76,19 @@ if ! command -v mvn >/dev/null 2>&1; then
   exit 1
 fi
 
-build_cmd=(mvn -pl boot -am -DskipTests package)
+build_cmd=(mvn -pl "$BOOT_MODULE_PATH" -am -DskipTests package)
 if [ "${#MAVEN_ARGS[@]}" -gt 0 ]; then
   build_cmd+=("${MAVEN_ARGS[@]}")
 fi
 echo "[build] ${build_cmd[*]}"
 "${build_cmd[@]}"
 
-echo "[check] boot/target"
-ls -la boot/target | sed -n '1,120p'
+echo "[check] $BOOT_TARGET_DIR"
+ls -la "$BOOT_TARGET_DIR" | sed -n '1,120p'
 
 find_latest_boot_jar() {
   shopt -s nullglob
-  local jars=(boot/target/boot-*.jar)
+  local jars=("$BOOT_TARGET_DIR"/boot-*.jar)
   shopt -u nullglob
   local newest=""
   local jar
@@ -117,14 +120,14 @@ if [ "$RUN_AFTER_BUILD" -eq 1 ]; then
     echo "[err] java not found in PATH" >&2
     exit 1
   fi
-  if [ ! -d "$ROOT_DIR/config" ]; then
-    echo "[err] config directory not found: $ROOT_DIR/config" >&2
+  if [ ! -d "$NOTE_PROJECT_DIR/config" ]; then
+    echo "[err] config directory not found: $NOTE_PROJECT_DIR/config" >&2
     exit 1
   fi
   cmd=(
     java
     "-Dspring.profiles.active=$PROFILE"
-    "-Dspring.config.additional-location=optional:file:$(pwd)/config/"
+    "-Dspring.config.additional-location=optional:file:$(pwd)/note-project/config/"
     -jar
     "$JAR_PATH"
   )

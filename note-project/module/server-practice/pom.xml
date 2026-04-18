@@ -5,21 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.zzt.note</groupId>
-        <artifactId>app-note</artifactId>
+        <artifactId>note-project</artifactId>
         <version>${revision}</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>data-core</artifactId>
-    <name>核心数据</name>
+    <artifactId>server-practice</artifactId>
+    <description>业务-做题练习</description>
 
     <dependencies>
         <dependency>
             <groupId>org.zzt.note</groupId>
-            <artifactId>commons</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-common</artifactId>
+            <artifactId>data-core</artifactId>
         </dependency>
     </dependencies>
 

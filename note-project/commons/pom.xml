@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.zzt.note</groupId>
-        <artifactId>app-note</artifactId>
+        <artifactId>note-project</artifactId>
         <version>${revision}</version>
     </parent>
 

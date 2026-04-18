@@ -13,7 +13,7 @@
 
 ### 1.2 后端运行管理
 
-1. `../bin/app`
+1. `../note-project/bin/app`
 - 统一后端管理入口：`start|stop|status|log`。
 
 默认目录结构：
@@ -40,7 +40,7 @@
 ### 1.5 本地调试启动（JAR）
 
 1. `start-boot-jar.sh`
-- 用于本地临时调试：每次先执行 `mvn -pl boot -am package -DskipTests` 构建 jar，再把仓库根 `config/` 同步到 `boot/target/config/`，最后前台启动。
+- 用于本地临时调试：每次先执行 `mvn -pl note-project/boot -am package -DskipTests` 构建 jar，再把仓库根 `note-project/config/` 同步到 `note-project/boot/target/config/`，最后前台启动。
 - JVM 参数风格：`-Dxxx=xxx`（如 `-Dspring.profiles.active=test`、`-Denv=local`）。
 - 默认环境是 `dev`，只允许 `dev|test|local`，不允许 `pro`。
 
@@ -50,7 +50,7 @@
 # 后端 native 构建 + 部署 + 启动
 scripts/builder/build-native-linux.sh --profile pro
 scripts/deploy/deploy-app-note.sh --env pro
-bin/app start --no-tail
+note-project/bin/app start --no-tail
 
 # 前端构建 + nginx 发布
 scripts/builder/build-note-ui-prod.sh
@@ -87,14 +87,14 @@ scripts/builder/build-native-linux.sh --profile pro --run
 
 ### 2.3 后台启动（deploy + start 脚本）
 
-`bin/app start` 固定 `pro` 环境启动；默认启动后自动 tail 应用日志，可用 `--no-tail` 关闭。
+`note-project/bin/app start` 固定 `pro` 环境启动；默认启动后自动 tail 应用日志，可用 `--no-tail` 关闭。
 
 ```bash
 scripts/deploy/deploy-app-note.sh --env pro
-bin/app start
+note-project/bin/app start
 
 # 不自动进入日志跟踪
-bin/app start --no-tail
+note-project/bin/app start --no-tail
 ```
 
 ## 3. 环境变量模板

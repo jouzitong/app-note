@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cd "$(dirname "$0")/../.."
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+NOTE_PROJECT_DIR="$ROOT_DIR/note-project"
+BOOT_MODULE_PATH="note-project/boot"
+BOOT_TARGET_DIR="$NOTE_PROJECT_DIR/boot/target"
+cd "$ROOT_DIR"
 
 usage() {
   cat <<'USAGE'
@@ -19,14 +24,14 @@ Environment variables:
   SPRING_PROFILES_ACTIVE            Default profile when --profile is not given (default: pro)
   SPRING_CONFIG_LOCATION            Optional Spring config location
   SPRING_CONFIG_ADDITIONAL_LOCATION Optional Spring additional config location
-  NATIVE_BIN                        Native binary path for --run (default: boot/target/app-note)
+  NATIVE_BIN                        Native binary path for --run (default: note-project/boot/target/app-note)
   TARGET_GLIBC                      Same as --target-glibc
 
 Examples:
   scripts/builder/build-native-linux.sh
   scripts/builder/build-native-linux.sh --profile dev
   scripts/builder/build-native-linux.sh --target-glibc 2.17
-  SPRING_CONFIG_ADDITIONAL_LOCATION=./config/ scripts/builder/build-native-linux.sh
+  SPRING_CONFIG_ADDITIONAL_LOCATION=./note-project/config/ scripts/builder/build-native-linux.sh
   scripts/builder/build-native-linux.sh --profile pro --run -- --server.port=8081
 USAGE
 }
@@ -125,7 +130,7 @@ native-image --version
 echo "[build] spring profile: ${PROFILE}"
 
 mvn_cmd=(
-  mvn -pl boot -am -Pnative -DskipTests package
+  mvn -pl "$BOOT_MODULE_PATH" -am -Pnative -DskipTests package
   "-Dspring.profiles.active=${PROFILE}"
 )
 
@@ -143,11 +148,11 @@ echo "[build] command: ${mvn_cmd[*]}"
 "${mvn_cmd[@]}"
 
 echo "[ok] output:"
-ls -la boot/target | sed -n '1,120p'
+ls -la "$BOOT_TARGET_DIR" | sed -n '1,120p'
 
-bin_path="${NATIVE_BIN:-boot/target/app-note}"
+bin_path="${NATIVE_BIN:-$BOOT_TARGET_DIR/app-note}"
 if [[ ! -x "${bin_path}" ]]; then
-  fallback_bin="$(find boot/target -maxdepth 1 -type f -name 'app-note*' -perm -111 | head -n 1 || true)"
+  fallback_bin="$(find "$BOOT_TARGET_DIR" -maxdepth 1 -type f -name 'app-note*' -perm -111 | head -n 1 || true)"
   if [[ -n "${fallback_bin}" ]]; then
     bin_path="${fallback_bin}"
   fi

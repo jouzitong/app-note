@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-APP_CMD="$ROOT_DIR/bin/app"
+APP_CMD="$ROOT_DIR/note-project/bin/app"
 ENV_NAME="pro"
 SKIP_FRONTEND=0
 SKIP_BACKEND=0
