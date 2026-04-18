@@ -51,63 +51,6 @@
         <div class="main-content">
           <div class="card">
             <div class="section-head">
-              <h2 class="section-title">内容</h2>
-              <span class="meta-chip">{{ contentTypeLabel }}</span>
-            </div>
-
-            <template v-if="contentType === 'WORD_CARD_PAGE'">
-              <ul v-if="wordCardRecords.length" class="info-list">
-                <li
-                  v-for="item in wordCardRecords"
-                  :key="item.id || item.word?.text"
-                  class="info-item"
-                >
-                  {{ item.word?.text || item.id || "未命名单词卡" }}
-                </li>
-              </ul>
-              <div v-else class="note-status">该节点暂无单词卡内容。</div>
-              <button class="minor-btn content-enter-btn" @click="openWordCard">
-                进入词卡页
-              </button>
-            </template>
-
-            <template v-else-if="contentType === 'ARTICLE_DETAIL'">
-              <div v-if="articleDetail" class="note-content">
-                <h3>{{ articleDetail.title || "未命名文章" }}</h3>
-                <p>段落数：{{ articleParagraphCount }}</p>
-              </div>
-              <div v-else class="note-status">该节点暂无文章内容。</div>
-              <button class="minor-btn content-enter-btn" @click="openArticle">
-                进入文章页
-              </button>
-            </template>
-
-            <template v-else-if="contentType === 'QUESTION_PAGE'">
-              <ul v-if="questionRecords.length" class="info-list">
-                <li
-                  v-for="item in questionRecords"
-                  :key="item.id || item.questionCode"
-                  class="info-item"
-                >
-                  {{ item.title || item.questionCode || "未命名题目" }}
-                </li>
-              </ul>
-              <div v-else class="note-status">该节点暂无题目内容。</div>
-              <button class="minor-btn content-enter-btn" @click="openPractice">
-                进入练习页
-              </button>
-            </template>
-
-            <template v-else>
-              <div v-if="!contentText" class="note-status">
-                该节点暂无内容。
-              </div>
-              <pre v-else class="content-json">{{ contentText }}</pre>
-            </template>
-          </div>
-
-          <div class="card">
-            <div class="section-head">
               <h2 class="section-title">子节点</h2>
               <button class="minor-btn" type="button" @click="handleAddChild">
                 新增
@@ -153,6 +96,16 @@
               <li v-if="!childNodes.length" class="tree-item">暂无子节点</li>
             </ul>
           </div>
+
+          <div v-if="isMarkdownNode" class="card">
+            <div class="section-head">
+              <h2 class="section-title">内容</h2>
+            </div>
+            <div v-if="!hasMarkdownContent" class="note-status">
+              该节点暂无内容。
+            </div>
+            <pre v-else class="content-json">{{ contentText }}</pre>
+          </div>
         </div>
       </div>
     </div>
@@ -160,7 +113,7 @@
 </template>
 
 <script>
-import { getNoteNodeById, getNoteNodeContentByType } from "@/api/noteNodes";
+import { getNoteNodeById } from "@/api/noteNodes";
 import { saveLastLanguageJpNoteId } from "@/utils/languageJpNav";
 import {
   createDefaultNoteNode,
@@ -175,8 +128,6 @@ export default {
       childNodes: [],
       paths: [],
       noteContent: null,
-      contentType: "NOTE_NODE_CONTENT",
-      contentExt: {},
       loading: false,
       errorMessage: "",
     };
@@ -212,53 +163,11 @@ export default {
         .filter(Boolean)
         .join(" / ");
     },
-    contentTypeLabel() {
-      const labels = {
-        NOTE_NODE_CONTENT: "通用内容",
-        WORD_CARD_PAGE: "单词卡",
-        ARTICLE_DETAIL: "文章",
-        QUESTION_PAGE: "题目",
-        UNSUPPORTED: "未支持",
-      };
-      return labels[this.contentType] || this.contentType || "未知";
+    isMarkdownNode() {
+      return this.resolveNoteTypeCode(this.noteNode?.noteType) === 1;
     },
-    wordCardRecords() {
-      const content = this.noteContent;
-      if (Array.isArray(content)) {
-        return content;
-      }
-      if (Array.isArray(content?.records)) {
-        return content.records;
-      }
-      return [];
-    },
-    questionRecords() {
-      const content = this.noteContent;
-      if (Array.isArray(content)) {
-        return content;
-      }
-      if (Array.isArray(content?.records)) {
-        return content.records;
-      }
-      return [];
-    },
-    articleDetail() {
-      const content = this.noteContent;
-      if (!content || Array.isArray(content) || typeof content !== "object") {
-        return null;
-      }
-      if (
-        !("id" in content) &&
-        !("title" in content) &&
-        !("paragraphs" in content)
-      ) {
-        return null;
-      }
-      return content;
-    },
-    articleParagraphCount() {
-      const paragraphs = this.articleDetail?.paragraphs;
-      return Array.isArray(paragraphs) ? paragraphs.length : 0;
+    hasMarkdownContent() {
+      return Boolean(this.contentText);
     },
     contentText() {
       const content = this.noteContent;
@@ -303,24 +212,19 @@ export default {
           this.noteNode = createDefaultNoteNode();
           this.paths = [];
           this.noteContent = null;
-          this.contentType = "NOTE_NODE_CONTENT";
-          this.contentExt = {};
           this.childNodes = [];
           this.errorMessage =
             "请通过 /language-jp/materials/{id} 访问指定节点。";
           return;
         }
 
-        const noteVO = await this.loadNoteByTypedApi(noteId);
+        const noteVO = await getNoteNodeById(noteId);
         const note = noteVO?.noteNode || noteVO;
         saveLastLanguageJpNoteId(noteId);
 
         this.noteNode = normalizeNoteNode(note || {});
         this.paths = Array.isArray(noteVO?.paths) ? noteVO.paths : [];
         this.noteContent = noteVO?.content ?? this.noteNode.content;
-        this.contentType = noteVO?.contentType || "NOTE_NODE_CONTENT";
-        this.contentExt =
-          noteVO?.ext && typeof noteVO.ext === "object" ? noteVO.ext : {};
         this.childNodes = (noteVO?.childNoteNodes || [])
           .map((item) => ({
             id: item.id,
@@ -333,31 +237,10 @@ export default {
         this.noteNode = createDefaultNoteNode();
         this.paths = [];
         this.noteContent = null;
-        this.contentType = "NOTE_NODE_CONTENT";
-        this.contentExt = {};
         this.childNodes = [];
         this.errorMessage = `接口请求失败：${error.message}`;
       } finally {
         this.loading = false;
-      }
-    },
-    async loadNoteByTypedApi(noteId) {
-      try {
-        return await getNoteNodeContentByType(noteId, {
-          page: 1,
-          size: 10,
-          includeChildren: true,
-        });
-      } catch (error) {
-        const fallback = await getNoteNodeById(noteId);
-        return {
-          ...fallback,
-          contentType: "NOTE_NODE_CONTENT",
-          ext: {
-            fallback: true,
-            fallbackReason: error?.message || "typed api failed",
-          },
-        };
       }
     },
     resolveNoteTypeCode(noteType) {
@@ -451,15 +334,6 @@ export default {
         params: { parentId: String(parentId) },
         query: { nodeId: String(nodeId) },
       });
-    },
-    openWordCard() {
-      this.openWordCardByNode(this.noteNode?.id);
-    },
-    openArticle() {
-      this.openArticleByNode(this.noteNode?.id);
-    },
-    openPractice() {
-      this.openPracticeByNode(this.noteNode?.id);
     },
     handleAddChild() {
       const parentId =
