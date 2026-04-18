@@ -2,14 +2,12 @@
 set -euo pipefail
 
 APP_ROOT="${APP_ROOT:-/home/app/app-note}"
-APP_JAR="${APP_JAR:-$APP_ROOT/app-note.jar}"
-JAVA_BIN="${JAVA_BIN:-java}"
-JAVA_OPTS="${JAVA_OPTS:-}"
+APP_BIN="${APP_BIN:-$APP_ROOT/app-note}"
 PID_FILE="${PID_FILE:-$APP_ROOT/bin/app-note.pid}"
 LOG_DIR="${LOG_DIR:-$APP_ROOT/logs}"
 CONSOLE_LOG_FILE="${CONSOLE_LOG_FILE:-$LOG_DIR/app-note-console.log}"
 APP_LOG_FILE="${APP_LOG_FILE:-$LOG_DIR/app-note.log}"
-ENV_NAME="${ENV_NAME:-pro}"
+ENV_NAME="pro"
 WAIT_SECONDS="${WAIT_SECONDS:-20}"
 
 usage() {
@@ -18,27 +16,23 @@ Usage:
   bin/app <command> [options]
 
 Commands:
-  start    Start app-note boot jar
+  start    Start app-note (pro only)
   stop     Stop app-note
   status   Show app-note status
   log      Tail logs
 
 Global env defaults:
   APP_ROOT=/home/app/app-note
-  APP_JAR=$APP_ROOT/app-note.jar
-  JAVA_BIN=java
-  JAVA_OPTS=
+  APP_BIN=$APP_ROOT/app-note
   PID_FILE=$APP_ROOT/bin/app-note.pid
   LOG_DIR=$APP_ROOT/logs
   CONSOLE_LOG_FILE=$LOG_DIR/app-note-console.log
   APP_LOG_FILE=$LOG_DIR/app-note.log
-  ENV_NAME=pro
   WAIT_SECONDS=20
 
 Examples:
   bin/app start
   bin/app start --no-tail
-  JAVA_OPTS='-Xms512m -Xmx1g' bin/app start
   bin/app stop
   bin/app status
   bin/app log --lines 200
@@ -107,13 +101,8 @@ USAGE
     exit 2
   fi
 
-  if [ ! -f "$APP_JAR" ]; then
-    echo "[err] boot jar not found: $APP_JAR" >&2
-    exit 1
-  fi
-
-  if ! command -v "$JAVA_BIN" >/dev/null 2>&1; then
-    echo "[err] java executable not found: $JAVA_BIN" >&2
+  if [ ! -x "$APP_BIN" ]; then
+    echo "[err] binary not executable: $APP_BIN" >&2
     exit 1
   fi
 
@@ -128,20 +117,11 @@ USAGE
     rm -f "$PID_FILE"
   fi
 
-  local java_opts=()
-  if [ -n "$JAVA_OPTS" ]; then
-    # shellcheck disable=SC2206
-    java_opts=($JAVA_OPTS)
-  fi
-
   cmd=(
-    "$JAVA_BIN"
-    "${java_opts[@]}"
-    "-Dspring.profiles.active=$ENV_NAME"
-    "-Dspring.config.additional-location=optional:file:$APP_ROOT/config/"
-    "-Dlogging.file.name=$APP_LOG_FILE"
-    -jar
-    "$APP_JAR"
+    "$APP_BIN"
+    "--spring.profiles.active=$ENV_NAME"
+    "--spring.config.additional-location=file:$APP_ROOT/config/"
+    "--logging.file.name=$APP_LOG_FILE"
   )
 
   echo "[run] ${cmd[*]}"
@@ -225,7 +205,6 @@ status_app() {
   if is_running_pid "$pid"; then
     echo "running (pid=$pid)"
     echo "profile=$ENV_NAME"
-    echo "jar=$APP_JAR"
     echo "console_log=$CONSOLE_LOG_FILE"
     echo "app_log=$APP_LOG_FILE"
     return 0

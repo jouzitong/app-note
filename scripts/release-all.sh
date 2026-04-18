@@ -15,7 +15,7 @@ usage() {
 Usage: $(basename "$0") [--env dev|test|pro] [--skip-backend] [--skip-frontend]
 
 Pipeline:
-  1) build backend native
+  1) build backend boot jar
   2) deploy backend
   3) stop/start backend
   4) build frontend
@@ -64,7 +64,7 @@ fi
 echo "[ok] branch check passed: $CURRENT_BRANCH"
 
 if [ "$SKIP_BACKEND" -eq 0 ]; then
-  "$SCRIPT_DIR/builder/build-native-linux.sh" --profile "$ENV_NAME"
+  "$SCRIPT_DIR/builder/build-boot-jar.sh" --profile "$ENV_NAME"
   "$SCRIPT_DIR/deploy/deploy-app-note.sh" --env "$ENV_NAME"
   "$APP_CMD" stop || true
   "$APP_CMD" start --no-tail
