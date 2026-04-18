@@ -160,8 +160,8 @@ export function createDefaultWordCard() {
     },
     actions: [
       { key: "done", icon: "✓", title: "完成" },
-      { key: "hard", icon: "⚠", title: "易错" },
-      { key: "favorite", icon: "★", title: "收藏" },
+      // { key: "hard", icon: "⚠", title: "易错" },
+      // { key: "favorite", icon: "★", title: "收藏" },
       { key: "audio", icon: "🔊", title: "整卡朗读" },
       { key: "prev", icon: "⏮", title: "上一个" },
       { key: "next", icon: "⏭", title: "下一个" },
