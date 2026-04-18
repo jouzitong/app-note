@@ -1,6 +1,7 @@
 import { requestJson, unwrapResponse } from "@/utils/http";
 
 const BASE_PATH = "/api/v1/noteNodes/domain";
+const APP_BASE_PATH = "/api/v1/app/noteNodes";
 const NOTE_TAG_BIZ_TYPE = "NOTE";
 
 function toQueryString(params = {}) {
@@ -63,6 +64,24 @@ export async function getNoteNodeById(id) {
       ? body.childNoteNodes
       : [],
     content: body?.content ?? null,
+  };
+}
+
+export async function getNoteNodeContentByType(id, params = {}) {
+  const res = await requestJson(
+    `${APP_BASE_PATH}/${id}/content${toQueryString(params)}`
+  );
+  const body = unwrap(res);
+  return {
+    noteNode: body?.noteNode || null,
+    paths: Array.isArray(body?.paths) ? body.paths : [],
+    childNoteNodes: Array.isArray(body?.childNoteNodes)
+      ? body.childNoteNodes
+      : [],
+    noteType: body?.noteType ?? null,
+    contentType: body?.contentType ?? null,
+    content: body?.content ?? null,
+    ext: body?.ext ?? {},
   };
 }
 

@@ -51,6 +51,63 @@
         <div class="main-content">
           <div class="card">
             <div class="section-head">
+              <h2 class="section-title">内容</h2>
+              <span class="meta-chip">{{ contentTypeLabel }}</span>
+            </div>
+
+            <template v-if="contentType === 'WORD_CARD_PAGE'">
+              <ul v-if="wordCardRecords.length" class="info-list">
+                <li
+                  v-for="item in wordCardRecords"
+                  :key="item.id || item.word?.text"
+                  class="info-item"
+                >
+                  {{ item.word?.text || item.id || "未命名单词卡" }}
+                </li>
+              </ul>
+              <div v-else class="note-status">该节点暂无单词卡内容。</div>
+              <button class="minor-btn content-enter-btn" @click="openWordCard">
+                进入词卡页
+              </button>
+            </template>
+
+            <template v-else-if="contentType === 'ARTICLE_DETAIL'">
+              <div v-if="articleDetail" class="note-content">
+                <h3>{{ articleDetail.title || "未命名文章" }}</h3>
+                <p>段落数：{{ articleParagraphCount }}</p>
+              </div>
+              <div v-else class="note-status">该节点暂无文章内容。</div>
+              <button class="minor-btn content-enter-btn" @click="openArticle">
+                进入文章页
+              </button>
+            </template>
+
+            <template v-else-if="contentType === 'QUESTION_PAGE'">
+              <ul v-if="questionRecords.length" class="info-list">
+                <li
+                  v-for="item in questionRecords"
+                  :key="item.id || item.questionCode"
+                  class="info-item"
+                >
+                  {{ item.title || item.questionCode || "未命名题目" }}
+                </li>
+              </ul>
+              <div v-else class="note-status">该节点暂无题目内容。</div>
+              <button class="minor-btn content-enter-btn" @click="openPractice">
+                进入练习页
+              </button>
+            </template>
+
+            <template v-else>
+              <div v-if="!contentText" class="note-status">
+                该节点暂无内容。
+              </div>
+              <pre v-else class="content-json">{{ contentText }}</pre>
+            </template>
+          </div>
+
+          <div class="card">
+            <div class="section-head">
               <h2 class="section-title">子节点</h2>
               <button class="minor-btn" type="button" @click="handleAddChild">
                 新增
@@ -103,7 +160,7 @@
 </template>
 
 <script>
-import { getNoteNodeById } from "@/api/noteNodes";
+import { getNoteNodeById, getNoteNodeContentByType } from "@/api/noteNodes";
 import { saveLastLanguageJpNoteId } from "@/utils/languageJpNav";
 import {
   createDefaultNoteNode,
@@ -118,6 +175,8 @@ export default {
       childNodes: [],
       paths: [],
       noteContent: null,
+      contentType: "NOTE_NODE_CONTENT",
+      contentExt: {},
       loading: false,
       errorMessage: "",
     };
@@ -153,6 +212,68 @@ export default {
         .filter(Boolean)
         .join(" / ");
     },
+    contentTypeLabel() {
+      const labels = {
+        NOTE_NODE_CONTENT: "通用内容",
+        WORD_CARD_PAGE: "单词卡",
+        ARTICLE_DETAIL: "文章",
+        QUESTION_PAGE: "题目",
+        UNSUPPORTED: "未支持",
+      };
+      return labels[this.contentType] || this.contentType || "未知";
+    },
+    wordCardRecords() {
+      const content = this.noteContent;
+      if (Array.isArray(content)) {
+        return content;
+      }
+      if (Array.isArray(content?.records)) {
+        return content.records;
+      }
+      return [];
+    },
+    questionRecords() {
+      const content = this.noteContent;
+      if (Array.isArray(content)) {
+        return content;
+      }
+      if (Array.isArray(content?.records)) {
+        return content.records;
+      }
+      return [];
+    },
+    articleDetail() {
+      const content = this.noteContent;
+      if (!content || Array.isArray(content) || typeof content !== "object") {
+        return null;
+      }
+      if (
+        !("id" in content) &&
+        !("title" in content) &&
+        !("paragraphs" in content)
+      ) {
+        return null;
+      }
+      return content;
+    },
+    articleParagraphCount() {
+      const paragraphs = this.articleDetail?.paragraphs;
+      return Array.isArray(paragraphs) ? paragraphs.length : 0;
+    },
+    contentText() {
+      const content = this.noteContent;
+      if (content === null || content === undefined || content === "") {
+        return "";
+      }
+      if (typeof content === "string") {
+        return content;
+      }
+      try {
+        return JSON.stringify(content, null, 2);
+      } catch (error) {
+        return String(content);
+      }
+    },
   },
   async created() {
     await this.loadPageData();
@@ -182,19 +303,24 @@ export default {
           this.noteNode = createDefaultNoteNode();
           this.paths = [];
           this.noteContent = null;
+          this.contentType = "NOTE_NODE_CONTENT";
+          this.contentExt = {};
           this.childNodes = [];
           this.errorMessage =
             "请通过 /language-jp/materials/{id} 访问指定节点。";
           return;
         }
 
-        const noteVO = await getNoteNodeById(noteId);
+        const noteVO = await this.loadNoteByTypedApi(noteId);
         const note = noteVO?.noteNode || noteVO;
         saveLastLanguageJpNoteId(noteId);
 
         this.noteNode = normalizeNoteNode(note || {});
         this.paths = Array.isArray(noteVO?.paths) ? noteVO.paths : [];
         this.noteContent = noteVO?.content ?? this.noteNode.content;
+        this.contentType = noteVO?.contentType || "NOTE_NODE_CONTENT";
+        this.contentExt =
+          noteVO?.ext && typeof noteVO.ext === "object" ? noteVO.ext : {};
         this.childNodes = (noteVO?.childNoteNodes || [])
           .map((item) => ({
             id: item.id,
@@ -207,40 +333,133 @@ export default {
         this.noteNode = createDefaultNoteNode();
         this.paths = [];
         this.noteContent = null;
+        this.contentType = "NOTE_NODE_CONTENT";
+        this.contentExt = {};
         this.childNodes = [];
         this.errorMessage = `接口请求失败：${error.message}`;
       } finally {
         this.loading = false;
       }
     },
+    async loadNoteByTypedApi(noteId) {
+      try {
+        return await getNoteNodeContentByType(noteId, {
+          page: 1,
+          size: 10,
+          includeChildren: true,
+        });
+      } catch (error) {
+        const fallback = await getNoteNodeById(noteId);
+        return {
+          ...fallback,
+          contentType: "NOTE_NODE_CONTENT",
+          ext: {
+            fallback: true,
+            fallbackReason: error?.message || "typed api failed",
+          },
+        };
+      }
+    },
+    resolveNoteTypeCode(noteType) {
+      if (noteType === null || noteType === undefined || noteType === "") {
+        return null;
+      }
+      const raw = String(noteType).trim();
+      const num = Number(raw);
+      if (Number.isFinite(num)) {
+        return num;
+      }
+      const upper = raw.toUpperCase();
+      if (upper === "WORD_CARD" || upper === "WORD") {
+        return 2;
+      }
+      if (upper === "ARTICLE") {
+        return 4;
+      }
+      if (
+        upper === "PRACTICE" ||
+        upper === "QUESTIONS" ||
+        upper === "QUESTION"
+      ) {
+        return 100;
+      }
+      return null;
+    },
     openChildNode(childNode) {
       if (!childNode || !childNode.id) {
         return;
       }
-      if (Number(childNode.noteType) === 2) {
-        const parentId =
-          this.noteNode && this.noteNode.id
-            ? String(this.noteNode.id)
-            : this.$route.params.id || this.$route.query.id;
-        if (!parentId) {
-          this.errorMessage = "缺少父节点ID，无法进入单词卡页面";
-          return;
-        }
-        this.$router.push({
-          name: "language-jp-word-card",
-          params: { parentId: String(parentId) },
-          query: {
-            nodeId: String(childNode.id),
-            pageIndex: "1",
-            wordIndex: "0",
-          },
-        });
+      const typeCode = this.resolveNoteTypeCode(childNode.noteType);
+      if (typeCode === 2) {
+        this.openWordCardByNode(childNode.id);
+        return;
+      }
+      if (typeCode === 4) {
+        this.openArticleByNode(childNode.id);
+        return;
+      }
+      if (typeCode === 100) {
+        this.openPracticeByNode(childNode.id);
         return;
       }
       this.$router.push({
         name: "language-jp-materials",
         params: { id: String(childNode.id) },
       });
+    },
+    getParentIdForContentNav() {
+      return this.noteNode && this.noteNode.id
+        ? String(this.noteNode.id)
+        : this.$route.params.id || this.$route.query.id;
+    },
+    openWordCardByNode(nodeId) {
+      const parentId = this.getParentIdForContentNav();
+      if (!parentId || !nodeId) {
+        this.errorMessage = "缺少父节点ID或节点ID，无法进入单词卡页面";
+        return;
+      }
+      this.$router.push({
+        name: "language-jp-word-card",
+        params: { parentId: String(parentId) },
+        query: {
+          nodeId: String(nodeId),
+          pageIndex: "1",
+          wordIndex: "0",
+        },
+      });
+    },
+    openArticleByNode(nodeId) {
+      const parentId = this.getParentIdForContentNav();
+      if (!parentId || !nodeId) {
+        this.errorMessage = "缺少父节点ID或节点ID，无法进入文章页面";
+        return;
+      }
+      this.$router.push({
+        name: "language-jp-article",
+        params: { parentId: String(parentId) },
+        query: { nodeId: String(nodeId) },
+      });
+    },
+    openPracticeByNode(nodeId) {
+      const parentId = this.getParentIdForContentNav();
+      if (!parentId || !nodeId) {
+        this.errorMessage = "缺少父节点ID或节点ID，无法进入练习页面";
+        return;
+      }
+      this.$router.push({
+        name: "language-jp-practice",
+        params: { parentId: String(parentId) },
+        query: { nodeId: String(nodeId) },
+      });
+    },
+    openWordCard() {
+      this.openWordCardByNode(this.noteNode?.id);
+    },
+    openArticle() {
+      this.openArticleByNode(this.noteNode?.id);
+    },
+    openPractice() {
+      this.openPracticeByNode(this.noteNode?.id);
     },
     handleAddChild() {
       const parentId =
@@ -477,6 +696,23 @@ export default {
 .note-content ul {
   margin: 0 0 14px 20px;
   padding: 0;
+}
+
+.content-json {
+  margin: 0;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.content-enter-btn {
+  margin-top: 12px;
 }
 
 .aside-block + .aside-block {
