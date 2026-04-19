@@ -3,7 +3,7 @@
 :toclevels: 3
 :sectnums:
 
-== 1. 目的与适用范围
+== 目的与适用范围
 
 本文档用于统一 Vue2 前端项目的目录架构与职责边界，解决以下问题：
 
@@ -14,7 +14,7 @@
 
 适用范围：本仓库所有 Vue2 前端业务开发。
 
-== 2. 顶层目录规范
+== 顶层目录规范
 
 [source,text]
 ----
@@ -27,38 +27,38 @@ src/
   model/               # 数据模型管理（后端模型 + 前端模型）
 ----
 
-=== 2.1 api
+=== api
 
 * 仅负责接口请求能力，不承载页面状态。
 * 按业务模块拆分文件，如 `api/auth.js`、`api/order.js`。
 
-=== 2.2 assets
+=== assets
 
 * 存放图片、字体、样式资源等静态文件。
 * 目录名统一使用 `assets`（避免 `asserts` 拼写混用）。
 
-=== 2.3 components
+=== components
 
 * 存放架构级通用组件。
 * 要求无业务语义，可在新项目直接复用。
 * 示例：通用弹窗、通用表格容器、通用分页容器。
 
-=== 2.4 router
+=== router
 
 * 统一路由入口与模块路由注册。
 * 测试路由独立管理，默认不进入生产构建。
 
-=== 2.5 views
+=== views
 
 * 仅负责页面与页面级业务模块组织。
 * 目录结构见第 3 章。
 
-=== 2.6 model
+=== model
 
 * 统一管理数据模型定义。
 * 分为后端接口模型与前端状态模型，见第 4 章。
 
-== 3. views 目录规范
+== views 目录规范
 
 [source,text]
 ----
@@ -71,39 +71,39 @@ views/
   test/                # 调试/测试页面（默认不进生产路由）
 ----
 
-=== 3.1 home
+=== home
 
 * 存放首页及首页相关页面。
 * 首页相关逻辑不得散落到其他业务域目录。
 
-=== 3.2 domain
+=== domain
 
 * 所有业务页面集中在 `views/domain` 下。
 * 业务域按语义命名，例如 `auth`、`order`、`customer`。
 * 单一业务域下可继续按页面或子模块拆分，避免单目录文件过多。
 
-=== 3.3 commons
+=== commons
 
 * 存放业务通用组件。
 * 该类组件可带业务语义，但需具备跨多个业务域复用价值。
 * 禁止将 `views/commons` 作为“新业务目录”使用。
 
-=== 3.4 test
+=== test
 
 * 存放联调、调试、演示页面。
 * 必须通过独立测试路由注册。
 * 生产环境默认禁用访问。
 
-== 4. model 数据模型规范
+== model 数据模型规范
 
-== 4.1 设计原则
+== 设计原则
 
 数据模型分两类：
 
 * 后端相关模型：请求/响应结构定义
 * 前端相关模型：页面与交互状态定义
 
-=== 4.2 后端模型（跟 api 目录走）
+=== 后端模型（跟 api 目录走）
 
 [source,text]
 ----
@@ -125,7 +125,7 @@ model/
 * 一个接口动作对应 `*.request.ts` 与 `*.response.ts`。
 * 文件命名必须体现动作语义，禁止 `data.ts`、`model.ts` 之类泛命名。
 
-=== 4.3 前端模型（跟 views 目录走）
+=== 前端模型（跟 views 目录走）
 
 [source,text]
 ----
@@ -146,14 +146,14 @@ model/
 * 与 `views/` 目录层次对齐，保证可快速定位。
 * 仅定义前端自行维护状态，如：筛选条件、表单态、UI态、分页态。
 
-=== 4.4 依赖方向约束
+=== 依赖方向约束
 
 * `api/**` 可依赖 `model/api/**`。
 * `views/**` 可依赖 `model/api/**` 与 `model/views/**`。
 * `model/api/**` 不得依赖 `views/**`。
 * `model/views/**` 不得依赖 Vue 页面组件实现。
 
-== 5. router 路由组织规范
+== router 路由组织规范
 
 建议拆分：
 
@@ -186,7 +186,7 @@ export default new Router({ routes })
 * 生产环境默认不注入测试路由。
 * 如需线上灰度测试，必须通过明确环境变量开关控制。
 
-== 6. 命名规范
+== 命名规范
 
 * 页面文件建议：`XxxPage.vue` 或按历史约定保持一致（同项目内统一）。
 * 业务域目录：使用清晰英文语义名，如 `auth`、`order`。
@@ -194,14 +194,14 @@ export default new Router({ routes })
 * 响应模型类型：`LoginResponse`。
 * 页面状态类型：`OrderListPageState`。
 
-== 7. 反模式（禁止事项）
+== 反模式（禁止事项）
 
 * `views/` 下平铺所有业务页面，不做业务域拆分。
 * 将可复用业务组件误建为独立业务目录。
 * 接口响应结构直接在页面中散落使用，不做统一模型定义。
 * 测试页面路由直接混入正式路由并进入生产环境。
 
-== 8. 落地与迁移建议
+== 落地与迁移建议
 
 * 新需求严格按本规范新增目录与文件。
 * 存量代码采用“增量迁移”，避免一次性重构风险。
@@ -211,7 +211,295 @@ export default new Router({ routes })
 2. 是否按规则定义 request/response/state 模型
 3. test 路由是否已与生产路由隔离
 
-== 9. 附：最小示例
+== 业务域标准骨架
+
+每个 `views/domain/<domain>/` 至少包含以下子目录，禁止按个人习惯随意增删同层语义目录：
+
+[source,text]
+----
+views/
+  domain/
+    order/
+      pages/                 # 页面组件（路由直达页面）
+      components/            # 业务域内复用组件（仅本 domain 使用）
+      services/              # domain 级服务编排（调用 api + mapper）
+      types/                 # domain 级类型定义（前端语义）
+      constants/             # 常量、枚举、字典映射
+      __tests__/             # domain 级测试（页面/服务/状态）
+----
+
+约束：
+
+* `pages/` 仅放路由页面，不放通用组件。
+* `components/` 不得反向依赖 `pages/`。
+* `services/` 不直接返回后端原始响应，必须返回前端语义化数据。
+* `types/` 与 `constants/` 禁止出现接口请求副作用逻辑。
+
+== 依赖边界可执行化
+
+目录边界必须由静态检查和 CI 阻断落地，不允许仅靠 Code Review 人工约束。
+
+=== ESLint 规则
+
+要求：
+
+* 开启 `eslint-plugin-import`。
+* 使用 `no-restricted-imports` 阻断越层依赖。
+* 使用 `import/no-cycle` 避免循环依赖。
+
+示例（`.eslintrc.js`）：
+
+[source,javascript]
+----
+module.exports = {
+  plugins: ['import'],
+  rules: {
+    'import/no-cycle': ['error', { maxDepth: 1 }],
+    'no-restricted-imports': ['error', {
+      patterns: [
+        { group: ['@/views/**/pages/**'], message: '禁止跨业务域直接引用页面文件' },
+        { group: ['@/views/test/**'], message: '业务代码禁止依赖测试页面' },
+        { group: ['@/views/**'], message: 'model/api 层禁止依赖 views 层' }
+      ]
+    }]
+  },
+  overrides: [
+    {
+      files: ['src/model/api/**/*'],
+      rules: {
+        'no-restricted-imports': ['error', {
+          patterns: [{ group: ['@/views/**'], message: 'model/api 不得依赖 views' }]
+        }]
+      }
+    }
+  ]
+}
+----
+
+=== CI 阻断要求
+
+* PR 必须通过 `lint` 才可合并。
+* 推荐在 CI 中执行：`npm run lint && npm run test:unit`。
+* 对新增越层依赖，CI 直接失败，不允许“后续修复”。
+
+== 接口契约（API -> Mapper -> ViewModel）
+
+统一三段式契约：
+
+1. `api/**`：仅请求与响应收敛，返回 `model/api/**` 类型。
+2. `mapper/**`：将 `model/api/**` 转为 `model/views/**`（或 domain `types/**`）语义。
+3. `views/**`：仅消费 mapper 结果，不直接消费后端 DTO 字段。
+
+推荐目录：
+
+[source,text]
+----
+src/
+  api/
+  model/
+    api/
+    views/
+  mappers/
+    domain/
+      order/
+        order-list.mapper.ts
+----
+
+约束：
+
+* 页面中禁止出现后端字段“透传重命名”逻辑。
+* 同一接口响应转换逻辑必须唯一归口到一个 mapper。
+* mapper 函数需纯函数化，禁止发请求与副作用。
+
+== 路由治理规范
+
+=== name/path/meta 规范
+
+* `name`：`<domain>-<action>`，示例：`order-list`、`order-detail`。
+* `path`：kebab-case，示例：`/order/list`、`/order/:id`。
+* `meta` 最小字段：
+** `title`：页面标题
+** `requiresAuth`：是否需要登录
+** `permissions`：权限点数组
+** `keepAlive`：是否缓存
+** `featureFlag`：灰度开关（可选）
+
+=== 懒加载模板
+
+[source,javascript]
+----
+const OrderListPage = () => import(/* webpackChunkName: "domain-order" */ '@/views/domain/order/pages/OrderListPage.vue')
+
+export default [
+  {
+    name: 'order-list',
+    path: '/order/list',
+    component: OrderListPage,
+    meta: {
+      title: '订单列表',
+      requiresAuth: true,
+      permissions: ['order:read'],
+      keepAlive: true
+    }
+  }
+]
+----
+
+=== 404 与异常页
+
+* 必须提供 `NotFoundPage`（404）与 `ErrorPage`（5xx）路由。
+* 通配路由 `*` 仅用于跳转 404，且必须在路由末尾注册。
+* 异常页禁止放入 `views/test`。
+
+== 状态管理规范（Vuex）
+
+=== 模块命名
+
+* 模块按业务域命名：`store/modules/order.js`、`store/modules/auth.js`。
+* 全部开启命名空间：`namespaced: true`。
+
+=== mutation/action 约定
+
+* `mutation`：仅做同步状态变更，命名 `SET_XXX`、`RESET_XXX`。
+* `action`：处理异步与副作用，命名使用动词短语，如 `fetchOrderList`。
+* 禁止在组件中直接操作复杂状态拼装，必须下沉到 `action` 或 `service`。
+
+=== 异步请求生命周期
+
+每个页面关键请求必须维护最小生命周期状态：
+
+* `loading`：请求中
+* `error`：错误对象或错误码
+* `empty`：结果为空态
+
+示例：
+
+[source,javascript]
+----
+const state = {
+  list: [],
+  loading: false,
+  error: null,
+  empty: false
+}
+----
+
+== 测试规范
+
+=== 测试目录与命名
+
+* 单元测试可放在同级 `__tests__/` 或 `tests/unit/`，同项目内统一。
+* 文件命名：`*.spec.ts` 或 `*.test.ts`，同项目内统一。
+* e2e 测试目录建议：`tests/e2e/`。
+
+=== 必测关键路径
+
+以下路径必须具备可执行测试用例：
+
+* 鉴权链路：登录、登出、token 刷新、未授权跳转。
+* 下单链路：参数校验、提交成功、提交失败回滚。
+* 支付链路：支付发起、回调处理、失败重试与提示。
+
+=== 质量门禁
+
+* 新增核心业务逻辑必须附带测试，不允许“仅补目录不补测试”。
+* CI 至少执行单元测试；关键链路建议增加 e2e 冒烟。
+
+== 样式与设计令牌
+
+=== 令牌来源
+
+统一令牌目录：
+
+[source,text]
+----
+src/assets/styles/tokens/
+  color.scss
+  spacing.scss
+  typography.scss
+----
+
+约束：
+
+* 颜色、间距、字号必须优先引用设计令牌变量。
+* 页面内禁止硬编码魔法值（如 `#3b82f6`、`17px`、`13px`）。
+* 新增令牌需在设计评审后统一入库，不允许页面私有复制。
+
+== 可观测性与错误处理
+
+=== 错误码映射
+
+* 建立统一错误码映射表：`src/constants/error-map.ts`。
+* 页面禁止散落硬编码错误文案，统一通过错误码映射与兜底文案输出。
+
+=== 埋点字段规范
+
+最小埋点字段建议：
+
+* `event`：事件名
+* `page`：页面标识
+* `module`：业务域
+* `action`：操作动作
+* `result`：成功/失败
+* `error_code`：错误码（失败时）
+* `trace_id`：链路追踪 ID
+
+=== 日志采集入口
+
+* 前端异常统一接入 Sentry（或同级平台）入口，禁止多套上报并存。
+* `api` 层统一记录请求耗时、状态码与 trace_id。
+* 严禁在生产环境打印包含敏感信息的 `console` 日志。
+
+== 增量迁移操作手册
+
+=== 旧目录识别规则
+
+命中以下任一情况即视为待迁移：
+
+* `views/` 下业务页面平铺，未按 `domain` 分层。
+* 页面内直接定义接口响应结构或散落 DTO 类型。
+* `test` 页面已注册到正式路由。
+
+=== 迁移优先级
+
+* P0：线上高频路径（鉴权、下单、支付）与高故障模块。
+* P1：正在迭代的业务域（随需求改造）。
+* P2：低频与稳定模块（按季度治理）。
+
+=== 单次 PR 范围控制
+
+* 单次迁移 PR 建议只覆盖 1 个业务域。
+* 纯迁移改造建议控制在 30 个文件以内，避免评审失焦。
+* 迁移 PR 禁止混入无关需求开发。
+
+== 脚手架与模板
+
+为降低规范记忆成本，必须提供可复用脚手架命令生成标准骨架。
+
+示例命令：
+
+[source,bash]
+----
+npm run gen:domain -- --name order
+----
+
+生成结果至少包含：
+
+* `views/domain/<domain>/pages`
+* `views/domain/<domain>/components`
+* `views/domain/<domain>/services`
+* `views/domain/<domain>/types`
+* `views/domain/<domain>/constants`
+* `views/domain/<domain>/__tests__`
+* 对应 `model/views/domain/<domain>` 初始化状态文件
+* 对应 `router` 模块路由模板
+
+要求：
+
+* 模板内必须包含最小示例代码与注释。
+* 新业务域创建不得手工搭目录，统一走脚手架。
+
+== 附：最小示例
 
 [source,text]
 ----
@@ -230,11 +518,26 @@ src/
       HomePage.vue
     domain/
       auth/
-        LoginPage.vue
+        pages/
+          LoginPage.vue
+        components/
+          LoginForm.vue
+        services/
+          auth.service.ts
+        types/
+          auth.types.ts
+        constants/
+          auth.constants.ts
+        __tests__/
+          login-page.spec.ts
     commons/
       UserStatusTag.vue
     test/
       PlaygroundPage.vue
+  mappers/
+    domain/
+      auth/
+        login.mapper.ts
   model/
     api/
       auth/
