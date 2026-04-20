@@ -2,11 +2,11 @@ const HomeView = () =>
   import(/* webpackChunkName: "home" */ "../views/HomeView.vue");
 const LanguageJpView = () =>
   import(
-    /* webpackChunkName: "domain-language-jp" */ "../views/modules/language-jp/layout.vue"
+    /* webpackChunkName: "domain-language-jp" */ "../views/domain/language-jp/pages/index.vue"
   );
 const LanguageJpHomeView = () =>
   import(
-    /* webpackChunkName: "domain-language-jp" */ "../views/modules/language-jp/home.vue"
+    /* webpackChunkName: "domain-language-jp" */ "../views/domain/language-jp/pages/home/index.vue"
   );
 const LoginView = () =>
   import(/* webpackChunkName: "auth" */ "../views/LoginView.vue");
@@ -14,23 +14,23 @@ const AboutView = () =>
   import(/* webpackChunkName: "about" */ "../views/AboutView.vue");
 const NoteIndexView = () =>
   import(
-    /* webpackChunkName: "domain-language-jp-notes" */ "../views/commons/notes/index.vue"
+    /* webpackChunkName: "domain-language-jp-notes" */ "../views/domain/language-jp/pages/materials/index.vue"
   );
 const NoteEditView = () =>
   import(
-    /* webpackChunkName: "domain-language-jp-notes" */ "../views/commons/notes/edit.vue"
+    /* webpackChunkName: "domain-language-jp-notes" */ "../views/domain/language-jp/pages/materials/edit.vue"
   );
 const WordCardIndexView = () =>
   import(
-    /* webpackChunkName: "domain-language-jp-word-card" */ "../views/commons/wordCard/index.vue"
+    /* webpackChunkName: "domain-language-jp-word-card" */ "../views/domain/language-jp/pages/materials/wordCard/index.vue"
   );
 const ArticleReaderIndexView = () =>
   import(
-    /* webpackChunkName: "domain-language-jp-article" */ "../views/commons/article/index.vue"
+    /* webpackChunkName: "domain-language-jp-article" */ "../views/domain/language-jp/pages/materials/article/index.vue"
   );
 const PracticeExamIndexView = () =>
   import(
-    /* webpackChunkName: "domain-language-jp-practice" */ "../views/commons/practice/index.vue"
+    /* webpackChunkName: "domain-language-jp-practice" */ "../views/domain/language-jp/pages/materials/practice/index.vue"
   );
 const ErrorPage = () =>
   import(/* webpackChunkName: "error-pages" */ "../views/errors/ErrorPage.vue");

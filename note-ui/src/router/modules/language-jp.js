@@ -1,6 +1,6 @@
 const LanguageJpHomePage = () =>
   import(
-    /* webpackChunkName: "domain-language-jp" */ "@/views/domain/language-jp/pages/LanguageJpHomePage.vue"
+    /* webpackChunkName: "domain-language-jp" */ "@/views/domain/language-jp/pages/home/index.vue"
   );
 
 export default [
