@@ -23,11 +23,6 @@ export default {
     return {
       currentIndex: 0,
       pageSize: 10,
-      onGestureStart: null,
-      onGestureChange: null,
-      onGestureEnd: null,
-      onTouchMove: null,
-      onWheel: null,
     };
   },
   computed: {
@@ -52,64 +47,12 @@ export default {
   created() {
     this.syncFromRoute();
   },
-  mounted() {
-    this.installInteractionGuards();
-  },
-  beforeDestroy() {
-    this.uninstallInteractionGuards();
-  },
   watch: {
     "$route.fullPath"() {
       this.syncFromRoute();
     },
   },
   methods: {
-    installInteractionGuards() {
-      this.onGestureStart = (event) => event.preventDefault();
-      this.onGestureChange = (event) => event.preventDefault();
-      this.onGestureEnd = (event) => event.preventDefault();
-      this.onTouchMove = (event) => {
-        if (event.touches && event.touches.length > 1) {
-          event.preventDefault();
-        }
-      };
-      this.onWheel = (event) => {
-        if (event.ctrlKey) {
-          event.preventDefault();
-        }
-      };
-
-      document.addEventListener("gesturestart", this.onGestureStart, {
-        passive: false,
-      });
-      document.addEventListener("gesturechange", this.onGestureChange, {
-        passive: false,
-      });
-      document.addEventListener("gestureend", this.onGestureEnd, {
-        passive: false,
-      });
-      document.addEventListener("touchmove", this.onTouchMove, {
-        passive: false,
-      });
-      document.addEventListener("wheel", this.onWheel, { passive: false });
-    },
-    uninstallInteractionGuards() {
-      if (this.onGestureStart) {
-        document.removeEventListener("gesturestart", this.onGestureStart);
-      }
-      if (this.onGestureChange) {
-        document.removeEventListener("gesturechange", this.onGestureChange);
-      }
-      if (this.onGestureEnd) {
-        document.removeEventListener("gestureend", this.onGestureEnd);
-      }
-      if (this.onTouchMove) {
-        document.removeEventListener("touchmove", this.onTouchMove);
-      }
-      if (this.onWheel) {
-        document.removeEventListener("wheel", this.onWheel);
-      }
-    },
     parsePositiveInt(value) {
       if (value === undefined || value === null || value === "") {
         return null;
@@ -169,26 +112,12 @@ export default {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
-  overscroll-behavior: none;
 }
 
 .note-id-missing {
   margin-top: 40px;
   color: #ef4444;
   font-size: 14px;
-}
-
-.word-card-page :deep(input),
-.word-card-page :deep(textarea),
-.word-card-page :deep([contenteditable="true"]) {
-  user-select: text;
-  -webkit-user-select: text;
-  -webkit-touch-callout: default;
 }
 
 @media (min-width: 640px) {

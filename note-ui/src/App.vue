@@ -15,6 +15,75 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: "AppRoot",
+  data() {
+    return {
+      onGestureStart: null,
+      onGestureChange: null,
+      onGestureEnd: null,
+      onTouchMove: null,
+      onWheel: null,
+    };
+  },
+  mounted() {
+    this.installGlobalInteractionGuards();
+  },
+  beforeDestroy() {
+    this.uninstallGlobalInteractionGuards();
+  },
+  methods: {
+    installGlobalInteractionGuards() {
+      this.onGestureStart = (event) => event.preventDefault();
+      this.onGestureChange = (event) => event.preventDefault();
+      this.onGestureEnd = (event) => event.preventDefault();
+      this.onTouchMove = (event) => {
+        if (event.touches && event.touches.length > 1) {
+          event.preventDefault();
+        }
+      };
+      this.onWheel = (event) => {
+        if (event.ctrlKey || event.metaKey) {
+          event.preventDefault();
+        }
+      };
+
+      document.addEventListener("gesturestart", this.onGestureStart, {
+        passive: false,
+      });
+      document.addEventListener("gesturechange", this.onGestureChange, {
+        passive: false,
+      });
+      document.addEventListener("gestureend", this.onGestureEnd, {
+        passive: false,
+      });
+      document.addEventListener("touchmove", this.onTouchMove, {
+        passive: false,
+      });
+      document.addEventListener("wheel", this.onWheel, { passive: false });
+    },
+    uninstallGlobalInteractionGuards() {
+      if (this.onGestureStart) {
+        document.removeEventListener("gesturestart", this.onGestureStart);
+      }
+      if (this.onGestureChange) {
+        document.removeEventListener("gesturechange", this.onGestureChange);
+      }
+      if (this.onGestureEnd) {
+        document.removeEventListener("gestureend", this.onGestureEnd);
+      }
+      if (this.onTouchMove) {
+        document.removeEventListener("touchmove", this.onTouchMove);
+      }
+      if (this.onWheel) {
+        document.removeEventListener("wheel", this.onWheel);
+      }
+    },
+  },
+};
+</script>
+
 <style>
 html,
 body {
@@ -22,6 +91,12 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  overscroll-behavior: none;
 }
 
 #app {
@@ -32,6 +107,37 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
   color: var(--color-text-primary);
+}
+
+input,
+textarea,
+[contenteditable="true"] {
+  user-select: text;
+  -webkit-user-select: text;
+  -webkit-touch-callout: default;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 116, 139, 0.22) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.2);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.35);
 }
 
 nav {
