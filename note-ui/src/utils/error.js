@@ -1,4 +1,30 @@
+import { resolveErrorMessageByCode } from "@/constants/error-map";
+
+export function extractErrorCode(error) {
+  const bodyJson = error?.bodyJson;
+  if (bodyJson && typeof bodyJson === "object") {
+    const directCode = bodyJson.code || bodyJson.errorCode;
+    if (directCode !== undefined && directCode !== null && directCode !== "") {
+      return String(directCode).trim();
+    }
+    const dataCode = bodyJson.data?.code || bodyJson.data?.errorCode;
+    if (dataCode !== undefined && dataCode !== null && dataCode !== "") {
+      return String(dataCode).trim();
+    }
+  }
+  const statusText = error?.statusText;
+  if (typeof statusText === "string" && statusText.trim()) {
+    return statusText.trim();
+  }
+  return "";
+}
+
 export function getErrorMessage(error) {
+  const mappedByCode = resolveErrorMessageByCode(extractErrorCode(error));
+  if (mappedByCode) {
+    return mappedByCode;
+  }
+
   const bodyJson = error?.bodyJson;
   if (bodyJson && typeof bodyJson === "object") {
     const topMessage = bodyJson.msg || bodyJson.message;

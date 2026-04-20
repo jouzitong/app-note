@@ -100,73 +100,78 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: var(--space-5);
   background: radial-gradient(circle at 10% 10%, #dbeafe 0, transparent 30%),
-    radial-gradient(circle at 90% 90%, #dcfce7 0, transparent 34%), #f8fafc;
+    radial-gradient(circle at 90% 90%, #dcfce7 0, transparent 34%),
+    var(--color-surface-page);
 }
 
 .login-card {
   width: 100%;
   max-width: 420px;
-  background: #fff;
+  background: var(--color-surface-card);
   border-radius: 16px;
   box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
-  border: 1px solid #e5e7eb;
-  padding: 24px;
+  border: 1px solid var(--color-border-default);
+  padding: var(--space-6);
 }
 
 .login-title {
   margin: 0;
   font-size: 24px;
-  font-weight: 700;
-  color: #111827;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-strong);
 }
 
 .login-subtitle {
-  margin: 8px 0 20px;
-  color: #6b7280;
-  font-size: 13px;
+  margin: var(--space-2) 0 var(--space-5);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
 }
 
 .login-form {
   display: grid;
-  gap: 12px;
+  gap: var(--space-3);
 }
 
 .field {
   display: grid;
   gap: 6px;
-  font-size: 13px;
-  color: #374151;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
 }
 
 .field input {
   height: 40px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--color-border-default);
   border-radius: 10px;
-  padding: 0 12px;
+  padding: 0 var(--space-3);
   outline: none;
-  font-size: 14px;
+  font-size: var(--font-size-md);
 }
 
 .field input:focus {
-  border-color: #2563eb;
+  border-color: var(--color-brand-primary);
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
 .error-message {
   margin: 0;
-  color: #dc2626;
-  font-size: 12px;
+  color: var(--color-error-text);
+  font-size: var(--font-size-xs);
 }
 
 .submit-btn {
   height: 42px;
   border: 0;
   border-radius: 10px;
-  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-primary),
+    var(--color-brand-accent)
+  );
   color: #fff;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   cursor: pointer;
 }
 
@@ -176,22 +181,22 @@ export default {
 }
 
 .tips {
-  margin-top: 16px;
-  padding: 12px;
+  margin-top: var(--space-4);
+  padding: var(--space-3);
   border-radius: 10px;
-  background: #f3f4f6;
+  background: var(--color-surface-page);
 }
 
 .tip-title {
-  font-size: 12px;
-  color: #111827;
-  font-weight: 600;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-strong);
+  font-weight: var(--font-weight-semibold);
   margin-bottom: 6px;
 }
 
 .tip-text {
-  font-size: 12px;
-  color: #6b7280;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
   line-height: 1.5;
 }
 
@@ -199,7 +204,7 @@ export default {
   margin-top: 14px;
   border: 0;
   background: transparent;
-  color: #2563eb;
+  color: var(--color-brand-primary);
   cursor: pointer;
   padding: 0;
 }

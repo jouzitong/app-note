@@ -147,10 +147,10 @@
 
 <script>
 import {
-  createPracticeSession,
-  getPracticeItem,
-  submitPracticeAnswer,
-} from "@/api/practices";
+  fetchPracticeItem,
+  startPracticeSession,
+  submitPractice,
+} from "@/views/domain/language-jp/services/practice.service";
 import { getLastLanguageJpNoteId } from "@/utils/languageJpNav";
 import {
   getLastLanguageJpPracticeNodeId,
@@ -447,7 +447,7 @@ export default {
       this.localIndex = 0;
       this.resetAnswerUI();
       try {
-        const res = await createPracticeSession({
+        const res = await startPracticeSession({
           noteNodeId: useNodeId,
           mode: "SEQUENTIAL",
           size: 20,
@@ -469,7 +469,7 @@ export default {
       this.loading = true;
       this.error = "";
       try {
-        const res = await getPracticeItem(this.session.sessionId, index);
+        const res = await fetchPracticeItem(this.session.sessionId, index);
         this.session = res?.session || this.session;
         this.question = res?.question || null;
         this.localIndex = index;
@@ -577,7 +577,7 @@ export default {
           costMs: null,
           userId: null,
         };
-        const res = await submitPracticeAnswer(this.session.sessionId, payload);
+        const res = await submitPractice(this.session.sessionId, payload);
         const isCorrect = res?.result === "CORRECT";
         this.session = res?.session || this.session;
         this.showResult(isCorrect, res?.correctAnswer, res?.analysis);

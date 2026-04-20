@@ -272,13 +272,14 @@
 
 <script>
 import {
-  createNoteNode,
-  createNoteTag,
-  getNoteNodeById,
-  searchNoteTags,
-  searchParentNoteNodes,
-  updateNoteNode,
-} from "@/api/noteNodes";
+  createNoteNodeByDraft,
+  createNoteTagOption,
+  fetchNoteNodeDetail,
+  fetchParentNoteNodeDisplay,
+  searchNoteTagOptions,
+  searchParentNoteNodeOptions,
+  updateNoteNodeByDraft,
+} from "@/views/domain/language-jp/services/note-node.service";
 import {
   DEFAULT_TAG_CLASS_NAME,
   TAG_STYLE_PRESETS,
@@ -393,7 +394,7 @@ export default {
       return String(this.tagKeyword || "").trim();
     },
     noteTypeOptions() {
-      const source = this.$store.getters.enumByKey("noteType");
+      const source = this.$store.getters["app/enumByKey"]("noteType");
       if (!Array.isArray(source) || !source.length) {
         return NOTE_TYPE_FALLBACK_OPTIONS;
       }
@@ -479,7 +480,7 @@ export default {
       this.loading = true;
       this.errorMessage = "";
       try {
-        await this.$store.dispatch("fetchGlobalEnums");
+        await this.$store.dispatch("app/fetchGlobalEnums");
         if (this.isCreateMode) {
           await this.loadCreateMode();
         } else {
@@ -529,7 +530,7 @@ export default {
         return;
       }
 
-      const detail = await getNoteNodeById(id);
+      const detail = await fetchNoteNodeDetail(id);
       const noteNode = detail?.noteNode || {};
       const noteTypeCode = this.resolveNoteTypeCode(noteNode.noteType);
 
@@ -552,13 +553,7 @@ export default {
     },
     async loadParentDisplay(parentId) {
       try {
-        const parentDetail = await getNoteNodeById(parentId);
-        const pathText = (parentDetail?.paths || [])
-          .map((item) => item.title)
-          .filter(Boolean)
-          .join(" / ");
-        this.parentKeyword =
-          pathText || parentDetail?.noteNode?.title || `节点 ${parentId}`;
+        this.parentKeyword = await fetchParentNoteNodeDisplay(parentId);
       } catch (error) {
         this.parentKeyword = `节点 ${parentId}`;
       }
@@ -634,7 +629,7 @@ export default {
     },
     async searchParentOptions(keyword) {
       const seq = ++this.parentSearchSeq;
-      const list = await searchParentNoteNodes({
+      const list = await searchParentNoteNodeOptions({
         keyword: String(keyword || "").trim(),
         excludeId: this.isCreateMode ? null : this.form.id,
         limit: 20,
@@ -642,12 +637,7 @@ export default {
       if (seq !== this.parentSearchSeq) {
         return;
       }
-      this.parentOptions = Array.isArray(list)
-        ? list.map((item) => ({
-            id: item.id,
-            title: item.title || `节点 ${item.id}`,
-          }))
-        : [];
+      this.parentOptions = Array.isArray(list) ? list : [];
     },
     selectParentNode(item) {
       if (!item || !item.id) {
@@ -681,7 +671,7 @@ export default {
     },
     async searchTagOptions(keyword) {
       const seq = ++this.tagSearchSeq;
-      const list = await searchNoteTags({
+      const list = await searchNoteTagOptions({
         keyword: String(keyword || "").trim(),
         limit: 20,
       });
@@ -749,7 +739,7 @@ export default {
         return;
       }
       this.errorMessage = "";
-      const created = await createNoteTag({
+      const created = await createNoteTagOption({
         label,
         className: this.pendingNewTagClassName || DEFAULT_TAG_CLASS_NAME,
       });
@@ -824,8 +814,8 @@ export default {
       try {
         const payload = this.buildPayload();
         if (this.isCreateMode) {
-          await createNoteNode(payload);
-          this.$store.dispatch("showToast", {
+          await createNoteNodeByDraft(payload);
+          this.$store.dispatch("app/showToast", {
             type: "info",
             message: "新增成功",
           });
@@ -840,8 +830,8 @@ export default {
           return;
         }
 
-        await updateNoteNode(this.form.id, payload);
-        this.$store.dispatch("showToast", {
+        await updateNoteNodeByDraft(this.form.id, payload);
+        this.$store.dispatch("app/showToast", {
           type: "info",
           message: "保存成功",
         });
@@ -893,12 +883,12 @@ export default {
 
 <style scoped>
 :root {
-  --bg: #f5f7fb;
-  --card: #ffffff;
-  --text: #1f2937;
-  --muted: #6b7280;
-  --line: #e5e7eb;
-  --brand: #1d4ed8;
+  --bg: var(--color-surface-page);
+  --card: var(--color-surface-card);
+  --text: var(--color-text-primary);
+  --muted: var(--color-text-muted);
+  --line: var(--color-border-default);
+  --brand: var(--color-brand-primary);
 }
 
 * {
@@ -922,11 +912,11 @@ export default {
 
 .card {
   background: var(--card);
-  border: 1px solid #edf2f7;
+  border: 1px solid var(--line);
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
-  padding: 16px;
-  margin-bottom: 12px;
+  padding: var(--space-4);
+  margin-bottom: var(--space-3);
 }
 
 .header-row {
@@ -940,17 +930,17 @@ export default {
 .title {
   margin: 0;
   font-size: 18px;
-  font-weight: 700;
-  color: #111827;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-strong);
 }
 
 .back-btn {
   width: 34px;
   height: 34px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--line);
   border-radius: 10px;
-  background: #f8fafc;
-  color: #374151;
+  background: var(--color-surface-page);
+  color: var(--text);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -960,19 +950,19 @@ export default {
 
 .sub {
   margin: 0;
-  font-size: 12px;
+  font-size: var(--font-size-xs);
   color: var(--muted);
   line-height: 1.5;
 }
 
 .status {
   margin: 10px 0 0;
-  font-size: 12px;
-  color: #334155;
+  font-size: var(--font-size-xs);
+  color: var(--text);
 }
 
 .status-error {
-  color: #b91c1c;
+  color: var(--color-error-text);
 }
 
 .form-grid {
@@ -986,33 +976,33 @@ export default {
 }
 
 .label {
-  font-size: 13px;
-  font-weight: 600;
-  color: #374151;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text);
 }
 
 .input,
 .select {
   width: 100%;
-  border: 1px solid #dbe1ea;
+  border: 1px solid var(--line);
   border-radius: 10px;
-  background: #fff;
-  color: #111827;
-  font-size: 14px;
-  padding: 10px 12px;
+  background: var(--card);
+  color: var(--color-text-strong);
+  font-size: var(--font-size-md);
+  padding: 10px var(--space-3);
   outline: none;
 }
 
 .input:focus,
 .select:focus {
-  border-color: #93c5fd;
+  border-color: var(--brand);
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
 }
 
 .input:disabled,
 .select:disabled {
-  background: #f8fafc;
-  color: #64748b;
+  background: var(--color-surface-page);
+  color: var(--muted);
 }
 
 .textarea {
@@ -1021,8 +1011,8 @@ export default {
 }
 
 .hint {
-  font-size: 12px;
-  color: #6b7280;
+  font-size: var(--font-size-xs);
+  color: var(--muted);
   line-height: 1.45;
 }
 
@@ -1047,9 +1037,9 @@ export default {
   margin: 0;
   padding: 4px;
   list-style: none;
-  border: 1px solid #dbe1ea;
+  border: 1px solid var(--line);
   border-radius: 10px;
-  background: #fff;
+  background: var(--card);
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
   max-height: 180px;
   overflow-y: auto;
@@ -1067,8 +1057,8 @@ export default {
   border: 0;
   background: transparent;
   text-align: left;
-  font-size: 13px;
-  color: #334155;
+  font-size: var(--font-size-sm);
+  color: var(--text);
   padding: 8px 10px;
   border-radius: 8px;
   cursor: pointer;
@@ -1076,8 +1066,8 @@ export default {
 
 .search-option:hover,
 .tag-option:hover {
-  background: #eff6ff;
-  color: #1d4ed8;
+  background: var(--color-info-bg);
+  color: var(--brand);
 }
 
 .tag-editor {
@@ -1103,7 +1093,7 @@ export default {
   border: 0;
   border-radius: 999px;
   background: transparent;
-  color: #64748b;
+  color: var(--muted);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1129,7 +1119,7 @@ export default {
   right: 0;
   bottom: calc(56px + env(safe-area-inset-bottom));
   z-index: 1001;
-  padding: 8px 12px;
+  padding: var(--space-2) var(--space-3);
   background: rgba(245, 247, 251, 0.95);
   backdrop-filter: blur(8px);
 }
@@ -1144,20 +1134,20 @@ export default {
   height: 40px;
   border-radius: 10px;
   border: 1px solid transparent;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
   cursor: pointer;
 }
 
 .btn.secondary {
-  background: #f8fafc;
-  border-color: #dbe1ea;
-  color: #334155;
+  background: var(--color-surface-page);
+  border-color: var(--line);
+  color: var(--text);
 }
 
 .btn.primary {
-  background: #1d4ed8;
-  border-color: #1d4ed8;
+  background: var(--brand);
+  border-color: var(--brand);
   color: #fff;
 }
 
@@ -1181,8 +1171,8 @@ export default {
   width: min(520px, 100%);
   max-height: min(80vh, 700px);
   overflow: auto;
-  background: #fff;
-  border: 1px solid #e5e7eb;
+  background: var(--card);
+  border: 1px solid var(--line);
   border-radius: 16px;
   box-shadow: 0 16px 40px rgba(15, 23, 42, 0.2);
 }
@@ -1193,22 +1183,22 @@ export default {
   justify-content: space-between;
   gap: 8px;
   padding: 12px 14px 8px;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--line);
 }
 
 .tag-modal-title {
   margin: 0;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 .tag-modal-close {
   width: 28px;
   height: 28px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--line);
   border-radius: 8px;
-  background: #f8fafc;
-  color: #334155;
+  background: var(--color-surface-page);
+  color: var(--text);
   font-size: 14px;
   cursor: pointer;
 }
@@ -1222,8 +1212,8 @@ export default {
   align-items: center;
   gap: 8px;
   margin-bottom: 12px;
-  font-size: 13px;
-  color: #475569;
+  font-size: var(--font-size-sm);
+  color: var(--muted);
 }
 
 .tag-style-grid {
@@ -1233,9 +1223,9 @@ export default {
 }
 
 .tag-style-item {
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--line);
   border-radius: 10px;
-  background: #fff;
+  background: var(--card);
   padding: 8px;
   display: flex;
   align-items: center;
@@ -1244,13 +1234,13 @@ export default {
 }
 
 .tag-style-item.active {
-  border-color: #93c5fd;
+  border-color: var(--brand);
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.12);
 }
 
 .tag-modal-actions {
   padding: 10px 14px 14px;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--line);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -1267,8 +1257,8 @@ export default {
   .mobile-page {
     max-width: 430px;
     margin: 0 auto;
-    border-left: 1px solid #e5e7eb;
-    border-right: 1px solid #e5e7eb;
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
   }
 
   .editor-actions-fixed {

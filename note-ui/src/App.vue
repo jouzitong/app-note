@@ -3,13 +3,13 @@
     <router-view />
     <transition name="toast-fade">
       <div
-        v-if="$store.state.toast.visible && $store.state.toast.message"
+        v-if="$store.state.app.toast.visible && $store.state.app.toast.message"
         class="app-toast"
-        :class="`app-toast--${$store.state.toast.type || 'error'}`"
+        :class="`app-toast--${$store.state.app.toast.type || 'error'}`"
         role="status"
         aria-live="polite"
       >
-        {{ $store.state.toast.message }}
+        {{ $store.state.app.toast.message }}
       </div>
     </transition>
   </div>
@@ -27,11 +27,11 @@ body {
 #app {
   min-height: 100vh;
   min-height: 100dvh;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family-base);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
-  color: #2c3e50;
+  color: var(--color-text-primary);
 }
 
 nav {
@@ -40,21 +40,21 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: var(--color-text-primary);
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: var(--color-brand-accent);
 }
 
 .app-toast {
   position: fixed;
-  top: 16px;
-  right: 16px;
-  max-width: min(520px, calc(100vw - 32px));
-  padding: 10px 12px;
+  top: var(--space-4);
+  right: var(--space-4);
+  max-width: min(520px, calc(100vw - var(--space-8)));
+  padding: 10px var(--space-3);
   border-radius: 10px;
-  font-size: 13px;
+  font-size: var(--font-size-sm);
   line-height: 1.4;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
   border: 1px solid transparent;
@@ -63,15 +63,15 @@ nav a.router-link-exact-active {
 }
 
 .app-toast--error {
-  background: #fef2f2;
-  color: #991b1b;
-  border-color: #fecaca;
+  background: var(--color-error-bg);
+  color: var(--color-error-text);
+  border-color: var(--color-error-border);
 }
 
 .app-toast--info {
-  background: #eff6ff;
-  color: #1e3a8a;
-  border-color: #bfdbfe;
+  background: var(--color-info-bg);
+  color: var(--color-info-text);
+  border-color: var(--color-info-border);
 }
 
 .toast-fade-enter-active,
@@ -85,9 +85,9 @@ nav a.router-link-exact-active {
 }
 
 .app-tag {
-  --app-tag-color: #41464b;
-  --app-tag-bg: #e2e3e5;
-  --app-tag-border: #c4c8cb;
+  --app-tag-color: var(--color-tag-secondary-text);
+  --app-tag-bg: var(--color-tag-secondary-bg);
+  --app-tag-border: var(--color-tag-secondary-border);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -97,57 +97,57 @@ nav a.router-link-exact-active {
   border: 1px solid var(--app-tag-border);
   background: var(--app-tag-bg);
   color: var(--app-tag-color);
-  font-size: 12px;
+  font-size: var(--font-size-xs);
   line-height: 1.2;
   font-weight: 600;
   white-space: nowrap;
 }
 
 .app-tag--primary {
-  --app-tag-color: #084298;
-  --app-tag-bg: #cfe2ff;
-  --app-tag-border: #9ec5fe;
+  --app-tag-color: var(--color-tag-primary-text);
+  --app-tag-bg: var(--color-tag-primary-bg);
+  --app-tag-border: var(--color-tag-primary-border);
 }
 
 .app-tag--secondary {
-  --app-tag-color: #41464b;
-  --app-tag-bg: #e2e3e5;
-  --app-tag-border: #c4c8cb;
+  --app-tag-color: var(--color-tag-secondary-text);
+  --app-tag-bg: var(--color-tag-secondary-bg);
+  --app-tag-border: var(--color-tag-secondary-border);
 }
 
 .app-tag--success {
-  --app-tag-color: #0f5132;
-  --app-tag-bg: #d1e7dd;
-  --app-tag-border: #a3cfbb;
+  --app-tag-color: var(--color-tag-success-text);
+  --app-tag-bg: var(--color-tag-success-bg);
+  --app-tag-border: var(--color-tag-success-border);
 }
 
 .app-tag--danger {
-  --app-tag-color: #842029;
-  --app-tag-bg: #f8d7da;
-  --app-tag-border: #f1aeb5;
+  --app-tag-color: var(--color-tag-danger-text);
+  --app-tag-bg: var(--color-tag-danger-bg);
+  --app-tag-border: var(--color-tag-danger-border);
 }
 
 .app-tag--warning {
-  --app-tag-color: #664d03;
-  --app-tag-bg: #fff3cd;
-  --app-tag-border: #ffe69c;
+  --app-tag-color: var(--color-tag-warning-text);
+  --app-tag-bg: var(--color-tag-warning-bg);
+  --app-tag-border: var(--color-tag-warning-border);
 }
 
 .app-tag--info {
-  --app-tag-color: #055160;
-  --app-tag-bg: #cff4fc;
-  --app-tag-border: #9eeaf9;
+  --app-tag-color: var(--color-tag-info-text);
+  --app-tag-bg: var(--color-tag-info-bg);
+  --app-tag-border: var(--color-tag-info-border);
 }
 
 .app-tag--light {
-  --app-tag-color: #495057;
-  --app-tag-bg: #fcfcfd;
-  --app-tag-border: #f1f3f5;
+  --app-tag-color: var(--color-tag-light-text);
+  --app-tag-bg: var(--color-tag-light-bg);
+  --app-tag-border: var(--color-tag-light-border);
 }
 
 .app-tag--dark {
-  --app-tag-color: #e9ecef;
-  --app-tag-bg: #343a40;
-  --app-tag-border: #1f2327;
+  --app-tag-color: var(--color-tag-dark-text);
+  --app-tag-bg: var(--color-tag-dark-bg);
+  --app-tag-border: var(--color-tag-dark-border);
 }
 </style>

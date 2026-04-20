@@ -282,13 +282,16 @@
 </template>
 
 <script>
-import { confirmWordCardDone, getWordCardPage } from "@/api/wordCards";
 import SpeechTranscribeInput from "@/components/speech/SpeechTranscribeInput.vue";
 import {
-  createDefaultWordCard,
-  createMockWordCard,
-  normalizeWordCard,
-} from "@/model/word/wordCard";
+  createDefaultWordCardVm,
+  createMockWordCardVm,
+  mapWordCardDtoToVm,
+} from "@/mappers/domain/language-jp/word-card.mapper";
+import {
+  confirmWordCardDoneById,
+  fetchWordCardPage,
+} from "@/views/domain/language-jp/services/word-card.service";
 import {
   AudioPlaybackManager,
   loadPlaybackRate,
@@ -320,7 +323,7 @@ export default {
   },
   data() {
     return {
-      wordCard: createDefaultWordCard(),
+      wordCard: createDefaultWordCardVm(),
       pageInfo: null,
       loading: false,
       errorMessage: "",
@@ -461,7 +464,7 @@ export default {
         this.noteId === undefined ||
         this.noteId === ""
       ) {
-        this.wordCard = createDefaultWordCard();
+        this.wordCard = createDefaultWordCardVm();
         this.errorMessage = "缺少 noteId 参数";
         return;
       }
@@ -470,7 +473,7 @@ export default {
       this.loading = true;
       this.errorMessage = "";
       try {
-        const pageResult = await getWordCardPage({
+        const pageResult = await fetchWordCardPage({
           noteId: this.noteId,
           page: this.currentPage,
           size: this.pageSize,
@@ -484,14 +487,14 @@ export default {
           ? pageResult.records
           : [];
         const record = records[this.indexInPage] || records[0] || {};
-        this.wordCard = normalizeWordCard(record);
+        this.wordCard = mapWordCardDtoToVm(record);
         this.exampleSpeechTexts = {};
         this.tryAutoPlayWordAndExamples();
       } catch (error) {
         if (seq !== this.requestSeq) {
           return;
         }
-        this.wordCard = createMockWordCard();
+        this.wordCard = createMockWordCardVm();
         this.pageInfo = {
           total: 0,
         };
@@ -550,11 +553,11 @@ export default {
       this.confirming = true;
       this.errorMessage = "";
       try {
-        const response = await confirmWordCardDone(
+        this.wordCard = await confirmWordCardDoneById(
           this.wordCard.id,
-          this.userId
+          this.userId,
+          this.wordCard
         );
-        this.wordCard = normalizeWordCard(response || this.wordCard);
       } catch (error) {
         this.errorMessage = `确认完成失败：${error.message}`;
       } finally {

@@ -113,18 +113,15 @@
 </template>
 
 <script>
-import { getNoteNodeById } from "@/api/noteNodes";
 import { saveLastLanguageJpNoteId } from "@/utils/languageJpNav";
-import {
-  createDefaultNoteNode,
-  normalizeNoteNode,
-} from "@/model/note/noteNode";
+import { fetchNoteNodeDetail } from "@/views/domain/language-jp/services/note-node.service";
+import { createDefaultNoteNodeVm } from "@/model/views/domain/language-jp/note-node.vm";
 
 export default {
   name: "NoteIndexView",
   data() {
     return {
-      noteNode: createDefaultNoteNode(),
+      noteNode: createDefaultNoteNodeVm(),
       childNodes: [],
       paths: [],
       noteContent: null,
@@ -209,7 +206,7 @@ export default {
       try {
         const noteId = this.resolveNoteId();
         if (noteId === null) {
-          this.noteNode = createDefaultNoteNode();
+          this.noteNode = createDefaultNoteNodeVm();
           this.paths = [];
           this.noteContent = null;
           this.childNodes = [];
@@ -218,23 +215,17 @@ export default {
           return;
         }
 
-        const noteVO = await getNoteNodeById(noteId);
-        const note = noteVO?.noteNode || noteVO;
+        const detail = await fetchNoteNodeDetail(noteId);
         saveLastLanguageJpNoteId(noteId);
 
-        this.noteNode = normalizeNoteNode(note || {});
-        this.paths = Array.isArray(noteVO?.paths) ? noteVO.paths : [];
-        this.noteContent = noteVO?.content ?? this.noteNode.content;
-        this.childNodes = (noteVO?.childNoteNodes || [])
-          .map((item) => ({
-            id: item.id,
-            title: item.title,
-            sort: 0,
-            noteType: item.noteType,
-          }))
-          .filter((item) => item.id && item.title);
+        this.noteNode = detail.noteNode;
+        this.paths = Array.isArray(detail.paths) ? detail.paths : [];
+        this.noteContent = detail.content ?? this.noteNode.content;
+        this.childNodes = Array.isArray(detail.childNodes)
+          ? detail.childNodes
+          : [];
       } catch (error) {
-        this.noteNode = createDefaultNoteNode();
+        this.noteNode = createDefaultNoteNodeVm();
         this.paths = [];
         this.noteContent = null;
         this.childNodes = [];

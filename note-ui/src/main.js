@@ -1,5 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
+import "./assets/styles/index.scss";
 import router from "./router";
 import store from "./store";
 import { hasAuthToken } from "@/utils/auth";
@@ -18,12 +19,12 @@ configureHttpHooks({
       return;
     }
     const message = getErrorMessage(error) || "请求失败，请稍后重试";
-    store.dispatch("notifyError", message).catch(() => {});
+    store.dispatch("app/notifyError", message).catch(() => {});
   },
 });
 
 if (hasAuthToken()) {
-  store.dispatch("fetchGlobalEnums").catch((error) => {
+  store.dispatch("app/fetchGlobalEnums").catch((error) => {
     console.error("[store] fetchGlobalEnums failed:", error);
   });
 }

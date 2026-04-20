@@ -117,7 +117,8 @@ export default {
   min-height: 100vh;
   padding: 18px 14px 28px;
   background: radial-gradient(circle at 0% 0%, #dcfce7 0, transparent 32%),
-    radial-gradient(circle at 100% 100%, #dbeafe 0, transparent 34%), #f4f7fb;
+    radial-gradient(circle at 100% 100%, #dbeafe 0, transparent 34%),
+    var(--color-surface-page);
 }
 
 .search {
@@ -127,19 +128,19 @@ export default {
 .search input {
   width: 100%;
   height: 44px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--color-border-default);
   border-radius: 12px;
-  padding: 0 12px;
-  font-size: 14px;
+  padding: 0 var(--space-3);
+  font-size: var(--font-size-md);
   outline: none;
-  background: #fff;
+  background: var(--color-surface-card);
   box-shadow: 0 2px 8px rgba(2, 6, 23, 0.04);
 }
 
 .panel {
-  background: #fff;
+  background: var(--color-surface-card);
   border-radius: 16px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--color-border-default);
   box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
   padding: 14px;
   margin-bottom: 12px;
@@ -148,13 +149,14 @@ export default {
 .panel-title {
   margin: 0;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-strong);
 }
 
 .panel-sub {
   margin: 6px 0 12px;
-  font-size: 12px;
-  color: #64748b;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
   line-height: 1.6;
 }
 
@@ -165,9 +167,9 @@ export default {
 }
 
 .module-card {
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--color-border-default);
   border-radius: 12px;
-  background: #fff;
+  background: var(--color-surface-card);
   padding: 12px;
   text-decoration: none;
   color: inherit;
@@ -191,19 +193,20 @@ export default {
   place-items: center;
   font-size: 16px;
   margin-bottom: 8px;
-  background: #f1f5f9;
+  background: var(--color-surface-page);
 }
 
 .module-title {
   margin: 0;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-strong);
 }
 
 .module-desc {
   margin: 5px 0 0;
-  font-size: 12px;
-  color: #64748b;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
   line-height: 1.5;
 }
 
@@ -213,9 +216,9 @@ export default {
   border-radius: 999px;
   font-size: 11px;
   padding: 4px 8px;
-  background: #f8fafc;
-  color: #475569;
-  border: 1px solid #e2e8f0;
+  background: var(--color-surface-page);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border-default);
 }
 
 .split {
@@ -234,10 +237,10 @@ export default {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--color-border-default);
   border-radius: 10px;
   padding: 10px;
-  background: #fff;
+  background: var(--color-surface-card);
 }
 
 .todo-item .left {
@@ -246,14 +249,15 @@ export default {
 
 .todo-item .title {
   margin: 0;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
 }
 
 .todo-item .desc {
   margin-top: 2px;
   font-size: 11px;
-  color: #64748b;
+  color: var(--color-text-muted);
 }
 
 .badge {
@@ -261,9 +265,9 @@ export default {
   font-size: 11px;
   padding: 4px 8px;
   white-space: nowrap;
-  border: 1px solid #e2e8f0;
-  background: #f8fafc;
-  color: #334155;
+  border: 1px solid var(--color-border-default);
+  background: var(--color-surface-page);
+  color: var(--color-text-primary);
 }
 
 @media (max-width: 768px) {

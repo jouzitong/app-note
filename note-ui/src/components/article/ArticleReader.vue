@@ -110,16 +110,13 @@
 </template>
 
 <script>
+import { createDefaultArticleVm } from "@/mappers/domain/language-jp/article.mapper";
 import {
-  getArticleByNoteNode,
-  updateArticleFavorite,
-  updateArticlePlaybackRate,
-  updateArticlePosition,
-} from "@/api/articles";
-import {
-  createDefaultArticle,
-  normalizeArticle,
-} from "@/model/article/article";
+  fetchArticleByNoteNode,
+  saveArticleFavorite,
+  saveArticlePlaybackRate,
+  saveArticlePosition,
+} from "@/views/domain/language-jp/services/article.service";
 import { AudioPlaybackManager } from "@/utils/audioPlayback";
 
 export default {
@@ -134,7 +131,7 @@ export default {
     return {
       loading: false,
       errorMessage: "",
-      article: createDefaultArticle(),
+      article: createDefaultArticleVm(),
       rubyVisible: true,
       currentParagraphIndex: 0,
       playbackRate: 1.0,
@@ -173,8 +170,7 @@ export default {
       this.loading = true;
       this.errorMessage = "";
       try {
-        const data = await getArticleByNoteNode(this.noteNodeId);
-        this.article = normalizeArticle(data);
+        this.article = await fetchArticleByNoteNode(this.noteNodeId);
         this.playbackRate = this.pickPlaybackRate(
           this.article.progress && this.article.progress.playbackRate
         );
@@ -241,11 +237,10 @@ export default {
         return;
       }
       try {
-        const updated = await updateArticleFavorite(
-          this.article.id,
+        this.article = await saveArticleFavorite(
+          this.article,
           !this.isFavorite
         );
-        this.article = normalizeArticle({ ...this.article, ...updated });
       } catch (error) {
         console.error("[article-reader] toggleFavorite failed:", error);
       }
@@ -257,11 +252,7 @@ export default {
       const nextRate = this.pickPlaybackRate(this.playbackRate);
       this.playbackRate = nextRate;
       try {
-        const updated = await updateArticlePlaybackRate(
-          this.article.id,
-          nextRate
-        );
-        this.article = normalizeArticle({ ...this.article, ...updated });
+        this.article = await saveArticlePlaybackRate(this.article, nextRate);
       } catch (error) {
         console.error("[article-reader] changePlaybackRate failed:", error);
       }
@@ -289,8 +280,7 @@ export default {
         return;
       }
       try {
-        const updated = await updateArticlePosition(this.article.id, index);
-        this.article = normalizeArticle({ ...this.article, ...updated });
+        this.article = await saveArticlePosition(this.article, index);
       } catch (error) {
         console.error("[article-reader] persistPosition failed:", error);
       }
