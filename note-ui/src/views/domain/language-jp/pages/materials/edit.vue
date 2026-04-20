@@ -291,7 +291,7 @@ const NOTE_TYPE_CODE_TO_KEY = Object.freeze({
   2: "WORD_CARD",
   3: "SENTENCE",
   4: "ARTICLE",
-  100: "QUESTIONS",
+  100: "PRACTICE",
 });
 
 const NOTE_TYPE_FALLBACK_OPTIONS = Object.freeze([
@@ -299,7 +299,7 @@ const NOTE_TYPE_FALLBACK_OPTIONS = Object.freeze([
   { code: 2, enumKey: "WORD_CARD", label: "Word Card (2)" },
   { code: 3, enumKey: "SENTENCE", label: "Sentence (3)" },
   { code: 4, enumKey: "ARTICLE", label: "Article (4)" },
-  { code: 100, enumKey: "QUESTIONS", label: "Questions (100)" },
+  { code: 100, enumKey: "PRACTICE", label: "Practice (100)" },
 ]);
 
 function parsePositiveInt(value) {
@@ -594,7 +594,10 @@ export default {
         return Number(noteType);
       }
       if (typeof noteType === "string" && noteType.trim()) {
-        const normalized = noteType.trim().toUpperCase();
+        let normalized = noteType.trim().toUpperCase();
+        if (normalized === "QUESTIONS" || normalized === "QUESTION") {
+          normalized = "PRACTICE";
+        }
         const found = this.noteTypeOptions.find(
           (item) => item.enumKey && item.enumKey.toUpperCase() === normalized
         );
