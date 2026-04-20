@@ -882,28 +882,32 @@ export default {
 </script>
 
 <style scoped>
-:root {
-  --bg: var(--color-surface-page);
-  --card: var(--color-surface-card);
-  --text: var(--color-text-primary);
-  --muted: var(--color-text-muted);
-  --line: var(--color-border-default);
-  --brand: var(--color-brand-primary);
-}
-
 * {
   box-sizing: border-box;
 }
 
 .mobile-page {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --brand: #1d4ed8;
+  --input-line: #dbe1ea;
+  --card-line: #edf2f7;
   position: relative;
   width: 100%;
-  min-height: 100dvh;
+  height: 100dvh;
+  min-height: -webkit-fill-available;
+  overflow: hidden;
   background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 .content-scroll {
-  min-height: calc(100dvh - 56px - env(safe-area-inset-bottom));
+  height: calc(100dvh - 56px - env(safe-area-inset-bottom));
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: calc(14px + env(safe-area-inset-top)) 12px
@@ -912,11 +916,11 @@ export default {
 
 .card {
   background: var(--card);
-  border: 1px solid var(--line);
+  border: 1px solid var(--card-line);
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
-  padding: var(--space-4);
-  margin-bottom: var(--space-3);
+  padding: 16px;
+  margin-bottom: 12px;
 }
 
 .header-row {
@@ -930,8 +934,8 @@ export default {
 .title {
   margin: 0;
   font-size: 18px;
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text-strong);
+  font-weight: 700;
+  color: #111827;
 }
 
 .back-btn {
@@ -939,8 +943,8 @@ export default {
   height: 34px;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: var(--color-surface-page);
-  color: var(--text);
+  background: #f8fafc;
+  color: #374151;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -950,14 +954,14 @@ export default {
 
 .sub {
   margin: 0;
-  font-size: var(--font-size-xs);
+  font-size: 12px;
   color: var(--muted);
   line-height: 1.5;
 }
 
 .status {
   margin: 10px 0 0;
-  font-size: var(--font-size-xs);
+  font-size: 12px;
   color: var(--text);
 }
 
@@ -976,32 +980,32 @@ export default {
 }
 
 .label {
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
 }
 
 .input,
 .select {
   width: 100%;
-  border: 1px solid var(--line);
+  border: 1px solid var(--input-line);
   border-radius: 10px;
-  background: var(--card);
-  color: var(--color-text-strong);
-  font-size: var(--font-size-md);
-  padding: 10px var(--space-3);
+  background: #fff;
+  color: #111827;
+  font-size: 14px;
+  padding: 10px 12px;
   outline: none;
 }
 
 .input:focus,
 .select:focus {
-  border-color: var(--brand);
+  border-color: #93c5fd;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
 }
 
 .input:disabled,
 .select:disabled {
-  background: var(--color-surface-page);
+  background: #f8fafc;
   color: var(--muted);
 }
 
@@ -1011,7 +1015,7 @@ export default {
 }
 
 .hint {
-  font-size: var(--font-size-xs);
+  font-size: 12px;
   color: var(--muted);
   line-height: 1.45;
 }
@@ -1037,9 +1041,9 @@ export default {
   margin: 0;
   padding: 4px;
   list-style: none;
-  border: 1px solid var(--line);
+  border: 1px solid var(--input-line);
   border-radius: 10px;
-  background: var(--card);
+  background: #fff;
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
   max-height: 180px;
   overflow-y: auto;
@@ -1057,8 +1061,8 @@ export default {
   border: 0;
   background: transparent;
   text-align: left;
-  font-size: var(--font-size-sm);
-  color: var(--text);
+  font-size: 13px;
+  color: #334155;
   padding: 8px 10px;
   border-radius: 8px;
   cursor: pointer;
@@ -1066,8 +1070,8 @@ export default {
 
 .search-option:hover,
 .tag-option:hover {
-  background: var(--color-info-bg);
-  color: var(--brand);
+  background: #eff6ff;
+  color: #1d4ed8;
 }
 
 .tag-editor {
@@ -1086,25 +1090,26 @@ export default {
   gap: 6px;
 }
 
+.tag-chip.app-tag {
+  --app-tag-color: #1d4ed8;
+  --app-tag-bg: #eff6ff;
+  --app-tag-border: #dbeafe;
+  font-size: 12px;
+  padding: 3px 8px;
+}
+
 .tag-remove {
-  width: 16px;
-  height: 16px;
-  flex: 0 0 16px;
   border: 0;
-  border-radius: 999px;
   background: transparent;
-  color: var(--muted);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  color: #64748b;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1;
   padding: 0;
 }
 
 .tag-remove:hover {
-  background: rgba(148, 163, 184, 0.24);
+  color: #334155;
 }
 
 .tag-input-row {
@@ -1119,7 +1124,7 @@ export default {
   right: 0;
   bottom: calc(56px + env(safe-area-inset-bottom));
   z-index: 1001;
-  padding: var(--space-2) var(--space-3);
+  padding: 8px 12px;
   background: rgba(245, 247, 251, 0.95);
   backdrop-filter: blur(8px);
 }
@@ -1134,15 +1139,15 @@ export default {
   height: 40px;
   border-radius: 10px;
   border: 1px solid transparent;
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-semibold);
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
 }
 
 .btn.secondary {
-  background: var(--color-surface-page);
-  border-color: var(--line);
-  color: var(--text);
+  background: #f8fafc;
+  border-color: var(--input-line);
+  color: #334155;
 }
 
 .btn.primary {
@@ -1189,7 +1194,7 @@ export default {
 .tag-modal-title {
   margin: 0;
   font-size: 16px;
-  font-weight: var(--font-weight-bold);
+  font-weight: 700;
 }
 
 .tag-modal-close {
@@ -1212,7 +1217,7 @@ export default {
   align-items: center;
   gap: 8px;
   margin-bottom: 12px;
-  font-size: var(--font-size-sm);
+  font-size: 13px;
   color: var(--muted);
 }
 

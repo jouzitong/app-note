@@ -260,16 +260,16 @@
             display: flex;
             gap: 10px;
             flex-wrap: nowrap;
+            align-items: center;
             padding: 12px 16px;
             border-top: 1px solid #e8e0d5;
             background: rgba(251, 248, 243, 0.96);
             backdrop-filter: blur(8px);
-            overflow-x: auto;
-            overflow-y: hidden;
+            overflow: hidden;
         }
 
         .tool-btn {
-            flex: 0 0 auto;
+            flex: 1 1 0;
             border: none;
             border-radius: 12px;
             padding: 12px 14px;
@@ -281,10 +281,16 @@
         }
 
         .tool-btn.icon {
-            min-width: 44px;
+            min-width: 0;
             padding: 12px 10px;
             font-size: 16px;
             line-height: 1;
+        }
+
+        .tool-btn.icon.is-off {
+            background: #efe7db;
+            color: #5a4632;
+            border: 1px solid #dfcfbb;
         }
 
         .tool-btn.secondary {
@@ -293,7 +299,7 @@
         }
 
         .speed-select {
-            flex: 0 0 auto;
+            flex: 1.45 1 0;
             border: 1px solid #e0d5c6;
             border-radius: 12px;
             background: #fffdf9;
@@ -301,7 +307,7 @@
             padding: 0 10px;
             height: 40px;
             font-size: 13px;
-            min-width: 88px;
+            min-width: 0;
         }
 
         .hidden-rt rt {
@@ -411,9 +417,17 @@
     </div>
 
     <div class="toolbar">
-        <button class="tool-btn secondary" id="toggleRubyBtn">隐藏平假名</button>
+        <button
+                class="tool-btn secondary icon"
+                id="toggleRubyBtn"
+                title="隐藏平假名"
+                aria-label="隐藏平假名"
+        >
+            あ
+        </button>
         <button class="tool-btn secondary icon" title="收藏" aria-label="收藏">☆</button>
-        <button class="tool-btn">播放全文</button>
+        <button class="tool-btn icon" title="播放全文" aria-label="播放全文">▶</button>
+        <button class="tool-btn secondary icon" title="上一段" aria-label="上一段">◀</button>
         <select class="speed-select" aria-label="播放速度">
             <option value="0.5">0.5x</option>
             <option value="0.75">0.75x</option>
@@ -421,7 +435,6 @@
             <option value="1.25">1.25x</option>
             <option value="1.5">1.5x</option>
         </select>
-        <button class="tool-btn secondary icon" title="上一段" aria-label="上一段">◀</button>
         <button class="tool-btn icon" title="下一段" aria-label="下一段">▶</button>
     </div>
 </div>
@@ -435,10 +448,16 @@
         rubyVisible = !rubyVisible;
         if (rubyVisible) {
             articleText.classList.remove('hidden-rt');
-            toggleRubyBtn.textContent = '隐藏平假名';
+            toggleRubyBtn.classList.remove('is-off');
+            toggleRubyBtn.textContent = 'あ';
+            toggleRubyBtn.setAttribute('title', '隐藏平假名');
+            toggleRubyBtn.setAttribute('aria-label', '隐藏平假名');
         } else {
             articleText.classList.add('hidden-rt');
-            toggleRubyBtn.textContent = '显示平假名';
+            toggleRubyBtn.classList.add('is-off');
+            toggleRubyBtn.textContent = 'ア';
+            toggleRubyBtn.setAttribute('title', '显示平假名');
+            toggleRubyBtn.setAttribute('aria-label', '显示平假名');
         }
     });
 </script>

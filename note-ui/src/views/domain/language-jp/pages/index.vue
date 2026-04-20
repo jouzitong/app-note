@@ -1,6 +1,11 @@
 <template>
   <div class="mobile-page">
-    <main class="content-scroll">
+    <main
+      class="content-scroll"
+      :class="
+        showBottomNav ? 'content-scroll--with-nav' : 'content-scroll--full'
+      "
+    >
       <router-view />
     </main>
 
@@ -166,14 +171,23 @@ export default {
 }
 
 .content-scroll {
-  height: calc(100vh - 56px - env(safe-area-inset-bottom));
-  height: calc(100dvh - 56px - env(safe-area-inset-bottom));
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-y: contain;
+}
+
+.content-scroll--with-nav {
+  height: calc(100vh - 56px - env(safe-area-inset-bottom));
+  height: calc(100dvh - 56px - env(safe-area-inset-bottom));
   padding: calc(14px + env(safe-area-inset-top)) 12px
     calc(16px + env(safe-area-inset-bottom));
+}
+
+.content-scroll--full {
+  height: 100vh;
+  height: 100dvh;
+  padding: calc(14px + env(safe-area-inset-top)) 12px 16px;
 }
 
 @media (min-width: 768px) {

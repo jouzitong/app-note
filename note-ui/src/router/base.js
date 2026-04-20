@@ -121,6 +121,7 @@ export default [
           requiresAuth: true,
           permissions: ["article:read"],
           keepAlive: true,
+          hideBottomNav: true,
         },
       },
       {

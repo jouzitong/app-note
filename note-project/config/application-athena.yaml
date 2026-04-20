@@ -11,6 +11,7 @@ athena:
         - /auth/refresh
         - /app-note/auth/login
         - /app-note/auth/refresh
+        - /app-note/common/v1/system/enums
 
     token:
       type: jwt
