@@ -16,6 +16,7 @@ import org.zzt.note.data.core.entity.dto.NoteTagDTO;
 import org.zzt.note.data.core.repository.INoteNodeRepository;
 import org.zzt.note.data.core.repository.INoteTagRepository;
 import org.zzt.note.data.core.service.INoteNodeDomainService;
+import org.zzt.note.data.core.type.NoteType;
 import org.zzt.note.server.word.entity.ExampleSentence;
 import org.zzt.note.server.word.entity.WordCard;
 import org.zzt.note.server.word.entity.WordCardNoteNodeRel;
@@ -44,9 +45,9 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class NoteWordImportServiceImpl implements INoteWordImportService {
 
-    private static final String NOTE_TYPE_EMPTY = "EMPTY";
+    private static final NoteType NOTE_TYPE_EMPTY = NoteType.EMPTY;
 
-    private static final String NOTE_TYPE_WORD_CARD = "WORD_CARD";
+    private static final NoteType NOTE_TYPE_WORD_CARD = NoteType.WORD_CARD;
 
     private static final String WORD_CARD_TAG_BIZ_TYPE = "WORD_CARD";
 
@@ -115,13 +116,13 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
                 throw new IllegalArgumentException("Duplicate nodeKey in payload: " + nodeKey);
             }
 
-            String noteType = normalizeKey(noteNodeItem == null || noteNodeItem.getNoteNode() == null
+            NoteType noteType = noteNodeItem == null || noteNodeItem.getNoteNode() == null
                     ? null
-                    : noteNodeItem.getNoteNode().getNoteType());
-            if (noteType != null && !NOTE_TYPE_EMPTY.equals(noteType) && !NOTE_TYPE_WORD_CARD.equals(noteType)) {
+                    : noteNodeItem.getNoteNode().getNoteType();
+            if (noteType != null && noteType != NOTE_TYPE_EMPTY && noteType != NOTE_TYPE_WORD_CARD) {
                 throw new IllegalArgumentException("noteNodes.noteType only supports EMPTY or WORD_CARD, nodeKey: " + nodeKey);
             }
-            if (NOTE_TYPE_WORD_CARD.equals(noteType) && i != lastNodeIndex) {
+            if (noteType == NOTE_TYPE_WORD_CARD && i != lastNodeIndex) {
                 throw new IllegalArgumentException("Only the last noteNode can use WORD_CARD, nodeKey: " + nodeKey);
             }
         }
@@ -142,10 +143,10 @@ public class NoteWordImportServiceImpl implements INoteWordImportService {
         }
         if (!CollectionUtils.isEmpty(wordCards)) {
             NoteWordImportRequest.NoteNodeImportItem lastNode = noteNodes.get(lastNodeIndex);
-            String lastType = normalizeKey(lastNode == null || lastNode.getNoteNode() == null
+            NoteType lastType = lastNode == null || lastNode.getNoteNode() == null
                     ? null
-                    : lastNode.getNoteNode().getNoteType());
-            if (!NOTE_TYPE_WORD_CARD.equals(lastType)) {
+                    : lastNode.getNoteNode().getNoteType();
+            if (lastType != NOTE_TYPE_WORD_CARD) {
                 throw new IllegalArgumentException("The last noteNode.noteType must be WORD_CARD when wordCards exist");
             }
         }

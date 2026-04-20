@@ -3,7 +3,6 @@ package org.zzt.note.app.layer.content.service.impl;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
-import org.springframework.util.StringUtils;
 import org.zzt.note.app.layer.content.constant.NoteContentTypeConstants;
 import org.zzt.note.app.layer.content.req.NoteNodeContentQuery;
 import org.zzt.note.app.layer.content.resolver.INoteTypeContentResolver;
@@ -45,7 +44,9 @@ public class NoteNodeContentAppServiceImpl implements INoteNodeContentAppService
         vo.setChildNoteNodes(Boolean.FALSE.equals(query == null ? null : query.getIncludeChildren())
                 ? List.of()
                 : noteNodeDetail.getChildNoteNodes());
-        vo.setNoteType(noteNodeDetail.getNoteNode() == null ? null : noteNodeDetail.getNoteNode().getNoteType());
+        vo.setNoteType(noteNodeDetail.getNoteNode() == null || noteNodeDetail.getNoteNode().getNoteType() == null
+                ? null
+                : noteNodeDetail.getNoteNode().getNoteType().name());
         vo.getExt().put("query", toQueryEcho(query));
 
         NoteType noteType = resolveNoteType(noteNodeDetail);
@@ -86,43 +87,10 @@ public class NoteNodeContentAppServiceImpl implements INoteNodeContentAppService
     }
 
     private NoteType resolveNoteType(NoteNodeVO noteNodeDetail) {
-        if (noteNodeDetail == null || noteNodeDetail.getNoteNode() == null
-                || !StringUtils.hasText(noteNodeDetail.getNoteNode().getNoteType())) {
+        if (noteNodeDetail == null || noteNodeDetail.getNoteNode() == null) {
             return null;
         }
-        String raw = noteNodeDetail.getNoteNode().getNoteType().trim();
-
-        for (NoteType item : NoteType.values()) {
-            if (item.name().equalsIgnoreCase(raw)) {
-                return item;
-            }
-            if (item.getName().equalsIgnoreCase(raw)) {
-                return item;
-            }
-            if (String.valueOf(item.getCode()).equals(raw)) {
-                return item;
-            }
-        }
-
-        if ("WORD".equalsIgnoreCase(raw)) {
-            return NoteType.WORD_CARD;
-        }
-        if ("QUESTION".equalsIgnoreCase(raw)) {
-            return NoteType.PRACTICE;
-        }
-        if ("QUEST".equalsIgnoreCase(raw)) {
-            return NoteType.PRACTICE;
-        }
-        if ("QUESTIONS".equalsIgnoreCase(raw)) {
-            return NoteType.PRACTICE;
-        }
-        if ("PRACTICE".equalsIgnoreCase(raw)) {
-            return NoteType.PRACTICE;
-        }
-        if ("NOTE".equalsIgnoreCase(raw) || "TEXT".equalsIgnoreCase(raw)) {
-            return NoteType.MARKDOWN;
-        }
-        return null;
+        return noteNodeDetail.getNoteNode().getNoteType();
     }
 
     private Map<String, Object> toQueryEcho(NoteNodeContentQuery query) {

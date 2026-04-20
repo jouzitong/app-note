@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.athena.framework.data.jpa.domain.dto.LogicalDeleteDTO;
+import org.zzt.note.data.core.type.NoteType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +37,7 @@ public class NoteNodeDTO extends LogicalDeleteDTO {
     /**
      * 笔记模板类型（核心字段）
      */
-    private String noteType;
+    private NoteType noteType;
 
     /**
      * 排序

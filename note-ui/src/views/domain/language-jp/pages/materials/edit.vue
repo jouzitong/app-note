@@ -607,14 +607,12 @@ export default {
       }
       return null;
     },
-    resolveNoteTypeKey(code) {
-      const found = this.noteTypeOptions.find(
-        (item) => item.code === Number(code)
-      );
-      if (found?.enumKey) {
-        return found.enumKey;
+    isValidNoteTypeCode(code) {
+      const num = Number(code);
+      if (!Number.isInteger(num)) {
+        return false;
       }
-      return NOTE_TYPE_CODE_TO_KEY[Number(code)] || "";
+      return this.noteTypeOptions.some((item) => item.code === num);
     },
     async handleParentFocus() {
       await this.searchParentOptions(this.parentKeyword);
@@ -777,14 +775,13 @@ export default {
       if (this.form.noteTypeCode == null) {
         return "请选择节点类型。";
       }
-      const noteTypeKey = this.resolveNoteTypeKey(this.form.noteTypeCode);
-      if (!noteTypeKey) {
+      if (!this.isValidNoteTypeCode(this.form.noteTypeCode)) {
         return "节点类型无效，请刷新后重试。";
       }
       return "";
     },
     buildPayload() {
-      const noteType = this.resolveNoteTypeKey(this.form.noteTypeCode);
+      const noteType = Number(this.form.noteTypeCode);
       return {
         noteNode: {
           parentId: this.form.parentId,

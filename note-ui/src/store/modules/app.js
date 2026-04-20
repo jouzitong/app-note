@@ -62,10 +62,11 @@ export default {
       }
       const durationMs =
         typeof payload?.durationMs === "number" ? payload.durationMs : 3000;
+      const safeDuration = Number.isFinite(durationMs) ? durationMs : 3000;
       toastTimer = setTimeout(() => {
         commit("HIDE_TOAST");
         toastTimer = null;
-      }, Math.max(800, durationMs));
+      }, Math.max(0, safeDuration));
     },
     notifyError({ dispatch }, message) {
       return dispatch("showToast", { type: "error", message });

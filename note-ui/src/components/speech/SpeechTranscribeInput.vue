@@ -1,7 +1,11 @@
 <template>
   <div
     class="speech-input"
-    :class="{ listening: isListening, unsupported: !isSupported }"
+    :class="{
+      listening: isListening,
+      unsupported: !isSupported,
+      completed: recognitionState === 'completed',
+    }"
   >
     <button
       type="button"
@@ -365,28 +369,36 @@ export default {
 
 <style scoped>
 .speech-input {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+  position: relative;
+  display: inline-block;
   margin-top: 6px;
+  width: min(300px, 100%);
   max-width: 100%;
+  border: 1px solid #c6d8f7;
+  border-radius: 12px;
+  background: #f8fbff;
+  overflow: hidden;
 }
 
 .speech-btn {
-  width: 24px;
-  height: 24px;
-  border: 1px solid #c7d2fe;
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b6cdf7;
   border-radius: 999px;
-  background: #eef2ff;
-  color: #1d4ed8;
+  background: #edf4ff;
+  color: #4b5f7d;
   cursor: pointer;
-  font-size: 11px;
+  font-size: 10px;
   line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  flex: 0 0 auto;
+  z-index: 1;
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
@@ -406,30 +418,41 @@ export default {
 }
 
 .speech-field {
-  width: min(260px, 70vw);
-  height: 26px;
-  border: 1px solid #dbeafe;
-  border-radius: 8px;
-  padding: 0 8px;
-  font-size: 12px;
-  color: #1f2937;
-  background: #f8fbff;
+  width: 100%;
+  height: 30px;
+  border: 0;
+  border-radius: 0;
+  padding: 0 34px 0 10px;
+  font-size: 11px;
+  color: #7d889a;
+  background: transparent;
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .speech-field.is-listening {
+  background: transparent;
+}
+
+.speech-field.is-completed {
+  background: transparent;
+}
+
+.speech-field:focus {
+  outline: none;
+}
+
+.speech-input.listening {
   background: #fef3c7;
   border-color: #f59e0b;
 }
 
-.speech-field.is-completed {
-  background: #dcfce7;
-  border-color: #22c55e;
+.speech-input:focus-within {
+  border-color: #60a5fa;
 }
 
-.speech-field:focus {
-  border-color: #60a5fa;
-  outline: none;
+.speech-input.completed:not(.listening):not(.unsupported) {
+  background: #dcfce7;
+  border-color: #22c55e;
 }
 
 .speech-input.unsupported .speech-field {

@@ -49,8 +49,9 @@ nav a.router-link-exact-active {
 
 .app-toast {
   position: fixed;
-  top: var(--space-4);
-  right: var(--space-4);
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
   max-width: min(520px, calc(100vw - var(--space-8)));
   padding: 10px var(--space-3);
   border-radius: 10px;
@@ -74,6 +75,12 @@ nav a.router-link-exact-active {
   border-color: var(--color-info-border);
 }
 
+.app-toast--success {
+  background: var(--color-tag-success-bg);
+  color: var(--color-tag-success-text);
+  border-color: var(--color-tag-success-border);
+}
+
 .toast-fade-enter-active,
 .toast-fade-leave-active {
   transition: opacity 0.18s ease, transform 0.18s ease;
@@ -81,7 +88,7 @@ nav a.router-link-exact-active {
 .toast-fade-enter,
 .toast-fade-leave-to {
   opacity: 0;
-  transform: translateY(-6px);
+  transform: translateX(-50%) translateY(8px);
 }
 
 .app-tag {

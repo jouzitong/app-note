@@ -70,13 +70,59 @@
       gap: 10px;
     }
 
+    .back-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
     .back-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       color: var(--brand);
       text-decoration: none;
-      font-size: 13px;
+    }
+
+    .back-btn-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      border: 1px solid #b6cbf4;
+      background: #edf4ff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 1px 1px rgba(45, 91, 209, 0.08);
+      transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .back-btn:hover .back-btn-icon {
+      background: #e3eeff;
+      border-color: #9ebdf7;
+    }
+
+    .back-btn:active .back-btn-icon {
+      transform: scale(0.95);
+    }
+
+    .back-btn-icon svg {
+      width: 12px;
+      height: 12px;
+      stroke: currentColor;
+      stroke-width: 2.2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .back-btn-text {
+      color: #3258bb;
+      font-size: 12px;
       font-weight: 700;
       line-height: 1;
       white-space: nowrap;
+      letter-spacing: 0.1px;
     }
 
     .progress-track {
@@ -547,7 +593,7 @@
       background: #f7f9fe;
       padding: 8px 8px calc(8px + env(safe-area-inset-bottom));
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 6px;
     }
 
@@ -586,7 +632,7 @@
       }
 
       .bottom-actions {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .detail-panel {
@@ -609,7 +655,16 @@
   <main class="content-scroll">
     <section class="learning-shell">
       <div class="learning-top">
-        <a class="back-btn" href="../materials/index.html">&lt; 进度 1/47</a>
+        <div class="back-group">
+          <a class="back-btn" href="../materials/index.html" aria-label="返回学习列表">
+            <span class="back-btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" focusable="false">
+                <path d="M10.5 3.5L6 8l4.5 4.5"></path>
+              </svg>
+            </span>
+          </a>
+          <span class="back-btn-text">进度 1/47</span>
+        </div>
         <div class="progress-track" aria-label="学习进度"><span class="progress-fill"></span></div>
         <span class="speed-label">速度</span>
         <select class="speed-select" aria-label="播放速度">
@@ -723,8 +778,6 @@
 
       <div class="bottom-actions">
         <a class="action-btn active" href="javascript:;" data-placeholder="true" title="掌握">✓</a>
-        <a class="action-btn" href="javascript:;" data-placeholder="true" title="疑难">⚠</a>
-        <a class="action-btn" href="javascript:;" data-placeholder="true" title="收藏">★</a>
         <a class="action-btn" href="javascript:;" data-placeholder="true" title="播报">🔊</a>
         <a class="action-btn" href="javascript:;" data-placeholder="true" title="上一条">⏮</a>
         <a class="action-btn" href="javascript:;" data-placeholder="true" title="下一条">⏭</a>

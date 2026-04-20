@@ -1,13 +1,21 @@
 <template>
   <div class="word-card" style="text-align: left">
     <div class="learning-top">
-      <button
-        class="back-to-catalog-btn"
-        type="button"
-        @click="handleBackToCatalog"
-      >
-        &lt; 进度 {{ progressText }}
-      </button>
+      <div class="back-progress-group">
+        <button
+          class="back-to-catalog-btn"
+          type="button"
+          aria-label="返回学习列表"
+          @click="handleBackToCatalog"
+        >
+          <span class="back-to-catalog-icon" aria-hidden="true">
+            <svg viewBox="0 0 16 16" focusable="false">
+              <path d="M10.5 3.5L6 8l4.5 4.5" />
+            </svg>
+          </span>
+        </button>
+        <span class="back-progress-text">进度 {{ progressText }}</span>
+      </div>
       <div class="learning-progress-track">
         <span
           class="learning-progress-fill"
@@ -130,7 +138,17 @@
                 :key="example.id || `example-${index}`"
               >
                 <div class="sentence-row">
-                  <div class="sentence">{{ example.sentence }}</div>
+                  <div
+                    class="sentence"
+                    role="button"
+                    tabindex="0"
+                    title="点击复制整句"
+                    @click="copySentence(example.sentence)"
+                    @keydown.enter.prevent="copySentence(example.sentence)"
+                    @keydown.space.prevent="copySentence(example.sentence)"
+                  >
+                    {{ example.sentence }}
+                  </div>
                   <button
                     class="inline-audio-btn inline-audio-btn-example"
                     type="button"
@@ -297,6 +315,7 @@ import {
   loadPlaybackRate,
   savePlaybackRate,
 } from "@/utils/audioPlayback";
+import { showErrorToast, showSuccessToast } from "@/utils/toast";
 
 export default {
   name: "WordCard",
@@ -335,7 +354,6 @@ export default {
       exampleSpeechTexts: {},
       autoPlaybackSeq: 0,
       autoPlaybackTimers: [],
-      isMobileViewport: false,
     };
   },
   computed: {
@@ -385,9 +403,6 @@ export default {
       const actions = Array.isArray(this.wordCard?.actions)
         ? this.wordCard.actions
         : [];
-      if (!this.isMobileViewport) {
-        return actions;
-      }
       const mobileActionKeys = ["done", "audio", "prev", "next"];
       const byKey = new Map();
       actions.forEach((action) => {
@@ -401,17 +416,12 @@ export default {
     },
   },
   async created() {
-    this.syncMobileViewport();
     this.initPlaybackRate();
     this.audioPlaybackManager = new AudioPlaybackManager({ lang: "ja-JP" });
     this.audioPlaybackManager.warmupVoices();
     await this.loadWordCard();
   },
-  mounted() {
-    window.addEventListener("resize", this.syncMobileViewport);
-  },
   beforeDestroy() {
-    window.removeEventListener("resize", this.syncMobileViewport);
     this.stopPlayback();
     if (this.audioPlaybackManager) {
       this.audioPlaybackManager.destroy();
@@ -427,9 +437,6 @@ export default {
     },
   },
   methods: {
-    syncMobileViewport() {
-      this.isMobileViewport = window.matchMedia("(max-width: 639px)").matches;
-    },
     clearAutoPlaybackTimers() {
       const timers = Array.isArray(this.autoPlaybackTimers)
         ? this.autoPlaybackTimers
@@ -763,6 +770,52 @@ export default {
     handleBackToCatalog() {
       this.$emit("back");
     },
+    fallbackCopyText(text = "") {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "readonly");
+      textarea.style.position = "fixed";
+      textarea.style.top = "-9999px";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      let copied = false;
+      try {
+        copied = document.execCommand("copy");
+      } catch (error) {
+        copied = false;
+      }
+      document.body.removeChild(textarea);
+      return copied;
+    },
+    async copySentence(sentence = "") {
+      const text = String(sentence || "").trim();
+      if (!text) {
+        return;
+      }
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          showSuccessToast("已复制例句").catch(() => {});
+          return;
+        }
+        const copied = this.fallbackCopyText(text);
+        if (copied) {
+          showSuccessToast("已复制例句").catch(() => {});
+          return;
+        }
+        showErrorToast("复制失败，请重试").catch(() => {});
+      } catch (error) {
+        const copied = this.fallbackCopyText(text);
+        if (copied) {
+          showSuccessToast("已复制例句").catch(() => {});
+          return;
+        }
+        showErrorToast(`复制失败：${error.message || "unknown"}`).catch(
+          () => {}
+        );
+      }
+    },
   },
 };
 </script>
@@ -784,7 +837,8 @@ export default {
 }
 
 .learning-top {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 10px;
   padding: 10px 12px;
@@ -794,19 +848,63 @@ export default {
   white-space: nowrap;
 }
 
+.back-progress-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
 .back-to-catalog-btn {
-  flex: 0 0 auto;
   border: none;
   background: transparent;
   color: #1d4ed8;
-  font-size: 13px;
-  font-weight: 600;
   cursor: pointer;
   padding: 0;
-  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-catalog-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  border: 1px solid #b6cbf4;
+  background: #edf4ff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 1px rgba(45, 91, 209, 0.08);
+  transition: transform 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.back-to-catalog-btn:hover .back-to-catalog-icon {
+  background: #e3eeff;
+  border-color: #9ebdf7;
+}
+
+.back-to-catalog-btn:active .back-to-catalog-icon {
+  transform: scale(0.95);
+}
+
+.back-to-catalog-icon svg {
+  width: 12px;
+  height: 12px;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.back-progress-text {
+  color: #3258bb;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  letter-spacing: 0.1px;
 }
 
 .learning-progress-track {
@@ -1136,6 +1234,16 @@ export default {
   font-weight: 600;
   color: #111;
   line-height: 1.35;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 1px 3px;
+  transition: background-color 0.15s ease;
+}
+
+.sentence:hover,
+.sentence:focus {
+  background: #eef4ff;
+  outline: none;
 }
 
 .inline-audio-btn-example {
@@ -1269,9 +1377,8 @@ export default {
 }
 
 .actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 8px;
   padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
   border-top: 1px solid #eceff5;
@@ -1282,7 +1389,6 @@ export default {
 }
 
 .icon-btn {
-  flex: 1;
   height: 42px;
   border: 1px solid #e3e7ef;
   border-radius: 12px;
@@ -1346,6 +1452,20 @@ export default {
 
   .body {
     padding: 18px 18px 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .learning-top {
+    grid-template-columns: auto 1fr;
+  }
+
+  .learning-top-right .playback-rate-label {
+    display: none;
+  }
+
+  .actions {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 </style>
