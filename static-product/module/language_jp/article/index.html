@@ -171,6 +171,84 @@
             padding: 16px;
         }
 
+        .knowledge-card {
+            margin-top: 16px;
+            background: #fffcf7;
+            border: 1px solid #eadfcf;
+            border-radius: 16px;
+            padding: 14px;
+        }
+
+        .knowledge-title {
+            margin: 0;
+            color: #5c4732;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        .knowledge-content {
+            margin-top: 12px;
+        }
+
+        .knowledge-block + .knowledge-block {
+            margin-top: 12px;
+        }
+
+        .knowledge-subtitle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            list-style: none;
+            margin: 0;
+            font-size: 13px;
+            color: #7a5b3d;
+            font-weight: 700;
+        }
+
+        .knowledge-subtitle::-webkit-details-marker {
+            display: none;
+        }
+
+        .knowledge-subtitle::after {
+            content: "▾";
+            font-size: 11px;
+            color: #9a7b5d;
+            transform: rotate(-90deg);
+            transition: transform 0.2s ease;
+        }
+
+        details[open] > .knowledge-subtitle::after {
+            transform: rotate(0deg);
+        }
+
+        .knowledge-list {
+            margin: 8px 0 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            gap: 8px;
+        }
+
+        .knowledge-item {
+            padding: 10px 12px;
+            border-radius: 10px;
+            background: #fff;
+            border: 1px solid #f0e5d6;
+            font-size: 13px;
+            line-height: 1.8;
+            color: #4c3d31;
+        }
+
+        .knowledge-item .jp {
+            color: #2d241b;
+            font-weight: 700;
+        }
+
+        .knowledge-item .meaning {
+            color: #7a6654;
+        }
+
         .note-text {
             margin: 0;
             font-size: 14px;
@@ -285,6 +363,47 @@
 
                 <div class="translation">
                     我每天早上七点起床。吃完早饭后去学校。晚上在家学习日语。
+                </div>
+            </div>
+
+            <div class="knowledge-card" aria-label="核心知识点">
+                <h2 class="knowledge-title">核心知识点</h2>
+                <div class="knowledge-content">
+                    <details class="knowledge-block">
+                        <summary class="knowledge-subtitle">核心单词</summary>
+                        <ul class="knowledge-list">
+                            <li class="knowledge-item">
+                                <span class="jp">毎朝（まいあさ）</span>
+                                <span class="meaning">：每天早上</span>
+                            </li>
+                            <li class="knowledge-item">
+                                <span class="jp">起きる（おきる）</span>
+                                <span class="meaning">：起床、起身</span>
+                            </li>
+                            <li class="knowledge-item">
+                                <span class="jp">勉強する（べんきょうする）</span>
+                                <span class="meaning">：学习</span>
+                            </li>
+                        </ul>
+                    </details>
+
+                    <details class="knowledge-block">
+                        <summary class="knowledge-subtitle">核心句式</summary>
+                        <ul class="knowledge-list">
+                            <li class="knowledge-item">
+                                <span class="jp">〜は 〜に 〜ます</span>
+                                <span class="meaning">：表示“某人/某物在某时间做某事”。例：私は毎朝七時に起きます。</span>
+                            </li>
+                            <li class="knowledge-item">
+                                <span class="jp">〜を 〜て、〜ます</span>
+                                <span class="meaning">：用て形连接动作，表示先后顺序。例：朝ご飯を食べて、学校へ行きます。</span>
+                            </li>
+                            <li class="knowledge-item">
+                                <span class="jp">〜で 〜を 〜します</span>
+                                <span class="meaning">：表示“在某地做某事”。例：家で日本語を勉強します。</span>
+                            </li>
+                        </ul>
+                    </details>
                 </div>
             </div>
         </div>

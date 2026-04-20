@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "importId": "article-import-demo-001",
+    "source": "manual-test",
+    "options": {
+      "upsert": true
+    }
+  },
+  "payload": {
+    "noteNodes": [
+      {
+        "nodeKey": "jp-article-root-demo",
+        "parentNodeKey": null,
+        "noteNode": {
+          "title": "日语文章练习",
+          "noteType": "EMPTY",
+          "sort": 0
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "jp-article-collection-demo",
+        "parentNodeKey": "jp-article-root-demo",
+        "noteNode": {
+          "title": "N5 阅读文章",
+          "noteType": "ARTICLE",
+          "sort": 1
+        },
+        "content": null
+      }
+    ],
+    "articles": [
+      {
+        "id": "jp-article-demo-001",
+        "noteNodeId": null,
+        "title": "日本語の朝",
+        "paragraphs": [
+          [
+            {"text": "朝", "kana": "あさ"},
+            {"text": "に", "kana": null},
+            {"text": "散歩", "kana": "さんぽ"},
+            {"text": "します", "kana": null}
+          ],
+          [
+            {"text": "空気", "kana": "くうき"},
+            {"text": "が", "kana": null},
+            {"text": "気持ち", "kana": "きも"},
+            {"text": "いい", "kana": null}
+          ]
+        ],
+        "translation": [
+          "早上去散步。",
+          "空气很舒服。"
+        ],
+        "progress": {
+          "favorite": false,
+          "lastReadParagraphIndex": 0,
+          "playbackRate": 1.0
+        }
+      },
+      {
+        "id": "jp-article-demo-002",
+        "noteNodeId": null,
+        "title": "駅までの道",
+        "paragraphs": [
+          [
+            {"text": "駅", "kana": "えき"},
+            {"text": "まで", "kana": null},
+            {"text": "歩いて", "kana": "ある"},
+            {"text": "行きます", "kana": "い"}
+          ]
+        ],
+        "translation": [
+          "走路去车站。"
+        ],
+        "progress": {
+          "favorite": true,
+          "lastReadParagraphIndex": 0,
+          "playbackRate": 1.0
+        }
+      }
+    ]
+  }
+}
