@@ -8,6 +8,7 @@
           <h1 class="note-title">{{ noteNode.title }}</h1>
           <div class="note-actions">
             <button
+              v-if="shouldShowBackButton"
               class="icon-btn"
               title="返回上一级"
               aria-label="返回上一级"
@@ -159,6 +160,29 @@ export default {
         .map((item) => item.title)
         .filter(Boolean)
         .join(" / ");
+    },
+    shouldShowBackButton() {
+      if (!Array.isArray(this.paths) || this.paths.length === 0) {
+        return false;
+      }
+      if (this.paths.length === 1) {
+        const pathNodeId =
+          this.paths[0] &&
+          this.paths[0].id !== undefined &&
+          this.paths[0].id !== null
+            ? String(this.paths[0].id)
+            : "";
+        const currentNodeId =
+          this.noteNode &&
+          this.noteNode.id !== undefined &&
+          this.noteNode.id !== null
+            ? String(this.noteNode.id)
+            : "";
+        if (pathNodeId && currentNodeId && pathNodeId === currentNodeId) {
+          return false;
+        }
+      }
+      return true;
     },
     isMarkdownNode() {
       return this.resolveNoteTypeCode(this.noteNode?.noteType) === 1;
