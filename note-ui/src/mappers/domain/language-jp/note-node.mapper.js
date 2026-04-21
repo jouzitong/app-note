@@ -9,6 +9,31 @@ import {
 
 const FALLBACK_TAG_CLASS_NAME = "app-tag--info";
 
+function normalizeTags(sourceTags) {
+  if (!Array.isArray(sourceTags)) {
+    return [];
+  }
+  return sourceTags
+    .map((item) => {
+      const label =
+        typeof item?.label === "string"
+          ? item.label.trim()
+          : typeof item?.name === "string"
+          ? item.name.trim()
+          : "";
+      if (!label) {
+        return null;
+      }
+      return {
+        id: item?.id || null,
+        bizType: item?.bizType || "NOTE",
+        label,
+        className: item?.className || FALLBACK_TAG_CLASS_NAME,
+      };
+    })
+    .filter(Boolean);
+}
+
 export function mapNoteNodeDtoToVm(source = {}) {
   const fallback = createDefaultNoteNodeVm();
   const dto = {
@@ -16,27 +41,7 @@ export function mapNoteNodeDtoToVm(source = {}) {
     ...(source || {}),
   };
   const meta = dto.meta && typeof dto.meta === "object" ? dto.meta : {};
-  const tags = Array.isArray(meta.tags)
-    ? meta.tags
-        .map((item) => {
-          const label =
-            typeof item?.label === "string"
-              ? item.label.trim()
-              : typeof item?.name === "string"
-              ? item.name.trim()
-              : "";
-          if (!label) {
-            return null;
-          }
-          return {
-            id: item?.id || null,
-            bizType: item?.bizType || "NOTE",
-            label,
-            className: item?.className || FALLBACK_TAG_CLASS_NAME,
-          };
-        })
-        .filter(Boolean)
-    : [];
+  const tags = normalizeTags(meta.tags);
 
   return {
     ...fallback,
@@ -76,6 +81,7 @@ export function mapNoteNodeDetailDtoToVm(source = {}) {
         title: item?.title || "",
         sort: Number.isFinite(Number(item?.sort)) ? Number(item.sort) : 0,
         noteType: item?.noteType || "",
+        tags: normalizeTags(item?.meta?.tags || item?.tags),
       }))
       .filter((item) => item.id && item.title),
     content: dto.content ?? noteNode.content ?? null,

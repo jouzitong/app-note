@@ -33,14 +33,37 @@ describe("note-node.mapper", () => {
         { id: 1, title: "P1" },
         { id: 2, title: "" },
       ],
-      childNoteNodes: [{ id: 3, title: "C1", sort: "9", noteType: "ARTICLE" }],
+      childNoteNodes: [
+        {
+          id: 3,
+          title: "C1",
+          sort: "9",
+          noteType: "ARTICLE",
+          meta: {
+            tags: [{ id: 11, label: "语法", className: "app-tag--success" }],
+          },
+        },
+      ],
       content: { k: "v" },
     });
 
     expect(vm.noteNode.id).toBe(2);
     expect(vm.paths).toEqual([{ id: 1, title: "P1" }]);
     expect(vm.childNodes).toEqual([
-      { id: 3, title: "C1", sort: 9, noteType: "ARTICLE" },
+      {
+        id: 3,
+        title: "C1",
+        sort: 9,
+        noteType: "ARTICLE",
+        tags: [
+          {
+            id: 11,
+            bizType: "NOTE",
+            label: "语法",
+            className: "app-tag--success",
+          },
+        ],
+      },
     ]);
     expect(vm.content).toEqual({ k: "v" });
   });

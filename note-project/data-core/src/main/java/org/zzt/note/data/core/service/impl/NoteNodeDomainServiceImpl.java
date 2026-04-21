@@ -255,7 +255,15 @@ public class NoteNodeDomainServiceImpl implements INoteNodeDomainService {
         List<NoteNodePathVO> paths = buildPaths(noteNode.getPathIds());
         List<NoteNodePathVO> childNoteNodes = noteNodeRepository.findByParentIdOrderBySortAsc(noteNode.getId())
                 .stream()
-                .map(child -> new NoteNodePathVO(child.getId(), child.getTitle(), child.getNoteType()))
+                .map(child -> {
+                    NoteNodeDTO childNodeDTO = noteNodeConvert.toDTO(child);
+                    return new NoteNodePathVO(
+                            child.getId(),
+                            child.getTitle(),
+                            child.getNoteType(),
+                            childNodeDTO == null ? null : childNodeDTO.getMeta()
+                    );
+                })
                 .collect(Collectors.toList());
 
         // 4) 内容优先按 JSON 解析，解析失败时保留原始字符串

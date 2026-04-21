@@ -64,9 +64,21 @@
                 class="tree-item"
                 @click="openChildNode(item)"
               >
-                <span class="tree-item-title"
-                  >{{ index + 1 }}. {{ item.title }}</span
-                >
+                <span class="tree-main">
+                  <span class="tree-item-title"
+                    >{{ index + 1 }}. {{ item.title }}</span
+                  >
+                  <span v-if="item.tags && item.tags.length" class="tree-tags">
+                    <span
+                      v-for="tag in item.tags"
+                      :key="buildChildTagKey(item, tag)"
+                      class="app-tag tree-tag"
+                      :class="tag.className || 'app-tag--info'"
+                    >
+                      {{ tag.label }}
+                    </span>
+                  </span>
+                </span>
                 <span class="tree-item-actions">
                   <button
                     class="item-action-btn"
@@ -214,6 +226,11 @@ export default {
     },
   },
   methods: {
+    buildChildTagKey(item, tag) {
+      return `child-${item?.id || "x"}-${tag?.id || tag?.label || "x"}-${
+        tag?.className || "x"
+      }`;
+    },
     resolveNoteId() {
       const routeId = this.$route.params.id || this.$route.query.id;
       if (routeId !== undefined && routeId !== null && routeId !== "") {
@@ -351,13 +368,18 @@ export default {
       });
     },
     handleAddChild() {
-      const parentId =
+      const currentNodeId =
         this.noteNode && this.noteNode.id
           ? this.noteNode.id
           : this.resolveNoteId();
       this.$router.push({
         name: "language-jp-materials-new",
-        query: parentId ? { parentId: String(parentId) } : {},
+        query: currentNodeId
+          ? {
+              parentId: String(currentNodeId),
+              fromId: String(currentNodeId),
+            }
+          : {},
       });
     },
     handleEditChild(childNode) {
@@ -368,6 +390,11 @@ export default {
       this.$router.push({
         name: "language-jp-materials-edit",
         params: { id: String(childNode.id) },
+        query: {
+          fromId: String(
+            this.noteNode.id || this.resolveNoteId() || childNode.id
+          ),
+        },
       });
     },
     handleDeleteChild() {
@@ -393,6 +420,7 @@ export default {
       this.$router.push({
         name: "language-jp-materials-edit",
         params: { id: String(this.noteNode.id) },
+        query: { fromId: String(this.noteNode.id) },
       });
     },
   },
@@ -638,6 +666,26 @@ export default {
 
 .tree-item-title {
   min-width: 0;
+  display: block;
+}
+
+.tree-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tree-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tree-tag {
+  font-size: 11px;
+  line-height: 1;
+  padding: 3px 8px;
 }
 
 .tree-item-actions {

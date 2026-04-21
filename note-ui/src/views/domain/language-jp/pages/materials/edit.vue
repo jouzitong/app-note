@@ -381,7 +381,7 @@ export default {
     },
     pageSubTitle() {
       return this.isCreateMode
-        ? "统一用于节点新增。保存后返回父节点详情。"
+        ? "统一用于节点新增。保存后返回进入前的节点详情。"
         : "统一用于节点编辑。编辑模式不允许修改节点类型。";
     },
     routeNodeId() {
@@ -389,6 +389,9 @@ export default {
     },
     routeParentId() {
       return parsePositiveInt(this.$route.query.parentId);
+    },
+    routeFromId() {
+      return parsePositiveInt(this.$route.query.fromId);
     },
     normalizedTagKeyword() {
       return String(this.tagKeyword || "").trim();
@@ -819,14 +822,7 @@ export default {
             type: "info",
             message: "新增成功",
           });
-          if (this.form.parentId) {
-            this.$router.push({
-              name: "language-jp-materials",
-              params: { id: String(this.form.parentId) },
-            });
-          } else {
-            this.$router.push({ name: "language-jp-home" });
-          }
+          this.navigateBackToSourceNode();
           return;
         }
 
@@ -835,37 +831,32 @@ export default {
           type: "info",
           message: "保存成功",
         });
-        this.$router.push({
-          name: "language-jp-materials",
-          params: { id: String(this.form.id) },
-        });
+        this.navigateBackToSourceNode();
       } catch (error) {
         this.errorMessage = error?.message || "保存失败，请稍后重试。";
       } finally {
         this.saving = false;
       }
     },
-    goBack() {
-      if (this.isCreateMode) {
-        if (this.form.parentId) {
-          this.$router.push({
-            name: "language-jp-materials",
-            params: { id: String(this.form.parentId) },
-          });
-          return;
-        }
-        this.$router.push({ name: "language-jp-home" });
-        return;
-      }
-
-      if (this.form.id) {
+    navigateBackToSourceNode() {
+      const returnNodeId =
+        this.routeFromId ||
+        (this.isCreateMode ? this.form.parentId : this.form.id);
+      if (returnNodeId) {
         this.$router.push({
           name: "language-jp-materials",
-          params: { id: String(this.form.id) },
+          params: { id: String(returnNodeId) },
         });
         return;
       }
+      if (this.isCreateMode) {
+        this.$router.push({ name: "language-jp-home" });
+        return;
+      }
       this.$router.back();
+    },
+    goBack() {
+      this.navigateBackToSourceNode();
     },
     handleGlobalClick(event) {
       const parentBox = this.$refs.parentCombobox;
