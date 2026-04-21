@@ -9,18 +9,33 @@
   "payload": {
     "noteNodes": [
       {
-        "nodeKey": "jp-article-root-demo",
+        "nodeKey": "node-root-jp",
         "parentNodeKey": null,
         "noteNode": {
-          "title": "日语文章练习",
+          "title": "日语学习",
           "noteType": "EMPTY",
-          "sort": 0
+          "sort": 1,
+          "meta": {
+            "icon": "📚",
+            "subject": "日语",
+            "tags": []
+          }
+        },
+        "content": null
+      },
+      {
+        "nodeKey": "node-root-jp-demo",
+        "parentNodeKey": "node-root-jp",
+        "noteNode": {
+          "title": "N5 阅读文章",
+          "noteType": "EMPTY",
+          "sort": 1
         },
         "content": null
       },
       {
         "nodeKey": "jp-article-collection-demo",
-        "parentNodeKey": "jp-article-root-demo",
+        "parentNodeKey": "node-root-jp-demo",
         "noteNode": {
           "title": "N5 阅读文章",
           "noteType": "ARTICLE",

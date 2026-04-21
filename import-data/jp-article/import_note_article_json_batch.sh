@@ -4,7 +4,7 @@ set -u
 
 BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
 DATA_DIR="${DATA_DIR:-${BASE_DIR}/data-json}"
-HOST="${HOST:-http://localhost:19812}"
+HOST="${HOST:-http://localhost:19812/app-note}"
 ENDPOINT="${ENDPOINT:-/api/v1/imports/note-article/json-file}"
 MAX_RETRIES="${MAX_RETRIES:-1}"
 SLEEP_SECONDS="${SLEEP_SECONDS:-1}"
