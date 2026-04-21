@@ -1,12 +1,16 @@
-import { requestJson, unwrapResponse } from "@/utils/http";
+import { createHttp } from "@/api/http-client";
 
-const BASE_PATH = "/common/v1/system/enums";
+const server = "/common/v1/system/enums";
+const $http = createHttp(server);
 
-export async function fetchGlobalEnums() {
-  const response = await requestJson(BASE_PATH);
-  const body = unwrapResponse(response);
-  if (body && typeof body === "object") {
-    return body;
-  }
-  return {};
-}
+const api = {
+  fetchGlobalEnums: async function () {
+    const body = await $http.get("");
+    if (body && typeof body === "object") {
+      return body;
+    }
+    return {};
+  },
+};
+
+export default api;

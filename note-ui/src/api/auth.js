@@ -1,42 +1,42 @@
-import { requestJson, unwrapResponse } from "@/utils/http";
+import { createHttp } from "@/api/http-client";
 
-export async function login(username, password, tenantId = "") {
-  const payload = {
-    username: (username || "").trim(),
-    password: password || "",
-  };
-  if (tenantId) {
-    payload.tenantId = tenantId;
-  }
-  const response = await requestJson("/auth/login", {
-    method: "POST",
-    json: payload,
-    auth: false,
-    silentError: true,
-    clearAuthOn401: false,
-    skipAuthRefresh: true,
-  });
-  return unwrapResponse(response);
-}
+const $http = createHttp("");
 
-export async function refreshToken() {
-  const response = await requestJson("/auth/refresh", {
-    method: "POST",
-    skipAuthRefresh: true,
-    clearAuthOn401: false,
-    redirectOn401: false,
-  });
-  return unwrapResponse(response);
-}
+const api = {
+  login: function (username, password, tenantId = "") {
+    const payload = {
+      username: (username || "").trim(),
+      password: password || "",
+    };
+    if (tenantId) {
+      payload.tenantId = tenantId;
+    }
 
-export async function getCurrentUser() {
-  const response = await requestJson("/auth/me");
-  return unwrapResponse(response);
-}
+    return $http.post("/auth/login", payload, {
+      auth: false,
+      silentError: true,
+      clearAuthOn401: false,
+      skipAuthRefresh: true,
+    });
+  },
 
-export async function logout() {
-  await requestJson("/auth/logout", {
-    method: "POST",
-    skipAuthRefresh: true,
-  });
-}
+  refreshToken: function () {
+    return $http.post("/auth/refresh", undefined, {
+      skipAuthRefresh: true,
+      clearAuthOn401: false,
+      redirectOn401: false,
+    });
+  },
+
+  getCurrentUser: function () {
+    return $http.get("/auth/me");
+  },
+
+  logout: function () {
+    return $http.post("/auth/logout", undefined, {
+      skipAuthRefresh: true,
+    });
+  },
+};
+
+export default api;

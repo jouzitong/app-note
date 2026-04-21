@@ -1,11 +1,4 @@
-import {
-  createNoteNode,
-  createNoteTag,
-  getNoteNodeById,
-  searchNoteTags,
-  searchParentNoteNodes,
-  updateNoteNode,
-} from "@/api/noteNodes";
+import noteNodeApi from "@/api/noteNodes";
 import {
   mapNoteNodeDetailDtoToVm,
   mapParentNodeToOptionVm,
@@ -13,7 +6,7 @@ import {
 } from "@/mappers/domain/language-jp/note-node.mapper";
 
 export async function fetchNoteNodeDetail(noteNodeId) {
-  const detailDto = await getNoteNodeById(noteNodeId);
+  const detailDto = await noteNodeApi.getNoteNodeById(noteNodeId);
   return mapNoteNodeDetailDtoToVm(detailDto || {});
 }
 
@@ -31,7 +24,7 @@ export async function searchParentNoteNodeOptions({
   excludeId = null,
   limit = 20,
 } = {}) {
-  const list = await searchParentNoteNodes({
+  const list = await noteNodeApi.searchParentNoteNodes({
     keyword: String(keyword || "").trim(),
     excludeId,
     limit,
@@ -42,7 +35,7 @@ export async function searchParentNoteNodeOptions({
 }
 
 export async function searchNoteTagOptions({ keyword = "", limit = 20 } = {}) {
-  const list = await searchNoteTags({
+  const list = await noteNodeApi.searchNoteTags({
     keyword: String(keyword || "").trim(),
     limit,
   });
@@ -52,7 +45,7 @@ export async function searchNoteTagOptions({ keyword = "", limit = 20 } = {}) {
 }
 
 export async function createNoteTagOption(payload = {}) {
-  const created = await createNoteTag(payload);
+  const created = await noteNodeApi.createNoteTag(payload);
   return (
     mapTagToOptionVm(created || {}) || {
       id: null,
@@ -64,9 +57,9 @@ export async function createNoteTagOption(payload = {}) {
 }
 
 export async function createNoteNodeByDraft(payload) {
-  return createNoteNode(payload);
+  return noteNodeApi.createNoteNode(payload);
 }
 
 export async function updateNoteNodeByDraft(noteNodeId, payload) {
-  return updateNoteNode(noteNodeId, payload);
+  return noteNodeApi.updateNoteNode(noteNodeId, payload);
 }

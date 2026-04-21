@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import { login } from "@/api/auth";
+import authApi from "@/api/auth";
 import { saveAuthToken, saveAuthUser } from "@/utils/auth";
 import { getErrorMessage } from "@/utils/error";
 
@@ -76,7 +76,10 @@ export default {
       this.loading = true;
       this.errorMessage = "";
       try {
-        const result = await login(this.form.username, this.form.password);
+        const result = await authApi.login(
+          this.form.username,
+          this.form.password
+        );
         const token = result?.token;
         if (!token) {
           throw new Error("登录成功但未返回 token");

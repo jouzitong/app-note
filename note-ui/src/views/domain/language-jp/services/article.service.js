@@ -1,26 +1,24 @@
-import {
-  getArticleByNoteNode,
-  updateArticleFavorite,
-  updateArticlePlaybackRate,
-  updateArticlePosition,
-} from "@/api/articles";
+import articleApi from "@/api/articles";
 import {
   mapArticleDtoToVm,
   mergeArticleVmWithPatch,
 } from "@/mappers/domain/language-jp/article.mapper";
 
 export async function fetchArticleByNoteNode(noteNodeId) {
-  const dto = await getArticleByNoteNode(noteNodeId);
+  const dto = await articleApi.getArticleByNoteNode(noteNodeId);
   return mapArticleDtoToVm(dto || {});
 }
 
 export async function saveArticleFavorite(articleVm, favorite) {
-  const updatedDto = await updateArticleFavorite(articleVm?.id, favorite);
+  const updatedDto = await articleApi.updateArticleFavorite(
+    articleVm?.id,
+    favorite
+  );
   return mergeArticleVmWithPatch(articleVm, updatedDto);
 }
 
 export async function saveArticlePlaybackRate(articleVm, playbackRate) {
-  const updatedDto = await updateArticlePlaybackRate(
+  const updatedDto = await articleApi.updateArticlePlaybackRate(
     articleVm?.id,
     playbackRate
   );
@@ -28,6 +26,9 @@ export async function saveArticlePlaybackRate(articleVm, playbackRate) {
 }
 
 export async function saveArticlePosition(articleVm, paragraphIndex) {
-  const updatedDto = await updateArticlePosition(articleVm?.id, paragraphIndex);
+  const updatedDto = await articleApi.updateArticlePosition(
+    articleVm?.id,
+    paragraphIndex
+  );
   return mergeArticleVmWithPatch(articleVm, updatedDto);
 }

@@ -1,4 +1,4 @@
-import { fetchGlobalEnums as requestGlobalEnums } from "@/api/enums";
+import enumApi from "@/api/enums";
 
 let toastTimer = null;
 
@@ -83,7 +83,7 @@ export default {
       commit("SET_GLOBAL_ENUMS_LOADING", true);
       commit("SET_GLOBAL_ENUMS_ERROR", "");
       try {
-        const enums = await requestGlobalEnums();
+        const enums = await enumApi.fetchGlobalEnums();
         commit("SET_GLOBAL_ENUMS", enums);
         commit("SET_GLOBAL_ENUMS_LOADED", true);
         return enums;

@@ -1,4 +1,4 @@
-import { confirmWordCardDone, getWordCardPage } from "@/api/wordCards";
+import wordCardApi from "@/api/wordCards";
 import {
   mapWordCardDtoToVm,
   mapWordCardPageDtoToVm,
@@ -10,7 +10,7 @@ export async function fetchWordCardPage({
   size = 10,
   userId,
 } = {}) {
-  const pageDto = await getWordCardPage({
+  const pageDto = await wordCardApi.getWordCardPage({
     noteId,
     page,
     size,
@@ -24,6 +24,6 @@ export async function confirmWordCardDoneById(
   userId,
   fallbackWordCard
 ) {
-  const responseDto = await confirmWordCardDone(cardId, userId);
+  const responseDto = await wordCardApi.confirmWordCardDone(cardId, userId);
   return mapWordCardDtoToVm(responseDto || fallbackWordCard || {});
 }

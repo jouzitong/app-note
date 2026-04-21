@@ -1,67 +1,52 @@
-import { requestJson, unwrapResponse } from "@/utils/http";
+import { createHttp, required, withQuery } from "@/api/http-client";
 
-const BASE_PATH = "/api/v1/articles/domain";
+const server = "/api/v1/articles/domain";
+const $http = createHttp(server);
 
-export async function getArticle(articleId) {
-  if (!articleId) {
-    throw new Error("articleId is required");
-  }
-  const response = await requestJson(
-    `${BASE_PATH}/${encodeURIComponent(articleId)}`
-  );
-  return unwrapResponse(response);
-}
+const api = {
+  getArticle: function (articleId) {
+    required(articleId, "articleId");
+    return $http.get(`/${encodeURIComponent(articleId)}`);
+  },
 
-export async function getArticleByNoteNode(noteNodeId) {
-  const numericNodeId = Number(noteNodeId);
-  if (!Number.isInteger(numericNodeId) || numericNodeId <= 0) {
-    throw new Error("noteNodeId is required");
-  }
-  const response = await requestJson(
-    `${BASE_PATH}/note-node/${encodeURIComponent(numericNodeId)}`
-  );
-  return unwrapResponse(response);
-}
+  getArticleByNoteNode: function (noteNodeId) {
+    const numericNodeId = Number(noteNodeId);
+    if (!Number.isInteger(numericNodeId) || numericNodeId <= 0) {
+      throw new Error("noteNodeId is required");
+    }
+    return $http.get(`/note-node/${encodeURIComponent(numericNodeId)}`);
+  },
 
-export async function saveArticle(article) {
-  await requestJson(BASE_PATH, {
-    method: "POST",
-    json: article || {},
-  });
-}
+  saveArticle: function (article) {
+    return $http.post("", article || {});
+  },
 
-export async function updateArticleFavorite(articleId, favorite) {
-  const params = new URLSearchParams();
-  params.append("favorite", `${Boolean(favorite)}`);
-  const response = await requestJson(
-    `${BASE_PATH}/${encodeURIComponent(
-      articleId
-    )}/favorite?${params.toString()}`,
-    { method: "POST" }
-  );
-  return unwrapResponse(response);
-}
+  updateArticleFavorite: function (articleId, favorite) {
+    required(articleId, "articleId");
+    return $http.post(
+      withQuery(`/${encodeURIComponent(articleId)}/favorite`, {
+        favorite: Boolean(favorite),
+      })
+    );
+  },
 
-export async function updateArticlePlaybackRate(articleId, playbackRate) {
-  const params = new URLSearchParams();
-  params.append("playbackRate", `${playbackRate}`);
-  const response = await requestJson(
-    `${BASE_PATH}/${encodeURIComponent(
-      articleId
-    )}/playback-rate?${params.toString()}`,
-    { method: "POST" }
-  );
-  return unwrapResponse(response);
-}
+  updateArticlePlaybackRate: function (articleId, playbackRate) {
+    required(articleId, "articleId");
+    return $http.post(
+      withQuery(`/${encodeURIComponent(articleId)}/playback-rate`, {
+        playbackRate,
+      })
+    );
+  },
 
-export async function updateArticlePosition(articleId, paragraphIndex) {
-  const params = new URLSearchParams();
-  params.append("paragraphIndex", `${paragraphIndex}`);
-  const response = await requestJson(
-    `${BASE_PATH}/${encodeURIComponent(
-      articleId
-    )}/position?${params.toString()}`,
-    { method: "POST" }
-  );
-  return unwrapResponse(response);
-}
+  updateArticlePosition: function (articleId, paragraphIndex) {
+    required(articleId, "articleId");
+    return $http.post(
+      withQuery(`/${encodeURIComponent(articleId)}/position`, {
+        paragraphIndex,
+      })
+    );
+  },
+};
+
+export default api;
