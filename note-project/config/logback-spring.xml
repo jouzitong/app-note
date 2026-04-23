@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds">
+    <springProperty scope="context" name="APP_NAME" source="spring.application.name" defaultValue="app-note"/>
+    <springProperty scope="context" name="LOG_DIR" source="athena.log.dir" defaultValue="./logs"/>
+
+    <springProperty scope="context" name="ROOT_LEVEL" source="logging.level.root" defaultValue="INFO"/>
+    <springProperty scope="context" name="APP_LEVEL" source="app.log.level.app" defaultValue="INFO"/>
+    <springProperty scope="context" name="ATHENA_LEVEL" source="app.log.level.athena" defaultValue="WARN"/>
+    <springProperty scope="context" name="FRAMEWORK_LEVEL" source="app.log.level.framework" defaultValue="ERROR"/>
+
+    <springProperty scope="context" name="CONSOLE_THRESHOLD" source="app.log.threshold.console" defaultValue="INFO"/>
+    <springProperty scope="context" name="APP_THRESHOLD" source="app.log.threshold.app" defaultValue="DEBUG"/>
+    <springProperty scope="context" name="ATHENA_THRESHOLD" source="app.log.threshold.athena" defaultValue="INFO"/>
+    <springProperty scope="context" name="FRAMEWORK_THRESHOLD" source="app.log.threshold.framework" defaultValue="WARN"/>
+    <springProperty scope="context" name="ALL_THRESHOLD" source="app.log.threshold.all" defaultValue="INFO"/>
+
+    <springProperty scope="context" name="MAX_HISTORY" source="athena.log.rolling.max-history" defaultValue="30"/>
+    <springProperty scope="context" name="TOTAL_SIZE_CAP" source="athena.log.rolling.total-size-cap" defaultValue="10GB"/>
+    <springProperty scope="context" name="MAX_FILE_SIZE" source="athena.log.rolling.max-file-size" defaultValue="256MB"/>
+
+    <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter"/>
+    <conversionRule conversionWord="wex" converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter"/>
+    <conversionRule conversionWord="wEx" converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter"/>
+
+    <property name="PATTERN"
+              value="%d{yyyy-MM-dd'T'HH:mm:ss.SSS,Asia/Shanghai} %-5level [%thread] %logger{40} - %msg | traceId=%X{traceId:-} spanId=%X{spanId:-} requestId=%X{requestId:-}%n%ex{full}"/>
+    <property name="CONSOLE_PATTERN"
+              value="%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSS,Asia/Shanghai}){faint} %highlight(%-5level) %clr([%thread]){faint} %clr(%logger{40}){cyan} %clr(-){faint} %msg %clr(|){faint} traceId=%X{traceId:-} spanId=%X{spanId:-} requestId=%X{requestId:-}%n%wEx"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>${CONSOLE_THRESHOLD}</level>
+        </filter>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${CONSOLE_PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="APP_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/${APP_NAME}.app.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/${APP_NAME}.app.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
+            <maxHistory>${MAX_HISTORY}</maxHistory>
+            <totalSizeCap>${TOTAL_SIZE_CAP}</totalSizeCap>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>${APP_THRESHOLD}</level>
+        </filter>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="ATHENA_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/${APP_NAME}.athena.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/${APP_NAME}.athena.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
+            <maxHistory>${MAX_HISTORY}</maxHistory>
+            <totalSizeCap>${TOTAL_SIZE_CAP}</totalSizeCap>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>${ATHENA_THRESHOLD}</level>
+        </filter>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="FRAMEWORK_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/${APP_NAME}.framework.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/${APP_NAME}.framework.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
+            <maxHistory>${MAX_HISTORY}</maxHistory>
+            <totalSizeCap>${TOTAL_SIZE_CAP}</totalSizeCap>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>${FRAMEWORK_THRESHOLD}</level>
+        </filter>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="ALL_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/${APP_NAME}.all.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/${APP_NAME}.all.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
+            <maxHistory>${MAX_HISTORY}</maxHistory>
+            <totalSizeCap>${TOTAL_SIZE_CAP}</totalSizeCap>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>${ALL_THRESHOLD}</level>
+        </filter>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <logger name="org.zzt.note" level="${APP_LEVEL}" additivity="true">
+        <appender-ref ref="APP_FILE"/>
+    </logger>
+
+    <logger name="org.athena" level="${ATHENA_LEVEL}" additivity="true">
+        <appender-ref ref="ATHENA_FILE"/>
+    </logger>
+
+    <logger name="org.springframework" level="${FRAMEWORK_LEVEL}" additivity="true">
+        <appender-ref ref="FRAMEWORK_FILE"/>
+    </logger>
+    <logger name="org.hibernate" level="${FRAMEWORK_LEVEL}" additivity="true">
+        <appender-ref ref="FRAMEWORK_FILE"/>
+    </logger>
+    <logger name="org.apache" level="${FRAMEWORK_LEVEL}" additivity="true">
+        <appender-ref ref="FRAMEWORK_FILE"/>
+    </logger>
+    <logger name="com.zaxxer" level="${FRAMEWORK_LEVEL}" additivity="true">
+        <appender-ref ref="FRAMEWORK_FILE"/>
+    </logger>
+    <logger name="org.flywaydb" level="${FRAMEWORK_LEVEL}" additivity="true">
+        <appender-ref ref="FRAMEWORK_FILE"/>
+    </logger>
+    <logger name="org.mybatis" level="${FRAMEWORK_LEVEL}" additivity="true">
+        <appender-ref ref="FRAMEWORK_FILE"/>
+    </logger>
+    <logger name="com.baomidou" level="${FRAMEWORK_LEVEL}" additivity="true">
+        <appender-ref ref="FRAMEWORK_FILE"/>
+    </logger>
+
+    <root level="${ROOT_LEVEL}">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="ALL_FILE"/>
+    </root>
+</configuration>

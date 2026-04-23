@@ -14,6 +14,24 @@ spring:
       pro:
         - prod
 
+logging:
+  config: file:./config/logback-spring.xml
+  level:
+    root: DEBUG
+
+app:
+  log:
+    level:
+      app: INFO
+      athena: WARN
+      framework: ERROR
+    threshold:
+      console: DEBUG
+      app: DEBUG
+      athena: INFO
+      framework: WARN
+      all: DEBUG
+
 lib:
   web:
     enumPackages:

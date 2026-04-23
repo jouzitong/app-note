@@ -5,3 +5,14 @@ spring:
     password: root
   jpa:
     show-sql: false
+
+logging:
+  level:
+    root: INFO
+
+app:
+  log:
+    level:
+      app: DEBUG
+      athena: INFO
+      framework: WARN
