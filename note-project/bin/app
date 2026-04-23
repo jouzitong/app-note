@@ -4,7 +4,9 @@ set -euo pipefail
 APP_ROOT="${APP_ROOT:-/home/app/app-note}"
 APP_JAR="${APP_JAR:-$APP_ROOT/app-note.jar}"
 JAVA_BIN="${JAVA_BIN:-java}"
+DEFAULT_JAVA_OPTS="${DEFAULT_JAVA_OPTS:-}"
 JAVA_OPTS="${JAVA_OPTS:-}"
+JAVA_OPTS_APPEND="${JAVA_OPTS_APPEND:-}"
 PID_FILE="${PID_FILE:-$APP_ROOT/bin/app-note.pid}"
 LOG_DIR="${LOG_DIR:-$APP_ROOT/logs}"
 CONSOLE_LOG_FILE="${CONSOLE_LOG_FILE:-$LOG_DIR/app-note-console.log}"
@@ -27,7 +29,9 @@ Global env defaults:
   APP_ROOT=/home/app/app-note
   APP_JAR=$APP_ROOT/app-note.jar
   JAVA_BIN=java
-  JAVA_OPTS=
+  DEFAULT_JAVA_OPTS=(built-in g1 + 4g + gc log)
+  JAVA_OPTS=   # full override, replaces built-in defaults
+  JAVA_OPTS_APPEND=   # append extra opts to defaults/JAVA_OPTS
   PID_FILE=$APP_ROOT/bin/app-note.pid
   LOG_DIR=$APP_ROOT/logs
   CONSOLE_LOG_FILE=$LOG_DIR/app-note-console.log
@@ -65,6 +69,48 @@ read_pid() {
 is_running_pid() {
   local pid="$1"
   kill -0 "$pid" >/dev/null 2>&1
+}
+
+java_major_version() {
+  local version raw major
+  raw="$("$JAVA_BIN" -version 2>&1 | head -n 1)"
+  version="$(printf '%s' "$raw" | sed -n 's/.*version "\(.*\)".*/\1/p')"
+  if [ -z "$version" ]; then
+    echo "11"
+    return
+  fi
+  major="${version%%.*}"
+  if [ "$major" = "1" ]; then
+    echo "${version#1.}" | cut -d. -f1
+  else
+    echo "$major"
+  fi
+}
+
+build_default_java_opts() {
+  local major gc_log_opts
+  major="$(java_major_version)"
+  if [ "${major:-11}" -ge 9 ]; then
+    gc_log_opts="-Xlog:gc*,gc+heap=info,safepoint:file=$LOG_DIR/gc.log:time,uptime,level,tags:filecount=7,filesize=20m"
+  else
+    gc_log_opts="-XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -Xloggc:$LOG_DIR/gc.log -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=7 -XX:GCLogFileSize=20M"
+  fi
+  echo "-server -Xms4g -Xmx4g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:InitiatingHeapOccupancyPercent=45 -XX:G1ReservePercent=20 -XX:+ParallelRefProcEnabled -XX:MetaspaceSize=256m -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=$LOG_DIR/heapdump.hprof -XX:+ExitOnOutOfMemoryError -Dfile.encoding=UTF-8 -Duser.timezone=Asia/Shanghai $gc_log_opts"
+}
+
+build_effective_java_opts() {
+  local opts
+  if [ -n "$JAVA_OPTS" ]; then
+    opts="$JAVA_OPTS"
+  elif [ -n "$DEFAULT_JAVA_OPTS" ]; then
+    opts="$DEFAULT_JAVA_OPTS"
+  else
+    opts="$(build_default_java_opts)"
+  fi
+  if [ -n "$JAVA_OPTS_APPEND" ]; then
+    opts="$opts $JAVA_OPTS_APPEND"
+  fi
+  echo "$opts"
 }
 
 start_app() {
@@ -128,10 +174,11 @@ USAGE
     rm -f "$PID_FILE"
   fi
 
-  local java_opts=()
-  if [ -n "$JAVA_OPTS" ]; then
+  local java_opts_str java_opts=()
+  java_opts_str="$(build_effective_java_opts)"
+  if [ -n "$java_opts_str" ]; then
     # shellcheck disable=SC2206
-    java_opts=($JAVA_OPTS)
+    java_opts=($java_opts_str)
   fi
 
   cmd=(
