@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS `article_user_progress` (
     `user_id` BIGINT NOT NULL COMMENT '用户ID',
     `article_id` BIGINT NOT NULL COMMENT '文章ID',
     `favorite` TINYINT(1) NOT NULL DEFAULT 0 COMMENT '是否收藏',
+    `completed` TINYINT(1) NOT NULL DEFAULT 0 COMMENT '是否完成',
     `last_read_paragraph_index` INT NULL COMMENT '最近阅读段落下标（从0开始）',
     `playback_rate` DECIMAL(4,2) NULL DEFAULT 1.00 COMMENT '播放速度',
     `created_by` BIGINT NULL,
@@ -80,6 +81,16 @@ VALUES (
         'translation', JSON_ARRAY(
             '我每天早上七点起床。',
             '吃完早饭去学校。'
+        ),
+        'knowledge', JSON_OBJECT(
+            'coreVocabulary', JSON_ARRAY(
+                JSON_OBJECT('jp', '毎朝', 'kana', 'まいあさ', 'meaning', '每天早晨'),
+                JSON_OBJECT('jp', '朝ご飯', 'kana', 'あさごはん', 'meaning', '早饭')
+            ),
+            'coreSentencePatterns', JSON_ARRAY(
+                JSON_OBJECT('jp', '〜は 〜に 〜ます', 'meaning', '在某时间做某事'),
+                JSON_OBJECT('jp', '〜を 〜て、〜ます', 'meaning', '动作用て形连接，表示先后顺序')
+            )
         )
     ),
     1,

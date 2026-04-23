@@ -52,6 +52,12 @@ public class ArticleUserProgress extends AuditableEntity {
     private Boolean favorite = false;
 
     /**
+     * 是否完成
+     */
+    @Column(name = "completed", nullable = false)
+    private Boolean completed = false;
+
+    /**
      * 上次阅读段落下标（从 0 开始）
      */
     @Column(name = "last_read_paragraph_index")

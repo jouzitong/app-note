@@ -19,6 +19,7 @@ import org.zzt.note.server.word.article.repository.IArticleRepository;
 import org.zzt.note.server.word.article.repository.IArticleUserProgressRepository;
 import org.zzt.note.server.word.article.req.ArticleDomainPageRequest;
 import org.zzt.note.server.word.article.service.IArticleDomainService;
+import org.zzt.note.server.word.article.vo.ArticleReaderVO;
 import org.zzt.note.server.word.article.vo.ArticleVO;
 
 import java.math.BigDecimal;
@@ -88,20 +89,41 @@ public class ArticleDomainServiceImpl implements IArticleDomainService {
 
     @Override
     @Transactional
-    public ArticleVO getByNoteNodeId(Long noteNodeId) {
+    public ArticleReaderVO getByNoteNodeId(Long noteNodeId) {
         if (noteNodeId == null || noteNodeId <= 0) {
             throw new IllegalArgumentException("noteNodeId must be greater than 0");
         }
 
-        ArticleNoteNodeRel rel = articleNoteNodeRelRepository.findByNoteNodeIdOrderByArticleIdAsc(noteNodeId)
-                .stream()
-                .findFirst()
-                .orElseThrow(() -> new IllegalArgumentException("Article not found by noteNodeId=" + noteNodeId));
-        Article article = articleRepository.findById(rel.getArticleId())
-                .orElseThrow(() -> new IllegalArgumentException("Article not found, id=" + rel.getArticleId()));
+        List<ArticleNoteNodeRel> relations = articleNoteNodeRelRepository.findByNoteNodeIdOrderByArticleIdAsc(noteNodeId);
+        if (relations.isEmpty()) {
+            return new ArticleReaderVO(noteNodeId, 0, new ArrayList<>());
+        }
 
-        ArticleUserProgress progress = resolveProgress(DEFAULT_USER_ID, article.getId(), false);
-        return toVO(article, progress, true, noteNodeId);
+        List<Long> articleIds = relations.stream()
+                .map(ArticleNoteNodeRel::getArticleId)
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
+        if (articleIds.isEmpty()) {
+            return new ArticleReaderVO(noteNodeId, 0, new ArrayList<>());
+        }
+
+        Map<Long, Article> articleMap = articleRepository.findAllById(articleIds).stream()
+                .collect(Collectors.toMap(Article::getId, item -> item));
+
+        List<ArticleVO> articles = new ArrayList<>();
+        for (ArticleNoteNodeRel rel : relations) {
+            if (rel == null || rel.getArticleId() == null) {
+                continue;
+            }
+            Article article = articleMap.get(rel.getArticleId());
+            if (article == null) {
+                continue;
+            }
+            ArticleUserProgress progress = resolveProgress(DEFAULT_USER_ID, article.getId(), false);
+            articles.add(toVO(article, progress, true, noteNodeId));
+        }
+
+        return new ArticleReaderVO(noteNodeId, resolveCurrentArticleIndex(articles), articles);
     }
 
     @Override
@@ -219,6 +241,7 @@ public class ArticleDomainServiceImpl implements IArticleDomainService {
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());
         metaInfo.setTranslation(translations);
+        metaInfo.setKnowledge(toMetaKnowledge(article.getKnowledge()));
 
         return metaInfo;
     }
@@ -232,13 +255,16 @@ public class ArticleDomainServiceImpl implements IArticleDomainService {
         if (includeContent) {
             vo.setParagraphs(toVoParagraphs(article.getMetaInfo()));
             vo.setTranslation(toVoTranslation(article.getMetaInfo()));
+            vo.setKnowledge(toVoKnowledge(article.getMetaInfo()));
         } else {
             vo.setParagraphs(new ArrayList<>());
             vo.setTranslation(new ArrayList<>());
+            vo.setKnowledge(new ArticleVO.Knowledge());
         }
 
         ArticleVO.Progress progressVO = new ArticleVO.Progress();
         progressVO.setFavorite(progress != null && Boolean.TRUE.equals(progress.getFavorite()));
+        progressVO.setCompleted(progress != null && Boolean.TRUE.equals(progress.getCompleted()));
         progressVO.setLastReadParagraphIndex(progress == null || progress.getLastReadParagraphIndex() == null
                 ? 0
                 : progress.getLastReadParagraphIndex());
@@ -296,9 +322,76 @@ public class ArticleDomainServiceImpl implements IArticleDomainService {
         created.setUserId(userId);
         created.setArticle(articleRef);
         created.setFavorite(false);
+        created.setCompleted(false);
         created.setLastReadParagraphIndex(0);
         created.setPlaybackRate(BigDecimal.valueOf(1.0D));
         return created;
+    }
+
+    private ArticleMetaInfo.KnowledgeInfo toMetaKnowledge(ArticleVO.Knowledge knowledge) {
+        ArticleMetaInfo.KnowledgeInfo knowledgeInfo = new ArticleMetaInfo.KnowledgeInfo();
+        if (knowledge == null) {
+            return knowledgeInfo;
+        }
+
+        List<ArticleMetaInfo.CoreVocabularyInfo> coreVocabulary = Optional.ofNullable(knowledge.getCoreVocabulary())
+                .orElseGet(ArrayList::new)
+                .stream()
+                .filter(Objects::nonNull)
+                .map(item -> new ArticleMetaInfo.CoreVocabularyInfo(item.getJp(), item.getKana(), item.getMeaning()))
+                .collect(Collectors.toCollection(ArrayList::new));
+        knowledgeInfo.setCoreVocabulary(coreVocabulary);
+
+        List<ArticleMetaInfo.CoreSentencePatternInfo> coreSentencePatterns = Optional.ofNullable(knowledge.getCoreSentencePatterns())
+                .orElseGet(ArrayList::new)
+                .stream()
+                .filter(Objects::nonNull)
+                .map(item -> new ArticleMetaInfo.CoreSentencePatternInfo(item.getJp(), item.getMeaning()))
+                .collect(Collectors.toCollection(ArrayList::new));
+        knowledgeInfo.setCoreSentencePatterns(coreSentencePatterns);
+
+        return knowledgeInfo;
+    }
+
+    private ArticleVO.Knowledge toVoKnowledge(ArticleMetaInfo metaInfo) {
+        ArticleVO.Knowledge knowledge = new ArticleVO.Knowledge();
+        if (metaInfo == null || metaInfo.getKnowledge() == null) {
+            return knowledge;
+        }
+
+        List<ArticleVO.CoreVocabulary> coreVocabulary = Optional.ofNullable(metaInfo.getKnowledge().getCoreVocabulary())
+                .orElseGet(ArrayList::new)
+                .stream()
+                .filter(Objects::nonNull)
+                .map(item -> new ArticleVO.CoreVocabulary(item.getJp(), item.getKana(), item.getMeaning()))
+                .collect(Collectors.toCollection(ArrayList::new));
+        knowledge.setCoreVocabulary(coreVocabulary);
+
+        List<ArticleVO.CoreSentencePattern> coreSentencePatterns = Optional.ofNullable(metaInfo.getKnowledge().getCoreSentencePatterns())
+                .orElseGet(ArrayList::new)
+                .stream()
+                .filter(Objects::nonNull)
+                .map(item -> new ArticleVO.CoreSentencePattern(item.getJp(), item.getMeaning()))
+                .collect(Collectors.toCollection(ArrayList::new));
+        knowledge.setCoreSentencePatterns(coreSentencePatterns);
+
+        return knowledge;
+    }
+
+    private Integer resolveCurrentArticleIndex(List<ArticleVO> articles) {
+        if (articles == null || articles.isEmpty()) {
+            return 0;
+        }
+        for (int i = 0; i < articles.size(); i += 1) {
+            ArticleVO article = articles.get(i);
+            boolean completed = article != null
+                    && article.getProgress() != null
+                    && Boolean.TRUE.equals(article.getProgress().getCompleted());
+            if (!completed) {
+                return i;
+            }
+        }
+        return 0;
     }
 
     private void upsertNoteNodeRelation(Long articleId, Long noteNodeId) {

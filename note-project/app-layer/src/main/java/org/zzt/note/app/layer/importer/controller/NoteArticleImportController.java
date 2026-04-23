@@ -14,6 +14,7 @@ import org.zzt.note.app.layer.importer.dto.NoteArticleImportResult;
 import org.zzt.note.app.layer.importer.service.INoteArticleImportService;
 
 import java.io.IOException;
+import java.util.Locale;
 
 /**
  * 文章导入接口。
@@ -37,11 +38,15 @@ public class NoteArticleImportController {
         if (file == null || file.isEmpty()) {
             throw new IllegalArgumentException("json file cannot be empty");
         }
+        String filename = file.getOriginalFilename();
+        if (filename == null || !filename.toLowerCase(Locale.ROOT).endsWith(".json")) {
+            throw new IllegalArgumentException("only .json file is supported");
+        }
         try {
             NoteArticleImportRequest request = objectMapper.readValue(file.getInputStream(), NoteArticleImportRequest.class);
             return importService.importData(request);
         } catch (IOException e) {
-            throw new IllegalArgumentException("invalid json file content", e);
+            throw new IllegalArgumentException("invalid json file content: " + filename, e);
         }
     }
 }

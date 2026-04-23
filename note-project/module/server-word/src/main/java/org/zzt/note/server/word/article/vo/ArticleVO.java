@@ -30,6 +30,8 @@ public class ArticleVO {
 
     private Progress progress = new Progress();
 
+    private Knowledge knowledge = new Knowledge();
+
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
@@ -47,8 +49,42 @@ public class ArticleVO {
 
         private Boolean favorite = false;
 
+        private Boolean completed = false;
+
         private Integer lastReadParagraphIndex = 0;
 
         private Double playbackRate = 1.0D;
+    }
+
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class Knowledge {
+
+        private List<CoreVocabulary> coreVocabulary = new ArrayList<>();
+
+        private List<CoreSentencePattern> coreSentencePatterns = new ArrayList<>();
+    }
+
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class CoreVocabulary {
+
+        private String jp;
+
+        private String kana;
+
+        private String meaning;
+    }
+
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class CoreSentencePattern {
+
+        private String jp;
+
+        private String meaning;
     }
 }

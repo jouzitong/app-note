@@ -20,6 +20,7 @@ import org.zzt.note.server.word.article.service.IArticleDomainService;
 import org.zzt.note.server.word.article.vo.ArticleVO;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -227,8 +228,9 @@ public class NoteArticleImportServiceImpl implements INoteArticleImportService {
             input.setId(articleId);
             input.setNoteNodeId(targetNoteNodeId);
             input.setTitle(normalize(article.getTitle()));
-            input.setParagraphs(article.getParagraphs());
-            input.setTranslation(article.getTranslation());
+            input.setParagraphs(sanitizeParagraphs(article.getParagraphs()));
+            input.setTranslation(sanitizeTranslation(article.getTranslation()));
+            input.setKnowledge(sanitizeKnowledge(article.getKnowledge()));
             input.setProgress(article.getProgress());
 
             articleDomainService.save(input);
@@ -269,5 +271,79 @@ public class NoteArticleImportServiceImpl implements INoteArticleImportService {
         }
         String trimmed = value.trim();
         return trimmed.isEmpty() ? null : trimmed;
+    }
+
+    private List<List<ArticleVO.TokenInfo>> sanitizeParagraphs(List<List<ArticleVO.TokenInfo>> paragraphs) {
+        if (paragraphs == null) {
+            return Collections.emptyList();
+        }
+        List<List<ArticleVO.TokenInfo>> result = new ArrayList<>();
+        for (List<ArticleVO.TokenInfo> paragraph : paragraphs) {
+            if (paragraph == null) {
+                continue;
+            }
+            List<ArticleVO.TokenInfo> tokens = new ArrayList<>();
+            for (ArticleVO.TokenInfo token : paragraph) {
+                String text = normalize(token == null ? null : token.getText());
+                if (text == null) {
+                    continue;
+                }
+                tokens.add(new ArticleVO.TokenInfo(text, normalize(token.getKana())));
+            }
+            if (!tokens.isEmpty()) {
+                result.add(tokens);
+            }
+        }
+        return result;
+    }
+
+    private List<String> sanitizeTranslation(List<String> translation) {
+        if (translation == null) {
+            return Collections.emptyList();
+        }
+        List<String> result = new ArrayList<>();
+        for (String line : translation) {
+            String normalized = normalize(line);
+            if (normalized != null) {
+                result.add(normalized);
+            }
+        }
+        return result;
+    }
+
+    private ArticleVO.Knowledge sanitizeKnowledge(ArticleVO.Knowledge knowledge) {
+        ArticleVO.Knowledge result = new ArticleVO.Knowledge();
+        if (knowledge == null) {
+            return result;
+        }
+
+        List<ArticleVO.CoreVocabulary> coreVocabulary = new ArrayList<>();
+        for (ArticleVO.CoreVocabulary item : Optional.ofNullable(knowledge.getCoreVocabulary()).orElseGet(ArrayList::new)) {
+            String jp = normalize(item == null ? null : item.getJp());
+            if (jp == null) {
+                continue;
+            }
+            coreVocabulary.add(new ArticleVO.CoreVocabulary(
+                    jp,
+                    normalize(item.getKana()),
+                    normalize(item.getMeaning())
+            ));
+        }
+        result.setCoreVocabulary(coreVocabulary);
+
+        List<ArticleVO.CoreSentencePattern> coreSentencePatterns = new ArrayList<>();
+        for (ArticleVO.CoreSentencePattern item : Optional.ofNullable(knowledge.getCoreSentencePatterns()).orElseGet(ArrayList::new)) {
+            String jp = normalize(item == null ? null : item.getJp());
+            if (jp == null) {
+                continue;
+            }
+            coreSentencePatterns.add(new ArticleVO.CoreSentencePattern(
+                    jp,
+                    normalize(item.getMeaning())
+            ));
+        }
+        result.setCoreSentencePatterns(coreSentencePatterns);
+
+        return result;
     }
 }

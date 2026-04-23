@@ -91,6 +91,7 @@ CREATE TABLE `article_user_progress` (
   `user_id` bigint NOT NULL COMMENT '用户ID',
   `article_id` bigint NOT NULL COMMENT '文章ID',
   `favorite` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否收藏',
+  `completed` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否完成',
   `last_read_paragraph_index` int DEFAULT NULL COMMENT '最近阅读段落下标（从0开始）',
   `playback_rate` decimal(4,2) DEFAULT '1.00' COMMENT '播放速度',
   `created_by` bigint DEFAULT NULL,

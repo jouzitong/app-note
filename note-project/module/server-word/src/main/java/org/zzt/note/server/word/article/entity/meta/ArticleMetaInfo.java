@@ -28,6 +28,11 @@ public class ArticleMetaInfo {
      */
     private List<String> translation = new ArrayList<>();
 
+    /**
+     * 核心知识点（可运营维护）
+     */
+    private KnowledgeInfo knowledge = new KnowledgeInfo();
+
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
@@ -36,5 +41,37 @@ public class ArticleMetaInfo {
         private String text;
 
         private String kana;
+    }
+
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class KnowledgeInfo {
+
+        private List<CoreVocabularyInfo> coreVocabulary = new ArrayList<>();
+
+        private List<CoreSentencePatternInfo> coreSentencePatterns = new ArrayList<>();
+    }
+
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class CoreVocabularyInfo {
+
+        private String jp;
+
+        private String kana;
+
+        private String meaning;
+    }
+
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class CoreSentencePatternInfo {
+
+        private String jp;
+
+        private String meaning;
     }
 }

@@ -13,6 +13,7 @@
           <div v-else-if="errorMessage" class="status-text error">
             {{ errorMessage }}
           </div>
+          <div v-else-if="!hasArticles" class="status-text">暂无文章内容</div>
           <template v-else>
             <div class="article-meta">
               <span
@@ -35,12 +36,7 @@
                   >
                     <span
                       :key="`paragraph-${paragraphIndex}`"
-                      :ref="`paragraph-${paragraphIndex}`"
                       class="paragraph-inline"
-                      :class="{
-                        active: paragraphIndex === currentParagraphIndex,
-                      }"
-                      @click="selectParagraph(paragraphIndex)"
                     >
                       <template v-for="(token, tokenIndex) in paragraph">
                         <ruby
@@ -158,10 +154,10 @@
         <button
           class="tool-btn secondary icon"
           type="button"
-          title="上一段"
-          aria-label="上一段"
-          :disabled="currentParagraphIndex <= 0"
-          @click="goPrev"
+          title="上一篇"
+          aria-label="上一篇"
+          :disabled="currentArticleIndex <= 0"
+          @click="goPrevArticle"
         >
           ◀
         </button>
@@ -184,10 +180,10 @@
         <button
           class="tool-btn icon"
           type="button"
-          title="下一段"
-          aria-label="下一段"
-          :disabled="currentParagraphIndex >= maxParagraphIndex"
-          @click="goNext"
+          title="下一篇"
+          aria-label="下一篇"
+          :disabled="currentArticleIndex >= maxArticleIndex"
+          @click="goNextArticle"
         >
           ▶
         </button>
@@ -197,13 +193,8 @@
 </template>
 
 <script>
-import { createDefaultArticleVm } from "@/mappers/domain/language-jp/article.mapper";
-import {
-  fetchArticleByNoteNode,
-  saveArticleFavorite,
-  saveArticlePlaybackRate,
-  saveArticlePosition,
-} from "@/views/domain/language-jp/services/article.service";
+import { createDefaultArticleReaderVm } from "@/mappers/domain/language-jp/article.mapper";
+import { fetchArticleByNoteNode } from "@/views/domain/language-jp/services/article.service";
 import { AudioPlaybackManager } from "@/utils/audioPlayback";
 
 export default {
@@ -218,17 +209,35 @@ export default {
     return {
       loading: false,
       errorMessage: "",
-      article: createDefaultArticleVm(),
+      articleReader: createDefaultArticleReaderVm(),
       rubyVisible: true,
-      currentParagraphIndex: 0,
       playbackRate: 1.0,
       playbackRateOptions: [0.5, 0.75, 1.0, 1.25, 1.5],
       audioManager: new AudioPlaybackManager({ lang: "ja-JP" }),
     };
   },
   computed: {
+    article() {
+      const articles = Array.isArray(this.articleReader.articles)
+        ? this.articleReader.articles
+        : [];
+      return articles[this.currentArticleIndex] || {};
+    },
+    hasArticles() {
+      return this.articleReader.articles.length > 0;
+    },
+    currentArticleIndex() {
+      const index = Number(this.articleReader.currentArticleIndex);
+      return Number.isInteger(index) && index >= 0 ? index : 0;
+    },
+    maxArticleIndex() {
+      return Math.max(0, this.articleReader.articles.length - 1);
+    },
     isFavorite() {
       return Boolean(this.article.progress && this.article.progress.favorite);
+    },
+    isCompleted() {
+      return Boolean(this.article.progress && this.article.progress.completed);
     },
     paragraphCount() {
       return Array.isArray(this.article.paragraphs)
@@ -243,6 +252,17 @@ export default {
     },
     articleMetaTags() {
       const tags = ["日语文章", "振假名"];
+      if (this.hasArticles) {
+        tags.push(
+          `第${this.currentArticleIndex + 1}/${this.maxArticleIndex + 1}篇`
+        );
+      }
+      if (this.isFavorite) {
+        tags.push("已收藏");
+      }
+      if (this.isCompleted) {
+        tags.push("已完成");
+      }
       const levelTag =
         this.paragraphCount >= 6
           ? "进阶阅读"
@@ -263,66 +283,16 @@ export default {
       return this.normalizedTranslations.length > 0;
     },
     coreVocabulary() {
-      const list = [];
-      const seen = new Set();
-      const paragraphs = Array.isArray(this.article.paragraphs)
-        ? this.article.paragraphs
+      const knowledge = this.article.knowledge || {};
+      return Array.isArray(knowledge.coreVocabulary)
+        ? knowledge.coreVocabulary
         : [];
-
-      for (let i = 0; i < paragraphs.length; i += 1) {
-        const paragraph = Array.isArray(paragraphs[i]) ? paragraphs[i] : [];
-        for (let j = 0; j < paragraph.length; j += 1) {
-          const token = paragraph[j] || {};
-          const text = `${token.text || ""}`.trim();
-          const kana = `${token.kana || ""}`.trim();
-          if (!text || !kana) {
-            continue;
-          }
-          const dedupKey = `${text}__${kana}`;
-          if (seen.has(dedupKey)) {
-            continue;
-          }
-          seen.add(dedupKey);
-          list.push({
-            jp: `${text}（${kana}）`,
-            kana,
-            meaning: "读音提示",
-          });
-          if (list.length >= 8) {
-            return list;
-          }
-        }
-      }
-      return list;
     },
     coreSentencePatterns() {
-      const joined = [];
-      for (let i = 0; i < this.paragraphCount; i += 1) {
-        joined.push(this.paragraphText(i));
-      }
-      const text = joined.join("\n");
-      const patterns = [];
-      const appendPattern = (jp, meaning) => {
-        if (patterns.some((item) => item.jp === jp)) {
-          return;
-        }
-        patterns.push({ jp, meaning });
-      };
-
-      if (/て、|て。|て，/u.test(text)) {
-        appendPattern("〜を 〜て、〜ます", "用て形连接动作，表示先后顺序。");
-      }
-      if (/で/u.test(text) && /を/u.test(text) && /(ます|です)/u.test(text)) {
-        appendPattern("〜で 〜を 〜します", "表示“在某地做某事”。");
-      }
-      if (/に/u.test(text) && /(ます|です)/u.test(text)) {
-        appendPattern("〜は 〜に 〜ます", "表示“在某时间点做某事”。");
-      }
-
-      if (!patterns.length) {
-        appendPattern("〜は 〜です/ます", "基础叙述句型，表达状态或动作。");
-      }
-      return patterns.slice(0, 3);
+      const knowledge = this.article.knowledge || {};
+      return Array.isArray(knowledge.coreSentencePatterns)
+        ? knowledge.coreSentencePatterns
+        : [];
     },
   },
   watch: {
@@ -345,22 +315,12 @@ export default {
       this.loading = true;
       this.errorMessage = "";
       try {
-        this.article = await fetchArticleByNoteNode(this.noteNodeId);
-        this.playbackRate = this.pickPlaybackRate(
-          this.article.progress && this.article.progress.playbackRate
-        );
-
-        const initIndex =
-          (this.article.progress &&
-            this.article.progress.lastReadParagraphIndex) ||
-          0;
-        this.currentParagraphIndex = this.limitIndex(initIndex);
-        this.$nextTick(() =>
-          this.scrollToParagraph(this.currentParagraphIndex)
-        );
+        this.articleReader = await fetchArticleByNoteNode(this.noteNodeId);
+        this.applyCurrentArticleState();
       } catch (error) {
         console.error("[article-reader] loadArticle failed:", error);
         this.errorMessage = "文章加载失败";
+        this.articleReader = createDefaultArticleReaderVm();
       } finally {
         this.loading = false;
       }
@@ -380,29 +340,12 @@ export default {
       const fixed = parsed.toFixed(2);
       return fixed.endsWith(".00") ? fixed.slice(0, -1) : fixed;
     },
-    limitIndex(index) {
-      const parsed = Number(index);
-      if (!Number.isInteger(parsed) || parsed < 0) {
-        return 0;
-      }
-      return Math.min(parsed, this.maxParagraphIndex);
-    },
     paragraphText(index) {
-      const paragraph = this.article.paragraphs[index] || [];
+      const paragraphs = Array.isArray(this.article.paragraphs)
+        ? this.article.paragraphs
+        : [];
+      const paragraph = paragraphs[index] || [];
       return paragraph.map((token) => token.text || "").join("");
-    },
-    async playCurrent() {
-      const text = this.paragraphText(this.currentParagraphIndex);
-      if (!text) {
-        return;
-      }
-      try {
-        await this.audioManager.playSequence([
-          { text, rate: this.playbackRate },
-        ]);
-      } catch (error) {
-        console.error("[article-reader] playCurrent failed:", error);
-      }
     },
     async playAll() {
       const sequence = [];
@@ -425,67 +368,43 @@ export default {
     toggleRuby() {
       this.rubyVisible = !this.rubyVisible;
     },
-    async toggleFavorite() {
-      if (!this.article.id) {
+    toggleFavorite() {
+      if (!this.hasArticles) {
         return;
       }
-      try {
-        this.article = await saveArticleFavorite(
-          this.article,
-          !this.isFavorite
-        );
-      } catch (error) {
-        console.error("[article-reader] toggleFavorite failed:", error);
-      }
+      const nextValue = !this.isFavorite;
+      this.$set(
+        this.articleReader.articles[this.currentArticleIndex].progress,
+        "favorite",
+        nextValue
+      );
     },
-    async changePlaybackRate() {
-      if (!this.article.id) {
-        return;
-      }
+    changePlaybackRate() {
       const nextRate = this.pickPlaybackRate(this.playbackRate);
       this.playbackRate = nextRate;
-      try {
-        this.article = await saveArticlePlaybackRate(this.article, nextRate);
-      } catch (error) {
-        console.error("[article-reader] changePlaybackRate failed:", error);
-      }
     },
-    async selectParagraph(index) {
-      const nextIndex = this.limitIndex(index);
-      this.currentParagraphIndex = nextIndex;
-      this.scrollToParagraph(nextIndex);
-      await this.persistPosition(nextIndex);
-    },
-    async goPrev() {
-      if (this.currentParagraphIndex <= 0) {
+    goPrevArticle() {
+      if (this.currentArticleIndex <= 0) {
         return;
       }
-      await this.selectParagraph(this.currentParagraphIndex - 1);
+      this.articleReader.currentArticleIndex = this.currentArticleIndex - 1;
+      this.applyCurrentArticleState();
     },
-    async goNext() {
-      if (this.currentParagraphIndex >= this.maxParagraphIndex) {
+    goNextArticle() {
+      if (this.currentArticleIndex >= this.maxArticleIndex) {
         return;
       }
-      await this.selectParagraph(this.currentParagraphIndex + 1);
+      this.articleReader.currentArticleIndex = this.currentArticleIndex + 1;
+      this.applyCurrentArticleState();
     },
-    async persistPosition(index) {
-      if (!this.article.id) {
+    applyCurrentArticleState() {
+      if (!this.hasArticles) {
+        this.playbackRate = 1.0;
         return;
       }
-      try {
-        this.article = await saveArticlePosition(this.article, index);
-      } catch (error) {
-        console.error("[article-reader] persistPosition failed:", error);
-      }
-    },
-    scrollToParagraph(index) {
-      const refKey = `paragraph-${index}`;
-      const target = this.$refs[refKey];
-      const el = Array.isArray(target) ? target[0] : target;
-      if (!el || typeof el.scrollIntoView !== "function") {
-        return;
-      }
-      el.scrollIntoView({ block: "center", behavior: "smooth" });
+      this.playbackRate = this.pickPlaybackRate(
+        this.article.progress && this.article.progress.playbackRate
+      );
     },
     goBack() {
       this.$emit("back");

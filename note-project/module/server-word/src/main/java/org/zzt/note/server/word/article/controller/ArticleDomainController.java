@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.zzt.note.server.word.article.req.ArticleDomainPageRequest;
 import org.zzt.note.server.word.article.service.IArticleDomainService;
+import org.zzt.note.server.word.article.vo.ArticleReaderVO;
 import org.zzt.note.server.word.article.vo.ArticleVO;
 
 /**
@@ -38,7 +39,7 @@ public class ArticleDomainController {
     }
 
     @GetMapping("/note-node/{noteNodeId}")
-    public ArticleVO getByNoteNode(@PathVariable("noteNodeId") Long noteNodeId) {
+    public ArticleReaderVO getByNoteNode(@PathVariable("noteNodeId") Long noteNodeId) {
         return articleDomainService.getByNoteNodeId(noteNodeId);
     }
 

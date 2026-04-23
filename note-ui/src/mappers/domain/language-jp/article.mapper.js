@@ -1,6 +1,8 @@
 import {
   createDefaultArticle,
+  createDefaultArticleReader,
   normalizeArticle,
+  normalizeArticleReader,
 } from "@/model/article/article";
 
 export function createDefaultArticleVm() {
@@ -16,4 +18,12 @@ export function mergeArticleVmWithPatch(articleVm, patchDto) {
     ...(articleVm || createDefaultArticle()),
     ...(patchDto || {}),
   });
+}
+
+export function createDefaultArticleReaderVm() {
+  return createDefaultArticleReader();
+}
+
+export function mapArticleReaderDtoToVm(source = {}) {
+  return normalizeArticleReader(source);
 }

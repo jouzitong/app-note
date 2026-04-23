@@ -12,6 +12,7 @@ athena:
         - /app-note/auth/login
         - /app-note/auth/refresh
         - /app-note/common/v1/system/enums
+        - /app-note/api/v1/**/json-file
 
     token:
       type: jwt

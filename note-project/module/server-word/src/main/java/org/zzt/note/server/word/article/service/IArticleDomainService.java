@@ -2,6 +2,7 @@ package org.zzt.note.server.word.article.service;
 
 import org.athena.framework.data.jdbc.vo.PageResultVO;
 import org.zzt.note.server.word.article.req.ArticleDomainPageRequest;
+import org.zzt.note.server.word.article.vo.ArticleReaderVO;
 import org.zzt.note.server.word.article.vo.ArticleVO;
 
 /**
@@ -33,7 +34,7 @@ public interface IArticleDomainService {
      * @param noteNodeId 笔记节点 ID
      * @return 文章详情
      */
-    ArticleVO getByNoteNodeId(Long noteNodeId);
+    ArticleReaderVO getByNoteNodeId(Long noteNodeId);
 
     /**
      * 分页查询文章列表
