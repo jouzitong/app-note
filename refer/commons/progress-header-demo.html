@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Progress C2 Preview</title>
+  <style>
+    :root {
+      --bg: #f3f6fb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --line: #dbe3ee;
+      --track: #e8eef6;
+      --fill: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(circle at 20% 0%, #f8fbff 0%, var(--bg) 45%, #eef3f9 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      padding: 16px;
+    }
+
+    .preview {
+      width: min(760px, 100%);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--card);
+      padding: 16px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .row .right {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .track {
+      width: 100%;
+      height: 14px;
+      border-radius: 999px;
+      background: var(--track);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .fill {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      width: 0;
+      border-radius: inherit;
+      background: var(--fill);
+      transition: width .24s ease;
+    }
+
+    .bar-label {
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 3;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+      text-shadow: 0 1px 2px rgba(15, 23, 42, 0.35);
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    .moving-pct {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+      z-index: 4;
+      font-size: 10px;
+      font-weight: 700;
+      color: #1e3a8a;
+      background: #ffffff;
+      border: 1px solid #bfd2fb;
+      border-radius: 999px;
+      padding: 0 5px;
+      height: 14px;
+      line-height: 12px;
+      pointer-events: none;
+      white-space: nowrap;
+      transition: left .24s ease;
+    }
+
+    .milestones {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 2px;
+      pointer-events: none;
+    }
+
+    .dot {
+      width: 4px;
+      height: 4px;
+      margin-top: 5px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.75);
+    }
+  </style>
+</head>
+<body>
+  <main class="preview" data-current="7" data-total="10">
+    <div class="row">
+      <span>学习进度</span>
+      <span class="right">里程碑模式</span>
+    </div>
+    <div class="track">
+      <div class="fill"></div>
+      <span class="bar-label"><b class="cur">7</b>/<b class="tot">10</b></span>
+      <span class="moving-pct"><span class="pct">70</span>%</span>
+      <div class="milestones">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function render() {
+      var root = document.querySelector('.preview');
+      var cur = Number(root.getAttribute('data-current') || 0);
+      var total = Number(root.getAttribute('data-total') || 1);
+      cur = Number.isFinite(cur) ? cur : 0;
+      total = Number.isFinite(total) && total > 0 ? total : 1;
+      cur = Math.max(0, Math.min(cur, total));
+      var pct = Math.round((cur / total) * 100);
+
+      root.querySelectorAll('.cur').forEach(function (el) { el.textContent = String(cur); });
+      root.querySelectorAll('.tot').forEach(function (el) { el.textContent = String(total); });
+      root.querySelectorAll('.pct').forEach(function (el) { el.textContent = String(pct); });
+
+      var fill = root.querySelector('.fill');
+      if (fill) fill.style.width = pct + '%';
+
+      var moving = root.querySelector('.moving-pct');
+      if (moving) moving.style.left = pct + '%';
+    })();
+  </script>
+</body>
+</html>
