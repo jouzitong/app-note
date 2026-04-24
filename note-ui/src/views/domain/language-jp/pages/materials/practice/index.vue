@@ -2,20 +2,23 @@
   <div class="page">
     <div class="exam-shell">
       <div class="exam-header">
-        <h1 class="exam-title">{{ headerTitle }}</h1>
+        <div class="header-top-row">
+          <button class="header-back-btn" type="button" @click="goBack">
+            ←
+          </button>
+          <div v-if="session" class="header-progress">
+            <div class="progress-text">
+              第 {{ displayIndex }} / {{ session.totalCount || 0 }} 题
+            </div>
+            <div class="progress-bar">
+              <div class="progress-inner" :style="{ width: progressWidth }" />
+            </div>
+          </div>
+        </div>
         <div class="exam-meta">
           <span class="meta-tag">{{ modeLabel }}</span>
           <span class="meta-tag">{{ typeSummary }}</span>
           <span class="meta-tag">风格：接近日语考试练习</span>
-        </div>
-
-        <div v-if="session" class="progress-wrap">
-          <div class="progress-text">
-            第 {{ displayIndex }} / {{ session.totalCount || 0 }} 题
-          </div>
-          <div class="progress-bar">
-            <div class="progress-inner" :style="{ width: progressWidth }" />
-          </div>
         </div>
       </div>
 
@@ -207,9 +210,6 @@ export default {
       }
       const fallback = getLastLanguageJpPracticeNodeId(this.parentId);
       return parsePositiveInt(fallback);
-    },
-    headerTitle() {
-      return "日本語能力試験 N3 模拟练习";
     },
     modeLabel() {
       return "一题一题模式";
@@ -488,6 +488,23 @@ export default {
       if (!this.canNext) return;
       this.fetchItem(this.localIndex + 1);
     },
+    goBack() {
+      const hasHistory = window.history.length > 1;
+      if (hasHistory) {
+        this.$router.back();
+        return;
+      }
+
+      if (this.parentId) {
+        this.$router.push({
+          name: "language-jp-materials",
+          params: { id: String(this.parentId) },
+        });
+        return;
+      }
+
+      this.$router.push({ name: "language-jp-home" });
+    },
     formatCorrectAnswer(correctAnswer) {
       if (!correctAnswer) return "";
       if (correctAnswer.optionKeys && Array.isArray(correctAnswer.optionKeys)) {
@@ -605,7 +622,7 @@ export default {
 .page {
   max-width: 860px;
   margin: 0 auto;
-  padding: 10px 0 40px;
+  padding: 10px 0 calc(140px + env(safe-area-inset-bottom));
 }
 
 .exam-shell {
@@ -621,10 +638,11 @@ export default {
   background: linear-gradient(180deg, #fafafa 0%, #f4f4f4 100%);
 }
 
-.exam-title {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0 0 10px;
+.header-top-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
 .exam-meta {
@@ -642,8 +660,8 @@ export default {
   border: 1px solid #e6e6e6;
 }
 
-.progress-wrap {
-  margin-top: 14px;
+.header-progress {
+  flex: 1;
 }
 
 .progress-text {
@@ -862,9 +880,18 @@ audio {
 }
 
 .exam-footer {
-  padding: 16px 20px 20px;
-  border-top: 1px solid #ececec;
-  background: #fff;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: min(860px, calc(100vw - 24px));
+  padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  border: 1px solid #ececec;
+  border-bottom: none;
+  border-radius: 14px 14px 0 0;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 -8px 24px rgba(15, 23, 42, 0.1);
+  z-index: 20;
 }
 
 .action-row {
@@ -883,6 +910,30 @@ audio {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+
+.header-back-btn {
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 1px solid #111827;
+  background: transparent;
+  color: #334155;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.header-back-btn:hover,
+.header-back-btn:focus-visible {
+  border-color: #2563eb;
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.06);
+  outline: none;
 }
 
 .btn:disabled {
@@ -906,7 +957,7 @@ audio {
 }
 
 .summary {
-  margin-top: 14px;
+  margin-top: 10px;
   font-size: 14px;
   color: #555;
 }
@@ -956,6 +1007,7 @@ audio {
 @media (max-width: 640px) {
   .page {
     padding: 0 0 24px;
+    padding-bottom: calc(140px + env(safe-area-inset-bottom));
   }
 
   .question-card {
@@ -979,6 +1031,12 @@ audio {
   .btn {
     flex: 1;
     min-width: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .exam-footer {
+    width: 430px;
   }
 }
 </style>

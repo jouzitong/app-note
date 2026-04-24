@@ -137,6 +137,7 @@ export default [
           requiresAuth: true,
           permissions: ["practice:read"],
           keepAlive: false,
+          hideBottomNav: true,
           featureFlag: "practice",
         },
       },
